@@ -1,0 +1,24 @@
+# macOS
+.DS_Store
+
+# Xcode
+DerivedData/
+build/
+*.xcuserstate
+xcuserdata/
+
+# Unity generated
+UnityProject/Library/
+UnityProject/Temp/
+UnityProject/Logs/
+UnityProject/Obj/
+UnityProject/Build/
+UnityProject/Builds/
+UnityProject/UserSettings/
+UnityProject/MemoryCaptures/
+
+# General
+*.tmp
+*.log
+__pycache__/
+.pytest_cache/
