@@ -1,42 +1,54 @@
 import Foundation
+import UIKit
+
+private let jcuUnityMessageCallback: @convention(c) (UnsafePointer<CChar>?) -> Void = { pointer in
+    guard let pointer else { return }
+    let json = String(cString: pointer)
+    Task { @MainActor in
+        CampusBridge.shared.receive(json: json)
+    }
+}
 
 @MainActor
 final class UnityBridge {
     static let shared = UnityBridge()
 
-    private init() {}
+    private init() {
+        JCUUnitySetMessageCallback(jcuUnityMessageCallback)
+    }
+
+    var isAvailable: Bool {
+        JCUUnityIsAvailable()
+    }
+
+    func start() {
+        JCUUnityStart()
+    }
+
+    func viewController() -> UIViewController? {
+        JCUUnityViewController()
+    }
+
+    func show() {
+        JCUUnityShow()
+    }
+
+    func unload() {
+        JCUUnityUnload()
+    }
 
     func send(json: String) {
-        #if canImport(UnityFramework)
-        // Stage A integration point:
-        // Forward `json` to the Unity GameObject named "CampusBridge"
-        // method: ReceiveFromNative
-        //
-        // Keep this wrapper as the only Swift-side entry point into Unity.
-        UnityRuntimeAdapter.shared.sendToUnity(
-            gameObject: "CampusBridge",
-            method: "ReceiveFromNative",
-            message: json
-        )
-        #else
-        print("[Stage A][Swift→Unity placeholder] \(json)")
-        #endif
+        guard isAvailable else {
+            print("[Stage A1][Swift→Unity host-only] \(json)")
+            return
+        }
+
+        json.withCString { message in
+            "CampusBridge".withCString { gameObject in
+                "ReceiveFromNative".withCString { method in
+                    JCUUnitySendMessage(gameObject, method, message)
+                }
+            }
+        }
     }
 }
-
-#if canImport(UnityFramework)
-import UnityFramework
-
-@MainActor
-final class UnityRuntimeAdapter {
-    static let shared = UnityRuntimeAdapter()
-
-    private init() {}
-
-    func sendToUnity(gameObject: String, method: String, message: String) {
-        // The concrete UnityFramework lifecycle is wired after the Unity iOS export
-        // is added to the Xcode workspace. No business logic belongs here.
-        UnitySendMessage(gameObject, method, message)
-    }
-}
-#endif

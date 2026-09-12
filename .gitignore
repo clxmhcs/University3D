@@ -6,6 +6,8 @@ DerivedData/
 build/
 *.xcuserstate
 xcuserdata/
+iOSApp/GeneratedFrameworks/
+iOSApp/University3D.xcodeproj/
 
 # Unity generated
 UnityProject/Library/
@@ -16,6 +18,9 @@ UnityProject/Build/
 UnityProject/Builds/
 UnityProject/UserSettings/
 UnityProject/MemoryCaptures/
+
+# Stage A1 local build output
+.stage-a1/
 
 # General
 *.tmp

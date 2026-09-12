@@ -1,38 +1,38 @@
 import SwiftUI
+import UIKit
 
 struct UnityContainer: View {
     var body: some View {
-        #if canImport(UnityFramework)
         UnityContainerRepresentable()
-        #else
-        ZStack {
-            Rectangle().fill(.black)
-            VStack(spacing: 8) {
-                Text("Unity Stage A")
-                    .foregroundStyle(.white)
-                    .font(.title2.bold())
-                Text("Attach exported UnityFramework to replace this placeholder.")
-                    .foregroundStyle(.secondary)
-                    .font(.caption)
-            }
-        }
-        #endif
+            .background(Color.black)
     }
 }
 
-#if canImport(UnityFramework)
-import UIKit
-
 struct UnityContainerRepresentable: UIViewControllerRepresentable {
     func makeUIViewController(context: Context) -> UIViewController {
-        // Stage A shell only.
-        // The actual UnityFramework root view controller is attached
-        // after the first Unity iOS export.
-        let controller = UIViewController()
-        controller.view.backgroundColor = .black
-        return controller
+        UnityBridge.shared.start()
+
+        if let unityViewController = UnityBridge.shared.viewController() {
+            return unityViewController
+        }
+
+        let placeholder = UIViewController()
+        placeholder.view.backgroundColor = .black
+
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.textColor = .white
+        label.numberOfLines = 0
+        label.textAlignment = .center
+        label.text = "Unity Stage A1\nUnityFramework 尚未嵌入"
+        placeholder.view.addSubview(label)
+
+        NSLayoutConstraint.activate([
+            label.centerXAnchor.constraint(equalTo: placeholder.view.centerXAnchor),
+            label.centerYAnchor.constraint(equalTo: placeholder.view.centerYAnchor)
+        ])
+        return placeholder
     }
 
     func updateUIViewController(_ uiViewController: UIViewController, context: Context) {}
 }
-#endif

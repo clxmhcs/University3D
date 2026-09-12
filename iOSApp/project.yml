@@ -1,0 +1,63 @@
+name: University3D
+options:
+  bundleIdPrefix: com.clxmhcs
+  deploymentTarget:
+    iOS: "17.0"
+  createIntermediateGroups: true
+
+settings:
+  base:
+    SWIFT_VERSION: 5.0
+    IPHONEOS_DEPLOYMENT_TARGET: "17.0"
+    CLANG_CXX_LANGUAGE_STANDARD: gnu++17
+
+targets:
+  University3D:
+    type: application
+    platform: iOS
+    sources:
+      - path: App
+      - path: Features
+      - path: Data
+      - path: Services
+      - path: Unity
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.clxmhcs.University3D
+        PRODUCT_NAME: University3D
+        GENERATE_INFOPLIST_FILE: YES
+        INFOPLIST_KEY_CFBundleDisplayName: 江城大学
+        SWIFT_OBJC_BRIDGING_HEADER: Unity/University3D-Bridging-Header.h
+        LD_RUNPATH_SEARCH_PATHS: "$(inherited) @executable_path/Frameworks"
+        OTHER_LDFLAGS: "$(inherited) -ObjC"
+        TARGETED_DEVICE_FAMILY: "1"
+        CODE_SIGN_STYLE: Automatic
+    postBuildScripts:
+      - name: Embed UnityFramework when available
+        basedOnDependencyAnalysis: false
+        script: |
+          set -e
+          if [ "${PLATFORM_NAME:-}" = "iphonesimulator" ]; then
+            exit 0
+          fi
+          SRC="${SRCROOT}/GeneratedFrameworks/UnityFramework.framework"
+          if [ ! -d "$SRC" ]; then
+            echo "Stage A1: UnityFramework.framework not present; host-only build continues."
+            exit 0
+          fi
+          DST="${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UnityFramework.framework"
+          mkdir -p "$(dirname "$DST")"
+          rsync -a --delete "$SRC/" "$DST/"
+          if [ -n "${EXPANDED_CODE_SIGN_IDENTITY:-}" ] && [ "${EXPANDED_CODE_SIGN_IDENTITY}" != "-" ]; then
+            /usr/bin/codesign --force --sign "${EXPANDED_CODE_SIGN_IDENTITY}" --preserve-metadata=identifier,entitlements "$DST"
+          fi
+
+schemes:
+  University3D:
+    build:
+      targets:
+        University3D: all
+    run:
+      config: Debug
+    archive:
+      config: Release
