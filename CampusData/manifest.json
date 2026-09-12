@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "campusDataVersion": "0.1.0-stage-a",
+  "sourcePatchVersion": "PATCH-2026-09-12-R5",
+  "campusID": "CAMPUS-01",
+  "campusName": "江城大学",
+  "campusNameEnglish": "Jiangcheng University",
+  "abbreviation": "JCU",
+  "coordinateSystem": {
+    "unit": "meter",
+    "xAxis": "east",
+    "zAxis": "north",
+    "yAxis": "up"
+  },
+  "bridgeProtocolVersion": 1,
+  "chunkSizeMeters": 250,
+  "stage": "A",
+  "note": "Stage A manifest only. Authoritative full campus records are populated in Stage B."
+}
