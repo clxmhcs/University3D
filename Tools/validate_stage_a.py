@@ -4,6 +4,7 @@ import json
 import sys
 
 ROOT = Path(__file__).resolve().parents[1]
+SOURCE_PATCH_VERSION = "PATCH-2026-09-13-R6"
 
 REQUIRED = [
     ".gitignore",
@@ -29,7 +30,7 @@ for rel in REQUIRED:
 manifest_path = ROOT / "CampusData/manifest.json"
 if manifest_path.exists():
     manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
-    if manifest.get("sourcePatchVersion") != "PATCH-2026-09-12-R5":
+    if manifest.get("sourcePatchVersion") != SOURCE_PATCH_VERSION:
         errors.append("manifest sourcePatchVersion mismatch")
     if manifest.get("bridgeProtocolVersion") != 1:
         errors.append("manifest bridgeProtocolVersion must be 1")
@@ -46,6 +47,6 @@ if errors:
     sys.exit(1)
 
 print("STAGE_A_SKELETON=PASS")
-print("sourcePatchVersion=PATCH-2026-09-12-R5")
+print(f"sourcePatchVersion={SOURCE_PATCH_VERSION}")
 print("bridgeProtocolVersion=1")
 print("chunkSizeMeters=250")
