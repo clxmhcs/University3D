@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "snapshotVersion": "svg-masterplan-r6-step1",
+  "snapshotVersion": "svg-masterplan-r6-step2",
   "sourcePatchVersion": "PATCH-2026-09-13-R6",
-  "status": "step1_data_sealed",
+  "status": "step2_coordinate_system_frozen",
   "files": {
     "coreGeometry": "CampusData/svg/core_geometry_r6.json",
     "buildingPlacement": "CampusData/svg/building_placement_r6.csv",
@@ -11,7 +11,11 @@
     "internalRoadsAndTransit": "CampusData/svg/internal_roads_r3.json",
     "water": "CampusData/svg/water_r6.json",
     "outdoorSports": "CampusData/svg/outdoor_sports_r6.json",
-    "validator": "Tools/validate_svg_masterplan.py"
+    "coordinateSystem": "CampusData/svg/svg_coordinate_system_r6.json",
+    "coordinateModule": "Tools/svg_coordinates.py",
+    "dataValidator": "Tools/validate_svg_masterplan.py",
+    "coordinateValidator": "Tools/validate_svg_coordinate_system.py",
+    "coordinateSpec": "Docs/SVG_MASTERPLAN_COORDINATE_SPEC_R6.md"
   },
   "sourceDocuments": [
     "江城大学_数据源统一更新废止与覆盖说明_PATCH-2026-09-13-R6_完整版.txt",
@@ -26,9 +30,23 @@
     "R6 overrides every conflicting historical value",
     "Example JSON coordinates are excluded",
     "Unfrozen parking/service facilities without permanent IDs are excluded",
-    "Undergraduate dorm footprints remain a 78-82m range; no silent midpoint is chosen in Step 1",
-    "External roads and perimeter wall reuse the already-authoritative Stage A R6 files instead of duplicating a second coordinate set"
+    "Undergraduate dorm footprints remain a 78-82m range; no silent midpoint is chosen before its footprint policy is explicitly resolved",
+    "External roads and perimeter wall reuse the already-authoritative Stage A R6 files instead of duplicating a second coordinate set",
+    "SVG coordinate mapping is frozen and may not auto-fit current geometry",
+    "One world meter equals one SVG user unit inside the map frame",
+    "World X maps right; world Z maps upward by inversion into SVG Y",
+    "Presentation profile may translate the map group but may not scale it"
   ],
+  "svgCoordinateBaseline": {
+    "engineeringViewBox": [0, 0, 3600, 2800],
+    "presentationViewBox": [0, 0, 4200, 3200],
+    "presentationMapOffset": [300, 200],
+    "worldBounds": {"xMin": -1800, "xMax": 1800, "zMin": -1400, "zMax": 1400},
+    "worldOriginEngineeringSvg": [1800, 1400],
+    "worldOriginPresentationSvg": [2100, 1600],
+    "svgUnitsPerMeter": 1,
+    "roundTripToleranceMeters": 0.01
+  },
   "validationExpected": {
     "campusAreaKm2": 6.5128,
     "buildingAndMajorFacilityRecords": 204,
@@ -38,6 +56,9 @@
     "busStops": 22,
     "junctions": 20,
     "outdoorSportsRecords": 36,
-    "wallSegments": 4
-  }
+    "wallSegments": 4,
+    "engineeringSvgWidth": 3600,
+    "engineeringSvgHeight": 2800
+  },
+  "nextStep": "Step 3: generate the first deterministic SVG skeleton for external roads, campus boundary, perimeter wall, gates and access openings using the frozen coordinate module."
 }
