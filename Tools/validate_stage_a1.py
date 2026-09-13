@@ -18,6 +18,9 @@ required = [
     "iOSApp/Unity/University3D-Bridging-Header.h",
     "BuildScripts/bootstrap_ios_host.sh",
     "BuildScripts/stage_a1_prepare.sh",
+    "BuildScripts/stage_a1_vm_prepare.sh",
+    "BuildScripts/stage_a1_device_preflight.sh",
+    "BuildScripts/detect_macos_environment.sh",
     "Docs/Stage-A1-Acceptance.md",
 ]
 
@@ -49,6 +52,20 @@ project_version = (ROOT / "UnityProject/ProjectSettings/ProjectVersion.txt").rea
 if "6000.3.15f1" not in project_version:
     errors.append("Unity editor baseline must be 6000.3.15f1")
 
+acceptance = (ROOT / "Docs/Stage-A1-Acceptance.md").read_text(encoding="utf-8")
+for token in ["Stage A1-VM", "Stage A1-Device", "A1-VM PASS", "Stage A FINAL CLOSED"]:
+    if token not in acceptance:
+        errors.append(f"VM/Device acceptance contract missing token: {token}")
+
+prepare = (ROOT / "BuildScripts/stage_a1_prepare.sh").read_text(encoding="utf-8")
+if "STAGE_A1_MODE" not in prepare or "stage_a1_vm_prepare.sh" not in prepare:
+    errors.append("stage_a1_prepare.sh must use the VM-aware dispatcher")
+
+vm_prepare = (ROOT / "BuildScripts/stage_a1_vm_prepare.sh").read_text(encoding="utf-8")
+for token in ["-nographics", "CODE_SIGNING_ALLOWED=NO", "STAGE_A1_VM=PASS", "device_acceptance=DEFERRED"]:
+    if token not in vm_prepare:
+        errors.append(f"stage_a1_vm_prepare.sh missing required VM contract: {token}")
+
 if errors:
     print("STAGE_A1_STATIC=FAIL")
     for error in errors:
@@ -56,6 +73,8 @@ if errors:
     sys.exit(1)
 
 print("STAGE_A1_STATIC=PASS")
+print("acceptanceModel=A1-VM+A1-Device")
+print("sourcePatchVersion=PATCH-2026-09-12-R5")
 print("unity=6000.3.15f1")
 print("urp=17.3.0")
 print("addressables=2.7.6")
@@ -63,3 +82,4 @@ print("inputSystem=1.17.0")
 print("iosDeploymentTarget=17.0")
 print("graphicsAPI=Metal")
 print("scriptingBackend=IL2CPP")
+print("stageAClosureRequiresRealDevice=true")
