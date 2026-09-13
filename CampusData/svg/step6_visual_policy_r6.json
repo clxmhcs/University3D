@@ -22,78 +22,91 @@
   "buildingStyleGroups": {
     "engineering": {
       "prefixes": ["AERO-", "CE-", "CHE-", "EE-", "EPE-", "MAT-", "ME-", "NUC-", "SAF-", "TRA-"],
+      "explicitIDs": [],
       "fill": "#d8d4cb",
       "stroke": "#5f6261",
       "character": "rational / robust / structural"
     },
     "information": {
       "prefixes": ["AI-", "CSE-", "ECE-", "ICT-"],
+      "explicitIDs": [],
       "fill": "#d5dadd",
       "stroke": "#58666e",
       "character": "stone + glass + dark metal; modern but not sci-fi"
     },
     "science": {
-      "prefixes": ["CHM-", "ENV-", "GEO-", "LIFE-", "MATH-", "PHY-"],
+      "prefixes": ["CHM-", "ENV-", "GEO-", "MATH-", "PHY-"],
+      "explicitIDs": ["LIFE-01", "LIFE-02"],
       "fill": "#dddccf",
       "stroke": "#677065",
       "character": "quiet academic buildings integrated with natural landscape"
     },
     "humanities": {
       "prefixes": ["EDU-", "FLA-", "HUM-", "JRN-", "LAW-", "MARX-", "PSY-", "SOC-"],
+      "explicitIDs": [],
       "fill": "#d9cec2",
       "stroke": "#755f54",
       "character": "brick / stone / courtyard / colonnade"
     },
     "business": {
       "prefixes": ["BUS-", "ECO-", "FIN-", "GPA-", "IGS-"],
+      "explicitIDs": [],
       "fill": "#d8d3c8",
       "stroke": "#66645d",
       "character": "refined modern academic / business school"
     },
     "medical": {
       "prefixes": ["MED-", "PH-", "PHA-", "HSP-"],
+      "explicitIDs": [],
       "fill": "#ded8d3",
       "stroke": "#7b6660",
       "character": "clean, rational, light stone / glass / healing courtyards"
     },
     "art": {
       "prefixes": ["ART-"],
+      "explicitIDs": [],
       "fill": "#d9d3ce",
       "stroke": "#6e6267",
       "character": "free composition / sculpture / large voids"
     },
     "architecture": {
       "prefixes": ["ARC-"],
+      "explicitIDs": [],
       "fill": "#d8d2c7",
       "stroke": "#676159",
       "character": "model courts / geometric space / spatial experimentation"
     },
     "research": {
       "prefixes": ["RDI-", "NEE-"],
+      "explicitIDs": [],
       "fill": "#d2d7d6",
       "stroke": "#5e6868",
       "character": "university research park with restrained enterprise-modern language"
     },
     "central": {
       "prefixes": ["CEN-"],
+      "explicitIDs": [],
       "fill": "#d7cbb7",
       "stroke": "#6f6250",
       "character": "campus civic and landmark core"
     },
     "life": {
-      "prefixes": ["LIFE-"],
+      "prefixes": ["LIFE-C-", "LIFE-W-", "LIFE-N-", "LIFE-E-", "LIFE-S-"],
+      "explicitIDs": [],
       "fill": "#ded2bf",
       "stroke": "#756b5c",
       "character": "student life / dining / commercial"
     },
     "operations": {
       "prefixes": ["OPS-"],
+      "explicitIDs": [],
       "fill": "#d3d3cd",
       "stroke": "#6f7270",
       "character": "functional campus operations"
     },
     "sportsBuilding": {
       "prefixes": ["ATH-", "PE-"],
+      "explicitIDs": [],
       "fill": "#d5dbd0",
       "stroke": "#637063",
       "character": "large-span sports architecture"
