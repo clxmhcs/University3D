@@ -1,0 +1,875 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="4200" height="3200" viewBox="0 0 4200 3200" role="img" aria-labelledby="title desc">
+  <title id="title">江城大学总平面 R6 — Step 5</title>
+  <desc id="desc">R6外围骨架、R3当前有效内部道路、澄湖与R6水系、主要广场和开放空间。1米等于1 SVG user unit。</desc>
+  <metadata>sourcePatchVersion=PATCH-2026-09-13-R6; generator=Tools/generate_svg_step5.py; profile=presentation; step=5; coordinateConfig=CampusData/svg/svg_coordinate_system_r6.json; noRaster=true</metadata>
+  <defs>
+    <style>
+      .city-road { fill:none; stroke:#55585c; stroke-width:36; stroke-linecap:round; stroke-linejoin:round; }
+      .city-road-center { fill:none; stroke:#f5f3ee; stroke-width:1.5; stroke-dasharray:18 14; opacity:.7; }
+      .campus-fill { fill:#f4f1e8; stroke:#8e948e; stroke-width:3; stroke-linejoin:round; }
+      .wall { fill:none; stroke:#41464b; stroke-width:5; stroke-linecap:butt; stroke-linejoin:round; }
+      .access { fill:none; stroke:#7f8589; stroke-width:8; stroke-linecap:round; }
+      .gate { fill:#173A5E; stroke:#f4f1e8; stroke-width:3; }
+      .gate-public { fill:#C4A052; stroke:#f4f1e8; stroke-width:3; }
+      .internal-road { fill:none; stroke-linecap:round; stroke-linejoin:round; }
+      .primary-road { stroke:#757b80; }
+      .secondary-road { stroke:#93989c; }
+      .tertiary-road { stroke:#b1b5b8; }
+      .emergency-road { stroke:#a56b62; }
+      .event-road { stroke:#848c91; }
+      .transit-road { stroke:#607f91; stroke-dasharray:15 9; }
+      .pedbike-road { stroke:#6f8b72; stroke-dasharray:10 7; }
+      .road-center { fill:none; stroke:#fffdf8; stroke-width:1.2; opacity:.58; stroke-dasharray:12 10; }
+      .water-main { fill:#b7d9e8; stroke:#6f9fb5; stroke-width:3; }
+      .water-reference { fill:#c7e1eb; fill-opacity:.72; stroke:#78a9bc; stroke-width:2; stroke-dasharray:8 6; }
+      .stream { fill:none; stroke:#79abc0; stroke-width:10; stroke-linecap:round; stroke-linejoin:round; }
+      .stream-center { fill:none; stroke:#d9eef6; stroke-width:2; stroke-linecap:round; }
+      .island-marker { fill:#7d9a72; stroke:#f4f1e8; stroke-width:2; }
+      .square-marker { fill:#d9d1bf; fill-opacity:.65; stroke:#8f8778; stroke-width:2; }
+      .park-reference { fill:#cbdcc5; fill-opacity:.32; stroke:#78906f; stroke-width:2; stroke-dasharray:10 7; }
+      .lawn-envelope { fill:#dce8cf; fill-opacity:.5; stroke:#80956f; stroke-width:2; stroke-dasharray:12 7; }
+      .seasonal-path { fill:none; stroke:#9aaf7d; stroke-width:5; stroke-dasharray:10 8; stroke-linecap:round; }
+      .bus-stop { fill:#173A5E; stroke:#f4f1e8; stroke-width:1.5; }
+      .junction { fill:#faf8f1; stroke:#6c7378; stroke-width:1.5; }
+      .technical { font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans CJK SC",sans-serif; font-size:18px; fill:#2d3237; }
+      .road-name { font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans CJK SC",sans-serif; font-size:24px; font-weight:600; fill:#4d555a; letter-spacing:1px; }
+      .city-road-name { font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans CJK SC",sans-serif; font-size:28px; font-weight:600; fill:#30353a; letter-spacing:2px; }
+      .gate-name { font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans CJK SC",sans-serif; font-size:18px; font-weight:600; fill:#173A5E; }
+      .water-name { font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans CJK SC",sans-serif; font-size:20px; font-weight:600; fill:#416f83; }
+      .open-name { font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans CJK SC",sans-serif; font-size:17px; font-weight:600; fill:#596b52; }
+      .small-name { font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans CJK SC",sans-serif; font-size:14px; fill:#566168; }
+      .title { font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans CJK SC",sans-serif; font-size:42px; font-weight:700; fill:#173A5E; }
+      .subtitle { font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans CJK SC",sans-serif; font-size:19px; fill:#5a6065; }
+      .legend { font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans CJK SC",sans-serif; font-size:16px; fill:#3e4449; }
+
+      .building-footprint { stroke:#596067; stroke-width:2; }
+      .academic-building { fill:#ded8c9; }
+      .central-building { fill:#d9c8a8; stroke:#6f6250; stroke-width:2.5; }
+      .research-building { fill:#d0d7d9; }
+      .hospital-building { fill:#e2c8c4; stroke:#8a5751; stroke-width:2.5; }
+      .hospital-tower-overlay { fill:#c9948c; fill-opacity:.45; stroke:#793f38; stroke-width:3; stroke-dasharray:10 6; }
+      .life-building { fill:#e5d4bd; }
+      .ops-building { fill:#d1d1ca; }
+      .sports-building { fill:#d7ddd0; }
+      .residence-footprint { stroke:#7c715f; stroke-width:1.8; }
+      .residence-undergraduate { fill:#eadfcb; }
+      .residence-graduate { fill:#e2d5bf; }
+      .residence-international { fill:#d9cbb2; }
+      .residence-max-envelope { fill:none; stroke:#a89b87; stroke-width:1.3; stroke-dasharray:5 4; }
+      .sports-track { fill:#cda79a; stroke:#8d675d; stroke-width:3; rx:70; ry:70; }
+      .sports-infield { fill:#b8cda8; stroke:#f3eee5; stroke-width:2; rx:45; ry:45; }
+      .sports-plaza { fill:#ded8cf; stroke:#999188; stroke-width:2; }
+      .sports-stand { fill:#bbb8b0; stroke:#74716c; stroke-width:2; }
+      .sport-control { stroke-width:2; fill-opacity:.62; }
+      .sport-basketball { fill:#c8aa91; stroke:#96745b; }
+      .sport-table-tennis { fill:#bdcfb7; stroke:#78906f; }
+      .sport-tennis { fill:#b7c9a9; stroke:#718865; }
+      .sport-volleyball { fill:#d8c7a0; stroke:#9a865c; }
+      .sport-badminton { fill:#d4d5bc; stroke:#8d8e6c; }
+      .sport-football { fill:#aec8a0; stroke:#66815a; }
+      .sport-marker-only { fill:#C4A052; stroke:#715f38; stroke-width:2; }
+      .reserve-marker { fill:none; stroke:#9a755c; stroke-width:2; stroke-dasharray:5 4; }
+      .building-id, .residence-id, .sport-id, .poi-id { font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans CJK SC",sans-serif; fill:#4c5257; pointer-events:none; }
+      .building-id { font-size:10px; }
+      .hospital-id { fill:#6f3934; font-weight:700; }
+      .residence-id { font-size:8px; fill:#6f6557; }
+      .sport-id { font-size:9px; fill:#5f604c; }
+      .poi-id { font-size:12px; fill:#70543f; }
+    </style>
+  </defs>
+  <rect id="CanvasBackground" x="0" y="0" width="4200" height="3200" fill="#fbfaf6"/>
+  <text class="title" x="300" y="92">江城大学 · 总平面</text>
+  <text class="subtitle" x="300" y="126">PATCH-2026-09-13-R6 · Step 5 · 建筑 / 56栋住宿 / 体育设施</text>
+  <g id="01_CityRoads" data-layer="city-roads">
+    <polyline id="ROAD-CITY-SOUTH" class="city-road" points="575,2690 990,2738 2520,2745 3220,2685 3665,2465" data-width-m="36"/>
+    <polyline id="ROAD-CITY-SOUTH-CENTER" class="city-road-center" points="575,2690 990,2738 2520,2745 3220,2685 3665,2465"/>
+    <polyline id="ROAD-CITY-WEST" class="city-road" points="575,2690 490,2250 490,1080 590,755 1005,512" data-width-m="36"/>
+    <polyline id="ROAD-CITY-WEST-CENTER" class="city-road-center" points="575,2690 490,2250 490,1080 590,755 1005,512"/>
+    <polyline id="ROAD-CITY-NORTH" class="city-road" points="1005,512 1340,440 2300,420 3000,450 3540,632" data-width-m="36"/>
+    <polyline id="ROAD-CITY-NORTH-CENTER" class="city-road-center" points="1005,512 1340,440 2300,420 3000,450 3540,632"/>
+    <polyline id="ROAD-CITY-EAST" class="city-road" points="3540,632 3710,1080 3715,2220 3665,2465" data-width-m="36"/>
+    <polyline id="ROAD-CITY-EAST-CENTER" class="city-road-center" points="3540,632 3710,1080 3715,2220 3665,2465"/>
+  </g>
+  <g id="02_CampusBoundary" data-layer="campus-boundary">
+    <polygon id="CAMPUS-01-BOUNDARY" class="campus-fill" points="630,2630 1220,2700 1810,2710 2490,2690 3180,2630 3620,2430 3680,1840 3650,1160 3520,670 2980,500 2300,450 1610,470 1020,540 630,770 540,1310 550,1940" data-area-km2="6.513"/>
+  </g>
+  <g id="03_PerimeterWall" data-layer="perimeter-wall">
+    <polyline id="WALL-SOUTH-PART-01" class="wall" points="642,2615 1046.43,2663.98" data-source-wall="WALL-SOUTH"/>
+    <polyline id="WALL-SOUTH-PART-02" class="wall" points="1078.2,2667.83 1144.66,2675.88" data-source-wall="WALL-SOUTH"/>
+    <polyline id="WALL-SOUTH-PART-03" class="wall" points="1158.56,2677.56 1220,2685 2078.84,2678.24" data-source-wall="WALL-SOUTH"/>
+    <polyline id="WALL-SOUTH-PART-04" class="wall" points="2120.84,2677.91 2490,2675 3170,2615 3605,2415" data-source-wall="WALL-SOUTH"/>
+    <polyline id="WALL-WEST-PART-01" class="wall" points="642,2615 562,1940 559.3,1696.92" data-source-wall="WALL-WEST"/>
+    <polyline id="WALL-WEST-PART-02" class="wall" points="558.92,1662.92 555,1310 645,780 1025,555" data-source-wall="WALL-WEST"/>
+    <polyline id="WALL-NORTH-PART-01" class="wall" points="1025,555 1067.72,549.67" data-source-wall="WALL-NORTH"/>
+    <polyline id="WALL-NORTH-PART-02" class="wall" points="1095.51,546.2 1610,482 2079.29,468.4" data-source-wall="WALL-NORTH"/>
+    <polyline id="WALL-NORTH-PART-03" class="wall" points="2121.27,467.18 2300,462 2975,512 3510,680" data-source-wall="WALL-NORTH"/>
+    <polyline id="WALL-EAST-PART-01" class="wall" points="3510,680 3552.17,838.8" data-source-wall="WALL-EAST"/>
+    <polyline id="WALL-EAST-PART-02" class="wall" points="3560.38,869.73 3638,1162 3650.88,1463.16" data-source-wall="WALL-EAST"/>
+    <polyline id="WALL-EAST-PART-03" class="wall" points="3652.33,1497.13 3667,1840 3616.01,2312.89" data-source-wall="WALL-EAST"/>
+    <polyline id="WALL-EAST-PART-04" class="wall" points="3613.44,2336.75 3605,2415" data-source-wall="WALL-EAST"/>
+  </g>
+  <g id="04_Gates" data-layer="gates-and-social-interfaces">
+    <line id="ACCESS-GATE-SOUTH" class="access" x1="2100" y1="2698" x2="2099.84" y2="2678.07" data-opening-target="GATE-SOUTH" data-clear-width-m="42"/>
+    <circle id="GATE-SOUTH" class="gate" cx="2100" cy="2698" r="10" data-world-x="0" data-world-z="-1098"/>
+    <text class="gate-name" x="2114" y="2728">江城大学南门</text>
+    <line id="ACCESS-GATE-WEST" class="access" x1="552" y1="1680" x2="559.11" y2="1679.92" data-opening-target="GATE-WEST" data-clear-width-m="34"/>
+    <circle id="GATE-WEST" class="gate" cx="552" cy="1680" r="10" data-world-x="-1548" data-world-z="-80"/>
+    <text class="gate-name" x="566" y="1666">江城大学西门</text>
+    <line id="ACCESS-GATE-NORTH" class="access" x1="2100" y1="458" x2="2100.28" y2="467.79" data-opening-target="GATE-NORTH" data-clear-width-m="42"/>
+    <circle id="GATE-NORTH" class="gate" cx="2100" cy="458" r="10" data-world-x="0" data-world-z="1142"/>
+    <text class="gate-name" x="2114" y="440">江城大学北门</text>
+    <line id="ACCESS-GATE-EAST" class="access" x1="3655" y1="1480" x2="3651.61" y2="1480.15" data-opening-target="GATE-EAST" data-clear-width-m="34"/>
+    <circle id="GATE-EAST" class="gate" cx="3655" cy="1480" r="10" data-world-x="1555" data-world-z="120"/>
+    <text class="gate-name" x="3475" y="1466">江城大学东门</text>
+    <line id="ACCESS-GATE-SERVICE-SE" class="access" x1="3570" y1="2320" x2="3614.72" y2="2324.82" data-opening-target="GATE-SERVICE-SE" data-clear-width-m="24"/>
+    <circle id="GATE-SERVICE-SE" class="gate" cx="3570" cy="2320" r="10" data-world-x="1470" data-world-z="-720"/>
+    <text class="gate-name" x="3584" y="2306">东南后勤门</text>
+    <line id="ACCESS-ENT-HSP-SOCIAL" class="access" x1="1060" y1="2685" x2="1062.31" y2="2665.9" data-opening-target="ENT-HSP-SOCIAL" data-clear-width-m="32"/>
+    <circle id="ENT-HSP-SOCIAL" class="gate-public" cx="1060" cy="2685" r="10" data-world-x="-1040" data-world-z="-1085"/>
+    <text class="gate-name" x="1074" y="2671">附属医院社会入口</text>
+    <line id="ACCESS-ENT-HSP-EMERGENCY-CITY" class="access" x1="1150" y1="2690" x2="1151.61" y2="2676.72" data-opening-target="ENT-HSP-EMERGENCY-CITY" data-clear-width-m="14"/>
+    <circle id="ENT-HSP-EMERGENCY-CITY" class="gate-public" cx="1150" cy="2690" r="10" data-world-x="-950" data-world-z="-1090"/>
+    <text class="gate-name" x="1164" y="2676">医院急救专用入口</text>
+    <line id="ACCESS-ENT-THEATER-PUBLIC" class="access" x1="3610" y1="840" x2="3556.28" y2="854.27" data-opening-target="ENT-THEATER-PUBLIC" data-clear-width-m="32"/>
+    <circle id="ENT-THEATER-PUBLIC" class="gate-public" cx="3610" cy="840" r="10" data-world-x="1510" data-world-z="760"/>
+    <text class="gate-name" x="3624" y="826">戏剧表演中心社会入口</text>
+    <line id="ACCESS-ENT-RDI-VISITOR" class="access" x1="1080" y1="535" x2="1081.61" y2="547.94" data-opening-target="ENT-RDI-VISITOR" data-clear-width-m="28"/>
+    <circle id="ENT-RDI-VISITOR" class="gate-public" cx="1080" cy="535" r="10" data-world-x="-1020" data-world-z="1065"/>
+    <text class="gate-name" x="1094" y="521">科研科技园访客入口</text>
+  </g>
+  <g id="05_InternalRoads" data-layer="internal-roads">
+    <polyline id="ROAD-BOYA-RING" class="internal-road primary-road" points="1270,2200 1270,1960 1300,1900 1240,1670 1230,1660 1220,1650 1220,1510 1250,1480 1300,1380 1300,1300 1300,700 1300,570 1310,560 1400,520 1870,510 2100,510 2950,540 3130,980 3140,1600 3140,1920 2990,1890 2960,1900 2900,2030 2900,2200 2950,2300 2930,2370 2920,2380 2840,2370 2780,2310 2400,2310 2100,2450 1450,2350 1400,2370 1340,2370 1270,2370 1270,2200" stroke-width="26" data-class="primary" data-width-m="26" data-geometry-source="source:centerlineXZ"/>
+    <polyline id="ROAD-BOYA-RING-CENTER" class="road-center" points="1270,2200 1270,1960 1300,1900 1240,1670 1230,1660 1220,1650 1220,1510 1250,1480 1300,1380 1300,1300 1300,700 1300,570 1310,560 1400,520 1870,510 2100,510 2950,540 3130,980 3140,1600 3140,1920 2990,1890 2960,1900 2900,2030 2900,2200 2950,2300 2930,2370 2920,2380 2840,2370 2780,2310 2400,2310 2100,2450 1450,2350 1400,2370 1340,2370 1270,2370 1270,2200"/>
+    <polyline id="ROAD-ZHICHUANG" class="internal-road secondary-road" points="780,1720 950,1700 1100,1670 1220,1650" stroke-width="18" data-class="secondary" data-width-m="18" data-geometry-source="source:centerlineXZ"/>
+    <polyline id="ROAD-ZHICHUANG-CENTER" class="road-center" points="780,1720 950,1700 1100,1670 1220,1650"/>
+    <polyline id="ROAD-JIANGXIN" class="internal-road secondary-road" points="1070,1670 1070,1195 1100,1165 1100,1100 1130,1065 1130,1030 1110,1005 1110,985 1070,900" stroke-width="18" data-class="secondary" data-width-m="18" data-geometry-source="source:centerlineXZ"/>
+    <polyline id="ROAD-JIANGXIN-CENTER" class="road-center" points="1070,1670 1070,1195 1100,1165 1100,1100 1130,1065 1130,1030 1110,1005 1110,985 1070,900"/>
+    <polyline id="ROAD-JIANGXIN-S" class="internal-road secondary-road" points="1070,1670 1150,1670 1220,1650" stroke-width="18" data-class="secondary" data-width-m="18" data-geometry-source="source:centerlineXZ"/>
+    <polyline id="ROAD-JIANGXIN-S-CENTER" class="road-center" points="1070,1670 1150,1670 1220,1650"/>
+    <polyline id="ROAD-JIANGXIN-N" class="internal-road tertiary-road" points="1070,900 1225,745 1230,700 1300,700" stroke-width="14" data-class="tertiary" data-width-m="14" data-geometry-source="source:centerlineXZ"/>
+    <polyline id="ROAD-JIANGXIN-N-CENTER" class="road-center" points="1070,900 1225,745 1230,700 1300,700"/>
+    <polyline id="ROAD-GEZHI-W" class="internal-road secondary-road" points="1300,1090 1415,1090 1425,1100 1600,1100 1610,1090 1650,1090" stroke-width="18" data-class="secondary" data-width-m="18" data-geometry-source="source:centerlineXZ"/>
+    <polyline id="ROAD-GEZHI-W-CENTER" class="road-center" points="1300,1090 1415,1090 1425,1100 1600,1100 1610,1090 1650,1090"/>
+    <polyline id="ROAD-GEZHI" class="internal-road secondary-road" points="1650,1090 1695,1100 2320,1095 2485,1150 2635,1130 2700,1100" stroke-width="18" data-class="secondary" data-width-m="18" data-geometry-source="source:centerlineXZ"/>
+    <polyline id="ROAD-GEZHI-CENTER" class="road-center" points="1650,1090 1695,1100 2320,1095 2485,1150 2635,1130 2700,1100"/>
+    <polyline id="ROAD-GEZHI-E" class="internal-road secondary-road" points="2700,1100 2995,1100 3015,1110 3160,1110 3180,1120" stroke-width="18" data-class="secondary" data-width-m="18" data-geometry-source="source:centerlineXZ"/>
+    <polyline id="ROAD-GEZHI-E-CENTER" class="road-center" points="2700,1100 2995,1100 3015,1110 3160,1110 3180,1120"/>
+    <polyline id="ROAD-WENHUA" class="internal-road secondary-road" points="3180,1900 3160,1650 3150,1380 3180,1120 3220,980" stroke-width="18" data-class="secondary" data-width-m="18" data-geometry-source="source:centerlineXZ"/>
+    <polyline id="ROAD-WENHUA-CENTER" class="road-center" points="3180,1900 3160,1650 3150,1380 3180,1120 3220,980"/>
+    <polyline id="ROAD-CHUANGXIN" class="internal-road secondary-road" points="730,840 810,805 970,805 1070,695 1500,670" stroke-width="18" data-class="secondary" data-width-m="18" data-geometry-source="source:centerlineXZ"/>
+    <polyline id="ROAD-CHUANGXIN-CENTER" class="road-center" points="730,840 810,805 970,805 1070,695 1500,670"/>
+    <polyline id="ROAD-CHUANGXIN-E" class="internal-road secondary-road" points="1500,670 1300,700" stroke-width="18" data-class="secondary" data-width-m="18" data-geometry-source="source:centerlineXZ"/>
+    <polyline id="ROAD-CHUANGXIN-E-CENTER" class="road-center" points="1500,670 1300,700"/>
+    <polyline id="ROAD-CHUANGXIN-W" class="internal-road secondary-road" points="630,840 700,800 730,840" stroke-width="18" data-class="secondary" data-width-m="18" data-geometry-source="source:centerlineXZ"/>
+    <polyline id="ROAD-CHUANGXIN-W-CENTER" class="road-center" points="630,840 700,800 730,840"/>
+    <polyline id="ROAD-JISHI" class="internal-road secondary-road" points="750,2370 900,2370 1050,2370 1200,2370 1270,2370" stroke-width="20" data-class="secondary" data-width-m="20" data-geometry-source="source:centerlineXZ"/>
+    <polyline id="ROAD-JISHI-CENTER" class="road-center" points="750,2370 900,2370 1050,2370 1200,2370 1270,2370"/>
+    <polyline id="ROAD-HOSP-EMG" class="internal-road emergency-road" points="1150,2685 1150,2520 1150,2380 1150,2370" stroke-width="8" data-class="emergency" data-width-m="8" data-geometry-source="source:centerlineXZ"/>
+    <polyline id="ROAD-HOSP-EMG-CENTER" class="road-center" points="1150,2685 1150,2520 1150,2380 1150,2370"/>
+    <polyline id="ROAD-JIANXING" class="internal-road event-road" points="2100,458 2100,510 2100,535" stroke-width="22" data-class="event_access" data-width-m="22" data-geometry-source="source:centerlineXZ"/>
+    <polyline id="ROAD-JIANXING-CENTER" class="road-center" points="2100,458 2100,510 2100,535"/>
+    <polyline id="ROAD-QINGNIAN-W" class="internal-road secondary-road" points="600,1480 590,1350 590,1100 630,840" stroke-width="18" data-class="secondary" data-width-m="18" data-geometry-source="source:centerlineXZ"/>
+    <polyline id="ROAD-QINGNIAN-W-CENTER" class="road-center" points="600,1480 590,1350 590,1100 630,840"/>
+    <polyline id="ROAD-QINGNIAN-W-FEED" class="internal-road secondary-road" points="600,1500 605,1540 680,1615 695,1615 765,1685 780,1720" stroke-width="18" data-class="secondary" data-width-m="18" data-geometry-source="source:centerlineXZ"/>
+    <polyline id="ROAD-QINGNIAN-W-FEED-CENTER" class="road-center" points="600,1500 605,1540 680,1615 695,1615 765,1685 780,1720"/>
+    <polyline id="ROAD-QINGNIAN-NW" class="internal-road tertiary-road" points="1770,510 1770,640 1770,760" stroke-width="14" data-class="tertiary" data-width-m="14" data-geometry-source="source:centerlineXZ"/>
+    <polyline id="ROAD-QINGNIAN-NW-CENTER" class="road-center" points="1770,510 1770,640 1770,760"/>
+    <polyline id="ROAD-QINGNIAN-NE" class="internal-road tertiary-road" points="3000,540 3000,640 3000,750" stroke-width="14" data-class="tertiary" data-width-m="14" data-geometry-source="source:centerlineXZ"/>
+    <polyline id="ROAD-QINGNIAN-NE-CENTER" class="road-center" points="3000,540 3000,640 3000,750"/>
+    <polyline id="ROAD-QINGNIAN-E" class="internal-road secondary-road" points="3600,1900 3610,1700 3610,1480 3600,1260" stroke-width="18" data-class="secondary" data-width-m="18" data-geometry-source="source:centerlineXZ"/>
+    <polyline id="ROAD-QINGNIAN-E-CENTER" class="road-center" points="3600,1900 3610,1700 3610,1480 3600,1260"/>
+    <polyline id="ROAD-QINGNIAN-E-FEED" class="internal-road secondary-road" points="3170,1250 3300,1250 3500,1250 3600,1260" stroke-width="18" data-class="secondary" data-width-m="18" data-geometry-source="source:centerlineXZ"/>
+    <polyline id="ROAD-QINGNIAN-E-FEED-CENTER" class="road-center" points="3170,1250 3300,1250 3500,1250 3600,1260"/>
+    <polyline id="ROAD-EAST-GATE" class="internal-road tertiary-road" points="3610,1480 3655,1480" stroke-width="14" data-class="tertiary" data-width-m="14" data-geometry-source="source:centerlineXZ"/>
+    <polyline id="ROAD-EAST-GATE-CENTER" class="road-center" points="3610,1480 3655,1480"/>
+    <polyline id="ROAD-QINGNIAN-S" class="internal-road secondary-road" points="2320,2640 2600,2640 2900,2640 3020,2600" stroke-width="18" data-class="secondary" data-width-m="18" data-geometry-source="source:centerlineXZ"/>
+    <polyline id="ROAD-QINGNIAN-S-CENTER" class="road-center" points="2320,2640 2600,2640 2900,2640 3020,2600"/>
+    <polyline id="ROAD-QINGNIAN-S-W" class="internal-road secondary-road" points="2320,2640 2280,2580 2220,2520 2100,2450" stroke-width="18" data-class="secondary" data-width-m="18" data-geometry-source="source:centerlineXZ"/>
+    <polyline id="ROAD-QINGNIAN-S-W-CENTER" class="road-center" points="2320,2640 2280,2580 2220,2520 2100,2450"/>
+    <polyline id="ROAD-QINGNIAN-S-E" class="internal-road secondary-road" points="3020,2600 2990,2570 2965,2570 2955,2560 2955,2480 2930,2455 2930,2370" stroke-width="18" data-class="secondary" data-width-m="18" data-geometry-source="source:centerlineXZ"/>
+    <polyline id="ROAD-QINGNIAN-S-E-CENTER" class="road-center" points="3020,2600 2990,2570 2965,2570 2955,2560 2955,2480 2930,2455 2930,2370"/>
+    <polyline id="ROAD-TRANSIT-D" class="internal-road transit-road" points="1220,1650 1230,1545 1345,1545 1370,1570 1400,1570 1485,1655 3020,1655 3140,1600" stroke-width="14" data-class="transit_only" data-width-m="14" data-geometry-source="source:centerlineXZ"/>
+    <polyline id="ROAD-TRANSIT-C" class="internal-road transit-road" points="2600,2640 2560,2600 2505,2600 2420,2515 2420,2505 2405,2490 2385,2490 2280,2385 2270,2355 2235,2320 2235,2280 2220,2250 2220,1520 2250,1490 2275,1490 2415,1420 2480,1325 2480,1265 2460,1225 2325,1085 2305,1075 2305,965 2275,900 2220,775 2220,730 2190,700 2190,545 2150,535 2100,510" stroke-width="14" data-class="transit_only" data-width-m="14" data-geometry-source="source:centerlineXZ"/>
+    <polyline id="PATH-CHENGHU" class="internal-road pedbike-road" points="1776.11,1358.99 1843.54,1465.76 1985.36,1514.85 2131.33,1520.06 2277.16,1499.23 2416.74,1434.81 2491.58,1325.42 2467.58,1205.4 2350.92,1122.08 2197.56,1079.77 2039.89,1090.28 1877.6,1147.87 1758.06,1244.65 1776.11,1358.99" stroke-width="6" data-class="ped_bike" data-width-m="6" data-geometry-source="derived:WATER-LAKE-01 shoreline outward 25m"/>
+    <circle id="BUSSTOP-SOUTH-GATE" class="bus-stop" cx="2100" cy="2450" r="5" data-lines="A,B,C"/>
+    <circle id="BUSSTOP-SOUTH-LIFE" class="bus-stop" cx="2600" cy="2640" r="5" data-lines="C"/>
+    <circle id="BUSSTOP-CENTRAL-S" class="bus-stop" cx="2220" cy="2250" r="5" data-lines="C"/>
+    <circle id="BUSSTOP-LIBRARY" class="bus-stop" cx="2220" cy="1655" r="5" data-lines="C,D"/>
+    <circle id="BUSSTOP-SCIENCE" class="bus-stop" cx="2305" cy="965" r="5" data-lines="C"/>
+    <circle id="BUSSTOP-NORTH-LIFE" class="bus-stop" cx="2190" cy="650" r="5" data-lines="C"/>
+    <circle id="BUSSTOP-NORTH-SPORT" class="bus-stop" cx="2100" cy="510" r="5" data-lines="A,B,C"/>
+    <circle id="BUSSTOP-WEST-LIFE" class="bus-stop" cx="600" cy="1500" r="5" data-lines="D"/>
+    <circle id="BUSSTOP-INFO-W" class="bus-stop" cx="780" cy="1720" r="5" data-lines="D"/>
+    <circle id="BUSSTOP-INFO" class="bus-stop" cx="1220" cy="1650" r="5" data-lines="A,B,D"/>
+    <circle id="BUSSTOP-CENTRAL-W" class="bus-stop" cx="1485" cy="1655" r="5" data-lines="D"/>
+    <circle id="BUSSTOP-HUM-BUS" class="bus-stop" cx="2750" cy="1655" r="5" data-lines="D"/>
+    <circle id="BUSSTOP-EAST-LIFE" class="bus-stop" cx="3020" cy="1655" r="5" data-lines="D"/>
+    <circle id="BUSSTOP-MED" class="bus-stop" cx="1270" cy="2200" r="5" data-lines="A,B"/>
+    <circle id="BUSSTOP-MED-S" class="bus-stop" cx="1340" cy="2370" r="5" data-lines="A,B"/>
+    <circle id="BUSSTOP-ENG" class="bus-stop" cx="1300" cy="1090" r="5" data-lines="A,B"/>
+    <circle id="BUSSTOP-RDI" class="bus-stop" cx="1300" cy="700" r="5" data-lines="A,B"/>
+    <circle id="BUSSTOP-NE" class="bus-stop" cx="2950" cy="540" r="5" data-lines="A,B"/>
+    <circle id="BUSSTOP-ART" class="bus-stop" cx="3130" cy="980" r="5" data-lines="A,B"/>
+    <circle id="BUSSTOP-HUM" class="bus-stop" cx="3140" cy="1300" r="5" data-lines="A,B"/>
+    <circle id="BUSSTOP-SE-SPORT" class="bus-stop" cx="2900" cy="2200" r="5" data-lines="A,B"/>
+    <circle id="BUSSTOP-SOUTH-E" class="bus-stop" cx="2840" cy="2370" r="5" data-lines="A,B"/>
+    <circle id="JCT-01" class="junction" cx="2100" cy="2450" r="3.5"/>
+    <circle id="JCT-02" class="junction" cx="2930" cy="2370" r="3.5"/>
+    <circle id="JCT-03" class="junction" cx="2900" cy="2200" r="3.5"/>
+    <circle id="JCT-04" class="junction" cx="3140" cy="1900" r="3.5"/>
+    <circle id="JCT-05" class="junction" cx="3140" cy="1600" r="3.5"/>
+    <circle id="JCT-06" class="junction" cx="3170" cy="1250" r="3.5"/>
+    <circle id="JCT-07" class="junction" cx="3130" cy="980" r="3.5"/>
+    <circle id="JCT-08" class="junction" cx="2950" cy="540" r="3.5"/>
+    <circle id="JCT-09" class="junction" cx="2100" cy="510" r="3.5"/>
+    <circle id="JCT-10" class="junction" cx="1300" cy="700" r="3.5"/>
+    <circle id="JCT-11" class="junction" cx="1300" cy="1090" r="3.5"/>
+    <circle id="JCT-12" class="junction" cx="1300" cy="1300" r="3.5"/>
+    <circle id="JCT-13" class="junction" cx="1220" cy="1650" r="3.5"/>
+    <circle id="JCT-14" class="junction" cx="1270" cy="2200" r="3.5"/>
+    <circle id="JCT-15" class="junction" cx="1270" cy="2370" r="3.5"/>
+    <circle id="JCT-16" class="junction" cx="1450" cy="2350" r="3.5"/>
+    <circle id="JCT-17" class="junction" cx="2220" cy="1655" r="3.5"/>
+    <circle id="JCT-18" class="junction" cx="780" cy="1720" r="3.5"/>
+    <circle id="JCT-19" class="junction" cx="730" cy="840" r="3.5"/>
+    <circle id="JCT-20" class="junction" cx="3610" cy="1480" r="3.5"/>
+  </g>
+  <g id="06_Water" data-layer="water">
+    <polygon id="WATER-LAKE-01" class="water-main" points="1800,1350 1860,1445 1990,1490 2130,1495 2270,1475 2400,1415 2465,1320 2445,1220 2340,1145 2195,1105 2045,1115 1890,1170 1785,1255" data-water-level-y="94" data-area-m2="204000" data-geometry="exact-shoreline"/>
+    <circle id="WATER-LAKE-01-MAIN-ISLAND-CENTER" class="island-marker" cx="2145" cy="1275" r="6" data-area-ha-range="0.6-0.8" data-geometry="center-marker-only"/>
+    <circle id="WATER-LAKE-ZHIYUAN" class="water-reference" cx="2490" cy="1010" r="53.52" data-area-m2="9000" data-water-level-y="105.5" data-geometry="area-equivalent-reference-circle"/>
+    <circle id="WATER-POND-JIANGXIN" class="water-reference" cx="1070" cy="1055" r="37.85" data-area-m2="4500" data-water-level-y="109" data-geometry="area-equivalent-reference-circle"/>
+    <circle id="WATER-POND-GEWU" class="water-reference" cx="2490" cy="1100" r="39.89" data-area-m2="5000" data-water-level-y="103" data-geometry="area-equivalent-reference-circle"/>
+    <circle id="WATER-FOUNTAIN-ZHIQUAN" class="water-reference" cx="1320" cy="1620" r="33.38" data-area-m2="3500" data-water-level-y="104" data-geometry="area-equivalent-reference-circle"/>
+    <circle id="WATER-POND-HEFENG" class="water-reference" cx="3030" cy="1060" r="43.7" data-area-m2="6000" data-water-level-y="104" data-geometry="area-equivalent-reference-circle"/>
+    <circle id="WATER-POND-XINGLIN" class="water-reference" cx="1120" cy="2300" r="41.84" data-area-m2="5500" data-water-level-y="101" data-geometry="area-equivalent-reference-circle"/>
+    <circle id="WATER-POND-YILAN" class="water-reference" cx="3180" cy="900" r="37.85" data-area-m2="4500" data-water-level-y="108" data-geometry="area-equivalent-reference-circle"/>
+    <circle id="WATER-POND-WEST" class="water-reference" cx="720" cy="1125" r="33.38" data-area-m2="3500" data-water-level-y="107" data-geometry="area-equivalent-reference-circle"/>
+    <circle id="WATER-POND-EAST" class="water-reference" cx="3420" cy="1480" r="30.9" data-area-m2="3000" data-water-level-y="103" data-geometry="area-equivalent-reference-circle"/>
+    <circle id="WATER-POND-SOUTH" class="water-reference" cx="2700" cy="2400" r="35.68" data-area-m2="4000" data-water-level-y="101" data-geometry="area-equivalent-reference-circle"/>
+    <polyline id="WATER-STREAM-MAIN-NORTH" class="stream" points="2420,580 2440,640 2450,700 2450,780 2460,860 2490,950 2490,1010 2480,1070 2440,1130 2400,1180" data-visible-length-km="2.18"/>
+    <polyline id="WATER-STREAM-MAIN-NORTH-CENTER" class="stream-center" points="2420,580 2440,640 2450,700 2450,780 2460,860 2490,950 2490,1010 2480,1070 2440,1130 2400,1180"/>
+    <polyline id="WATER-STREAM-MAIN-SOUTHEAST" class="stream" points="2480,1420 2495,1570 2680,1710 2730,1710 2860,1885 3035,1885 3120,1970 3235,1970 3290,2025 3295,2130 3360,2205 3360,2330 3395,2345" data-visible-length-km="2.18"/>
+    <polyline id="WATER-STREAM-MAIN-SOUTHEAST-CENTER" class="stream-center" points="2480,1420 2495,1570 2680,1710 2730,1710 2860,1885 3035,1885 3120,1970 3235,1970 3290,2025 3295,2130 3360,2205 3360,2330 3395,2345"/>
+  </g>
+  <g id="07_Landscape" data-layer="major-open-space">
+    <rect id="SQUARE-01" class="square-marker" x="2092" y="2572" width="16" height="16" transform="rotate(45 2100 2580)" data-name="迎宾广场" data-geometry="center-marker-only"/>
+    <rect id="SQUARE-02" class="square-marker" x="2092" y="2272" width="16" height="16" transform="rotate(45 2100 2280)" data-name="明德广场" data-geometry="center-marker-only"/>
+    <rect id="SQUARE-03" class="square-marker" x="2092" y="1892" width="16" height="16" transform="rotate(45 2100 1900)" data-name="求真广场" data-geometry="center-marker-only"/>
+    <rect id="SQUARE-04" class="square-marker" x="2092" y="492" width="16" height="16" transform="rotate(45 2100 500)" data-name="健行广场" data-geometry="center-marker-only"/>
+    <rect id="SQUARE-05" class="square-marker" x="3552" y="832" width="16" height="16" transform="rotate(45 3560 840)" data-name="艺境广场" data-geometry="center-marker-only"/>
+    <rect id="SQUARE-06" class="square-marker" x="602" y="1672" width="16" height="16" transform="rotate(45 610 1680)" data-name="法治广场" data-geometry="center-marker-only"/>
+    <rect id="SQUARE-07" class="square-marker" x="1052" y="2632" width="16" height="16" transform="rotate(45 1060 2640)" data-name="仁心广场" data-geometry="center-marker-only"/>
+    <circle id="PARK-01" class="park-reference" cx="1270" cy="840" r="178.41" data-name="格物园" data-area-ha="10" data-geometry="area-equivalent-reference-circle"/>
+    <circle id="PARK-02" class="park-reference" cx="2950" cy="1170" r="159.58" data-name="文心园" data-area-ha="8" data-geometry="area-equivalent-reference-circle"/>
+    <circle id="PARK-03" class="park-reference" cx="1120" cy="2250" r="149.27" data-name="杏林园" data-area-ha="7" data-geometry="area-equivalent-reference-circle"/>
+    <circle id="PARK-04" class="park-reference" cx="3230" cy="840" r="169.26" data-name="艺境园" data-area-ha="9" data-geometry="area-equivalent-reference-circle"/>
+    <rect id="PARK-05" class="park-reference" x="1850" y="470" width="600" height="110" data-name="松风林" data-geometry="source-control-range"/>
+    <rect id="POI-BOYA-LAWN" class="lawn-envelope" x="1880" y="1510" width="440" height="170" data-area-ha-range="5-7" data-geometry="source-control-envelope"/>
+    <polyline id="PATH-CHUNHUA" class="seasonal-path" points="2720,1240 2860,1170 3000,1090 3150,1010 3260,920" data-name="春华路" data-alias="樱花大道"/>
+    <polyline id="PATH-QIUSHI" class="seasonal-path" points="1980,1920 1800,1780 1620,1580 1480,1380 1400,1180" data-name="秋实路" data-alias="银杏大道"/>
+  </g>
+  <g id="08_Buildings" data-layer="buildings">
+    <rect id="AERO-01" class="building-footprint academic-building" x="842" y="932" width="96" height="36" transform="rotate(90 890 950)" data-name="航空楼" data-world-x="-1210" data-world-z="650" data-length-m="96" data-width-m="36" data-rotation-y="90" data-floors="6" data-source="第17项总平面"/>
+    <rect id="AERO-02" class="building-footprint academic-building" x="962" y="942" width="96" height="36" transform="rotate(90 1010 960)" data-name="航天楼" data-world-x="-1090" data-world-z="640" data-length-m="96" data-width-m="36" data-rotation-y="90" data-floors="6" data-source="PATCH-2026-09-13-R6"/>
+    <rect id="AERO-03" class="building-footprint academic-building" x="890" y="1022" width="120" height="56" transform="rotate(90 950 1050)" data-name="航空航天实验中心" data-world-x="-1150" data-world-z="550" data-length-m="120" data-width-m="56" data-rotation-y="90" data-floors="4" data-source="第17项总平面"/>
+    <rect id="AI-01" class="building-footprint academic-building" x="1592" y="1502" width="96" height="36" transform="rotate(90 1640 1520)" data-name="AI学院楼" data-world-x="-460" data-world-z="80" data-length-m="96" data-width-m="36" data-rotation-y="90" data-floors="7" data-source="PATCH-2026-09-13-R6"/>
+    <rect id="AI-02" class="building-footprint academic-building" x="1665" y="1577" width="90" height="46" transform="rotate(90 1710 1600)" data-name="AI实验中心" data-world-x="-390" data-world-z="0" data-length-m="90" data-width-m="46" data-rotation-y="90" data-floors="5" data-source="第17项总平面"/>
+    <rect id="ARC-01" class="building-footprint academic-building" x="1342" y="933" width="96" height="34" transform="rotate(90 1390 950)" data-name="建筑学院A馆" data-world-x="-710" data-world-z="650" data-length-m="96" data-width-m="34" data-rotation-y="90" data-floors="6" data-source="第17项总平面"/>
+    <rect id="ARC-02" class="building-footprint academic-building" x="1469" y="935" width="82" height="30" transform="rotate(90 1510 950)" data-name="建筑学院B馆" data-world-x="-590" data-world-z="650" data-length-m="82" data-width-m="30" data-rotation-y="90" data-floors="5" data-source="第17项总平面"/>
+    <rect id="ARC-03" class="building-footprint academic-building" x="1414" y="1029" width="72" height="42" transform="rotate(90 1450 1050)" data-name="设计与模型实验中心" data-world-x="-650" data-world-z="550" data-length-m="72" data-width-m="42" data-rotation-y="90" data-floors="3" data-source="第17项总平面"/>
+    <rect id="ART-01" class="building-footprint academic-building" x="3159" y="720" width="102" height="40" transform="rotate(270 3210 740)" data-name="艺术学院主楼" data-world-x="1110" data-world-z="860" data-length-m="102" data-width-m="40" data-rotation-y="270" data-floors="6" data-source="第17项总平面"/>
+    <rect id="ART-02" class="building-footprint academic-building" x="3319" y="649" width="82" height="42" transform="rotate(270 3360 670)" data-name="美术馆" data-world-x="1260" data-world-z="930" data-length-m="82" data-width-m="42" data-rotation-y="270" data-floors="4" data-source="第17项总平面"/>
+    <rect id="ART-03" class="building-footprint academic-building" x="3424" y="794" width="132" height="92" transform="rotate(90 3490 840)" data-name="戏剧表演中心" data-world-x="1390" data-world-z="760" data-length-m="132" data-width-m="92" data-rotation-y="90" data-floors="4" data-source="第17项总平面"/>
+    <rect id="ART-04" class="building-footprint academic-building" x="3284" y="821" width="72" height="38" transform="rotate(90 3320 840)" data-name="表演中心附属排练楼" data-world-x="1220" data-world-z="760" data-length-m="72" data-width-m="38" data-rotation-y="90" data-floors="4" data-source="第17项总平面"/>
+    <rect id="ATH-01" class="building-footprint sports-building" x="2020" y="550" width="160" height="120" transform="rotate(0 2100 610)" data-name="综合体育馆" data-world-x="0" data-world-z="990" data-length-m="160" data-width-m="120" data-rotation-y="0" data-floors="" data-source="第17项总平面"/>
+    <rect id="ATH-03" class="building-footprint sports-building" x="1789" y="659" width="122" height="82" transform="rotate(0 1850 700)" data-name="游泳馆" data-world-x="-250" data-world-z="900" data-length-m="122" data-width-m="82" data-rotation-y="0" data-floors="3" data-source="第17项总平面"/>
+    <rect id="ATH-04" class="building-footprint sports-building" x="2294" y="662" width="112" height="76" transform="rotate(0 2350 700)" data-name="体育训练馆" data-world-x="250" data-world-z="900" data-length-m="112" data-width-m="76" data-rotation-y="0" data-floors="3" data-source="第17项总平面"/>
+    <rect id="ATH-13" class="building-footprint sports-building" x="3334" y="2105" width="72" height="30" transform="rotate(270 3370 2120)" data-name="体育服务楼" data-world-x="1270" data-world-z="-520" data-length-m="72" data-width-m="30" data-rotation-y="270" data-floors="3" data-source="第17项总平面"/>
+    <rect id="BUS-01" class="building-footprint academic-building" x="2812" y="1762" width="96" height="36" transform="rotate(270 2860 1780)" data-name="管理学院A楼" data-world-x="760" data-world-z="-180" data-length-m="96" data-width-m="36" data-rotation-y="270" data-floors="7" data-source="第17项总平面"/>
+    <rect id="BUS-02" class="building-footprint academic-building" x="2957" y="1764" width="86" height="32" transform="rotate(270 3000 1780)" data-name="管理学院B楼" data-world-x="900" data-world-z="-180" data-length-m="86" data-width-m="32" data-rotation-y="270" data-floors="6" data-source="第17项总平面"/>
+    <rect id="CE-01" class="building-footprint academic-building" x="1090" y="932" width="100" height="36" transform="rotate(90 1140 950)" data-name="土木A楼" data-world-x="-960" data-world-z="650" data-length-m="100" data-width-m="36" data-rotation-y="90" data-floors="7" data-source="第17项总平面"/>
+    <rect id="CE-02" class="building-footprint academic-building" x="1214" y="933" width="92" height="34" transform="rotate(90 1260 950)" data-name="土木B楼" data-world-x="-840" data-world-z="650" data-length-m="92" data-width-m="34" data-rotation-y="90" data-floors="6" data-source="第17项总平面"/>
+    <rect id="CE-03" class="building-footprint academic-building" x="1154" y="1027" width="92" height="46" transform="rotate(90 1200 1050)" data-name="水利工程实验中心" data-world-x="-900" data-world-z="550" data-length-m="92" data-width-m="46" data-rotation-y="90" data-floors="4" data-source="第17项总平面"/>
+    <rect id="CEN-01" class="building-footprint central-building" x="2025" y="1725" width="150" height="70" transform="rotate(180 2100 1760)" data-name="主图书馆" data-world-x="0" data-world-z="-160" data-length-m="150" data-width-m="70" data-rotation-y="180" data-floors="8" data-source="第17项总平面"/>
+    <rect id="CEN-02" class="building-footprint central-building" x="2044" y="2079" width="112" height="42" transform="rotate(180 2100 2100)" data-name="行政中心" data-world-x="0" data-world-z="-500" data-length-m="112" data-width-m="42" data-rotation-y="180" data-floors="7" data-source="第17项总平面"/>
+    <rect id="CEN-03" class="building-footprint central-building" x="2289" y="1919" width="122" height="82" transform="rotate(270 2350 1960)" data-name="大学会堂" data-world-x="250" data-world-z="-360" data-length-m="122" data-width-m="82" data-rotation-y="270" data-floors="3" data-source="第17项总平面"/>
+    <rect id="CEN-04" class="building-footprint central-building" x="1794" y="1932" width="112" height="56" transform="rotate(90 1850 1960)" data-name="学生活动中心" data-world-x="-250" data-world-z="-360" data-length-m="112" data-width-m="56" data-rotation-y="90" data-floors="5" data-source="第17项总平面"/>
+    <rect id="CEN-05" class="building-footprint central-building" x="1777" y="1757" width="86" height="46" transform="rotate(90 1820 1780)" data-name="校史馆" data-world-x="-280" data-world-z="-180" data-length-m="86" data-width-m="46" data-rotation-y="90" data-floors="4" data-source="第17项总平面"/>
+    <rect id="CEN-06" class="building-footprint central-building" x="2329" y="1752" width="102" height="56" transform="rotate(270 2380 1780)" data-name="大学博物馆/科学馆" data-world-x="280" data-world-z="-180" data-length-m="102" data-width-m="56" data-rotation-y="270" data-floors="4" data-source="第17项总平面"/>
+    <rect id="CEN-07" class="building-footprint central-building" x="1634" y="2009" width="92" height="42" transform="rotate(90 1680 2030)" data-name="国际交流中心" data-world-x="-420" data-world-z="-430" data-length-m="92" data-width-m="42" data-rotation-y="90" data-floors="7" data-source="第17项总平面"/>
+    <rect id="CEN-08" class="building-footprint central-building" x="2472" y="2007" width="96" height="46" transform="rotate(270 2520 2030)" data-name="创新创业中心" data-world-x="420" data-world-z="-430" data-length-m="96" data-width-m="46" data-rotation-y="270" data-floors="6" data-source="第17项总平面"/>
+    <rect id="CEN-09" class="building-footprint central-building" x="1574" y="1861" width="112" height="38" transform="rotate(90 1630 1880)" data-name="公共教学A楼" data-world-x="-470" data-world-z="-280" data-length-m="112" data-width-m="38" data-rotation-y="90" data-floors="7" data-source="第17项总平面"/>
+    <rect id="CEN-10" class="building-footprint central-building" x="1574" y="1701" width="112" height="38" transform="rotate(90 1630 1720)" data-name="公共教学B楼" data-world-x="-470" data-world-z="-120" data-length-m="112" data-width-m="38" data-rotation-y="90" data-floors="7" data-source="第17项总平面"/>
+    <rect id="CEN-11" class="building-footprint central-building" x="2518" y="1861" width="104" height="38" transform="rotate(270 2570 1880)" data-name="公共教学C楼" data-world-x="470" data-world-z="-280" data-length-m="104" data-width-m="38" data-rotation-y="270" data-floors="7" data-source="第17项总平面"/>
+    <rect id="CEN-12" class="building-footprint central-building" x="2518" y="1701" width="104" height="38" transform="rotate(270 2570 1720)" data-name="公共教学D楼" data-world-x="470" data-world-z="-120" data-length-m="104" data-width-m="38" data-rotation-y="270" data-floors="7" data-source="第17项总平面"/>
+    <rect id="CEN-13" class="building-footprint central-building" x="1539" y="1537" width="102" height="46" transform="rotate(90 1590 1560)" data-name="公共实验A楼" data-world-x="-510" data-world-z="40" data-length-m="102" data-width-m="46" data-rotation-y="90" data-floors="6" data-source="PATCH-2026-09-13-R6"/>
+    <rect id="CEN-14" class="building-footprint central-building" x="2549" y="1537" width="102" height="46" transform="rotate(270 2600 1560)" data-name="公共实验B楼" data-world-x="500" data-world-z="40" data-length-m="102" data-width-m="46" data-rotation-y="270" data-floors="6" data-source="第17项总平面"/>
+    <rect id="CEN-15" class="building-footprint central-building" x="2352" y="2112" width="96" height="56" transform="rotate(270 2400 2140)" data-name="大学会议中心" data-world-x="300" data-world-z="-540" data-length-m="96" data-width-m="56" data-rotation-y="270" data-floors="4" data-source="第17项总平面"/>
+    <rect id="CEN-16" class="building-footprint central-building" x="2064" y="2362" width="72" height="36" transform="rotate(180 2100 2380)" data-name="招生访客中心" data-world-x="0" data-world-z="-780" data-length-m="72" data-width-m="36" data-rotation-y="180" data-floors="4" data-source="第17项总平面"/>
+    <rect id="CEN-17" class="building-footprint central-building" x="1592" y="1396" width="96" height="48" transform="rotate(90 1640 1420)" data-name="理工科图书分馆" data-world-x="-460" data-world-z="180" data-length-m="96" data-width-m="48" data-rotation-y="90" data-floors="6" data-source="第17项总平面"/>
+    <rect id="CEN-18" class="building-footprint central-building" x="2514" y="1397" width="92" height="46" transform="rotate(270 2560 1420)" data-name="人文社科图书分馆" data-world-x="460" data-world-z="180" data-length-m="92" data-width-m="46" data-rotation-y="270" data-floors="6" data-source="第17项总平面"/>
+    <rect id="CHE-01" class="building-footprint academic-building" x="839" y="1312" width="102" height="36" transform="rotate(90 890 1330)" data-name="化工A楼" data-world-x="-1210" data-world-z="270" data-length-m="102" data-width-m="36" data-rotation-y="90" data-floors="6" data-source="第17项总平面"/>
+    <rect id="CHE-02" class="building-footprint academic-building" x="964" y="1312" width="92" height="36" transform="rotate(90 1010 1330)" data-name="化工B楼" data-world-x="-1090" data-world-z="270" data-length-m="92" data-width-m="36" data-rotation-y="90" data-floors="6" data-source="第17项总平面"/>
+    <rect id="CHE-03" class="building-footprint academic-building" x="902" y="1394" width="96" height="52" transform="rotate(90 950 1420)" data-name="化工实验中心" data-world-x="-1150" data-world-z="180" data-length-m="96" data-width-m="52" data-rotation-y="90" data-floors="4" data-source="第17项总平面"/>
+    <rect id="CHM-01" class="building-footprint academic-building" x="2002" y="933" width="96" height="34" transform="rotate(180 2050 950)" data-name="化学学院楼" data-world-x="-50" data-world-z="650" data-length-m="96" data-width-m="34" data-rotation-y="180" data-floors="7" data-source="第17项总平面"/>
+    <rect id="CHM-02" class="building-footprint academic-building" x="2004" y="1024" width="92" height="52" transform="rotate(180 2050 1050)" data-name="基础化学实验中心" data-world-x="-50" data-world-z="550" data-length-m="92" data-width-m="52" data-rotation-y="180" data-floors="5" data-source="第17项总平面"/>
+    <rect id="CSE-01" class="building-footprint academic-building" x="1284" y="1701" width="112" height="38" transform="rotate(90 1340 1720)" data-name="计算机A楼" data-world-x="-760" data-world-z="-120" data-length-m="112" data-width-m="38" data-rotation-y="90" data-floors="8" data-source="第17项总平面"/>
+    <rect id="CSE-02" class="building-footprint academic-building" x="1409" y="1702" width="102" height="36" transform="rotate(90 1460 1720)" data-name="计算机B楼" data-world-x="-640" data-world-z="-120" data-length-m="102" data-width-m="36" data-rotation-y="90" data-floors="7" data-source="第17项总平面"/>
+    <rect id="CSE-03" class="building-footprint academic-building" x="1352" y="1797" width="96" height="46" transform="rotate(90 1400 1820)" data-name="计算中心" data-world-x="-700" data-world-z="-220" data-length-m="96" data-width-m="46" data-rotation-y="90" data-floors="5" data-source="第17项总平面"/>
+    <rect id="ECE-01" class="building-footprint academic-building" x="1342" y="1492" width="96" height="36" transform="rotate(90 1390 1510)" data-name="电子学院楼" data-world-x="-710" data-world-z="90" data-length-m="96" data-width-m="36" data-rotation-y="90" data-floors="7" data-source="第17项总平面"/>
+    <rect id="ECE-02" class="building-footprint academic-building" x="1467" y="1577" width="86" height="46" transform="rotate(90 1510 1600)" data-name="微电子实验中心" data-world-x="-590" data-world-z="0" data-length-m="86" data-width-m="46" data-rotation-y="90" data-floors="5" data-source="第17项总平面"/>
+    <rect id="ECO-01" class="building-footprint academic-building" x="2657" y="1764" width="86" height="32" transform="rotate(270 2700 1780)" data-name="经济学院楼" data-world-x="600" data-world-z="-180" data-length-m="86" data-width-m="32" data-rotation-y="270" data-floors="7" data-source="第17项总平面"/>
+    <rect id="EDU-01" class="building-footprint academic-building" x="2877" y="1154" width="86" height="32" transform="rotate(270 2920 1170)" data-name="教育学院楼" data-world-x="820" data-world-z="430" data-length-m="86" data-width-m="32" data-rotation-y="270" data-floors="6" data-source="第17项总平面"/>
+    <rect id="EE-01" class="building-footprint academic-building" x="1339" y="1312" width="102" height="36" transform="rotate(90 1390 1330)" data-name="电气学院楼" data-world-x="-710" data-world-z="270" data-length-m="102" data-width-m="36" data-rotation-y="90" data-floors="7" data-source="第17项总平面"/>
+    <rect id="EE-02" class="building-footprint academic-building" x="1464" y="1397" width="92" height="46" transform="rotate(90 1510 1420)" data-name="电力系统实验中心" data-world-x="-590" data-world-z="180" data-length-m="92" data-width-m="46" data-rotation-y="90" data-floors="4" data-source="第17项总平面"/>
+    <rect id="ENV-01" class="building-footprint academic-building" x="1587" y="934" width="86" height="32" transform="rotate(90 1630 950)" data-name="环境学院楼" data-world-x="-470" data-world-z="650" data-length-m="86" data-width-m="32" data-rotation-y="90" data-floors="6" data-source="第17项总平面"/>
+    <rect id="ENV-02" class="building-footprint academic-building" x="1671" y="1029" width="78" height="42" transform="rotate(90 1710 1050)" data-name="环境实验中心" data-world-x="-390" data-world-z="550" data-length-m="78" data-width-m="42" data-rotation-y="90" data-floors="4" data-source="第17项总平面"/>
+    <rect id="EPE-01" class="building-footprint academic-building" x="1089" y="1312" width="102" height="36" transform="rotate(90 1140 1330)" data-name="能源动力A楼" data-world-x="-960" data-world-z="270" data-length-m="102" data-width-m="36" data-rotation-y="90" data-floors="7" data-source="第17项总平面"/>
+    <rect id="EPE-02" class="building-footprint academic-building" x="1212" y="1312" width="96" height="36" transform="rotate(90 1260 1330)" data-name="能源动力B楼" data-world-x="-840" data-world-z="270" data-length-m="96" data-width-m="36" data-rotation-y="90" data-floors="6" data-source="第17项总平面"/>
+    <rect id="EPE-03" class="building-footprint academic-building" x="1147" y="1394" width="106" height="52" transform="rotate(90 1200 1420)" data-name="动力实验中心" data-world-x="-900" data-world-z="180" data-length-m="106" data-width-m="52" data-rotation-y="90" data-floors="4" data-source="第17项总平面"/>
+    <rect id="FIN-01" class="building-footprint academic-building" x="2657" y="1904" width="86" height="32" transform="rotate(270 2700 1920)" data-name="金融学院楼" data-world-x="600" data-world-z="-320" data-length-m="86" data-width-m="32" data-rotation-y="270" data-floors="7" data-source="第17项总平面"/>
+    <rect id="FLA-01" class="building-footprint academic-building" x="2876" y="1304" width="88" height="32" transform="rotate(270 2920 1320)" data-name="外国语学院楼" data-world-x="820" data-world-z="280" data-length-m="88" data-width-m="32" data-rotation-y="270" data-floors="7" data-source="第17项总平面"/>
+    <rect id="GEO-01" class="building-footprint academic-building" x="2314" y="932" width="92" height="36" transform="rotate(180 2360 950)" data-name="地球科学楼" data-world-x="260" data-world-z="650" data-length-m="92" data-width-m="36" data-rotation-y="180" data-floors="6" data-source="第17项总平面"/>
+    <rect id="GEO-02" class="building-footprint academic-building" x="2317" y="1027" width="86" height="46" transform="rotate(180 2360 1050)" data-name="资源实验中心" data-world-x="260" data-world-z="550" data-length-m="86" data-width-m="46" data-rotation-y="180" data-floors="4" data-source="第17项总平面"/>
+    <rect id="GPA-01" class="building-footprint academic-building" x="2877" y="1464" width="86" height="32" transform="rotate(270 2920 1480)" data-name="公共管理楼" data-world-x="820" data-world-z="120" data-length-m="86" data-width-m="32" data-rotation-y="270" data-floors="6" data-source="第17项总平面"/>
+    <rect id="HSP-01" class="building-footprint hospital-building" x="990" y="2575" width="140" height="70" transform="rotate(180 1060 2610)" data-name="江城大学附属医院门诊综合基座" data-world-x="-1040" data-world-z="-1010" data-length-m="140" data-width-m="70" data-rotation-y="180" data-floors="6" data-source="PATCH-2026-09-13-R6"/>
+    <rect id="HSP-02" class="building-footprint hospital-tower-overlay" x="1004" y="2575" width="112" height="56" transform="rotate(180 1060 2603)" data-parent-id="HSP-01" data-ground-independent="false" data-render-mode="upper_tower_overlay" data-plan-center-source="R6-R5"/>
+    <rect id="HSP-03" class="building-footprint hospital-building" x="1014" y="2513" width="92" height="62" transform="rotate(180 1060 2544)" data-name="江城大学附属医院医技连接翼" data-world-x="-1040" data-world-z="-944" data-length-m="92" data-width-m="62" data-rotation-y="180" data-floors="8" data-source="PATCH-2026-09-13-R6"/>
+    <rect id="HSP-04" class="building-footprint hospital-building" x="1194" y="2407" width="92" height="46" transform="rotate(180 1240 2430)" data-name="江城大学附属医院科研中心" data-world-x="-860" data-world-z="-830" data-length-m="92" data-width-m="46" data-rotation-y="180" data-floors="8" data-source="PATCH-2026-09-13-R6"/>
+    <rect id="HSP-05" class="building-footprint hospital-building" x="1384" y="2262" width="72" height="36" transform="rotate(45 1420 2280)" data-name="校医院/卫生中心" data-world-x="-680" data-world-z="-680" data-length-m="72" data-width-m="36" data-rotation-y="45" data-floors="4" data-source="PATCH-2026-09-13-R6"/>
+    <rect id="HUM-01" class="building-footprint academic-building" x="2706" y="1304" width="88" height="32" transform="rotate(270 2750 1320)" data-name="人文学院楼" data-world-x="650" data-world-z="280" data-length-m="88" data-width-m="32" data-rotation-y="270" data-floors="7" data-source="第17项总平面"/>
+    <rect id="ICT-01" class="building-footprint academic-building" x="1092" y="1492" width="96" height="36" transform="rotate(90 1140 1510)" data-name="信息通信楼" data-world-x="-960" data-world-z="90" data-length-m="96" data-width-m="36" data-rotation-y="90" data-floors="7" data-source="第17项总平面"/>
+    <rect id="ICT-02" class="building-footprint academic-building" x="1215" y="1577" width="90" height="46" transform="rotate(90 1260 1600)" data-name="通信实验中心" data-world-x="-840" data-world-z="0" data-length-m="90" data-width-m="46" data-rotation-y="90" data-floors="5" data-source="第17项总平面"/>
+    <rect id="IGS-01" class="building-footprint academic-building" x="2954" y="1942" width="92" height="36" transform="rotate(270 3000 1960)" data-name="国际研究生院" data-world-x="900" data-world-z="-360" data-length-m="92" data-width-m="36" data-rotation-y="270" data-floors="7" data-source="第17项总平面"/>
+    <rect id="JRN-01" class="building-footprint academic-building" x="2707" y="1154" width="86" height="32" transform="rotate(270 2750 1170)" data-name="新闻传播楼" data-world-x="650" data-world-z="430" data-length-m="86" data-width-m="32" data-rotation-y="270" data-floors="6" data-source="第17项总平面"/>
+    <rect id="LAW-01" class="building-footprint academic-building" x="618" y="1660" width="104" height="40" transform="rotate(270 670 1680)" data-name="法学院及法律援助中心" data-world-x="-1430" data-world-z="-80" data-length-m="104" data-width-m="40" data-rotation-y="270" data-floors="7" data-source="第17项总平面"/>
+    <rect id="LIFE-01" class="building-footprint life-building" x="2152" y="932" width="96" height="36" transform="rotate(180 2200 950)" data-name="生命科学楼" data-world-x="100" data-world-z="650" data-length-m="96" data-width-m="36" data-rotation-y="180" data-floors="7" data-source="第17项总平面"/>
+    <rect id="LIFE-02" class="building-footprint life-building" x="2154" y="1024" width="92" height="52" transform="rotate(180 2200 1050)" data-name="生物实验中心" data-world-x="100" data-world-z="550" data-length-m="92" data-width-m="52" data-rotation-y="180" data-floors="5" data-source="第17项总平面"/>
+    <rect id="LIFE-C-01" class="building-footprint life-building" x="2559" y="2114" width="122" height="72" transform="rotate(270 2620 2150)" data-name="江城大学校园商业中心" data-world-x="520" data-world-z="-550" data-length-m="122" data-width-m="72" data-rotation-y="270" data-floors="4" data-source="第17项总平面"/>
+    <rect id="LIFE-C-02" class="building-footprint life-building" x="2744" y="2122" width="92" height="56" transform="rotate(270 2790 2150)" data-name="博雅餐厅" data-world-x="690" data-world-z="-550" data-length-m="92" data-width-m="56" data-rotation-y="270" data-floors="3" data-source="第17项总平面"/>
+    <rect id="LIFE-C-03" class="building-footprint life-building" x="2584" y="2231" width="72" height="38" transform="rotate(270 2620 2250)" data-name="校园书店" data-world-x="520" data-world-z="-650" data-length-m="72" data-width-m="38" data-rotation-y="270" data-floors="3" data-source="第17项总平面"/>
+    <rect id="LIFE-C-04" class="building-footprint life-building" x="2749" y="2228" width="82" height="44" transform="rotate(270 2790 2250)" data-name="快递邮政中心" data-world-x="690" data-world-z="-650" data-length-m="82" data-width-m="44" data-rotation-y="270" data-floors="3" data-source="第17项总平面"/>
+    <rect id="LIFE-E-01" class="building-footprint life-building" x="3194" y="1867" width="112" height="66" transform="rotate(180 3250 1900)" data-name="东苑食堂" data-world-x="1150" data-world-z="-300" data-length-m="112" data-width-m="66" data-rotation-y="180" data-floors="4" data-source="第17项总平面"/>
+    <rect id="LIFE-E-02" class="building-footprint life-building" x="3389" y="1882" width="62" height="36" transform="rotate(180 3420 1900)" data-name="江大校园超市·东苑店" data-world-x="1320" data-world-z="-300" data-length-m="62" data-width-m="36" data-rotation-y="180" data-floors="2" data-source="第17项总平面"/>
+    <rect id="LIFE-N-01" class="building-footprint life-building" x="2896" y="768" width="108" height="64" transform="rotate(180 2950 800)" data-name="北苑食堂" data-world-x="850" data-world-z="800" data-length-m="108" data-width-m="64" data-rotation-y="180" data-floors="4" data-source="第17项总平面"/>
+    <rect id="LIFE-N-02" class="building-footprint life-building" x="2920" y="892" width="60" height="36" transform="rotate(180 2950 910)" data-name="江大校园超市·北苑店" data-world-x="850" data-world-z="690" data-length-m="60" data-width-m="36" data-rotation-y="180" data-floors="2" data-source="第17项总平面"/>
+    <rect id="LIFE-S-01" class="building-footprint life-building" x="2944" y="2387" width="112" height="66" transform="rotate(180 3000 2420)" data-name="南苑食堂" data-world-x="900" data-world-z="-820" data-length-m="112" data-width-m="66" data-rotation-y="180" data-floors="4" data-source="第17项总平面"/>
+    <rect id="LIFE-S-02" class="building-footprint life-building" x="2969" y="2522" width="62" height="36" transform="rotate(180 3000 2540)" data-name="江大校园超市·南苑店" data-world-x="900" data-world-z="-940" data-length-m="62" data-width-m="36" data-rotation-y="180" data-floors="2" data-source="第17项总平面"/>
+    <rect id="LIFE-W-01" class="building-footprint life-building" x="594" y="1447" width="112" height="66" transform="rotate(90 650 1480)" data-name="西苑食堂" data-world-x="-1450" data-world-z="120" data-length-m="112" data-width-m="66" data-rotation-y="90" data-floors="4" data-source="第17项总平面"/>
+    <rect id="LIFE-W-02" class="building-footprint life-building" x="769" y="1462" width="62" height="36" transform="rotate(90 800 1480)" data-name="江大校园超市·西苑店" data-world-x="-1300" data-world-z="120" data-length-m="62" data-width-m="36" data-rotation-y="90" data-floors="2" data-source="第17项总平面"/>
+    <rect id="MARX-01" class="building-footprint academic-building" x="2711" y="1465" width="78" height="30" transform="rotate(270 2750 1480)" data-name="学院楼" data-world-x="650" data-world-z="120" data-length-m="78" data-width-m="30" data-rotation-y="270" data-floors="6" data-source="第17项总平面"/>
+    <rect id="MAT-01" class="building-footprint academic-building" x="1344" y="1133" width="92" height="34" transform="rotate(90 1390 1150)" data-name="材料学院楼" data-world-x="-710" data-world-z="450" data-length-m="92" data-width-m="34" data-rotation-y="90" data-floors="6" data-source="第17项总平面"/>
+    <rect id="MAT-02" class="building-footprint academic-building" x="1467" y="1227" width="86" height="46" transform="rotate(90 1510 1250)" data-name="材料实验中心" data-world-x="-590" data-world-z="350" data-length-m="86" data-width-m="46" data-rotation-y="90" data-floors="4" data-source="第17项总平面"/>
+    <rect id="MATH-01" class="building-footprint academic-building" x="1734" y="984" width="92" height="32" transform="rotate(180 1780 1000)" data-name="数学科学楼" data-world-x="-320" data-world-z="600" data-length-m="92" data-width-m="32" data-rotation-y="180" data-floors="7" data-source="第17项总平面"/>
+    <rect id="ME-01" class="building-footprint academic-building" x="1089" y="1132" width="102" height="36" transform="rotate(90 1140 1150)" data-name="机械A楼" data-world-x="-960" data-world-z="450" data-length-m="102" data-width-m="36" data-rotation-y="90" data-floors="7" data-source="第17项总平面"/>
+    <rect id="ME-02" class="building-footprint academic-building" x="1212" y="1132" width="96" height="36" transform="rotate(90 1260 1150)" data-name="机械B楼" data-world-x="-840" data-world-z="450" data-length-m="96" data-width-m="36" data-rotation-y="90" data-floors="6" data-source="第17项总平面"/>
+    <rect id="ME-03" class="building-footprint academic-building" x="1144" y="1224" width="112" height="52" transform="rotate(90 1200 1250)" data-name="先进制造实验楼" data-world-x="-900" data-world-z="350" data-length-m="112" data-width-m="52" data-rotation-y="90" data-floors="4" data-source="第17项总平面"/>
+    <rect id="MED-01" class="building-footprint academic-building" x="814" y="2200" width="112" height="40" transform="rotate(45 870 2220)" data-name="医学院教学楼" data-world-x="-1230" data-world-z="-620" data-length-m="112" data-width-m="40" data-rotation-y="45" data-floors="8" data-source="第17项总平面"/>
+    <rect id="MED-02" class="building-footprint academic-building" x="972" y="2200" width="96" height="40" transform="rotate(45 1020 2220)" data-name="基础医学楼" data-world-x="-1080" data-world-z="-620" data-length-m="96" data-width-m="40" data-rotation-y="45" data-floors="7" data-source="第17项总平面"/>
+    <rect id="MED-03" class="building-footprint academic-building" x="822" y="2074" width="96" height="52" transform="rotate(45 870 2100)" data-name="医学实验楼" data-world-x="-1230" data-world-z="-500" data-length-m="96" data-width-m="52" data-rotation-y="45" data-floors="6" data-source="第17项总平面"/>
+    <rect id="MED-04" class="building-footprint academic-building" x="969" y="2077" width="102" height="46" transform="rotate(45 1020 2100)" data-name="医学研究中心" data-world-x="-1080" data-world-z="-500" data-length-m="102" data-width-m="46" data-rotation-y="45" data-floors="8" data-source="第17项总平面"/>
+    <rect id="NEE-01" class="building-footprint academic-building" x="1579" y="1300" width="102" height="40" transform="rotate(90 1630 1320)" data-name="国家卓越工程师学院" data-world-x="-470" data-world-z="280" data-length-m="102" data-width-m="40" data-rotation-y="90" data-floors="7" data-source="PATCH-2026-09-13-R6"/>
+    <rect id="NEE-02" class="building-footprint academic-building" x="1659" y="1394" width="102" height="52" transform="rotate(90 1710 1420)" data-name="工程实践中心" data-world-x="-390" data-world-z="180" data-length-m="102" data-width-m="52" data-rotation-y="90" data-floors="4" data-source="第17项总平面"/>
+    <rect id="NUC-01" class="building-footprint academic-building" x="844" y="1132" width="92" height="36" transform="rotate(90 890 1150)" data-name="核科学楼" data-world-x="-1210" data-world-z="450" data-length-m="92" data-width-m="36" data-rotation-y="90" data-floors="6" data-source="第17项总平面"/>
+    <rect id="NUC-02" class="building-footprint academic-building" x="962" y="1132" width="96" height="36" transform="rotate(90 1010 1150)" data-name="新能源楼" data-world-x="-1090" data-world-z="450" data-length-m="96" data-width-m="36" data-rotation-y="90" data-floors="6" data-source="第17项总平面"/>
+    <rect id="NUC-03" class="building-footprint academic-building" x="899" y="1224" width="102" height="52" transform="rotate(90 950 1250)" data-name="能源实验中心" data-world-x="-1150" data-world-z="350" data-length-m="102" data-width-m="52" data-rotation-y="90" data-floors="4" data-source="第17项总平面"/>
+    <rect id="OPS-01" class="building-footprint ops-building" x="1949" y="2484" width="62" height="32" transform="rotate(180 1980 2500)" data-name="保卫/校园警务中心" data-world-x="-120" data-world-z="-900" data-length-m="62" data-width-m="32" data-rotation-y="180" data-floors="4" data-source="第17项总平面"/>
+    <rect id="OPS-02" class="building-footprint ops-building" x="3239" y="2431" width="82" height="38" transform="rotate(90 3280 2450)" data-name="后勤服务中心" data-world-x="1180" data-world-z="-850" data-length-m="82" data-width-m="38" data-rotation-y="90" data-floors="5" data-source="第17项总平面"/>
+    <rect id="OPS-03" class="building-footprint ops-building" x="3387" y="2337" width="86" height="46" transform="rotate(90 3430 2360)" data-name="维修中心" data-world-x="1330" data-world-z="-760" data-length-m="86" data-width-m="46" data-rotation-y="90" data-floors="3" data-source="第17项总平面"/>
+    <rect id="OPS-04" class="building-footprint ops-building" x="3259" y="2516" width="82" height="48" transform="rotate(90 3300 2540)" data-name="能源中心" data-world-x="1200" data-world-z="-940" data-length-m="82" data-width-m="48" data-rotation-y="90" data-floors="3" data-source="第17项总平面"/>
+    <rect id="OPS-05" class="building-footprint ops-building" x="3404" y="2419" width="72" height="42" transform="rotate(90 3440 2440)" data-name="水电运行中心" data-world-x="1340" data-world-z="-840" data-length-m="72" data-width-m="42" data-rotation-y="90" data-floors="3" data-source="第17项总平面"/>
+    <rect id="OPS-06" class="building-footprint ops-building" x="3259" y="2340" width="82" height="40" transform="rotate(90 3300 2360)" data-name="校车运营中心" data-world-x="1200" data-world-z="-760" data-length-m="82" data-width-m="40" data-rotation-y="90" data-floors="3" data-source="第17项总平面"/>
+    <rect id="OPS-07" class="building-footprint ops-building" x="1504" y="1960" width="92" height="40" transform="rotate(90 1550 1980)" data-name="网络信息中心" data-world-x="-550" data-world-z="-380" data-length-m="92" data-width-m="40" data-rotation-y="90" data-floors="6" data-source="第17项总平面"/>
+    <rect id="OPS-08" class="building-footprint ops-building" x="1512" y="2081" width="76" height="38" transform="rotate(90 1550 2100)" data-name="档案馆" data-world-x="-550" data-world-z="-500" data-length-m="76" data-width-m="38" data-rotation-y="90" data-floors="5" data-source="第17项总平面"/>
+    <rect id="OPS-09" class="building-footprint ops-building" x="1659" y="2230" width="82" height="40" transform="rotate(90 1700 2250)" data-name="教职工服务中心" data-world-x="-400" data-world-z="-650" data-length-m="82" data-width-m="40" data-rotation-y="90" data-floors="5" data-source="第17项总平面"/>
+    <rect id="OPS-10" class="building-footprint ops-building" x="1812" y="2231" width="76" height="38" transform="rotate(90 1850 2250)" data-name="校友中心" data-world-x="-250" data-world-z="-650" data-length-m="76" data-width-m="38" data-rotation-y="90" data-floors="4" data-source="第17项总平面"/>
+    <rect id="PE-01" class="building-footprint sports-building" x="1754" y="882" width="92" height="36" transform="rotate(180 1800 900)" data-name="体育学院楼" data-world-x="-300" data-world-z="700" data-length-m="92" data-width-m="36" data-rotation-y="180" data-floors="6" data-source="第17项总平面"/>
+    <rect id="PE-02" class="building-footprint sports-building" x="2357" y="877" width="86" height="46" transform="rotate(180 2400 900)" data-name="体育训练教学楼" data-world-x="300" data-world-z="700" data-length-m="86" data-width-m="46" data-rotation-y="180" data-floors="4" data-source="第17项总平面"/>
+    <rect id="PH-01" class="building-footprint academic-building" x="1294" y="2202" width="92" height="36" transform="rotate(45 1340 2220)" data-name="公共卫生学院楼" data-world-x="-760" data-world-z="-620" data-length-m="92" data-width-m="36" data-rotation-y="45" data-floors="7" data-source="第17项总平面"/>
+    <rect id="PH-02" class="building-footprint academic-building" x="1297" y="2077" width="86" height="46" transform="rotate(45 1340 2100)" data-name="公共卫生实验中心" data-world-x="-760" data-world-z="-500" data-length-m="86" data-width-m="46" data-rotation-y="45" data-floors="5" data-source="第17项总平面"/>
+    <rect id="PHA-01" class="building-footprint academic-building" x="1134" y="2202" width="92" height="36" transform="rotate(45 1180 2220)" data-name="药学院楼" data-world-x="-920" data-world-z="-620" data-length-m="92" data-width-m="36" data-rotation-y="45" data-floors="7" data-source="第17项总平面"/>
+    <rect id="PHA-02" class="building-footprint academic-building" x="1137" y="2077" width="86" height="46" transform="rotate(45 1180 2100)" data-name="药学实验中心" data-world-x="-920" data-world-z="-500" data-length-m="86" data-width-m="46" data-rotation-y="45" data-floors="5" data-source="第17项总平面"/>
+    <rect id="PHY-01" class="building-footprint academic-building" x="1862" y="933" width="96" height="34" transform="rotate(180 1910 950)" data-name="物理科学楼" data-world-x="-190" data-world-z="650" data-length-m="96" data-width-m="34" data-rotation-y="180" data-floors="7" data-source="第17项总平面"/>
+    <rect id="PHY-02" class="building-footprint academic-building" x="1864" y="1027" width="92" height="46" transform="rotate(180 1910 1050)" data-name="物理实验中心" data-world-x="-190" data-world-z="550" data-length-m="92" data-width-m="46" data-rotation-y="180" data-floors="5" data-source="第17项总平面"/>
+    <rect id="PSY-01" class="building-footprint academic-building" x="3047" y="1154" width="86" height="32" transform="rotate(270 3090 1170)" data-name="心理认知科学楼" data-world-x="990" data-world-z="430" data-length-m="86" data-width-m="32" data-rotation-y="270" data-floors="6" data-source="第17项总平面"/>
+    <rect id="RDI-01" class="building-footprint research-building" x="1352" y="817" width="96" height="46" transform="rotate(90 1400 840)" data-name="智能工程实验中心" data-world-x="-700" data-world-z="760" data-length-m="96" data-width-m="46" data-rotation-y="90" data-floors="6" data-source="第17项总平面"/>
+    <rect id="RDI-02" class="building-footprint research-building" x="734" y="727" width="92" height="46" transform="rotate(90 780 750)" data-name="国家重点实验室A" data-world-x="-1320" data-world-z="850" data-length-m="92" data-width-m="46" data-rotation-y="90" data-floors="5" data-source="第17项总平面"/>
+    <rect id="RDI-03" class="building-footprint research-building" x="894" y="727" width="92" height="46" transform="rotate(90 940 750)" data-name="国家重点实验室B" data-world-x="-1160" data-world-z="850" data-length-m="92" data-width-m="46" data-rotation-y="90" data-floors="5" data-source="第17项总平面"/>
+    <rect id="RDI-04" class="building-footprint research-building" x="1054" y="727" width="92" height="46" transform="rotate(90 1100 750)" data-name="国家重点实验室C" data-world-x="-1000" data-world-z="850" data-length-m="92" data-width-m="46" data-rotation-y="90" data-floors="5" data-source="第17项总平面"/>
+    <rect id="RDI-05" class="building-footprint research-building" x="1219" y="727" width="82" height="46" transform="rotate(90 1260 750)" data-name="超级计算中心" data-world-x="-840" data-world-z="850" data-length-m="82" data-width-m="46" data-rotation-y="90" data-floors="4" data-source="第17项总平面"/>
+    <rect id="RDI-06" class="building-footprint research-building" x="1377" y="714" width="86" height="52" transform="rotate(90 1420 740)" data-name="大型仪器共享中心" data-world-x="-680" data-world-z="860" data-length-m="86" data-width-m="52" data-rotation-y="90" data-floors="4" data-source="PATCH-2026-09-13-R6"/>
+    <rect id="RDI-07" class="building-footprint research-building" x="784" y="842" width="112" height="56" transform="rotate(90 840 870)" data-name="先进制造研究中心" data-world-x="-1260" data-world-z="730" data-length-m="112" data-width-m="56" data-rotation-y="90" data-floors="4" data-source="第17项总平面"/>
+    <rect id="RDI-08" class="building-footprint research-building" x="972" y="834" width="96" height="52" transform="rotate(90 1020 860)" data-name="新能源研究中心" data-world-x="-1080" data-world-z="740" data-length-m="96" data-width-m="52" data-rotation-y="90" data-floors="5" data-source="PATCH-2026-09-13-R6"/>
+    <rect id="RDI-09" class="building-footprint research-building" x="1154" y="847" width="92" height="46" transform="rotate(90 1200 870)" data-name="智能系统研究中心" data-world-x="-900" data-world-z="730" data-length-m="92" data-width-m="46" data-rotation-y="90" data-floors="5" data-source="第17项总平面"/>
+    <rect id="RDI-10" class="building-footprint research-building" x="872" y="617" width="96" height="46" transform="rotate(180 920 640)" data-name="产学研中心A" data-world-x="-1180" data-world-z="960" data-length-m="96" data-width-m="46" data-rotation-y="180" data-floors="6" data-source="第17项总平面"/>
+    <rect id="RDI-11" class="building-footprint research-building" x="1022" y="597" width="96" height="46" transform="rotate(180 1070 620)" data-name="产学研中心B" data-world-x="-1030" data-world-z="980" data-length-m="96" data-width-m="46" data-rotation-y="180" data-floors="6" data-source="第17项总平面"/>
+    <rect id="RDI-12" class="building-footprint research-building" x="1159" y="582" width="122" height="56" transform="rotate(180 1220 610)" data-name="科技园综合楼" data-world-x="-880" data-world-z="990" data-length-m="122" data-width-m="56" data-rotation-y="180" data-floors="8" data-source="第17项总平面"/>
+    <rect id="RDI-13" class="building-footprint research-building" x="1319" y="577" width="102" height="46" transform="rotate(180 1370 600)" data-name="科技园研发楼A" data-world-x="-730" data-world-z="1000" data-length-m="102" data-width-m="46" data-rotation-y="180" data-floors="7" data-source="第17项总平面"/>
+    <rect id="RDI-14" class="building-footprint research-building" x="1469" y="577" width="102" height="46" transform="rotate(180 1520 600)" data-name="科技园研发楼B" data-world-x="-580" data-world-z="1000" data-length-m="102" data-width-m="46" data-rotation-y="180" data-floors="7" data-source="第17项总平面"/>
+    <rect id="SAF-01" class="building-footprint academic-building" x="847" y="1494" width="86" height="32" transform="rotate(90 890 1510)" data-name="安全学院楼" data-world-x="-1210" data-world-z="90" data-length-m="86" data-width-m="32" data-rotation-y="90" data-floors="6" data-source="第17项总平面"/>
+    <rect id="SAF-02" class="building-footprint academic-building" x="959" y="1578" width="82" height="44" transform="rotate(90 1000 1600)" data-name="安全实验中心" data-world-x="-1100" data-world-z="0" data-length-m="82" data-width-m="44" data-rotation-y="90" data-floors="4" data-source="第17项总平面"/>
+    <rect id="SOC-01" class="building-footprint academic-building" x="3049" y="1305" width="82" height="30" transform="rotate(270 3090 1320)" data-name="社会科学楼" data-world-x="990" data-world-z="280" data-length-m="82" data-width-m="30" data-rotation-y="270" data-floors="6" data-source="第17项总平面"/>
+    <rect id="TRA-01" class="building-footprint academic-building" x="1584" y="1132" width="92" height="36" transform="rotate(90 1630 1150)" data-name="交通学院楼" data-world-x="-470" data-world-z="450" data-length-m="92" data-width-m="36" data-rotation-y="90" data-floors="6" data-source="第17项总平面"/>
+    <rect id="TRA-02" class="building-footprint academic-building" x="1667" y="1227" width="86" height="46" transform="rotate(90 1710 1250)" data-name="交通实验中心" data-world-x="-390" data-world-z="350" data-length-m="86" data-width-m="46" data-rotation-y="90" data-floors="4" data-source="第17项总平面"/>
+    <metadata data-rendered-building-records="142"/>
+  </g>
+  <g id="09_Residential" data-layer="residential">
+    <rect id="RES-E-G01" class="residence-footprint residence-graduate" x="3364" y="1631" width="72" height="18" transform="rotate(0 3400 1640)" data-residence-type="graduate" data-length-m="72" data-width-m="18" data-floors="10" data-render-mode="exact-control-footprint"/>
+    <rect id="RES-E-G02" class="residence-footprint residence-graduate" x="3484" y="1631" width="72" height="18" transform="rotate(0 3520 1640)" data-residence-type="graduate" data-length-m="72" data-width-m="18" data-floors="10" data-render-mode="exact-control-footprint"/>
+    <rect id="RES-E-G03" class="residence-footprint residence-graduate" x="3304" y="1741" width="72" height="18" transform="rotate(90 3340 1750)" data-residence-type="graduate" data-length-m="72" data-width-m="18" data-floors="10" data-render-mode="exact-control-footprint"/>
+    <rect id="RES-E-I01" class="residence-footprint residence-international" x="3444" y="1740" width="72" height="20" transform="rotate(90 3480 1750)" data-residence-type="international" data-length-m="72" data-width-m="20" data-floors="10" data-render-mode="exact-control-footprint"/>
+    <rect id="RES-E-U01-MAX" class="residence-max-envelope" x="3239" y="1291" width="82" height="18" transform="rotate(0 3280 1300)" data-parent-id="RES-E-U01" data-length-max-m="82" data-width-m="18"/>
+    <rect id="RES-E-U01" class="residence-footprint residence-undergraduate" x="3241" y="1291" width="78" height="18" transform="rotate(0 3280 1300)" data-residence-type="undergraduate" data-length-min-m="78" data-length-max-m="82" data-width-m="18" data-floors-range="10-11" data-render-mode="range-not-midpoint"/>
+    <rect id="RES-E-U02-MAX" class="residence-max-envelope" x="3359" y="1291" width="82" height="18" transform="rotate(0 3400 1300)" data-parent-id="RES-E-U02" data-length-max-m="82" data-width-m="18"/>
+    <rect id="RES-E-U02" class="residence-footprint residence-undergraduate" x="3361" y="1291" width="78" height="18" transform="rotate(0 3400 1300)" data-residence-type="undergraduate" data-length-min-m="78" data-length-max-m="82" data-width-m="18" data-floors-range="10-11" data-render-mode="range-not-midpoint"/>
+    <rect id="RES-E-U03-MAX" class="residence-max-envelope" x="3479" y="1291" width="82" height="18" transform="rotate(0 3520 1300)" data-parent-id="RES-E-U03" data-length-max-m="82" data-width-m="18"/>
+    <rect id="RES-E-U03" class="residence-footprint residence-undergraduate" x="3481" y="1291" width="78" height="18" transform="rotate(0 3520 1300)" data-residence-type="undergraduate" data-length-min-m="78" data-length-max-m="82" data-width-m="18" data-floors-range="10-11" data-render-mode="range-not-midpoint"/>
+    <rect id="RES-E-U04-MAX" class="residence-max-envelope" x="3239" y="1391" width="82" height="18" transform="rotate(0 3280 1400)" data-parent-id="RES-E-U04" data-length-max-m="82" data-width-m="18"/>
+    <rect id="RES-E-U04" class="residence-footprint residence-undergraduate" x="3241" y="1391" width="78" height="18" transform="rotate(0 3280 1400)" data-residence-type="undergraduate" data-length-min-m="78" data-length-max-m="82" data-width-m="18" data-floors-range="10-11" data-render-mode="range-not-midpoint"/>
+    <rect id="RES-E-U05-MAX" class="residence-max-envelope" x="3359" y="1391" width="82" height="18" transform="rotate(0 3400 1400)" data-parent-id="RES-E-U05" data-length-max-m="82" data-width-m="18"/>
+    <rect id="RES-E-U05" class="residence-footprint residence-undergraduate" x="3361" y="1391" width="78" height="18" transform="rotate(0 3400 1400)" data-residence-type="undergraduate" data-length-min-m="78" data-length-max-m="82" data-width-m="18" data-floors-range="10-11" data-render-mode="range-not-midpoint"/>
+    <rect id="RES-E-U06-MAX" class="residence-max-envelope" x="3479" y="1391" width="82" height="18" transform="rotate(0 3520 1400)" data-parent-id="RES-E-U06" data-length-max-m="82" data-width-m="18"/>
+    <rect id="RES-E-U06" class="residence-footprint residence-undergraduate" x="3481" y="1391" width="78" height="18" transform="rotate(0 3520 1400)" data-residence-type="undergraduate" data-length-min-m="78" data-length-max-m="82" data-width-m="18" data-floors-range="10-11" data-render-mode="range-not-midpoint"/>
+    <rect id="RES-E-U07-MAX" class="residence-max-envelope" x="3239" y="1511" width="82" height="18" transform="rotate(0 3280 1520)" data-parent-id="RES-E-U07" data-length-max-m="82" data-width-m="18"/>
+    <rect id="RES-E-U07" class="residence-footprint residence-undergraduate" x="3241" y="1511" width="78" height="18" transform="rotate(0 3280 1520)" data-residence-type="undergraduate" data-length-min-m="78" data-length-max-m="82" data-width-m="18" data-floors-range="10-11" data-render-mode="range-not-midpoint"/>
+    <rect id="RES-E-U08-MAX" class="residence-max-envelope" x="3359" y="1511" width="82" height="18" transform="rotate(0 3400 1520)" data-parent-id="RES-E-U08" data-length-max-m="82" data-width-m="18"/>
+    <rect id="RES-E-U08" class="residence-footprint residence-undergraduate" x="3361" y="1511" width="78" height="18" transform="rotate(0 3400 1520)" data-residence-type="undergraduate" data-length-min-m="78" data-length-max-m="82" data-width-m="18" data-floors-range="10-11" data-render-mode="range-not-midpoint"/>
+    <rect id="RES-E-U09-MAX" class="residence-max-envelope" x="3479" y="1511" width="82" height="18" transform="rotate(0 3520 1520)" data-parent-id="RES-E-U09" data-length-max-m="82" data-width-m="18"/>
+    <rect id="RES-E-U09" class="residence-footprint residence-undergraduate" x="3481" y="1511" width="78" height="18" transform="rotate(0 3520 1520)" data-residence-type="undergraduate" data-length-min-m="78" data-length-max-m="82" data-width-m="18" data-floors-range="10-11" data-render-mode="range-not-midpoint"/>
+    <rect id="RES-E-U10-MAX" class="residence-max-envelope" x="3239" y="1631" width="82" height="18" transform="rotate(0 3280 1640)" data-parent-id="RES-E-U10" data-length-max-m="82" data-width-m="18"/>
+    <rect id="RES-E-U10" class="residence-footprint residence-undergraduate" x="3241" y="1631" width="78" height="18" transform="rotate(0 3280 1640)" data-residence-type="undergraduate" data-length-min-m="78" data-length-max-m="82" data-width-m="18" data-floors-range="10-11" data-render-mode="range-not-midpoint"/>
+    <rect id="RES-N-G01" class="residence-footprint residence-graduate" x="1804" y="611" width="72" height="18" transform="rotate(0 1840 620)" data-residence-type="graduate" data-length-m="72" data-width-m="18" data-floors="10" data-render-mode="exact-control-footprint"/>
+    <rect id="RES-N-G02" class="residence-footprint residence-graduate" x="2754" y="591" width="72" height="18" transform="rotate(90 2790 600)" data-residence-type="graduate" data-length-m="72" data-width-m="18" data-floors="10" data-render-mode="exact-control-footprint"/>
+    <rect id="RES-N-G03" class="residence-footprint residence-graduate" x="2874" y="641" width="72" height="18" transform="rotate(0 2910 650)" data-residence-type="graduate" data-length-m="72" data-width-m="18" data-floors="10" data-render-mode="exact-control-footprint"/>
+    <rect id="RES-N-U01-MAX" class="residence-max-envelope" x="1539" y="691" width="82" height="18" transform="rotate(90 1580 700)" data-parent-id="RES-N-U01" data-length-max-m="82" data-width-m="18"/>
+    <rect id="RES-N-U01" class="residence-footprint residence-undergraduate" x="1541" y="691" width="78" height="18" transform="rotate(90 1580 700)" data-residence-type="undergraduate" data-length-min-m="78" data-length-max-m="82" data-width-m="18" data-floors-range="10-11" data-render-mode="range-not-midpoint"/>
+    <rect id="RES-N-U02-MAX" class="residence-max-envelope" x="1669" y="691" width="82" height="18" transform="rotate(90 1710 700)" data-parent-id="RES-N-U02" data-length-max-m="82" data-width-m="18"/>
+    <rect id="RES-N-U02" class="residence-footprint residence-undergraduate" x="1671" y="691" width="78" height="18" transform="rotate(90 1710 700)" data-residence-type="undergraduate" data-length-min-m="78" data-length-max-m="82" data-width-m="18" data-floors-range="10-11" data-render-mode="range-not-midpoint"/>
+    <rect id="RES-N-U03-MAX" class="residence-max-envelope" x="1539" y="591" width="82" height="18" transform="rotate(90 1580 600)" data-parent-id="RES-N-U03" data-length-max-m="82" data-width-m="18"/>
+    <rect id="RES-N-U03" class="residence-footprint residence-undergraduate" x="1541" y="591" width="78" height="18" transform="rotate(90 1580 600)" data-residence-type="undergraduate" data-length-min-m="78" data-length-max-m="82" data-width-m="18" data-floors-range="10-11" data-render-mode="range-not-midpoint"/>
+    <rect id="RES-N-U04-MAX" class="residence-max-envelope" x="1669" y="591" width="82" height="18" transform="rotate(90 1710 600)" data-parent-id="RES-N-U04" data-length-max-m="82" data-width-m="18"/>
+    <rect id="RES-N-U04" class="residence-footprint residence-undergraduate" x="1671" y="591" width="78" height="18" transform="rotate(90 1710 600)" data-residence-type="undergraduate" data-length-min-m="78" data-length-max-m="82" data-width-m="18" data-floors-range="10-11" data-render-mode="range-not-midpoint"/>
+    <rect id="RES-N-U05-MAX" class="residence-max-envelope" x="1604" y="531" width="82" height="18" transform="rotate(0 1645 540)" data-parent-id="RES-N-U05" data-length-max-m="82" data-width-m="18"/>
+    <rect id="RES-N-U05" class="residence-footprint residence-undergraduate" x="1606" y="531" width="78" height="18" transform="rotate(0 1645 540)" data-residence-type="undergraduate" data-length-min-m="78" data-length-max-m="82" data-width-m="18" data-floors-range="10-11" data-render-mode="range-not-midpoint"/>
+    <rect id="RES-N-U06-MAX" class="residence-max-envelope" x="2489" y="691" width="82" height="18" transform="rotate(90 2530 700)" data-parent-id="RES-N-U06" data-length-max-m="82" data-width-m="18"/>
+    <rect id="RES-N-U06" class="residence-footprint residence-undergraduate" x="2491" y="691" width="78" height="18" transform="rotate(90 2530 700)" data-residence-type="undergraduate" data-length-min-m="78" data-length-max-m="82" data-width-m="18" data-floors-range="10-11" data-render-mode="range-not-midpoint"/>
+    <rect id="RES-N-U07-MAX" class="residence-max-envelope" x="2619" y="691" width="82" height="18" transform="rotate(90 2660 700)" data-parent-id="RES-N-U07" data-length-max-m="82" data-width-m="18"/>
+    <rect id="RES-N-U07" class="residence-footprint residence-undergraduate" x="2621" y="691" width="78" height="18" transform="rotate(90 2660 700)" data-residence-type="undergraduate" data-length-min-m="78" data-length-max-m="82" data-width-m="18" data-floors-range="10-11" data-render-mode="range-not-midpoint"/>
+    <rect id="RES-N-U08-MAX" class="residence-max-envelope" x="2749" y="691" width="82" height="18" transform="rotate(90 2790 700)" data-parent-id="RES-N-U08" data-length-max-m="82" data-width-m="18"/>
+    <rect id="RES-N-U08" class="residence-footprint residence-undergraduate" x="2751" y="691" width="78" height="18" transform="rotate(90 2790 700)" data-residence-type="undergraduate" data-length-min-m="78" data-length-max-m="82" data-width-m="18" data-floors-range="10-11" data-render-mode="range-not-midpoint"/>
+    <rect id="RES-N-U09-MAX" class="residence-max-envelope" x="2489" y="591" width="82" height="18" transform="rotate(90 2530 600)" data-parent-id="RES-N-U09" data-length-max-m="82" data-width-m="18"/>
+    <rect id="RES-N-U09" class="residence-footprint residence-undergraduate" x="2491" y="591" width="78" height="18" transform="rotate(90 2530 600)" data-residence-type="undergraduate" data-length-min-m="78" data-length-max-m="82" data-width-m="18" data-floors-range="10-11" data-render-mode="range-not-midpoint"/>
+    <rect id="RES-N-U10-MAX" class="residence-max-envelope" x="2619" y="591" width="82" height="18" transform="rotate(90 2660 600)" data-parent-id="RES-N-U10" data-length-max-m="82" data-width-m="18"/>
+    <rect id="RES-N-U10" class="residence-footprint residence-undergraduate" x="2621" y="591" width="78" height="18" transform="rotate(90 2660 600)" data-residence-type="undergraduate" data-length-min-m="78" data-length-max-m="82" data-width-m="18" data-floors-range="10-11" data-render-mode="range-not-midpoint"/>
+    <rect id="RES-S-G01" class="residence-footprint residence-graduate" x="2424" y="2331" width="72" height="18" transform="rotate(0 2460 2340)" data-residence-type="graduate" data-length-m="72" data-width-m="18" data-floors="10" data-render-mode="exact-control-footprint"/>
+    <rect id="RES-S-I01" class="residence-footprint residence-international" x="2564" y="2330" width="72" height="20" transform="rotate(0 2600 2340)" data-residence-type="international" data-length-m="72" data-width-m="20" data-floors="10" data-render-mode="exact-control-footprint"/>
+    <rect id="RES-S-I02" class="residence-footprint residence-international" x="2704" y="2330" width="72" height="20" transform="rotate(0 2740 2340)" data-residence-type="international" data-length-m="72" data-width-m="20" data-floors="10" data-render-mode="exact-control-footprint"/>
+    <rect id="RES-S-I03" class="residence-footprint residence-international" x="2844" y="2330" width="72" height="20" transform="rotate(0 2880 2340)" data-residence-type="international" data-length-m="72" data-width-m="20" data-floors="10" data-render-mode="exact-control-footprint"/>
+    <rect id="RES-S-U01-MAX" class="residence-max-envelope" x="2359" y="2541" width="82" height="18" transform="rotate(90 2400 2550)" data-parent-id="RES-S-U01" data-length-max-m="82" data-width-m="18"/>
+    <rect id="RES-S-U01" class="residence-footprint residence-undergraduate" x="2361" y="2541" width="78" height="18" transform="rotate(90 2400 2550)" data-residence-type="undergraduate" data-length-min-m="78" data-length-max-m="82" data-width-m="18" data-floors-range="10-11" data-render-mode="range-not-midpoint"/>
+    <rect id="RES-S-U02-MAX" class="residence-max-envelope" x="2479" y="2541" width="82" height="18" transform="rotate(90 2520 2550)" data-parent-id="RES-S-U02" data-length-max-m="82" data-width-m="18"/>
+    <rect id="RES-S-U02" class="residence-footprint residence-undergraduate" x="2481" y="2541" width="78" height="18" transform="rotate(90 2520 2550)" data-residence-type="undergraduate" data-length-min-m="78" data-length-max-m="82" data-width-m="18" data-floors-range="10-11" data-render-mode="range-not-midpoint"/>
+    <rect id="RES-S-U03-MAX" class="residence-max-envelope" x="2599" y="2541" width="82" height="18" transform="rotate(90 2640 2550)" data-parent-id="RES-S-U03" data-length-max-m="82" data-width-m="18"/>
+    <rect id="RES-S-U03" class="residence-footprint residence-undergraduate" x="2601" y="2541" width="78" height="18" transform="rotate(90 2640 2550)" data-residence-type="undergraduate" data-length-min-m="78" data-length-max-m="82" data-width-m="18" data-floors-range="10-11" data-render-mode="range-not-midpoint"/>
+    <rect id="RES-S-U04-MAX" class="residence-max-envelope" x="2719" y="2541" width="82" height="18" transform="rotate(90 2760 2550)" data-parent-id="RES-S-U04" data-length-max-m="82" data-width-m="18"/>
+    <rect id="RES-S-U04" class="residence-footprint residence-undergraduate" x="2721" y="2541" width="78" height="18" transform="rotate(90 2760 2550)" data-residence-type="undergraduate" data-length-min-m="78" data-length-max-m="82" data-width-m="18" data-floors-range="10-11" data-render-mode="range-not-midpoint"/>
+    <rect id="RES-S-U05-MAX" class="residence-max-envelope" x="2839" y="2541" width="82" height="18" transform="rotate(90 2880 2550)" data-parent-id="RES-S-U05" data-length-max-m="82" data-width-m="18"/>
+    <rect id="RES-S-U05" class="residence-footprint residence-undergraduate" x="2841" y="2541" width="78" height="18" transform="rotate(90 2880 2550)" data-residence-type="undergraduate" data-length-min-m="78" data-length-max-m="82" data-width-m="18" data-floors-range="10-11" data-render-mode="range-not-midpoint"/>
+    <rect id="RES-S-U06-MAX" class="residence-max-envelope" x="2359" y="2431" width="82" height="18" transform="rotate(90 2400 2440)" data-parent-id="RES-S-U06" data-length-max-m="82" data-width-m="18"/>
+    <rect id="RES-S-U06" class="residence-footprint residence-undergraduate" x="2361" y="2431" width="78" height="18" transform="rotate(90 2400 2440)" data-residence-type="undergraduate" data-length-min-m="78" data-length-max-m="82" data-width-m="18" data-floors-range="10-11" data-render-mode="range-not-midpoint"/>
+    <rect id="RES-S-U07-MAX" class="residence-max-envelope" x="2479" y="2431" width="82" height="18" transform="rotate(90 2520 2440)" data-parent-id="RES-S-U07" data-length-max-m="82" data-width-m="18"/>
+    <rect id="RES-S-U07" class="residence-footprint residence-undergraduate" x="2481" y="2431" width="78" height="18" transform="rotate(90 2520 2440)" data-residence-type="undergraduate" data-length-min-m="78" data-length-max-m="82" data-width-m="18" data-floors-range="10-11" data-render-mode="range-not-midpoint"/>
+    <rect id="RES-S-U08-MAX" class="residence-max-envelope" x="2599" y="2431" width="82" height="18" transform="rotate(90 2640 2440)" data-parent-id="RES-S-U08" data-length-max-m="82" data-width-m="18"/>
+    <rect id="RES-S-U08" class="residence-footprint residence-undergraduate" x="2601" y="2431" width="78" height="18" transform="rotate(90 2640 2440)" data-residence-type="undergraduate" data-length-min-m="78" data-length-max-m="82" data-width-m="18" data-floors-range="10-11" data-render-mode="range-not-midpoint"/>
+    <rect id="RES-S-U09-MAX" class="residence-max-envelope" x="2719" y="2431" width="82" height="18" transform="rotate(90 2760 2440)" data-parent-id="RES-S-U09" data-length-max-m="82" data-width-m="18"/>
+    <rect id="RES-S-U09" class="residence-footprint residence-undergraduate" x="2721" y="2431" width="78" height="18" transform="rotate(90 2760 2440)" data-residence-type="undergraduate" data-length-min-m="78" data-length-max-m="82" data-width-m="18" data-floors-range="10-11" data-render-mode="range-not-midpoint"/>
+    <rect id="RES-S-U10-MAX" class="residence-max-envelope" x="2839" y="2431" width="82" height="18" transform="rotate(90 2880 2440)" data-parent-id="RES-S-U10" data-length-max-m="82" data-width-m="18"/>
+    <rect id="RES-S-U10" class="residence-footprint residence-undergraduate" x="2841" y="2431" width="78" height="18" transform="rotate(90 2880 2440)" data-residence-type="undergraduate" data-length-min-m="78" data-length-max-m="82" data-width-m="18" data-floors-range="10-11" data-render-mode="range-not-midpoint"/>
+    <rect id="RES-W-G01" class="residence-footprint residence-graduate" x="634" y="871" width="72" height="18" transform="rotate(90 670 880)" data-residence-type="graduate" data-length-m="72" data-width-m="18" data-floors="10" data-render-mode="exact-control-footprint"/>
+    <rect id="RES-W-G02" class="residence-footprint residence-graduate" x="754" y="871" width="72" height="18" transform="rotate(90 790 880)" data-residence-type="graduate" data-length-m="72" data-width-m="18" data-floors="10" data-render-mode="exact-control-footprint"/>
+    <rect id="RES-W-G03" class="residence-footprint residence-graduate" x="694" y="916" width="72" height="18" transform="rotate(0 730 925)" data-residence-type="graduate" data-length-m="72" data-width-m="18" data-floors="10" data-render-mode="exact-control-footprint"/>
+    <rect id="RES-W-U01-MAX" class="residence-max-envelope" x="609" y="1361" width="82" height="18" transform="rotate(90 650 1370)" data-parent-id="RES-W-U01" data-length-max-m="82" data-width-m="18"/>
+    <rect id="RES-W-U01" class="residence-footprint residence-undergraduate" x="611" y="1361" width="78" height="18" transform="rotate(90 650 1370)" data-residence-type="undergraduate" data-length-min-m="78" data-length-max-m="82" data-width-m="18" data-floors-range="10-11" data-render-mode="range-not-midpoint"/>
+    <rect id="RES-W-U02-MAX" class="residence-max-envelope" x="729" y="1361" width="82" height="18" transform="rotate(90 770 1370)" data-parent-id="RES-W-U02" data-length-max-m="82" data-width-m="18"/>
+    <rect id="RES-W-U02" class="residence-footprint residence-undergraduate" x="731" y="1361" width="78" height="18" transform="rotate(90 770 1370)" data-residence-type="undergraduate" data-length-min-m="78" data-length-max-m="82" data-width-m="18" data-floors-range="10-11" data-render-mode="range-not-midpoint"/>
+    <rect id="RES-W-U03-MAX" class="residence-max-envelope" x="609" y="1271" width="82" height="18" transform="rotate(90 650 1280)" data-parent-id="RES-W-U03" data-length-max-m="82" data-width-m="18"/>
+    <rect id="RES-W-U03" class="residence-footprint residence-undergraduate" x="611" y="1271" width="78" height="18" transform="rotate(90 650 1280)" data-residence-type="undergraduate" data-length-min-m="78" data-length-max-m="82" data-width-m="18" data-floors-range="10-11" data-render-mode="range-not-midpoint"/>
+    <rect id="RES-W-U04-MAX" class="residence-max-envelope" x="729" y="1271" width="82" height="18" transform="rotate(90 770 1280)" data-parent-id="RES-W-U04" data-length-max-m="82" data-width-m="18"/>
+    <rect id="RES-W-U04" class="residence-footprint residence-undergraduate" x="731" y="1271" width="78" height="18" transform="rotate(90 770 1280)" data-residence-type="undergraduate" data-length-min-m="78" data-length-max-m="82" data-width-m="18" data-floors-range="10-11" data-render-mode="range-not-midpoint"/>
+    <rect id="RES-W-U05-MAX" class="residence-max-envelope" x="669" y="1221" width="82" height="18" transform="rotate(0 710 1230)" data-parent-id="RES-W-U05" data-length-max-m="82" data-width-m="18"/>
+    <rect id="RES-W-U05" class="residence-footprint residence-undergraduate" x="671" y="1221" width="78" height="18" transform="rotate(0 710 1230)" data-residence-type="undergraduate" data-length-min-m="78" data-length-max-m="82" data-width-m="18" data-floors-range="10-11" data-render-mode="range-not-midpoint"/>
+    <rect id="RES-W-U06-MAX" class="residence-max-envelope" x="609" y="1151" width="82" height="18" transform="rotate(90 650 1160)" data-parent-id="RES-W-U06" data-length-max-m="82" data-width-m="18"/>
+    <rect id="RES-W-U06" class="residence-footprint residence-undergraduate" x="611" y="1151" width="78" height="18" transform="rotate(90 650 1160)" data-residence-type="undergraduate" data-length-min-m="78" data-length-max-m="82" data-width-m="18" data-floors-range="10-11" data-render-mode="range-not-midpoint"/>
+    <rect id="RES-W-U07-MAX" class="residence-max-envelope" x="729" y="1151" width="82" height="18" transform="rotate(90 770 1160)" data-parent-id="RES-W-U07" data-length-max-m="82" data-width-m="18"/>
+    <rect id="RES-W-U07" class="residence-footprint residence-undergraduate" x="731" y="1151" width="78" height="18" transform="rotate(90 770 1160)" data-residence-type="undergraduate" data-length-min-m="78" data-length-max-m="82" data-width-m="18" data-floors-range="10-11" data-render-mode="range-not-midpoint"/>
+    <rect id="RES-W-U08-MAX" class="residence-max-envelope" x="609" y="1061" width="82" height="18" transform="rotate(90 650 1070)" data-parent-id="RES-W-U08" data-length-max-m="82" data-width-m="18"/>
+    <rect id="RES-W-U08" class="residence-footprint residence-undergraduate" x="611" y="1061" width="78" height="18" transform="rotate(90 650 1070)" data-residence-type="undergraduate" data-length-min-m="78" data-length-max-m="82" data-width-m="18" data-floors-range="10-11" data-render-mode="range-not-midpoint"/>
+    <rect id="RES-W-U09-MAX" class="residence-max-envelope" x="729" y="1061" width="82" height="18" transform="rotate(90 770 1070)" data-parent-id="RES-W-U09" data-length-max-m="82" data-width-m="18"/>
+    <rect id="RES-W-U09" class="residence-footprint residence-undergraduate" x="731" y="1061" width="78" height="18" transform="rotate(90 770 1070)" data-residence-type="undergraduate" data-length-min-m="78" data-length-max-m="82" data-width-m="18" data-floors-range="10-11" data-render-mode="range-not-midpoint"/>
+    <rect id="RES-W-U10-MAX" class="residence-max-envelope" x="669" y="1016" width="82" height="18" transform="rotate(0 710 1025)" data-parent-id="RES-W-U10" data-length-max-m="82" data-width-m="18"/>
+    <rect id="RES-W-U10" class="residence-footprint residence-undergraduate" x="671" y="1016" width="78" height="18" transform="rotate(0 710 1025)" data-residence-type="undergraduate" data-length-min-m="78" data-length-max-m="82" data-width-m="18" data-floors-range="10-11" data-render-mode="range-not-midpoint"/>
+    <rect id="RES-W-U11-MAX" class="residence-max-envelope" x="629" y="951" width="82" height="18" transform="rotate(90 670 960)" data-parent-id="RES-W-U11" data-length-max-m="82" data-width-m="18"/>
+    <rect id="RES-W-U11" class="residence-footprint residence-undergraduate" x="631" y="951" width="78" height="18" transform="rotate(90 670 960)" data-residence-type="undergraduate" data-length-min-m="78" data-length-max-m="82" data-width-m="18" data-floors-range="10-11" data-render-mode="range-not-midpoint"/>
+    <rect id="RES-W-U12-MAX" class="residence-max-envelope" x="749" y="951" width="82" height="18" transform="rotate(90 790 960)" data-parent-id="RES-W-U12" data-length-max-m="82" data-width-m="18"/>
+    <rect id="RES-W-U12" class="residence-footprint residence-undergraduate" x="751" y="951" width="78" height="18" transform="rotate(90 790 960)" data-residence-type="undergraduate" data-length-min-m="78" data-length-max-m="82" data-width-m="18" data-floors-range="10-11" data-render-mode="range-not-midpoint"/>
+    <metadata data-residence-records="56" data-template-count="8"/>
+  </g>
+  <g id="10_Sports" data-layer="sports">
+    <rect id="ATH-02" class="sports-plaza" x="2000" y="430" width="200" height="140" transform="rotate(0 2100 500)" data-length-m="200" data-width-m="140" data-source="第17项总平面"/>
+    <rect id="ATH-05" class="sports-track" x="1990" y="732.5" width="220" height="155" transform="rotate(0 2100 810)" data-geometry="schematic-within-control-footprint" data-length-m="220" data-width-m="155"/>
+    <rect id="ATH-05-INFIELD" class="sports-infield" x="2012" y="754.5" width="176" height="111" transform="rotate(0 2100 810)" data-derived="visual-infield-only"/>
+    <rect id="ATH-06-N" class="sports-stand" x="2025" y="703" width="150" height="24" transform="rotate(0 2100 715)" data-length-m="150" data-width-m="24" data-source="第17项总平面"/>
+    <rect id="ATH-06-S" class="sports-stand" x="2025" y="893" width="150" height="24" transform="rotate(0 2100 905)" data-length-m="150" data-width-m="24" data-source="第17项总平面"/>
+    <rect id="ATH-11" class="sports-track" x="3040" y="2042.5" width="220" height="155" transform="rotate(0 3150 2120)" data-geometry="schematic-within-control-footprint" data-length-m="220" data-width-m="155"/>
+    <rect id="ATH-11-INFIELD" class="sports-infield" x="3062" y="2064.5" width="176" height="111" transform="rotate(0 3150 2120)" data-derived="visual-infield-only"/>
+    <rect id="ATH-12" class="sports-stand" x="3085" y="2000" width="130" height="20" transform="rotate(0 3150 2010)" data-length-m="130" data-width-m="20" data-source="第17项总平面"/>
+    <rect id="ATH-21" class="sport-control sport-basketball" x="1777" y="771" width="136" height="48" transform="rotate(0 1845 795)" data-sport-type="basketball" data-count="8" data-length-m="136" data-width-m="48" data-rotation-y="0" data-source="PATCH-2026-09-13-R6"/>
+    <rect id="ATH-22" class="sport-control sport-basketball" x="2287" y="771" width="136" height="48" transform="rotate(0 2355 795)" data-sport-type="basketball" data-count="8" data-length-m="136" data-width-m="48" data-rotation-y="0" data-source="PATCH-2026-09-13-R6"/>
+    <rect id="ATH-23" class="sport-control sport-table-tennis" x="1807" y="534" width="86" height="42" transform="rotate(0 1850 555)" data-sport-type="table_tennis" data-count="36" data-length-m="86" data-width-m="42" data-rotation-y="0" data-source="PATCH-2026-09-13-R6"/>
+    <rect id="ATH-24" class="sport-control sport-tennis" x="2562" y="798" width="156" height="84" transform="rotate(0 2640 840)" data-sport-type="tennis" data-count="8" data-length-m="156" data-width-m="84" data-rotation-y="0" data-source="PATCH-2026-09-13-R6"/>
+    <rect id="ATH-25" class="sport-control sport-volleyball" x="2755" y="816" width="90" height="48" transform="rotate(0 2800 840)" data-sport-type="volleyball" data-count="6" data-length-m="90" data-width-m="48" data-rotation-y="0" data-source="PATCH-2026-09-13-R6"/>
+    <rect id="ATH-26" class="sport-control sport-badminton" x="1634" y="812" width="72" height="36" transform="rotate(0 1670 830)" data-sport-type="badminton" data-count="4" data-length-m="72" data-width-m="36" data-rotation-y="0" data-source="PATCH-2026-09-13-R6"/>
+    <rect id="ATH-27" class="sport-control sport-football" x="2570" y="922" width="100" height="56" transform="rotate(0 2620 950)" data-sport-type="five_a_side" data-count="2" data-length-m="100" data-width-m="56" data-rotation-y="0" data-source="PATCH-2026-09-13-R6"/>
+    <rect id="ATH-14" class="sport-control sport-basketball" x="2858" y="2096" width="204" height="48" transform="rotate(90 2960 2120)" data-sport-type="basketball" data-count="12" data-length-m="204" data-width-m="48" data-rotation-y="90" data-source="PATCH-2026-09-13-R6"/>
+    <rect id="ATH-15" class="sport-control sport-tennis" x="3192" y="2218" width="156" height="84" transform="rotate(0 3270 2260)" data-sport-type="tennis" data-count="8" data-length-m="156" data-width-m="84" data-rotation-y="0" data-source="PATCH-2026-09-13-R6"/>
+    <rect id="ATH-16" class="sport-control sport-volleyball" x="3382" y="2266" width="116" height="48" transform="rotate(0 3440 2290)" data-sport-type="volleyball" data-count="8" data-length-m="116" data-width-m="48" data-rotation-y="0" data-source="PATCH-2026-09-13-R6"/>
+    <rect id="ATH-17" class="sport-control sport-table-tennis" x="3374" y="2190" width="72" height="40" transform="rotate(0 3410 2210)" data-sport-type="table_tennis" data-count="28" data-length-m="72" data-width-m="40" data-rotation-y="0" data-source="PATCH-2026-09-13-R6"/>
+    <rect id="ATH-18" class="sport-control sport-badminton" x="2974" y="2032" width="72" height="36" transform="rotate(90 3010 2050)" data-sport-type="badminton" data-count="4" data-length-m="72" data-width-m="36" data-rotation-y="90" data-source="PATCH-2026-09-13-R6"/>
+    <rect id="ATH-19" class="sport-control sport-football" x="3360" y="2002" width="100" height="56" transform="rotate(0 3410 2030)" data-sport-type="five_a_side" data-count="2" data-length-m="100" data-width-m="56" data-rotation-y="0" data-source="PATCH-2026-09-13-R6"/>
+    <rect id="LIFE-W-BB-01" class="sport-control sport-basketball" x="791" y="1228" width="68" height="24" transform="rotate(0 825 1240)" data-sport-type="basketball" data-count="2" data-length-m="68" data-width-m="24" data-rotation-y="0" data-source="PATCH-2026-09-13-R6"/>
+    <rect id="LIFE-W-BB-02" class="sport-control sport-basketball" x="791" y="1038" width="68" height="24" transform="rotate(0 825 1050)" data-sport-type="basketball" data-count="2" data-length-m="68" data-width-m="24" data-rotation-y="0" data-source="PATCH-2026-09-13-R6"/>
+    <rect id="LIFE-W-TT-01" class="sport-control sport-table-tennis" x="795" y="1127" width="60" height="36" transform="rotate(0 825 1145)" data-sport-type="table_tennis" data-count="20" data-length-m="60" data-width-m="36" data-rotation-y="0" data-source="PATCH-2026-09-13-R6"/>
+    <rect id="LIFE-W-VB-01" class="sport-control sport-volleyball" x="854" y="1408" width="52" height="24" transform="rotate(0 880 1420)" data-sport-type="volleyball" data-count="2" data-length-m="52" data-width-m="24" data-rotation-y="0" data-source="PATCH-2026-09-13-R6"/>
+    <rect id="LIFE-W-BD-01" class="sport-control sport-badminton" x="815" y="988" width="40" height="24" transform="rotate(0 835 1000)" data-sport-type="badminton" data-count="2" data-length-m="40" data-width-m="24" data-rotation-y="0" data-source="PATCH-2026-09-13-R6"/>
+    <rect id="LIFE-N-BB-W" class="sport-control sport-basketball" x="1516" y="738" width="68" height="24" transform="rotate(90 1550 750)" data-sport-type="basketball" data-count="2" data-length-m="68" data-width-m="24" data-rotation-y="90" data-source="PATCH-2026-09-13-R6"/>
+    <rect id="LIFE-N-BB-E" class="sport-control sport-basketball" x="2526" y="738" width="68" height="24" transform="rotate(90 2560 750)" data-sport-type="basketball" data-count="2" data-length-m="68" data-width-m="24" data-rotation-y="90" data-source="PATCH-2026-09-13-R6"/>
+    <rect id="LIFE-N-TT-01" class="sport-control sport-table-tennis" x="2573" y="734" width="54" height="32" transform="rotate(90 2600 750)" data-sport-type="table_tennis" data-count="16" data-length-m="54" data-width-m="32" data-rotation-y="90" data-source="PATCH-2026-09-13-R6"/>
+    <rect id="LIFE-N-VB-01" class="sport-control sport-volleyball" x="2664" y="738" width="52" height="24" transform="rotate(90 2690 750)" data-sport-type="volleyball" data-count="2" data-length-m="52" data-width-m="24" data-rotation-y="90" data-source="PATCH-2026-09-13-R6"/>
+    <rect id="LIFE-N-BD-01" class="sport-control sport-badminton" x="3010" y="578" width="40" height="24" transform="rotate(0 3030 590)" data-sport-type="badminton" data-count="2" data-length-m="40" data-width-m="24" data-rotation-y="0" data-source="PATCH-2026-09-13-R6"/>
+    <rect id="LIFE-E-BB-01" class="sport-control sport-basketball" x="3332" y="1568" width="136" height="24" transform="rotate(0 3400 1580)" data-sport-type="basketball" data-count="4" data-length-m="136" data-width-m="24" data-rotation-y="0" data-source="PATCH-2026-09-13-R6"/>
+    <rect id="LIFE-E-TT-01" class="sport-control sport-table-tennis" x="3530" y="1442" width="60" height="36" transform="rotate(0 3560 1460)" data-sport-type="table_tennis" data-count="20" data-length-m="60" data-width-m="36" data-rotation-y="0" data-source="PATCH-2026-09-13-R6"/>
+    <rect id="LIFE-E-VB-01" class="sport-control sport-volleyball" x="3234" y="1448" width="52" height="24" transform="rotate(0 3260 1460)" data-sport-type="volleyball" data-count="2" data-length-m="52" data-width-m="24" data-rotation-y="0" data-source="PATCH-2026-09-13-R6"/>
+    <rect id="LIFE-E-BD-01" class="sport-control sport-badminton" x="3240" y="1568" width="40" height="24" transform="rotate(0 3260 1580)" data-sport-type="badminton" data-count="2" data-length-m="40" data-width-m="24" data-rotation-y="0" data-source="PATCH-2026-09-13-R6"/>
+    <rect id="LIFE-E-FB-01" class="sport-control sport-football" x="3524" y="1934" width="52" height="32" transform="rotate(0 3550 1950)" data-sport-type="five_a_side" data-count="1" data-length-m="52" data-width-m="32" data-rotation-y="0" data-source="PATCH-2026-09-13-R6"/>
+    <rect id="LIFE-S-BB-01" class="sport-control sport-basketball" x="2282" y="2196" width="136" height="48" transform="rotate(0 2350 2220)" data-sport-type="basketball" data-count="4" data-length-m="136" data-width-m="48" data-rotation-y="0" data-source="PATCH-2026-09-13-R6"/>
+    <rect id="LIFE-S-TT-01" class="sport-control sport-table-tennis" x="2450" y="2202" width="60" height="36" transform="rotate(90 2480 2220)" data-sport-type="table_tennis" data-count="20" data-length-m="60" data-width-m="36" data-rotation-y="90" data-source="PATCH-2026-09-13-R6"/>
+    <rect id="LIFE-S-VB-01" class="sport-control sport-volleyball" x="2324" y="2258" width="52" height="24" transform="rotate(0 2350 2270)" data-sport-type="volleyball" data-count="2" data-length-m="52" data-width-m="24" data-rotation-y="0" data-source="PATCH-2026-09-13-R6"/>
+    <rect id="LIFE-S-BD-01" class="sport-control sport-badminton" x="2380" y="2258" width="40" height="24" transform="rotate(90 2400 2270)" data-sport-type="badminton" data-count="2" data-length-m="40" data-width-m="24" data-rotation-y="90" data-source="PATCH-2026-09-13-R6"/>
+    <rect id="LIFE-S-FB-01" class="sport-control sport-football" x="2414" y="2204" width="52" height="32" transform="rotate(90 2440 2220)" data-sport-type="five_a_side" data-count="1" data-length-m="52" data-width-m="32" data-rotation-y="90" data-source="PATCH-2026-09-13-R6"/>
+    <circle id="TT-ENG-01" class="sport-marker-only" cx="1070" cy="1470" r="7" data-sport-type="table_tennis" data-count="6" data-geometry="center-marker-only" data-source="PATCH-2026-09-13-R6"/>
+    <circle id="TT-HUM-01" class="sport-marker-only" cx="3020" cy="1560" r="7" data-sport-type="table_tennis" data-count="6" data-geometry="center-marker-only" data-source="PATCH-2026-09-13-R6"/>
+    <circle id="TT-MED-01" class="sport-marker-only" cx="1270" cy="2320" r="7" data-sport-type="table_tennis" data-count="6" data-geometry="center-marker-only" data-source="PATCH-2026-09-13-R6"/>
+    <metadata data-routed-major-sports="6" data-outdoor-sports-records="36" data-control-footprints="33" data-marker-only="3" data-basketball-full-court-equivalent="44" data-table-tennis-tables="158" data-tennis-courts="16" data-volleyball-courts="22" data-badminton-courts="16" data-five-a-side-fields="6"/>
+  </g>
+  <g id="11_POI" data-layer="step5-poi">
+    <circle id="HSP-RSV-01" class="reserve-marker" cx="820" cy="2430" r="9" data-geometry="center-marker-only"/>
+    <text class="poi-id" x="834" y="2420">HSP-RSV-01 医院二期预留</text>
+  </g>
+  <g id="12_Labels" data-layer="step5-labels">
+    <text class="building-id" x="890" y="943" text-anchor="middle">AERO-01</text>
+    <text class="building-id" x="1010" y="953" text-anchor="middle">AERO-02</text>
+    <text class="building-id" x="950" y="1043" text-anchor="middle">AERO-03</text>
+    <text class="building-id" x="1640" y="1513" text-anchor="middle">AI-01</text>
+    <text class="building-id" x="1710" y="1593" text-anchor="middle">AI-02</text>
+    <text class="building-id" x="1390" y="943" text-anchor="middle">ARC-01</text>
+    <text class="building-id" x="1510" y="943" text-anchor="middle">ARC-02</text>
+    <text class="building-id" x="1450" y="1043" text-anchor="middle">ARC-03</text>
+    <text class="building-id" x="3210" y="733" text-anchor="middle">ART-01</text>
+    <text class="building-id" x="3360" y="663" text-anchor="middle">ART-02</text>
+    <text class="building-id" x="3490" y="833" text-anchor="middle">ART-03</text>
+    <text class="building-id" x="3320" y="833" text-anchor="middle">ART-04</text>
+    <text class="building-id" x="2100" y="603" text-anchor="middle">ATH-01</text>
+    <text class="building-id" x="1850" y="693" text-anchor="middle">ATH-03</text>
+    <text class="building-id" x="2350" y="693" text-anchor="middle">ATH-04</text>
+    <text class="building-id" x="3370" y="2113" text-anchor="middle">ATH-13</text>
+    <text class="building-id" x="2860" y="1773" text-anchor="middle">BUS-01</text>
+    <text class="building-id" x="3000" y="1773" text-anchor="middle">BUS-02</text>
+    <text class="building-id" x="1140" y="943" text-anchor="middle">CE-01</text>
+    <text class="building-id" x="1260" y="943" text-anchor="middle">CE-02</text>
+    <text class="building-id" x="1200" y="1043" text-anchor="middle">CE-03</text>
+    <text class="building-id" x="2100" y="1753" text-anchor="middle">CEN-01</text>
+    <text class="building-id" x="2100" y="2093" text-anchor="middle">CEN-02</text>
+    <text class="building-id" x="2350" y="1953" text-anchor="middle">CEN-03</text>
+    <text class="building-id" x="1850" y="1953" text-anchor="middle">CEN-04</text>
+    <text class="building-id" x="1820" y="1773" text-anchor="middle">CEN-05</text>
+    <text class="building-id" x="2380" y="1773" text-anchor="middle">CEN-06</text>
+    <text class="building-id" x="1680" y="2023" text-anchor="middle">CEN-07</text>
+    <text class="building-id" x="2520" y="2023" text-anchor="middle">CEN-08</text>
+    <text class="building-id" x="1630" y="1873" text-anchor="middle">CEN-09</text>
+    <text class="building-id" x="1630" y="1713" text-anchor="middle">CEN-10</text>
+    <text class="building-id" x="2570" y="1873" text-anchor="middle">CEN-11</text>
+    <text class="building-id" x="2570" y="1713" text-anchor="middle">CEN-12</text>
+    <text class="building-id" x="1590" y="1553" text-anchor="middle">CEN-13</text>
+    <text class="building-id" x="2600" y="1553" text-anchor="middle">CEN-14</text>
+    <text class="building-id" x="2400" y="2133" text-anchor="middle">CEN-15</text>
+    <text class="building-id" x="2100" y="2373" text-anchor="middle">CEN-16</text>
+    <text class="building-id" x="1640" y="1413" text-anchor="middle">CEN-17</text>
+    <text class="building-id" x="2560" y="1413" text-anchor="middle">CEN-18</text>
+    <text class="building-id" x="890" y="1323" text-anchor="middle">CHE-01</text>
+    <text class="building-id" x="1010" y="1323" text-anchor="middle">CHE-02</text>
+    <text class="building-id" x="950" y="1413" text-anchor="middle">CHE-03</text>
+    <text class="building-id" x="2050" y="943" text-anchor="middle">CHM-01</text>
+    <text class="building-id" x="2050" y="1043" text-anchor="middle">CHM-02</text>
+    <text class="building-id" x="1340" y="1713" text-anchor="middle">CSE-01</text>
+    <text class="building-id" x="1460" y="1713" text-anchor="middle">CSE-02</text>
+    <text class="building-id" x="1400" y="1813" text-anchor="middle">CSE-03</text>
+    <text class="building-id" x="1390" y="1503" text-anchor="middle">ECE-01</text>
+    <text class="building-id" x="1510" y="1593" text-anchor="middle">ECE-02</text>
+    <text class="building-id" x="2700" y="1773" text-anchor="middle">ECO-01</text>
+    <text class="building-id" x="2920" y="1163" text-anchor="middle">EDU-01</text>
+    <text class="building-id" x="1390" y="1323" text-anchor="middle">EE-01</text>
+    <text class="building-id" x="1510" y="1413" text-anchor="middle">EE-02</text>
+    <text class="building-id" x="1630" y="943" text-anchor="middle">ENV-01</text>
+    <text class="building-id" x="1710" y="1043" text-anchor="middle">ENV-02</text>
+    <text class="building-id" x="1140" y="1323" text-anchor="middle">EPE-01</text>
+    <text class="building-id" x="1260" y="1323" text-anchor="middle">EPE-02</text>
+    <text class="building-id" x="1200" y="1413" text-anchor="middle">EPE-03</text>
+    <text class="building-id" x="2700" y="1913" text-anchor="middle">FIN-01</text>
+    <text class="building-id" x="2920" y="1313" text-anchor="middle">FLA-01</text>
+    <text class="building-id" x="2360" y="943" text-anchor="middle">GEO-01</text>
+    <text class="building-id" x="2360" y="1043" text-anchor="middle">GEO-02</text>
+    <text class="building-id" x="2920" y="1473" text-anchor="middle">GPA-01</text>
+    <text class="building-id" x="1060" y="2603" text-anchor="middle">HSP-01</text>
+    <text class="building-id hospital-id" x="1060" y="2596" text-anchor="middle">HSP-02</text>
+    <text class="building-id" x="1060" y="2537" text-anchor="middle">HSP-03</text>
+    <text class="building-id" x="1240" y="2423" text-anchor="middle">HSP-04</text>
+    <text class="building-id" x="1420" y="2273" text-anchor="middle">HSP-05</text>
+    <text class="building-id" x="2750" y="1313" text-anchor="middle">HUM-01</text>
+    <text class="building-id" x="1140" y="1503" text-anchor="middle">ICT-01</text>
+    <text class="building-id" x="1260" y="1593" text-anchor="middle">ICT-02</text>
+    <text class="building-id" x="3000" y="1953" text-anchor="middle">IGS-01</text>
+    <text class="building-id" x="2750" y="1163" text-anchor="middle">JRN-01</text>
+    <text class="building-id" x="670" y="1673" text-anchor="middle">LAW-01</text>
+    <text class="building-id" x="2200" y="943" text-anchor="middle">LIFE-01</text>
+    <text class="building-id" x="2200" y="1043" text-anchor="middle">LIFE-02</text>
+    <text class="building-id" x="2620" y="2143" text-anchor="middle">LIFE-C-01</text>
+    <text class="building-id" x="2790" y="2143" text-anchor="middle">LIFE-C-02</text>
+    <text class="building-id" x="2620" y="2243" text-anchor="middle">LIFE-C-03</text>
+    <text class="building-id" x="2790" y="2243" text-anchor="middle">LIFE-C-04</text>
+    <text class="building-id" x="3250" y="1893" text-anchor="middle">LIFE-E-01</text>
+    <text class="building-id" x="3420" y="1893" text-anchor="middle">LIFE-E-02</text>
+    <text class="building-id" x="2950" y="793" text-anchor="middle">LIFE-N-01</text>
+    <text class="building-id" x="2950" y="903" text-anchor="middle">LIFE-N-02</text>
+    <text class="building-id" x="3000" y="2413" text-anchor="middle">LIFE-S-01</text>
+    <text class="building-id" x="3000" y="2533" text-anchor="middle">LIFE-S-02</text>
+    <text class="building-id" x="650" y="1473" text-anchor="middle">LIFE-W-01</text>
+    <text class="building-id" x="800" y="1473" text-anchor="middle">LIFE-W-02</text>
+    <text class="building-id" x="2750" y="1473" text-anchor="middle">MARX-01</text>
+    <text class="building-id" x="1390" y="1143" text-anchor="middle">MAT-01</text>
+    <text class="building-id" x="1510" y="1243" text-anchor="middle">MAT-02</text>
+    <text class="building-id" x="1780" y="993" text-anchor="middle">MATH-01</text>
+    <text class="building-id" x="1140" y="1143" text-anchor="middle">ME-01</text>
+    <text class="building-id" x="1260" y="1143" text-anchor="middle">ME-02</text>
+    <text class="building-id" x="1200" y="1243" text-anchor="middle">ME-03</text>
+    <text class="building-id" x="870" y="2213" text-anchor="middle">MED-01</text>
+    <text class="building-id" x="1020" y="2213" text-anchor="middle">MED-02</text>
+    <text class="building-id" x="870" y="2093" text-anchor="middle">MED-03</text>
+    <text class="building-id" x="1020" y="2093" text-anchor="middle">MED-04</text>
+    <text class="building-id" x="1630" y="1313" text-anchor="middle">NEE-01</text>
+    <text class="building-id" x="1710" y="1413" text-anchor="middle">NEE-02</text>
+    <text class="building-id" x="890" y="1143" text-anchor="middle">NUC-01</text>
+    <text class="building-id" x="1010" y="1143" text-anchor="middle">NUC-02</text>
+    <text class="building-id" x="950" y="1243" text-anchor="middle">NUC-03</text>
+    <text class="building-id" x="1980" y="2493" text-anchor="middle">OPS-01</text>
+    <text class="building-id" x="3280" y="2443" text-anchor="middle">OPS-02</text>
+    <text class="building-id" x="3430" y="2353" text-anchor="middle">OPS-03</text>
+    <text class="building-id" x="3300" y="2533" text-anchor="middle">OPS-04</text>
+    <text class="building-id" x="3440" y="2433" text-anchor="middle">OPS-05</text>
+    <text class="building-id" x="3300" y="2353" text-anchor="middle">OPS-06</text>
+    <text class="building-id" x="1550" y="1973" text-anchor="middle">OPS-07</text>
+    <text class="building-id" x="1550" y="2093" text-anchor="middle">OPS-08</text>
+    <text class="building-id" x="1700" y="2243" text-anchor="middle">OPS-09</text>
+    <text class="building-id" x="1850" y="2243" text-anchor="middle">OPS-10</text>
+    <text class="building-id" x="1800" y="893" text-anchor="middle">PE-01</text>
+    <text class="building-id" x="2400" y="893" text-anchor="middle">PE-02</text>
+    <text class="building-id" x="1340" y="2213" text-anchor="middle">PH-01</text>
+    <text class="building-id" x="1340" y="2093" text-anchor="middle">PH-02</text>
+    <text class="building-id" x="1180" y="2213" text-anchor="middle">PHA-01</text>
+    <text class="building-id" x="1180" y="2093" text-anchor="middle">PHA-02</text>
+    <text class="building-id" x="1910" y="943" text-anchor="middle">PHY-01</text>
+    <text class="building-id" x="1910" y="1043" text-anchor="middle">PHY-02</text>
+    <text class="building-id" x="3090" y="1163" text-anchor="middle">PSY-01</text>
+    <text class="building-id" x="1400" y="833" text-anchor="middle">RDI-01</text>
+    <text class="building-id" x="780" y="743" text-anchor="middle">RDI-02</text>
+    <text class="building-id" x="940" y="743" text-anchor="middle">RDI-03</text>
+    <text class="building-id" x="1100" y="743" text-anchor="middle">RDI-04</text>
+    <text class="building-id" x="1260" y="743" text-anchor="middle">RDI-05</text>
+    <text class="building-id" x="1420" y="733" text-anchor="middle">RDI-06</text>
+    <text class="building-id" x="840" y="863" text-anchor="middle">RDI-07</text>
+    <text class="building-id" x="1020" y="853" text-anchor="middle">RDI-08</text>
+    <text class="building-id" x="1200" y="863" text-anchor="middle">RDI-09</text>
+    <text class="building-id" x="920" y="633" text-anchor="middle">RDI-10</text>
+    <text class="building-id" x="1070" y="613" text-anchor="middle">RDI-11</text>
+    <text class="building-id" x="1220" y="603" text-anchor="middle">RDI-12</text>
+    <text class="building-id" x="1370" y="593" text-anchor="middle">RDI-13</text>
+    <text class="building-id" x="1520" y="593" text-anchor="middle">RDI-14</text>
+    <text class="building-id" x="890" y="1503" text-anchor="middle">SAF-01</text>
+    <text class="building-id" x="1000" y="1593" text-anchor="middle">SAF-02</text>
+    <text class="building-id" x="3090" y="1313" text-anchor="middle">SOC-01</text>
+    <text class="building-id" x="1630" y="1143" text-anchor="middle">TRA-01</text>
+    <text class="building-id" x="1710" y="1243" text-anchor="middle">TRA-02</text>
+    <text class="residence-id" x="3400" y="1633" text-anchor="middle">RES-E-G01</text>
+    <text class="residence-id" x="3520" y="1633" text-anchor="middle">RES-E-G02</text>
+    <text class="residence-id" x="3340" y="1743" text-anchor="middle">RES-E-G03</text>
+    <text class="residence-id" x="3480" y="1743" text-anchor="middle">RES-E-I01</text>
+    <text class="residence-id" x="3280" y="1293" text-anchor="middle">RES-E-U01</text>
+    <text class="residence-id" x="3400" y="1293" text-anchor="middle">RES-E-U02</text>
+    <text class="residence-id" x="3520" y="1293" text-anchor="middle">RES-E-U03</text>
+    <text class="residence-id" x="3280" y="1393" text-anchor="middle">RES-E-U04</text>
+    <text class="residence-id" x="3400" y="1393" text-anchor="middle">RES-E-U05</text>
+    <text class="residence-id" x="3520" y="1393" text-anchor="middle">RES-E-U06</text>
+    <text class="residence-id" x="3280" y="1513" text-anchor="middle">RES-E-U07</text>
+    <text class="residence-id" x="3400" y="1513" text-anchor="middle">RES-E-U08</text>
+    <text class="residence-id" x="3520" y="1513" text-anchor="middle">RES-E-U09</text>
+    <text class="residence-id" x="3280" y="1633" text-anchor="middle">RES-E-U10</text>
+    <text class="residence-id" x="1840" y="613" text-anchor="middle">RES-N-G01</text>
+    <text class="residence-id" x="2790" y="593" text-anchor="middle">RES-N-G02</text>
+    <text class="residence-id" x="2910" y="643" text-anchor="middle">RES-N-G03</text>
+    <text class="residence-id" x="1580" y="693" text-anchor="middle">RES-N-U01</text>
+    <text class="residence-id" x="1710" y="693" text-anchor="middle">RES-N-U02</text>
+    <text class="residence-id" x="1580" y="593" text-anchor="middle">RES-N-U03</text>
+    <text class="residence-id" x="1710" y="593" text-anchor="middle">RES-N-U04</text>
+    <text class="residence-id" x="1645" y="533" text-anchor="middle">RES-N-U05</text>
+    <text class="residence-id" x="2530" y="693" text-anchor="middle">RES-N-U06</text>
+    <text class="residence-id" x="2660" y="693" text-anchor="middle">RES-N-U07</text>
+    <text class="residence-id" x="2790" y="693" text-anchor="middle">RES-N-U08</text>
+    <text class="residence-id" x="2530" y="593" text-anchor="middle">RES-N-U09</text>
+    <text class="residence-id" x="2660" y="593" text-anchor="middle">RES-N-U10</text>
+    <text class="residence-id" x="2460" y="2333" text-anchor="middle">RES-S-G01</text>
+    <text class="residence-id" x="2600" y="2333" text-anchor="middle">RES-S-I01</text>
+    <text class="residence-id" x="2740" y="2333" text-anchor="middle">RES-S-I02</text>
+    <text class="residence-id" x="2880" y="2333" text-anchor="middle">RES-S-I03</text>
+    <text class="residence-id" x="2400" y="2543" text-anchor="middle">RES-S-U01</text>
+    <text class="residence-id" x="2520" y="2543" text-anchor="middle">RES-S-U02</text>
+    <text class="residence-id" x="2640" y="2543" text-anchor="middle">RES-S-U03</text>
+    <text class="residence-id" x="2760" y="2543" text-anchor="middle">RES-S-U04</text>
+    <text class="residence-id" x="2880" y="2543" text-anchor="middle">RES-S-U05</text>
+    <text class="residence-id" x="2400" y="2433" text-anchor="middle">RES-S-U06</text>
+    <text class="residence-id" x="2520" y="2433" text-anchor="middle">RES-S-U07</text>
+    <text class="residence-id" x="2640" y="2433" text-anchor="middle">RES-S-U08</text>
+    <text class="residence-id" x="2760" y="2433" text-anchor="middle">RES-S-U09</text>
+    <text class="residence-id" x="2880" y="2433" text-anchor="middle">RES-S-U10</text>
+    <text class="residence-id" x="670" y="873" text-anchor="middle">RES-W-G01</text>
+    <text class="residence-id" x="790" y="873" text-anchor="middle">RES-W-G02</text>
+    <text class="residence-id" x="730" y="918" text-anchor="middle">RES-W-G03</text>
+    <text class="residence-id" x="650" y="1363" text-anchor="middle">RES-W-U01</text>
+    <text class="residence-id" x="770" y="1363" text-anchor="middle">RES-W-U02</text>
+    <text class="residence-id" x="650" y="1273" text-anchor="middle">RES-W-U03</text>
+    <text class="residence-id" x="770" y="1273" text-anchor="middle">RES-W-U04</text>
+    <text class="residence-id" x="710" y="1223" text-anchor="middle">RES-W-U05</text>
+    <text class="residence-id" x="650" y="1153" text-anchor="middle">RES-W-U06</text>
+    <text class="residence-id" x="770" y="1153" text-anchor="middle">RES-W-U07</text>
+    <text class="residence-id" x="650" y="1063" text-anchor="middle">RES-W-U08</text>
+    <text class="residence-id" x="770" y="1063" text-anchor="middle">RES-W-U09</text>
+    <text class="residence-id" x="710" y="1018" text-anchor="middle">RES-W-U10</text>
+    <text class="residence-id" x="670" y="953" text-anchor="middle">RES-W-U11</text>
+    <text class="residence-id" x="790" y="953" text-anchor="middle">RES-W-U12</text>
+    <text class="sport-id" x="2100" y="493" text-anchor="middle">ATH-02</text>
+    <text class="sport-id" x="2100" y="803" text-anchor="middle">ATH-05</text>
+    <text class="sport-id" x="2100" y="708" text-anchor="middle">ATH-06-N</text>
+    <text class="sport-id" x="2100" y="898" text-anchor="middle">ATH-06-S</text>
+    <text class="sport-id" x="3150" y="2113" text-anchor="middle">ATH-11</text>
+    <text class="sport-id" x="3150" y="2003" text-anchor="middle">ATH-12</text>
+    <text class="sport-id" x="1845" y="788" text-anchor="middle">ATH-21 ×8</text>
+    <text class="sport-id" x="2355" y="788" text-anchor="middle">ATH-22 ×8</text>
+    <text class="sport-id" x="1850" y="548" text-anchor="middle">ATH-23 ×36</text>
+    <text class="sport-id" x="2640" y="833" text-anchor="middle">ATH-24 ×8</text>
+    <text class="sport-id" x="2800" y="833" text-anchor="middle">ATH-25 ×6</text>
+    <text class="sport-id" x="1670" y="823" text-anchor="middle">ATH-26 ×4</text>
+    <text class="sport-id" x="2620" y="943" text-anchor="middle">ATH-27 ×2</text>
+    <text class="sport-id" x="2960" y="2113" text-anchor="middle">ATH-14 ×12</text>
+    <text class="sport-id" x="3270" y="2253" text-anchor="middle">ATH-15 ×8</text>
+    <text class="sport-id" x="3440" y="2283" text-anchor="middle">ATH-16 ×8</text>
+    <text class="sport-id" x="3410" y="2203" text-anchor="middle">ATH-17 ×28</text>
+    <text class="sport-id" x="3010" y="2043" text-anchor="middle">ATH-18 ×4</text>
+    <text class="sport-id" x="3410" y="2023" text-anchor="middle">ATH-19 ×2</text>
+    <text class="sport-id" x="825" y="1233" text-anchor="middle">LIFE-W-BB-01 ×2</text>
+    <text class="sport-id" x="825" y="1043" text-anchor="middle">LIFE-W-BB-02 ×2</text>
+    <text class="sport-id" x="825" y="1138" text-anchor="middle">LIFE-W-TT-01 ×20</text>
+    <text class="sport-id" x="880" y="1413" text-anchor="middle">LIFE-W-VB-01 ×2</text>
+    <text class="sport-id" x="835" y="993" text-anchor="middle">LIFE-W-BD-01 ×2</text>
+    <text class="sport-id" x="1550" y="743" text-anchor="middle">LIFE-N-BB-W ×2</text>
+    <text class="sport-id" x="2560" y="743" text-anchor="middle">LIFE-N-BB-E ×2</text>
+    <text class="sport-id" x="2600" y="743" text-anchor="middle">LIFE-N-TT-01 ×16</text>
+    <text class="sport-id" x="2690" y="743" text-anchor="middle">LIFE-N-VB-01 ×2</text>
+    <text class="sport-id" x="3030" y="583" text-anchor="middle">LIFE-N-BD-01 ×2</text>
+    <text class="sport-id" x="3400" y="1573" text-anchor="middle">LIFE-E-BB-01 ×4</text>
+    <text class="sport-id" x="3560" y="1453" text-anchor="middle">LIFE-E-TT-01 ×20</text>
+    <text class="sport-id" x="3260" y="1453" text-anchor="middle">LIFE-E-VB-01 ×2</text>
+    <text class="sport-id" x="3260" y="1573" text-anchor="middle">LIFE-E-BD-01 ×2</text>
+    <text class="sport-id" x="3550" y="1943" text-anchor="middle">LIFE-E-FB-01 ×1</text>
+    <text class="sport-id" x="2350" y="2213" text-anchor="middle">LIFE-S-BB-01 ×4</text>
+    <text class="sport-id" x="2480" y="2213" text-anchor="middle">LIFE-S-TT-01 ×20</text>
+    <text class="sport-id" x="2350" y="2263" text-anchor="middle">LIFE-S-VB-01 ×2</text>
+    <text class="sport-id" x="2400" y="2263" text-anchor="middle">LIFE-S-BD-01 ×2</text>
+    <text class="sport-id" x="2440" y="2213" text-anchor="middle">LIFE-S-FB-01 ×1</text>
+    <text class="sport-id" x="1070" y="1463" text-anchor="middle">TT-ENG-01 ×6</text>
+    <text class="sport-id" x="3020" y="1553" text-anchor="middle">TT-HUM-01 ×6</text>
+    <text class="sport-id" x="1270" y="2313" text-anchor="middle">TT-MED-01 ×6</text>
+    <text class="water-name" x="2125" y="1288" text-anchor="middle">澄湖</text>
+    <text class="water-name" x="2490" y="998" text-anchor="middle">知源湖</text>
+    <text class="water-name" x="1070" y="1043" text-anchor="middle">匠心池</text>
+    <text class="water-name" x="2490" y="1088" text-anchor="middle">格物池</text>
+    <text class="water-name" x="1320" y="1608" text-anchor="middle">智泉</text>
+    <text class="water-name" x="3030" y="1048" text-anchor="middle">荷风池</text>
+    <text class="water-name" x="1120" y="2288" text-anchor="middle">杏林池</text>
+    <text class="water-name" x="3180" y="888" text-anchor="middle">艺澜池</text>
+    <text class="water-name" x="720" y="1113" text-anchor="middle">西苑景观池</text>
+    <text class="water-name" x="3420" y="1468" text-anchor="middle">东苑景观池</text>
+    <text class="water-name" x="2700" y="2388" text-anchor="middle">南苑景观池</text>
+    <text class="small-name" x="2112" y="2570">迎宾广场</text>
+    <text class="small-name" x="2112" y="2270">明德广场</text>
+    <text class="small-name" x="2112" y="1890">求真广场</text>
+    <text class="small-name" x="2112" y="490">健行广场</text>
+    <text class="small-name" x="3572" y="830">艺境广场</text>
+    <text class="small-name" x="622" y="1670">法治广场</text>
+    <text class="small-name" x="1072" y="2630">仁心广场</text>
+    <text class="open-name" x="1270" y="840" text-anchor="middle">格物园</text>
+    <text class="open-name" x="2950" y="1170" text-anchor="middle">文心园</text>
+    <text class="open-name" x="1120" y="2250" text-anchor="middle">杏林园</text>
+    <text class="open-name" x="3230" y="840" text-anchor="middle">艺境园</text>
+    <text class="open-name" x="2150" y="525" text-anchor="middle">松风林</text>
+    <text class="open-name" x="2100" y="1595" text-anchor="middle">博雅草坪</text>
+  </g>
+  <g id="13_RoadNames" data-layer="road-names">
+    <text class="city-road-name" x="2250" y="2782" text-anchor="middle" transform="rotate(0 2250 2782)">大学路</text>
+    <text class="city-road-name" x="447" y="1610" text-anchor="middle" transform="rotate(-90 447 1610)">学府路</text>
+    <text class="city-road-name" x="2220" y="383" text-anchor="middle" transform="rotate(0 2220 383)">致远路</text>
+    <text class="city-road-name" x="3760" y="1610" text-anchor="middle" transform="rotate(90 3760 1610)">长虹路</text>
+    <text class="road-name" x="3074.85" y="837.18" text-anchor="middle" transform="rotate(-22.25 3074.85 837.18)">博雅环路</text>
+    <text class="road-name" x="1000.72" y="1681.86" text-anchor="middle" transform="rotate(78.69 1000.72 1681.86)">智创路</text>
+    <text class="road-name" x="1070" y="1257.26" text-anchor="middle" transform="rotate(0 1070 1257.26)">匠心路</text>
+    <text class="road-name" x="1146.4" y="1662" text-anchor="middle" transform="rotate(90 1146.4 1662)">匠心路南连接</text>
+    <text class="road-name" x="1188.26" y="773.74" text-anchor="middle" transform="rotate(45 1188.26 773.74)">匠心路北连接</text>
+    <text class="road-name" x="1475" y="1092" text-anchor="middle" transform="rotate(90 1475 1092)">格致路西连接</text>
+    <text class="road-name" x="2182.87" y="1088.1" text-anchor="middle" transform="rotate(89.54 2182.87 1088.1)">格致路</text>
+    <text class="road-name" x="2942.36" y="1092" text-anchor="middle" transform="rotate(90 2942.36 1092)">格致路东连接</text>
+    <text class="road-name" x="3152.1" y="1428.79" text-anchor="middle" transform="rotate(-2.12 3152.1 1428.79)">文华路</text>
+    <text class="road-name" x="1087.34" y="685.99" text-anchor="middle" transform="rotate(86.67 1087.34 685.99)">创新大道</text>
+    <text class="road-name" x="1400" y="677" text-anchor="middle" transform="rotate(81.47 1400 677)">创新大道东连接</text>
+    <text class="road-name" x="686.71" y="799.6" text-anchor="middle" transform="rotate(60.26 686.71 799.6)">创新大道西苑连接</text>
+    <text class="road-name" x="1010" y="2362" text-anchor="middle" transform="rotate(90 1010 2362)">济世路</text>
+    <text class="road-name" x="1150" y="2519.5" text-anchor="middle" transform="rotate(0 1150 2519.5)">医院应急路</text>
+    <text class="road-name" x="2100" y="488.5" text-anchor="middle" transform="rotate(0 2100 488.5)">健行路</text>
+    <text class="road-name" x="590" y="1150.66" text-anchor="middle" transform="rotate(0 590 1150.66)">青年路·西苑段</text>
+    <text class="road-name" x="1770" y="627" text-anchor="middle" transform="rotate(0 1770 627)">青年路·北苑西段</text>
+    <text class="road-name" x="3000" y="637" text-anchor="middle" transform="rotate(0 3000 637)">青年路·北苑东段</text>
+    <text class="road-name" x="3610" y="1572.01" text-anchor="middle" transform="rotate(0 3610 1572.01)">青年路·东苑段</text>
+    <text class="road-name" x="3632.5" y="1472" text-anchor="middle" transform="rotate(90 3632.5 1472)">东门连接路</text>
+    <text class="road-name" x="2673.25" y="2632" text-anchor="middle" transform="rotate(90 2673.25 2632)">青年路·南苑段</text>
+    <text class="road-name" x="2226.38" y="2518.38" text-anchor="middle" transform="rotate(-45 2226.38 2518.38)">青年路·南苑西连接</text>
+    <text class="road-name" x="2955" y="2492.61" text-anchor="middle" transform="rotate(0 2955 2492.61)">青年路·南苑东连接</text>
+    <text class="road-name" x="2475.04" y="1234.74" text-anchor="middle" transform="rotate(-11.31 2475.04 1234.74)">澄湖路</text>
+  </g>
+  <g id="14_Legend" data-layer="legend">
+    <text class="legend" x="3530" y="230">N</text>
+    <path d="M 3538 244 L 3538 324 M 3525 262 L 3538 244 L 3551 262" fill="none" stroke="#173A5E" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <line x1="3250" y1="3040" x2="3750" y2="3040" stroke="#30353a" stroke-width="6"/>
+    <line x1="3250" y1="3028" x2="3250" y2="3052" stroke="#30353a" stroke-width="4"/>
+    <line x1="3750" y1="3028" x2="3750" y2="3052" stroke="#30353a" stroke-width="4"/>
+    <text class="legend" x="3250" y="3018">0</text>
+    <text class="legend" x="3750" y="3018" text-anchor="end">500 m</text>
+    <text class="legend" x="300" y="3130">虚线圆形水体/公园 = 依据已冻结中心与面积生成的等面积参考轮廓，不代表最终岸线/边界。</text>
+  </g>
+</svg>
