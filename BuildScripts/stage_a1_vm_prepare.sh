@@ -24,9 +24,8 @@ command -v python3 >/dev/null 2>&1 || fail "python3 not found" 3
 command -v git >/dev/null 2>&1 || fail "git not found" 3
 command -v swift >/dev/null 2>&1 || fail "swift not found; Xcode command line tools are required" 3
 
-# Homebrew is optional. VM environments can fail to reach raw.githubusercontent.com
-# even while normal GitHub git traffic works. Bootstrap a pinned XcodeGen directly
-# from its official GitHub repository when no xcodegen binary is present.
+# Homebrew is optional. Bootstrap a pinned XcodeGen directly from its official
+# GitHub repository when no xcodegen binary is present.
 export PATH="$HOME/.local/bin:$PATH"
 if ! command -v xcodegen >/dev/null 2>&1; then
   chmod +x "$ROOT/BuildScripts/bootstrap_xcodegen.sh" 2>/dev/null || true
@@ -35,7 +34,23 @@ if ! command -v xcodegen >/dev/null 2>&1; then
 fi
 command -v xcodegen >/dev/null 2>&1 || fail "xcodegen not found after bootstrap" 3
 
-[[ -x "$UNITY_EDITOR" ]] || fail "Unity ${UNITY_VERSION} not found at $UNITY_EDITOR; set UNITY_EDITOR to override" 4
+# VM-first Unity bootstrap. If the pinned editor is missing, download the
+# official Unity 6000.3.15f1 macOS package and matching iOS Build Support
+# package directly from Unity's release CDN. This avoids requiring Homebrew or
+# Unity Hub in the VM.
+if [[ ! -x "$UNITY_EDITOR" ]]; then
+  chmod +x "$ROOT/BuildScripts/bootstrap_unity_vm.sh" 2>/dev/null || true
+  UNITY_VERSION="$UNITY_VERSION" "$ROOT/BuildScripts/bootstrap_unity_vm.sh" || fail "Unity ${UNITY_VERSION} bootstrap failed" 4
+fi
+
+# Re-resolve after bootstrap in case the installer chose a non-default path.
+if [[ ! -x "$UNITY_EDITOR" ]]; then
+  FOUND_UNITY="$(find /Applications -type f -path '*/Unity.app/Contents/MacOS/Unity' 2>/dev/null | grep "$UNITY_VERSION" | head -n 1 || true)"
+  if [[ -n "$FOUND_UNITY" && -x "$FOUND_UNITY" ]]; then
+    UNITY_EDITOR="$FOUND_UNITY"
+  fi
+fi
+[[ -x "$UNITY_EDITOR" ]] || fail "Unity ${UNITY_VERSION} not found after bootstrap; set UNITY_EDITOR to override" 4
 
 mkdir -p "$ROOT/.stage-a1" "$FRAMEWORK_DST"
 
@@ -44,6 +59,7 @@ mkdir -p "$ROOT/.stage-a1" "$FRAMEWORK_DST"
   echo "timestamp=$(date '+%Y-%m-%dT%H:%M:%S%z')"
   echo "sourcePatchVersion=PATCH-2026-09-12-R5"
   echo "unity=$UNITY_VERSION"
+  echo "unityEditor=$UNITY_EDITOR"
   echo "mode=vm"
   echo "xcodegen=$(command -v xcodegen)"
   xcodegen --version || true
