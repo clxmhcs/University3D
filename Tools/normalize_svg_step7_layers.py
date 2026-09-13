@@ -41,11 +41,11 @@ TECH_ORDER = [
 
 
 def extract(svg: str, oid: str):
-    paired = re.compile(rf'\n?\s*<g id="{re.escape(oid)}"\b[^>]*>.*?</g>\s*', re.S)
+    paired = re.compile(rf'\n?\s*<g id="{re.escape(oid)}"[^>]*>.*?</g>\s*', re.S)
     match = paired.search(svg)
     if match:
         return svg[:match.start()] + "\n" + svg[match.end():], match.group(0).strip()
-    self_closing = re.compile(rf'\n?\s*<g id="{re.escape(oid)}"\b[^>]*/>\s*')
+    self_closing = re.compile(rf'\n?\s*<g id="{re.escape(oid)}"[^>]*/>\s*')
     match = self_closing.search(svg)
     if match:
         return svg[:match.start()] + "\n" + svg[match.end():], match.group(0).strip()
@@ -62,10 +62,7 @@ def normalize(path: Path):
         if group is None:
             raise SystemExit(f"{path.name}: missing delivery layer {oid}")
         groups.append(group)
-    if is_engineering:
-        # Engineering keeps all technical groups; presentation must not contain them.
-        pass
-    else:
+    if not is_engineering:
         for oid in TECH_ORDER:
             if f'id="{oid}"' in svg:
                 raise SystemExit(f"{path.name}: presentation still contains technical layer {oid}")
