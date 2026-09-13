@@ -4,7 +4,7 @@ SwiftUI + Unity URP 3D campus app for Jiangcheng University.
 
 ## Current engineering stage
 
-**Stage A1 — reproducible iOS host + Unity URP/iOS toolchain configuration.**
+**Stage A1 — split VM / Device acceptance.**
 
 Frozen architecture:
 
@@ -28,4 +28,28 @@ Current source override baseline: `PATCH-2026-09-12-R5`.
 - Unity scripting backend: **IL2CPP**
 - Bundle identifier baseline: `com.clxmhcs.University3D`
 
-`Stage A1` does not yet mean the real-iPhone bridge test has passed. Run `BuildScripts/stage_a1_prepare.sh` on the Mac, then complete the signing/device acceptance documented in `Docs/Stage-A1-Acceptance.md`.
+## Virtual-machine workflow
+
+The current development environment is allowed to complete **Stage A1-VM** first:
+
+```bash
+./BuildScripts/stage_a1_prepare.sh
+```
+
+This performs Unity iOS export, unsigned UnityFramework build, unsigned SwiftUI host build, static bridge validation, and writes `.stage-a1/STAGE_A1_VM_REPORT.txt`.
+
+A1-VM PASS allows Stage B data/tooling development to proceed.
+
+It does **not** close Stage A. Real-device acceptance remains mandatory.
+
+## Real-iPhone workflow
+
+When a physical iPhone is visible to Xcode (through VM USB passthrough or a physical Mac), run:
+
+```bash
+./BuildScripts/stage_a1_device_preflight.sh
+```
+
+Then complete the manual `focusObject(TEST-01) → objectSelected(TEST-01)` bridge test on the real device.
+
+See `Docs/Stage-A1-Acceptance.md` for the exact VM/Device closure rules.
