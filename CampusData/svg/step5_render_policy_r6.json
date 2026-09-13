@@ -43,6 +43,13 @@
       "sourceRule": "R6 section 7 / R5 integrated hospital: HSP-02 sits on HSP-01 north half and is not an independent ground building"
     }
   ],
+  "hospitalReserveParcel": {
+    "id": "HSP-RSV-01",
+    "name": "住院配套与二期发展预留地",
+    "centerXZ": [-1280, -830],
+    "renderMode": "center_marker_only",
+    "sourceRule": "R6/R5: former independent HSP-02 ground parcel becomes reserve/open space; no first-phase independent inpatient tower"
+  },
   "buildingTableSpecialRouting": {
     "sportsSurfaceIDs": ["ATH-02", "ATH-05", "ATH-11"],
     "sportsStandIDs": ["ATH-06-N", "ATH-06-S", "ATH-12"],
