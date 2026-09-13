@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "campusDataVersion": "0.1.0-stage-a",
-  "sourcePatchVersion": "PATCH-2026-09-12-R5",
+  "campusDataVersion": "0.1.1-stage-a-r6",
+  "sourcePatchVersion": "PATCH-2026-09-13-R6",
   "campusID": "CAMPUS-01",
   "campusName": "江城大学",
   "campusNameEnglish": "Jiangcheng University",
@@ -15,5 +15,9 @@
   "bridgeProtocolVersion": 1,
   "chunkSizeMeters": 250,
   "stage": "A",
-  "note": "Stage A manifest only. Authoritative full campus records are populated in Stage B."
+  "authoritativeOverrides": [
+    "CampusData/transport/external_roads.json",
+    "CampusData/landscape/perimeter_wall.json"
+  ],
+  "note": "Stage A manifest. Full campus records are populated in Stage B; R6 perimeter roads and wall geometry are already authoritative overrides."
 }
