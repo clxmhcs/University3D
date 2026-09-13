@@ -1,4 +1,4 @@
-# Stage A1 — Toolchain and real-device bridge acceptance
+# Stage A1 — VM / Device two-layer acceptance
 
 ## Source contract
 
@@ -6,7 +6,15 @@ Every campus-data operation continues to obey the highest-priority source overri
 
 `PATCH-2026-09-12-R5`
 
-Stage A1 does not import the full campus yet. Its job is to make the SwiftUI host and Unity iOS export reproducible.
+The architecture remains unchanged:
+
+- SwiftUI owns app/business UI.
+- Unity URP owns the 3D world and simulation.
+- CampusData is the single authoritative data source.
+- CampusBridgeProtocol v1 is the only Swift ↔ Unity message contract.
+- Production campus coordinates must never be repaired by hand inside Unity scenes.
+
+Stage A1 is split because the current development machine is a macOS virtual machine.
 
 ## Pinned toolchain
 
@@ -19,9 +27,13 @@ Stage A1 does not import the full campus yet. Its job is to make the SwiftUI hos
 - Graphics API: Metal only
 - Bundle ID baseline: `com.clxmhcs.University3D`
 
-The Apple Development Team is intentionally NOT stored in Git because it is account-specific.
+The Apple Development Team is intentionally not stored in Git.
 
-## Prepare on the Mac
+---
+
+## Stage A1-VM
+
+A1-VM is the development gate for the virtual machine. It proves that the repository and iOS toolchain are structurally buildable without treating a VM as a real iPhone.
 
 Run from repository root:
 
@@ -29,31 +41,76 @@ Run from repository root:
 ./BuildScripts/stage_a1_prepare.sh
 ```
 
-The script will:
+`stage_a1_prepare.sh` defaults to VM mode and dispatches to `stage_a1_vm_prepare.sh`.
 
-1. Validate the pinned Unity editor path.
-2. Configure the Unity project for iOS / Metal / IL2CPP / URP.
-3. Generate `Bootstrap.unity` with `TEST-01`.
-4. Export the Unity iOS project.
-5. Build `UnityFramework.framework` without code signing.
-6. Copy it into the git-ignored `iOSApp/GeneratedFrameworks/` directory.
-7. Generate the SwiftUI Xcode project with XcodeGen.
-8. Run the Stage A1 static validator.
+A1-VM performs:
 
-## Real-iPhone PASS conditions
+1. macOS/Xcode/Python/XcodeGen/Unity prerequisite checks.
+2. Environment/virtualization reporting.
+3. Static Stage A/A1 validation.
+4. Unity batch-mode project configuration using `-nographics`.
+5. Bootstrap scene generation with `TEST-01`.
+6. Unity iOS export.
+7. Unsigned `UnityFramework.framework` build against the iPhoneOS SDK.
+8. Copy of the framework to `iOSApp/GeneratedFrameworks/`.
+9. SwiftUI host Xcode project generation.
+10. Unsigned SwiftUI host build against the iPhoneOS SDK.
+11. Generation of `.stage-a1/STAGE_A1_VM_REPORT.txt`.
 
-Open `iOSApp/University3D.xcodeproj` in Xcode, select the user's Development Team, connect a real iPhone, then run.
+### A1-VM PASS
 
-PASS requires all of the following:
+PASS means all of the following succeeded:
 
-1. SwiftUI host launches normally.
-2. UnityFramework is embedded and loads.
-3. `Bootstrap.unity` renders `TEST-01`.
-4. Pressing **Bridge Test** sends `focusObject(TEST-01)`.
-5. Unity receives the message.
-6. Unity sends `objectSelected(TEST-01)` back to Swift.
-7. Swift displays the returned event.
-8. App background/foreground and relaunch do not crash.
-9. No real campus coordinate is manually invented in the Unity scene.
+- `unity_export=PASS`
+- `unityframework_unsigned_build=PASS`
+- `swiftui_host_unsigned_build=PASS`
+- `bridge_static_contract=PASS`
+- `STAGE_A1_VM=PASS`
 
-Do not mark Stage A1 FINAL CLOSED until these conditions pass on a real iPhone.
+A1-VM PASS is sufficient to continue Stage B data/tooling development.
+
+It is **not** permission to claim Stage A FINAL CLOSED, real-device stability, real Metal performance, thermal performance, or final iPhone compatibility.
+
+---
+
+## Stage A1-Device
+
+A1-Device remains a deferred but mandatory real-iPhone acceptance gate.
+
+If the VM can pass a physical iPhone through USB to Xcode, run:
+
+```bash
+./BuildScripts/stage_a1_device_preflight.sh
+```
+
+If no physical iPhone is visible, the script returns `STAGE_A1_DEVICE_PREFLIGHT=DEFERRED`. That is not a project failure; it means device acceptance must be completed later on hardware/USB passthrough that Xcode can access.
+
+When a physical iPhone is available:
+
+1. Open `iOSApp/University3D.xcodeproj`.
+2. Select the correct Apple Development Team.
+3. Choose the physical iPhone destination.
+4. Build and run.
+5. Confirm SwiftUI host launches normally.
+6. Confirm UnityFramework loads.
+7. Confirm `Bootstrap.unity` renders `TEST-01`.
+8. Press **Bridge Test**.
+9. Confirm Swift sends `focusObject(TEST-01)`.
+10. Confirm Unity receives it and returns `objectSelected(TEST-01)`.
+11. Confirm Swift displays the returned event.
+12. Test background → foreground and full relaunch.
+
+Only after those checks pass may Stage A1-Device be marked PASS.
+
+---
+
+## Closure rule
+
+The project may continue into Stage B after **A1-VM PASS**, because CampusData/schema/validator/generator work does not require pretending that the VM is a real device.
+
+However:
+
+- Stage A FINAL CLOSED requires A1-Device PASS.
+- The first vertical-slice milestone is not FINAL until it runs on a real iPhone.
+- Stage P performance closure always requires real iPhone measurements.
+- VM or Simulator results must never be used as substitutes for FPS, thermal, memory-pressure, or long-run device evidence.
