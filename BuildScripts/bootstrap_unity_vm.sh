@@ -8,9 +8,8 @@ CACHE_DIR="${HOME}/Library/Caches/University3D/Unity/${UNITY_VERSION}"
 EDITOR_EXPECTED="/Applications/Unity/Hub/Editor/${UNITY_VERSION}/Unity.app/Contents/MacOS/Unity"
 
 # Unity's release page currently publishes download.unity3d.com links. Some VM/CDN
-# routes can return an edge-specific 404 even when the object exists. Unity-owned
-# beta/netstorage hosts use the same changeset-relative package layout, so we try
-# them as transport fallbacks without changing the pinned editor build.
+# routes can return edge-specific failures, so try Unity-owned fallback hosts and
+# multiple transport modes without changing the pinned editor build.
 UNITY_BASE_URLS=(
   "https://download.unity3d.com/download_unity"
   "https://beta.unity3d.com/download"
@@ -75,31 +74,11 @@ package_is_valid() {
   /usr/sbin/pkgutil --check-signature "$pkg" >/dev/null 2>&1
 }
 
-curl_once() {
+curl_common() {
   local url="$1"
   local dst="$2"
-  local transport="$3"
-  local -a transport_args=()
+  shift 2
 
-  case "$transport" in
-    auto)
-      transport_args=()
-      ;;
-    http1)
-      transport_args=(--http1.1)
-      ;;
-    ipv4-http1)
-      transport_args=(--http1.1 -4)
-      ;;
-    ipv6-http1)
-      transport_args=(--http1.1 -6)
-      ;;
-    *)
-      return 64
-      ;;
-  esac
-
-  echo "transport=$transport"
   /usr/bin/curl \
     --fail \
     --location \
@@ -110,8 +89,35 @@ curl_once() {
     --speed-time 120 \
     --continue-at - \
     --output "$dst" \
-    "${transport_args[@]}" \
+    "$@" \
     "$url"
+}
+
+curl_once() {
+  local url="$1"
+  local dst="$2"
+  local transport="$3"
+
+  echo "transport=$transport"
+
+  case "$transport" in
+    auto)
+      curl_common "$url" "$dst"
+      ;;
+    http1)
+      curl_common "$url" "$dst" --http1.1
+      ;;
+    ipv4-http1)
+      curl_common "$url" "$dst" --http1.1 -4
+      ;;
+    ipv6-http1)
+      curl_common "$url" "$dst" --http1.1 -6
+      ;;
+    *)
+      echo "WARNING: unsupported transport mode: $transport"
+      return 64
+      ;;
+  esac
 }
 
 download_pkg() {
