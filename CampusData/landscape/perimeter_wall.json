@@ -1,0 +1,73 @@
+{
+  "sourcePatchVersion": "PATCH-2026-09-13-R6",
+  "coordinateSystem": "X-east/Z-north/meters",
+  "objectType": "PerimeterWall",
+  "legalCampusBoundaryUnchanged": true,
+  "visualProfile": {
+    "totalHeightMeters": [1.9, 2.1],
+    "baseHeightMeters": [0.4, 0.5],
+    "upperFenceHeightMeters": [1.4, 1.6],
+    "baseMaterial": "warm_gray_stone_or_concrete",
+    "upperMaterial": "dark_gray_permeable_metal_fence",
+    "opaqueHighWallForbidden": true
+  },
+  "geometryRules": {
+    "preferLongStraightSpans": true,
+    "softCornerTransitions": true,
+    "wallMustRemainInsideCampusBoundary": true,
+    "parallelToExternalRoadsWherePractical": true
+  },
+  "segments": [
+    {
+      "id": "WALL-SOUTH",
+      "centerlineXZ": [
+        [-1458, -1015],
+        [-880, -1085],
+        [390, -1075],
+        [1070, -1015],
+        [1505, -815]
+      ]
+    },
+    {
+      "id": "WALL-WEST",
+      "centerlineXZ": [
+        [-1458, -1015],
+        [-1538, -340],
+        [-1545, 290],
+        [-1455, 820],
+        [-1075, 1045]
+      ]
+    },
+    {
+      "id": "WALL-NORTH",
+      "centerlineXZ": [
+        [-1075, 1045],
+        [-490, 1118],
+        [200, 1138],
+        [875, 1088],
+        [1410, 920]
+      ]
+    },
+    {
+      "id": "WALL-EAST",
+      "centerlineXZ": [
+        [1410, 920],
+        [1538, 438],
+        [1567, -240],
+        [1505, -815]
+      ]
+    }
+  ],
+  "openings": [
+    {"targetID": "GATE-SOUTH", "clearWidthMeters": 42},
+    {"targetID": "GATE-WEST", "clearWidthMeters": 34},
+    {"targetID": "GATE-NORTH", "clearWidthMeters": 42},
+    {"targetID": "GATE-EAST", "clearWidthMeters": 34},
+    {"targetID": "GATE-SERVICE-SE", "clearWidthMeters": 24},
+    {"targetID": "ENT-HSP-SOCIAL", "clearWidthMeters": 32},
+    {"targetID": "ENT-HSP-EMERGENCY-CITY", "clearWidthMeters": 14},
+    {"targetID": "ENT-THEATER-PUBLIC", "clearWidthMeters": 32},
+    {"targetID": "ENT-RDI-VISITOR", "clearWidthMeters": 28}
+  ],
+  "openingPlacementRule": "project_target_to_nearest_wall_segment_and_connect_with_short_access_path"
+}
