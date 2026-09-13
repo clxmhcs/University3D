@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "sourcePatchVersion": "PATCH-2026-09-13-R6",
+  "purpose": "Machine-readable rendering policy for Step 5 SVG footprints; no source coordinate overrides beyond explicitly cited R6/R5 derived geometry.",
+  "residenceFootprints": {
+    "undergraduate": {
+      "lengthMinMeters": 78,
+      "lengthMaxMeters": 82,
+      "widthMeters": 18,
+      "floorsMin": 10,
+      "floorsMax": 11,
+      "renderMode": "min_footprint_plus_max_control_envelope",
+      "sourceRule": "R6/校园建筑当前基线：本科宿舍约78～82×18m，10～11F"
+    },
+    "graduate": {
+      "lengthMeters": 72,
+      "widthMeters": 18,
+      "floors": 10,
+      "renderMode": "exact_control_footprint"
+    },
+    "international": {
+      "lengthMeters": 72,
+      "widthMeters": 20,
+      "floors": 10,
+      "renderMode": "exact_control_footprint"
+    },
+    "templateCount": 8
+  },
+  "hospitalOverlays": [
+    {
+      "id": "HSP-02",
+      "parentBuildingID": "HSP-01",
+      "role": "inpatient_tower",
+      "groundFootprintIndependent": false,
+      "planCenterXZ": [-1040, -1003],
+      "rotationY": 180,
+      "lengthMeters": 112,
+      "widthMeters": 56,
+      "startFloorBaseline": 7,
+      "addedFloorsBaseline": 10,
+      "totalComplexFloorsBaseline": 16,
+      "renderMode": "upper_tower_overlay",
+      "sourceRule": "R6 section 7 / R5 integrated hospital: HSP-02 sits on HSP-01 north half and is not an independent ground building"
+    }
+  ],
+  "buildingTableSpecialRouting": {
+    "sportsSurfaceIDs": ["ATH-02", "ATH-05", "ATH-11"],
+    "sportsStandIDs": ["ATH-06-N", "ATH-06-S", "ATH-12"],
+    "sportsBuildingIDs": ["ATH-01", "ATH-03", "ATH-04", "ATH-13", "PE-01", "PE-02"],
+    "rule": "Sports surfaces and stands render in layer 10; sports buildings remain in layer 08. Records are not duplicated across layers."
+  },
+  "outdoorSports": {
+    "controlFootprintRule": "Render controlFootprint exactly when present; rotationY defaults to 0 only when the R6 sports record omits rotationY.",
+    "markerOnlyRule": "If controlFootprint is absent, render only a center marker and count label; do not invent a field footprint.",
+    "markerOnlyIDs": ["TT-ENG-01", "TT-HUM-01", "TT-MED-01"]
+  },
+  "hardRules": [
+    "Do not choose 80m as a hidden fixed undergraduate dorm length.",
+    "Do not render HSP-02 at the obsolete independent ground parcel (-1280,-830).",
+    "Do not move Step 4 roads or water to accommodate buildings.",
+    "Do not invent control footprints for sports records that have only point coordinates.",
+    "Building local +Z remains main entrance direction and SVG rotation uses the frozen world rotationY convention."
+  ]
+}
