@@ -41,12 +41,14 @@ TECH_ORDER = [
 
 
 def extract(svg: str, oid: str):
-    paired = re.compile(rf'\n?\s*<g id="{re.escape(oid)}"[^>]*>.*?</g>\s*', re.S)
-    match = paired.search(svg)
-    if match:
-        return svg[:match.start()] + "\n" + svg[match.end():], match.group(0).strip()
+    # Self-closing groups must be matched first; otherwise a paired regex can start
+    # at <g .../> and consume through the next unrelated </g>.
     self_closing = re.compile(rf'\n?\s*<g id="{re.escape(oid)}"[^>]*/>\s*')
     match = self_closing.search(svg)
+    if match:
+        return svg[:match.start()] + "\n" + svg[match.end():], match.group(0).strip()
+    paired = re.compile(rf'\n?\s*<g id="{re.escape(oid)}"[^>]*>.*?</g>\s*', re.S)
+    match = paired.search(svg)
     if match:
         return svg[:match.start()] + "\n" + svg[match.end():], match.group(0).strip()
     return svg, None
