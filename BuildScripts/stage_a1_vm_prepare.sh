@@ -21,7 +21,20 @@ fail() {
 [[ "$(uname -s)" == "Darwin" ]] || fail "macOS is required" 2
 command -v xcodebuild >/dev/null 2>&1 || fail "xcodebuild not found" 3
 command -v python3 >/dev/null 2>&1 || fail "python3 not found" 3
-command -v xcodegen >/dev/null 2>&1 || fail "xcodegen not found; install with: brew install xcodegen" 3
+command -v git >/dev/null 2>&1 || fail "git not found" 3
+command -v swift >/dev/null 2>&1 || fail "swift not found; Xcode command line tools are required" 3
+
+# Homebrew is optional. VM environments can fail to reach raw.githubusercontent.com
+# even while normal GitHub git traffic works. Bootstrap a pinned XcodeGen directly
+# from its official GitHub repository when no xcodegen binary is present.
+export PATH="$HOME/.local/bin:$PATH"
+if ! command -v xcodegen >/dev/null 2>&1; then
+  chmod +x "$ROOT/BuildScripts/bootstrap_xcodegen.sh" 2>/dev/null || true
+  "$ROOT/BuildScripts/bootstrap_xcodegen.sh" || fail "XcodeGen bootstrap failed" 3
+  export PATH="$HOME/.local/bin:$PATH"
+fi
+command -v xcodegen >/dev/null 2>&1 || fail "xcodegen not found after bootstrap" 3
+
 [[ -x "$UNITY_EDITOR" ]] || fail "Unity ${UNITY_VERSION} not found at $UNITY_EDITOR; set UNITY_EDITOR to override" 4
 
 mkdir -p "$ROOT/.stage-a1" "$FRAMEWORK_DST"
@@ -32,6 +45,8 @@ mkdir -p "$ROOT/.stage-a1" "$FRAMEWORK_DST"
   echo "sourcePatchVersion=PATCH-2026-09-12-R5"
   echo "unity=$UNITY_VERSION"
   echo "mode=vm"
+  echo "xcodegen=$(command -v xcodegen)"
+  xcodegen --version || true
   "$ROOT/BuildScripts/detect_macos_environment.sh"
   xcodebuild -version
 } > "$REPORT"
