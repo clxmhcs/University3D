@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "snapshotVersion": "svg-masterplan-r6-step1",
+  "sourcePatchVersion": "PATCH-2026-09-13-R6",
+  "status": "step1_data_sealed",
+  "files": {
+    "geometry": "CampusData/svg/masterplan_geometry_r6.json",
+    "buildingPlacement": "CampusData/svg/building_placement_r6.csv",
+    "validator": "Tools/validate_svg_masterplan.py"
+  },
+  "sourceDocuments": [
+    "江城大学_数据源统一更新废止与覆盖说明_PATCH-2026-09-13-R6_完整版.txt",
+    "江城大学 6.5 km²最终总平面坐标与空间落位系统.txt",
+    "建筑参数.txt",
+    "江城大学_17-R5附属医院一体化建筑组织修正(1).txt",
+    "校园道路与交通系统——工程整合完整版.txt",
+    "校园建筑——整合完整版.txt",
+    "大学身份、命名与视觉识别系统.txt"
+  ],
+  "rules": [
+    "R6 overrides every conflicting historical value",
+    "Example JSON coordinates are excluded",
+    "Unfrozen parking/service facilities without permanent IDs are excluded",
+    "Undergraduate dorm footprints remain a 78-82m range; no silent midpoint is chosen in Step 1"
+  ],
+  "validationExpected": {
+    "campusAreaKm2": 6.5128,
+    "buildingAndMajorFacilityRecords": 204,
+    "residenceRecords": 56,
+    "externalRoads": 4,
+    "internalRoadRecords": 28,
+    "busStops": 22,
+    "junctions": 20,
+    "outdoorSportsRecords": 36,
+    "wallSegments": 4
+  }
+}
