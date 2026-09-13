@@ -14,6 +14,7 @@ on:
       - 'Tools/generate_svg_step5.py'
       - 'Tools/generate_svg_step6.py'
       - 'Tools/generate_svg_step7.py'
+      - 'Tools/run_svg_step7.py'
       - 'Tools/normalize_svg_step7_layers.py'
       - 'Tools/validate_svg_*.py'
       - '.github/workflows/svg-masterplan.yml'
@@ -47,7 +48,7 @@ jobs:
         run: python Tools/validate_svg_step6.py
       - name: Generate Step 7 SVGs
         run: |
-          python Tools/generate_svg_step7.py
+          python Tools/run_svg_step7.py
           python Tools/normalize_svg_step7_layers.py
       - name: Validate Step 7 SVGs
         run: python Tools/validate_svg_step7.py
