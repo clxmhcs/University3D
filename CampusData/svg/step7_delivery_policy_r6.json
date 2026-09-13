@@ -1,0 +1,127 @@
+{
+  "schemaVersion": 1,
+  "sourcePatchVersion": "PATCH-2026-09-13-R6",
+  "purpose": "Final Figma-delivery hierarchy and label policy. Step 7 reorganizes layer names and presentation labels only; Step 6 engineering geometry is immutable.",
+  "figmaLayerMap": {
+    "01_CityRoads": "01_CONTEXT_City_Roads",
+    "02_CampusBoundary": "02_BASE_Campus_Boundary",
+    "15_DistrictIdentity": "03_CONTEXT_District_Washes",
+    "03_PerimeterWall": "04_BASE_Perimeter_Wall",
+    "04_Gates": "05_POI_Gates_Interfaces",
+    "16_GreenStructure": "06_LANDSCAPE_Green_Structure",
+    "05_InternalRoads": "07_MOBILITY_Internal_Roads",
+    "06_Water": "08_LANDSCAPE_Water",
+    "07_Landscape": "09_LANDSCAPE_Open_Space",
+    "08_Buildings": "10_BUILT_Buildings",
+    "09_Residential": "11_BUILT_Residential",
+    "10_Sports": "12_AMENITY_Sports",
+    "11_POI": "13_POI_Reference",
+    "12_Labels": "90_TECH_Object_Labels",
+    "13_RoadNames": "91_TECH_Road_Names",
+    "17_PresentationLabels": "92_LEGACY_Presentation_Labels",
+    "14_Legend": "19_META_North_Scale",
+    "18_Step6Legend": "93_LEGACY_Step6_Legend"
+  },
+  "presentationPruneGroups": [
+    "90_TECH_Object_Labels",
+    "91_TECH_Road_Names",
+    "92_LEGACY_Presentation_Labels",
+    "93_LEGACY_Step6_Legend"
+  ],
+  "finalPresentationLayers": [
+    "14_LABEL_Primary_Places",
+    "15_LABEL_Secondary_POI",
+    "16_LABEL_Districts_Life",
+    "17_LABEL_Roads_Water",
+    "18_META_Legend",
+    "19_META_North_Scale"
+  ],
+  "primaryPlaces": [
+    {"buildingID":"CEN-01","label":"博雅图书馆","dx":0,"dy":-30},
+    {"buildingID":"CEN-02","label":"江城大学行政中心","dx":0,"dy":-28},
+    {"buildingID":"CEN-03","label":"明德会堂","dx":0,"dy":-30},
+    {"buildingID":"ATH-01","label":"江城大学综合体育馆","dx":0,"dy":-74},
+    {"buildingID":"ART-03","label":"江城大学戏剧表演中心","dx":0,"dy":-60},
+    {"buildingID":"LAW-01","label":"法学院 / 江城大学法律援助中心","dx":0,"dy":-36},
+    {"buildingID":"HSP-01","label":"江城大学附属医院","dx":0,"dy":-48},
+    {"buildingID":"LIFE-C-01","label":"江城大学校园商业中心","dx":0,"dy":-48}
+  ],
+  "secondaryPlaces": [
+    {"buildingID":"CEN-04","label":"学生活动中心","dx":0,"dy":42},
+    {"buildingID":"CEN-05","label":"校史馆","dx":-4,"dy":-28},
+    {"buildingID":"CEN-06","label":"大学博物馆 / 科学馆","dx":10,"dy":-28},
+    {"buildingID":"CEN-16","label":"招生访客中心","dx":0,"dy":-28},
+    {"buildingID":"ATH-03","label":"游泳馆","dx":0,"dy":-48},
+    {"buildingID":"ATH-04","label":"体育训练馆","dx":0,"dy":-48},
+    {"buildingID":"ART-01","label":"艺术学院","dx":0,"dy":-34},
+    {"buildingID":"ART-02","label":"美术馆","dx":0,"dy":-30}
+  ],
+  "lifeServicePOIs": [
+    {"buildingID":"LIFE-W-01","label":"西苑食堂"},
+    {"buildingID":"LIFE-W-02","label":"江大校园超市·西苑店"},
+    {"buildingID":"LIFE-N-01","label":"北苑食堂"},
+    {"buildingID":"LIFE-N-02","label":"江大校园超市·北苑店"},
+    {"buildingID":"LIFE-E-01","label":"东苑食堂"},
+    {"buildingID":"LIFE-E-02","label":"江大校园超市·东苑店"},
+    {"buildingID":"LIFE-S-01","label":"南苑食堂"},
+    {"buildingID":"LIFE-S-02","label":"江大校园超市·南苑店"}
+  ],
+  "districtLabels": {
+    "showAllCurrentDistricts": true,
+    "northLifeCenterRule": "current RES-N residence centroid",
+    "style": "tertiary_context"
+  },
+  "lifeAreaLabels": ["西苑","北苑","东苑","南苑"],
+  "roadLabels": {
+    "externalRoadIDs": ["ROAD-CITY-SOUTH","ROAD-CITY-WEST","ROAD-CITY-NORTH","ROAD-CITY-EAST"],
+    "internalRoadIDs": ["ROAD-BOYA-RING","ROAD-ZHICHUANG","ROAD-JIANGXIN","ROAD-GEZHI","ROAD-WENHUA","ROAD-CHUANGXIN","ROAD-JISHI","ROAD-JIANXING","ROAD-QINGNIAN-W","ROAD-QINGNIAN-E","ROAD-QINGNIAN-S","PATH-CHENGHU"],
+    "displayOverrides": {
+      "ROAD-QINGNIAN-W": "青年路·西苑段",
+      "ROAD-QINGNIAN-E": "青年路·东苑段",
+      "ROAD-QINGNIAN-S": "青年路·南苑段"
+    },
+    "rule": "Only named trunk/area roads receive presentation labels. Connector/feed/transit-only names stay in engineering data and are not repeated on the overview map."
+  },
+  "waterLabels": {
+    "primaryWaterID": "WATER-LAKE-01",
+    "showAllNamedWaterBodies": true,
+    "rule": "Chenghu receives primary label; other named water bodies receive small secondary labels. Reference-circle status remains explicit in legend."
+  },
+  "openSpaceLabels": {
+    "showSquares": true,
+    "showParks": true,
+    "showCentralLawn": true,
+    "showSeasonalAvenues": true
+  },
+  "presentationTypography": {
+    "fontStack": "-apple-system,BlinkMacSystemFont,Segoe UI,Noto Sans CJK SC,sans-serif",
+    "primaryPlacePx": 22,
+    "secondaryPlacePx": 15,
+    "lifeAreaPx": 28,
+    "districtPx": 17,
+    "roadPx": 17,
+    "cityRoadPx": 25,
+    "waterPrimaryPx": 25,
+    "waterSecondaryPx": 13,
+    "servicePoiPx": 12
+  },
+  "legend": {
+    "title": "江城大学总平面 · R6图例",
+    "notes": [
+      "实线建筑/道路/澄湖岸线：当前工程几何或已冻结控制几何",
+      "虚线/淡色范围：参考或控制范围，不等于最终地块边界",
+      "本科宿舍：78m最小实体 + 82m最大控制包络，未取80m中值",
+      "四苑生活绿心：2–4ha参考范围；中心由当前宿舍质心推导",
+      "除澄湖外的水体圆形：按中心+面积生成的等面积参考轮廓，不是最终岸线"
+    ]
+  },
+  "hardRules": [
+    "R6 remains the highest-priority source.",
+    "Do not move, resize or rotate any Step 6 engineering object.",
+    "Presentation pruning may remove text nodes and legacy label groups only; it may not remove engineering geometry.",
+    "Figma top-level group IDs are the delivery layer names and must stay stable after Step 7.",
+    "Names use current formal naming precedence; historical temporary names are not reintroduced.",
+    "Building IDs, residence IDs and sports IDs remain available in the Engineering SVG but are physically absent from the Figma presentation SVG.",
+    "No raster images, linked images or external fonts are permitted."
+  ]
+}
