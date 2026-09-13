@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "snapshotVersion": "svg-masterplan-r6-step3",
+  "snapshotVersion": "svg-masterplan-r6-step4",
   "sourcePatchVersion": "PATCH-2026-09-13-R6",
-  "status": "step3_skeleton_generated",
+  "status": "step4_internal_roads_water_open_space_generated",
   "files": {
     "coreGeometry": "CampusData/svg/core_geometry_r6.json",
     "buildingPlacement": "CampusData/svg/building_placement_r6.csv",
@@ -13,13 +13,18 @@
     "outdoorSports": "CampusData/svg/outdoor_sports_r6.json",
     "coordinateSystem": "CampusData/svg/svg_coordinate_system_r6.json",
     "coordinateModule": "Tools/svg_coordinates.py",
-    "skeletonGenerator": "Tools/generate_svg_skeleton.py",
+    "step3Generator": "Tools/generate_svg_skeleton.py",
+    "step4Generator": "Tools/generate_svg_step4.py",
     "dataValidator": "Tools/validate_svg_masterplan.py",
     "coordinateValidator": "Tools/validate_svg_coordinate_system.py",
-    "skeletonValidator": "Tools/validate_svg_skeleton.py",
+    "step3Validator": "Tools/validate_svg_skeleton.py",
+    "step4Validator": "Tools/validate_svg_step4.py",
     "coordinateSpec": "Docs/SVG_MASTERPLAN_COORDINATE_SPEC_R6.md",
-    "engineeringSkeleton": "Artifacts/SVG/Jiangcheng-University-MasterPlan-Skeleton-R6-Engineering.svg",
-    "figmaSkeleton": "Artifacts/SVG/Jiangcheng-University-MasterPlan-Skeleton-R6-Figma.svg"
+    "step3EngineeringSkeleton": "Artifacts/SVG/Jiangcheng-University-MasterPlan-Skeleton-R6-Engineering.svg",
+    "step3FigmaSkeleton": "Artifacts/SVG/Jiangcheng-University-MasterPlan-Skeleton-R6-Figma.svg",
+    "step4Engineering": "Artifacts/SVG/Jiangcheng-University-MasterPlan-Step4-R6-Engineering.svg",
+    "step4Figma": "Artifacts/SVG/Jiangcheng-University-MasterPlan-Step4-R6-Figma.svg",
+    "generationWorkflow": ".github/workflows/svg-masterplan.yml"
   },
   "sourceDocuments": [
     "江城大学_数据源统一更新废止与覆盖说明_PATCH-2026-09-13-R6_完整版.txt",
@@ -28,6 +33,7 @@
     "江城大学_17-R5附属医院一体化建筑组织修正(1).txt",
     "校园道路与交通系统——工程整合完整版.txt",
     "校园建筑——整合完整版.txt",
+    "景观布局.txt",
     "大学身份、命名与视觉识别系统.txt"
   ],
   "rules": [
@@ -35,13 +41,18 @@
     "Example JSON coordinates are excluded",
     "Unfrozen parking/service facilities without permanent IDs are excluded",
     "Undergraduate dorm footprints remain a 78-82m range; no silent midpoint is chosen before its footprint policy is explicitly resolved",
-    "External roads and perimeter wall reuse the already-authoritative Stage A R6 files instead of duplicating a second coordinate set",
+    "External roads and perimeter wall reuse the authoritative R6 files instead of duplicating a second coordinate set",
     "SVG coordinate mapping is frozen and may not auto-fit current geometry",
     "One world meter equals one SVG user unit inside the map frame",
     "World X maps right; world Z maps upward by inversion into SVG Y",
     "Presentation profile may translate the map group but may not scale it",
-    "Step 3 perimeter wall openings are true geometry gaps computed by projecting each frozen gate/interface target to the nearest wall segment",
-    "Step 3 external road centerlines remain the exact R6 piecewise-linear source chains; rounded SVG joins are visual styling only and do not create new engineering centerlines",
+    "Perimeter wall openings are true geometry gaps computed from frozen gate/interface targets",
+    "External and internal road source centerlines remain data-driven; visual line joins do not create alternate engineering coordinates",
+    "PATH-CHENGHU is derived only from the frozen WATER-LAKE-01 shoreline using the source rule: outward offset 25m, closed loop",
+    "Only WATER-LAKE-01 has a frozen shoreline in Step 4; other named water bodies are drawn as explicitly marked area-equivalent reference circles from source center + area",
+    "Squares without frozen footprint geometry are center markers only",
+    "Parks without frozen boundary geometry are reference envelopes/circles only and must not be treated as final landscape boundaries",
+    "Boya lawn uses its source control envelope and remains subject to later landscape refinement",
     "No raster image elements are permitted in generated masterplan SVG files"
   ],
   "svgCoordinateBaseline": {
@@ -62,18 +73,27 @@
     "perimeterWallVisiblePartsAfterOpenings": 13,
     "primaryCampusGates": 5,
     "specialPublicInterfaces": 4,
+    "containsRaster": false
+  },
+  "step4Masterplan": {
+    "internalRoadRecords": 28,
+    "busStops": 22,
+    "junctions": 20,
+    "waterBodies": 11,
+    "chenghuShorelinePoints": 13,
+    "mainStreamVisibleLengthApproxKm": 2.18,
+    "majorSquareMarkers": 7,
+    "parkReferences": 5,
+    "centralLawnControlEnvelope": 1,
+    "seasonalPaths": 2,
     "containsRaster": false,
     "figmaReady": true,
-    "futureLayerPlaceholders": [
-      "05_InternalRoads",
-      "06_Water",
-      "07_Landscape",
-      "08_Buildings",
-      "09_Residential",
-      "10_Sports",
-      "11_POI",
-      "12_Labels"
-    ]
+    "exactVsReferenceGeometry": {
+      "exact": ["campus boundary", "R6 external roads", "R6 perimeter wall", "R3 internal road centerlines", "WATER-LAKE-01 shoreline", "R6 main stream centerlines", "seasonal path centerlines"],
+      "derived": ["PATH-CHENGHU 25m shoreline offset"],
+      "referenceOnly": ["10 non-Chenghu water-body footprints", "major square footprints", "theme-park boundaries", "Boya lawn final organic boundary"]
+    },
+    "futureLayerPlaceholders": ["08_Buildings", "09_Residential", "10_Sports", "11_POI"]
   },
   "validationExpected": {
     "campusAreaKm2": 6.5128,
@@ -83,6 +103,7 @@
     "internalRoadRecords": 28,
     "busStops": 22,
     "junctions": 20,
+    "waterBodies": 11,
     "outdoorSportsRecords": 36,
     "wallSegments": 4,
     "wallOpenings": 9,
@@ -91,5 +112,5 @@
     "figmaSvgWidth": 4200,
     "figmaSvgHeight": 3200
   },
-  "nextStep": "Step 4: add current internal roads, Chenghu and R6 water system, squares and major open-space geometry to both deterministic SVG profiles."
+  "nextStep": "Step 5: generate all current building footprints, 56 residences and outdoor sports facilities into the frozen SVG layers without changing Step 4 road/water geometry."
 }
