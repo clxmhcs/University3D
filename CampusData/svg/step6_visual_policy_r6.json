@@ -1,0 +1,163 @@
+{
+  "schemaVersion": 1,
+  "sourcePatchVersion": "PATCH-2026-09-13-R6",
+  "purpose": "Presentation-only visual hierarchy for Step 6. It may add symbolic/reference graphics and CSS styling, but may not alter Step 5 engineering geometry.",
+  "brand": {
+    "jiangchengBlue": "#173A5E",
+    "ginkgoGold": "#C4A052",
+    "cloudWhite": "#F3F1EB",
+    "graphiteGray": "#4A4F55"
+  },
+  "architecturalLanguage": {
+    "campusBaseline": "modern comprehensive research university; restrained, durable, academic",
+    "materialPalette": [
+      "warm gray / light beige stone",
+      "deep red-brown / gray-brown brick",
+      "blue-gray or neutral glass",
+      "dark gray metal",
+      "dark gray stone plinth"
+    ],
+    "hardRule": "Discipline identity is expressed mainly through spatial/material character, not saturated building colors."
+  },
+  "buildingStyleGroups": {
+    "engineering": {
+      "prefixes": ["AERO-", "CE-", "CHE-", "EE-", "EPE-", "MAT-", "ME-", "NUC-", "SAF-", "TRA-"],
+      "fill": "#d8d4cb",
+      "stroke": "#5f6261",
+      "character": "rational / robust / structural"
+    },
+    "information": {
+      "prefixes": ["AI-", "CSE-", "ECE-", "ICT-"],
+      "fill": "#d5dadd",
+      "stroke": "#58666e",
+      "character": "stone + glass + dark metal; modern but not sci-fi"
+    },
+    "science": {
+      "prefixes": ["CHM-", "ENV-", "GEO-", "LIFE-", "MATH-", "PHY-"],
+      "fill": "#dddccf",
+      "stroke": "#677065",
+      "character": "quiet academic buildings integrated with natural landscape"
+    },
+    "humanities": {
+      "prefixes": ["EDU-", "FLA-", "HUM-", "JRN-", "LAW-", "MARX-", "PSY-", "SOC-"],
+      "fill": "#d9cec2",
+      "stroke": "#755f54",
+      "character": "brick / stone / courtyard / colonnade"
+    },
+    "business": {
+      "prefixes": ["BUS-", "ECO-", "FIN-", "GPA-", "IGS-"],
+      "fill": "#d8d3c8",
+      "stroke": "#66645d",
+      "character": "refined modern academic / business school"
+    },
+    "medical": {
+      "prefixes": ["MED-", "PH-", "PHA-", "HSP-"],
+      "fill": "#ded8d3",
+      "stroke": "#7b6660",
+      "character": "clean, rational, light stone / glass / healing courtyards"
+    },
+    "art": {
+      "prefixes": ["ART-"],
+      "fill": "#d9d3ce",
+      "stroke": "#6e6267",
+      "character": "free composition / sculpture / large voids"
+    },
+    "architecture": {
+      "prefixes": ["ARC-"],
+      "fill": "#d8d2c7",
+      "stroke": "#676159",
+      "character": "model courts / geometric space / spatial experimentation"
+    },
+    "research": {
+      "prefixes": ["RDI-", "NEE-"],
+      "fill": "#d2d7d6",
+      "stroke": "#5e6868",
+      "character": "university research park with restrained enterprise-modern language"
+    },
+    "central": {
+      "prefixes": ["CEN-"],
+      "fill": "#d7cbb7",
+      "stroke": "#6f6250",
+      "character": "campus civic and landmark core"
+    },
+    "life": {
+      "prefixes": ["LIFE-"],
+      "fill": "#ded2bf",
+      "stroke": "#756b5c",
+      "character": "student life / dining / commercial"
+    },
+    "operations": {
+      "prefixes": ["OPS-"],
+      "fill": "#d3d3cd",
+      "stroke": "#6f7270",
+      "character": "functional campus operations"
+    },
+    "sportsBuilding": {
+      "prefixes": ["ATH-", "PE-"],
+      "fill": "#d5dbd0",
+      "stroke": "#637063",
+      "character": "large-span sports architecture"
+    }
+  },
+  "residentialCharacters": {
+    "west": "modern engineering-oriented",
+    "north": "natural and quiet",
+    "east": "humanities / brick-and-stone",
+    "south": "active / commercial / international"
+  },
+  "districtPresentation": {
+    "renderSourceControlRanges": true,
+    "fillOpacity": 0.055,
+    "strokeOpacity": 0.28,
+    "rule": "District rectangles are visual source-control envelopes only, never parcel or cadastral boundaries. North-life has no source xRange and therefore receives a label/green-heart reference only, not an invented district rectangle."
+  },
+  "landscapeSystem": {
+    "framework": "one main lake + one water system + two axes + four theme parks + four life green hearts + multiple ponds/courtyards/tree-lined routes",
+    "lifeGreenHeartAreaHaRange": [2, 4],
+    "lifeGreenHeartCenterRule": "derive center from arithmetic centroid of the current residence centers in each formal life area; render 2ha filled inner reference plus 4ha maximum outline; no midpoint area is selected",
+    "formalLifeAreas": {
+      "west": {"name": "西苑", "residencePrefix": "RES-W-"},
+      "north": {"name": "北苑", "residencePrefix": "RES-N-"},
+      "east": {"name": "东苑", "residencePrefix": "RES-E-"},
+      "south": {"name": "南苑", "residencePrefix": "RES-S-"}
+    },
+    "axes": {
+      "ceremonialNorthSouth": {
+        "name": "南北礼仪轴",
+        "anchorRule": "GATE-SOUTH -> 迎宾广场 -> 明德广场 -> 求真广场 -> CEN-02 -> CEN-01 -> POI-BOYA-LAWN center -> WATER-LAKE-01 center",
+        "renderMode": "presentation-only polyline/band through frozen source anchors"
+      },
+      "ecologicalEastWest": {
+        "name": "东西生态景观轴",
+        "anchorRule": "PARK-01 格物园 -> WATER-LAKE-01 -> PARK-02 文心园 -> PARK-04 艺境园",
+        "renderMode": "presentation-only polyline/band through source-supported centers"
+      }
+    },
+    "seasonalAvenues": {
+      "PATH-CHUNHUA": {"species": "cherry", "identity": "spring / campus flower", "symbolSpacingMeters": 34, "sideOffsetMeters": 11},
+      "PATH-QIUSHI": {"species": "ginkgo", "identity": "autumn / campus tree", "symbolSpacingMeters": 34, "sideOffsetMeters": 11}
+    },
+    "riparianPresentation": {
+      "lakeBufferStrokeMeters": 18,
+      "streamBufferStrokeMeters": 26,
+      "rule": "visual ecological buffer follows already-frozen water geometry and has no engineering setback meaning"
+    }
+  },
+  "presentation": {
+    "figmaOnlyRichOverlays": true,
+    "showDistrictLabels": true,
+    "showBuildingIDsEngineering": true,
+    "showBuildingIDsPresentation": false,
+    "showMajorPlaceNamesPresentation": true,
+    "legendNote": "District washes, life-green-heart rings, tree symbols and ecological buffers are presentation/reference graphics; Step 5 engineering coordinates remain authoritative."
+  },
+  "hardRules": [
+    "R6 remains the highest-priority source.",
+    "Do not move, resize or rotate any Step 5 engineering object in Step 6.",
+    "Do not create a final parcel boundary where the source only provides a range, center or conceptual landscape relationship.",
+    "Do not use saturated discipline colors; maintain the unified warm-gray / brick / neutral-glass / dark-metal campus DNA.",
+    "Jiangcheng Blue is an identity accent, not a building-wall color.",
+    "Ginkgo Gold is a limited accent and must not be used as a campus-wide fill.",
+    "No raster images or external image dependencies are permitted."
+  ]
+}
