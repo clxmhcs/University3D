@@ -7,6 +7,25 @@ ARCH="$(uname -m)"
 CACHE_DIR="${HOME}/Library/Caches/University3D/Unity/${UNITY_VERSION}"
 EDITOR_EXPECTED="/Applications/Unity/Hub/Editor/${UNITY_VERSION}/Unity.app/Contents/MacOS/Unity"
 
+find_matching_editor() {
+  local candidate version
+  if [[ -x "$EDITOR_EXPECTED" ]]; then
+    echo "$EDITOR_EXPECTED"
+    return 0
+  fi
+
+  while IFS= read -r candidate; do
+    [[ -x "$candidate" ]] || continue
+    version="$($candidate -version 2>/dev/null | tail -n 1 || true)"
+    if [[ "$version" == *"$UNITY_VERSION"* ]]; then
+      echo "$candidate"
+      return 0
+    fi
+  done < <(find /Applications -type f -path '*/Unity.app/Contents/MacOS/Unity' 2>/dev/null)
+
+  return 1
+}
+
 case "$ARCH" in
   x86_64)
     EDITOR_PKG_URL="https://download.unity3d.com/download_unity/${UNITY_CHANGESET}/MacEditorInstaller/Unity-${UNITY_VERSION}.pkg"
@@ -25,10 +44,10 @@ IOS_PKG_URL="https://download.unity3d.com/download_unity/${UNITY_CHANGESET}/MacE
 EDITOR_PKG="$CACHE_DIR/Unity-${UNITY_VERSION}-${ARCH}.pkg"
 IOS_PKG="$CACHE_DIR/UnitySetup-iOS-Support-for-Editor-${UNITY_VERSION}.pkg"
 
-if [[ -x "$EDITOR_EXPECTED" ]]; then
+if EXISTING="$(find_matching_editor)"; then
   echo "UNITY_BOOTSTRAP=PASS"
-  echo "unity_editor=$EDITOR_EXPECTED"
-  "$EDITOR_EXPECTED" -version || true
+  echo "unity_editor=$EXISTING"
+  "$EXISTING" -version || true
   exit 0
 fi
 
@@ -82,21 +101,14 @@ sudo /usr/sbin/installer -pkg "$EDITOR_PKG" -target /
 echo "===== Installing Unity iOS Build Support ====="
 sudo /usr/sbin/installer -pkg "$IOS_PKG" -target /
 
-if [[ ! -x "$EDITOR_EXPECTED" ]]; then
-  FOUND="$(find /Applications -type f -path '*/Unity.app/Contents/MacOS/Unity' 2>/dev/null | grep "$UNITY_VERSION" | head -n 1 || true)"
-  if [[ -n "$FOUND" && -x "$FOUND" ]]; then
-    echo "UNITY_BOOTSTRAP=PASS"
-    echo "unity_editor=$FOUND"
-    "$FOUND" -version || true
-    exit 0
-  fi
-
-  echo "UNITY_BOOTSTRAP=FAIL"
-  echo "reason=Unity packages installed, but ${UNITY_VERSION} editor executable was not found"
-  echo "expected=$EDITOR_EXPECTED"
-  exit 4
+if FOUND="$(find_matching_editor)"; then
+  echo "UNITY_BOOTSTRAP=PASS"
+  echo "unity_editor=$FOUND"
+  "$FOUND" -version || true
+  exit 0
 fi
 
-echo "UNITY_BOOTSTRAP=PASS"
-echo "unity_editor=$EDITOR_EXPECTED"
-"$EDITOR_EXPECTED" -version || true
+echo "UNITY_BOOTSTRAP=FAIL"
+echo "reason=Unity packages installed, but ${UNITY_VERSION} editor executable was not found under /Applications"
+echo "expected=$EDITOR_EXPECTED"
+exit 4
