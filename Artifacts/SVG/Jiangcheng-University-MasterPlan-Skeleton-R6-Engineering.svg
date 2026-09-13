@@ -39,19 +39,19 @@
     <polygon id="CAMPUS-01-BOUNDARY" class="campus-fill" points="330,2430 920,2500 1510,2510 2190,2490 2880,2430 3320,2230 3380,1640 3350,960 3220,470 2680,300 2000,250 1310,270 720,340 330,570 240,1110 250,1740" data-area-km2="6.513"/>
   </g>
   <g id="03_PerimeterWall" data-layer="perimeter-wall">
-    <polyline id="WALL-SOUTH-PART-01" class="wall" points="342,2415 762.63,2466.05" data-source-wall="WALL-SOUTH"/>
-    <polyline id="WALL-SOUTH-PART-02" class="wall" points="794.4,2469.91 851.94,2476.9" data-source-wall="WALL-SOUTH"/>
-    <polyline id="WALL-SOUTH-PART-03" class="wall" points="865.84,2478.59 1780,2485 3241.38,2394.15" data-source-wall="WALL-SOUTH"/>
-    <polyline id="WALL-SOUTH-PART-04" class="wall" points="3283.07,2374.99 3305,2215" data-source-wall="WALL-SOUTH"/>
-    <polyline id="WALL-WEST-PART-01" class="wall" points="342,2415 257.11,1486.92" data-source-wall="WALL-WEST"/>
-    <polyline id="WALL-WEST-PART-02" class="wall" points="253.42,1453.12 255,1110 345,580 725,355" data-source-wall="WALL-WEST"/>
-    <polyline id="WALL-NORTH-PART-01" class="wall" points="725,355 767.67,349.67" data-source-wall="WALL-NORTH"/>
-    <polyline id="WALL-NORTH-PART-02" class="wall" points="795.45,346.2 1799.72,267.79" data-source-wall="WALL-NORTH"/>
-    <polyline id="WALL-NORTH-PART-03" class="wall" points="1841.63,266.58 3210,480" data-source-wall="WALL-NORTH"/>
-    <polyline id="WALL-EAST-PART-01" class="wall" points="3210,480 3255.04,650.42" data-source-wall="WALL-EAST"/>
-    <polyline id="WALL-EAST-PART-02" class="wall" points="3263.26,681.35 3351.61,1280.15" data-source-wall="WALL-EAST"/>
-    <polyline id="WALL-EAST-PART-03" class="wall" points="3351.12,1314.14 3314.72,2119.82" data-source-wall="WALL-EAST"/>
-    <polyline id="WALL-EAST-PART-04" class="wall" points="3312.13,2143.68 3305,2215" data-source-wall="WALL-EAST"/>
+    <polyline id="WALL-SOUTH-PART-01" class="wall" points="342,2415 746.43,2463.98" data-source-wall="WALL-SOUTH"/>
+    <polyline id="WALL-SOUTH-PART-02" class="wall" points="778.2,2467.83 844.66,2475.88" data-source-wall="WALL-SOUTH"/>
+    <polyline id="WALL-SOUTH-PART-03" class="wall" points="858.56,2477.56 920,2485 1778.84,2478.24" data-source-wall="WALL-SOUTH"/>
+    <polyline id="WALL-SOUTH-PART-04" class="wall" points="1820.84,2477.91 2190,2475 2870,2415 3305,2215" data-source-wall="WALL-SOUTH"/>
+    <polyline id="WALL-WEST-PART-01" class="wall" points="342,2415 262,1740 259.3,1496.92" data-source-wall="WALL-WEST"/>
+    <polyline id="WALL-WEST-PART-02" class="wall" points="258.92,1462.92 255,1110 345,580 725,355" data-source-wall="WALL-WEST"/>
+    <polyline id="WALL-NORTH-PART-01" class="wall" points="725,355 767.72,349.67" data-source-wall="WALL-NORTH"/>
+    <polyline id="WALL-NORTH-PART-02" class="wall" points="795.51,346.2 1310,282 1779.29,268.4" data-source-wall="WALL-NORTH"/>
+    <polyline id="WALL-NORTH-PART-03" class="wall" points="1821.27,267.18 2000,262 2675,312 3210,480" data-source-wall="WALL-NORTH"/>
+    <polyline id="WALL-EAST-PART-01" class="wall" points="3210,480 3252.17,638.8" data-source-wall="WALL-EAST"/>
+    <polyline id="WALL-EAST-PART-02" class="wall" points="3260.38,669.73 3338,962 3350.88,1263.16" data-source-wall="WALL-EAST"/>
+    <polyline id="WALL-EAST-PART-03" class="wall" points="3352.33,1297.13 3367,1640 3316.01,2112.89" data-source-wall="WALL-EAST"/>
+    <polyline id="WALL-EAST-PART-04" class="wall" points="3313.44,2136.75 3305,2215" data-source-wall="WALL-EAST"/>
   </g>
   <g id="04_Gates" data-layer="gates-and-social-interfaces">
     <line id="ACCESS-GATE-SOUTH" class="access" x1="1800" y1="2498" x2="1799.84" y2="2478.07" data-opening-target="GATE-SOUTH" data-clear-width-m="42"/>
