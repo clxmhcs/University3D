@@ -6,10 +6,12 @@ UNITY_CHANGESET="${UNITY_CHANGESET:-c1aa84e375f6}"
 ARCH="$(uname -m)"
 CACHE_DIR="${HOME}/Library/Caches/University3D/Unity/${UNITY_VERSION}"
 EDITOR_EXPECTED="/Applications/Unity/Hub/Editor/${UNITY_VERSION}/Unity.app/Contents/MacOS/Unity"
+RELEASE_PAGE="https://unity.com/releases/editor/whats-new/${UNITY_VERSION}"
 
-# Unity's release page currently publishes download.unity3d.com links. Some VM/CDN
-# routes can return edge-specific failures, so try Unity-owned fallback hosts and
-# multiple transport modes without changing the pinned editor build.
+# These paths are the exact links published by Unity's release page for this
+# pinned build. In some VM networks curl receives a synthetic/edge 404 even
+# though the same objects are available through a normal browser. Keep network
+# retries, but also support verified packages manually placed in ~/Downloads.
 UNITY_BASE_URLS=(
   "https://download.unity3d.com/download_unity"
   "https://beta.unity3d.com/download"
@@ -53,6 +55,8 @@ esac
 IOS_REL="MacEditorTargetInstaller/UnitySetup-iOS-Support-for-Editor-${UNITY_VERSION}.pkg"
 EDITOR_PKG="$CACHE_DIR/Unity-${UNITY_VERSION}-${ARCH}.pkg"
 IOS_PKG="$CACHE_DIR/UnitySetup-iOS-Support-for-Editor-${UNITY_VERSION}.pkg"
+OFFICIAL_EDITOR_URL="https://download.unity3d.com/download_unity/${UNITY_CHANGESET}/${EDITOR_REL}"
+OFFICIAL_IOS_URL="https://download.unity3d.com/download_unity/${UNITY_CHANGESET}/${IOS_REL}"
 
 if EXISTING="$(find_matching_editor)"; then
   echo "UNITY_BOOTSTRAP=PASS"
@@ -72,6 +76,35 @@ package_is_valid() {
   local pkg="$1"
   [[ -s "$pkg" ]] || return 1
   /usr/sbin/pkgutil --check-signature "$pkg" >/dev/null 2>&1
+}
+
+adopt_manual_pkg() {
+  local dst="$1"
+  local exact_name="$2"
+  local explicit_path="$3"
+  local candidate=""
+
+  if [[ -n "$explicit_path" && -f "$explicit_path" ]]; then
+    candidate="$explicit_path"
+  elif [[ -f "$HOME/Downloads/$exact_name" ]]; then
+    candidate="$HOME/Downloads/$exact_name"
+  else
+    candidate="$(find "$HOME/Downloads" -maxdepth 1 -type f -name "${exact_name%.pkg}*.pkg" -print 2>/dev/null | head -n 1 || true)"
+  fi
+
+  [[ -n "$candidate" ]] || return 1
+
+  echo "Found manual package candidate: $candidate"
+  if ! package_is_valid "$candidate"; then
+    echo "WARNING: manual package signature validation failed: $candidate"
+    return 1
+  fi
+
+  cp "$candidate" "$dst"
+  echo "MANUAL_PACKAGE_VERIFIED=PASS"
+  echo "source=$candidate"
+  echo "cached=$dst"
+  return 0
 }
 
 curl_common() {
@@ -124,14 +157,20 @@ download_pkg() {
   local rel="$1"
   local dst="$2"
   local label="$3"
+  local exact_name="$4"
+  local explicit_path="$5"
   local base url transport
 
-  echo "===== Downloading $label ====="
+  echo "===== Preparing $label ====="
   echo "changeset=$UNITY_CHANGESET"
   echo "dst=$dst"
 
   if package_is_valid "$dst"; then
     echo "Reusing verified cached package: $dst"
+    return 0
+  fi
+
+  if adopt_manual_pkg "$dst" "$exact_name" "$explicit_path"; then
     return 0
   fi
 
@@ -162,23 +201,33 @@ download_pkg() {
     done
   done
 
+  # One last manual check in case the user downloaded the package while this
+  # script was cycling through network routes.
+  if adopt_manual_pkg "$dst" "$exact_name" "$explicit_path"; then
+    return 0
+  fi
+
   echo "UNITY_DOWNLOAD=FAIL"
   echo "label=$label"
   echo "relativePath=$rel"
-  echo "releasePage=https://unity.com/releases/editor/whats-new/${UNITY_VERSION}"
-  echo "reason=all Unity-owned CDN routes/transports failed"
+  echo "releasePage=$RELEASE_PAGE"
+  echo "reason=VM network could not fetch the official Unity package and no verified manual package was found"
   return 1
 }
 
-download_pkg "$EDITOR_REL" "$EDITOR_PKG" "Unity Editor ${UNITY_VERSION} (${ARCH})" || {
+download_pkg "$EDITOR_REL" "$EDITOR_PKG" "Unity Editor ${UNITY_VERSION} (${ARCH})" "Unity-${UNITY_VERSION}.pkg" "${UNITY_EDITOR_PKG:-}" || {
   echo "UNITY_BOOTSTRAP=FAIL"
-  echo "reason=unable to download Unity Editor ${UNITY_VERSION} from Unity-owned CDN routes"
+  echo "reason=unable to obtain Unity Editor ${UNITY_VERSION}"
+  echo "officialEditorURL=$OFFICIAL_EDITOR_URL"
+  echo "manualFallback=Download the macOS package from the Unity release page and place it in ~/Downloads/Unity-${UNITY_VERSION}.pkg"
   exit 4
 }
 
-download_pkg "$IOS_REL" "$IOS_PKG" "Unity iOS Build Support ${UNITY_VERSION}" || {
+download_pkg "$IOS_REL" "$IOS_PKG" "Unity iOS Build Support ${UNITY_VERSION}" "UnitySetup-iOS-Support-for-Editor-${UNITY_VERSION}.pkg" "${UNITY_IOS_PKG:-}" || {
   echo "UNITY_BOOTSTRAP=FAIL"
-  echo "reason=unable to download Unity iOS Build Support ${UNITY_VERSION} from Unity-owned CDN routes"
+  echo "reason=unable to obtain Unity iOS Build Support ${UNITY_VERSION}"
+  echo "officialIOSURL=$OFFICIAL_IOS_URL"
+  echo "manualFallback=Download iOS Build Support from the Unity release page and place it in ~/Downloads/UnitySetup-iOS-Support-for-Editor-${UNITY_VERSION}.pkg"
   exit 4
 }
 
