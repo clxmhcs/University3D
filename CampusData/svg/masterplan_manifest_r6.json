@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "snapshotVersion": "svg-masterplan-r6-step2",
+  "snapshotVersion": "svg-masterplan-r6-step3",
   "sourcePatchVersion": "PATCH-2026-09-13-R6",
-  "status": "step2_coordinate_system_frozen",
+  "status": "step3_skeleton_generated",
   "files": {
     "coreGeometry": "CampusData/svg/core_geometry_r6.json",
     "buildingPlacement": "CampusData/svg/building_placement_r6.csv",
@@ -13,9 +13,13 @@
     "outdoorSports": "CampusData/svg/outdoor_sports_r6.json",
     "coordinateSystem": "CampusData/svg/svg_coordinate_system_r6.json",
     "coordinateModule": "Tools/svg_coordinates.py",
+    "skeletonGenerator": "Tools/generate_svg_skeleton.py",
     "dataValidator": "Tools/validate_svg_masterplan.py",
     "coordinateValidator": "Tools/validate_svg_coordinate_system.py",
-    "coordinateSpec": "Docs/SVG_MASTERPLAN_COORDINATE_SPEC_R6.md"
+    "skeletonValidator": "Tools/validate_svg_skeleton.py",
+    "coordinateSpec": "Docs/SVG_MASTERPLAN_COORDINATE_SPEC_R6.md",
+    "engineeringSkeleton": "Artifacts/SVG/Jiangcheng-University-MasterPlan-Skeleton-R6-Engineering.svg",
+    "figmaSkeleton": "Artifacts/SVG/Jiangcheng-University-MasterPlan-Skeleton-R6-Figma.svg"
   },
   "sourceDocuments": [
     "江城大学_数据源统一更新废止与覆盖说明_PATCH-2026-09-13-R6_完整版.txt",
@@ -35,7 +39,10 @@
     "SVG coordinate mapping is frozen and may not auto-fit current geometry",
     "One world meter equals one SVG user unit inside the map frame",
     "World X maps right; world Z maps upward by inversion into SVG Y",
-    "Presentation profile may translate the map group but may not scale it"
+    "Presentation profile may translate the map group but may not scale it",
+    "Step 3 perimeter wall openings are true geometry gaps computed by projecting each frozen gate/interface target to the nearest wall segment",
+    "Step 3 external road centerlines remain the exact R6 piecewise-linear source chains; rounded SVG joins are visual styling only and do not create new engineering centerlines",
+    "No raster image elements are permitted in generated masterplan SVG files"
   ],
   "svgCoordinateBaseline": {
     "engineeringViewBox": [0, 0, 3600, 2800],
@@ -47,6 +54,27 @@
     "svgUnitsPerMeter": 1,
     "roundTripToleranceMeters": 0.01
   },
+  "step3Skeleton": {
+    "cityRoads": 4,
+    "campusBoundaryPoints": 16,
+    "perimeterWallSourceSegments": 4,
+    "perimeterWallOpenings": 9,
+    "perimeterWallVisiblePartsAfterOpenings": 13,
+    "primaryCampusGates": 5,
+    "specialPublicInterfaces": 4,
+    "containsRaster": false,
+    "figmaReady": true,
+    "futureLayerPlaceholders": [
+      "05_InternalRoads",
+      "06_Water",
+      "07_Landscape",
+      "08_Buildings",
+      "09_Residential",
+      "10_Sports",
+      "11_POI",
+      "12_Labels"
+    ]
+  },
   "validationExpected": {
     "campusAreaKm2": 6.5128,
     "buildingAndMajorFacilityRecords": 204,
@@ -57,8 +85,11 @@
     "junctions": 20,
     "outdoorSportsRecords": 36,
     "wallSegments": 4,
+    "wallOpenings": 9,
     "engineeringSvgWidth": 3600,
-    "engineeringSvgHeight": 2800
+    "engineeringSvgHeight": 2800,
+    "figmaSvgWidth": 4200,
+    "figmaSvgHeight": 3200
   },
-  "nextStep": "Step 3: generate the first deterministic SVG skeleton for external roads, campus boundary, perimeter wall, gates and access openings using the frozen coordinate module."
+  "nextStep": "Step 4: add current internal roads, Chenghu and R6 water system, squares and major open-space geometry to both deterministic SVG profiles."
 }
