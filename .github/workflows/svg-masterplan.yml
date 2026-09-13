@@ -13,6 +13,8 @@ on:
       - 'Tools/generate_svg_step4.py'
       - 'Tools/generate_svg_step5.py'
       - 'Tools/generate_svg_step6.py'
+      - 'Tools/generate_svg_step7.py'
+      - 'Tools/normalize_svg_step7_layers.py'
       - 'Tools/validate_svg_*.py'
       - '.github/workflows/svg-masterplan.yml'
 
@@ -43,6 +45,12 @@ jobs:
         run: python Tools/generate_svg_step6.py
       - name: Validate Step 6 SVGs
         run: python Tools/validate_svg_step6.py
+      - name: Generate Step 7 SVGs
+        run: |
+          python Tools/generate_svg_step7.py
+          python Tools/normalize_svg_step7_layers.py
+      - name: Validate Step 7 SVGs
+        run: python Tools/validate_svg_step7.py
       - name: Commit generated SVGs
         run: |
           git config user.name 'github-actions[bot]'
@@ -53,9 +61,11 @@ jobs:
           git add Artifacts/SVG/Jiangcheng-University-MasterPlan-Step5-R6-Figma.svg
           git add Artifacts/SVG/Jiangcheng-University-MasterPlan-Step6-R6-Engineering.svg
           git add Artifacts/SVG/Jiangcheng-University-MasterPlan-Step6-R6-Figma.svg
+          git add Artifacts/SVG/Jiangcheng-University-MasterPlan-Step7-R6-Engineering.svg
+          git add Artifacts/SVG/Jiangcheng-University-MasterPlan-Step7-R6-Figma.svg
           if git diff --cached --quiet; then
             echo 'SVG artifacts already current.'
           else
-            git commit -m 'Generate Step 6 R6 SVG masterplan artifacts'
+            git commit -m 'Generate Step 7 R6 SVG delivery artifacts'
             git push
           fi
