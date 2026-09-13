@@ -4,8 +4,13 @@
   "sourcePatchVersion": "PATCH-2026-09-13-R6",
   "status": "step1_data_sealed",
   "files": {
-    "geometry": "CampusData/svg/masterplan_geometry_r6.json",
+    "coreGeometry": "CampusData/svg/core_geometry_r6.json",
     "buildingPlacement": "CampusData/svg/building_placement_r6.csv",
+    "externalRoads": "CampusData/transport/external_roads.json",
+    "perimeterWall": "CampusData/landscape/perimeter_wall.json",
+    "internalRoadsAndTransit": "CampusData/svg/internal_roads_r3.json",
+    "water": "CampusData/svg/water_r6.json",
+    "outdoorSports": "CampusData/svg/outdoor_sports_r6.json",
     "validator": "Tools/validate_svg_masterplan.py"
   },
   "sourceDocuments": [
@@ -21,7 +26,8 @@
     "R6 overrides every conflicting historical value",
     "Example JSON coordinates are excluded",
     "Unfrozen parking/service facilities without permanent IDs are excluded",
-    "Undergraduate dorm footprints remain a 78-82m range; no silent midpoint is chosen in Step 1"
+    "Undergraduate dorm footprints remain a 78-82m range; no silent midpoint is chosen in Step 1",
+    "External roads and perimeter wall reuse the already-authoritative Stage A R6 files instead of duplicating a second coordinate set"
   ],
   "validationExpected": {
     "campusAreaKm2": 6.5128,
