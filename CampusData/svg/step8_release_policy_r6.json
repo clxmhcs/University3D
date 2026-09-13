@@ -70,6 +70,8 @@
     "Tools/generate_svg_step6.py",
     "Tools/generate_svg_step7.py",
     "Tools/run_svg_step7.py",
-    "Tools/normalize_svg_step7_layers.py"
+    "Tools/normalize_svg_step7_layers.py",
+    "Tools/release_svg_step8.py",
+    "Tools/validate_svg_step8.py"
   ]
 }
