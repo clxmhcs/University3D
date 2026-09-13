@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 1,
+  "sourcePatchVersion": "PATCH-2026-09-13-R6",
+  "releaseVersion": "MASTERPLAN-R6-FINAL",
+  "status": "release-policy-frozen",
+  "sourceStep7": {
+    "engineering": "Artifacts/SVG/Jiangcheng-University-MasterPlan-Step7-R6-Engineering.svg",
+    "presentation": "Artifacts/SVG/Jiangcheng-University-MasterPlan-Step7-R6-Figma.svg"
+  },
+  "canonicalOutputs": {
+    "engineering": "Artifacts/SVG/Jiangcheng-University-MasterPlan-Engineering.svg",
+    "presentation": "Artifacts/SVG/Jiangcheng-University-MasterPlan-Presentation.svg",
+    "evidenceJson": "Artifacts/SVG/Jiangcheng-University-MasterPlan-Release-R6.json",
+    "sha256Text": "Artifacts/SVG/Jiangcheng-University-MasterPlan-Release-R6-SHA256.txt"
+  },
+  "releaseRules": [
+    "R6 remains the highest-priority source patch.",
+    "Step 7 is the only content master for Step 8 release packaging.",
+    "Step 8 may change release title/metadata text only; it may not alter any ID-bearing geometry, label text, layer membership, layer order, coordinates, dimensions, rotation, stroke width or source-derived control value.",
+    "Canonical release files must use no Step number in their filenames.",
+    "Presentation release must contain exactly the frozen 19 Step-7 delivery layers in the same order.",
+    "Engineering release must retain the 19 delivery layers plus the 4 frozen technical/audit layers.",
+    "No raster image, externally linked image, external font file, @font-face, script element or foreignObject is permitted.",
+    "Release generation must be deterministic: repeated generation from unchanged inputs must produce byte-identical canonical SVGs and byte-identical evidence files.",
+    "SHA256 evidence is generated from repository bytes after canonical SVG generation and contains no timestamp or machine-specific path."
+  ],
+  "presentationLayerOrder": [
+    "01_CONTEXT_City_Roads",
+    "02_BASE_Campus_Boundary",
+    "03_CONTEXT_District_Washes",
+    "04_BASE_Perimeter_Wall",
+    "05_POI_Gates_Interfaces",
+    "06_LANDSCAPE_Green_Structure",
+    "07_MOBILITY_Internal_Roads",
+    "08_LANDSCAPE_Water",
+    "09_LANDSCAPE_Open_Space",
+    "10_BUILT_Buildings",
+    "11_BUILT_Residential",
+    "12_AMENITY_Sports",
+    "13_POI_Reference",
+    "14_LABEL_Primary_Places",
+    "15_LABEL_Secondary_POI",
+    "16_LABEL_Districts_Life",
+    "17_LABEL_Roads_Water",
+    "18_META_Legend",
+    "19_META_North_Scale"
+  ],
+  "engineeringTechnicalLayers": [
+    "90_TECH_Object_Labels",
+    "91_TECH_Road_Names",
+    "92_LEGACY_Presentation_Labels",
+    "93_LEGACY_Step6_Legend"
+  ],
+  "deterministicInputs": [
+    "CampusData/svg/core_geometry_r6.json",
+    "CampusData/svg/building_placement_r6.csv",
+    "CampusData/transport/external_roads.json",
+    "CampusData/landscape/perimeter_wall.json",
+    "CampusData/svg/internal_roads_r3.json",
+    "CampusData/svg/water_r6.json",
+    "CampusData/svg/outdoor_sports_r6.json",
+    "CampusData/svg/svg_coordinate_system_r6.json",
+    "CampusData/svg/step5_render_policy_r6.json",
+    "CampusData/svg/step6_visual_policy_r6.json",
+    "CampusData/svg/step7_delivery_policy_r6.json",
+    "CampusData/svg/step8_release_policy_r6.json",
+    "Tools/svg_coordinates.py",
+    "Tools/generate_svg_step4.py",
+    "Tools/generate_svg_step5.py",
+    "Tools/generate_svg_step6.py",
+    "Tools/generate_svg_step7.py",
+    "Tools/run_svg_step7.py",
+    "Tools/normalize_svg_step7_layers.py"
+  ]
+}
