@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "snapshotVersion": "svg-masterplan-r6-step5",
+  "snapshotVersion": "svg-masterplan-r6-step6",
   "sourcePatchVersion": "PATCH-2026-09-13-R6",
-  "status": "step5_buildings_residences_sports_generated",
+  "status": "step6_landscape_district_visual_hierarchy_generated",
   "files": {
     "coreGeometry": "CampusData/svg/core_geometry_r6.json",
     "buildingPlacement": "CampusData/svg/building_placement_r6.csv",
@@ -12,16 +12,19 @@
     "water": "CampusData/svg/water_r6.json",
     "outdoorSports": "CampusData/svg/outdoor_sports_r6.json",
     "step5RenderPolicy": "CampusData/svg/step5_render_policy_r6.json",
+    "step6VisualPolicy": "CampusData/svg/step6_visual_policy_r6.json",
     "coordinateSystem": "CampusData/svg/svg_coordinate_system_r6.json",
     "coordinateModule": "Tools/svg_coordinates.py",
     "step3Generator": "Tools/generate_svg_skeleton.py",
     "step4Generator": "Tools/generate_svg_step4.py",
     "step5Generator": "Tools/generate_svg_step5.py",
+    "step6Generator": "Tools/generate_svg_step6.py",
     "dataValidator": "Tools/validate_svg_masterplan.py",
     "coordinateValidator": "Tools/validate_svg_coordinate_system.py",
     "step3Validator": "Tools/validate_svg_skeleton.py",
     "step4Validator": "Tools/validate_svg_step4.py",
     "step5Validator": "Tools/validate_svg_step5.py",
+    "step6Validator": "Tools/validate_svg_step6.py",
     "coordinateSpec": "Docs/SVG_MASTERPLAN_COORDINATE_SPEC_R6.md",
     "step3EngineeringSkeleton": "Artifacts/SVG/Jiangcheng-University-MasterPlan-Skeleton-R6-Engineering.svg",
     "step3FigmaSkeleton": "Artifacts/SVG/Jiangcheng-University-MasterPlan-Skeleton-R6-Figma.svg",
@@ -29,6 +32,8 @@
     "step4Figma": "Artifacts/SVG/Jiangcheng-University-MasterPlan-Step4-R6-Figma.svg",
     "step5Engineering": "Artifacts/SVG/Jiangcheng-University-MasterPlan-Step5-R6-Engineering.svg",
     "step5Figma": "Artifacts/SVG/Jiangcheng-University-MasterPlan-Step5-R6-Figma.svg",
+    "step6Engineering": "Artifacts/SVG/Jiangcheng-University-MasterPlan-Step6-R6-Engineering.svg",
+    "step6Figma": "Artifacts/SVG/Jiangcheng-University-MasterPlan-Step6-R6-Figma.svg",
     "generationWorkflow": ".github/workflows/svg-masterplan.yml"
   },
   "sourceDocuments": [
@@ -41,6 +46,7 @@
     "校园道路与交通系统——工程整合完整版.txt",
     "校园建筑——整合完整版.txt",
     "景观布局.txt",
+    "全校建筑风格与建筑语言.txt",
     "大学身份、命名与视觉识别系统.txt"
   ],
   "rules": [
@@ -51,16 +57,22 @@
     "One world meter equals one SVG user unit inside the map frame",
     "World X maps right; world Z maps upward by inversion into SVG Y",
     "Presentation profile may translate the map group but may not scale it",
-    "Step 4 layers 01 through 07 are immutable during Step 5; the Step 5 validator compares them against regenerated Step 4 output",
-    "Building footprints are centered on CampusData X/Z positions and use frozen rotationY; local +Z remains the main entrance direction",
-    "Undergraduate residence length remains the source range 78-82m; Step 5 renders a 78m minimum body plus 82m maximum control envelope instead of choosing a hidden 80m midpoint",
-    "Graduate residence control footprint is 72x18m and international residence control footprint is 72x20m",
-    "The 56 student residences remain 42 undergraduate + 10 graduate + 4 international and use an 8-template future model system",
-    "HSP-02 is rendered only as the 112x56m upper inpatient-tower overlay on HSP-01 with plan center (-1040,-1003); it is never rendered at the obsolete independent ground parcel",
-    "HSP-RSV-01 marks the former independent HSP-02 parcel only as reserve/open-space center because no final parcel footprint is frozen",
-    "Major track/plaza/stand records from the building table are routed to layer 10 and are not duplicated in the building layer",
-    "R6 outdoor sports control footprints are rendered exactly when present; TT-ENG-01, TT-HUM-01 and TT-MED-01 remain center markers because no control footprint is frozen",
-    "No raster image elements are permitted in generated masterplan SVG files"
+    "Step 4 layers 01 through 07 remain the authoritative road/water/open-space geometry baseline",
+    "Step 5 freezes building, residence and sports engineering geometry",
+    "Step 6 may change CSS/presentation styling and add reference-only presentation graphics, but may not move, resize or rotate any Step 5 object",
+    "Step 6 validator compares every Step 5 object geometry attribute against Step 6 in both engineering and presentation profiles",
+    "Building identity uses a restrained warm-gray / brick / neutral-glass / dark-metal family; disciplines do not receive saturated faction-like building colors",
+    "Jiangcheng Blue #173A5E is an identity/landmark accent, not a campus-wide wall color",
+    "Ginkgo Gold #C4A052 remains a limited identity and seasonal accent",
+    "LIFE-01 and LIFE-02 are life-science academic buildings and must not be confused with LIFE-C/W/N/E/S student-life facilities",
+    "District washes use only source xRange/zRange control envelopes and are explicitly reference-only; DIST-NORTH-LIFE has no source xRange and therefore receives no invented district rectangle",
+    "Four life green hearts preserve the source 2-4ha range: their centers are derived from current residence centroids, with a 2ha inner reference and 4ha maximum outline; no hidden midpoint area is chosen",
+    "South-north ceremonial and east-west ecological axes are presentation bands through already-supported source anchors, not new engineering roads",
+    "Cherry and ginkgo symbols are presentation symbols sampled from PATH-CHUNHUA and PATH-QIUSHI; they are not individual vegetation asset coordinates",
+    "Riparian green buffers follow frozen lake/stream geometry for presentation only and have no engineering setback meaning",
+    "Undergraduate residence length remains the source range 78-82m; no hidden 80m footprint is introduced",
+    "HSP-02 remains an upper tower overlay on HSP-01 and never returns to the obsolete independent ground parcel",
+    "No raster image elements or external image dependencies are permitted in generated masterplan SVG files"
   ],
   "svgCoordinateBaseline": {
     "engineeringViewBox": [0, 0, 3600, 2800],
@@ -122,13 +134,29 @@
     "hospitalReserveMarker": "HSP-RSV-01",
     "step4GeometryImmutableCheck": true,
     "containsRaster": false,
-    "figmaReady": true,
-    "geometryCertainty": {
-      "exactControlFootprints": "Non-residence source rows with frozen length/width, graduate/international residences, R6 sports control footprints",
-      "rangeFootprints": "42 undergraduate residences: 78m minimum + 82m maximum envelope, width 18m",
-      "overlay": "HSP-02 upper tower footprint; non-independent ground structure",
-      "markerOnly": "TT-ENG-01, TT-HUM-01, TT-MED-01 and HSP-RSV-01"
-    }
+    "figmaReady": true
+  },
+  "step6Presentation": {
+    "buildingStyleAssignments": 142,
+    "districtReferenceEnvelopes": 16,
+    "districtLabels": 17,
+    "lifeGreenHearts": 4,
+    "lifeGreenHeartAreaHaRange": [2, 4],
+    "landscapeAxes": 2,
+    "riparianPresentationBuffers": 3,
+    "seasonalTreeSymbols": 94,
+    "majorPlaceLabels": 8,
+    "brandColors": {
+      "jiangchengBlue": "#173A5E",
+      "ginkgoGold": "#C4A052",
+      "cloudWhite": "#F3F1EB",
+      "graphiteGray": "#4A4F55"
+    },
+    "engineeringProfileRichOverlays": false,
+    "presentationProfileRichOverlays": true,
+    "step5GeometryImmutableCheck": true,
+    "containsRaster": false,
+    "figmaReady": true
   },
   "validationExpected": {
     "campusAreaKm2": 6.5128,
@@ -144,6 +172,11 @@
     "waterBodies": 11,
     "outdoorSportsRecords": 36,
     "outdoorSportsMarkerOnly": 3,
+    "buildingStyleAssignments": 142,
+    "districtReferenceEnvelopes": 16,
+    "lifeGreenHearts": 4,
+    "landscapeAxes": 2,
+    "seasonalTreeSymbols": 94,
     "wallSegments": 4,
     "wallOpenings": 9,
     "engineeringSvgWidth": 3600,
@@ -151,5 +184,5 @@
     "figmaSvgWidth": 4200,
     "figmaSvgHeight": 3200
   },
-  "nextStep": "Step 6: visually refine landscape, district identity, greenery and presentation hierarchy without changing frozen Step 5 engineering geometry."
+  "nextStep": "Step 7: finalize Figma delivery layer naming, clean-vs-engineering label hierarchy, legend/POI readability and import-oriented presentation structure without changing Step 6 geometry."
 }
