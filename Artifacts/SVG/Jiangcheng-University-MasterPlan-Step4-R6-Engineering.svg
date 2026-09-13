@@ -1,0 +1,302 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="3600" height="2800" viewBox="0 0 3600 2800" role="img" aria-labelledby="title desc">
+  <title id="title">江城大学总平面 R6 — Step 4</title>
+  <desc id="desc">R6外围骨架、R3当前有效内部道路、澄湖与R6水系、主要广场和开放空间。1米等于1 SVG user unit。</desc>
+  <metadata>sourcePatchVersion=PATCH-2026-09-13-R6; generator=Tools/generate_svg_step4.py; profile=engineering; step=4; coordinateConfig=CampusData/svg/svg_coordinate_system_r6.json; noRaster=true</metadata>
+  <defs>
+    <style>
+      .city-road { fill:none; stroke:#55585c; stroke-width:36; stroke-linecap:round; stroke-linejoin:round; }
+      .city-road-center { fill:none; stroke:#f5f3ee; stroke-width:1.5; stroke-dasharray:18 14; opacity:.7; }
+      .campus-fill { fill:#f4f1e8; stroke:#8e948e; stroke-width:3; stroke-linejoin:round; }
+      .wall { fill:none; stroke:#41464b; stroke-width:5; stroke-linecap:butt; stroke-linejoin:round; }
+      .access { fill:none; stroke:#7f8589; stroke-width:8; stroke-linecap:round; }
+      .gate { fill:#173A5E; stroke:#f4f1e8; stroke-width:3; }
+      .gate-public { fill:#C4A052; stroke:#f4f1e8; stroke-width:3; }
+      .internal-road { fill:none; stroke-linecap:round; stroke-linejoin:round; }
+      .primary-road { stroke:#757b80; }
+      .secondary-road { stroke:#93989c; }
+      .tertiary-road { stroke:#b1b5b8; }
+      .emergency-road { stroke:#a56b62; }
+      .event-road { stroke:#848c91; }
+      .transit-road { stroke:#607f91; stroke-dasharray:15 9; }
+      .pedbike-road { stroke:#6f8b72; stroke-dasharray:10 7; }
+      .road-center { fill:none; stroke:#fffdf8; stroke-width:1.2; opacity:.58; stroke-dasharray:12 10; }
+      .water-main { fill:#b7d9e8; stroke:#6f9fb5; stroke-width:3; }
+      .water-reference { fill:#c7e1eb; fill-opacity:.72; stroke:#78a9bc; stroke-width:2; stroke-dasharray:8 6; }
+      .stream { fill:none; stroke:#79abc0; stroke-width:10; stroke-linecap:round; stroke-linejoin:round; }
+      .stream-center { fill:none; stroke:#d9eef6; stroke-width:2; stroke-linecap:round; }
+      .island-marker { fill:#7d9a72; stroke:#f4f1e8; stroke-width:2; }
+      .square-marker { fill:#d9d1bf; fill-opacity:.65; stroke:#8f8778; stroke-width:2; }
+      .park-reference { fill:#cbdcc5; fill-opacity:.32; stroke:#78906f; stroke-width:2; stroke-dasharray:10 7; }
+      .lawn-envelope { fill:#dce8cf; fill-opacity:.5; stroke:#80956f; stroke-width:2; stroke-dasharray:12 7; }
+      .seasonal-path { fill:none; stroke:#9aaf7d; stroke-width:5; stroke-dasharray:10 8; stroke-linecap:round; }
+      .bus-stop { fill:#173A5E; stroke:#f4f1e8; stroke-width:1.5; }
+      .junction { fill:#faf8f1; stroke:#6c7378; stroke-width:1.5; }
+      .technical { font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans CJK SC",sans-serif; font-size:18px; fill:#2d3237; }
+      .road-name { font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans CJK SC",sans-serif; font-size:24px; font-weight:600; fill:#4d555a; letter-spacing:1px; }
+      .city-road-name { font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans CJK SC",sans-serif; font-size:28px; font-weight:600; fill:#30353a; letter-spacing:2px; }
+      .gate-name { font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans CJK SC",sans-serif; font-size:18px; font-weight:600; fill:#173A5E; }
+      .water-name { font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans CJK SC",sans-serif; font-size:20px; font-weight:600; fill:#416f83; }
+      .open-name { font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans CJK SC",sans-serif; font-size:17px; font-weight:600; fill:#596b52; }
+      .small-name { font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans CJK SC",sans-serif; font-size:14px; fill:#566168; }
+      .title { font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans CJK SC",sans-serif; font-size:42px; font-weight:700; fill:#173A5E; }
+      .subtitle { font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans CJK SC",sans-serif; font-size:19px; fill:#5a6065; }
+      .legend { font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans CJK SC",sans-serif; font-size:16px; fill:#3e4449; }
+    </style>
+  </defs>
+  <g id="01_CityRoads" data-layer="city-roads">
+    <polyline id="ROAD-CITY-SOUTH" class="city-road" points="275,2490 690,2538 2220,2545 2920,2485 3365,2265" data-width-m="36"/>
+    <polyline id="ROAD-CITY-SOUTH-CENTER" class="city-road-center" points="275,2490 690,2538 2220,2545 2920,2485 3365,2265"/>
+    <polyline id="ROAD-CITY-WEST" class="city-road" points="275,2490 190,2050 190,880 290,555 705,312" data-width-m="36"/>
+    <polyline id="ROAD-CITY-WEST-CENTER" class="city-road-center" points="275,2490 190,2050 190,880 290,555 705,312"/>
+    <polyline id="ROAD-CITY-NORTH" class="city-road" points="705,312 1040,240 2000,220 2700,250 3240,432" data-width-m="36"/>
+    <polyline id="ROAD-CITY-NORTH-CENTER" class="city-road-center" points="705,312 1040,240 2000,220 2700,250 3240,432"/>
+    <polyline id="ROAD-CITY-EAST" class="city-road" points="3240,432 3410,880 3415,2020 3365,2265" data-width-m="36"/>
+    <polyline id="ROAD-CITY-EAST-CENTER" class="city-road-center" points="3240,432 3410,880 3415,2020 3365,2265"/>
+  </g>
+  <g id="02_CampusBoundary" data-layer="campus-boundary">
+    <polygon id="CAMPUS-01-BOUNDARY" class="campus-fill" points="330,2430 920,2500 1510,2510 2190,2490 2880,2430 3320,2230 3380,1640 3350,960 3220,470 2680,300 2000,250 1310,270 720,340 330,570 240,1110 250,1740" data-area-km2="6.513"/>
+  </g>
+  <g id="03_PerimeterWall" data-layer="perimeter-wall">
+    <polyline id="WALL-SOUTH-PART-01" class="wall" points="342,2415 746.43,2463.98" data-source-wall="WALL-SOUTH"/>
+    <polyline id="WALL-SOUTH-PART-02" class="wall" points="778.2,2467.83 844.66,2475.88" data-source-wall="WALL-SOUTH"/>
+    <polyline id="WALL-SOUTH-PART-03" class="wall" points="858.56,2477.56 920,2485 1778.84,2478.24" data-source-wall="WALL-SOUTH"/>
+    <polyline id="WALL-SOUTH-PART-04" class="wall" points="1820.84,2477.91 2190,2475 2870,2415 3305,2215" data-source-wall="WALL-SOUTH"/>
+    <polyline id="WALL-WEST-PART-01" class="wall" points="342,2415 262,1740 259.3,1496.92" data-source-wall="WALL-WEST"/>
+    <polyline id="WALL-WEST-PART-02" class="wall" points="258.92,1462.92 255,1110 345,580 725,355" data-source-wall="WALL-WEST"/>
+    <polyline id="WALL-NORTH-PART-01" class="wall" points="725,355 767.72,349.67" data-source-wall="WALL-NORTH"/>
+    <polyline id="WALL-NORTH-PART-02" class="wall" points="795.51,346.2 1310,282 1779.29,268.4" data-source-wall="WALL-NORTH"/>
+    <polyline id="WALL-NORTH-PART-03" class="wall" points="1821.27,267.18 2000,262 2675,312 3210,480" data-source-wall="WALL-NORTH"/>
+    <polyline id="WALL-EAST-PART-01" class="wall" points="3210,480 3252.17,638.8" data-source-wall="WALL-EAST"/>
+    <polyline id="WALL-EAST-PART-02" class="wall" points="3260.38,669.73 3338,962 3350.88,1263.16" data-source-wall="WALL-EAST"/>
+    <polyline id="WALL-EAST-PART-03" class="wall" points="3352.33,1297.13 3367,1640 3316.01,2112.89" data-source-wall="WALL-EAST"/>
+    <polyline id="WALL-EAST-PART-04" class="wall" points="3313.44,2136.75 3305,2215" data-source-wall="WALL-EAST"/>
+  </g>
+  <g id="04_Gates" data-layer="gates-and-social-interfaces">
+    <line id="ACCESS-GATE-SOUTH" class="access" x1="1800" y1="2498" x2="1799.84" y2="2478.07" data-opening-target="GATE-SOUTH" data-clear-width-m="42"/>
+    <circle id="GATE-SOUTH" class="gate" cx="1800" cy="2498" r="10" data-world-x="0" data-world-z="-1098"/>
+    <text class="gate-name" x="1814" y="2528">江城大学南门</text>
+    <line id="ACCESS-GATE-WEST" class="access" x1="252" y1="1480" x2="259.11" y2="1479.92" data-opening-target="GATE-WEST" data-clear-width-m="34"/>
+    <circle id="GATE-WEST" class="gate" cx="252" cy="1480" r="10" data-world-x="-1548" data-world-z="-80"/>
+    <text class="gate-name" x="266" y="1466">江城大学西门</text>
+    <line id="ACCESS-GATE-NORTH" class="access" x1="1800" y1="258" x2="1800.28" y2="267.79" data-opening-target="GATE-NORTH" data-clear-width-m="42"/>
+    <circle id="GATE-NORTH" class="gate" cx="1800" cy="258" r="10" data-world-x="0" data-world-z="1142"/>
+    <text class="gate-name" x="1814" y="240">江城大学北门</text>
+    <line id="ACCESS-GATE-EAST" class="access" x1="3355" y1="1280" x2="3351.61" y2="1280.15" data-opening-target="GATE-EAST" data-clear-width-m="34"/>
+    <circle id="GATE-EAST" class="gate" cx="3355" cy="1280" r="10" data-world-x="1555" data-world-z="120"/>
+    <text class="gate-name" x="3175" y="1266">江城大学东门</text>
+    <line id="ACCESS-GATE-SERVICE-SE" class="access" x1="3270" y1="2120" x2="3314.72" y2="2124.82" data-opening-target="GATE-SERVICE-SE" data-clear-width-m="24"/>
+    <circle id="GATE-SERVICE-SE" class="gate" cx="3270" cy="2120" r="10" data-world-x="1470" data-world-z="-720"/>
+    <text class="gate-name" x="3284" y="2106">东南后勤门</text>
+    <line id="ACCESS-ENT-HSP-SOCIAL" class="access" x1="760" y1="2485" x2="762.31" y2="2465.9" data-opening-target="ENT-HSP-SOCIAL" data-clear-width-m="32"/>
+    <circle id="ENT-HSP-SOCIAL" class="gate-public" cx="760" cy="2485" r="10" data-world-x="-1040" data-world-z="-1085"/>
+    <text class="gate-name" x="774" y="2471">附属医院社会入口</text>
+    <line id="ACCESS-ENT-HSP-EMERGENCY-CITY" class="access" x1="850" y1="2490" x2="851.61" y2="2476.72" data-opening-target="ENT-HSP-EMERGENCY-CITY" data-clear-width-m="14"/>
+    <circle id="ENT-HSP-EMERGENCY-CITY" class="gate-public" cx="850" cy="2490" r="10" data-world-x="-950" data-world-z="-1090"/>
+    <text class="gate-name" x="864" y="2476">医院急救专用入口</text>
+    <line id="ACCESS-ENT-THEATER-PUBLIC" class="access" x1="3310" y1="640" x2="3256.28" y2="654.27" data-opening-target="ENT-THEATER-PUBLIC" data-clear-width-m="32"/>
+    <circle id="ENT-THEATER-PUBLIC" class="gate-public" cx="3310" cy="640" r="10" data-world-x="1510" data-world-z="760"/>
+    <text class="gate-name" x="3324" y="626">戏剧表演中心社会入口</text>
+    <line id="ACCESS-ENT-RDI-VISITOR" class="access" x1="780" y1="335" x2="781.61" y2="347.94" data-opening-target="ENT-RDI-VISITOR" data-clear-width-m="28"/>
+    <circle id="ENT-RDI-VISITOR" class="gate-public" cx="780" cy="335" r="10" data-world-x="-1020" data-world-z="1065"/>
+    <text class="gate-name" x="794" y="321">科研科技园访客入口</text>
+  </g>
+  <g id="05_InternalRoads" data-layer="internal-roads">
+    <polyline id="ROAD-BOYA-RING" class="internal-road primary-road" points="970,2000 970,1760 1000,1700 940,1470 930,1460 920,1450 920,1310 950,1280 1000,1180 1000,1100 1000,500 1000,370 1010,360 1100,320 1570,310 1800,310 2650,340 2830,780 2840,1400 2840,1720 2690,1690 2660,1700 2600,1830 2600,2000 2650,2100 2630,2170 2620,2180 2540,2170 2480,2110 2100,2110 1800,2250 1150,2150 1100,2170 1040,2170 970,2170 970,2000" stroke-width="26" data-class="primary" data-width-m="26" data-geometry-source="source:centerlineXZ"/>
+    <polyline id="ROAD-BOYA-RING-CENTER" class="road-center" points="970,2000 970,1760 1000,1700 940,1470 930,1460 920,1450 920,1310 950,1280 1000,1180 1000,1100 1000,500 1000,370 1010,360 1100,320 1570,310 1800,310 2650,340 2830,780 2840,1400 2840,1720 2690,1690 2660,1700 2600,1830 2600,2000 2650,2100 2630,2170 2620,2180 2540,2170 2480,2110 2100,2110 1800,2250 1150,2150 1100,2170 1040,2170 970,2170 970,2000"/>
+    <polyline id="ROAD-ZHICHUANG" class="internal-road secondary-road" points="480,1520 650,1500 800,1470 920,1450" stroke-width="18" data-class="secondary" data-width-m="18" data-geometry-source="source:centerlineXZ"/>
+    <polyline id="ROAD-ZHICHUANG-CENTER" class="road-center" points="480,1520 650,1500 800,1470 920,1450"/>
+    <polyline id="ROAD-JIANGXIN" class="internal-road secondary-road" points="770,1470 770,995 800,965 800,900 830,865 830,830 810,805 810,785 770,700" stroke-width="18" data-class="secondary" data-width-m="18" data-geometry-source="source:centerlineXZ"/>
+    <polyline id="ROAD-JIANGXIN-CENTER" class="road-center" points="770,1470 770,995 800,965 800,900 830,865 830,830 810,805 810,785 770,700"/>
+    <polyline id="ROAD-JIANGXIN-S" class="internal-road secondary-road" points="770,1470 850,1470 920,1450" stroke-width="18" data-class="secondary" data-width-m="18" data-geometry-source="source:centerlineXZ"/>
+    <polyline id="ROAD-JIANGXIN-S-CENTER" class="road-center" points="770,1470 850,1470 920,1450"/>
+    <polyline id="ROAD-JIANGXIN-N" class="internal-road tertiary-road" points="770,700 925,545 930,500 1000,500" stroke-width="14" data-class="tertiary" data-width-m="14" data-geometry-source="source:centerlineXZ"/>
+    <polyline id="ROAD-JIANGXIN-N-CENTER" class="road-center" points="770,700 925,545 930,500 1000,500"/>
+    <polyline id="ROAD-GEZHI-W" class="internal-road secondary-road" points="1000,890 1115,890 1125,900 1300,900 1310,890 1350,890" stroke-width="18" data-class="secondary" data-width-m="18" data-geometry-source="source:centerlineXZ"/>
+    <polyline id="ROAD-GEZHI-W-CENTER" class="road-center" points="1000,890 1115,890 1125,900 1300,900 1310,890 1350,890"/>
+    <polyline id="ROAD-GEZHI" class="internal-road secondary-road" points="1350,890 1395,900 2020,895 2185,950 2335,930 2400,900" stroke-width="18" data-class="secondary" data-width-m="18" data-geometry-source="source:centerlineXZ"/>
+    <polyline id="ROAD-GEZHI-CENTER" class="road-center" points="1350,890 1395,900 2020,895 2185,950 2335,930 2400,900"/>
+    <polyline id="ROAD-GEZHI-E" class="internal-road secondary-road" points="2400,900 2695,900 2715,910 2860,910 2880,920" stroke-width="18" data-class="secondary" data-width-m="18" data-geometry-source="source:centerlineXZ"/>
+    <polyline id="ROAD-GEZHI-E-CENTER" class="road-center" points="2400,900 2695,900 2715,910 2860,910 2880,920"/>
+    <polyline id="ROAD-WENHUA" class="internal-road secondary-road" points="2880,1700 2860,1450 2850,1180 2880,920 2920,780" stroke-width="18" data-class="secondary" data-width-m="18" data-geometry-source="source:centerlineXZ"/>
+    <polyline id="ROAD-WENHUA-CENTER" class="road-center" points="2880,1700 2860,1450 2850,1180 2880,920 2920,780"/>
+    <polyline id="ROAD-CHUANGXIN" class="internal-road secondary-road" points="430,640 510,605 670,605 770,495 1200,470" stroke-width="18" data-class="secondary" data-width-m="18" data-geometry-source="source:centerlineXZ"/>
+    <polyline id="ROAD-CHUANGXIN-CENTER" class="road-center" points="430,640 510,605 670,605 770,495 1200,470"/>
+    <polyline id="ROAD-CHUANGXIN-E" class="internal-road secondary-road" points="1200,470 1000,500" stroke-width="18" data-class="secondary" data-width-m="18" data-geometry-source="source:centerlineXZ"/>
+    <polyline id="ROAD-CHUANGXIN-E-CENTER" class="road-center" points="1200,470 1000,500"/>
+    <polyline id="ROAD-CHUANGXIN-W" class="internal-road secondary-road" points="330,640 400,600 430,640" stroke-width="18" data-class="secondary" data-width-m="18" data-geometry-source="source:centerlineXZ"/>
+    <polyline id="ROAD-CHUANGXIN-W-CENTER" class="road-center" points="330,640 400,600 430,640"/>
+    <polyline id="ROAD-JISHI" class="internal-road secondary-road" points="450,2170 600,2170 750,2170 900,2170 970,2170" stroke-width="20" data-class="secondary" data-width-m="20" data-geometry-source="source:centerlineXZ"/>
+    <polyline id="ROAD-JISHI-CENTER" class="road-center" points="450,2170 600,2170 750,2170 900,2170 970,2170"/>
+    <polyline id="ROAD-HOSP-EMG" class="internal-road emergency-road" points="850,2485 850,2320 850,2180 850,2170" stroke-width="8" data-class="emergency" data-width-m="8" data-geometry-source="source:centerlineXZ"/>
+    <polyline id="ROAD-HOSP-EMG-CENTER" class="road-center" points="850,2485 850,2320 850,2180 850,2170"/>
+    <polyline id="ROAD-JIANXING" class="internal-road event-road" points="1800,258 1800,310 1800,335" stroke-width="22" data-class="event_access" data-width-m="22" data-geometry-source="source:centerlineXZ"/>
+    <polyline id="ROAD-JIANXING-CENTER" class="road-center" points="1800,258 1800,310 1800,335"/>
+    <polyline id="ROAD-QINGNIAN-W" class="internal-road secondary-road" points="300,1280 290,1150 290,900 330,640" stroke-width="18" data-class="secondary" data-width-m="18" data-geometry-source="source:centerlineXZ"/>
+    <polyline id="ROAD-QINGNIAN-W-CENTER" class="road-center" points="300,1280 290,1150 290,900 330,640"/>
+    <polyline id="ROAD-QINGNIAN-W-FEED" class="internal-road secondary-road" points="300,1300 305,1340 380,1415 395,1415 465,1485 480,1520" stroke-width="18" data-class="secondary" data-width-m="18" data-geometry-source="source:centerlineXZ"/>
+    <polyline id="ROAD-QINGNIAN-W-FEED-CENTER" class="road-center" points="300,1300 305,1340 380,1415 395,1415 465,1485 480,1520"/>
+    <polyline id="ROAD-QINGNIAN-NW" class="internal-road tertiary-road" points="1470,310 1470,440 1470,560" stroke-width="14" data-class="tertiary" data-width-m="14" data-geometry-source="source:centerlineXZ"/>
+    <polyline id="ROAD-QINGNIAN-NW-CENTER" class="road-center" points="1470,310 1470,440 1470,560"/>
+    <polyline id="ROAD-QINGNIAN-NE" class="internal-road tertiary-road" points="2700,340 2700,440 2700,550" stroke-width="14" data-class="tertiary" data-width-m="14" data-geometry-source="source:centerlineXZ"/>
+    <polyline id="ROAD-QINGNIAN-NE-CENTER" class="road-center" points="2700,340 2700,440 2700,550"/>
+    <polyline id="ROAD-QINGNIAN-E" class="internal-road secondary-road" points="3300,1700 3310,1500 3310,1280 3300,1060" stroke-width="18" data-class="secondary" data-width-m="18" data-geometry-source="source:centerlineXZ"/>
+    <polyline id="ROAD-QINGNIAN-E-CENTER" class="road-center" points="3300,1700 3310,1500 3310,1280 3300,1060"/>
+    <polyline id="ROAD-QINGNIAN-E-FEED" class="internal-road secondary-road" points="2870,1050 3000,1050 3200,1050 3300,1060" stroke-width="18" data-class="secondary" data-width-m="18" data-geometry-source="source:centerlineXZ"/>
+    <polyline id="ROAD-QINGNIAN-E-FEED-CENTER" class="road-center" points="2870,1050 3000,1050 3200,1050 3300,1060"/>
+    <polyline id="ROAD-EAST-GATE" class="internal-road tertiary-road" points="3310,1280 3355,1280" stroke-width="14" data-class="tertiary" data-width-m="14" data-geometry-source="source:centerlineXZ"/>
+    <polyline id="ROAD-EAST-GATE-CENTER" class="road-center" points="3310,1280 3355,1280"/>
+    <polyline id="ROAD-QINGNIAN-S" class="internal-road secondary-road" points="2020,2440 2300,2440 2600,2440 2720,2400" stroke-width="18" data-class="secondary" data-width-m="18" data-geometry-source="source:centerlineXZ"/>
+    <polyline id="ROAD-QINGNIAN-S-CENTER" class="road-center" points="2020,2440 2300,2440 2600,2440 2720,2400"/>
+    <polyline id="ROAD-QINGNIAN-S-W" class="internal-road secondary-road" points="2020,2440 1980,2380 1920,2320 1800,2250" stroke-width="18" data-class="secondary" data-width-m="18" data-geometry-source="source:centerlineXZ"/>
+    <polyline id="ROAD-QINGNIAN-S-W-CENTER" class="road-center" points="2020,2440 1980,2380 1920,2320 1800,2250"/>
+    <polyline id="ROAD-QINGNIAN-S-E" class="internal-road secondary-road" points="2720,2400 2690,2370 2665,2370 2655,2360 2655,2280 2630,2255 2630,2170" stroke-width="18" data-class="secondary" data-width-m="18" data-geometry-source="source:centerlineXZ"/>
+    <polyline id="ROAD-QINGNIAN-S-E-CENTER" class="road-center" points="2720,2400 2690,2370 2665,2370 2655,2360 2655,2280 2630,2255 2630,2170"/>
+    <polyline id="ROAD-TRANSIT-D" class="internal-road transit-road" points="920,1450 930,1345 1045,1345 1070,1370 1100,1370 1185,1455 2720,1455 2840,1400" stroke-width="14" data-class="transit_only" data-width-m="14" data-geometry-source="source:centerlineXZ"/>
+    <polyline id="ROAD-TRANSIT-C" class="internal-road transit-road" points="2300,2440 2260,2400 2205,2400 2120,2315 2120,2305 2105,2290 2085,2290 1980,2185 1970,2155 1935,2120 1935,2080 1920,2050 1920,1320 1950,1290 1975,1290 2115,1220 2180,1125 2180,1065 2160,1025 2025,885 2005,875 2005,765 1975,700 1920,575 1920,530 1890,500 1890,345 1850,335 1800,310" stroke-width="14" data-class="transit_only" data-width-m="14" data-geometry-source="source:centerlineXZ"/>
+    <polyline id="PATH-CHENGHU" class="internal-road pedbike-road" points="1476.11,1158.99 1543.54,1265.76 1685.36,1314.85 1831.33,1320.06 1977.16,1299.23 2116.74,1234.81 2191.58,1125.42 2167.58,1005.4 2050.92,922.08 1897.56,879.77 1739.89,890.28 1577.6,947.87 1458.06,1044.65 1476.11,1158.99" stroke-width="6" data-class="ped_bike" data-width-m="6" data-geometry-source="derived:WATER-LAKE-01 shoreline outward 25m"/>
+    <circle id="BUSSTOP-SOUTH-GATE" class="bus-stop" cx="1800" cy="2250" r="5" data-lines="A,B,C"/>
+    <circle id="BUSSTOP-SOUTH-LIFE" class="bus-stop" cx="2300" cy="2440" r="5" data-lines="C"/>
+    <circle id="BUSSTOP-CENTRAL-S" class="bus-stop" cx="1920" cy="2050" r="5" data-lines="C"/>
+    <circle id="BUSSTOP-LIBRARY" class="bus-stop" cx="1920" cy="1455" r="5" data-lines="C,D"/>
+    <circle id="BUSSTOP-SCIENCE" class="bus-stop" cx="2005" cy="765" r="5" data-lines="C"/>
+    <circle id="BUSSTOP-NORTH-LIFE" class="bus-stop" cx="1890" cy="450" r="5" data-lines="C"/>
+    <circle id="BUSSTOP-NORTH-SPORT" class="bus-stop" cx="1800" cy="310" r="5" data-lines="A,B,C"/>
+    <circle id="BUSSTOP-WEST-LIFE" class="bus-stop" cx="300" cy="1300" r="5" data-lines="D"/>
+    <circle id="BUSSTOP-INFO-W" class="bus-stop" cx="480" cy="1520" r="5" data-lines="D"/>
+    <circle id="BUSSTOP-INFO" class="bus-stop" cx="920" cy="1450" r="5" data-lines="A,B,D"/>
+    <circle id="BUSSTOP-CENTRAL-W" class="bus-stop" cx="1185" cy="1455" r="5" data-lines="D"/>
+    <circle id="BUSSTOP-HUM-BUS" class="bus-stop" cx="2450" cy="1455" r="5" data-lines="D"/>
+    <circle id="BUSSTOP-EAST-LIFE" class="bus-stop" cx="2720" cy="1455" r="5" data-lines="D"/>
+    <circle id="BUSSTOP-MED" class="bus-stop" cx="970" cy="2000" r="5" data-lines="A,B"/>
+    <circle id="BUSSTOP-MED-S" class="bus-stop" cx="1040" cy="2170" r="5" data-lines="A,B"/>
+    <circle id="BUSSTOP-ENG" class="bus-stop" cx="1000" cy="890" r="5" data-lines="A,B"/>
+    <circle id="BUSSTOP-RDI" class="bus-stop" cx="1000" cy="500" r="5" data-lines="A,B"/>
+    <circle id="BUSSTOP-NE" class="bus-stop" cx="2650" cy="340" r="5" data-lines="A,B"/>
+    <circle id="BUSSTOP-ART" class="bus-stop" cx="2830" cy="780" r="5" data-lines="A,B"/>
+    <circle id="BUSSTOP-HUM" class="bus-stop" cx="2840" cy="1100" r="5" data-lines="A,B"/>
+    <circle id="BUSSTOP-SE-SPORT" class="bus-stop" cx="2600" cy="2000" r="5" data-lines="A,B"/>
+    <circle id="BUSSTOP-SOUTH-E" class="bus-stop" cx="2540" cy="2170" r="5" data-lines="A,B"/>
+    <circle id="JCT-01" class="junction" cx="1800" cy="2250" r="3.5"/>
+    <circle id="JCT-02" class="junction" cx="2630" cy="2170" r="3.5"/>
+    <circle id="JCT-03" class="junction" cx="2600" cy="2000" r="3.5"/>
+    <circle id="JCT-04" class="junction" cx="2840" cy="1700" r="3.5"/>
+    <circle id="JCT-05" class="junction" cx="2840" cy="1400" r="3.5"/>
+    <circle id="JCT-06" class="junction" cx="2870" cy="1050" r="3.5"/>
+    <circle id="JCT-07" class="junction" cx="2830" cy="780" r="3.5"/>
+    <circle id="JCT-08" class="junction" cx="2650" cy="340" r="3.5"/>
+    <circle id="JCT-09" class="junction" cx="1800" cy="310" r="3.5"/>
+    <circle id="JCT-10" class="junction" cx="1000" cy="500" r="3.5"/>
+    <circle id="JCT-11" class="junction" cx="1000" cy="890" r="3.5"/>
+    <circle id="JCT-12" class="junction" cx="1000" cy="1100" r="3.5"/>
+    <circle id="JCT-13" class="junction" cx="920" cy="1450" r="3.5"/>
+    <circle id="JCT-14" class="junction" cx="970" cy="2000" r="3.5"/>
+    <circle id="JCT-15" class="junction" cx="970" cy="2170" r="3.5"/>
+    <circle id="JCT-16" class="junction" cx="1150" cy="2150" r="3.5"/>
+    <circle id="JCT-17" class="junction" cx="1920" cy="1455" r="3.5"/>
+    <circle id="JCT-18" class="junction" cx="480" cy="1520" r="3.5"/>
+    <circle id="JCT-19" class="junction" cx="430" cy="640" r="3.5"/>
+    <circle id="JCT-20" class="junction" cx="3310" cy="1280" r="3.5"/>
+  </g>
+  <g id="06_Water" data-layer="water">
+    <polygon id="WATER-LAKE-01" class="water-main" points="1500,1150 1560,1245 1690,1290 1830,1295 1970,1275 2100,1215 2165,1120 2145,1020 2040,945 1895,905 1745,915 1590,970 1485,1055" data-water-level-y="94" data-area-m2="204000" data-geometry="exact-shoreline"/>
+    <circle id="WATER-LAKE-01-MAIN-ISLAND-CENTER" class="island-marker" cx="1845" cy="1075" r="6" data-area-ha-range="0.6-0.8" data-geometry="center-marker-only"/>
+    <circle id="WATER-LAKE-ZHIYUAN" class="water-reference" cx="2190" cy="810" r="53.52" data-area-m2="9000" data-water-level-y="105.5" data-geometry="area-equivalent-reference-circle"/>
+    <circle id="WATER-POND-JIANGXIN" class="water-reference" cx="770" cy="855" r="37.85" data-area-m2="4500" data-water-level-y="109" data-geometry="area-equivalent-reference-circle"/>
+    <circle id="WATER-POND-GEWU" class="water-reference" cx="2190" cy="900" r="39.89" data-area-m2="5000" data-water-level-y="103" data-geometry="area-equivalent-reference-circle"/>
+    <circle id="WATER-FOUNTAIN-ZHIQUAN" class="water-reference" cx="1020" cy="1420" r="33.38" data-area-m2="3500" data-water-level-y="104" data-geometry="area-equivalent-reference-circle"/>
+    <circle id="WATER-POND-HEFENG" class="water-reference" cx="2730" cy="860" r="43.7" data-area-m2="6000" data-water-level-y="104" data-geometry="area-equivalent-reference-circle"/>
+    <circle id="WATER-POND-XINGLIN" class="water-reference" cx="820" cy="2100" r="41.84" data-area-m2="5500" data-water-level-y="101" data-geometry="area-equivalent-reference-circle"/>
+    <circle id="WATER-POND-YILAN" class="water-reference" cx="2880" cy="700" r="37.85" data-area-m2="4500" data-water-level-y="108" data-geometry="area-equivalent-reference-circle"/>
+    <circle id="WATER-POND-WEST" class="water-reference" cx="420" cy="925" r="33.38" data-area-m2="3500" data-water-level-y="107" data-geometry="area-equivalent-reference-circle"/>
+    <circle id="WATER-POND-EAST" class="water-reference" cx="3120" cy="1280" r="30.9" data-area-m2="3000" data-water-level-y="103" data-geometry="area-equivalent-reference-circle"/>
+    <circle id="WATER-POND-SOUTH" class="water-reference" cx="2400" cy="2200" r="35.68" data-area-m2="4000" data-water-level-y="101" data-geometry="area-equivalent-reference-circle"/>
+    <polyline id="WATER-STREAM-MAIN-NORTH" class="stream" points="2120,380 2140,440 2150,500 2150,580 2160,660 2190,750 2190,810 2180,870 2140,930 2100,980" data-visible-length-km="2.18"/>
+    <polyline id="WATER-STREAM-MAIN-NORTH-CENTER" class="stream-center" points="2120,380 2140,440 2150,500 2150,580 2160,660 2190,750 2190,810 2180,870 2140,930 2100,980"/>
+    <polyline id="WATER-STREAM-MAIN-SOUTHEAST" class="stream" points="2180,1220 2195,1370 2380,1510 2430,1510 2560,1685 2735,1685 2820,1770 2935,1770 2990,1825 2995,1930 3060,2005 3060,2130 3095,2145" data-visible-length-km="2.18"/>
+    <polyline id="WATER-STREAM-MAIN-SOUTHEAST-CENTER" class="stream-center" points="2180,1220 2195,1370 2380,1510 2430,1510 2560,1685 2735,1685 2820,1770 2935,1770 2990,1825 2995,1930 3060,2005 3060,2130 3095,2145"/>
+  </g>
+  <g id="07_Landscape" data-layer="major-open-space">
+    <rect id="SQUARE-01" class="square-marker" x="1792" y="2372" width="16" height="16" transform="rotate(45 1800 2380)" data-name="迎宾广场" data-geometry="center-marker-only"/>
+    <rect id="SQUARE-02" class="square-marker" x="1792" y="2072" width="16" height="16" transform="rotate(45 1800 2080)" data-name="明德广场" data-geometry="center-marker-only"/>
+    <rect id="SQUARE-03" class="square-marker" x="1792" y="1692" width="16" height="16" transform="rotate(45 1800 1700)" data-name="求真广场" data-geometry="center-marker-only"/>
+    <rect id="SQUARE-04" class="square-marker" x="1792" y="292" width="16" height="16" transform="rotate(45 1800 300)" data-name="健行广场" data-geometry="center-marker-only"/>
+    <rect id="SQUARE-05" class="square-marker" x="3252" y="632" width="16" height="16" transform="rotate(45 3260 640)" data-name="艺境广场" data-geometry="center-marker-only"/>
+    <rect id="SQUARE-06" class="square-marker" x="302" y="1472" width="16" height="16" transform="rotate(45 310 1480)" data-name="法治广场" data-geometry="center-marker-only"/>
+    <rect id="SQUARE-07" class="square-marker" x="752" y="2432" width="16" height="16" transform="rotate(45 760 2440)" data-name="仁心广场" data-geometry="center-marker-only"/>
+    <circle id="PARK-01" class="park-reference" cx="970" cy="640" r="178.41" data-name="格物园" data-area-ha="10" data-geometry="area-equivalent-reference-circle"/>
+    <circle id="PARK-02" class="park-reference" cx="2650" cy="970" r="159.58" data-name="文心园" data-area-ha="8" data-geometry="area-equivalent-reference-circle"/>
+    <circle id="PARK-03" class="park-reference" cx="820" cy="2050" r="149.27" data-name="杏林园" data-area-ha="7" data-geometry="area-equivalent-reference-circle"/>
+    <circle id="PARK-04" class="park-reference" cx="2930" cy="640" r="169.26" data-name="艺境园" data-area-ha="9" data-geometry="area-equivalent-reference-circle"/>
+    <rect id="PARK-05" class="park-reference" x="1550" y="270" width="600" height="110" data-name="松风林" data-geometry="source-control-range"/>
+    <rect id="POI-BOYA-LAWN" class="lawn-envelope" x="1580" y="1310" width="440" height="170" data-area-ha-range="5-7" data-geometry="source-control-envelope"/>
+    <polyline id="PATH-CHUNHUA" class="seasonal-path" points="2420,1040 2560,970 2700,890 2850,810 2960,720" data-name="春华路" data-alias="樱花大道"/>
+    <polyline id="PATH-QIUSHI" class="seasonal-path" points="1680,1720 1500,1580 1320,1380 1180,1180 1100,980" data-name="秋实路" data-alias="银杏大道"/>
+  </g>
+  <g id="08_Buildings" data-step="future"/>
+  <g id="09_Residential" data-step="future"/>
+  <g id="10_Sports" data-step="future"/>
+  <g id="11_POI" data-step="future"/>
+  <g id="12_Labels" data-layer="step4-labels">
+    <text class="water-name" x="1825" y="1088" text-anchor="middle">澄湖</text>
+    <text class="water-name" x="2190" y="798" text-anchor="middle">知源湖</text>
+    <text class="water-name" x="770" y="843" text-anchor="middle">匠心池</text>
+    <text class="water-name" x="2190" y="888" text-anchor="middle">格物池</text>
+    <text class="water-name" x="1020" y="1408" text-anchor="middle">智泉</text>
+    <text class="water-name" x="2730" y="848" text-anchor="middle">荷风池</text>
+    <text class="water-name" x="820" y="2088" text-anchor="middle">杏林池</text>
+    <text class="water-name" x="2880" y="688" text-anchor="middle">艺澜池</text>
+    <text class="water-name" x="420" y="913" text-anchor="middle">西苑景观池</text>
+    <text class="water-name" x="3120" y="1268" text-anchor="middle">东苑景观池</text>
+    <text class="water-name" x="2400" y="2188" text-anchor="middle">南苑景观池</text>
+    <text class="small-name" x="1812" y="2370">迎宾广场</text>
+    <text class="small-name" x="1812" y="2070">明德广场</text>
+    <text class="small-name" x="1812" y="1690">求真广场</text>
+    <text class="small-name" x="1812" y="290">健行广场</text>
+    <text class="small-name" x="3272" y="630">艺境广场</text>
+    <text class="small-name" x="322" y="1470">法治广场</text>
+    <text class="small-name" x="772" y="2430">仁心广场</text>
+    <text class="open-name" x="970" y="640" text-anchor="middle">格物园</text>
+    <text class="open-name" x="2650" y="970" text-anchor="middle">文心园</text>
+    <text class="open-name" x="820" y="2050" text-anchor="middle">杏林园</text>
+    <text class="open-name" x="2930" y="640" text-anchor="middle">艺境园</text>
+    <text class="open-name" x="1850" y="325" text-anchor="middle">松风林</text>
+    <text class="open-name" x="1800" y="1395" text-anchor="middle">博雅草坪</text>
+  </g>
+  <g id="13_RoadNames" data-layer="road-names">
+    <text class="city-road-name" x="1950" y="2582" text-anchor="middle" transform="rotate(0 1950 2582)">大学路</text>
+    <text class="city-road-name" x="147" y="1410" text-anchor="middle" transform="rotate(-90 147 1410)">学府路</text>
+    <text class="city-road-name" x="1920" y="183" text-anchor="middle" transform="rotate(0 1920 183)">致远路</text>
+    <text class="city-road-name" x="3460" y="1410" text-anchor="middle" transform="rotate(90 3460 1410)">长虹路</text>
+    <text class="road-name" x="2774.85" y="637.18" text-anchor="middle" transform="rotate(-22.25 2774.85 637.18)">博雅环路</text>
+    <text class="road-name" x="700.72" y="1481.86" text-anchor="middle" transform="rotate(78.69 700.72 1481.86)">智创路</text>
+    <text class="road-name" x="770" y="1057.26" text-anchor="middle" transform="rotate(0 770 1057.26)">匠心路</text>
+    <text class="road-name" x="846.4" y="1462" text-anchor="middle" transform="rotate(90 846.4 1462)">匠心路南连接</text>
+    <text class="road-name" x="888.26" y="573.74" text-anchor="middle" transform="rotate(45 888.26 573.74)">匠心路北连接</text>
+    <text class="road-name" x="1175" y="892" text-anchor="middle" transform="rotate(90 1175 892)">格致路西连接</text>
+    <text class="road-name" x="1882.87" y="888.1" text-anchor="middle" transform="rotate(89.54 1882.87 888.1)">格致路</text>
+    <text class="road-name" x="2642.36" y="892" text-anchor="middle" transform="rotate(90 2642.36 892)">格致路东连接</text>
+    <text class="road-name" x="2852.1" y="1228.79" text-anchor="middle" transform="rotate(-2.12 2852.1 1228.79)">文华路</text>
+    <text class="road-name" x="787.34" y="485.99" text-anchor="middle" transform="rotate(86.67 787.34 485.99)">创新大道</text>
+    <text class="road-name" x="1100" y="477" text-anchor="middle" transform="rotate(81.47 1100 477)">创新大道东连接</text>
+    <text class="road-name" x="386.71" y="599.6" text-anchor="middle" transform="rotate(60.26 386.71 599.6)">创新大道西苑连接</text>
+    <text class="road-name" x="710" y="2162" text-anchor="middle" transform="rotate(90 710 2162)">济世路</text>
+    <text class="road-name" x="850" y="2319.5" text-anchor="middle" transform="rotate(0 850 2319.5)">医院应急路</text>
+    <text class="road-name" x="1800" y="288.5" text-anchor="middle" transform="rotate(0 1800 288.5)">健行路</text>
+    <text class="road-name" x="290" y="950.66" text-anchor="middle" transform="rotate(0 290 950.66)">青年路·西苑段</text>
+    <text class="road-name" x="1470" y="427" text-anchor="middle" transform="rotate(0 1470 427)">青年路·北苑西段</text>
+    <text class="road-name" x="2700" y="437" text-anchor="middle" transform="rotate(0 2700 437)">青年路·北苑东段</text>
+    <text class="road-name" x="3310" y="1372.01" text-anchor="middle" transform="rotate(0 3310 1372.01)">青年路·东苑段</text>
+    <text class="road-name" x="3332.5" y="1272" text-anchor="middle" transform="rotate(90 3332.5 1272)">东门连接路</text>
+    <text class="road-name" x="2373.25" y="2432" text-anchor="middle" transform="rotate(90 2373.25 2432)">青年路·南苑段</text>
+    <text class="road-name" x="1926.38" y="2318.38" text-anchor="middle" transform="rotate(-45 1926.38 2318.38)">青年路·南苑西连接</text>
+    <text class="road-name" x="2655" y="2292.61" text-anchor="middle" transform="rotate(0 2655 2292.61)">青年路·南苑东连接</text>
+    <text class="road-name" x="2175.04" y="1034.74" text-anchor="middle" transform="rotate(-11.31 2175.04 1034.74)">澄湖路</text>
+  </g>
+  <g id="14_Legend" data-layer="legend">
+    <text class="technical" x="88" y="82">N</text>
+    <path d="M 88 100 L 88 180 M 75 118 L 88 100 L 101 118" fill="none" stroke="#173A5E" stroke-width="5"/>
+    <line x1="2920" y1="2700" x2="3420" y2="2700" stroke="#30353a" stroke-width="6"/>
+    <text class="technical" x="2920" y="2682">500 m</text>
+    <text class="technical" x="80" y="2740">Reference circles derive from source center + area; only 澄湖 has exact shoreline in Step 4.</text>
+  </g>
+</svg>
