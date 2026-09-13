@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="4200" height="3200" viewBox="0 0 4200 3200" role="img" aria-labelledby="title desc">
+  <title id="title">江城大学总平面骨架 R6 — Step 3</title>
+  <desc id="desc">R6外围城市道路、6.513平方公里校园边界、校园围墙、校门和社会接口。世界坐标X向东、Z向北；1米等于1 SVG user unit。</desc>
+  <metadata>
+    sourcePatchVersion=PATCH-2026-09-13-R6;
+    generator=Tools/generate_svg_skeleton.py;
+    profile=presentation;
+    coordinateConfig=CampusData/svg/svg_coordinate_system_r6.json;
+    noRaster=true
+  </metadata>
+  <defs>
+    <style>
+      .city-road { fill: none; stroke: #55585c; stroke-width: 36; stroke-linecap: round; stroke-linejoin: round; }
+      .city-road-center { fill: none; stroke: #f5f3ee; stroke-width: 1.5; stroke-dasharray: 18 14; opacity: .7; }
+      .campus-fill { fill: #f4f1e8; stroke: #8e948e; stroke-width: 3; stroke-linejoin: round; }
+      .wall { fill: none; stroke: #41464b; stroke-width: 5; stroke-linecap: butt; stroke-linejoin: round; }
+      .access { fill: none; stroke: #7f8589; stroke-width: 8; stroke-linecap: round; }
+      .gate { fill: #173A5E; stroke: #f4f1e8; stroke-width: 3; }
+      .gate-public { fill: #C4A052; stroke: #f4f1e8; stroke-width: 3; }
+      .technical { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans CJK SC", sans-serif; font-size: 18px; fill: #2d3237; }
+      .road-name { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans CJK SC", sans-serif; font-size: 28px; font-weight: 600; fill: #30353a; letter-spacing: 2px; }
+      .gate-name { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans CJK SC", sans-serif; font-size: 18px; font-weight: 600; fill: #173A5E; }
+      .title { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans CJK SC", sans-serif; font-size: 42px; font-weight: 700; fill: #173A5E; }
+      .subtitle { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans CJK SC", sans-serif; font-size: 19px; fill: #5a6065; }
+      .legend { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans CJK SC", sans-serif; font-size: 16px; fill: #3e4449; }
+    </style>
+  </defs>
+  <rect id="CanvasBackground" x="0" y="0" width="4200" height="3200" fill="#fbfaf6"/>
+  <text class="title" x="300" y="92">江城大学 · 总平面骨架</text>
+  <text class="subtitle" x="300" y="126">PATCH-2026-09-13-R6 · Step 3 · 外围道路 / 校园边界 / 围墙 / 校门</text>
+  <g id="01_CityRoads" data-layer="city-roads">
+    <polyline id="ROAD-CITY-SOUTH" class="city-road" points="575,2690 990,2738 2520,2745 3220,2685 3665,2465" data-width-m="36"/>
+    <polyline id="ROAD-CITY-SOUTH-CENTER" class="city-road-center" points="575,2690 990,2738 2520,2745 3220,2685 3665,2465"/>
+    <polyline id="ROAD-CITY-WEST" class="city-road" points="575,2690 490,2250 490,1080 590,755 1005,512" data-width-m="36"/>
+    <polyline id="ROAD-CITY-WEST-CENTER" class="city-road-center" points="575,2690 490,2250 490,1080 590,755 1005,512"/>
+    <polyline id="ROAD-CITY-NORTH" class="city-road" points="1005,512 1340,440 2300,420 3000,450 3540,632" data-width-m="36"/>
+    <polyline id="ROAD-CITY-NORTH-CENTER" class="city-road-center" points="1005,512 1340,440 2300,420 3000,450 3540,632"/>
+    <polyline id="ROAD-CITY-EAST" class="city-road" points="3540,632 3710,1080 3715,2220 3665,2465" data-width-m="36"/>
+    <polyline id="ROAD-CITY-EAST-CENTER" class="city-road-center" points="3540,632 3710,1080 3715,2220 3665,2465"/>
+  </g>
+  <g id="02_CampusBoundary" data-layer="campus-boundary">
+    <polygon id="CAMPUS-01-BOUNDARY" class="campus-fill" points="630,2630 1220,2700 1810,2710 2490,2690 3180,2630 3620,2430 3680,1840 3650,1160 3520,670 2980,500 2300,450 1610,470 1020,540 630,770 540,1310 550,1940" data-area-km2="6.513"/>
+  </g>
+  <g id="03_PerimeterWall" data-layer="perimeter-wall">
+    <polyline id="WALL-SOUTH-PART-01" class="wall" points="642,2615 1046.43,2663.98" data-source-wall="WALL-SOUTH"/>
+    <polyline id="WALL-SOUTH-PART-02" class="wall" points="1078.2,2667.83 1144.66,2675.88" data-source-wall="WALL-SOUTH"/>
+    <polyline id="WALL-SOUTH-PART-03" class="wall" points="1158.56,2677.56 1220,2685 2078.84,2678.24" data-source-wall="WALL-SOUTH"/>
+    <polyline id="WALL-SOUTH-PART-04" class="wall" points="2120.84,2677.91 2490,2675 3170,2615 3605,2415" data-source-wall="WALL-SOUTH"/>
+    <polyline id="WALL-WEST-PART-01" class="wall" points="642,2615 562,1940 559.3,1696.92" data-source-wall="WALL-WEST"/>
+    <polyline id="WALL-WEST-PART-02" class="wall" points="558.92,1662.92 555,1310 645,780 1025,555" data-source-wall="WALL-WEST"/>
+    <polyline id="WALL-NORTH-PART-01" class="wall" points="1025,555 1067.72,549.67" data-source-wall="WALL-NORTH"/>
+    <polyline id="WALL-NORTH-PART-02" class="wall" points="1095.51,546.2 1610,482 2079.29,468.4" data-source-wall="WALL-NORTH"/>
+    <polyline id="WALL-NORTH-PART-03" class="wall" points="2121.27,467.18 2300,462 2975,512 3510,680" data-source-wall="WALL-NORTH"/>
+    <polyline id="WALL-EAST-PART-01" class="wall" points="3510,680 3552.17,838.8" data-source-wall="WALL-EAST"/>
+    <polyline id="WALL-EAST-PART-02" class="wall" points="3560.38,869.73 3638,1162 3650.88,1463.16" data-source-wall="WALL-EAST"/>
+    <polyline id="WALL-EAST-PART-03" class="wall" points="3652.33,1497.13 3667,1840 3616.01,2312.89" data-source-wall="WALL-EAST"/>
+    <polyline id="WALL-EAST-PART-04" class="wall" points="3613.44,2336.75 3605,2415" data-source-wall="WALL-EAST"/>
+  </g>
+  <g id="04_Gates" data-layer="gates-and-social-interfaces">
+    <line id="ACCESS-GATE-SOUTH" class="access" x1="2100" y1="2698" x2="2099.84" y2="2678.07" data-opening-target="GATE-SOUTH" data-clear-width-m="42"/>
+    <circle id="GATE-SOUTH" class="gate" cx="2100" cy="2698" r="10" data-world-x="0" data-world-z="-1098"/>
+    <text class="gate-name" x="2114" y="2728">江城大学南门</text>
+    <line id="ACCESS-GATE-WEST" class="access" x1="552" y1="1680" x2="559.11" y2="1679.92" data-opening-target="GATE-WEST" data-clear-width-m="34"/>
+    <circle id="GATE-WEST" class="gate" cx="552" cy="1680" r="10" data-world-x="-1548" data-world-z="-80"/>
+    <text class="gate-name" x="566" y="1666">江城大学西门</text>
+    <line id="ACCESS-GATE-NORTH" class="access" x1="2100" y1="458" x2="2100.28" y2="467.79" data-opening-target="GATE-NORTH" data-clear-width-m="42"/>
+    <circle id="GATE-NORTH" class="gate" cx="2100" cy="458" r="10" data-world-x="0" data-world-z="1142"/>
+    <text class="gate-name" x="2114" y="440">江城大学北门</text>
+    <line id="ACCESS-GATE-EAST" class="access" x1="3655" y1="1480" x2="3651.61" y2="1480.15" data-opening-target="GATE-EAST" data-clear-width-m="34"/>
+    <circle id="GATE-EAST" class="gate" cx="3655" cy="1480" r="10" data-world-x="1555" data-world-z="120"/>
+    <text class="gate-name" x="3475" y="1466">江城大学东门</text>
+    <line id="ACCESS-GATE-SERVICE-SE" class="access" x1="3570" y1="2320" x2="3614.72" y2="2324.82" data-opening-target="GATE-SERVICE-SE" data-clear-width-m="24"/>
+    <circle id="GATE-SERVICE-SE" class="gate" cx="3570" cy="2320" r="10" data-world-x="1470" data-world-z="-720"/>
+    <text class="gate-name" x="3584" y="2306">东南后勤门</text>
+    <line id="ACCESS-ENT-HSP-SOCIAL" class="access" x1="1060" y1="2685" x2="1062.31" y2="2665.9" data-opening-target="ENT-HSP-SOCIAL" data-clear-width-m="32"/>
+    <circle id="ENT-HSP-SOCIAL" class="gate-public" cx="1060" cy="2685" r="10" data-world-x="-1040" data-world-z="-1085"/>
+    <text class="gate-name" x="1074" y="2671">附属医院社会入口</text>
+    <line id="ACCESS-ENT-HSP-EMERGENCY-CITY" class="access" x1="1150" y1="2690" x2="1151.61" y2="2676.72" data-opening-target="ENT-HSP-EMERGENCY-CITY" data-clear-width-m="14"/>
+    <circle id="ENT-HSP-EMERGENCY-CITY" class="gate-public" cx="1150" cy="2690" r="10" data-world-x="-950" data-world-z="-1090"/>
+    <text class="gate-name" x="1164" y="2676">医院急救专用入口</text>
+    <line id="ACCESS-ENT-THEATER-PUBLIC" class="access" x1="3610" y1="840" x2="3556.28" y2="854.27" data-opening-target="ENT-THEATER-PUBLIC" data-clear-width-m="32"/>
+    <circle id="ENT-THEATER-PUBLIC" class="gate-public" cx="3610" cy="840" r="10" data-world-x="1510" data-world-z="760"/>
+    <text class="gate-name" x="3624" y="826">戏剧表演中心社会入口</text>
+    <line id="ACCESS-ENT-RDI-VISITOR" class="access" x1="1080" y1="535" x2="1081.61" y2="547.94" data-opening-target="ENT-RDI-VISITOR" data-clear-width-m="28"/>
+    <circle id="ENT-RDI-VISITOR" class="gate-public" cx="1080" cy="535" r="10" data-world-x="-1020" data-world-z="1065"/>
+    <text class="gate-name" x="1094" y="521">科研科技园访客入口</text>
+  </g>
+  <g id="05_InternalRoads" data-step="future"/>
+  <g id="06_Water" data-step="future"/>
+  <g id="07_Landscape" data-step="future"/>
+  <g id="08_Buildings" data-step="future"/>
+  <g id="09_Residential" data-step="future"/>
+  <g id="10_Sports" data-step="future"/>
+  <g id="11_POI" data-step="future"/>
+  <g id="12_Labels" data-step="future"/>
+  <g id="13_RoadNames" data-layer="road-names">
+    <text class="road-name" x="2250" y="2782" text-anchor="middle" transform="rotate(0 2250 2782)">大学路</text>
+    <text class="road-name" x="2220" y="383" text-anchor="middle" transform="rotate(0 2220 383)">致远路</text>
+    <text class="road-name" x="447" y="1610" text-anchor="middle" transform="rotate(-90 447 1610)">学府路</text>
+    <text class="road-name" x="3760" y="1610" text-anchor="middle" transform="rotate(90 3760 1610)">长虹路</text>
+  </g>
+  <g id="14_Legend" data-layer="legend">
+    <text class="legend" x="3530" y="230">N</text>
+    <path d="M 3538 244 L 3538 324 M 3525 262 L 3538 244 L 3551 262" fill="none" stroke="#173A5E" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <line x1="3250" y1="3040" x2="3750" y2="3040" stroke="#30353a" stroke-width="6"/>
+    <line x1="3250" y1="3028" x2="3250" y2="3052" stroke="#30353a" stroke-width="4"/>
+    <line x1="3750" y1="3028" x2="3750" y2="3052" stroke="#30353a" stroke-width="4"/>
+    <text class="legend" x="3250" y="3018">0</text>
+    <text class="legend" x="3750" y="3018" text-anchor="end">500 m</text>
+  </g>
+</svg>
