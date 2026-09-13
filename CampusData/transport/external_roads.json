@@ -1,0 +1,66 @@
+{
+  "sourcePatchVersion": "PATCH-2026-09-13-R6",
+  "coordinateSystem": "X-east/Z-north/meters",
+  "roadWidthMeters": 36,
+  "geometryMode": "piecewise_linear_with_corner_fillets",
+  "globalRules": {
+    "preferLongStraightTangents": true,
+    "forbidGlobalBezierSmoothing": true,
+    "cornerRadiusRangeMeters": [140, 220],
+    "roadMustRemainOutsideCampusBoundary": true,
+    "targetRoadEdgeToCampusBoundaryBufferMeters": [10, 20]
+  },
+  "roads": [
+    {
+      "id": "ROAD-CITY-SOUTH",
+      "name": "大学路",
+      "side": "south",
+      "centerlineXZ": [
+        [-1525, -1090],
+        [-1110, -1138],
+        [420, -1145],
+        [1120, -1085],
+        [1565, -865]
+      ],
+      "primaryStraightSpan": [[-1110, -1138], [420, -1145]]
+    },
+    {
+      "id": "ROAD-CITY-WEST",
+      "name": "学府路",
+      "side": "west",
+      "centerlineXZ": [
+        [-1525, -1090],
+        [-1610, -650],
+        [-1610, 520],
+        [-1510, 845],
+        [-1095, 1088]
+      ],
+      "primaryStraightSpan": [[-1610, -650], [-1610, 520]]
+    },
+    {
+      "id": "ROAD-CITY-NORTH",
+      "name": "致远路",
+      "side": "north",
+      "centerlineXZ": [
+        [-1095, 1088],
+        [-760, 1160],
+        [200, 1180],
+        [900, 1150],
+        [1440, 968]
+      ],
+      "primaryStraightSpan": [[-760, 1160], [900, 1150]]
+    },
+    {
+      "id": "ROAD-CITY-EAST",
+      "name": "长虹路",
+      "side": "east",
+      "centerlineXZ": [
+        [1440, 968],
+        [1610, 520],
+        [1615, -620],
+        [1565, -865]
+      ],
+      "primaryStraightSpan": [[1610, 520], [1615, -620]]
+    }
+  ]
+}
