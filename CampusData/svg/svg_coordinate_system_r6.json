@@ -1,0 +1,139 @@
+{
+  "schemaVersion": 1,
+  "version": "svg-coordinate-r6-step2",
+  "sourcePatchVersion": "PATCH-2026-09-13-R6",
+  "status": "frozen",
+  "worldCoordinateSystem": {
+    "unit": "meter",
+    "xAxis": "east",
+    "zAxis": "north",
+    "yAxis": "up",
+    "planProjection": "XZ"
+  },
+  "mapFrame": {
+    "worldBounds": {
+      "xMin": -1800,
+      "xMax": 1800,
+      "zMin": -1400,
+      "zMax": 1400
+    },
+    "svgViewBox": [0, 0, 3600, 2800],
+    "svgWidth": 3600,
+    "svgHeight": 2800,
+    "svgUnitsPerMeter": 1,
+    "worldOriginInSvg": [1800, 1400],
+    "northDirectionInSvg": [0, -1],
+    "eastDirectionInSvg": [1, 0]
+  },
+  "transform": {
+    "worldToMapSvg": {
+      "svgX": "worldX - xMin",
+      "svgY": "zMax - worldZ",
+      "resolved": {
+        "svgX": "worldX + 1800",
+        "svgY": "1400 - worldZ"
+      }
+    },
+    "mapSvgToWorld": {
+      "worldX": "svgX + xMin",
+      "worldZ": "zMax - svgY",
+      "resolved": {
+        "worldX": "svgX - 1800",
+        "worldZ": "1400 - svgY"
+      }
+    },
+    "rotation": {
+      "worldRotationYToSvgDegrees": "identity",
+      "rule": "svgRotationDeg = worldRotationY",
+      "reason": "unrotated local +Z is drawn toward SVG north/up; positive 90 degrees rotates north to east/right",
+      "knownFacing": {
+        "0": "north",
+        "90": "east",
+        "180": "south",
+        "270": "west"
+      }
+    }
+  },
+  "profiles": {
+    "engineering": {
+      "documentViewBox": [0, 0, 3600, 2800],
+      "mapOffset": [0, 0],
+      "worldOriginInDocument": [1800, 1400],
+      "purpose": "coordinate-accurate engineering masterplan"
+    },
+    "presentation": {
+      "documentViewBox": [0, 0, 4200, 3200],
+      "mapOffset": [300, 200],
+      "mapFrameSize": [3600, 2800],
+      "worldOriginInDocument": [2100, 1600],
+      "purpose": "Figma presentation masterplan with title/legend gutters"
+    }
+  },
+  "figma": {
+    "importMode": "plain SVG vector import",
+    "requiresFigmaAI": false,
+    "preserveAspectRatio": "xMidYMid meet",
+    "recommendedRootGroups": [
+      "01_CityRoads",
+      "02_CampusBoundary",
+      "03_PerimeterWall",
+      "04_Gates",
+      "05_InternalRoads",
+      "06_Water",
+      "07_Landscape",
+      "08_Buildings",
+      "09_Residential",
+      "10_Sports",
+      "11_POI",
+      "12_Labels",
+      "13_RoadNames",
+      "14_Legend"
+    ]
+  },
+  "grid": {
+    "worldGridOriginXZ": [0, 0],
+    "majorGridMeters": 250,
+    "minorGridMeters": 50,
+    "chunkGridMeters": 250,
+    "gridIsReferenceOnly": true
+  },
+  "scaleBarsMeters": [100, 250, 500, 1000],
+  "precision": {
+    "sourceCoordinates": "preserve source precision",
+    "svgCoordinates": "up to 0.01 user unit where generated geometry requires decimals",
+    "roundTripToleranceMeters": 0.01,
+    "forbidRasterization": true,
+    "forbidManualCoordinateNudging": true
+  },
+  "extentAudit": {
+    "currentExternalRoadCenterlineExtents": {
+      "xMin": -1610,
+      "xMax": 1615,
+      "zMin": -1145,
+      "zMax": 1180
+    },
+    "externalRoadHalfWidthMeters": 18,
+    "minimumRemainingFrameMarginMeters": {
+      "west": 172,
+      "east": 167,
+      "north": 202,
+      "south": 237
+    },
+    "rule": "all drawable engineering geometry, including half road width, must remain inside mapFrame.worldBounds"
+  },
+  "knownPointChecks": [
+    {"id": "WORLD-ORIGIN", "worldXZ": [0, 0], "engineeringSvgXY": [1800, 1400], "presentationSvgXY": [2100, 1600]},
+    {"id": "GATE-SOUTH", "worldXZ": [0, -1098], "engineeringSvgXY": [1800, 2498], "presentationSvgXY": [2100, 2698]},
+    {"id": "GATE-NORTH", "worldXZ": [0, 1142], "engineeringSvgXY": [1800, 258], "presentationSvgXY": [2100, 458]},
+    {"id": "GATE-WEST", "worldXZ": [-1548, -80], "engineeringSvgXY": [252, 1480], "presentationSvgXY": [552, 1680]},
+    {"id": "GATE-EAST", "worldXZ": [1555, 120], "engineeringSvgXY": [3355, 1280], "presentationSvgXY": [3655, 1480]}
+  ],
+  "hardRules": [
+    "Do not auto-fit the SVG ViewBox from current geometry; the frozen frame keeps coordinates stable across revisions.",
+    "Do not normalize or rescale source coordinates before rendering.",
+    "Do not invert X; only Z is inverted into SVG Y.",
+    "Do not convert meters to arbitrary pixels in the map group; one meter remains one SVG user unit.",
+    "Presentation mode may translate the complete map group by its fixed offset but may not scale it.",
+    "All future SVG generators must import this file instead of re-implementing coordinate constants."
+  ]
+}
