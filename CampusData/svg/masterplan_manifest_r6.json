@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "snapshotVersion": "svg-masterplan-r6-step4",
+  "snapshotVersion": "svg-masterplan-r6-step5",
   "sourcePatchVersion": "PATCH-2026-09-13-R6",
-  "status": "step4_internal_roads_water_open_space_generated",
+  "status": "step5_buildings_residences_sports_generated",
   "files": {
     "coreGeometry": "CampusData/svg/core_geometry_r6.json",
     "buildingPlacement": "CampusData/svg/building_placement_r6.csv",
@@ -11,19 +11,24 @@
     "internalRoadsAndTransit": "CampusData/svg/internal_roads_r3.json",
     "water": "CampusData/svg/water_r6.json",
     "outdoorSports": "CampusData/svg/outdoor_sports_r6.json",
+    "step5RenderPolicy": "CampusData/svg/step5_render_policy_r6.json",
     "coordinateSystem": "CampusData/svg/svg_coordinate_system_r6.json",
     "coordinateModule": "Tools/svg_coordinates.py",
     "step3Generator": "Tools/generate_svg_skeleton.py",
     "step4Generator": "Tools/generate_svg_step4.py",
+    "step5Generator": "Tools/generate_svg_step5.py",
     "dataValidator": "Tools/validate_svg_masterplan.py",
     "coordinateValidator": "Tools/validate_svg_coordinate_system.py",
     "step3Validator": "Tools/validate_svg_skeleton.py",
     "step4Validator": "Tools/validate_svg_step4.py",
+    "step5Validator": "Tools/validate_svg_step5.py",
     "coordinateSpec": "Docs/SVG_MASTERPLAN_COORDINATE_SPEC_R6.md",
     "step3EngineeringSkeleton": "Artifacts/SVG/Jiangcheng-University-MasterPlan-Skeleton-R6-Engineering.svg",
     "step3FigmaSkeleton": "Artifacts/SVG/Jiangcheng-University-MasterPlan-Skeleton-R6-Figma.svg",
     "step4Engineering": "Artifacts/SVG/Jiangcheng-University-MasterPlan-Step4-R6-Engineering.svg",
     "step4Figma": "Artifacts/SVG/Jiangcheng-University-MasterPlan-Step4-R6-Figma.svg",
+    "step5Engineering": "Artifacts/SVG/Jiangcheng-University-MasterPlan-Step5-R6-Engineering.svg",
+    "step5Figma": "Artifacts/SVG/Jiangcheng-University-MasterPlan-Step5-R6-Figma.svg",
     "generationWorkflow": ".github/workflows/svg-masterplan.yml"
   },
   "sourceDocuments": [
@@ -31,6 +36,8 @@
     "江城大学 6.5 km²最终总平面坐标与空间落位系统.txt",
     "建筑参数.txt",
     "江城大学_17-R5附属医院一体化建筑组织修正(1).txt",
+    "户外体育场地补充.txt",
+    "部分建筑坐标、空间修改补充.txt",
     "校园道路与交通系统——工程整合完整版.txt",
     "校园建筑——整合完整版.txt",
     "景观布局.txt",
@@ -40,19 +47,19 @@
     "R6 overrides every conflicting historical value",
     "Example JSON coordinates are excluded",
     "Unfrozen parking/service facilities without permanent IDs are excluded",
-    "Undergraduate dorm footprints remain a 78-82m range; no silent midpoint is chosen before its footprint policy is explicitly resolved",
-    "External roads and perimeter wall reuse the authoritative R6 files instead of duplicating a second coordinate set",
     "SVG coordinate mapping is frozen and may not auto-fit current geometry",
     "One world meter equals one SVG user unit inside the map frame",
     "World X maps right; world Z maps upward by inversion into SVG Y",
     "Presentation profile may translate the map group but may not scale it",
-    "Perimeter wall openings are true geometry gaps computed from frozen gate/interface targets",
-    "External and internal road source centerlines remain data-driven; visual line joins do not create alternate engineering coordinates",
-    "PATH-CHENGHU is derived only from the frozen WATER-LAKE-01 shoreline using the source rule: outward offset 25m, closed loop",
-    "Only WATER-LAKE-01 has a frozen shoreline in Step 4; other named water bodies are drawn as explicitly marked area-equivalent reference circles from source center + area",
-    "Squares without frozen footprint geometry are center markers only",
-    "Parks without frozen boundary geometry are reference envelopes/circles only and must not be treated as final landscape boundaries",
-    "Boya lawn uses its source control envelope and remains subject to later landscape refinement",
+    "Step 4 layers 01 through 07 are immutable during Step 5; the Step 5 validator compares them against regenerated Step 4 output",
+    "Building footprints are centered on CampusData X/Z positions and use frozen rotationY; local +Z remains the main entrance direction",
+    "Undergraduate residence length remains the source range 78-82m; Step 5 renders a 78m minimum body plus 82m maximum control envelope instead of choosing a hidden 80m midpoint",
+    "Graduate residence control footprint is 72x18m and international residence control footprint is 72x20m",
+    "The 56 student residences remain 42 undergraduate + 10 graduate + 4 international and use an 8-template future model system",
+    "HSP-02 is rendered only as the 112x56m upper inpatient-tower overlay on HSP-01 with plan center (-1040,-1003); it is never rendered at the obsolete independent ground parcel",
+    "HSP-RSV-01 marks the former independent HSP-02 parcel only as reserve/open-space center because no final parcel footprint is frozen",
+    "Major track/plaza/stand records from the building table are routed to layer 10 and are not duplicated in the building layer",
+    "R6 outdoor sports control footprints are rendered exactly when present; TT-ENG-01, TT-HUM-01 and TT-MED-01 remain center markers because no control footprint is frozen",
     "No raster image elements are permitted in generated masterplan SVG files"
   ],
   "svgCoordinateBaseline": {
@@ -87,24 +94,56 @@
     "centralLawnControlEnvelope": 1,
     "seasonalPaths": 2,
     "containsRaster": false,
-    "figmaReady": true,
-    "exactVsReferenceGeometry": {
-      "exact": ["campus boundary", "R6 external roads", "R6 perimeter wall", "R3 internal road centerlines", "WATER-LAKE-01 shoreline", "R6 main stream centerlines", "seasonal path centerlines"],
-      "derived": ["PATH-CHENGHU 25m shoreline offset"],
-      "referenceOnly": ["10 non-Chenghu water-body footprints", "major square footprints", "theme-park boundaries", "Boya lawn final organic boundary"]
+    "figmaReady": true
+  },
+  "step5Masterplan": {
+    "buildingAndMajorFacilitySourceRecords": 204,
+    "residenceRecords": 56,
+    "residenceBreakdown": {
+      "undergraduate": 42,
+      "graduate": 10,
+      "international": 4
     },
-    "futureLayerPlaceholders": ["08_Buildings", "09_Residential", "10_Sports", "11_POI"]
+    "residenceTemplateCount": 8,
+    "buildingLayerSourceRecords": 142,
+    "buildingTableSportsRecordsRoutedToLayer10": 6,
+    "outdoorSportsRecords": 36,
+    "outdoorSportsControlFootprints": 33,
+    "outdoorSportsMarkerOnly": 3,
+    "outdoorSportsTotals": {
+      "basketballFullCourtEquivalent": 44,
+      "outdoorTableTennisTables": 158,
+      "tennisCourts": 16,
+      "volleyballCourts": 22,
+      "outdoorBadmintonCourts": 16,
+      "fiveASideFootballFields": 6
+    },
+    "hospitalTowerOverlay": "HSP-02",
+    "hospitalReserveMarker": "HSP-RSV-01",
+    "step4GeometryImmutableCheck": true,
+    "containsRaster": false,
+    "figmaReady": true,
+    "geometryCertainty": {
+      "exactControlFootprints": "Non-residence source rows with frozen length/width, graduate/international residences, R6 sports control footprints",
+      "rangeFootprints": "42 undergraduate residences: 78m minimum + 82m maximum envelope, width 18m",
+      "overlay": "HSP-02 upper tower footprint; non-independent ground structure",
+      "markerOnly": "TT-ENG-01, TT-HUM-01, TT-MED-01 and HSP-RSV-01"
+    }
   },
   "validationExpected": {
     "campusAreaKm2": 6.5128,
     "buildingAndMajorFacilityRecords": 204,
     "residenceRecords": 56,
+    "undergraduateResidences": 42,
+    "graduateResidences": 10,
+    "internationalResidences": 4,
     "externalRoads": 4,
     "internalRoadRecords": 28,
     "busStops": 22,
     "junctions": 20,
     "waterBodies": 11,
     "outdoorSportsRecords": 36,
+    "outdoorSportsMarkerOnly": 3,
     "wallSegments": 4,
     "wallOpenings": 9,
     "engineeringSvgWidth": 3600,
@@ -112,5 +151,5 @@
     "figmaSvgWidth": 4200,
     "figmaSvgHeight": 3200
   },
-  "nextStep": "Step 5: generate all current building footprints, 56 residences and outdoor sports facilities into the frozen SVG layers without changing Step 4 road/water geometry."
+  "nextStep": "Step 6: visually refine landscape, district identity, greenery and presentation hierarchy without changing frozen Step 5 engineering geometry."
 }
