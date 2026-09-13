@@ -1,0 +1,47 @@
+name: SVG Masterplan
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'CampusData/svg/**'
+      - 'CampusData/transport/external_roads.json'
+      - 'CampusData/landscape/perimeter_wall.json'
+      - 'Tools/svg_coordinates.py'
+      - 'Tools/generate_svg_skeleton.py'
+      - 'Tools/generate_svg_step4.py'
+      - 'Tools/validate_svg_*.py'
+      - '.github/workflows/svg-masterplan.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  generate-and-validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate source snapshot
+        run: |
+          python Tools/validate_svg_masterplan.py
+          python Tools/validate_svg_coordinate_system.py
+      - name: Generate Step 4 SVGs
+        run: python Tools/generate_svg_step4.py
+      - name: Validate Step 4 SVGs
+        run: python Tools/validate_svg_step4.py
+      - name: Commit generated SVGs
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add Artifacts/SVG/Jiangcheng-University-MasterPlan-Step4-R6-Engineering.svg
+          git add Artifacts/SVG/Jiangcheng-University-MasterPlan-Step4-R6-Figma.svg
+          if git diff --cached --quiet; then
+            echo 'SVG artifacts already current.'
+          else
+            git commit -m 'Generate Step 4 R6 SVG masterplan artifacts'
+            git push
+          fi
