@@ -18,6 +18,26 @@ fail() {
   exit "${2:-1}"
 }
 
+resolve_unity_editor() {
+  local candidate version
+
+  if [[ -x "$UNITY_EDITOR" ]]; then
+    echo "$UNITY_EDITOR"
+    return 0
+  fi
+
+  while IFS= read -r candidate; do
+    [[ -x "$candidate" ]] || continue
+    version="$($candidate -version 2>/dev/null | tail -n 1 || true)"
+    if [[ "$version" == *"$UNITY_VERSION"* ]]; then
+      echo "$candidate"
+      return 0
+    fi
+  done < <(find /Applications -type f -path '*/Unity.app/Contents/MacOS/Unity' 2>/dev/null)
+
+  return 1
+}
+
 [[ "$(uname -s)" == "Darwin" ]] || fail "macOS is required" 2
 command -v xcodebuild >/dev/null 2>&1 || fail "xcodebuild not found" 3
 command -v python3 >/dev/null 2>&1 || fail "python3 not found" 3
@@ -38,19 +58,12 @@ command -v xcodegen >/dev/null 2>&1 || fail "xcodegen not found after bootstrap"
 # official Unity 6000.3.15f1 macOS package and matching iOS Build Support
 # package directly from Unity's release CDN. This avoids requiring Homebrew or
 # Unity Hub in the VM.
-if [[ ! -x "$UNITY_EDITOR" ]]; then
+if ! RESOLVED_UNITY="$(resolve_unity_editor)"; then
   chmod +x "$ROOT/BuildScripts/bootstrap_unity_vm.sh" 2>/dev/null || true
   UNITY_VERSION="$UNITY_VERSION" "$ROOT/BuildScripts/bootstrap_unity_vm.sh" || fail "Unity ${UNITY_VERSION} bootstrap failed" 4
+  RESOLVED_UNITY="$(resolve_unity_editor)" || fail "Unity ${UNITY_VERSION} not found after bootstrap; set UNITY_EDITOR to override" 4
 fi
-
-# Re-resolve after bootstrap in case the installer chose a non-default path.
-if [[ ! -x "$UNITY_EDITOR" ]]; then
-  FOUND_UNITY="$(find /Applications -type f -path '*/Unity.app/Contents/MacOS/Unity' 2>/dev/null | grep "$UNITY_VERSION" | head -n 1 || true)"
-  if [[ -n "$FOUND_UNITY" && -x "$FOUND_UNITY" ]]; then
-    UNITY_EDITOR="$FOUND_UNITY"
-  fi
-fi
-[[ -x "$UNITY_EDITOR" ]] || fail "Unity ${UNITY_VERSION} not found after bootstrap; set UNITY_EDITOR to override" 4
+UNITY_EDITOR="$RESOLVED_UNITY"
 
 mkdir -p "$ROOT/.stage-a1" "$FRAMEWORK_DST"
 
