@@ -2,65 +2,68 @@
   "sourcePatchVersion": "PATCH-2026-09-13-R6",
   "coordinateSystem": "X-east/Z-north/meters",
   "roadWidthMeters": 36,
-  "geometryMode": "piecewise_linear_with_corner_fillets",
+  "geometryMode": "four_straight_orthogonal_city_roads",
+  "effectReferenceCorrection": {
+    "status": "authoritative_clarification",
+    "rule": "The campus effect reference governs the overall external-road relationship: the four surrounding city roads are straight side streets and must not bend or offset to follow the campus boundary or perimeter wall.",
+    "southNorthRoads": "east-west straight centerlines",
+    "westEastRoads": "north-south straight centerlines",
+    "perimeterWallRelationship": "independent; wall/boundary geometry may vary inside the four straight roads",
+    "cornerRule": "road centerlines remain straight through the side alignment; any curb/intersection corner radius is an edge-treatment detail and must not deform the four centerlines"
+  },
   "globalRules": {
-    "preferLongStraightTangents": true,
-    "forbidGlobalBezierSmoothing": true,
-    "cornerRadiusRangeMeters": [140, 220],
+    "allFourRoadCenterlinesStraight": true,
+    "roadsMustNotFollowCampusBoundary": true,
+    "roadsMustNotFollowPerimeterWall": true,
     "roadMustRemainOutsideCampusBoundary": true,
-    "targetRoadEdgeToCampusBoundaryBufferMeters": [10, 20]
+    "orthogonalSideRelationship": true,
+    "targetRoadEdgeToCampusBoundaryBufferMeters": [10, 20],
+    "bufferNote": "The buffer is a planning target where compatible with the frozen campus boundary; it never authorizes bending a city-road centerline."
   },
   "roads": [
     {
       "id": "ROAD-CITY-SOUTH",
       "name": "大学路",
       "side": "south",
+      "orientation": "east-west",
       "centerlineXZ": [
-        [-1525, -1090],
-        [-1110, -1138],
-        [420, -1145],
-        [1120, -1085],
-        [1565, -865]
+        [-1610, -1145],
+        [1615, -1145]
       ],
-      "primaryStraightSpan": [[-1110, -1138], [420, -1145]]
+      "primaryStraightSpan": [[-1610, -1145], [1615, -1145]]
     },
     {
       "id": "ROAD-CITY-WEST",
       "name": "学府路",
       "side": "west",
+      "orientation": "north-south",
       "centerlineXZ": [
-        [-1525, -1090],
-        [-1610, -650],
-        [-1610, 520],
-        [-1510, 845],
-        [-1095, 1088]
+        [-1610, -1145],
+        [-1610, 1180]
       ],
-      "primaryStraightSpan": [[-1610, -650], [-1610, 520]]
+      "primaryStraightSpan": [[-1610, -1145], [-1610, 1180]]
     },
     {
       "id": "ROAD-CITY-NORTH",
       "name": "致远路",
       "side": "north",
+      "orientation": "east-west",
       "centerlineXZ": [
-        [-1095, 1088],
-        [-760, 1160],
-        [200, 1180],
-        [900, 1150],
-        [1440, 968]
+        [-1610, 1180],
+        [1615, 1180]
       ],
-      "primaryStraightSpan": [[-760, 1160], [900, 1150]]
+      "primaryStraightSpan": [[-1610, 1180], [1615, 1180]]
     },
     {
       "id": "ROAD-CITY-EAST",
       "name": "长虹路",
       "side": "east",
+      "orientation": "north-south",
       "centerlineXZ": [
-        [1440, 968],
-        [1610, 520],
-        [1615, -620],
-        [1565, -865]
+        [1615, -1145],
+        [1615, 1180]
       ],
-      "primaryStraightSpan": [[1610, 520], [1615, -620]]
+      "primaryStraightSpan": [[1615, -1145], [1615, 1180]]
     }
   ]
 }
