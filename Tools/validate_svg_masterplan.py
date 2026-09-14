@@ -51,9 +51,23 @@ def main(root):
         "ROAD-CITY-NORTH": "致远路",
         "ROAD-CITY-EAST": "长虹路",
     }
+    expected_straight_centerlines = {
+        "ROAD-CITY-SOUTH": [[-1610, -1145], [1615, -1145]],
+        "ROAD-CITY-WEST": [[-1610, -1145], [-1610, 1180]],
+        "ROAD-CITY-NORTH": [[-1610, 1180], [1615, 1180]],
+        "ROAD-CITY-EAST": [[1615, -1145], [1615, 1180]],
+    }
     check(len(external["roads"]) == 4, "external road count != 4")
     check({r["id"]: r["name"] for r in external["roads"]} == expected_external, "external road IDs/names mismatch")
-    check(external.get("geometryMode") == "piecewise_linear_with_corner_fillets", "external roads lost R6 straight-tangent mode")
+    check(external.get("geometryMode") == "four_straight_orthogonal_city_roads", "external roads must use four straight side streets")
+    ext_map = {r["id"]: r for r in external["roads"]}
+    for rid, expected_chain in expected_straight_centerlines.items():
+        check(ext_map.get(rid, {}).get("centerlineXZ") == expected_chain, f"{rid} must remain a two-point straight centerline")
+    check(all(p[1] == -1145 for p in ext_map["ROAD-CITY-SOUTH"]["centerlineXZ"]), "大学路 must be east-west straight")
+    check(all(p[1] == 1180 for p in ext_map["ROAD-CITY-NORTH"]["centerlineXZ"]), "致远路 must be east-west straight")
+    check(all(p[0] == -1610 for p in ext_map["ROAD-CITY-WEST"]["centerlineXZ"]), "学府路 must be north-south straight")
+    check(all(p[0] == 1615 for p in ext_map["ROAD-CITY-EAST"]["centerlineXZ"]), "长虹路 must be north-south straight")
+    check(external.get("globalRules", {}).get("roadsMustNotFollowPerimeterWall") is True, "external road/wall independence rule missing")
     check(len(wall["segments"]) == 4, "wall segment count != 4")
     check(len(wall["openings"]) == 9, "wall opening count != 9")
 
@@ -122,6 +136,8 @@ def main(root):
     print(f"BUILDING_OR_FACILITY_RECORDS={len(buildings)}")
     print(f"RESIDENCES={len(residences)}")
     print(f"EXTERNAL_ROADS={len(external['roads'])} INTERNAL_ROADS={len(transport['internalRoads'])}")
+    print("EXTERNAL_ROAD_GEOMETRY=FOUR_STRAIGHT_ORTHOGONAL_SIDE_STREETS")
+    print("EXTERNAL_ROADS_FOLLOW_WALL=NO")
     print(f"BUS_STOPS={len(transport['busStops'])} JUNCTIONS={len(transport['junctions'])}")
     print(f"SPORT_OBJECTS={len(sports['outdoorSports'])}")
     if errors:
