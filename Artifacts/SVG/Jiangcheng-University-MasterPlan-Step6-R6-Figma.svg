@@ -124,14 +124,14 @@
   <text class="title" x="300" y="92">江城大学 · 总平面</text>
   <text class="subtitle" x="300" y="126">PATCH-2026-09-13-R6 · Step 6 · 景观 / 分区 / 建筑语言 / 展示层级</text>
   <g id="01_CityRoads" data-layer="city-roads">
-    <polyline id="ROAD-CITY-SOUTH" class="city-road" points="575,2690 990,2738 2520,2745 3220,2685 3665,2465" data-width-m="36"/>
-    <polyline id="ROAD-CITY-SOUTH-CENTER" class="city-road-center" points="575,2690 990,2738 2520,2745 3220,2685 3665,2465"/>
-    <polyline id="ROAD-CITY-WEST" class="city-road" points="575,2690 490,2250 490,1080 590,755 1005,512" data-width-m="36"/>
-    <polyline id="ROAD-CITY-WEST-CENTER" class="city-road-center" points="575,2690 490,2250 490,1080 590,755 1005,512"/>
-    <polyline id="ROAD-CITY-NORTH" class="city-road" points="1005,512 1340,440 2300,420 3000,450 3540,632" data-width-m="36"/>
-    <polyline id="ROAD-CITY-NORTH-CENTER" class="city-road-center" points="1005,512 1340,440 2300,420 3000,450 3540,632"/>
-    <polyline id="ROAD-CITY-EAST" class="city-road" points="3540,632 3710,1080 3715,2220 3665,2465" data-width-m="36"/>
-    <polyline id="ROAD-CITY-EAST-CENTER" class="city-road-center" points="3540,632 3710,1080 3715,2220 3665,2465"/>
+    <polyline id="ROAD-CITY-SOUTH" class="city-road" points="490,2745 3715,2745" data-width-m="36"/>
+    <polyline id="ROAD-CITY-SOUTH-CENTER" class="city-road-center" points="490,2745 3715,2745"/>
+    <polyline id="ROAD-CITY-WEST" class="city-road" points="490,2745 490,420" data-width-m="36"/>
+    <polyline id="ROAD-CITY-WEST-CENTER" class="city-road-center" points="490,2745 490,420"/>
+    <polyline id="ROAD-CITY-NORTH" class="city-road" points="490,420 3715,420" data-width-m="36"/>
+    <polyline id="ROAD-CITY-NORTH-CENTER" class="city-road-center" points="490,420 3715,420"/>
+    <polyline id="ROAD-CITY-EAST" class="city-road" points="3715,2745 3715,420" data-width-m="36"/>
+    <polyline id="ROAD-CITY-EAST-CENTER" class="city-road-center" points="3715,2745 3715,420"/>
   </g>
   <g id="02_CampusBoundary" data-layer="campus-boundary">
     <polygon id="CAMPUS-01-BOUNDARY" class="campus-fill" points="630,2630 1220,2700 1810,2710 2490,2690 3180,2630 3620,2430 3680,1840 3650,1160 3520,670 2980,500 2300,450 1610,470 1020,540 630,770 540,1310 550,1940" data-area-km2="6.513"/>

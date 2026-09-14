@@ -3,18 +3,18 @@
     "engineering": {
       "contentRule": "Step7 content master; release title/metadata only",
       "path": "Artifacts/SVG/Jiangcheng-University-MasterPlan-Engineering.svg",
-      "sha256": "45de74f748051aee14b76ab02f774e78450e47f66ee260b484598619f452783f",
-      "sizeBytes": 150205,
+      "sha256": "be742bfb7c28476a8ab681b6f3bb3415bbd81db44c1fa2348cf4ce7dbbb67e59",
+      "sizeBytes": 150005,
       "sourceStep7Path": "Artifacts/SVG/Jiangcheng-University-MasterPlan-Step7-R6-Engineering.svg",
-      "sourceStep7Sha256": "48400c34a3aea22d1fc8a55dc0d076cba036b168d7e7d32ae72c72df8e794200"
+      "sourceStep7Sha256": "2a3b04259c296265af2ba9386e73214ccfa21beeed6e13d2921015ddf32d4f71"
     },
     "presentation": {
       "contentRule": "Step7 content master; release title/metadata only",
       "path": "Artifacts/SVG/Jiangcheng-University-MasterPlan-Presentation.svg",
-      "sha256": "913c454c620cccfb0a34d5a644e56670bd839cc94730453f7d4e6a3624a46d26",
-      "sizeBytes": 162181,
+      "sha256": "e4531c7da8377725335c982afbccbbeb486b5d5af03d07fdef03e367627bc7c2",
+      "sizeBytes": 161973,
       "sourceStep7Path": "Artifacts/SVG/Jiangcheng-University-MasterPlan-Step7-R6-Figma.svg",
-      "sourceStep7Sha256": "83e6fbd44d20e4b7d245e91fab9d73bb4238aa72567fca0d96a31c831e39abac"
+      "sourceStep7Sha256": "5a5c48e59eb1658e1e44d9cba784f314910ede838c3d52b280dc504c7d26327a"
     }
   },
   "deterministic": true,
@@ -30,7 +30,7 @@
     "CampusData/svg/step8_release_policy_r6.json": "f72ddcd4770920ab2e96f27a0de91cf482fc776d7c82cd980e4382a14e9ab4a5",
     "CampusData/svg/svg_coordinate_system_r6.json": "a389b120f3ef969f7aad63b315435f92457472f9086c9a9d3331115a68e02ba3",
     "CampusData/svg/water_r6.json": "6ea3e888e8a6a9b6fa8e7e586d214850e12a163c847346aac871347e6d653473",
-    "CampusData/transport/external_roads.json": "e7b6a54dee02e163eb861d5af69aa050535df34ebdfd19b840d2c925c28fcb29",
+    "CampusData/transport/external_roads.json": "7e344b278d6d6e412b02ead7977f98667c0e8a3fa1d411cfaed8a8fa4be47f5b",
     "Tools/generate_svg_step4.py": "4de114b6712ab0d30a3a3c3beacd699ac7f8229ab2ff3d05a6dacbd35147442c",
     "Tools/generate_svg_step5.py": "e4d4278e9b188c17df5859dba6d7797695a50e45c29614581e2783744ad27fd2",
     "Tools/generate_svg_step6.py": "60830a7d6e84b88c73dfce5cd169bbb3b41af2be84676a836b75d035641d189e",

@@ -134,14 +134,14 @@
   </defs>
 
 <g id="01_CONTEXT_City_Roads" data-layer="city-roads">
-    <polyline id="ROAD-CITY-SOUTH" class="city-road" points="275,2490 690,2538 2220,2545 2920,2485 3365,2265" data-width-m="36"/>
-    <polyline id="ROAD-CITY-SOUTH-CENTER" class="city-road-center" points="275,2490 690,2538 2220,2545 2920,2485 3365,2265"/>
-    <polyline id="ROAD-CITY-WEST" class="city-road" points="275,2490 190,2050 190,880 290,555 705,312" data-width-m="36"/>
-    <polyline id="ROAD-CITY-WEST-CENTER" class="city-road-center" points="275,2490 190,2050 190,880 290,555 705,312"/>
-    <polyline id="ROAD-CITY-NORTH" class="city-road" points="705,312 1040,240 2000,220 2700,250 3240,432" data-width-m="36"/>
-    <polyline id="ROAD-CITY-NORTH-CENTER" class="city-road-center" points="705,312 1040,240 2000,220 2700,250 3240,432"/>
-    <polyline id="ROAD-CITY-EAST" class="city-road" points="3240,432 3410,880 3415,2020 3365,2265" data-width-m="36"/>
-    <polyline id="ROAD-CITY-EAST-CENTER" class="city-road-center" points="3240,432 3410,880 3415,2020 3365,2265"/>
+    <polyline id="ROAD-CITY-SOUTH" class="city-road" points="190,2545 3415,2545" data-width-m="36"/>
+    <polyline id="ROAD-CITY-SOUTH-CENTER" class="city-road-center" points="190,2545 3415,2545"/>
+    <polyline id="ROAD-CITY-WEST" class="city-road" points="190,2545 190,220" data-width-m="36"/>
+    <polyline id="ROAD-CITY-WEST-CENTER" class="city-road-center" points="190,2545 190,220"/>
+    <polyline id="ROAD-CITY-NORTH" class="city-road" points="190,220 3415,220" data-width-m="36"/>
+    <polyline id="ROAD-CITY-NORTH-CENTER" class="city-road-center" points="190,220 3415,220"/>
+    <polyline id="ROAD-CITY-EAST" class="city-road" points="3415,2545 3415,220" data-width-m="36"/>
+    <polyline id="ROAD-CITY-EAST-CENTER" class="city-road-center" points="3415,2545 3415,220"/>
   </g>
 <g id="02_BASE_Campus_Boundary" data-layer="campus-boundary">
     <polygon id="CAMPUS-01-BOUNDARY" class="campus-fill" points="330,2430 920,2500 1510,2510 2190,2490 2880,2430 3320,2230 3380,1640 3350,960 3220,470 2680,300 2000,250 1310,270 720,340 330,570 240,1110 250,1740" data-area-km2="6.513"/>
