@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "snapshotVersion": "svg-masterplan-r6-step7",
+  "snapshotVersion": "svg-masterplan-r6-step8-final",
   "sourcePatchVersion": "PATCH-2026-09-13-R6",
-  "status": "step7_figma_delivery_hierarchy_generated",
+  "status": "step8_release_final_closed",
   "files": {
     "coreGeometry": "CampusData/svg/core_geometry_r6.json",
     "buildingPlacement": "CampusData/svg/building_placement_r6.csv",
@@ -14,6 +14,7 @@
     "step5RenderPolicy": "CampusData/svg/step5_render_policy_r6.json",
     "step6VisualPolicy": "CampusData/svg/step6_visual_policy_r6.json",
     "step7DeliveryPolicy": "CampusData/svg/step7_delivery_policy_r6.json",
+    "step8ReleasePolicy": "CampusData/svg/step8_release_policy_r6.json",
     "coordinateSystem": "CampusData/svg/svg_coordinate_system_r6.json",
     "coordinateModule": "Tools/svg_coordinates.py",
     "step3Generator": "Tools/generate_svg_skeleton.py",
@@ -23,6 +24,7 @@
     "step7GeneratorCore": "Tools/generate_svg_step7.py",
     "step7Generator": "Tools/run_svg_step7.py",
     "step7LayerNormalizer": "Tools/normalize_svg_step7_layers.py",
+    "step8ReleasePackager": "Tools/release_svg_step8.py",
     "dataValidator": "Tools/validate_svg_masterplan.py",
     "coordinateValidator": "Tools/validate_svg_coordinate_system.py",
     "step3Validator": "Tools/validate_svg_skeleton.py",
@@ -30,7 +32,9 @@
     "step5Validator": "Tools/validate_svg_step5.py",
     "step6Validator": "Tools/validate_svg_step6.py",
     "step7Validator": "Tools/validate_svg_step7.py",
+    "step8Validator": "Tools/validate_svg_step8.py",
     "coordinateSpec": "Docs/SVG_MASTERPLAN_COORDINATE_SPEC_R6.md",
+    "releaseDoc": "Docs/SVG_MASTERPLAN_RELEASE_R6.md",
     "step3EngineeringSkeleton": "Artifacts/SVG/Jiangcheng-University-MasterPlan-Skeleton-R6-Engineering.svg",
     "step3FigmaSkeleton": "Artifacts/SVG/Jiangcheng-University-MasterPlan-Skeleton-R6-Figma.svg",
     "step4Engineering": "Artifacts/SVG/Jiangcheng-University-MasterPlan-Step4-R6-Engineering.svg",
@@ -41,6 +45,10 @@
     "step6Figma": "Artifacts/SVG/Jiangcheng-University-MasterPlan-Step6-R6-Figma.svg",
     "step7Engineering": "Artifacts/SVG/Jiangcheng-University-MasterPlan-Step7-R6-Engineering.svg",
     "step7Figma": "Artifacts/SVG/Jiangcheng-University-MasterPlan-Step7-R6-Figma.svg",
+    "canonicalEngineering": "Artifacts/SVG/Jiangcheng-University-MasterPlan-Engineering.svg",
+    "canonicalPresentation": "Artifacts/SVG/Jiangcheng-University-MasterPlan-Presentation.svg",
+    "releaseEvidence": "Artifacts/SVG/Jiangcheng-University-MasterPlan-Release-R6.json",
+    "releaseSha256": "Artifacts/SVG/Jiangcheng-University-MasterPlan-Release-R6-SHA256.txt",
     "generationWorkflow": ".github/workflows/svg-masterplan.yml"
   },
   "sourceDocuments": [
@@ -86,7 +94,12 @@
     "Riparian green buffers follow frozen lake/stream geometry for presentation only and have no engineering setback meaning",
     "Undergraduate residence length remains the source range 78-82m; no hidden 80m footprint is introduced",
     "HSP-02 remains an upper tower overlay on HSP-01 and never returns to the obsolete independent ground parcel",
-    "No raster image elements, externally linked images, external font files or @font-face dependencies are permitted in delivery SVG files"
+    "Step 8 uses Step 7 as its only content master and may modify release title/metadata only",
+    "Canonical release SVG filenames contain no Step number",
+    "Repeated Step 8 generation from unchanged inputs must be byte-identical",
+    "Release evidence intentionally omits timestamps and machine-specific paths",
+    "No raster image elements, externally linked images, external font files, @font-face, script or foreignObject dependencies are permitted in final release SVG files",
+    "Future coordinate or planning changes require R7 or a higher-priority patch and must be regenerated from CampusData; direct edits must not create a second coordinate truth"
   ],
   "svgCoordinateBaseline": {
     "engineeringViewBox": [0, 0, 3600, 2800],
@@ -212,6 +225,32 @@
       "19_META_North_Scale"
     ]
   },
+  "step8Release": {
+    "releaseVersion": "MASTERPLAN-R6-FINAL",
+    "canonicalEngineering": {
+      "path": "Artifacts/SVG/Jiangcheng-University-MasterPlan-Engineering.svg",
+      "sha256": "45de74f748051aee14b76ab02f774e78450e47f66ee260b484598619f452783f",
+      "sizeBytes": 150205,
+      "topLevelLayers": 23
+    },
+    "canonicalPresentation": {
+      "path": "Artifacts/SVG/Jiangcheng-University-MasterPlan-Presentation.svg",
+      "sha256": "913c454c620cccfb0a34d5a644e56670bd839cc94730453f7d4e6a3624a46d26",
+      "sizeBytes": 162181,
+      "topLevelLayers": 19
+    },
+    "releaseEvidence": {
+      "path": "Artifacts/SVG/Jiangcheng-University-MasterPlan-Release-R6.json",
+      "sha256": "3a75092e0cfcd7c2bad8f425ed05f1289d06cbf4e208b9fdaa5f5db74e0a1116"
+    },
+    "sourceStep7EngineeringSha256": "48400c34a3aea22d1fc8a55dc0d076cba036b168d7e7d32ae72c72df8e794200",
+    "sourceStep7PresentationSha256": "83e6fbd44d20e4b7d245e91fab9d73bb4238aa72567fca0d96a31c831e39abac",
+    "step7ContentInvariantCheck": true,
+    "deterministicByteRegenerationCheck": true,
+    "externalAssets": 0,
+    "rasterElements": 0,
+    "releaseFinalClosed": true
+  },
   "validationExpected": {
     "campusAreaKm2": 6.5128,
     "buildingAndMajorFacilityRecords": 204,
@@ -236,12 +275,16 @@
     "step7DistrictLifeAxisLabels": 23,
     "step7RoadWaterLabels": 27,
     "step7PresentationTopLevelLayers": 19,
+    "step8EngineeringTopLevelLayers": 23,
+    "step8PresentationTopLevelLayers": 19,
     "wallSegments": 4,
     "wallOpenings": 9,
     "engineeringSvgWidth": 3600,
     "engineeringSvgHeight": 2800,
     "figmaSvgWidth": 4200,
-    "figmaSvgHeight": 3200
+    "figmaSvgHeight": 3200,
+    "deterministicRegeneration": true,
+    "releaseFinalClosed": true
   },
-  "nextStep": "Step 8: run the final end-to-end audit, export canonical no-step Engineering/Presentation SVG files, record reproducibility/checksum evidence, and freeze the release-ready masterplan SVG baseline."
+  "nextStep": "SVG masterplan R6 release is FINAL CLOSED. Future geometry/content changes require an R7-or-higher source patch and a new release cycle."
 }
