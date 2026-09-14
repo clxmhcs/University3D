@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "snapshotVersion": "svg-masterplan-r6-step8-final",
   "sourcePatchVersion": "PATCH-2026-09-13-R6",
-  "status": "step8_release_final_closed",
+  "status": "step8_release_final_closed_effect_reference_corrected",
   "files": {
     "coreGeometry": "CampusData/svg/core_geometry_r6.json",
     "buildingPlacement": "CampusData/svg/building_placement_r6.csv",
@@ -67,6 +67,10 @@
   ],
   "rules": [
     "R6 overrides every conflicting historical value",
+    "The user-approved campus effect reference is authoritative for the external-road-to-campus relationship: the four surrounding city roads are straight and the campus wall/boundary varies independently inside them",
+    "大学路 and 致远路 remain straight east-west city-road centerlines; they must not bend to follow the campus wall",
+    "学府路 and 长虹路 remain straight north-south city-road centerlines; they must not bend to follow the campus wall",
+    "Corner curb/intersection radii are edge-treatment details only and may not deform external-road centerlines",
     "Example JSON coordinates are excluded",
     "Unfrozen parking/service facilities without permanent IDs are excluded",
     "SVG coordinate mapping is frozen and may not auto-fit current geometry",
@@ -102,12 +106,36 @@
     "Future coordinate or planning changes require R7 or a higher-priority patch and must be regenerated from CampusData; direct edits must not create a second coordinate truth"
   ],
   "svgCoordinateBaseline": {
-    "engineeringViewBox": [0, 0, 3600, 2800],
-    "presentationViewBox": [0, 0, 4200, 3200],
-    "presentationMapOffset": [300, 200],
-    "worldBounds": {"xMin": -1800, "xMax": 1800, "zMin": -1400, "zMax": 1400},
-    "worldOriginEngineeringSvg": [1800, 1400],
-    "worldOriginPresentationSvg": [2100, 1600],
+    "engineeringViewBox": [
+      0,
+      0,
+      3600,
+      2800
+    ],
+    "presentationViewBox": [
+      0,
+      0,
+      4200,
+      3200
+    ],
+    "presentationMapOffset": [
+      300,
+      200
+    ],
+    "worldBounds": {
+      "xMin": -1800,
+      "xMax": 1800,
+      "zMin": -1400,
+      "zMax": 1400
+    },
+    "worldOriginEngineeringSvg": [
+      1800,
+      1400
+    ],
+    "worldOriginPresentationSvg": [
+      2100,
+      1600
+    ],
     "svgUnitsPerMeter": 1,
     "roundTripToleranceMeters": 0.01
   },
@@ -168,7 +196,10 @@
     "districtReferenceEnvelopes": 16,
     "districtLabels": 17,
     "lifeGreenHearts": 4,
-    "lifeGreenHeartAreaHaRange": [2, 4],
+    "lifeGreenHeartAreaHaRange": [
+      2,
+      4
+    ],
     "landscapeAxes": 2,
     "riparianPresentationBuffers": 3,
     "seasonalTreeSymbols": 94,
@@ -229,27 +260,28 @@
     "releaseVersion": "MASTERPLAN-R6-FINAL",
     "canonicalEngineering": {
       "path": "Artifacts/SVG/Jiangcheng-University-MasterPlan-Engineering.svg",
-      "sha256": "45de74f748051aee14b76ab02f774e78450e47f66ee260b484598619f452783f",
-      "sizeBytes": 150205,
+      "sha256": "be742bfb7c28476a8ab681b6f3bb3415bbd81db44c1fa2348cf4ce7dbbb67e59",
+      "sizeBytes": 150005,
       "topLevelLayers": 23
     },
     "canonicalPresentation": {
       "path": "Artifacts/SVG/Jiangcheng-University-MasterPlan-Presentation.svg",
-      "sha256": "913c454c620cccfb0a34d5a644e56670bd839cc94730453f7d4e6a3624a46d26",
-      "sizeBytes": 162181,
+      "sha256": "e4531c7da8377725335c982afbccbbeb486b5d5af03d07fdef03e367627bc7c2",
+      "sizeBytes": 161973,
       "topLevelLayers": 19
     },
     "releaseEvidence": {
       "path": "Artifacts/SVG/Jiangcheng-University-MasterPlan-Release-R6.json",
-      "sha256": "3a75092e0cfcd7c2bad8f425ed05f1289d06cbf4e208b9fdaa5f5db74e0a1116"
+      "sha256": "995adfd6ee87fc3c59d99b2c7db399e440391c6f53479cf6b9b70f163a5630b1"
     },
-    "sourceStep7EngineeringSha256": "48400c34a3aea22d1fc8a55dc0d076cba036b168d7e7d32ae72c72df8e794200",
-    "sourceStep7PresentationSha256": "83e6fbd44d20e4b7d245e91fab9d73bb4238aa72567fca0d96a31c831e39abac",
+    "sourceStep7EngineeringSha256": "2a3b04259c296265af2ba9386e73214ccfa21beeed6e13d2921015ddf32d4f71",
+    "sourceStep7PresentationSha256": "5a5c48e59eb1658e1e44d9cba784f314910ede838c3d52b280dc504c7d26327a",
     "step7ContentInvariantCheck": true,
     "deterministicByteRegenerationCheck": true,
     "externalAssets": 0,
     "rasterElements": 0,
-    "releaseFinalClosed": true
+    "releaseFinalClosed": true,
+    "effectReferenceExternalRoadCorrection": true
   },
   "validationExpected": {
     "campusAreaKm2": 6.5128,
@@ -286,5 +318,34 @@
     "deterministicRegeneration": true,
     "releaseFinalClosed": true
   },
-  "nextStep": "SVG masterplan R6 release is FINAL CLOSED. Future geometry/content changes require an R7-or-higher source patch and a new release cycle."
+  "nextStep": "SVG masterplan R6 release is FINAL CLOSED after correcting the external-road interpretation to the user-approved effect reference. Future planning changes require a new source patch; do not bend the four straight city-road centerlines to follow the campus wall.",
+  "effectReferenceBaseline": {
+    "authority": "user-approved campus effect reference",
+    "externalRoadRelationship": "four straight orthogonal city side roads outside an independently varying campus boundary/perimeter wall",
+    "roadsFollowCampusBoundary": false,
+    "roadsFollowPerimeterWall": false,
+    "roads": {
+      "ROAD-CITY-SOUTH": {
+        "name": "大学路",
+        "orientation": "east-west",
+        "axis": "z=-1145m"
+      },
+      "ROAD-CITY-NORTH": {
+        "name": "致远路",
+        "orientation": "east-west",
+        "axis": "z=1180m"
+      },
+      "ROAD-CITY-WEST": {
+        "name": "学府路",
+        "orientation": "north-south",
+        "axis": "x=-1610m"
+      },
+      "ROAD-CITY-EAST": {
+        "name": "长虹路",
+        "orientation": "north-south",
+        "axis": "x=1615m"
+      }
+    },
+    "cornerRule": "intersection/curb corner treatment may round road edges, but must not bend the four road centerlines"
+  }
 }
