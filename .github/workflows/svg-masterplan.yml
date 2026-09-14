@@ -16,6 +16,7 @@ on:
       - 'Tools/generate_svg_step7.py'
       - 'Tools/run_svg_step7.py'
       - 'Tools/normalize_svg_step7_layers.py'
+      - 'Tools/release_svg_step8.py'
       - 'Tools/validate_svg_*.py'
       - '.github/workflows/svg-masterplan.yml'
 
@@ -52,6 +53,25 @@ jobs:
           python Tools/normalize_svg_step7_layers.py
       - name: Validate Step 7 SVGs
         run: python Tools/validate_svg_step7.py
+      - name: Generate Step 8 canonical release
+        run: python Tools/release_svg_step8.py
+      - name: Prove deterministic Step 8 regeneration
+        run: |
+          sha256sum \
+            Artifacts/SVG/Jiangcheng-University-MasterPlan-Engineering.svg \
+            Artifacts/SVG/Jiangcheng-University-MasterPlan-Presentation.svg \
+            Artifacts/SVG/Jiangcheng-University-MasterPlan-Release-R6.json \
+            Artifacts/SVG/Jiangcheng-University-MasterPlan-Release-R6-SHA256.txt > /tmp/step8-first.sha256
+          python Tools/release_svg_step8.py
+          sha256sum \
+            Artifacts/SVG/Jiangcheng-University-MasterPlan-Engineering.svg \
+            Artifacts/SVG/Jiangcheng-University-MasterPlan-Presentation.svg \
+            Artifacts/SVG/Jiangcheng-University-MasterPlan-Release-R6.json \
+            Artifacts/SVG/Jiangcheng-University-MasterPlan-Release-R6-SHA256.txt > /tmp/step8-second.sha256
+          diff -u /tmp/step8-first.sha256 /tmp/step8-second.sha256
+          echo 'STEP8_DETERMINISTIC_REGENERATION=PASS'
+      - name: Validate Step 8 release
+        run: python Tools/validate_svg_step8.py
       - name: Commit generated SVGs
         run: |
           git config user.name 'github-actions[bot]'
@@ -64,9 +84,13 @@ jobs:
           git add Artifacts/SVG/Jiangcheng-University-MasterPlan-Step6-R6-Figma.svg
           git add Artifacts/SVG/Jiangcheng-University-MasterPlan-Step7-R6-Engineering.svg
           git add Artifacts/SVG/Jiangcheng-University-MasterPlan-Step7-R6-Figma.svg
+          git add Artifacts/SVG/Jiangcheng-University-MasterPlan-Engineering.svg
+          git add Artifacts/SVG/Jiangcheng-University-MasterPlan-Presentation.svg
+          git add Artifacts/SVG/Jiangcheng-University-MasterPlan-Release-R6.json
+          git add Artifacts/SVG/Jiangcheng-University-MasterPlan-Release-R6-SHA256.txt
           if git diff --cached --quiet; then
             echo 'SVG artifacts already current.'
           else
-            git commit -m 'Generate Step 7 R6 SVG delivery artifacts'
+            git commit -m 'Generate final R6 SVG masterplan release artifacts'
             git push
           fi
