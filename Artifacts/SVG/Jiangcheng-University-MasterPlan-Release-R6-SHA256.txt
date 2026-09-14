@@ -1,0 +1,3 @@
+45de74f748051aee14b76ab02f774e78450e47f66ee260b484598619f452783f  Artifacts/SVG/Jiangcheng-University-MasterPlan-Engineering.svg
+913c454c620cccfb0a34d5a644e56670bd839cc94730453f7d4e6a3624a46d26  Artifacts/SVG/Jiangcheng-University-MasterPlan-Presentation.svg
+3a75092e0cfcd7c2bad8f425ed05f1289d06cbf4e208b9fdaa5f5db74e0a1116  Artifacts/SVG/Jiangcheng-University-MasterPlan-Release-R6.json

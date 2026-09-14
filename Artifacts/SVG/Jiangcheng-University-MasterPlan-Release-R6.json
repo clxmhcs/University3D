@@ -1,0 +1,49 @@
+{
+  "canonicalFiles": {
+    "engineering": {
+      "contentRule": "Step7 content master; release title/metadata only",
+      "path": "Artifacts/SVG/Jiangcheng-University-MasterPlan-Engineering.svg",
+      "sha256": "45de74f748051aee14b76ab02f774e78450e47f66ee260b484598619f452783f",
+      "sizeBytes": 150205,
+      "sourceStep7Path": "Artifacts/SVG/Jiangcheng-University-MasterPlan-Step7-R6-Engineering.svg",
+      "sourceStep7Sha256": "48400c34a3aea22d1fc8a55dc0d076cba036b168d7e7d32ae72c72df8e794200"
+    },
+    "presentation": {
+      "contentRule": "Step7 content master; release title/metadata only",
+      "path": "Artifacts/SVG/Jiangcheng-University-MasterPlan-Presentation.svg",
+      "sha256": "913c454c620cccfb0a34d5a644e56670bd839cc94730453f7d4e6a3624a46d26",
+      "sizeBytes": 162181,
+      "sourceStep7Path": "Artifacts/SVG/Jiangcheng-University-MasterPlan-Step7-R6-Figma.svg",
+      "sourceStep7Sha256": "83e6fbd44d20e4b7d245e91fab9d73bb4238aa72567fca0d96a31c831e39abac"
+    }
+  },
+  "deterministic": true,
+  "deterministicInputs": {
+    "CampusData/landscape/perimeter_wall.json": "1e094cb7e81bfda40071756850cec9f1c743293b03ce3b05e9ee6c45de47a2c5",
+    "CampusData/svg/building_placement_r6.csv": "33b8802c6ef89779694aeb6c42440b6b571ac3443a2d4d969a21028c81309aa7",
+    "CampusData/svg/core_geometry_r6.json": "7c41aaaf666f63b02e0478bebeadaaefed15ed68d00fdfcdcf8c6473cb333a15",
+    "CampusData/svg/internal_roads_r3.json": "38cc2721d03ae66b79b3db43a77c5f0d8b468511b58182e7bf2b1d4d676e5dda",
+    "CampusData/svg/outdoor_sports_r6.json": "a59da6ed7ed68e0d91b59625f8a7f510b9a3769faea896a044d9e75faf220385",
+    "CampusData/svg/step5_render_policy_r6.json": "2983750af1f487f39976e901a08b10950ab64d18f15eadc079cee442b1243a3e",
+    "CampusData/svg/step6_visual_policy_r6.json": "7f68cc113f28fa9ee4d043a0574b320cd43438a78a323716b8f73ee47fc819ee",
+    "CampusData/svg/step7_delivery_policy_r6.json": "1adae7330ea775d39fc90ce7587c880b019e471a45e4ecf9adf7f5cfd230e731",
+    "CampusData/svg/step8_release_policy_r6.json": "f72ddcd4770920ab2e96f27a0de91cf482fc776d7c82cd980e4382a14e9ab4a5",
+    "CampusData/svg/svg_coordinate_system_r6.json": "a389b120f3ef969f7aad63b315435f92457472f9086c9a9d3331115a68e02ba3",
+    "CampusData/svg/water_r6.json": "6ea3e888e8a6a9b6fa8e7e586d214850e12a163c847346aac871347e6d653473",
+    "CampusData/transport/external_roads.json": "e7b6a54dee02e163eb861d5af69aa050535df34ebdfd19b840d2c925c28fcb29",
+    "Tools/generate_svg_step4.py": "4de114b6712ab0d30a3a3c3beacd699ac7f8229ab2ff3d05a6dacbd35147442c",
+    "Tools/generate_svg_step5.py": "e4d4278e9b188c17df5859dba6d7797695a50e45c29614581e2783744ad27fd2",
+    "Tools/generate_svg_step6.py": "60830a7d6e84b88c73dfce5cd169bbb3b41af2be84676a836b75d035641d189e",
+    "Tools/generate_svg_step7.py": "d8d8bdc303fdaffc363698100806c6acf86acef93ff3b8ef5ee57fe532320a45",
+    "Tools/normalize_svg_step7_layers.py": "998a59d8b59d7ae8c0a1a4b680332612ffe8614cf71cedb21cade9876c4b4ec7",
+    "Tools/release_svg_step8.py": "452d1d3c0d517d7fc09fd5456af633f50f109cc05a924187f05c3be8fa9c7c38",
+    "Tools/run_svg_step7.py": "a87b1ed919c73d8aaa65d163224c8d7b57ccdb05de68dc709363bdf3dbb07bc4",
+    "Tools/svg_coordinates.py": "e15b8f97a2923bb4f18bd4825f5c63ce1f70093dbbd55280020aa1d8eab86c65",
+    "Tools/validate_svg_step8.py": "4fe36361055e74ef4dd0c8e243da67dc1148fbabf4d257e42b32533a38f26748"
+  },
+  "lineageStep": 7,
+  "releaseVersion": "MASTERPLAN-R6-FINAL",
+  "schemaVersion": 1,
+  "sourcePatchVersion": "PATCH-2026-09-13-R6",
+  "timestampOmittedByDesign": true
+}
