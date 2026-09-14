@@ -1,0 +1,115 @@
+{
+  "schemaVersion": 1,
+  "version": "R7-LAYOUT-INTENT-DRAFT-2026-09-14",
+  "status": "audit_complete_coordinate_override_not_frozen",
+  "supersedes": null,
+  "baseSourcePatch": "PATCH-2026-09-13-R6",
+  "authority": {
+    "layoutReference": "user-approved Jiangcheng University campus masterplan effect reference uploaded in project conversation",
+    "rule": "when R6 geometric micro-layout conflicts with the approved effect reference, R7 may override coordinates after explicit derivation and validation; until then R6 remains the engineering baseline"
+  },
+  "hardLayoutRules": {
+    "externalCityRoads": {
+      "ROAD-CITY-SOUTH": {"name": "大学路", "orientation": "east-west", "mustBeStraight": true},
+      "ROAD-CITY-NORTH": {"name": "致远路", "orientation": "east-west", "mustBeStraight": true},
+      "ROAD-CITY-WEST": {"name": "学府路", "orientation": "north-south", "mustBeStraight": true},
+      "ROAD-CITY-EAST": {"name": "长虹路", "orientation": "north-south", "mustBeStraight": true}
+    },
+    "roadsFollowCampusBoundary": false,
+    "roadsFollowPerimeterWall": false,
+    "centralCeremonialAxis": {
+      "approxWorldX": 0,
+      "sequenceSouthToNorth": [
+        "GATE-SOUTH",
+        "south ceremonial forecourt",
+        "CEN-03",
+        "CEN-01",
+        "WATER-LAKE-01"
+      ],
+      "motorTrafficPriority": "low",
+      "pedestrianLandscapePriority": "high"
+    },
+    "urbanDesignLanguage": "long-straight campus trunks + orthogonal block streets + short group access roads + curved lake/landscape paths"
+  },
+  "macroAnchorsKeepDistrict": [
+    "WATER-LAKE-01",
+    "CEN-01",
+    "HSP-01",
+    "HSP-02",
+    "HSP-03",
+    "HSP-04",
+    "HSP-05",
+    "LAW-01",
+    "ART-01",
+    "ART-02",
+    "ART-03",
+    "ART-04",
+    "ATH-01",
+    "ATH-05",
+    "ATH-11",
+    "GATE-SOUTH",
+    "GATE-WEST",
+    "GATE-NORTH",
+    "GATE-EAST"
+  ],
+  "requiresCoordinateReSolve": {
+    "centralCore": ["CEN-02", "CEN-03", "central public-building group around the ceremonial axis"],
+    "roads": [
+      "ROAD-BOYA-RING",
+      "ROAD-TRANSIT-C",
+      "ROAD-GEZHI-W",
+      "ROAD-GEZHI",
+      "ROAD-GEZHI-E",
+      "ROAD-JIANGXIN",
+      "ROAD-JIANGXIN-S",
+      "ROAD-JIANGXIN-N",
+      "ROAD-QINGNIAN-W",
+      "ROAD-QINGNIAN-NW",
+      "ROAD-QINGNIAN-NE",
+      "ROAD-QINGNIAN-E",
+      "ROAD-QINGNIAN-S"
+    ],
+    "buildingGroups": [
+      "west engineering academic groups",
+      "west information/computing groups",
+      "east humanities/social-science groups",
+      "east business/economics groups",
+      "four residential micro-layouts",
+      "north sport auxiliary facilities",
+      "southeast sport auxiliary facilities"
+    ]
+  },
+  "residentialRules": {
+    "keepResidenceCount": 56,
+    "breakdown": {"undergraduate": 42, "graduate": 10, "international": 4},
+    "microGroupSizeBuildings": [3, 5],
+    "requireIntegratedGreenHeart": true,
+    "requireIntegratedDiningRetail": true,
+    "avoidSpreadsheetGridAppearance": true
+  },
+  "academicGroupRules": {
+    "keepCollegeSystem": true,
+    "preferredClusterSizeBuildings": [3, 6],
+    "requireCourtyardOrSharedOpenSpace": true,
+    "allowRotationVariationWithinDistrict": true,
+    "avoidUniform100To120mTableGrid": true
+  },
+  "roadRules": {
+    "preferLongStraightPrimarySegments": true,
+    "preferOrthogonalSecondaryBlockRoads": true,
+    "curvesPreferredOnlyAt": ["Chenghu", "landscape spaces", "block corners", "terrain constraints"],
+    "centralCeremonialAxisShouldNotBeFragmentedByVehicleDetours": true,
+    "socialVehiclesDoNotCrossCentralCampus": true
+  },
+  "verificationBeforeFreeze": [
+    "mother-map structural comparison",
+    "building-to-building collision audit",
+    "building-to-road clearance audit",
+    "water/sports collision audit",
+    "fire/emergency access audit",
+    "bus continuity audit",
+    "gate/interface continuity audit",
+    "campus-area and boundary containment audit"
+  ],
+  "nextStage": "derive R7 anchor constraints, then solve internal-road skeleton and central-axis coordinates before moving academic/residential micro-layouts"
+}
