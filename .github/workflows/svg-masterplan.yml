@@ -17,6 +17,7 @@ on:
       - 'Tools/run_svg_step7.py'
       - 'Tools/normalize_svg_step7_layers.py'
       - 'Tools/release_svg_step8.py'
+      - 'Tools/sync_svg_release_metadata.py'
       - 'Tools/validate_svg_*.py'
       - '.github/workflows/svg-masterplan.yml'
 
@@ -72,7 +73,9 @@ jobs:
           echo 'STEP8_DETERMINISTIC_REGENERATION=PASS'
       - name: Validate Step 8 release
         run: python Tools/validate_svg_step8.py
-      - name: Commit generated SVGs
+      - name: Sync release manifest and docs
+        run: python Tools/sync_svg_release_metadata.py
+      - name: Commit generated SVGs and release metadata
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
@@ -88,9 +91,11 @@ jobs:
           git add Artifacts/SVG/Jiangcheng-University-MasterPlan-Presentation.svg
           git add Artifacts/SVG/Jiangcheng-University-MasterPlan-Release-R6.json
           git add Artifacts/SVG/Jiangcheng-University-MasterPlan-Release-R6-SHA256.txt
+          git add CampusData/svg/masterplan_manifest_r6.json
+          git add Docs/SVG_MASTERPLAN_RELEASE_R6.md
           if git diff --cached --quiet; then
-            echo 'SVG artifacts already current.'
+            echo 'SVG artifacts and release metadata already current.'
           else
-            git commit -m 'Generate final R6 SVG masterplan release artifacts'
+            git commit -m 'Sync final R6 SVG release artifacts and metadata'
             git push
           fi
