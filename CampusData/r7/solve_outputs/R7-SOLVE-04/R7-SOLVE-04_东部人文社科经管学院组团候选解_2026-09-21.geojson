@@ -1,0 +1,698 @@
+{
+  "type": "FeatureCollection",
+  "name": "JiangchengUniversity_R7_SOLVE_04_EastHumanitiesBusinessCandidates",
+  "coordinateSystem": "LOCAL_XZ_METERS",
+  "solveId": "R7-SOLVE-04",
+  "status": "R7_SOLVED_CANDIDATE_PENDING_FULL_FREEZE",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "FIN-01",
+        "name": "金融学院楼",
+        "clusterID": "G-EAST-M01-BUS-ECO",
+        "x": 620,
+        "y": 102,
+        "z": -350,
+        "rotationY": 90,
+        "mainEntranceFacing": "东",
+        "length": 86,
+        "width": 32,
+        "floors": 7,
+        "legacyX": 600,
+        "legacyY": 102,
+        "legacyZ": -320,
+        "legacyRotationY": 270,
+        "displacementM": 36.1,
+        "statusBefore": "R7_RE-SOLVE",
+        "statusAfter": "R7_SOLVED_CANDIDATE_PENDING_FULL_FREEZE",
+        "yPolicy": "retain current effective building Y for candidate; terrain/platform audit remains required",
+        "solveId": "R7-SOLVE-04",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              636,
+              -393
+            ],
+            [
+              636,
+              -307
+            ],
+            [
+              604,
+              -307
+            ],
+            [
+              604,
+              -393
+            ],
+            [
+              636,
+              -393
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ECO-01",
+        "name": "经济学院楼",
+        "clusterID": "G-EAST-M01-BUS-ECO",
+        "x": 620,
+        "y": 103,
+        "z": -230,
+        "rotationY": 90,
+        "mainEntranceFacing": "东",
+        "length": 86,
+        "width": 32,
+        "floors": 7,
+        "legacyX": 600,
+        "legacyY": 103,
+        "legacyZ": -180,
+        "legacyRotationY": 270,
+        "displacementM": 53.9,
+        "statusBefore": "R7_RE-SOLVE",
+        "statusAfter": "R7_SOLVED_CANDIDATE_PENDING_FULL_FREEZE",
+        "yPolicy": "retain current effective building Y for candidate; terrain/platform audit remains required",
+        "solveId": "R7-SOLVE-04",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              636,
+              -273
+            ],
+            [
+              636,
+              -187
+            ],
+            [
+              604,
+              -187
+            ],
+            [
+              604,
+              -273
+            ],
+            [
+              636,
+              -273
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BUS-01",
+        "name": "管理学院A楼",
+        "clusterID": "G-EAST-M01-BUS-ECO",
+        "x": 750,
+        "y": 103,
+        "z": -350,
+        "rotationY": 270,
+        "mainEntranceFacing": "西",
+        "length": 96,
+        "width": 36,
+        "floors": 7,
+        "legacyX": 760,
+        "legacyY": 103,
+        "legacyZ": -180,
+        "legacyRotationY": 270,
+        "displacementM": 170.3,
+        "statusBefore": "R7_RE-SOLVE",
+        "statusAfter": "R7_SOLVED_CANDIDATE_PENDING_FULL_FREEZE",
+        "yPolicy": "retain current effective building Y for candidate; terrain/platform audit remains required",
+        "solveId": "R7-SOLVE-04",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              732,
+              -302
+            ],
+            [
+              732,
+              -398
+            ],
+            [
+              768,
+              -398
+            ],
+            [
+              768,
+              -302
+            ],
+            [
+              732,
+              -302
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BUS-02",
+        "name": "管理学院B楼",
+        "clusterID": "G-EAST-M01-BUS-ECO",
+        "x": 750,
+        "y": 103,
+        "z": -230,
+        "rotationY": 270,
+        "mainEntranceFacing": "西",
+        "length": 86,
+        "width": 32,
+        "floors": 6,
+        "legacyX": 900,
+        "legacyY": 103,
+        "legacyZ": -180,
+        "legacyRotationY": 270,
+        "displacementM": 158.1,
+        "statusBefore": "R7_RE-SOLVE",
+        "statusAfter": "R7_SOLVED_CANDIDATE_PENDING_FULL_FREEZE",
+        "yPolicy": "retain current effective building Y for candidate; terrain/platform audit remains required",
+        "solveId": "R7-SOLVE-04",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              734,
+              -187
+            ],
+            [
+              734,
+              -273
+            ],
+            [
+              766,
+              -273
+            ],
+            [
+              766,
+              -187
+            ],
+            [
+              734,
+              -187
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IGS-01",
+        "name": "国际研究生院",
+        "clusterID": "G-EAST-M01-BUS-ECO",
+        "x": 685,
+        "y": 103,
+        "z": -145,
+        "rotationY": 180,
+        "mainEntranceFacing": "南",
+        "length": 92,
+        "width": 36,
+        "floors": 7,
+        "legacyX": 900,
+        "legacyY": 103,
+        "legacyZ": -360,
+        "legacyRotationY": 270,
+        "displacementM": 304.1,
+        "statusBefore": "R7_RE-SOLVE",
+        "statusAfter": "R7_SOLVED_CANDIDATE_PENDING_FULL_FREEZE",
+        "yPolicy": "retain current effective building Y for candidate; terrain/platform audit remains required",
+        "solveId": "R7-SOLVE-04",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              731,
+              -127
+            ],
+            [
+              639,
+              -127
+            ],
+            [
+              639,
+              -163
+            ],
+            [
+              731,
+              -163
+            ],
+            [
+              731,
+              -127
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "MARX-01",
+        "name": "马克思主义学院楼",
+        "clusterID": "G-EAST-H01-HUM-CIVIC",
+        "x": 620,
+        "y": 104,
+        "z": 170,
+        "rotationY": 90,
+        "mainEntranceFacing": "东",
+        "length": 78,
+        "width": 30,
+        "floors": 6,
+        "legacyX": 650,
+        "legacyY": 104,
+        "legacyZ": 120,
+        "legacyRotationY": 270,
+        "displacementM": 58.3,
+        "statusBefore": "R7_RE-SOLVE",
+        "statusAfter": "R7_SOLVED_CANDIDATE_PENDING_FULL_FREEZE",
+        "yPolicy": "retain current effective building Y for candidate; terrain/platform audit remains required",
+        "solveId": "R7-SOLVE-04",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              635,
+              131
+            ],
+            [
+              635,
+              209
+            ],
+            [
+              605,
+              209
+            ],
+            [
+              605,
+              131
+            ],
+            [
+              635,
+              131
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "GPA-01",
+        "name": "公共管理楼",
+        "clusterID": "G-EAST-H01-HUM-CIVIC",
+        "x": 760,
+        "y": 105,
+        "z": 170,
+        "rotationY": 270,
+        "mainEntranceFacing": "西",
+        "length": 86,
+        "width": 32,
+        "floors": 6,
+        "legacyX": 820,
+        "legacyY": 105,
+        "legacyZ": 120,
+        "legacyRotationY": 270,
+        "displacementM": 78.1,
+        "statusBefore": "R7_RE-SOLVE",
+        "statusAfter": "R7_SOLVED_CANDIDATE_PENDING_FULL_FREEZE",
+        "yPolicy": "retain current effective building Y for candidate; terrain/platform audit remains required",
+        "solveId": "R7-SOLVE-04",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              744,
+              213
+            ],
+            [
+              744,
+              127
+            ],
+            [
+              776,
+              127
+            ],
+            [
+              776,
+              213
+            ],
+            [
+              744,
+              213
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "FLA-01",
+        "name": "外国语学院楼",
+        "clusterID": "G-EAST-H01-HUM-CIVIC",
+        "x": 690,
+        "y": 106,
+        "z": 100,
+        "rotationY": 0,
+        "mainEntranceFacing": "北",
+        "length": 88,
+        "width": 32,
+        "floors": 7,
+        "legacyX": 820,
+        "legacyY": 106,
+        "legacyZ": 280,
+        "legacyRotationY": 270,
+        "displacementM": 222,
+        "statusBefore": "R7_RE-SOLVE",
+        "statusAfter": "R7_SOLVED_CANDIDATE_PENDING_FULL_FREEZE",
+        "yPolicy": "retain current effective building Y for candidate; terrain/platform audit remains required",
+        "solveId": "R7-SOLVE-04",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              646,
+              84
+            ],
+            [
+              734,
+              84
+            ],
+            [
+              734,
+              116
+            ],
+            [
+              646,
+              116
+            ],
+            [
+              646,
+              84
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "HUM-01",
+        "name": "人文学院楼",
+        "clusterID": "G-EAST-H01-HUM-CIVIC",
+        "x": 690,
+        "y": 106,
+        "z": 240,
+        "rotationY": 180,
+        "mainEntranceFacing": "南",
+        "length": 88,
+        "width": 32,
+        "floors": 7,
+        "legacyX": 650,
+        "legacyY": 106,
+        "legacyZ": 280,
+        "legacyRotationY": 270,
+        "displacementM": 56.6,
+        "statusBefore": "R7_RE-SOLVE",
+        "statusAfter": "R7_SOLVED_CANDIDATE_PENDING_FULL_FREEZE",
+        "yPolicy": "retain current effective building Y for candidate; terrain/platform audit remains required",
+        "solveId": "R7-SOLVE-04",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              734,
+              256
+            ],
+            [
+              646,
+              256
+            ],
+            [
+              646,
+              224
+            ],
+            [
+              734,
+              224
+            ],
+            [
+              734,
+              256
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SOC-01",
+        "name": "社会科学楼",
+        "clusterID": "G-EAST-H02-SOC-EDU",
+        "x": 620,
+        "y": 107,
+        "z": 345,
+        "rotationY": 90,
+        "mainEntranceFacing": "东",
+        "length": 82,
+        "width": 30,
+        "floors": 6,
+        "legacyX": 990,
+        "legacyY": 107,
+        "legacyZ": 280,
+        "legacyRotationY": 270,
+        "displacementM": 375.7,
+        "statusBefore": "R7_RE-SOLVE",
+        "statusAfter": "R7_SOLVED_CANDIDATE_PENDING_FULL_FREEZE",
+        "yPolicy": "retain current effective building Y for candidate; terrain/platform audit remains required",
+        "solveId": "R7-SOLVE-04",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              635,
+              304
+            ],
+            [
+              635,
+              386
+            ],
+            [
+              605,
+              386
+            ],
+            [
+              605,
+              304
+            ],
+            [
+              635,
+              304
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "PSY-01",
+        "name": "心理认知科学楼",
+        "clusterID": "G-EAST-H02-SOC-EDU",
+        "x": 760,
+        "y": 108,
+        "z": 345,
+        "rotationY": 270,
+        "mainEntranceFacing": "西",
+        "length": 86,
+        "width": 32,
+        "floors": 6,
+        "legacyX": 990,
+        "legacyY": 108,
+        "legacyZ": 430,
+        "legacyRotationY": 270,
+        "displacementM": 245.2,
+        "statusBefore": "R7_RE-SOLVE",
+        "statusAfter": "R7_SOLVED_CANDIDATE_PENDING_FULL_FREEZE",
+        "yPolicy": "retain current effective building Y for candidate; terrain/platform audit remains required",
+        "solveId": "R7-SOLVE-04",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              744,
+              388
+            ],
+            [
+              744,
+              302
+            ],
+            [
+              776,
+              302
+            ],
+            [
+              776,
+              388
+            ],
+            [
+              744,
+              388
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "JRN-01",
+        "name": "新闻传播楼",
+        "clusterID": "G-EAST-H02-SOC-EDU",
+        "x": 690,
+        "y": 108,
+        "z": 290,
+        "rotationY": 0,
+        "mainEntranceFacing": "北",
+        "length": 86,
+        "width": 32,
+        "floors": 6,
+        "legacyX": 650,
+        "legacyY": 108,
+        "legacyZ": 430,
+        "legacyRotationY": 270,
+        "displacementM": 145.6,
+        "statusBefore": "R7_RE-SOLVE",
+        "statusAfter": "R7_SOLVED_CANDIDATE_PENDING_FULL_FREEZE",
+        "yPolicy": "retain current effective building Y for candidate; terrain/platform audit remains required",
+        "solveId": "R7-SOLVE-04",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              647,
+              274
+            ],
+            [
+              733,
+              274
+            ],
+            [
+              733,
+              306
+            ],
+            [
+              647,
+              306
+            ],
+            [
+              647,
+              274
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "EDU-01",
+        "name": "教育学院楼",
+        "clusterID": "G-EAST-H02-SOC-EDU",
+        "x": 690,
+        "y": 108,
+        "z": 400,
+        "rotationY": 180,
+        "mainEntranceFacing": "南",
+        "length": 86,
+        "width": 32,
+        "floors": 6,
+        "legacyX": 820,
+        "legacyY": 108,
+        "legacyZ": 430,
+        "legacyRotationY": 270,
+        "displacementM": 133.4,
+        "statusBefore": "R7_RE-SOLVE",
+        "statusAfter": "R7_SOLVED_CANDIDATE_PENDING_FULL_FREEZE",
+        "yPolicy": "retain current effective building Y for candidate; terrain/platform audit remains required",
+        "solveId": "R7-SOLVE-04",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              733,
+              416
+            ],
+            [
+              647,
+              416
+            ],
+            [
+              647,
+              384
+            ],
+            [
+              733,
+              384
+            ],
+            [
+              733,
+              416
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}
