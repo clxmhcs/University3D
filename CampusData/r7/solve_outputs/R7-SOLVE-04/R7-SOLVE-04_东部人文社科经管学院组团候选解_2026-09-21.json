@@ -1,0 +1,463 @@
+{
+  "schemaVersion": 1,
+  "solveId": "R7-SOLVE-04",
+  "version": "R7-EAST-HUMANITIES-BUSINESS-MICROLAYOUT-CANDIDATE-2026-09-21",
+  "baseSourcePatch": "PATCH-2026-09-14-R7",
+  "status": "SOLVED_CANDIDATE_PENDING_SOLVE_05_06_AND_FINAL_18_AUDITS",
+  "runtimeFinal": false,
+  "sourcePriority": [
+    "PATCH-2026-09-14-R7",
+    "R7-SOLVE-02 road skeleton",
+    "R7 masterplan/building candidates",
+    "R7 building parameters",
+    "R7 campus layout",
+    "R7 road/traffic system",
+    "R7 terrain/water system"
+  ],
+  "macroRegions": {
+    "humanitiesSocialSciences": {
+      "xMin": 600,
+      "xMax": 1050,
+      "zMin": 80,
+      "zMax": 470
+    },
+    "eastYuan": {
+      "xMin": 1120,
+      "xMax": 1480,
+      "zMin": -180,
+      "zMax": 340,
+      "status": "NOT_RE_SOLVED_IN_THIS_STAGE"
+    },
+    "businessEconomics": {
+      "xMin": 560,
+      "xMax": 970,
+      "zMin": -420,
+      "zMax": -120
+    }
+  },
+  "districtLogic": {
+    "westOfRing": "humanities/social-sciences + economics/business",
+    "eastOfRing": "East Yuan",
+    "roadBoundary": "ROAD-BOYA-RING-E X≈830",
+    "humanitiesPrimaryEdges": [
+      "ROAD-BOYA-RING-E",
+      "ROAD-GEZHI-E"
+    ],
+    "businessPrimaryEdges": [
+      "ROAD-BOYA-RING-E",
+      "south/central derived access"
+    ],
+    "eastYuanPrimaryEdges": [
+      "ROAD-QINGNIAN-E",
+      "ROAD-QINGNIAN-E-FEED"
+    ],
+    "rule": "东部必须读成“人文社科—东苑—经管”三个相对独立街区；本阶段只重排学院建筑，不提前重排东苑14栋住宿。"
+  },
+  "clusters": {
+    "G-EAST-M01-BUS-ECO": {
+      "name": "经济—管理—金融—国际研究生院共享商科院落",
+      "members": [
+        "FIN-01",
+        "ECO-01",
+        "BUS-01",
+        "BUS-02",
+        "IGS-01"
+      ],
+      "openSpaceCenter": [
+        685,
+        -285
+      ],
+      "type": "U-shaped business courtyard",
+      "frontage": [
+        "ROAD-BOYA-RING-E",
+        "derived-group-access"
+      ],
+      "platformY": "102-103m",
+      "actualBuildingBoundsXZ": [
+        604,
+        -398,
+        768,
+        -127
+      ],
+      "memberCount": 5
+    },
+    "G-EAST-H01-HUM-CIVIC": {
+      "name": "人文—外语—马克思—公共管理共享庭院",
+      "members": [
+        "MARX-01",
+        "GPA-01",
+        "FLA-01",
+        "HUM-01"
+      ],
+      "openSpaceCenter": [
+        690,
+        170
+      ],
+      "type": "four-sided humanities court",
+      "frontage": [
+        "ROAD-BOYA-RING-E",
+        "CEN-18 pedestrian interface"
+      ],
+      "platformY": "104-106m",
+      "actualBuildingBoundsXZ": [
+        605,
+        84,
+        776,
+        256
+      ],
+      "memberCount": 4
+    },
+    "G-EAST-H02-SOC-EDU": {
+      "name": "社会—新闻—教育—心理共享庭院",
+      "members": [
+        "SOC-01",
+        "PSY-01",
+        "JRN-01",
+        "EDU-01"
+      ],
+      "openSpaceCenter": [
+        690,
+        345
+      ],
+      "type": "four-sided social-science court",
+      "frontage": [
+        "ROAD-GEZHI-E",
+        "ROAD-QINGNIAN-E-FEED pedestrian connection"
+      ],
+      "platformY": "107-108m",
+      "actualBuildingBoundsXZ": [
+        605,
+        274,
+        776,
+        416
+      ],
+      "memberCount": 4
+    }
+  },
+  "buildings": [
+    {
+      "id": "FIN-01",
+      "name": "金融学院楼",
+      "clusterID": "G-EAST-M01-BUS-ECO",
+      "x": 620,
+      "y": 102,
+      "z": -350,
+      "rotationY": 90,
+      "mainEntranceFacing": "东",
+      "length": 86,
+      "width": 32,
+      "floors": 7,
+      "legacyX": 600,
+      "legacyY": 102,
+      "legacyZ": -320,
+      "legacyRotationY": 270,
+      "displacementM": 36.1,
+      "statusBefore": "R7_RE-SOLVE",
+      "statusAfter": "R7_SOLVED_CANDIDATE_PENDING_FULL_FREEZE",
+      "yPolicy": "retain current effective building Y for candidate; terrain/platform audit remains required"
+    },
+    {
+      "id": "ECO-01",
+      "name": "经济学院楼",
+      "clusterID": "G-EAST-M01-BUS-ECO",
+      "x": 620,
+      "y": 103,
+      "z": -230,
+      "rotationY": 90,
+      "mainEntranceFacing": "东",
+      "length": 86,
+      "width": 32,
+      "floors": 7,
+      "legacyX": 600,
+      "legacyY": 103,
+      "legacyZ": -180,
+      "legacyRotationY": 270,
+      "displacementM": 53.9,
+      "statusBefore": "R7_RE-SOLVE",
+      "statusAfter": "R7_SOLVED_CANDIDATE_PENDING_FULL_FREEZE",
+      "yPolicy": "retain current effective building Y for candidate; terrain/platform audit remains required"
+    },
+    {
+      "id": "BUS-01",
+      "name": "管理学院A楼",
+      "clusterID": "G-EAST-M01-BUS-ECO",
+      "x": 750,
+      "y": 103,
+      "z": -350,
+      "rotationY": 270,
+      "mainEntranceFacing": "西",
+      "length": 96,
+      "width": 36,
+      "floors": 7,
+      "legacyX": 760,
+      "legacyY": 103,
+      "legacyZ": -180,
+      "legacyRotationY": 270,
+      "displacementM": 170.3,
+      "statusBefore": "R7_RE-SOLVE",
+      "statusAfter": "R7_SOLVED_CANDIDATE_PENDING_FULL_FREEZE",
+      "yPolicy": "retain current effective building Y for candidate; terrain/platform audit remains required"
+    },
+    {
+      "id": "BUS-02",
+      "name": "管理学院B楼",
+      "clusterID": "G-EAST-M01-BUS-ECO",
+      "x": 750,
+      "y": 103,
+      "z": -230,
+      "rotationY": 270,
+      "mainEntranceFacing": "西",
+      "length": 86,
+      "width": 32,
+      "floors": 6,
+      "legacyX": 900,
+      "legacyY": 103,
+      "legacyZ": -180,
+      "legacyRotationY": 270,
+      "displacementM": 158.1,
+      "statusBefore": "R7_RE-SOLVE",
+      "statusAfter": "R7_SOLVED_CANDIDATE_PENDING_FULL_FREEZE",
+      "yPolicy": "retain current effective building Y for candidate; terrain/platform audit remains required"
+    },
+    {
+      "id": "IGS-01",
+      "name": "国际研究生院",
+      "clusterID": "G-EAST-M01-BUS-ECO",
+      "x": 685,
+      "y": 103,
+      "z": -145,
+      "rotationY": 180,
+      "mainEntranceFacing": "南",
+      "length": 92,
+      "width": 36,
+      "floors": 7,
+      "legacyX": 900,
+      "legacyY": 103,
+      "legacyZ": -360,
+      "legacyRotationY": 270,
+      "displacementM": 304.1,
+      "statusBefore": "R7_RE-SOLVE",
+      "statusAfter": "R7_SOLVED_CANDIDATE_PENDING_FULL_FREEZE",
+      "yPolicy": "retain current effective building Y for candidate; terrain/platform audit remains required"
+    },
+    {
+      "id": "MARX-01",
+      "name": "马克思主义学院楼",
+      "clusterID": "G-EAST-H01-HUM-CIVIC",
+      "x": 620,
+      "y": 104,
+      "z": 170,
+      "rotationY": 90,
+      "mainEntranceFacing": "东",
+      "length": 78,
+      "width": 30,
+      "floors": 6,
+      "legacyX": 650,
+      "legacyY": 104,
+      "legacyZ": 120,
+      "legacyRotationY": 270,
+      "displacementM": 58.3,
+      "statusBefore": "R7_RE-SOLVE",
+      "statusAfter": "R7_SOLVED_CANDIDATE_PENDING_FULL_FREEZE",
+      "yPolicy": "retain current effective building Y for candidate; terrain/platform audit remains required"
+    },
+    {
+      "id": "GPA-01",
+      "name": "公共管理楼",
+      "clusterID": "G-EAST-H01-HUM-CIVIC",
+      "x": 760,
+      "y": 105,
+      "z": 170,
+      "rotationY": 270,
+      "mainEntranceFacing": "西",
+      "length": 86,
+      "width": 32,
+      "floors": 6,
+      "legacyX": 820,
+      "legacyY": 105,
+      "legacyZ": 120,
+      "legacyRotationY": 270,
+      "displacementM": 78.1,
+      "statusBefore": "R7_RE-SOLVE",
+      "statusAfter": "R7_SOLVED_CANDIDATE_PENDING_FULL_FREEZE",
+      "yPolicy": "retain current effective building Y for candidate; terrain/platform audit remains required"
+    },
+    {
+      "id": "FLA-01",
+      "name": "外国语学院楼",
+      "clusterID": "G-EAST-H01-HUM-CIVIC",
+      "x": 690,
+      "y": 106,
+      "z": 100,
+      "rotationY": 0,
+      "mainEntranceFacing": "北",
+      "length": 88,
+      "width": 32,
+      "floors": 7,
+      "legacyX": 820,
+      "legacyY": 106,
+      "legacyZ": 280,
+      "legacyRotationY": 270,
+      "displacementM": 222,
+      "statusBefore": "R7_RE-SOLVE",
+      "statusAfter": "R7_SOLVED_CANDIDATE_PENDING_FULL_FREEZE",
+      "yPolicy": "retain current effective building Y for candidate; terrain/platform audit remains required"
+    },
+    {
+      "id": "HUM-01",
+      "name": "人文学院楼",
+      "clusterID": "G-EAST-H01-HUM-CIVIC",
+      "x": 690,
+      "y": 106,
+      "z": 240,
+      "rotationY": 180,
+      "mainEntranceFacing": "南",
+      "length": 88,
+      "width": 32,
+      "floors": 7,
+      "legacyX": 650,
+      "legacyY": 106,
+      "legacyZ": 280,
+      "legacyRotationY": 270,
+      "displacementM": 56.6,
+      "statusBefore": "R7_RE-SOLVE",
+      "statusAfter": "R7_SOLVED_CANDIDATE_PENDING_FULL_FREEZE",
+      "yPolicy": "retain current effective building Y for candidate; terrain/platform audit remains required"
+    },
+    {
+      "id": "SOC-01",
+      "name": "社会科学楼",
+      "clusterID": "G-EAST-H02-SOC-EDU",
+      "x": 620,
+      "y": 107,
+      "z": 345,
+      "rotationY": 90,
+      "mainEntranceFacing": "东",
+      "length": 82,
+      "width": 30,
+      "floors": 6,
+      "legacyX": 990,
+      "legacyY": 107,
+      "legacyZ": 280,
+      "legacyRotationY": 270,
+      "displacementM": 375.7,
+      "statusBefore": "R7_RE-SOLVE",
+      "statusAfter": "R7_SOLVED_CANDIDATE_PENDING_FULL_FREEZE",
+      "yPolicy": "retain current effective building Y for candidate; terrain/platform audit remains required"
+    },
+    {
+      "id": "PSY-01",
+      "name": "心理认知科学楼",
+      "clusterID": "G-EAST-H02-SOC-EDU",
+      "x": 760,
+      "y": 108,
+      "z": 345,
+      "rotationY": 270,
+      "mainEntranceFacing": "西",
+      "length": 86,
+      "width": 32,
+      "floors": 6,
+      "legacyX": 990,
+      "legacyY": 108,
+      "legacyZ": 430,
+      "legacyRotationY": 270,
+      "displacementM": 245.2,
+      "statusBefore": "R7_RE-SOLVE",
+      "statusAfter": "R7_SOLVED_CANDIDATE_PENDING_FULL_FREEZE",
+      "yPolicy": "retain current effective building Y for candidate; terrain/platform audit remains required"
+    },
+    {
+      "id": "JRN-01",
+      "name": "新闻传播楼",
+      "clusterID": "G-EAST-H02-SOC-EDU",
+      "x": 690,
+      "y": 108,
+      "z": 290,
+      "rotationY": 0,
+      "mainEntranceFacing": "北",
+      "length": 86,
+      "width": 32,
+      "floors": 6,
+      "legacyX": 650,
+      "legacyY": 108,
+      "legacyZ": 430,
+      "legacyRotationY": 270,
+      "displacementM": 145.6,
+      "statusBefore": "R7_RE-SOLVE",
+      "statusAfter": "R7_SOLVED_CANDIDATE_PENDING_FULL_FREEZE",
+      "yPolicy": "retain current effective building Y for candidate; terrain/platform audit remains required"
+    },
+    {
+      "id": "EDU-01",
+      "name": "教育学院楼",
+      "clusterID": "G-EAST-H02-SOC-EDU",
+      "x": 690,
+      "y": 108,
+      "z": 400,
+      "rotationY": 180,
+      "mainEntranceFacing": "南",
+      "length": 86,
+      "width": 32,
+      "floors": 6,
+      "legacyX": 820,
+      "legacyY": 108,
+      "legacyZ": 430,
+      "legacyRotationY": 270,
+      "displacementM": 133.4,
+      "statusBefore": "R7_RE-SOLVE",
+      "statusAfter": "R7_SOLVED_CANDIDATE_PENDING_FULL_FREEZE",
+      "yPolicy": "retain current effective building Y for candidate; terrain/platform audit remains required"
+    }
+  ],
+  "retainedStrongOrAdjacentObjects": {
+    "CEN-18": "(460,100,180) rot270 retained as human/social-sciences library interface",
+    "ART-01": "(1110,113,860) rot270 FROZEN/strong anchor",
+    "ART-02": "(1260,113,930) rot270 FROZEN/strong anchor",
+    "ART-03": "(1390,110,760) rot90 FROZEN/strong anchor; public theater interface to 长虹路",
+    "ART-04": "(1220,112,760) rot90 FROZEN/strong anchor",
+    "ATH-11": "(1050,102,-520) rot0 FROZEN second 400m track",
+    "LIFE-E-01": "old/current R6 location not promoted; East Yuan will be handled in R7-SOLVE-05",
+    "LIFE-E-02": "old/current R6 location not promoted; East Yuan will be handled in R7-SOLVE-05"
+  },
+  "audits": {
+    "buildingCount": 13,
+    "expectedBuildingCount": 13,
+    "allBuildingsInsideAssignedMacroRegion": "PASS",
+    "allBuildingsInsideCampusBoundary": "PASS",
+    "buildingBuildingCollision": "PASS",
+    "r7Solve02RoadRightOfWayCollision": "PASS",
+    "relevantNamedWaterProxyCollision": "PASS",
+    "adjacentCurrentOrFrozenBuildingCollision": "PASS",
+    "clusterMemberCount3To6": "PASS",
+    "minBuildingClearanceM": 11,
+    "minBuildingClearancePair": [
+      "PSY-01",
+      "JRN-01"
+    ],
+    "minRoadCorridorClearanceM": 15,
+    "minRoadCorridorClearanceObject": [
+      "EDU-01",
+      "ROAD-GEZHI-E"
+    ],
+    "minRelevantWaterProxyClearanceM": 172.7,
+    "minRelevantWaterProxyClearanceObject": [
+      "PSY-01",
+      "WATER-HEFENG-POND"
+    ],
+    "minAdjacentCurrentBuildingClearanceM": 91.2,
+    "minAdjacentCurrentBuildingClearanceObject": [
+      "MARX-01",
+      "CEN-14"
+    ],
+    "TT_HUM_01_pointInsideAnyBuilding": "PASS",
+    "TT_HUM_01_nearestBuildingDistanceM": 168.2,
+    "TT_HUM_01_nearestBuilding": "GPA-01",
+    "eastYuanNotReSolvedInThisStage": "PASS",
+    "artAnchorsART01to04Unchanged": "PASS",
+    "roadBoyaRingEActsAsAcademicToEastYuanBoundary": "PASS",
+    "waterProxyLimitation": "东苑景观池、荷风池、艺澜池当前用于本阶段的资料是中心+面积；本阶段采用等面积圆做代理预审计，不替代最终岸线Polygon净距审计。",
+    "entranceAndFireService": "PENDING_DERIVED_ACCESS_STAGE",
+    "campusDataSvgUnityConsistency": "PENDING_FINAL_INTEGRATION"
+  },
+  "nextStage": "R7-SOLVE-05 four Yuan / 56 accommodation micro-layout"
+}
