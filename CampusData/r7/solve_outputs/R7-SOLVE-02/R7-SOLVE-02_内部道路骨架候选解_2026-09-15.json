@@ -1,0 +1,781 @@
+{
+  "schemaVersion": 1,
+  "solveId": "R7-SOLVE-02",
+  "version": "R7-INTERNAL-ROAD-SKELETON-CANDIDATE-2026-09-15",
+  "baseSourcePatch": "PATCH-2026-09-14-R7",
+  "status": "SOLVED_CANDIDATE_PENDING_ACADEMIC_RESIDENTIAL_SPORTS_MICRO_LAYOUT",
+  "runtimeFinal": false,
+  "coordinateSystem": {
+    "xPositive": "east",
+    "zPositive": "north",
+    "yPositive": "up",
+    "unit": "m"
+  },
+  "designRules": {
+    "urbanLanguage": "long straight primary roads + orthogonal secondary blocks + short group access + local curves/rounding only where water, landscape, gate or terrain requires",
+    "ordinarySocialVehiclesCrossCentralCore": false,
+    "qiuzhenAxisOrdinaryMotorRoad": false,
+    "roadCenterlineCornerPolicy": "control chains remain mostly orthogonal; curb/edge geometry may receive engineering corner radii",
+    "r3Centerlines": "HISTORICAL_ONLY"
+  },
+  "roadWidthsM": {
+    "ROAD-BOYA-RING": 26,
+    "ROAD-JISHI": 20,
+    "ROAD-ZHICHUANG": 18,
+    "ROAD-JIANGXIN": 18,
+    "ROAD-GEZHI": 18,
+    "ROAD-WENHUA": 18,
+    "ROAD-JIANXING": 22,
+    "ROAD-CHUANGXIN": 18,
+    "ROAD-QINGNIAN": "14-18",
+    "ROAD-EAST-GATE": 14,
+    "ROAD-BOYA-RING-S-CROSS": 8
+  },
+  "roads": [
+    {
+      "id": "ROAD-BOYA-RING-SW",
+      "parentRoadID": "ROAD-BOYA-RING",
+      "name": "博雅环路·南西段",
+      "width": 26,
+      "roadClass": "primary",
+      "centerline": [
+        [
+          -600,
+          -1000
+        ],
+        [
+          -60,
+          -1000
+        ]
+      ],
+      "generalMotor": true,
+      "transit": true,
+      "emergency": true,
+      "freezeRole": "SKELETON_LOCK"
+    },
+    {
+      "id": "ROAD-BOYA-RING-S-CROSS",
+      "parentRoadID": "ROAD-BOYA-RING",
+      "name": "博雅环路·南门礼仪受控穿越段",
+      "width": 8,
+      "roadClass": "transit_emergency_restricted",
+      "centerline": [
+        [
+          -60,
+          -1000
+        ],
+        [
+          60,
+          -1000
+        ]
+      ],
+      "generalMotor": false,
+      "transit": true,
+      "emergency": true,
+      "pedestrianPriority": true,
+      "freezeRole": "SKELETON_LOCK"
+    },
+    {
+      "id": "ROAD-BOYA-RING-SE",
+      "parentRoadID": "ROAD-BOYA-RING",
+      "name": "博雅环路·南东段",
+      "width": 26,
+      "roadClass": "primary",
+      "centerline": [
+        [
+          60,
+          -1000
+        ],
+        [
+          830,
+          -1000
+        ]
+      ],
+      "generalMotor": true,
+      "transit": true,
+      "emergency": true,
+      "freezeRole": "SKELETON_LOCK"
+    },
+    {
+      "id": "ROAD-BOYA-RING-E",
+      "parentRoadID": "ROAD-BOYA-RING",
+      "name": "博雅环路·东段",
+      "width": 26,
+      "roadClass": "primary",
+      "centerline": [
+        [
+          830,
+          -1000
+        ],
+        [
+          830,
+          690
+        ]
+      ],
+      "generalMotor": true,
+      "transit": true,
+      "emergency": true,
+      "freezeRole": "SKELETON_LOCK"
+    },
+    {
+      "id": "ROAD-BOYA-RING-N",
+      "parentRoadID": "ROAD-BOYA-RING",
+      "name": "博雅环路·北段",
+      "width": 26,
+      "roadClass": "primary",
+      "centerline": [
+        [
+          830,
+          690
+        ],
+        [
+          -750,
+          690
+        ]
+      ],
+      "generalMotor": true,
+      "transit": true,
+      "emergency": true,
+      "freezeRole": "SKELETON_LOCK"
+    },
+    {
+      "id": "ROAD-BOYA-RING-NW-V",
+      "parentRoadID": "ROAD-BOYA-RING",
+      "name": "博雅环路·西北竖向过渡段",
+      "width": 26,
+      "roadClass": "primary",
+      "centerline": [
+        [
+          -750,
+          690
+        ],
+        [
+          -750,
+          600
+        ]
+      ],
+      "generalMotor": true,
+      "transit": true,
+      "emergency": true,
+      "freezeRole": "SKELETON_LOCK"
+    },
+    {
+      "id": "ROAD-BOYA-RING-NW-H",
+      "parentRoadID": "ROAD-BOYA-RING",
+      "name": "博雅环路·西北横向过渡段",
+      "width": 26,
+      "roadClass": "primary",
+      "centerline": [
+        [
+          -750,
+          600
+        ],
+        [
+          -900,
+          600
+        ]
+      ],
+      "generalMotor": true,
+      "transit": true,
+      "emergency": true,
+      "freezeRole": "SKELETON_LOCK"
+    },
+    {
+      "id": "ROAD-BOYA-RING-W",
+      "parentRoadID": "ROAD-BOYA-RING",
+      "name": "博雅环路·西段",
+      "width": 26,
+      "roadClass": "primary",
+      "centerline": [
+        [
+          -900,
+          600
+        ],
+        [
+          -900,
+          -430
+        ]
+      ],
+      "generalMotor": true,
+      "transit": true,
+      "emergency": true,
+      "freezeRole": "SKELETON_LOCK"
+    },
+    {
+      "id": "ROAD-BOYA-RING-SW-H",
+      "parentRoadID": "ROAD-BOYA-RING",
+      "name": "博雅环路·西南横向过渡段",
+      "width": 26,
+      "roadClass": "primary",
+      "centerline": [
+        [
+          -900,
+          -430
+        ],
+        [
+          -600,
+          -430
+        ]
+      ],
+      "generalMotor": true,
+      "transit": true,
+      "emergency": true,
+      "freezeRole": "SKELETON_LOCK"
+    },
+    {
+      "id": "ROAD-BOYA-RING-SW-V",
+      "parentRoadID": "ROAD-BOYA-RING",
+      "name": "博雅环路·西南竖向过渡段",
+      "width": 26,
+      "roadClass": "primary",
+      "centerline": [
+        [
+          -600,
+          -430
+        ],
+        [
+          -600,
+          -1000
+        ]
+      ],
+      "generalMotor": true,
+      "transit": true,
+      "emergency": true,
+      "freezeRole": "SKELETON_LOCK"
+    },
+    {
+      "id": "ROAD-JISHI",
+      "name": "济世路",
+      "width": 20,
+      "roadClass": "secondary_medical",
+      "centerline": [
+        [
+          -1350,
+          -770
+        ],
+        [
+          -600,
+          -770
+        ]
+      ],
+      "generalMotor": true,
+      "transit": true,
+      "emergency": true,
+      "freezeRole": "SKELETON_LOCK"
+    },
+    {
+      "id": "ROAD-ZHICHUANG",
+      "name": "智创路",
+      "width": 18,
+      "roadClass": "secondary_academic",
+      "centerline": [
+        [
+          -1380,
+          -300
+        ],
+        [
+          -900,
+          -300
+        ]
+      ],
+      "generalMotor": true,
+      "transit": true,
+      "emergency": true,
+      "freezeRole": "SKELETON_LOCK"
+    },
+    {
+      "id": "ROAD-JIANGXIN",
+      "name": "匠心路",
+      "width": 18,
+      "roadClass": "secondary_academic",
+      "centerline": [
+        [
+          -1040,
+          -300
+        ],
+        [
+          -1040,
+          480
+        ],
+        [
+          -900,
+          480
+        ]
+      ],
+      "generalMotor": true,
+      "transit": true,
+      "emergency": true,
+      "freezeRole": "SKELETON_LOCK"
+    },
+    {
+      "id": "ROAD-GEZHI-W",
+      "name": "格致路·西段",
+      "width": 18,
+      "roadClass": "secondary_academic",
+      "centerline": [
+        [
+          -900,
+          500
+        ],
+        [
+          -360,
+          500
+        ]
+      ],
+      "generalMotor": true,
+      "transit": false,
+      "emergency": true,
+      "freezeRole": "SKELETON_LOCK"
+    },
+    {
+      "id": "ROAD-GEZHI-E",
+      "name": "格致路·东段",
+      "width": 18,
+      "roadClass": "secondary_academic",
+      "centerline": [
+        [
+          360,
+          440
+        ],
+        [
+          830,
+          440
+        ]
+      ],
+      "generalMotor": true,
+      "transit": false,
+      "emergency": true,
+      "freezeRole": "SKELETON_LOCK"
+    },
+    {
+      "id": "ROAD-WENHUA",
+      "name": "文华路",
+      "width": 18,
+      "roadClass": "secondary_academic",
+      "centerline": [
+        [
+          830,
+          400
+        ],
+        [
+          1040,
+          400
+        ],
+        [
+          1040,
+          -250
+        ]
+      ],
+      "generalMotor": true,
+      "transit": true,
+      "emergency": true,
+      "freezeRole": "SKELETON_LOCK"
+    },
+    {
+      "id": "ROAD-WEST-GATE",
+      "name": "西门校园接入路",
+      "width": 18,
+      "roadClass": "gate_access",
+      "centerline": [
+        [
+          -1548,
+          -80
+        ],
+        [
+          -1500,
+          -80
+        ],
+        [
+          -1500,
+          40
+        ],
+        [
+          -1320,
+          40
+        ],
+        [
+          -1320,
+          100
+        ]
+      ],
+      "generalMotor": true,
+      "transit": false,
+      "emergency": true,
+      "freezeRole": "SKELETON_LOCK"
+    },
+    {
+      "id": "ROAD-QINGNIAN-W",
+      "name": "青年路·西苑段",
+      "width": 16,
+      "roadClass": "residential",
+      "centerline": [
+        [
+          -1320,
+          100
+        ],
+        [
+          -1320,
+          600
+        ]
+      ],
+      "generalMotor": true,
+      "transit": true,
+      "emergency": true,
+      "freezeRole": "CORRIDOR_RESERVATION"
+    },
+    {
+      "id": "ROAD-QINGNIAN-W-FEED",
+      "name": "青年路·西苑东接入",
+      "width": 16,
+      "roadClass": "residential",
+      "centerline": [
+        [
+          -1320,
+          100
+        ],
+        [
+          -900,
+          100
+        ]
+      ],
+      "generalMotor": true,
+      "transit": true,
+      "emergency": true,
+      "freezeRole": "CORRIDOR_RESERVATION"
+    },
+    {
+      "id": "ROAD-CHUANGXIN",
+      "name": "创新大道·科研园西侧主脊",
+      "width": 18,
+      "roadClass": "research_access",
+      "centerline": [
+        [
+          -1430,
+          600
+        ],
+        [
+          -1430,
+          820
+        ]
+      ],
+      "generalMotor": true,
+      "transit": true,
+      "emergency": true,
+      "freezeRole": "CORRIDOR_RESERVATION"
+    },
+    {
+      "id": "ROAD-CHUANGXIN-CONN",
+      "name": "创新大道·西苑连接段",
+      "width": 18,
+      "roadClass": "research_access",
+      "centerline": [
+        [
+          -1430,
+          600
+        ],
+        [
+          -1320,
+          600
+        ]
+      ],
+      "generalMotor": true,
+      "transit": true,
+      "emergency": true,
+      "freezeRole": "CORRIDOR_RESERVATION"
+    },
+    {
+      "id": "ROAD-QINGNIAN-E",
+      "name": "青年路·东苑段",
+      "width": 18,
+      "roadClass": "residential",
+      "centerline": [
+        [
+          1400,
+          -280
+        ],
+        [
+          1400,
+          360
+        ]
+      ],
+      "generalMotor": true,
+      "transit": true,
+      "emergency": true,
+      "freezeRole": "CORRIDOR_RESERVATION"
+    },
+    {
+      "id": "ROAD-QINGNIAN-E-FEED",
+      "name": "青年路·东苑西接入",
+      "width": 18,
+      "roadClass": "residential",
+      "centerline": [
+        [
+          830,
+          360
+        ],
+        [
+          1400,
+          360
+        ]
+      ],
+      "generalMotor": true,
+      "transit": true,
+      "emergency": true,
+      "freezeRole": "CORRIDOR_RESERVATION"
+    },
+    {
+      "id": "ROAD-EAST-GATE",
+      "name": "东门连接路",
+      "width": 14,
+      "roadClass": "gate_access",
+      "centerline": [
+        [
+          1400,
+          120
+        ],
+        [
+          1555,
+          120
+        ]
+      ],
+      "generalMotor": true,
+      "transit": false,
+      "emergency": true,
+      "freezeRole": "SKELETON_LOCK"
+    },
+    {
+      "id": "ROAD-QINGNIAN-S",
+      "name": "青年路·南苑段",
+      "width": 18,
+      "roadClass": "residential",
+      "centerline": [
+        [
+          260,
+          -900
+        ],
+        [
+          800,
+          -900
+        ]
+      ],
+      "generalMotor": true,
+      "transit": true,
+      "emergency": true,
+      "freezeRole": "CORRIDOR_RESERVATION"
+    },
+    {
+      "id": "ROAD-QINGNIAN-S-W",
+      "name": "青年路·南苑西接入",
+      "width": 18,
+      "roadClass": "residential",
+      "centerline": [
+        [
+          300,
+          -1000
+        ],
+        [
+          300,
+          -900
+        ]
+      ],
+      "generalMotor": true,
+      "transit": true,
+      "emergency": true,
+      "freezeRole": "CORRIDOR_RESERVATION"
+    },
+    {
+      "id": "ROAD-QINGNIAN-S-E",
+      "name": "青年路·南苑东接入",
+      "width": 18,
+      "roadClass": "residential",
+      "centerline": [
+        [
+          760,
+          -1000
+        ],
+        [
+          760,
+          -900
+        ]
+      ],
+      "generalMotor": true,
+      "transit": true,
+      "emergency": true,
+      "freezeRole": "CORRIDOR_RESERVATION"
+    },
+    {
+      "id": "ROAD-QINGNIAN-NW",
+      "name": "青年路·北苑西支",
+      "width": 14,
+      "roadClass": "residential",
+      "centerline": [
+        [
+          -520,
+          690
+        ],
+        [
+          -520,
+          1040
+        ]
+      ],
+      "generalMotor": true,
+      "transit": true,
+      "emergency": true,
+      "freezeRole": "CORRIDOR_RESERVATION"
+    },
+    {
+      "id": "ROAD-QINGNIAN-NE",
+      "name": "青年路·北苑东支",
+      "width": 14,
+      "roadClass": "residential",
+      "centerline": [
+        [
+          520,
+          690
+        ],
+        [
+          520,
+          1040
+        ]
+      ],
+      "generalMotor": true,
+      "transit": true,
+      "emergency": true,
+      "freezeRole": "CORRIDOR_RESERVATION"
+    },
+    {
+      "id": "ROAD-JIANXING-W",
+      "name": "健行路·赛事西支",
+      "width": 22,
+      "roadClass": "event_access",
+      "centerline": [
+        [
+          -160,
+          690
+        ],
+        [
+          -160,
+          1080
+        ],
+        [
+          0,
+          1115
+        ]
+      ],
+      "generalMotor": false,
+      "eventMotor": true,
+      "transit": true,
+      "emergency": true,
+      "freezeRole": "SKELETON_LOCK"
+    },
+    {
+      "id": "ROAD-JIANXING-E",
+      "name": "健行路·赛事东支",
+      "width": 22,
+      "roadClass": "event_access",
+      "centerline": [
+        [
+          160,
+          690
+        ],
+        [
+          160,
+          1080
+        ],
+        [
+          0,
+          1115
+        ]
+      ],
+      "generalMotor": false,
+      "eventMotor": true,
+      "transit": true,
+      "emergency": true,
+      "freezeRole": "SKELETON_LOCK"
+    },
+    {
+      "id": "ROAD-JIANXING-GATE",
+      "name": "健行路·北门受控接口",
+      "width": 14,
+      "roadClass": "event_gate_access",
+      "centerline": [
+        [
+          0,
+          1115
+        ],
+        [
+          0,
+          1142
+        ]
+      ],
+      "generalMotor": false,
+      "eventMotor": true,
+      "transit": true,
+      "emergency": true,
+      "freezeRole": "SKELETON_LOCK"
+    }
+  ],
+  "logicalRoads": {
+    "ROAD-BOYA-RING": {
+      "name": "博雅环路",
+      "segmentIDs": [
+        "ROAD-BOYA-RING-SW",
+        "ROAD-BOYA-RING-S-CROSS",
+        "ROAD-BOYA-RING-SE",
+        "ROAD-BOYA-RING-E",
+        "ROAD-BOYA-RING-N",
+        "ROAD-BOYA-RING-NW-V",
+        "ROAD-BOYA-RING-NW-H",
+        "ROAD-BOYA-RING-W",
+        "ROAD-BOYA-RING-SW-H",
+        "ROAD-BOYA-RING-SW-V"
+      ],
+      "candidateCenterlineLengthM": 6840.0,
+      "note": "该值是R7-SOLVE-02道路几何候选长度，不等同于A/B校车最终运营里程。南门X≈0处使用8m公交/应急受控穿越，普通机动车不可跨越礼仪轴。"
+    }
+  },
+  "deferredCorridors": {
+    "ROAD-TRANSIT-C": {
+      "status": "DERIVED_AFTER_LAYOUT",
+      "reason": "待西/东学院、四苑、中央换乘点与20主要交叉节点进一步冻结后，以现有R7道路叠加/局部公交优先方式派生，不恢复R3折线。"
+    },
+    "ROAD-TRANSIT-D": {
+      "status": "DERIVED_AFTER_LAYOUT",
+      "reason": "不得穿越博雅草坪/澄湖/中央礼仪核心；最终使用R7可运行道路和换乘节点派生。"
+    },
+    "PATH-CHENGHU": {
+      "status": "DERIVED_AFTER_LAYOUT",
+      "rule": "WATER-LAKE-01 shoreline outward offset ~25m, 6m级慢行；待岸线/桥梁/平台最终审计后生成。"
+    }
+  },
+  "bridgeControls": [
+    {
+      "solverControlId": "CTRL-BRIDGE-01",
+      "roadSegmentID": "ROAD-BOYA-RING-E",
+      "stream": "MAIN-SE-OUTFLOW",
+      "intersectionWKT": "POINT (830 -285)",
+      "status": "DERIVED_AFTER_LAYOUT",
+      "note": "桥梁永久ID、桥长、栏杆、桥面高程在道路纵断面/水系工程复核后派生。"
+    },
+    {
+      "solverControlId": "CTRL-BRIDGE-02",
+      "roadSegmentID": "ROAD-BOYA-RING-N",
+      "stream": "MAIN-NORTH-INFLOW",
+      "intersectionWKT": "POINT (376.6666666666667 690)",
+      "status": "DERIVED_AFTER_LAYOUT",
+      "note": "桥梁永久ID、桥长、栏杆、桥面高程在道路纵断面/水系工程复核后派生。"
+    }
+  ],
+  "audits": {
+    "allRoadCorridorBuffersInsideCampusBoundary": "PASS",
+    "strongAnchorFootprintCollision": "PASS",
+    "namedStaticWaterCollision": "PASS",
+    "roadNetworkConnectivity": "PASS",
+    "ordinaryMotorOutsideCentralCeremonialProtectedCore": "PASS",
+    "mainStreamCrossingCount": 2,
+    "mainStreamCrossingsRequireDerivedBridges": "PASS",
+    "legacyR3GeometryReusedAsFinal": "PASS_NO",
+    "busStopsAnd20MajorJunctions": "NOT_DERIVED_IN_THIS_STAGE"
+  },
+  "nextStage": "R7-SOLVE-03 west engineering / information academic micro-layout"
+}

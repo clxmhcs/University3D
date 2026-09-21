@@ -1,0 +1,398 @@
+{
+  "schemaVersion": 1,
+  "solveId": "R7-SOLVE-01",
+  "version": "R7-CENTRAL-CORE-CANDIDATE-2026-09-15",
+  "baseSourcePatch": "PATCH-2026-09-14-R7",
+  "status": "SOLVED_CANDIDATE_PENDING_ROAD_AND_NETWORK_AUDIT",
+  "authority": {
+    "layoutReference": "user-approved Jiangcheng University campus masterplan effect reference",
+    "coordinateSystem": "X east / Z north / Y elevation, 1 unit = 1m",
+    "rule": "candidate coordinates are road-solver inputs, not yet Runtime Final coordinates"
+  },
+  "centralAxis": {
+    "approxWorldX": 0,
+    "sequenceSouthToNorth": [
+      "GATE-SOUTH",
+      "south ceremonial forecourt",
+      "CEN-03",
+      "CEN-01",
+      "POI-BOYA-LAWN",
+      "WATER-LAKE-01"
+    ],
+    "clearCorridors": [
+      {
+        "xMin": -90,
+        "xMax": 90,
+        "zMin": -1030,
+        "zMax": -650
+      },
+      {
+        "xMin": -100,
+        "xMax": 100,
+        "zMin": -530,
+        "zMax": -210
+      },
+      {
+        "xMin": -120,
+        "xMax": 120,
+        "zMin": -125,
+        "zMax": 105
+      }
+    ],
+    "ordinaryMotorThroughTraffic": false
+  },
+  "buildingCandidates": {
+    "CEN-01": {
+      "name": "博雅图书馆",
+      "position": [
+        0,
+        100,
+        -160
+      ],
+      "rotationY": 180,
+      "footprintM": [
+        150,
+        70
+      ],
+      "currentR7Status": "FROZEN_ANCHOR",
+      "solveDecision": "retain",
+      "runtimeFinal": null
+    },
+    "CEN-02": {
+      "name": "行政中心",
+      "position": [
+        -230,
+        101,
+        -590
+      ],
+      "rotationY": 90,
+      "footprintM": [
+        112,
+        42
+      ],
+      "currentR7Status": "R7_RE-SOLVE",
+      "solveDecision": "new_candidate",
+      "runtimeFinal": false
+    },
+    "CEN-03": {
+      "name": "明德会堂",
+      "position": [
+        0,
+        101,
+        -590
+      ],
+      "rotationY": 180,
+      "footprintM": [
+        122,
+        82
+      ],
+      "currentR7Status": "R7_RE-SOLVE",
+      "solveDecision": "new_candidate",
+      "runtimeFinal": false
+    },
+    "CEN-04": {
+      "name": "学生活动中心",
+      "position": [
+        -250,
+        100,
+        -360
+      ],
+      "rotationY": 90,
+      "footprintM": [
+        112,
+        56
+      ],
+      "currentR7Status": "R6_VALID_UNTIL_OVERRIDDEN",
+      "solveDecision": "review_keep",
+      "runtimeFinal": null
+    },
+    "CEN-05": {
+      "name": "校史馆",
+      "position": [
+        -280,
+        100,
+        -180
+      ],
+      "rotationY": 90,
+      "footprintM": [
+        86,
+        46
+      ],
+      "currentR7Status": "R6_VALID_UNTIL_OVERRIDDEN",
+      "solveDecision": "retain",
+      "runtimeFinal": null
+    },
+    "CEN-06": {
+      "name": "格物馆/大学博物馆与科学馆",
+      "position": [
+        280,
+        100,
+        -180
+      ],
+      "rotationY": 270,
+      "footprintM": [
+        102,
+        56
+      ],
+      "currentR7Status": "R6_VALID_UNTIL_OVERRIDDEN",
+      "solveDecision": "retain",
+      "runtimeFinal": null
+    },
+    "CEN-07": {
+      "name": "国际交流中心",
+      "position": [
+        -420,
+        102,
+        -430
+      ],
+      "rotationY": 90,
+      "footprintM": [
+        92,
+        42
+      ],
+      "currentR7Status": "R6_VALID_UNTIL_OVERRIDDEN",
+      "solveDecision": "review_keep",
+      "runtimeFinal": null
+    },
+    "CEN-08": {
+      "name": "创新创业中心",
+      "position": [
+        420,
+        102,
+        -430
+      ],
+      "rotationY": 270,
+      "footprintM": [
+        96,
+        46
+      ],
+      "currentR7Status": "R6_VALID_UNTIL_OVERRIDDEN",
+      "solveDecision": "review_keep",
+      "runtimeFinal": null
+    },
+    "CEN-09": {
+      "name": "公共教学A楼",
+      "position": [
+        -470,
+        102,
+        -280
+      ],
+      "rotationY": 90,
+      "footprintM": [
+        112,
+        38
+      ],
+      "currentR7Status": "R6_VALID_UNTIL_OVERRIDDEN",
+      "solveDecision": "review_keep",
+      "runtimeFinal": null
+    },
+    "CEN-10": {
+      "name": "公共教学B楼",
+      "position": [
+        -470,
+        101,
+        -120
+      ],
+      "rotationY": 90,
+      "footprintM": [
+        112,
+        38
+      ],
+      "currentR7Status": "R6_VALID_UNTIL_OVERRIDDEN",
+      "solveDecision": "review_keep",
+      "runtimeFinal": null
+    },
+    "CEN-11": {
+      "name": "公共教学C楼",
+      "position": [
+        470,
+        102,
+        -280
+      ],
+      "rotationY": 270,
+      "footprintM": [
+        104,
+        38
+      ],
+      "currentR7Status": "R6_VALID_UNTIL_OVERRIDDEN",
+      "solveDecision": "review_keep",
+      "runtimeFinal": null
+    },
+    "CEN-12": {
+      "name": "公共教学D楼",
+      "position": [
+        470,
+        101,
+        -120
+      ],
+      "rotationY": 270,
+      "footprintM": [
+        104,
+        38
+      ],
+      "currentR7Status": "R6_VALID_UNTIL_OVERRIDDEN",
+      "solveDecision": "review_keep",
+      "runtimeFinal": null
+    },
+    "CEN-13": {
+      "name": "公共实验A楼",
+      "position": [
+        -510,
+        101,
+        40
+      ],
+      "rotationY": 90,
+      "footprintM": [
+        102,
+        46
+      ],
+      "currentR7Status": "R6_VALID_UNTIL_OVERRIDDEN",
+      "solveDecision": "retain_r6_patch",
+      "runtimeFinal": null
+    },
+    "CEN-14": {
+      "name": "公共实验B楼",
+      "position": [
+        500,
+        101,
+        40
+      ],
+      "rotationY": 270,
+      "footprintM": [
+        102,
+        46
+      ],
+      "currentR7Status": "R6_VALID_UNTIL_OVERRIDDEN",
+      "solveDecision": "retain",
+      "runtimeFinal": null
+    },
+    "CEN-15": {
+      "name": "大学会议中心",
+      "position": [
+        230,
+        101,
+        -590
+      ],
+      "rotationY": 270,
+      "footprintM": [
+        96,
+        56
+      ],
+      "currentR7Status": "R7_RE-SOLVE",
+      "solveDecision": "new_candidate",
+      "runtimeFinal": false
+    },
+    "CEN-16": {
+      "name": "招生与访客中心",
+      "position": [
+        220,
+        100,
+        -780
+      ],
+      "rotationY": 270,
+      "footprintM": [
+        72,
+        36
+      ],
+      "currentR7Status": "R7_RE-SOLVE",
+      "solveDecision": "new_candidate",
+      "runtimeFinal": false
+    },
+    "CEN-17": {
+      "name": "理工科图书分馆",
+      "position": [
+        -460,
+        100,
+        180
+      ],
+      "rotationY": 90,
+      "footprintM": [
+        96,
+        48
+      ],
+      "currentR7Status": "R6_VALID_UNTIL_OVERRIDDEN",
+      "solveDecision": "retain_interface_pending",
+      "runtimeFinal": null
+    },
+    "CEN-18": {
+      "name": "人文社科图书分馆",
+      "position": [
+        460,
+        100,
+        180
+      ],
+      "rotationY": 270,
+      "footprintM": [
+        92,
+        46
+      ],
+      "currentR7Status": "R6_VALID_UNTIL_OVERRIDDEN",
+      "solveDecision": "retain_interface_pending",
+      "runtimeFinal": null
+    }
+  },
+  "solverControls": [
+    {
+      "solverControlId": "CTRL-WELCOME-FORECOURT",
+      "name": "迎宾广场/南侧礼仪前区参考中心",
+      "center": [
+        0,
+        99,
+        -980
+      ],
+      "controlWidthX": 220,
+      "controlDepthZ": 120,
+      "note": "沿用R7景观母版参考中心；不是新增永久POI ID。"
+    },
+    {
+      "solverControlId": "CTRL-MINGDE-SQUARE",
+      "name": "明德广场/会堂前礼仪空间",
+      "center": [
+        0,
+        100,
+        -700
+      ],
+      "controlWidthX": 280,
+      "controlDepthZ": 100,
+      "note": "会堂南侧礼仪前场；不得被普通机动车穿越。"
+    },
+    {
+      "solverControlId": "CTRL-QIUZHEN-SQUARE",
+      "name": "求真广场/会堂—图书馆轴线开放空间",
+      "center": [
+        0,
+        100,
+        -365
+      ],
+      "controlWidthX": 240,
+      "controlDepthZ": 150,
+      "note": "不新增水体；以铺装、草地、树阵和礼仪景观为主，保持主视廊。"
+    },
+    {
+      "solverControlId": "CTRL-BOYA-LAWN",
+      "name": "博雅草坪",
+      "boundsXZ": [
+        -220,
+        -80,
+        220,
+        90
+      ],
+      "note": "沿用景观R7控制范围；POI永久ID以Current CampusData为准。"
+    }
+  ],
+  "audits": {
+    "campusBoundaryContainment": "PASS",
+    "buildingBuildingCollision": "PASS",
+    "lakeCollision": "PASS",
+    "boyaLawnIntrusionByOtherBuildings": "PASS",
+    "ceremonialClearCorridorIntrusion": "PASS",
+    "minimumCentralBuildingClearanceM": 41.1,
+    "minimumCentralBuildingClearancePair": [
+      "CEN-13",
+      "CEN-17"
+    ],
+    "roadClearance": "PENDING_R7_SOLVE_02",
+    "fireServiceAccess": "PENDING_R7_SOLVE_02_AND_ENTRANCE_DERIVATION",
+    "campusDataSvgUnityConsistency": "PENDING_FINAL_INTEGRATION"
+  }
+}

@@ -1,0 +1,950 @@
+{
+  "type": "FeatureCollection",
+  "name": "JiangchengUniversity_R7_SOLVE_02_RoadSkeleton",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "LOCAL_XZ_METERS"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-BOYA-RING-SW",
+        "parentRoadID": "ROAD-BOYA-RING",
+        "name": "博雅环路·南西段",
+        "width": 26,
+        "roadClass": "primary",
+        "generalMotor": true,
+        "transit": true,
+        "emergency": true,
+        "freezeRole": "SKELETON_LOCK",
+        "solveId": "R7-SOLVE-02",
+        "status": "R7_SOLVED_CANDIDATE"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -600,
+            -1000
+          ],
+          [
+            -60,
+            -1000
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-BOYA-RING-S-CROSS",
+        "parentRoadID": "ROAD-BOYA-RING",
+        "name": "博雅环路·南门礼仪受控穿越段",
+        "width": 8,
+        "roadClass": "transit_emergency_restricted",
+        "generalMotor": false,
+        "transit": true,
+        "emergency": true,
+        "pedestrianPriority": true,
+        "freezeRole": "SKELETON_LOCK",
+        "solveId": "R7-SOLVE-02",
+        "status": "R7_SOLVED_CANDIDATE"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -60,
+            -1000
+          ],
+          [
+            60,
+            -1000
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-BOYA-RING-SE",
+        "parentRoadID": "ROAD-BOYA-RING",
+        "name": "博雅环路·南东段",
+        "width": 26,
+        "roadClass": "primary",
+        "generalMotor": true,
+        "transit": true,
+        "emergency": true,
+        "freezeRole": "SKELETON_LOCK",
+        "solveId": "R7-SOLVE-02",
+        "status": "R7_SOLVED_CANDIDATE"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            60,
+            -1000
+          ],
+          [
+            830,
+            -1000
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-BOYA-RING-E",
+        "parentRoadID": "ROAD-BOYA-RING",
+        "name": "博雅环路·东段",
+        "width": 26,
+        "roadClass": "primary",
+        "generalMotor": true,
+        "transit": true,
+        "emergency": true,
+        "freezeRole": "SKELETON_LOCK",
+        "solveId": "R7-SOLVE-02",
+        "status": "R7_SOLVED_CANDIDATE"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            830,
+            -1000
+          ],
+          [
+            830,
+            690
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-BOYA-RING-N",
+        "parentRoadID": "ROAD-BOYA-RING",
+        "name": "博雅环路·北段",
+        "width": 26,
+        "roadClass": "primary",
+        "generalMotor": true,
+        "transit": true,
+        "emergency": true,
+        "freezeRole": "SKELETON_LOCK",
+        "solveId": "R7-SOLVE-02",
+        "status": "R7_SOLVED_CANDIDATE"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            830,
+            690
+          ],
+          [
+            -750,
+            690
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-BOYA-RING-NW-V",
+        "parentRoadID": "ROAD-BOYA-RING",
+        "name": "博雅环路·西北竖向过渡段",
+        "width": 26,
+        "roadClass": "primary",
+        "generalMotor": true,
+        "transit": true,
+        "emergency": true,
+        "freezeRole": "SKELETON_LOCK",
+        "solveId": "R7-SOLVE-02",
+        "status": "R7_SOLVED_CANDIDATE"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -750,
+            690
+          ],
+          [
+            -750,
+            600
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-BOYA-RING-NW-H",
+        "parentRoadID": "ROAD-BOYA-RING",
+        "name": "博雅环路·西北横向过渡段",
+        "width": 26,
+        "roadClass": "primary",
+        "generalMotor": true,
+        "transit": true,
+        "emergency": true,
+        "freezeRole": "SKELETON_LOCK",
+        "solveId": "R7-SOLVE-02",
+        "status": "R7_SOLVED_CANDIDATE"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -750,
+            600
+          ],
+          [
+            -900,
+            600
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-BOYA-RING-W",
+        "parentRoadID": "ROAD-BOYA-RING",
+        "name": "博雅环路·西段",
+        "width": 26,
+        "roadClass": "primary",
+        "generalMotor": true,
+        "transit": true,
+        "emergency": true,
+        "freezeRole": "SKELETON_LOCK",
+        "solveId": "R7-SOLVE-02",
+        "status": "R7_SOLVED_CANDIDATE"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -900,
+            600
+          ],
+          [
+            -900,
+            -430
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-BOYA-RING-SW-H",
+        "parentRoadID": "ROAD-BOYA-RING",
+        "name": "博雅环路·西南横向过渡段",
+        "width": 26,
+        "roadClass": "primary",
+        "generalMotor": true,
+        "transit": true,
+        "emergency": true,
+        "freezeRole": "SKELETON_LOCK",
+        "solveId": "R7-SOLVE-02",
+        "status": "R7_SOLVED_CANDIDATE"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -900,
+            -430
+          ],
+          [
+            -600,
+            -430
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-BOYA-RING-SW-V",
+        "parentRoadID": "ROAD-BOYA-RING",
+        "name": "博雅环路·西南竖向过渡段",
+        "width": 26,
+        "roadClass": "primary",
+        "generalMotor": true,
+        "transit": true,
+        "emergency": true,
+        "freezeRole": "SKELETON_LOCK",
+        "solveId": "R7-SOLVE-02",
+        "status": "R7_SOLVED_CANDIDATE"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -600,
+            -430
+          ],
+          [
+            -600,
+            -1000
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-JISHI",
+        "name": "济世路",
+        "width": 20,
+        "roadClass": "secondary_medical",
+        "generalMotor": true,
+        "transit": true,
+        "emergency": true,
+        "freezeRole": "SKELETON_LOCK",
+        "solveId": "R7-SOLVE-02",
+        "status": "R7_SOLVED_CANDIDATE"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1350,
+            -770
+          ],
+          [
+            -600,
+            -770
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-ZHICHUANG",
+        "name": "智创路",
+        "width": 18,
+        "roadClass": "secondary_academic",
+        "generalMotor": true,
+        "transit": true,
+        "emergency": true,
+        "freezeRole": "SKELETON_LOCK",
+        "solveId": "R7-SOLVE-02",
+        "status": "R7_SOLVED_CANDIDATE"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1380,
+            -300
+          ],
+          [
+            -900,
+            -300
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-JIANGXIN",
+        "name": "匠心路",
+        "width": 18,
+        "roadClass": "secondary_academic",
+        "generalMotor": true,
+        "transit": true,
+        "emergency": true,
+        "freezeRole": "SKELETON_LOCK",
+        "solveId": "R7-SOLVE-02",
+        "status": "R7_SOLVED_CANDIDATE"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1040,
+            -300
+          ],
+          [
+            -1040,
+            480
+          ],
+          [
+            -900,
+            480
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-GEZHI-W",
+        "name": "格致路·西段",
+        "width": 18,
+        "roadClass": "secondary_academic",
+        "generalMotor": true,
+        "transit": false,
+        "emergency": true,
+        "freezeRole": "SKELETON_LOCK",
+        "solveId": "R7-SOLVE-02",
+        "status": "R7_SOLVED_CANDIDATE"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -900,
+            500
+          ],
+          [
+            -360,
+            500
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-GEZHI-E",
+        "name": "格致路·东段",
+        "width": 18,
+        "roadClass": "secondary_academic",
+        "generalMotor": true,
+        "transit": false,
+        "emergency": true,
+        "freezeRole": "SKELETON_LOCK",
+        "solveId": "R7-SOLVE-02",
+        "status": "R7_SOLVED_CANDIDATE"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            360,
+            440
+          ],
+          [
+            830,
+            440
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-WENHUA",
+        "name": "文华路",
+        "width": 18,
+        "roadClass": "secondary_academic",
+        "generalMotor": true,
+        "transit": true,
+        "emergency": true,
+        "freezeRole": "SKELETON_LOCK",
+        "solveId": "R7-SOLVE-02",
+        "status": "R7_SOLVED_CANDIDATE"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            830,
+            400
+          ],
+          [
+            1040,
+            400
+          ],
+          [
+            1040,
+            -250
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-WEST-GATE",
+        "name": "西门校园接入路",
+        "width": 18,
+        "roadClass": "gate_access",
+        "generalMotor": true,
+        "transit": false,
+        "emergency": true,
+        "freezeRole": "SKELETON_LOCK",
+        "solveId": "R7-SOLVE-02",
+        "status": "R7_SOLVED_CANDIDATE"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1548,
+            -80
+          ],
+          [
+            -1500,
+            -80
+          ],
+          [
+            -1500,
+            40
+          ],
+          [
+            -1320,
+            40
+          ],
+          [
+            -1320,
+            100
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-QINGNIAN-W",
+        "name": "青年路·西苑段",
+        "width": 16,
+        "roadClass": "residential",
+        "generalMotor": true,
+        "transit": true,
+        "emergency": true,
+        "freezeRole": "CORRIDOR_RESERVATION",
+        "solveId": "R7-SOLVE-02",
+        "status": "R7_SOLVED_CANDIDATE"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1320,
+            100
+          ],
+          [
+            -1320,
+            600
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-QINGNIAN-W-FEED",
+        "name": "青年路·西苑东接入",
+        "width": 16,
+        "roadClass": "residential",
+        "generalMotor": true,
+        "transit": true,
+        "emergency": true,
+        "freezeRole": "CORRIDOR_RESERVATION",
+        "solveId": "R7-SOLVE-02",
+        "status": "R7_SOLVED_CANDIDATE"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1320,
+            100
+          ],
+          [
+            -900,
+            100
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-CHUANGXIN",
+        "name": "创新大道·科研园西侧主脊",
+        "width": 18,
+        "roadClass": "research_access",
+        "generalMotor": true,
+        "transit": true,
+        "emergency": true,
+        "freezeRole": "CORRIDOR_RESERVATION",
+        "solveId": "R7-SOLVE-02",
+        "status": "R7_SOLVED_CANDIDATE"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1430,
+            600
+          ],
+          [
+            -1430,
+            820
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-CHUANGXIN-CONN",
+        "name": "创新大道·西苑连接段",
+        "width": 18,
+        "roadClass": "research_access",
+        "generalMotor": true,
+        "transit": true,
+        "emergency": true,
+        "freezeRole": "CORRIDOR_RESERVATION",
+        "solveId": "R7-SOLVE-02",
+        "status": "R7_SOLVED_CANDIDATE"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1430,
+            600
+          ],
+          [
+            -1320,
+            600
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-QINGNIAN-E",
+        "name": "青年路·东苑段",
+        "width": 18,
+        "roadClass": "residential",
+        "generalMotor": true,
+        "transit": true,
+        "emergency": true,
+        "freezeRole": "CORRIDOR_RESERVATION",
+        "solveId": "R7-SOLVE-02",
+        "status": "R7_SOLVED_CANDIDATE"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            1400,
+            -280
+          ],
+          [
+            1400,
+            360
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-QINGNIAN-E-FEED",
+        "name": "青年路·东苑西接入",
+        "width": 18,
+        "roadClass": "residential",
+        "generalMotor": true,
+        "transit": true,
+        "emergency": true,
+        "freezeRole": "CORRIDOR_RESERVATION",
+        "solveId": "R7-SOLVE-02",
+        "status": "R7_SOLVED_CANDIDATE"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            830,
+            360
+          ],
+          [
+            1400,
+            360
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-EAST-GATE",
+        "name": "东门连接路",
+        "width": 14,
+        "roadClass": "gate_access",
+        "generalMotor": true,
+        "transit": false,
+        "emergency": true,
+        "freezeRole": "SKELETON_LOCK",
+        "solveId": "R7-SOLVE-02",
+        "status": "R7_SOLVED_CANDIDATE"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            1400,
+            120
+          ],
+          [
+            1555,
+            120
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-QINGNIAN-S",
+        "name": "青年路·南苑段",
+        "width": 18,
+        "roadClass": "residential",
+        "generalMotor": true,
+        "transit": true,
+        "emergency": true,
+        "freezeRole": "CORRIDOR_RESERVATION",
+        "solveId": "R7-SOLVE-02",
+        "status": "R7_SOLVED_CANDIDATE"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            260,
+            -900
+          ],
+          [
+            800,
+            -900
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-QINGNIAN-S-W",
+        "name": "青年路·南苑西接入",
+        "width": 18,
+        "roadClass": "residential",
+        "generalMotor": true,
+        "transit": true,
+        "emergency": true,
+        "freezeRole": "CORRIDOR_RESERVATION",
+        "solveId": "R7-SOLVE-02",
+        "status": "R7_SOLVED_CANDIDATE"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            300,
+            -1000
+          ],
+          [
+            300,
+            -900
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-QINGNIAN-S-E",
+        "name": "青年路·南苑东接入",
+        "width": 18,
+        "roadClass": "residential",
+        "generalMotor": true,
+        "transit": true,
+        "emergency": true,
+        "freezeRole": "CORRIDOR_RESERVATION",
+        "solveId": "R7-SOLVE-02",
+        "status": "R7_SOLVED_CANDIDATE"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            760,
+            -1000
+          ],
+          [
+            760,
+            -900
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-QINGNIAN-NW",
+        "name": "青年路·北苑西支",
+        "width": 14,
+        "roadClass": "residential",
+        "generalMotor": true,
+        "transit": true,
+        "emergency": true,
+        "freezeRole": "CORRIDOR_RESERVATION",
+        "solveId": "R7-SOLVE-02",
+        "status": "R7_SOLVED_CANDIDATE"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -520,
+            690
+          ],
+          [
+            -520,
+            1040
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-QINGNIAN-NE",
+        "name": "青年路·北苑东支",
+        "width": 14,
+        "roadClass": "residential",
+        "generalMotor": true,
+        "transit": true,
+        "emergency": true,
+        "freezeRole": "CORRIDOR_RESERVATION",
+        "solveId": "R7-SOLVE-02",
+        "status": "R7_SOLVED_CANDIDATE"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            520,
+            690
+          ],
+          [
+            520,
+            1040
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-JIANXING-W",
+        "name": "健行路·赛事西支",
+        "width": 22,
+        "roadClass": "event_access",
+        "generalMotor": false,
+        "eventMotor": true,
+        "transit": true,
+        "emergency": true,
+        "freezeRole": "SKELETON_LOCK",
+        "solveId": "R7-SOLVE-02",
+        "status": "R7_SOLVED_CANDIDATE"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -160,
+            690
+          ],
+          [
+            -160,
+            1080
+          ],
+          [
+            0,
+            1115
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-JIANXING-E",
+        "name": "健行路·赛事东支",
+        "width": 22,
+        "roadClass": "event_access",
+        "generalMotor": false,
+        "eventMotor": true,
+        "transit": true,
+        "emergency": true,
+        "freezeRole": "SKELETON_LOCK",
+        "solveId": "R7-SOLVE-02",
+        "status": "R7_SOLVED_CANDIDATE"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            160,
+            690
+          ],
+          [
+            160,
+            1080
+          ],
+          [
+            0,
+            1115
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-JIANXING-GATE",
+        "name": "健行路·北门受控接口",
+        "width": 14,
+        "roadClass": "event_gate_access",
+        "generalMotor": false,
+        "eventMotor": true,
+        "transit": true,
+        "emergency": true,
+        "freezeRole": "SKELETON_LOCK",
+        "solveId": "R7-SOLVE-02",
+        "status": "R7_SOLVED_CANDIDATE"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            0,
+            1115
+          ],
+          [
+            0,
+            1142
+          ]
+        ]
+      }
+    }
+  ]
+}
