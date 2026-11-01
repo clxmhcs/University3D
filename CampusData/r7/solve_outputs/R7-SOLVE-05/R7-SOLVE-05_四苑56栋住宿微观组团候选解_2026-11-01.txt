@@ -1,0 +1,445 @@
+江城大学——R7-SOLVE-05 四苑56栋住宿微观组团候选解
+
+版本：R7-FOUR-YUAN-RESIDENTIAL-MICROLAYOUT-CANDIDATE-2026-11-01
+状态：SOLVED CANDIDATE / PENDING R7-SOLVE-06 AND FINAL 18 AUDITS
+最高优先级：PATCH-2026-09-14-R7
+Runtime Final：NO
+
+本轮以R7最高优先级补丁为覆盖基线，并同步读取：
+- 建筑参数_R7_完整版；
+- 校园布局_R7_完整版；
+- 景观布局_R7_完整版；
+- 户外体育场地补充_R7_完整版；
+- 地形、地势与水系高程_R7_完整版；
+- R7-SOLVE-02内部道路骨架；
+- R7-SOLVE-03西部工程/信息学院组团；
+- R7-SOLVE-04东部人文社科/经管学院组团；
+- GitHub现有R6宿舍/生活服务坐标仅作legacy参考。
+
+============================================================
+一、本轮冻结不变的数量
+============================================================
+
+学生住宿总量：
+56栋
+
+本科宿舍：
+42栋
+
+研究生公寓：
+10栋
+
+国际学生公寓：
+4栋
+
+分苑：
+西苑 15 = 12本科 + 3研究生
+北苑 13 = 10本科 + 3研究生
+东苑 14 = 10本科 + 3研究生 + 1国际
+南苑 14 = 10本科 + 1研究生 + 3国际
+
+每苑继续：
+1座主食堂 + 1个基础校园超市。
+
+宿舍基础母版：
+仍为8套。
+本轮只求解Placement，不擅自重定义8套母版的建筑语言。
+
+============================================================
+二、R7微观组团结果
+============================================================
+
+共形成：
+15个宿舍生活小组团。
+
+各组团均为3～5栋：
+{
+  "G-EY-01-SOUTH-WEST": 4,
+  "G-EY-02-SOUTH-EAST": 3,
+  "G-EY-03-NORTH-WEST": 3,
+  "G-EY-04-NORTH-EAST": 4,
+  "G-N-01-WEST-SOUTH": 3,
+  "G-N-02-WEST-NORTH": 3,
+  "G-N-03-EAST-SOUTH": 3,
+  "G-N-04-EAST-NORTH": 4,
+  "G-S-01-WEST": 5,
+  "G-S-02-EAST": 5,
+  "G-S-03-NORTH": 4,
+  "G-W-01-SOUTH-WEST": 3,
+  "G-W-02-EAST-CENTRAL": 4,
+  "G-W-03-EAST-NORTH": 4,
+  "G-W-04-NORTH-WEST": 4
+}
+
+不再使用旧连续平行两排/三排宿舍表格。
+
+============================================================
+三、西苑
+============================================================
+
+宏观范围：
+X=-1510～-1210
+Z=180～760
+
+宿舍：
+15栋
+4个小组团。
+
+西苑绿心：
+约 20800㎡
+≈ 2.08ha
+
+西苑景观池：
+继续使用正式中心(-1380,475)与约3500㎡面积；
+本阶段只用等面积圆做硬碰撞预审计，不创建替代岸线。
+
+住宿候选：
+RES-W-U01｜(-1430,106,300) rot0｜undergraduate｜G-W-01-SOUTH-WEST
+RES-W-U02｜(-1290,106,300) rot90｜undergraduate｜G-W-02-EAST-CENTRAL
+RES-W-U03｜(-1250,107,300) rot270｜undergraduate｜G-W-02-EAST-CENTRAL
+RES-W-U04｜(-1490,107,325) rot90｜undergraduate｜G-W-01-SOUTH-WEST
+RES-W-U05｜(-1390,107,350) rot180｜undergraduate｜G-W-01-SOUTH-WEST
+RES-W-U06｜(-1270,108,400) rot90｜undergraduate｜G-W-02-EAST-CENTRAL
+RES-W-U07｜(-1230,108,500) rot270｜undergraduate｜G-W-02-EAST-CENTRAL
+RES-W-U08｜(-1290,108,575) rot90｜undergraduate｜G-W-03-EAST-NORTH
+RES-W-U09｜(-1470,108,600) rot90｜undergraduate｜G-W-04-NORTH-WEST
+RES-W-U10｜(-1245,109,625) rot270｜undergraduate｜G-W-03-EAST-NORTH
+RES-W-U11｜(-1310,109,650) rot180｜undergraduate｜G-W-03-EAST-NORTH
+RES-W-U12｜(-1470,109,700) rot90｜undergraduate｜G-W-04-NORTH-WEST
+RES-W-G01｜(-1370,110,700) rot180｜graduate｜G-W-04-NORTH-WEST
+RES-W-G02｜(-1270,110,700) rot180｜graduate｜G-W-03-EAST-NORTH
+RES-W-G03｜(-1330,110,750) rot180｜graduate｜G-W-04-NORTH-WEST
+
+生活服务：
+LIFE-W-01｜西苑食堂｜(-1445,106,225) rot0｜112×66m
+LIFE-W-02｜江大校园超市·西苑店｜(-1358,106,235) rot90｜62×36m
+
+体育：
+LIFE-W-BB-01｜西苑篮球A｜数量2｜(-1460,108,150) rot0｜MOVED_R7_SOLVE_05
+LIFE-W-BB-02｜西苑篮球B｜数量2｜(-1370,109,150) rot0｜MOVED_R7_SOLVE_05
+LIFE-W-TT-01｜西苑乒乓球｜数量20｜(-1270,109,150) rot0｜MOVED_R7_SOLVE_05
+LIFE-W-VB-01｜西苑排球｜数量2｜(-1450,107,110) rot0｜MOVED_R7_SOLVE_05
+LIFE-W-BD-01｜西苑羽毛球｜数量2｜(-1375,109,110) rot0｜MOVED_R7_SOLVE_05
+
+本轮将西苑5个生活体育节点移到南侧生活体育带，
+释放青年路两侧宿舍微观组团空间；
+篮球/乒乓/排球/羽毛球数量全部不变。
+
+============================================================
+四、北苑
+============================================================
+
+北苑继续采用：
+北体育中心东西两翼。
+
+宿舍：
+13栋
+西翼6栋
+东翼7栋。
+
+北门—综合体育馆—第一400m田径场中央赛事/礼仪轴：
+保持无宿舍、无食堂、无超市侵入。
+
+北苑绿心：
+采用双翼复合绿心。
+总面积约 22400㎡
+≈ 2.24ha。
+
+北苑不新增“北苑景观池”永久水体ID。
+
+住宿候选：
+RES-N-U01｜(-930,113,900) rot0｜undergraduate｜G-N-01-WEST-SOUTH
+RES-N-U02｜(-830,113,900) rot0｜undergraduate｜G-N-01-WEST-SOUTH
+RES-N-U03｜(-950,114,1010) rot90｜undergraduate｜G-N-01-WEST-SOUTH
+RES-N-U04｜(-700,114,920) rot90｜undergraduate｜G-N-02-WEST-NORTH
+RES-N-U05｜(-620,115,940) rot270｜undergraduate｜G-N-02-WEST-NORTH
+RES-N-U06｜(-700,114,980) rot180｜undergraduate｜G-N-02-WEST-NORTH
+RES-N-U07｜(780,114,900) rot0｜undergraduate｜G-N-03-EAST-SOUTH
+RES-N-U08｜(900,114,900) rot0｜undergraduate｜G-N-03-EAST-SOUTH
+RES-N-U09｜(930,115,1010) rot270｜undergraduate｜G-N-03-EAST-SOUTH
+RES-N-U10｜(620,115,920) rot90｜undergraduate｜G-N-04-EAST-NORTH
+RES-N-G01｜(680,114,940) rot90｜graduate｜G-N-04-EAST-NORTH
+RES-N-G02｜(960,115,960) rot270｜graduate｜G-N-04-EAST-NORTH
+RES-N-G03｜(860,115,1060) rot180｜graduate｜G-N-04-EAST-NORTH
+
+生活服务：
+LIFE-N-01｜北苑食堂｜(-665,113,1030) rot180｜108×64m
+LIFE-N-02｜江大校园超市·北苑店｜(650,112,1030) rot180｜60×36m
+
+体育：
+LIFE-N-BB-W｜北苑篮球西｜数量2｜(-660,116,840) rot90｜MOVED_R7_SOLVE_05
+LIFE-N-BB-E｜北苑篮球东｜数量2｜(650,116,840) rot90｜MOVED_R7_SOLVE_05
+LIFE-N-TT-01｜北苑乒乓球｜数量16｜(750,117,840) rot90｜MOVED_R7_SOLVE_05
+LIFE-N-VB-01｜北苑排球｜数量2｜(835,115,840) rot90｜MOVED_R7_SOLVE_05
+LIFE-N-BD-01｜北苑羽毛球｜数量2｜(925,115,840) rot90｜MOVED_R7_SOLVE_05
+
+5个北苑生活体育节点移至Z≈840生活体育带，
+与北体育中心专业/大型赛事设施保持功能分工。
+
+============================================================
+五、东苑
+============================================================
+
+宏观范围：
+X=1120～1480
+Z=-180～340
+
+宿舍：
+14栋
+4个小组团。
+
+ROAD-QINGNIAN-E：
+保持清晰，不被宿舍/生活服务建筑侵入。
+
+东苑绿心：
+约 22500㎡
+≈ 2.25ha
+
+东苑景观池：
+继续使用正式中心(1320,120)与约3000㎡面积。
+
+住宿候选：
+RES-E-U01｜(1360,105,-50) rot270｜undergraduate｜G-EY-02-SOUTH-EAST
+RES-E-U02｜(1180,105,-30) rot90｜undergraduate｜G-EY-01-SOUTH-WEST
+RES-E-U03｜(1300,106,-30) rot0｜undergraduate｜G-EY-02-SOUTH-EAST
+RES-E-U04｜(1220,104,-10) rot270｜undergraduate｜G-EY-01-SOUTH-WEST
+RES-E-U05｜(1320,104,10) rot180｜undergraduate｜G-EY-02-SOUTH-EAST
+RES-E-U06｜(1180,105,70) rot90｜undergraduate｜G-EY-01-SOUTH-WEST
+RES-E-U07｜(1140,104,110) rot90｜undergraduate｜G-EY-01-SOUTH-WEST
+RES-E-U08｜(1200,104,170) rot90｜undergraduate｜G-EY-03-NORTH-WEST
+RES-E-U09｜(1340,104,230) rot0｜undergraduate｜G-EY-04-NORTH-EAST
+RES-E-U10｜(1240,103,250) rot270｜undergraduate｜G-EY-03-NORTH-WEST
+RES-E-G01｜(1280,103,250) rot90｜graduate｜G-EY-04-NORTH-EAST
+RES-E-G02｜(1340,103,270) rot180｜graduate｜G-EY-04-NORTH-EAST
+RES-E-G03｜(1320,103,310) rot180｜graduate｜G-EY-04-NORTH-EAST
+RES-E-I01｜(1220,103,330) rot180｜international｜G-EY-03-NORTH-WEST
+
+生活服务：
+LIFE-E-01｜东苑食堂｜(1240,103,-115) rot0｜112×66m
+LIFE-E-02｜江大校园超市·东苑店｜(1345,103,-120) rot0｜62×36m
+
+体育：
+LIFE-E-BB-01｜东苑篮球｜数量4｜(1150,104,-30) rot90｜MOVED_R7_SOLVE_05
+LIFE-E-TT-01｜东苑乒乓球｜数量20｜(1150,104,190) rot90｜MOVED_R7_SOLVE_05
+LIFE-E-VB-01｜东苑排球｜数量2｜(1190,104,250) rot90｜MOVED_R7_SOLVE_05
+LIFE-E-BD-01｜东苑羽毛球｜数量2｜(1150,103,290) rot90｜MOVED_R7_SOLVE_05
+LIFE-E-FB-01｜东苑五人制足球｜数量1｜(1450,103,-350) rot0｜RETAIN_R6_VALID_UNTIL_OVERRIDDEN
+
+东苑篮球、乒乓、排球、羽毛球4个节点重新组合到西侧生活体育带；
+LIFE-E-FB-01五人制足球当前R6位置未与本轮布局冲突，因此继续保留R6_VALID_UNTIL_OVERRIDDEN，不伪装成新R7冻结坐标。
+
+============================================================
+六、南苑
+============================================================
+
+宏观范围：
+X=280～850
+Z=-980～-700
+
+宿舍：
+14栋
+3个小组团。
+
+ROAD-QINGNIAN-S及两条接入：
+保持清晰。
+
+南苑绿心：
+约 24000㎡
+≈ 2.40ha
+
+南苑景观池：
+正式中心(600,-800)
+约4000㎡。
+
+住宿候选：
+RES-S-U01｜(370,100,-960) rot0｜undergraduate｜G-S-01-WEST
+RES-S-U02｜(590,100,-960) rot0｜undergraduate｜G-S-02-EAST
+RES-S-U03｜(470,100,-940) rot0｜undergraduate｜G-S-01-WEST
+RES-S-U04｜(690,100,-940) rot0｜undergraduate｜G-S-02-EAST
+RES-S-U05｜(750,101,-860) rot180｜undergraduate｜G-S-02-EAST
+RES-S-U06｜(350,101,-840) rot180｜undergraduate｜G-S-01-WEST
+RES-S-U07｜(430,101,-840) rot270｜undergraduate｜G-S-01-WEST
+RES-S-U08｜(470,101,-840) rot90｜undergraduate｜G-S-03-NORTH
+RES-S-U09｜(790,102,-800) rot270｜undergraduate｜G-S-02-EAST
+RES-S-U10｜(310,102,-780) rot90｜undergraduate｜G-S-01-WEST
+RES-S-G01｜(730,102,-780) rot270｜graduate｜G-S-02-EAST
+RES-S-I01｜(530,102,-720) rot180｜international｜G-S-03-NORTH
+RES-S-I02｜(630,103,-720) rot180｜international｜G-S-03-NORTH
+RES-S-I03｜(750,103,-720) rot180｜international｜G-S-03-NORTH
+
+生活服务：
+LIFE-S-01｜南苑食堂｜(370,102,-760) rot90｜112×66m
+LIFE-S-02｜江大校园超市·南苑店｜(450,102,-735) rot0｜62×36m
+
+体育：
+LIFE-S-BB-01｜南苑篮球｜数量4｜(250,100,-620) rot0｜RETAIN_R6_VALID_UNTIL_OVERRIDDEN
+LIFE-S-TT-01｜南苑乒乓球｜数量20｜(380,100,-620) rot90｜RETAIN_R6_VALID_UNTIL_OVERRIDDEN
+LIFE-S-VB-01｜南苑排球｜数量2｜(250,100,-670) rot0｜RETAIN_R6_VALID_UNTIL_OVERRIDDEN
+LIFE-S-BD-01｜南苑羽毛球｜数量2｜(300,100,-670) rot90｜RETAIN_R6_VALID_UNTIL_OVERRIDDEN
+LIFE-S-FB-01｜南苑五人制足球｜数量1｜(340,102,-620) rot90｜RETAIN_R6_VALID_UNTIL_OVERRIDDEN
+
+南苑5个生活体育节点当前R6位置均未与本轮宿舍、道路、绿心发生硬冲突，
+因此暂不为“重排而重排”，继续保留R6_VALID_UNTIL_OVERRIDDEN。
+
+============================================================
+七、四苑生活体育数量
+============================================================
+
+本轮涉及的四苑生活体育合计：
+
+篮球标准全场等效：
+16片
+
+户外乒乓球：
+76台
+
+排球：
+8片
+
+羽毛球硬地：
+8片
+
+五人制足球：
+2片
+
+其中：
+移动节点 14个
+保留R6节点 6个
+
+数量未减少。
+
+这部分继续计入全校R7冻结体育总量，
+不能另行重复计数。
+
+============================================================
+八、自动几何审计
+============================================================
+
+Hard Issues：
+0
+
+Campus Boundary：
+PASS
+
+四苑宏观范围：
+PASS
+
+R7-SOLVE-02道路Right-of-Way：
+PASS
+
+宿舍/服务建筑互撞：
+PASS
+
+建筑—四苑体育：
+PASS
+
+四苑体育节点互撞：
+PASS
+
+生活绿心侵入：
+PASS
+
+景观池代理碰撞：
+PASS
+
+与R7-SOLVE-03、R7-SOLVE-04及邻接强锚点：
+PASS
+
+56栋住宿数量：
+PASS
+
+42/10/4类型：
+PASS
+
+15/13/14/14分苑：
+PASS
+
+3～5栋小组团：
+PASS
+
+4食堂+4基础超市：
+PASS
+
+四苑绿心2～4ha：
+PASS
+
+北体育赛事轴保护：
+PASS
+
+体育数量：
+PASS
+
+最小宿舍/服务建筑净距：
+≈9.0m
+对象：RES-N-U06 ↔ LIFE-N-01
+
+最小道路走廊净距：
+≈10.0m
+对象：RES-E-U09 ↔ ROAD-QINGNIAN-E
+
+最小建筑—体育净距：
+≈9.0m
+对象：RES-E-U02 ↔ LIFE-E-BB-01
+
+最小体育节点净距：
+≈6.0m
+
+最小生活绿心净距：
+≈9.0m
+
+最小景观池代理净距：
+≈34.3m
+
+与邻接Current/Frozen对象最小净距：
+≈11.0m
+对象：RES-W-U07 ↔ R7-SOLVE-03:AERO-03
+
+============================================================
+九、必须保留的候选状态
+============================================================
+
+本轮不是FINAL_RUNTIME_FROZEN。
+
+原因：
+
+1. 宿舍/食堂/超市Y值目前保留旧工程高程作为候选；
+2. 正式完成地坪仍需Terrain平台、无障碍、排水审计；
+3. 西苑/东苑/南苑景观池目前只使用正式中心+面积代理审计；
+4. 普通Building Entrance仍需DERIVED_AFTER_LAYOUT；
+5. 消防/后勤短支路仍需DERIVED_AFTER_LAYOUT；
+6. BikeParking、快递、垃圾收运等生活设施仍需派生；
+7. R7-SOLVE-06体育附属组团尚未完成；
+8. 最终18项全局审计尚未封板。
+
+当前状态：
+
+R7_SOLVED_CANDIDATE_PENDING_FULL_FREEZE
+
+============================================================
+十、下一步
+============================================================
+
+进入：
+R7-SOLVE-06
+
+重点：
+北体育中心与东南第二体育中心附属体育设施微观复核/重排。
+
+固定：
+ATH-01综合体育馆
+ATH-05第一400m田径场
+ATH-11第二400m田径场
+
+继续校核：
+ATH-21～27
+ATH-14～19
+ATH-03/04/06等附属设施
+四苑与大型体育中心边界
+道路
+赛事交通
+观众集散
+消防
+水体
+校园边界。
+
+——R7-SOLVE-05结束——

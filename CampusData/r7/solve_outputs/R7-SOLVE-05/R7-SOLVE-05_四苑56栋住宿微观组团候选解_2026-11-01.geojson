@@ -1,0 +1,4435 @@
+{
+  "type": "FeatureCollection",
+  "name": "JiangchengUniversity_R7_SOLVE_05_FourYuanResidential",
+  "coordinateSystem": "LOCAL_XZ_METERS",
+  "solveId": "R7-SOLVE-05",
+  "status": "R7_SOLVED_CANDIDATE_PENDING_FULL_FREEZE",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "RES-W-U01",
+        "name": "RES-W-U01",
+        "category": "residence",
+        "yuan": "西苑",
+        "clusterID": "G-W-01-SOUTH-WEST",
+        "residenceType": "undergraduate",
+        "x": -1430,
+        "y": 106,
+        "z": 300,
+        "rotationY": 0,
+        "auditLength": 82,
+        "auditWidth": 18,
+        "sourceLengthRule": "78-82",
+        "sourceWidthRule": 18,
+        "floorsSource": "10-11",
+        "yStatus": "PROVISIONAL_RETAIN_LEGACY_Y_PENDING_TERRAIN_PLATFORM_AUDIT",
+        "statusBefore": "R7_RE-SOLVE",
+        "statusAfter": "R7_SOLVED_CANDIDATE_PENDING_FULL_FREEZE",
+        "solveId": "R7-SOLVE-05",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -1389.0,
+              291.0
+            ],
+            [
+              -1389.0,
+              309.0
+            ],
+            [
+              -1471.0,
+              309.0
+            ],
+            [
+              -1471.0,
+              291.0
+            ],
+            [
+              -1389.0,
+              291.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "RES-W-U02",
+        "name": "RES-W-U02",
+        "category": "residence",
+        "yuan": "西苑",
+        "clusterID": "G-W-02-EAST-CENTRAL",
+        "residenceType": "undergraduate",
+        "x": -1290,
+        "y": 106,
+        "z": 300,
+        "rotationY": 90,
+        "auditLength": 82,
+        "auditWidth": 18,
+        "sourceLengthRule": "78-82",
+        "sourceWidthRule": 18,
+        "floorsSource": "10-11",
+        "yStatus": "PROVISIONAL_RETAIN_LEGACY_Y_PENDING_TERRAIN_PLATFORM_AUDIT",
+        "statusBefore": "R7_RE-SOLVE",
+        "statusAfter": "R7_SOLVED_CANDIDATE_PENDING_FULL_FREEZE",
+        "solveId": "R7-SOLVE-05",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -1281.0,
+              341.0
+            ],
+            [
+              -1299.0,
+              341.0
+            ],
+            [
+              -1299.0,
+              259.0
+            ],
+            [
+              -1281.0,
+              259.0
+            ],
+            [
+              -1281.0,
+              341.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "RES-W-U03",
+        "name": "RES-W-U03",
+        "category": "residence",
+        "yuan": "西苑",
+        "clusterID": "G-W-02-EAST-CENTRAL",
+        "residenceType": "undergraduate",
+        "x": -1250,
+        "y": 107,
+        "z": 300,
+        "rotationY": 270,
+        "auditLength": 82,
+        "auditWidth": 18,
+        "sourceLengthRule": "78-82",
+        "sourceWidthRule": 18,
+        "floorsSource": "10-11",
+        "yStatus": "PROVISIONAL_RETAIN_LEGACY_Y_PENDING_TERRAIN_PLATFORM_AUDIT",
+        "statusBefore": "R7_RE-SOLVE",
+        "statusAfter": "R7_SOLVED_CANDIDATE_PENDING_FULL_FREEZE",
+        "solveId": "R7-SOLVE-05",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -1259.0,
+              259.0
+            ],
+            [
+              -1241.0,
+              259.0
+            ],
+            [
+              -1241.0,
+              341.0
+            ],
+            [
+              -1259.0,
+              341.0
+            ],
+            [
+              -1259.0,
+              259.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "RES-W-U04",
+        "name": "RES-W-U04",
+        "category": "residence",
+        "yuan": "西苑",
+        "clusterID": "G-W-01-SOUTH-WEST",
+        "residenceType": "undergraduate",
+        "x": -1490,
+        "y": 107,
+        "z": 325,
+        "rotationY": 90,
+        "auditLength": 82,
+        "auditWidth": 18,
+        "sourceLengthRule": "78-82",
+        "sourceWidthRule": 18,
+        "floorsSource": "10-11",
+        "yStatus": "PROVISIONAL_RETAIN_LEGACY_Y_PENDING_TERRAIN_PLATFORM_AUDIT",
+        "statusBefore": "R7_RE-SOLVE",
+        "statusAfter": "R7_SOLVED_CANDIDATE_PENDING_FULL_FREEZE",
+        "solveId": "R7-SOLVE-05",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -1481.0,
+              366.0
+            ],
+            [
+              -1499.0,
+              366.0
+            ],
+            [
+              -1499.0,
+              284.0
+            ],
+            [
+              -1481.0,
+              284.0
+            ],
+            [
+              -1481.0,
+              366.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "RES-W-U05",
+        "name": "RES-W-U05",
+        "category": "residence",
+        "yuan": "西苑",
+        "clusterID": "G-W-01-SOUTH-WEST",
+        "residenceType": "undergraduate",
+        "x": -1390,
+        "y": 107,
+        "z": 350,
+        "rotationY": 180,
+        "auditLength": 82,
+        "auditWidth": 18,
+        "sourceLengthRule": "78-82",
+        "sourceWidthRule": 18,
+        "floorsSource": "10-11",
+        "yStatus": "PROVISIONAL_RETAIN_LEGACY_Y_PENDING_TERRAIN_PLATFORM_AUDIT",
+        "statusBefore": "R7_RE-SOLVE",
+        "statusAfter": "R7_SOLVED_CANDIDATE_PENDING_FULL_FREEZE",
+        "solveId": "R7-SOLVE-05",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -1431.0,
+              359.0
+            ],
+            [
+              -1431.0,
+              341.0
+            ],
+            [
+              -1349.0,
+              341.0
+            ],
+            [
+              -1349.0,
+              359.0
+            ],
+            [
+              -1431.0,
+              359.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "RES-W-U06",
+        "name": "RES-W-U06",
+        "category": "residence",
+        "yuan": "西苑",
+        "clusterID": "G-W-02-EAST-CENTRAL",
+        "residenceType": "undergraduate",
+        "x": -1270,
+        "y": 108,
+        "z": 400,
+        "rotationY": 90,
+        "auditLength": 82,
+        "auditWidth": 18,
+        "sourceLengthRule": "78-82",
+        "sourceWidthRule": 18,
+        "floorsSource": "10-11",
+        "yStatus": "PROVISIONAL_RETAIN_LEGACY_Y_PENDING_TERRAIN_PLATFORM_AUDIT",
+        "statusBefore": "R7_RE-SOLVE",
+        "statusAfter": "R7_SOLVED_CANDIDATE_PENDING_FULL_FREEZE",
+        "solveId": "R7-SOLVE-05",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -1261.0,
+              441.0
+            ],
+            [
+              -1279.0,
+              441.0
+            ],
+            [
+              -1279.0,
+              359.0
+            ],
+            [
+              -1261.0,
+              359.0
+            ],
+            [
+              -1261.0,
+              441.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "RES-W-U07",
+        "name": "RES-W-U07",
+        "category": "residence",
+        "yuan": "西苑",
+        "clusterID": "G-W-02-EAST-CENTRAL",
+        "residenceType": "undergraduate",
+        "x": -1230,
+        "y": 108,
+        "z": 500,
+        "rotationY": 270,
+        "auditLength": 82,
+        "auditWidth": 18,
+        "sourceLengthRule": "78-82",
+        "sourceWidthRule": 18,
+        "floorsSource": "10-11",
+        "yStatus": "PROVISIONAL_RETAIN_LEGACY_Y_PENDING_TERRAIN_PLATFORM_AUDIT",
+        "statusBefore": "R7_RE-SOLVE",
+        "statusAfter": "R7_SOLVED_CANDIDATE_PENDING_FULL_FREEZE",
+        "solveId": "R7-SOLVE-05",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -1239.0,
+              459.0
+            ],
+            [
+              -1221.0,
+              459.0
+            ],
+            [
+              -1221.0,
+              541.0
+            ],
+            [
+              -1239.0,
+              541.0
+            ],
+            [
+              -1239.0,
+              459.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "RES-W-U08",
+        "name": "RES-W-U08",
+        "category": "residence",
+        "yuan": "西苑",
+        "clusterID": "G-W-03-EAST-NORTH",
+        "residenceType": "undergraduate",
+        "x": -1290,
+        "y": 108,
+        "z": 575,
+        "rotationY": 90,
+        "auditLength": 82,
+        "auditWidth": 18,
+        "sourceLengthRule": "78-82",
+        "sourceWidthRule": 18,
+        "floorsSource": "10-11",
+        "yStatus": "PROVISIONAL_RETAIN_LEGACY_Y_PENDING_TERRAIN_PLATFORM_AUDIT",
+        "statusBefore": "R7_RE-SOLVE",
+        "statusAfter": "R7_SOLVED_CANDIDATE_PENDING_FULL_FREEZE",
+        "solveId": "R7-SOLVE-05",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -1281.0,
+              616.0
+            ],
+            [
+              -1299.0,
+              616.0
+            ],
+            [
+              -1299.0,
+              534.0
+            ],
+            [
+              -1281.0,
+              534.0
+            ],
+            [
+              -1281.0,
+              616.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "RES-W-U09",
+        "name": "RES-W-U09",
+        "category": "residence",
+        "yuan": "西苑",
+        "clusterID": "G-W-04-NORTH-WEST",
+        "residenceType": "undergraduate",
+        "x": -1470,
+        "y": 108,
+        "z": 600,
+        "rotationY": 90,
+        "auditLength": 82,
+        "auditWidth": 18,
+        "sourceLengthRule": "78-82",
+        "sourceWidthRule": 18,
+        "floorsSource": "10-11",
+        "yStatus": "PROVISIONAL_RETAIN_LEGACY_Y_PENDING_TERRAIN_PLATFORM_AUDIT",
+        "statusBefore": "R7_RE-SOLVE",
+        "statusAfter": "R7_SOLVED_CANDIDATE_PENDING_FULL_FREEZE",
+        "solveId": "R7-SOLVE-05",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -1461.0,
+              641.0
+            ],
+            [
+              -1479.0,
+              641.0
+            ],
+            [
+              -1479.0,
+              559.0
+            ],
+            [
+              -1461.0,
+              559.0
+            ],
+            [
+              -1461.0,
+              641.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "RES-W-U10",
+        "name": "RES-W-U10",
+        "category": "residence",
+        "yuan": "西苑",
+        "clusterID": "G-W-03-EAST-NORTH",
+        "residenceType": "undergraduate",
+        "x": -1245,
+        "y": 109,
+        "z": 625,
+        "rotationY": 270,
+        "auditLength": 82,
+        "auditWidth": 18,
+        "sourceLengthRule": "78-82",
+        "sourceWidthRule": 18,
+        "floorsSource": "10-11",
+        "yStatus": "PROVISIONAL_RETAIN_LEGACY_Y_PENDING_TERRAIN_PLATFORM_AUDIT",
+        "statusBefore": "R7_RE-SOLVE",
+        "statusAfter": "R7_SOLVED_CANDIDATE_PENDING_FULL_FREEZE",
+        "solveId": "R7-SOLVE-05",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -1254.0,
+              584.0
+            ],
+            [
+              -1236.0,
+              584.0
+            ],
+            [
+              -1236.0,
+              666.0
+            ],
+            [
+              -1254.0,
+              666.0
+            ],
+            [
+              -1254.0,
+              584.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "RES-W-U11",
+        "name": "RES-W-U11",
+        "category": "residence",
+        "yuan": "西苑",
+        "clusterID": "G-W-03-EAST-NORTH",
+        "residenceType": "undergraduate",
+        "x": -1310,
+        "y": 109,
+        "z": 650,
+        "rotationY": 180,
+        "auditLength": 82,
+        "auditWidth": 18,
+        "sourceLengthRule": "78-82",
+        "sourceWidthRule": 18,
+        "floorsSource": "10-11",
+        "yStatus": "PROVISIONAL_RETAIN_LEGACY_Y_PENDING_TERRAIN_PLATFORM_AUDIT",
+        "statusBefore": "R7_RE-SOLVE",
+        "statusAfter": "R7_SOLVED_CANDIDATE_PENDING_FULL_FREEZE",
+        "solveId": "R7-SOLVE-05",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -1351.0,
+              659.0
+            ],
+            [
+              -1351.0,
+              641.0
+            ],
+            [
+              -1269.0,
+              641.0
+            ],
+            [
+              -1269.0,
+              659.0
+            ],
+            [
+              -1351.0,
+              659.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "RES-W-U12",
+        "name": "RES-W-U12",
+        "category": "residence",
+        "yuan": "西苑",
+        "clusterID": "G-W-04-NORTH-WEST",
+        "residenceType": "undergraduate",
+        "x": -1470,
+        "y": 109,
+        "z": 700,
+        "rotationY": 90,
+        "auditLength": 82,
+        "auditWidth": 18,
+        "sourceLengthRule": "78-82",
+        "sourceWidthRule": 18,
+        "floorsSource": "10-11",
+        "yStatus": "PROVISIONAL_RETAIN_LEGACY_Y_PENDING_TERRAIN_PLATFORM_AUDIT",
+        "statusBefore": "R7_RE-SOLVE",
+        "statusAfter": "R7_SOLVED_CANDIDATE_PENDING_FULL_FREEZE",
+        "solveId": "R7-SOLVE-05",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -1461.0,
+              741.0
+            ],
+            [
+              -1479.0,
+              741.0
+            ],
+            [
+              -1479.0,
+              659.0
+            ],
+            [
+              -1461.0,
+              659.0
+            ],
+            [
+              -1461.0,
+              741.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "RES-W-G01",
+        "name": "RES-W-G01",
+        "category": "residence",
+        "yuan": "西苑",
+        "clusterID": "G-W-04-NORTH-WEST",
+        "residenceType": "graduate",
+        "x": -1370,
+        "y": 110,
+        "z": 700,
+        "rotationY": 180,
+        "auditLength": 72,
+        "auditWidth": 18,
+        "sourceLengthRule": "72",
+        "sourceWidthRule": 18,
+        "floorsSource": "10",
+        "yStatus": "PROVISIONAL_RETAIN_LEGACY_Y_PENDING_TERRAIN_PLATFORM_AUDIT",
+        "statusBefore": "R7_RE-SOLVE",
+        "statusAfter": "R7_SOLVED_CANDIDATE_PENDING_FULL_FREEZE",
+        "solveId": "R7-SOLVE-05",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -1406.0,
+              709.0
+            ],
+            [
+              -1406.0,
+              691.0
+            ],
+            [
+              -1334.0,
+              691.0
+            ],
+            [
+              -1334.0,
+              709.0
+            ],
+            [
+              -1406.0,
+              709.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "RES-W-G02",
+        "name": "RES-W-G02",
+        "category": "residence",
+        "yuan": "西苑",
+        "clusterID": "G-W-03-EAST-NORTH",
+        "residenceType": "graduate",
+        "x": -1270,
+        "y": 110,
+        "z": 700,
+        "rotationY": 180,
+        "auditLength": 72,
+        "auditWidth": 18,
+        "sourceLengthRule": "72",
+        "sourceWidthRule": 18,
+        "floorsSource": "10",
+        "yStatus": "PROVISIONAL_RETAIN_LEGACY_Y_PENDING_TERRAIN_PLATFORM_AUDIT",
+        "statusBefore": "R7_RE-SOLVE",
+        "statusAfter": "R7_SOLVED_CANDIDATE_PENDING_FULL_FREEZE",
+        "solveId": "R7-SOLVE-05",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -1306.0,
+              709.0
+            ],
+            [
+              -1306.0,
+              691.0
+            ],
+            [
+              -1234.0,
+              691.0
+            ],
+            [
+              -1234.0,
+              709.0
+            ],
+            [
+              -1306.0,
+              709.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "RES-W-G03",
+        "name": "RES-W-G03",
+        "category": "residence",
+        "yuan": "西苑",
+        "clusterID": "G-W-04-NORTH-WEST",
+        "residenceType": "graduate",
+        "x": -1330,
+        "y": 110,
+        "z": 750,
+        "rotationY": 180,
+        "auditLength": 72,
+        "auditWidth": 18,
+        "sourceLengthRule": "72",
+        "sourceWidthRule": 18,
+        "floorsSource": "10",
+        "yStatus": "PROVISIONAL_RETAIN_LEGACY_Y_PENDING_TERRAIN_PLATFORM_AUDIT",
+        "statusBefore": "R7_RE-SOLVE",
+        "statusAfter": "R7_SOLVED_CANDIDATE_PENDING_FULL_FREEZE",
+        "solveId": "R7-SOLVE-05",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -1366.0,
+              759.0
+            ],
+            [
+              -1366.0,
+              741.0
+            ],
+            [
+              -1294.0,
+              741.0
+            ],
+            [
+              -1294.0,
+              759.0
+            ],
+            [
+              -1366.0,
+              759.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "RES-N-U01",
+        "name": "RES-N-U01",
+        "category": "residence",
+        "yuan": "北苑",
+        "clusterID": "G-N-01-WEST-SOUTH",
+        "residenceType": "undergraduate",
+        "x": -930,
+        "y": 113,
+        "z": 900,
+        "rotationY": 0,
+        "auditLength": 82,
+        "auditWidth": 18,
+        "sourceLengthRule": "78-82",
+        "sourceWidthRule": 18,
+        "floorsSource": "10-11",
+        "yStatus": "PROVISIONAL_RETAIN_LEGACY_Y_PENDING_TERRAIN_PLATFORM_AUDIT",
+        "statusBefore": "R7_RE-SOLVE",
+        "statusAfter": "R7_SOLVED_CANDIDATE_PENDING_FULL_FREEZE",
+        "solveId": "R7-SOLVE-05",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -889.0,
+              891.0
+            ],
+            [
+              -889.0,
+              909.0
+            ],
+            [
+              -971.0,
+              909.0
+            ],
+            [
+              -971.0,
+              891.0
+            ],
+            [
+              -889.0,
+              891.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "RES-N-U02",
+        "name": "RES-N-U02",
+        "category": "residence",
+        "yuan": "北苑",
+        "clusterID": "G-N-01-WEST-SOUTH",
+        "residenceType": "undergraduate",
+        "x": -830,
+        "y": 113,
+        "z": 900,
+        "rotationY": 0,
+        "auditLength": 82,
+        "auditWidth": 18,
+        "sourceLengthRule": "78-82",
+        "sourceWidthRule": 18,
+        "floorsSource": "10-11",
+        "yStatus": "PROVISIONAL_RETAIN_LEGACY_Y_PENDING_TERRAIN_PLATFORM_AUDIT",
+        "statusBefore": "R7_RE-SOLVE",
+        "statusAfter": "R7_SOLVED_CANDIDATE_PENDING_FULL_FREEZE",
+        "solveId": "R7-SOLVE-05",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -789.0,
+              891.0
+            ],
+            [
+              -789.0,
+              909.0
+            ],
+            [
+              -871.0,
+              909.0
+            ],
+            [
+              -871.0,
+              891.0
+            ],
+            [
+              -789.0,
+              891.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "RES-N-U03",
+        "name": "RES-N-U03",
+        "category": "residence",
+        "yuan": "北苑",
+        "clusterID": "G-N-01-WEST-SOUTH",
+        "residenceType": "undergraduate",
+        "x": -950,
+        "y": 114,
+        "z": 1010,
+        "rotationY": 90,
+        "auditLength": 82,
+        "auditWidth": 18,
+        "sourceLengthRule": "78-82",
+        "sourceWidthRule": 18,
+        "floorsSource": "10-11",
+        "yStatus": "PROVISIONAL_RETAIN_LEGACY_Y_PENDING_TERRAIN_PLATFORM_AUDIT",
+        "statusBefore": "R7_RE-SOLVE",
+        "statusAfter": "R7_SOLVED_CANDIDATE_PENDING_FULL_FREEZE",
+        "solveId": "R7-SOLVE-05",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -941.0,
+              1051.0
+            ],
+            [
+              -959.0,
+              1051.0
+            ],
+            [
+              -959.0,
+              969.0
+            ],
+            [
+              -941.0,
+              969.0
+            ],
+            [
+              -941.0,
+              1051.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "RES-N-U04",
+        "name": "RES-N-U04",
+        "category": "residence",
+        "yuan": "北苑",
+        "clusterID": "G-N-02-WEST-NORTH",
+        "residenceType": "undergraduate",
+        "x": -700,
+        "y": 114,
+        "z": 920,
+        "rotationY": 90,
+        "auditLength": 82,
+        "auditWidth": 18,
+        "sourceLengthRule": "78-82",
+        "sourceWidthRule": 18,
+        "floorsSource": "10-11",
+        "yStatus": "PROVISIONAL_RETAIN_LEGACY_Y_PENDING_TERRAIN_PLATFORM_AUDIT",
+        "statusBefore": "R7_RE-SOLVE",
+        "statusAfter": "R7_SOLVED_CANDIDATE_PENDING_FULL_FREEZE",
+        "solveId": "R7-SOLVE-05",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -691.0,
+              961.0
+            ],
+            [
+              -709.0,
+              961.0
+            ],
+            [
+              -709.0,
+              879.0
+            ],
+            [
+              -691.0,
+              879.0
+            ],
+            [
+              -691.0,
+              961.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "RES-N-U05",
+        "name": "RES-N-U05",
+        "category": "residence",
+        "yuan": "北苑",
+        "clusterID": "G-N-02-WEST-NORTH",
+        "residenceType": "undergraduate",
+        "x": -620,
+        "y": 115,
+        "z": 940,
+        "rotationY": 270,
+        "auditLength": 82,
+        "auditWidth": 18,
+        "sourceLengthRule": "78-82",
+        "sourceWidthRule": 18,
+        "floorsSource": "10-11",
+        "yStatus": "PROVISIONAL_RETAIN_LEGACY_Y_PENDING_TERRAIN_PLATFORM_AUDIT",
+        "statusBefore": "R7_RE-SOLVE",
+        "statusAfter": "R7_SOLVED_CANDIDATE_PENDING_FULL_FREEZE",
+        "solveId": "R7-SOLVE-05",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -629.0,
+              899.0
+            ],
+            [
+              -611.0,
+              899.0
+            ],
+            [
+              -611.0,
+              981.0
+            ],
+            [
+              -629.0,
+              981.0
+            ],
+            [
+              -629.0,
+              899.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "RES-N-U06",
+        "name": "RES-N-U06",
+        "category": "residence",
+        "yuan": "北苑",
+        "clusterID": "G-N-02-WEST-NORTH",
+        "residenceType": "undergraduate",
+        "x": -700,
+        "y": 114,
+        "z": 980,
+        "rotationY": 180,
+        "auditLength": 82,
+        "auditWidth": 18,
+        "sourceLengthRule": "78-82",
+        "sourceWidthRule": 18,
+        "floorsSource": "10-11",
+        "yStatus": "PROVISIONAL_RETAIN_LEGACY_Y_PENDING_TERRAIN_PLATFORM_AUDIT",
+        "statusBefore": "R7_RE-SOLVE",
+        "statusAfter": "R7_SOLVED_CANDIDATE_PENDING_FULL_FREEZE",
+        "solveId": "R7-SOLVE-05",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -741.0,
+              989.0
+            ],
+            [
+              -741.0,
+              971.0
+            ],
+            [
+              -659.0,
+              971.0
+            ],
+            [
+              -659.0,
+              989.0
+            ],
+            [
+              -741.0,
+              989.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "RES-N-U07",
+        "name": "RES-N-U07",
+        "category": "residence",
+        "yuan": "北苑",
+        "clusterID": "G-N-03-EAST-SOUTH",
+        "residenceType": "undergraduate",
+        "x": 780,
+        "y": 114,
+        "z": 900,
+        "rotationY": 0,
+        "auditLength": 82,
+        "auditWidth": 18,
+        "sourceLengthRule": "78-82",
+        "sourceWidthRule": 18,
+        "floorsSource": "10-11",
+        "yStatus": "PROVISIONAL_RETAIN_LEGACY_Y_PENDING_TERRAIN_PLATFORM_AUDIT",
+        "statusBefore": "R7_RE-SOLVE",
+        "statusAfter": "R7_SOLVED_CANDIDATE_PENDING_FULL_FREEZE",
+        "solveId": "R7-SOLVE-05",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              821.0,
+              891.0
+            ],
+            [
+              821.0,
+              909.0
+            ],
+            [
+              739.0,
+              909.0
+            ],
+            [
+              739.0,
+              891.0
+            ],
+            [
+              821.0,
+              891.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "RES-N-U08",
+        "name": "RES-N-U08",
+        "category": "residence",
+        "yuan": "北苑",
+        "clusterID": "G-N-03-EAST-SOUTH",
+        "residenceType": "undergraduate",
+        "x": 900,
+        "y": 114,
+        "z": 900,
+        "rotationY": 0,
+        "auditLength": 82,
+        "auditWidth": 18,
+        "sourceLengthRule": "78-82",
+        "sourceWidthRule": 18,
+        "floorsSource": "10-11",
+        "yStatus": "PROVISIONAL_RETAIN_LEGACY_Y_PENDING_TERRAIN_PLATFORM_AUDIT",
+        "statusBefore": "R7_RE-SOLVE",
+        "statusAfter": "R7_SOLVED_CANDIDATE_PENDING_FULL_FREEZE",
+        "solveId": "R7-SOLVE-05",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              941.0,
+              891.0
+            ],
+            [
+              941.0,
+              909.0
+            ],
+            [
+              859.0,
+              909.0
+            ],
+            [
+              859.0,
+              891.0
+            ],
+            [
+              941.0,
+              891.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "RES-N-U09",
+        "name": "RES-N-U09",
+        "category": "residence",
+        "yuan": "北苑",
+        "clusterID": "G-N-03-EAST-SOUTH",
+        "residenceType": "undergraduate",
+        "x": 930,
+        "y": 115,
+        "z": 1010,
+        "rotationY": 270,
+        "auditLength": 82,
+        "auditWidth": 18,
+        "sourceLengthRule": "78-82",
+        "sourceWidthRule": 18,
+        "floorsSource": "10-11",
+        "yStatus": "PROVISIONAL_RETAIN_LEGACY_Y_PENDING_TERRAIN_PLATFORM_AUDIT",
+        "statusBefore": "R7_RE-SOLVE",
+        "statusAfter": "R7_SOLVED_CANDIDATE_PENDING_FULL_FREEZE",
+        "solveId": "R7-SOLVE-05",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              921.0,
+              969.0
+            ],
+            [
+              939.0,
+              969.0
+            ],
+            [
+              939.0,
+              1051.0
+            ],
+            [
+              921.0,
+              1051.0
+            ],
+            [
+              921.0,
+              969.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "RES-N-U10",
+        "name": "RES-N-U10",
+        "category": "residence",
+        "yuan": "北苑",
+        "clusterID": "G-N-04-EAST-NORTH",
+        "residenceType": "undergraduate",
+        "x": 620,
+        "y": 115,
+        "z": 920,
+        "rotationY": 90,
+        "auditLength": 82,
+        "auditWidth": 18,
+        "sourceLengthRule": "78-82",
+        "sourceWidthRule": 18,
+        "floorsSource": "10-11",
+        "yStatus": "PROVISIONAL_RETAIN_LEGACY_Y_PENDING_TERRAIN_PLATFORM_AUDIT",
+        "statusBefore": "R7_RE-SOLVE",
+        "statusAfter": "R7_SOLVED_CANDIDATE_PENDING_FULL_FREEZE",
+        "solveId": "R7-SOLVE-05",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              629.0,
+              961.0
+            ],
+            [
+              611.0,
+              961.0
+            ],
+            [
+              611.0,
+              879.0
+            ],
+            [
+              629.0,
+              879.0
+            ],
+            [
+              629.0,
+              961.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "RES-N-G01",
+        "name": "RES-N-G01",
+        "category": "residence",
+        "yuan": "北苑",
+        "clusterID": "G-N-04-EAST-NORTH",
+        "residenceType": "graduate",
+        "x": 680,
+        "y": 114,
+        "z": 940,
+        "rotationY": 90,
+        "auditLength": 72,
+        "auditWidth": 18,
+        "sourceLengthRule": "72",
+        "sourceWidthRule": 18,
+        "floorsSource": "10",
+        "yStatus": "PROVISIONAL_RETAIN_LEGACY_Y_PENDING_TERRAIN_PLATFORM_AUDIT",
+        "statusBefore": "R7_RE-SOLVE",
+        "statusAfter": "R7_SOLVED_CANDIDATE_PENDING_FULL_FREEZE",
+        "solveId": "R7-SOLVE-05",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              689.0,
+              976.0
+            ],
+            [
+              671.0,
+              976.0
+            ],
+            [
+              671.0,
+              904.0
+            ],
+            [
+              689.0,
+              904.0
+            ],
+            [
+              689.0,
+              976.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "RES-N-G02",
+        "name": "RES-N-G02",
+        "category": "residence",
+        "yuan": "北苑",
+        "clusterID": "G-N-04-EAST-NORTH",
+        "residenceType": "graduate",
+        "x": 960,
+        "y": 115,
+        "z": 960,
+        "rotationY": 270,
+        "auditLength": 72,
+        "auditWidth": 18,
+        "sourceLengthRule": "72",
+        "sourceWidthRule": 18,
+        "floorsSource": "10",
+        "yStatus": "PROVISIONAL_RETAIN_LEGACY_Y_PENDING_TERRAIN_PLATFORM_AUDIT",
+        "statusBefore": "R7_RE-SOLVE",
+        "statusAfter": "R7_SOLVED_CANDIDATE_PENDING_FULL_FREEZE",
+        "solveId": "R7-SOLVE-05",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              951.0,
+              924.0
+            ],
+            [
+              969.0,
+              924.0
+            ],
+            [
+              969.0,
+              996.0
+            ],
+            [
+              951.0,
+              996.0
+            ],
+            [
+              951.0,
+              924.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "RES-N-G03",
+        "name": "RES-N-G03",
+        "category": "residence",
+        "yuan": "北苑",
+        "clusterID": "G-N-04-EAST-NORTH",
+        "residenceType": "graduate",
+        "x": 860,
+        "y": 115,
+        "z": 1060,
+        "rotationY": 180,
+        "auditLength": 72,
+        "auditWidth": 18,
+        "sourceLengthRule": "72",
+        "sourceWidthRule": 18,
+        "floorsSource": "10",
+        "yStatus": "PROVISIONAL_RETAIN_LEGACY_Y_PENDING_TERRAIN_PLATFORM_AUDIT",
+        "statusBefore": "R7_RE-SOLVE",
+        "statusAfter": "R7_SOLVED_CANDIDATE_PENDING_FULL_FREEZE",
+        "solveId": "R7-SOLVE-05",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              824.0,
+              1069.0
+            ],
+            [
+              824.0,
+              1051.0
+            ],
+            [
+              896.0,
+              1051.0
+            ],
+            [
+              896.0,
+              1069.0
+            ],
+            [
+              824.0,
+              1069.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "RES-E-U01",
+        "name": "RES-E-U01",
+        "category": "residence",
+        "yuan": "东苑",
+        "clusterID": "G-EY-02-SOUTH-EAST",
+        "residenceType": "undergraduate",
+        "x": 1360,
+        "y": 105,
+        "z": -50,
+        "rotationY": 270,
+        "auditLength": 82,
+        "auditWidth": 18,
+        "sourceLengthRule": "78-82",
+        "sourceWidthRule": 18,
+        "floorsSource": "10-11",
+        "yStatus": "PROVISIONAL_RETAIN_LEGACY_Y_PENDING_TERRAIN_PLATFORM_AUDIT",
+        "statusBefore": "R7_RE-SOLVE",
+        "statusAfter": "R7_SOLVED_CANDIDATE_PENDING_FULL_FREEZE",
+        "solveId": "R7-SOLVE-05",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1351.0,
+              -91.0
+            ],
+            [
+              1369.0,
+              -91.0
+            ],
+            [
+              1369.0,
+              -9.0
+            ],
+            [
+              1351.0,
+              -9.0
+            ],
+            [
+              1351.0,
+              -91.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "RES-E-U02",
+        "name": "RES-E-U02",
+        "category": "residence",
+        "yuan": "东苑",
+        "clusterID": "G-EY-01-SOUTH-WEST",
+        "residenceType": "undergraduate",
+        "x": 1180,
+        "y": 105,
+        "z": -30,
+        "rotationY": 90,
+        "auditLength": 82,
+        "auditWidth": 18,
+        "sourceLengthRule": "78-82",
+        "sourceWidthRule": 18,
+        "floorsSource": "10-11",
+        "yStatus": "PROVISIONAL_RETAIN_LEGACY_Y_PENDING_TERRAIN_PLATFORM_AUDIT",
+        "statusBefore": "R7_RE-SOLVE",
+        "statusAfter": "R7_SOLVED_CANDIDATE_PENDING_FULL_FREEZE",
+        "solveId": "R7-SOLVE-05",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1189.0,
+              11.0
+            ],
+            [
+              1171.0,
+              11.0
+            ],
+            [
+              1171.0,
+              -71.0
+            ],
+            [
+              1189.0,
+              -71.0
+            ],
+            [
+              1189.0,
+              11.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "RES-E-U03",
+        "name": "RES-E-U03",
+        "category": "residence",
+        "yuan": "东苑",
+        "clusterID": "G-EY-02-SOUTH-EAST",
+        "residenceType": "undergraduate",
+        "x": 1300,
+        "y": 106,
+        "z": -30,
+        "rotationY": 0,
+        "auditLength": 82,
+        "auditWidth": 18,
+        "sourceLengthRule": "78-82",
+        "sourceWidthRule": 18,
+        "floorsSource": "10-11",
+        "yStatus": "PROVISIONAL_RETAIN_LEGACY_Y_PENDING_TERRAIN_PLATFORM_AUDIT",
+        "statusBefore": "R7_RE-SOLVE",
+        "statusAfter": "R7_SOLVED_CANDIDATE_PENDING_FULL_FREEZE",
+        "solveId": "R7-SOLVE-05",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1341.0,
+              -39.0
+            ],
+            [
+              1341.0,
+              -21.0
+            ],
+            [
+              1259.0,
+              -21.0
+            ],
+            [
+              1259.0,
+              -39.0
+            ],
+            [
+              1341.0,
+              -39.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "RES-E-U04",
+        "name": "RES-E-U04",
+        "category": "residence",
+        "yuan": "东苑",
+        "clusterID": "G-EY-01-SOUTH-WEST",
+        "residenceType": "undergraduate",
+        "x": 1220,
+        "y": 104,
+        "z": -10,
+        "rotationY": 270,
+        "auditLength": 82,
+        "auditWidth": 18,
+        "sourceLengthRule": "78-82",
+        "sourceWidthRule": 18,
+        "floorsSource": "10-11",
+        "yStatus": "PROVISIONAL_RETAIN_LEGACY_Y_PENDING_TERRAIN_PLATFORM_AUDIT",
+        "statusBefore": "R7_RE-SOLVE",
+        "statusAfter": "R7_SOLVED_CANDIDATE_PENDING_FULL_FREEZE",
+        "solveId": "R7-SOLVE-05",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1211.0,
+              -51.0
+            ],
+            [
+              1229.0,
+              -51.0
+            ],
+            [
+              1229.0,
+              31.0
+            ],
+            [
+              1211.0,
+              31.0
+            ],
+            [
+              1211.0,
+              -51.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "RES-E-U05",
+        "name": "RES-E-U05",
+        "category": "residence",
+        "yuan": "东苑",
+        "clusterID": "G-EY-02-SOUTH-EAST",
+        "residenceType": "undergraduate",
+        "x": 1320,
+        "y": 104,
+        "z": 10,
+        "rotationY": 180,
+        "auditLength": 82,
+        "auditWidth": 18,
+        "sourceLengthRule": "78-82",
+        "sourceWidthRule": 18,
+        "floorsSource": "10-11",
+        "yStatus": "PROVISIONAL_RETAIN_LEGACY_Y_PENDING_TERRAIN_PLATFORM_AUDIT",
+        "statusBefore": "R7_RE-SOLVE",
+        "statusAfter": "R7_SOLVED_CANDIDATE_PENDING_FULL_FREEZE",
+        "solveId": "R7-SOLVE-05",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1279.0,
+              19.0
+            ],
+            [
+              1279.0,
+              1.0
+            ],
+            [
+              1361.0,
+              1.0
+            ],
+            [
+              1361.0,
+              19.0
+            ],
+            [
+              1279.0,
+              19.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "RES-E-U06",
+        "name": "RES-E-U06",
+        "category": "residence",
+        "yuan": "东苑",
+        "clusterID": "G-EY-01-SOUTH-WEST",
+        "residenceType": "undergraduate",
+        "x": 1180,
+        "y": 105,
+        "z": 70,
+        "rotationY": 90,
+        "auditLength": 82,
+        "auditWidth": 18,
+        "sourceLengthRule": "78-82",
+        "sourceWidthRule": 18,
+        "floorsSource": "10-11",
+        "yStatus": "PROVISIONAL_RETAIN_LEGACY_Y_PENDING_TERRAIN_PLATFORM_AUDIT",
+        "statusBefore": "R7_RE-SOLVE",
+        "statusAfter": "R7_SOLVED_CANDIDATE_PENDING_FULL_FREEZE",
+        "solveId": "R7-SOLVE-05",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1189.0,
+              111.0
+            ],
+            [
+              1171.0,
+              111.0
+            ],
+            [
+              1171.0,
+              29.0
+            ],
+            [
+              1189.0,
+              29.0
+            ],
+            [
+              1189.0,
+              111.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "RES-E-U07",
+        "name": "RES-E-U07",
+        "category": "residence",
+        "yuan": "东苑",
+        "clusterID": "G-EY-01-SOUTH-WEST",
+        "residenceType": "undergraduate",
+        "x": 1140,
+        "y": 104,
+        "z": 110,
+        "rotationY": 90,
+        "auditLength": 82,
+        "auditWidth": 18,
+        "sourceLengthRule": "78-82",
+        "sourceWidthRule": 18,
+        "floorsSource": "10-11",
+        "yStatus": "PROVISIONAL_RETAIN_LEGACY_Y_PENDING_TERRAIN_PLATFORM_AUDIT",
+        "statusBefore": "R7_RE-SOLVE",
+        "statusAfter": "R7_SOLVED_CANDIDATE_PENDING_FULL_FREEZE",
+        "solveId": "R7-SOLVE-05",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1149.0,
+              151.0
+            ],
+            [
+              1131.0,
+              151.0
+            ],
+            [
+              1131.0,
+              69.0
+            ],
+            [
+              1149.0,
+              69.0
+            ],
+            [
+              1149.0,
+              151.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "RES-E-U08",
+        "name": "RES-E-U08",
+        "category": "residence",
+        "yuan": "东苑",
+        "clusterID": "G-EY-03-NORTH-WEST",
+        "residenceType": "undergraduate",
+        "x": 1200,
+        "y": 104,
+        "z": 170,
+        "rotationY": 90,
+        "auditLength": 82,
+        "auditWidth": 18,
+        "sourceLengthRule": "78-82",
+        "sourceWidthRule": 18,
+        "floorsSource": "10-11",
+        "yStatus": "PROVISIONAL_RETAIN_LEGACY_Y_PENDING_TERRAIN_PLATFORM_AUDIT",
+        "statusBefore": "R7_RE-SOLVE",
+        "statusAfter": "R7_SOLVED_CANDIDATE_PENDING_FULL_FREEZE",
+        "solveId": "R7-SOLVE-05",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1209.0,
+              211.0
+            ],
+            [
+              1191.0,
+              211.0
+            ],
+            [
+              1191.0,
+              129.0
+            ],
+            [
+              1209.0,
+              129.0
+            ],
+            [
+              1209.0,
+              211.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "RES-E-U09",
+        "name": "RES-E-U09",
+        "category": "residence",
+        "yuan": "东苑",
+        "clusterID": "G-EY-04-NORTH-EAST",
+        "residenceType": "undergraduate",
+        "x": 1340,
+        "y": 104,
+        "z": 230,
+        "rotationY": 0,
+        "auditLength": 82,
+        "auditWidth": 18,
+        "sourceLengthRule": "78-82",
+        "sourceWidthRule": 18,
+        "floorsSource": "10-11",
+        "yStatus": "PROVISIONAL_RETAIN_LEGACY_Y_PENDING_TERRAIN_PLATFORM_AUDIT",
+        "statusBefore": "R7_RE-SOLVE",
+        "statusAfter": "R7_SOLVED_CANDIDATE_PENDING_FULL_FREEZE",
+        "solveId": "R7-SOLVE-05",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1381.0,
+              221.0
+            ],
+            [
+              1381.0,
+              239.0
+            ],
+            [
+              1299.0,
+              239.0
+            ],
+            [
+              1299.0,
+              221.0
+            ],
+            [
+              1381.0,
+              221.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "RES-E-U10",
+        "name": "RES-E-U10",
+        "category": "residence",
+        "yuan": "东苑",
+        "clusterID": "G-EY-03-NORTH-WEST",
+        "residenceType": "undergraduate",
+        "x": 1240,
+        "y": 103,
+        "z": 250,
+        "rotationY": 270,
+        "auditLength": 82,
+        "auditWidth": 18,
+        "sourceLengthRule": "78-82",
+        "sourceWidthRule": 18,
+        "floorsSource": "10-11",
+        "yStatus": "PROVISIONAL_RETAIN_LEGACY_Y_PENDING_TERRAIN_PLATFORM_AUDIT",
+        "statusBefore": "R7_RE-SOLVE",
+        "statusAfter": "R7_SOLVED_CANDIDATE_PENDING_FULL_FREEZE",
+        "solveId": "R7-SOLVE-05",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1231.0,
+              209.0
+            ],
+            [
+              1249.0,
+              209.0
+            ],
+            [
+              1249.0,
+              291.0
+            ],
+            [
+              1231.0,
+              291.0
+            ],
+            [
+              1231.0,
+              209.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "RES-E-G01",
+        "name": "RES-E-G01",
+        "category": "residence",
+        "yuan": "东苑",
+        "clusterID": "G-EY-04-NORTH-EAST",
+        "residenceType": "graduate",
+        "x": 1280,
+        "y": 103,
+        "z": 250,
+        "rotationY": 90,
+        "auditLength": 72,
+        "auditWidth": 18,
+        "sourceLengthRule": "72",
+        "sourceWidthRule": 18,
+        "floorsSource": "10",
+        "yStatus": "PROVISIONAL_RETAIN_LEGACY_Y_PENDING_TERRAIN_PLATFORM_AUDIT",
+        "statusBefore": "R7_RE-SOLVE",
+        "statusAfter": "R7_SOLVED_CANDIDATE_PENDING_FULL_FREEZE",
+        "solveId": "R7-SOLVE-05",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1289.0,
+              286.0
+            ],
+            [
+              1271.0,
+              286.0
+            ],
+            [
+              1271.0,
+              214.0
+            ],
+            [
+              1289.0,
+              214.0
+            ],
+            [
+              1289.0,
+              286.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "RES-E-G02",
+        "name": "RES-E-G02",
+        "category": "residence",
+        "yuan": "东苑",
+        "clusterID": "G-EY-04-NORTH-EAST",
+        "residenceType": "graduate",
+        "x": 1340,
+        "y": 103,
+        "z": 270,
+        "rotationY": 180,
+        "auditLength": 72,
+        "auditWidth": 18,
+        "sourceLengthRule": "72",
+        "sourceWidthRule": 18,
+        "floorsSource": "10",
+        "yStatus": "PROVISIONAL_RETAIN_LEGACY_Y_PENDING_TERRAIN_PLATFORM_AUDIT",
+        "statusBefore": "R7_RE-SOLVE",
+        "statusAfter": "R7_SOLVED_CANDIDATE_PENDING_FULL_FREEZE",
+        "solveId": "R7-SOLVE-05",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1304.0,
+              279.0
+            ],
+            [
+              1304.0,
+              261.0
+            ],
+            [
+              1376.0,
+              261.0
+            ],
+            [
+              1376.0,
+              279.0
+            ],
+            [
+              1304.0,
+              279.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "RES-E-G03",
+        "name": "RES-E-G03",
+        "category": "residence",
+        "yuan": "东苑",
+        "clusterID": "G-EY-04-NORTH-EAST",
+        "residenceType": "graduate",
+        "x": 1320,
+        "y": 103,
+        "z": 310,
+        "rotationY": 180,
+        "auditLength": 72,
+        "auditWidth": 18,
+        "sourceLengthRule": "72",
+        "sourceWidthRule": 18,
+        "floorsSource": "10",
+        "yStatus": "PROVISIONAL_RETAIN_LEGACY_Y_PENDING_TERRAIN_PLATFORM_AUDIT",
+        "statusBefore": "R7_RE-SOLVE",
+        "statusAfter": "R7_SOLVED_CANDIDATE_PENDING_FULL_FREEZE",
+        "solveId": "R7-SOLVE-05",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1284.0,
+              319.0
+            ],
+            [
+              1284.0,
+              301.0
+            ],
+            [
+              1356.0,
+              301.0
+            ],
+            [
+              1356.0,
+              319.0
+            ],
+            [
+              1284.0,
+              319.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "RES-E-I01",
+        "name": "RES-E-I01",
+        "category": "residence",
+        "yuan": "东苑",
+        "clusterID": "G-EY-03-NORTH-WEST",
+        "residenceType": "international",
+        "x": 1220,
+        "y": 103,
+        "z": 330,
+        "rotationY": 180,
+        "auditLength": 72,
+        "auditWidth": 20,
+        "sourceLengthRule": "72",
+        "sourceWidthRule": 20,
+        "floorsSource": "10",
+        "yStatus": "PROVISIONAL_RETAIN_LEGACY_Y_PENDING_TERRAIN_PLATFORM_AUDIT",
+        "statusBefore": "R7_RE-SOLVE",
+        "statusAfter": "R7_SOLVED_CANDIDATE_PENDING_FULL_FREEZE",
+        "solveId": "R7-SOLVE-05",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1184.0,
+              340.0
+            ],
+            [
+              1184.0,
+              320.0
+            ],
+            [
+              1256.0,
+              320.0
+            ],
+            [
+              1256.0,
+              340.0
+            ],
+            [
+              1184.0,
+              340.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "RES-S-U01",
+        "name": "RES-S-U01",
+        "category": "residence",
+        "yuan": "南苑",
+        "clusterID": "G-S-01-WEST",
+        "residenceType": "undergraduate",
+        "x": 370,
+        "y": 100,
+        "z": -960,
+        "rotationY": 0,
+        "auditLength": 82,
+        "auditWidth": 18,
+        "sourceLengthRule": "78-82",
+        "sourceWidthRule": 18,
+        "floorsSource": "10-11",
+        "yStatus": "PROVISIONAL_RETAIN_LEGACY_Y_PENDING_TERRAIN_PLATFORM_AUDIT",
+        "statusBefore": "R7_RE-SOLVE",
+        "statusAfter": "R7_SOLVED_CANDIDATE_PENDING_FULL_FREEZE",
+        "solveId": "R7-SOLVE-05",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              411.0,
+              -969.0
+            ],
+            [
+              411.0,
+              -951.0
+            ],
+            [
+              329.0,
+              -951.0
+            ],
+            [
+              329.0,
+              -969.0
+            ],
+            [
+              411.0,
+              -969.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "RES-S-U02",
+        "name": "RES-S-U02",
+        "category": "residence",
+        "yuan": "南苑",
+        "clusterID": "G-S-02-EAST",
+        "residenceType": "undergraduate",
+        "x": 590,
+        "y": 100,
+        "z": -960,
+        "rotationY": 0,
+        "auditLength": 82,
+        "auditWidth": 18,
+        "sourceLengthRule": "78-82",
+        "sourceWidthRule": 18,
+        "floorsSource": "10-11",
+        "yStatus": "PROVISIONAL_RETAIN_LEGACY_Y_PENDING_TERRAIN_PLATFORM_AUDIT",
+        "statusBefore": "R7_RE-SOLVE",
+        "statusAfter": "R7_SOLVED_CANDIDATE_PENDING_FULL_FREEZE",
+        "solveId": "R7-SOLVE-05",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              631.0,
+              -969.0
+            ],
+            [
+              631.0,
+              -951.0
+            ],
+            [
+              549.0,
+              -951.0
+            ],
+            [
+              549.0,
+              -969.0
+            ],
+            [
+              631.0,
+              -969.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "RES-S-U03",
+        "name": "RES-S-U03",
+        "category": "residence",
+        "yuan": "南苑",
+        "clusterID": "G-S-01-WEST",
+        "residenceType": "undergraduate",
+        "x": 470,
+        "y": 100,
+        "z": -940,
+        "rotationY": 0,
+        "auditLength": 82,
+        "auditWidth": 18,
+        "sourceLengthRule": "78-82",
+        "sourceWidthRule": 18,
+        "floorsSource": "10-11",
+        "yStatus": "PROVISIONAL_RETAIN_LEGACY_Y_PENDING_TERRAIN_PLATFORM_AUDIT",
+        "statusBefore": "R7_RE-SOLVE",
+        "statusAfter": "R7_SOLVED_CANDIDATE_PENDING_FULL_FREEZE",
+        "solveId": "R7-SOLVE-05",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              511.0,
+              -949.0
+            ],
+            [
+              511.0,
+              -931.0
+            ],
+            [
+              429.0,
+              -931.0
+            ],
+            [
+              429.0,
+              -949.0
+            ],
+            [
+              511.0,
+              -949.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "RES-S-U04",
+        "name": "RES-S-U04",
+        "category": "residence",
+        "yuan": "南苑",
+        "clusterID": "G-S-02-EAST",
+        "residenceType": "undergraduate",
+        "x": 690,
+        "y": 100,
+        "z": -940,
+        "rotationY": 0,
+        "auditLength": 82,
+        "auditWidth": 18,
+        "sourceLengthRule": "78-82",
+        "sourceWidthRule": 18,
+        "floorsSource": "10-11",
+        "yStatus": "PROVISIONAL_RETAIN_LEGACY_Y_PENDING_TERRAIN_PLATFORM_AUDIT",
+        "statusBefore": "R7_RE-SOLVE",
+        "statusAfter": "R7_SOLVED_CANDIDATE_PENDING_FULL_FREEZE",
+        "solveId": "R7-SOLVE-05",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              731.0,
+              -949.0
+            ],
+            [
+              731.0,
+              -931.0
+            ],
+            [
+              649.0,
+              -931.0
+            ],
+            [
+              649.0,
+              -949.0
+            ],
+            [
+              731.0,
+              -949.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "RES-S-U05",
+        "name": "RES-S-U05",
+        "category": "residence",
+        "yuan": "南苑",
+        "clusterID": "G-S-02-EAST",
+        "residenceType": "undergraduate",
+        "x": 750,
+        "y": 101,
+        "z": -860,
+        "rotationY": 180,
+        "auditLength": 82,
+        "auditWidth": 18,
+        "sourceLengthRule": "78-82",
+        "sourceWidthRule": 18,
+        "floorsSource": "10-11",
+        "yStatus": "PROVISIONAL_RETAIN_LEGACY_Y_PENDING_TERRAIN_PLATFORM_AUDIT",
+        "statusBefore": "R7_RE-SOLVE",
+        "statusAfter": "R7_SOLVED_CANDIDATE_PENDING_FULL_FREEZE",
+        "solveId": "R7-SOLVE-05",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              709.0,
+              -851.0
+            ],
+            [
+              709.0,
+              -869.0
+            ],
+            [
+              791.0,
+              -869.0
+            ],
+            [
+              791.0,
+              -851.0
+            ],
+            [
+              709.0,
+              -851.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "RES-S-U06",
+        "name": "RES-S-U06",
+        "category": "residence",
+        "yuan": "南苑",
+        "clusterID": "G-S-01-WEST",
+        "residenceType": "undergraduate",
+        "x": 350,
+        "y": 101,
+        "z": -840,
+        "rotationY": 180,
+        "auditLength": 82,
+        "auditWidth": 18,
+        "sourceLengthRule": "78-82",
+        "sourceWidthRule": 18,
+        "floorsSource": "10-11",
+        "yStatus": "PROVISIONAL_RETAIN_LEGACY_Y_PENDING_TERRAIN_PLATFORM_AUDIT",
+        "statusBefore": "R7_RE-SOLVE",
+        "statusAfter": "R7_SOLVED_CANDIDATE_PENDING_FULL_FREEZE",
+        "solveId": "R7-SOLVE-05",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              309.0,
+              -831.0
+            ],
+            [
+              309.0,
+              -849.0
+            ],
+            [
+              391.0,
+              -849.0
+            ],
+            [
+              391.0,
+              -831.0
+            ],
+            [
+              309.0,
+              -831.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "RES-S-U07",
+        "name": "RES-S-U07",
+        "category": "residence",
+        "yuan": "南苑",
+        "clusterID": "G-S-01-WEST",
+        "residenceType": "undergraduate",
+        "x": 430,
+        "y": 101,
+        "z": -840,
+        "rotationY": 270,
+        "auditLength": 82,
+        "auditWidth": 18,
+        "sourceLengthRule": "78-82",
+        "sourceWidthRule": 18,
+        "floorsSource": "10-11",
+        "yStatus": "PROVISIONAL_RETAIN_LEGACY_Y_PENDING_TERRAIN_PLATFORM_AUDIT",
+        "statusBefore": "R7_RE-SOLVE",
+        "statusAfter": "R7_SOLVED_CANDIDATE_PENDING_FULL_FREEZE",
+        "solveId": "R7-SOLVE-05",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              421.0,
+              -881.0
+            ],
+            [
+              439.0,
+              -881.0
+            ],
+            [
+              439.0,
+              -799.0
+            ],
+            [
+              421.0,
+              -799.0
+            ],
+            [
+              421.0,
+              -881.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "RES-S-U08",
+        "name": "RES-S-U08",
+        "category": "residence",
+        "yuan": "南苑",
+        "clusterID": "G-S-03-NORTH",
+        "residenceType": "undergraduate",
+        "x": 470,
+        "y": 101,
+        "z": -840,
+        "rotationY": 90,
+        "auditLength": 82,
+        "auditWidth": 18,
+        "sourceLengthRule": "78-82",
+        "sourceWidthRule": 18,
+        "floorsSource": "10-11",
+        "yStatus": "PROVISIONAL_RETAIN_LEGACY_Y_PENDING_TERRAIN_PLATFORM_AUDIT",
+        "statusBefore": "R7_RE-SOLVE",
+        "statusAfter": "R7_SOLVED_CANDIDATE_PENDING_FULL_FREEZE",
+        "solveId": "R7-SOLVE-05",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              479.0,
+              -799.0
+            ],
+            [
+              461.0,
+              -799.0
+            ],
+            [
+              461.0,
+              -881.0
+            ],
+            [
+              479.0,
+              -881.0
+            ],
+            [
+              479.0,
+              -799.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "RES-S-U09",
+        "name": "RES-S-U09",
+        "category": "residence",
+        "yuan": "南苑",
+        "clusterID": "G-S-02-EAST",
+        "residenceType": "undergraduate",
+        "x": 790,
+        "y": 102,
+        "z": -800,
+        "rotationY": 270,
+        "auditLength": 82,
+        "auditWidth": 18,
+        "sourceLengthRule": "78-82",
+        "sourceWidthRule": 18,
+        "floorsSource": "10-11",
+        "yStatus": "PROVISIONAL_RETAIN_LEGACY_Y_PENDING_TERRAIN_PLATFORM_AUDIT",
+        "statusBefore": "R7_RE-SOLVE",
+        "statusAfter": "R7_SOLVED_CANDIDATE_PENDING_FULL_FREEZE",
+        "solveId": "R7-SOLVE-05",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              781.0,
+              -841.0
+            ],
+            [
+              799.0,
+              -841.0
+            ],
+            [
+              799.0,
+              -759.0
+            ],
+            [
+              781.0,
+              -759.0
+            ],
+            [
+              781.0,
+              -841.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "RES-S-U10",
+        "name": "RES-S-U10",
+        "category": "residence",
+        "yuan": "南苑",
+        "clusterID": "G-S-01-WEST",
+        "residenceType": "undergraduate",
+        "x": 310,
+        "y": 102,
+        "z": -780,
+        "rotationY": 90,
+        "auditLength": 82,
+        "auditWidth": 18,
+        "sourceLengthRule": "78-82",
+        "sourceWidthRule": 18,
+        "floorsSource": "10-11",
+        "yStatus": "PROVISIONAL_RETAIN_LEGACY_Y_PENDING_TERRAIN_PLATFORM_AUDIT",
+        "statusBefore": "R7_RE-SOLVE",
+        "statusAfter": "R7_SOLVED_CANDIDATE_PENDING_FULL_FREEZE",
+        "solveId": "R7-SOLVE-05",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              319.0,
+              -739.0
+            ],
+            [
+              301.0,
+              -739.0
+            ],
+            [
+              301.0,
+              -821.0
+            ],
+            [
+              319.0,
+              -821.0
+            ],
+            [
+              319.0,
+              -739.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "RES-S-G01",
+        "name": "RES-S-G01",
+        "category": "residence",
+        "yuan": "南苑",
+        "clusterID": "G-S-02-EAST",
+        "residenceType": "graduate",
+        "x": 730,
+        "y": 102,
+        "z": -780,
+        "rotationY": 270,
+        "auditLength": 72,
+        "auditWidth": 18,
+        "sourceLengthRule": "72",
+        "sourceWidthRule": 18,
+        "floorsSource": "10",
+        "yStatus": "PROVISIONAL_RETAIN_LEGACY_Y_PENDING_TERRAIN_PLATFORM_AUDIT",
+        "statusBefore": "R7_RE-SOLVE",
+        "statusAfter": "R7_SOLVED_CANDIDATE_PENDING_FULL_FREEZE",
+        "solveId": "R7-SOLVE-05",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              721.0,
+              -816.0
+            ],
+            [
+              739.0,
+              -816.0
+            ],
+            [
+              739.0,
+              -744.0
+            ],
+            [
+              721.0,
+              -744.0
+            ],
+            [
+              721.0,
+              -816.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "RES-S-I01",
+        "name": "RES-S-I01",
+        "category": "residence",
+        "yuan": "南苑",
+        "clusterID": "G-S-03-NORTH",
+        "residenceType": "international",
+        "x": 530,
+        "y": 102,
+        "z": -720,
+        "rotationY": 180,
+        "auditLength": 72,
+        "auditWidth": 20,
+        "sourceLengthRule": "72",
+        "sourceWidthRule": 20,
+        "floorsSource": "10",
+        "yStatus": "PROVISIONAL_RETAIN_LEGACY_Y_PENDING_TERRAIN_PLATFORM_AUDIT",
+        "statusBefore": "R7_RE-SOLVE",
+        "statusAfter": "R7_SOLVED_CANDIDATE_PENDING_FULL_FREEZE",
+        "solveId": "R7-SOLVE-05",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              494.0,
+              -710.0
+            ],
+            [
+              494.0,
+              -730.0
+            ],
+            [
+              566.0,
+              -730.0
+            ],
+            [
+              566.0,
+              -710.0
+            ],
+            [
+              494.0,
+              -710.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "RES-S-I02",
+        "name": "RES-S-I02",
+        "category": "residence",
+        "yuan": "南苑",
+        "clusterID": "G-S-03-NORTH",
+        "residenceType": "international",
+        "x": 630,
+        "y": 103,
+        "z": -720,
+        "rotationY": 180,
+        "auditLength": 72,
+        "auditWidth": 20,
+        "sourceLengthRule": "72",
+        "sourceWidthRule": 20,
+        "floorsSource": "10",
+        "yStatus": "PROVISIONAL_RETAIN_LEGACY_Y_PENDING_TERRAIN_PLATFORM_AUDIT",
+        "statusBefore": "R7_RE-SOLVE",
+        "statusAfter": "R7_SOLVED_CANDIDATE_PENDING_FULL_FREEZE",
+        "solveId": "R7-SOLVE-05",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              594.0,
+              -710.0
+            ],
+            [
+              594.0,
+              -730.0
+            ],
+            [
+              666.0,
+              -730.0
+            ],
+            [
+              666.0,
+              -710.0
+            ],
+            [
+              594.0,
+              -710.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "RES-S-I03",
+        "name": "RES-S-I03",
+        "category": "residence",
+        "yuan": "南苑",
+        "clusterID": "G-S-03-NORTH",
+        "residenceType": "international",
+        "x": 750,
+        "y": 103,
+        "z": -720,
+        "rotationY": 180,
+        "auditLength": 72,
+        "auditWidth": 20,
+        "sourceLengthRule": "72",
+        "sourceWidthRule": 20,
+        "floorsSource": "10",
+        "yStatus": "PROVISIONAL_RETAIN_LEGACY_Y_PENDING_TERRAIN_PLATFORM_AUDIT",
+        "statusBefore": "R7_RE-SOLVE",
+        "statusAfter": "R7_SOLVED_CANDIDATE_PENDING_FULL_FREEZE",
+        "solveId": "R7-SOLVE-05",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              714.0,
+              -710.0
+            ],
+            [
+              714.0,
+              -730.0
+            ],
+            [
+              786.0,
+              -730.0
+            ],
+            [
+              786.0,
+              -710.0
+            ],
+            [
+              714.0,
+              -710.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "LIFE-W-01",
+        "name": "西苑食堂",
+        "category": "life_service",
+        "yuan": "西苑",
+        "x": -1445,
+        "y": 106,
+        "z": 225,
+        "rotationY": 0,
+        "auditLength": 112,
+        "auditWidth": 66,
+        "floorsSource": "4",
+        "yStatus": "PROVISIONAL_RETAIN_LEGACY_Y_PENDING_TERRAIN_PLATFORM_AUDIT",
+        "statusBefore": "R7_RE-SOLVE",
+        "statusAfter": "R7_SOLVED_CANDIDATE_PENDING_FULL_FREEZE",
+        "solveId": "R7-SOLVE-05",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -1389.0,
+              192.0
+            ],
+            [
+              -1389.0,
+              258.0
+            ],
+            [
+              -1501.0,
+              258.0
+            ],
+            [
+              -1501.0,
+              192.0
+            ],
+            [
+              -1389.0,
+              192.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "LIFE-W-02",
+        "name": "江大校园超市·西苑店",
+        "category": "life_service",
+        "yuan": "西苑",
+        "x": -1358,
+        "y": 106,
+        "z": 235,
+        "rotationY": 90,
+        "auditLength": 62,
+        "auditWidth": 36,
+        "floorsSource": "2",
+        "yStatus": "PROVISIONAL_RETAIN_LEGACY_Y_PENDING_TERRAIN_PLATFORM_AUDIT",
+        "statusBefore": "R7_RE-SOLVE",
+        "statusAfter": "R7_SOLVED_CANDIDATE_PENDING_FULL_FREEZE",
+        "solveId": "R7-SOLVE-05",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -1340.0,
+              266.0
+            ],
+            [
+              -1376.0,
+              266.0
+            ],
+            [
+              -1376.0,
+              204.0
+            ],
+            [
+              -1340.0,
+              204.0
+            ],
+            [
+              -1340.0,
+              266.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "LIFE-N-01",
+        "name": "北苑食堂",
+        "category": "life_service",
+        "yuan": "北苑",
+        "x": -665,
+        "y": 113,
+        "z": 1030,
+        "rotationY": 180,
+        "auditLength": 108,
+        "auditWidth": 64,
+        "floorsSource": "4",
+        "yStatus": "PROVISIONAL_RETAIN_LEGACY_Y_PENDING_TERRAIN_PLATFORM_AUDIT",
+        "statusBefore": "R7_RE-SOLVE",
+        "statusAfter": "R7_SOLVED_CANDIDATE_PENDING_FULL_FREEZE",
+        "solveId": "R7-SOLVE-05",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -719.0,
+              1062.0
+            ],
+            [
+              -719.0,
+              998.0
+            ],
+            [
+              -611.0,
+              998.0
+            ],
+            [
+              -611.0,
+              1062.0
+            ],
+            [
+              -719.0,
+              1062.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "LIFE-N-02",
+        "name": "江大校园超市·北苑店",
+        "category": "life_service",
+        "yuan": "北苑",
+        "x": 650,
+        "y": 112,
+        "z": 1030,
+        "rotationY": 180,
+        "auditLength": 60,
+        "auditWidth": 36,
+        "floorsSource": "2",
+        "yStatus": "PROVISIONAL_RETAIN_LEGACY_Y_PENDING_TERRAIN_PLATFORM_AUDIT",
+        "statusBefore": "R7_RE-SOLVE",
+        "statusAfter": "R7_SOLVED_CANDIDATE_PENDING_FULL_FREEZE",
+        "solveId": "R7-SOLVE-05",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              620.0,
+              1048.0
+            ],
+            [
+              620.0,
+              1012.0
+            ],
+            [
+              680.0,
+              1012.0
+            ],
+            [
+              680.0,
+              1048.0
+            ],
+            [
+              620.0,
+              1048.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "LIFE-E-01",
+        "name": "东苑食堂",
+        "category": "life_service",
+        "yuan": "东苑",
+        "x": 1240,
+        "y": 103,
+        "z": -115,
+        "rotationY": 0,
+        "auditLength": 112,
+        "auditWidth": 66,
+        "floorsSource": "4",
+        "yStatus": "PROVISIONAL_RETAIN_LEGACY_Y_PENDING_TERRAIN_PLATFORM_AUDIT",
+        "statusBefore": "R7_RE-SOLVE",
+        "statusAfter": "R7_SOLVED_CANDIDATE_PENDING_FULL_FREEZE",
+        "solveId": "R7-SOLVE-05",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1296.0,
+              -148.0
+            ],
+            [
+              1296.0,
+              -82.0
+            ],
+            [
+              1184.0,
+              -82.0
+            ],
+            [
+              1184.0,
+              -148.0
+            ],
+            [
+              1296.0,
+              -148.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "LIFE-E-02",
+        "name": "江大校园超市·东苑店",
+        "category": "life_service",
+        "yuan": "东苑",
+        "x": 1345,
+        "y": 103,
+        "z": -120,
+        "rotationY": 0,
+        "auditLength": 62,
+        "auditWidth": 36,
+        "floorsSource": "2",
+        "yStatus": "PROVISIONAL_RETAIN_LEGACY_Y_PENDING_TERRAIN_PLATFORM_AUDIT",
+        "statusBefore": "R7_RE-SOLVE",
+        "statusAfter": "R7_SOLVED_CANDIDATE_PENDING_FULL_FREEZE",
+        "solveId": "R7-SOLVE-05",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1376.0,
+              -138.0
+            ],
+            [
+              1376.0,
+              -102.0
+            ],
+            [
+              1314.0,
+              -102.0
+            ],
+            [
+              1314.0,
+              -138.0
+            ],
+            [
+              1376.0,
+              -138.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "LIFE-S-01",
+        "name": "南苑食堂",
+        "category": "life_service",
+        "yuan": "南苑",
+        "x": 370,
+        "y": 102,
+        "z": -760,
+        "rotationY": 90,
+        "auditLength": 112,
+        "auditWidth": 66,
+        "floorsSource": "4",
+        "yStatus": "PROVISIONAL_RETAIN_LEGACY_Y_PENDING_TERRAIN_PLATFORM_AUDIT",
+        "statusBefore": "R7_RE-SOLVE",
+        "statusAfter": "R7_SOLVED_CANDIDATE_PENDING_FULL_FREEZE",
+        "solveId": "R7-SOLVE-05",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              403.0,
+              -704.0
+            ],
+            [
+              337.0,
+              -704.0
+            ],
+            [
+              337.0,
+              -816.0
+            ],
+            [
+              403.0,
+              -816.0
+            ],
+            [
+              403.0,
+              -704.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "LIFE-S-02",
+        "name": "江大校园超市·南苑店",
+        "category": "life_service",
+        "yuan": "南苑",
+        "x": 450,
+        "y": 102,
+        "z": -735,
+        "rotationY": 0,
+        "auditLength": 62,
+        "auditWidth": 36,
+        "floorsSource": "2",
+        "yStatus": "PROVISIONAL_RETAIN_LEGACY_Y_PENDING_TERRAIN_PLATFORM_AUDIT",
+        "statusBefore": "R7_RE-SOLVE",
+        "statusAfter": "R7_SOLVED_CANDIDATE_PENDING_FULL_FREEZE",
+        "solveId": "R7-SOLVE-05",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              481.0,
+              -753.0
+            ],
+            [
+              481.0,
+              -717.0
+            ],
+            [
+              419.0,
+              -717.0
+            ],
+            [
+              419.0,
+              -753.0
+            ],
+            [
+              481.0,
+              -753.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "LIFE-W-BB-01",
+        "name": "西苑篮球A",
+        "yuan": "西苑",
+        "kind": "basketball",
+        "quantity": 2,
+        "x": -1460,
+        "y": 108,
+        "z": 150,
+        "rotationY": 0,
+        "L": 68,
+        "W": 24,
+        "decision": "MOVED_R7_SOLVE_05",
+        "category": "yuan_sport",
+        "solveId": "R7-SOLVE-05",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -1426.0,
+              138.0
+            ],
+            [
+              -1426.0,
+              162.0
+            ],
+            [
+              -1494.0,
+              162.0
+            ],
+            [
+              -1494.0,
+              138.0
+            ],
+            [
+              -1426.0,
+              138.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "LIFE-W-BB-02",
+        "name": "西苑篮球B",
+        "yuan": "西苑",
+        "kind": "basketball",
+        "quantity": 2,
+        "x": -1370,
+        "y": 109,
+        "z": 150,
+        "rotationY": 0,
+        "L": 68,
+        "W": 24,
+        "decision": "MOVED_R7_SOLVE_05",
+        "category": "yuan_sport",
+        "solveId": "R7-SOLVE-05",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -1336.0,
+              138.0
+            ],
+            [
+              -1336.0,
+              162.0
+            ],
+            [
+              -1404.0,
+              162.0
+            ],
+            [
+              -1404.0,
+              138.0
+            ],
+            [
+              -1336.0,
+              138.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "LIFE-W-TT-01",
+        "name": "西苑乒乓球",
+        "yuan": "西苑",
+        "kind": "table_tennis",
+        "quantity": 20,
+        "x": -1270,
+        "y": 109,
+        "z": 150,
+        "rotationY": 0,
+        "L": 60,
+        "W": 36,
+        "decision": "MOVED_R7_SOLVE_05",
+        "category": "yuan_sport",
+        "solveId": "R7-SOLVE-05",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -1240.0,
+              132.0
+            ],
+            [
+              -1240.0,
+              168.0
+            ],
+            [
+              -1300.0,
+              168.0
+            ],
+            [
+              -1300.0,
+              132.0
+            ],
+            [
+              -1240.0,
+              132.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "LIFE-W-VB-01",
+        "name": "西苑排球",
+        "yuan": "西苑",
+        "kind": "volleyball",
+        "quantity": 2,
+        "x": -1450,
+        "y": 107,
+        "z": 110,
+        "rotationY": 0,
+        "L": 52,
+        "W": 24,
+        "decision": "MOVED_R7_SOLVE_05",
+        "category": "yuan_sport",
+        "solveId": "R7-SOLVE-05",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -1424.0,
+              98.0
+            ],
+            [
+              -1424.0,
+              122.0
+            ],
+            [
+              -1476.0,
+              122.0
+            ],
+            [
+              -1476.0,
+              98.0
+            ],
+            [
+              -1424.0,
+              98.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "LIFE-W-BD-01",
+        "name": "西苑羽毛球",
+        "yuan": "西苑",
+        "kind": "badminton",
+        "quantity": 2,
+        "x": -1375,
+        "y": 109,
+        "z": 110,
+        "rotationY": 0,
+        "L": 40,
+        "W": 24,
+        "decision": "MOVED_R7_SOLVE_05",
+        "category": "yuan_sport",
+        "solveId": "R7-SOLVE-05",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -1355.0,
+              98.0
+            ],
+            [
+              -1355.0,
+              122.0
+            ],
+            [
+              -1395.0,
+              122.0
+            ],
+            [
+              -1395.0,
+              98.0
+            ],
+            [
+              -1355.0,
+              98.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "LIFE-N-BB-W",
+        "name": "北苑篮球西",
+        "yuan": "北苑",
+        "kind": "basketball",
+        "quantity": 2,
+        "x": -660,
+        "y": 116,
+        "z": 840,
+        "rotationY": 90,
+        "L": 68,
+        "W": 24,
+        "decision": "MOVED_R7_SOLVE_05",
+        "category": "yuan_sport",
+        "solveId": "R7-SOLVE-05",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -648.0,
+              874.0
+            ],
+            [
+              -672.0,
+              874.0
+            ],
+            [
+              -672.0,
+              806.0
+            ],
+            [
+              -648.0,
+              806.0
+            ],
+            [
+              -648.0,
+              874.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "LIFE-N-BB-E",
+        "name": "北苑篮球东",
+        "yuan": "北苑",
+        "kind": "basketball",
+        "quantity": 2,
+        "x": 650,
+        "y": 116,
+        "z": 840,
+        "rotationY": 90,
+        "L": 68,
+        "W": 24,
+        "decision": "MOVED_R7_SOLVE_05",
+        "category": "yuan_sport",
+        "solveId": "R7-SOLVE-05",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              662.0,
+              874.0
+            ],
+            [
+              638.0,
+              874.0
+            ],
+            [
+              638.0,
+              806.0
+            ],
+            [
+              662.0,
+              806.0
+            ],
+            [
+              662.0,
+              874.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "LIFE-N-TT-01",
+        "name": "北苑乒乓球",
+        "yuan": "北苑",
+        "kind": "table_tennis",
+        "quantity": 16,
+        "x": 750,
+        "y": 117,
+        "z": 840,
+        "rotationY": 90,
+        "L": 54,
+        "W": 32,
+        "decision": "MOVED_R7_SOLVE_05",
+        "category": "yuan_sport",
+        "solveId": "R7-SOLVE-05",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              766.0,
+              867.0
+            ],
+            [
+              734.0,
+              867.0
+            ],
+            [
+              734.0,
+              813.0
+            ],
+            [
+              766.0,
+              813.0
+            ],
+            [
+              766.0,
+              867.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "LIFE-N-VB-01",
+        "name": "北苑排球",
+        "yuan": "北苑",
+        "kind": "volleyball",
+        "quantity": 2,
+        "x": 835,
+        "y": 115,
+        "z": 840,
+        "rotationY": 90,
+        "L": 52,
+        "W": 24,
+        "decision": "MOVED_R7_SOLVE_05",
+        "category": "yuan_sport",
+        "solveId": "R7-SOLVE-05",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              847.0,
+              866.0
+            ],
+            [
+              823.0,
+              866.0
+            ],
+            [
+              823.0,
+              814.0
+            ],
+            [
+              847.0,
+              814.0
+            ],
+            [
+              847.0,
+              866.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "LIFE-N-BD-01",
+        "name": "北苑羽毛球",
+        "yuan": "北苑",
+        "kind": "badminton",
+        "quantity": 2,
+        "x": 925,
+        "y": 115,
+        "z": 840,
+        "rotationY": 90,
+        "L": 40,
+        "W": 24,
+        "decision": "MOVED_R7_SOLVE_05",
+        "category": "yuan_sport",
+        "solveId": "R7-SOLVE-05",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              937.0,
+              860.0
+            ],
+            [
+              913.0,
+              860.0
+            ],
+            [
+              913.0,
+              820.0
+            ],
+            [
+              937.0,
+              820.0
+            ],
+            [
+              937.0,
+              860.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "LIFE-E-BB-01",
+        "name": "东苑篮球",
+        "yuan": "东苑",
+        "kind": "basketball",
+        "quantity": 4,
+        "x": 1150,
+        "y": 104,
+        "z": -30,
+        "rotationY": 90,
+        "L": 136,
+        "W": 24,
+        "decision": "MOVED_R7_SOLVE_05",
+        "category": "yuan_sport",
+        "solveId": "R7-SOLVE-05",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1162.0,
+              38.0
+            ],
+            [
+              1138.0,
+              38.0
+            ],
+            [
+              1138.0,
+              -98.0
+            ],
+            [
+              1162.0,
+              -98.0
+            ],
+            [
+              1162.0,
+              38.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "LIFE-E-TT-01",
+        "name": "东苑乒乓球",
+        "yuan": "东苑",
+        "kind": "table_tennis",
+        "quantity": 20,
+        "x": 1150,
+        "y": 104,
+        "z": 190,
+        "rotationY": 90,
+        "L": 60,
+        "W": 36,
+        "decision": "MOVED_R7_SOLVE_05",
+        "category": "yuan_sport",
+        "solveId": "R7-SOLVE-05",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1168.0,
+              220.0
+            ],
+            [
+              1132.0,
+              220.0
+            ],
+            [
+              1132.0,
+              160.0
+            ],
+            [
+              1168.0,
+              160.0
+            ],
+            [
+              1168.0,
+              220.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "LIFE-E-VB-01",
+        "name": "东苑排球",
+        "yuan": "东苑",
+        "kind": "volleyball",
+        "quantity": 2,
+        "x": 1190,
+        "y": 104,
+        "z": 250,
+        "rotationY": 90,
+        "L": 52,
+        "W": 24,
+        "decision": "MOVED_R7_SOLVE_05",
+        "category": "yuan_sport",
+        "solveId": "R7-SOLVE-05",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1202.0,
+              276.0
+            ],
+            [
+              1178.0,
+              276.0
+            ],
+            [
+              1178.0,
+              224.0
+            ],
+            [
+              1202.0,
+              224.0
+            ],
+            [
+              1202.0,
+              276.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "LIFE-E-BD-01",
+        "name": "东苑羽毛球",
+        "yuan": "东苑",
+        "kind": "badminton",
+        "quantity": 2,
+        "x": 1150,
+        "y": 103,
+        "z": 290,
+        "rotationY": 90,
+        "L": 40,
+        "W": 24,
+        "decision": "MOVED_R7_SOLVE_05",
+        "category": "yuan_sport",
+        "solveId": "R7-SOLVE-05",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1162.0,
+              310.0
+            ],
+            [
+              1138.0,
+              310.0
+            ],
+            [
+              1138.0,
+              270.0
+            ],
+            [
+              1162.0,
+              270.0
+            ],
+            [
+              1162.0,
+              310.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "LIFE-E-FB-01",
+        "name": "东苑五人制足球",
+        "yuan": "东苑",
+        "kind": "five_a_side",
+        "quantity": 1,
+        "x": 1450,
+        "y": 103,
+        "z": -350,
+        "rotationY": 0,
+        "L": 52,
+        "W": 32,
+        "decision": "RETAIN_R6_VALID_UNTIL_OVERRIDDEN",
+        "category": "yuan_sport",
+        "solveId": "R7-SOLVE-05",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1476.0,
+              -366.0
+            ],
+            [
+              1476.0,
+              -334.0
+            ],
+            [
+              1424.0,
+              -334.0
+            ],
+            [
+              1424.0,
+              -366.0
+            ],
+            [
+              1476.0,
+              -366.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "LIFE-S-BB-01",
+        "name": "南苑篮球",
+        "yuan": "南苑",
+        "kind": "basketball",
+        "quantity": 4,
+        "x": 250,
+        "y": 100,
+        "z": -620,
+        "rotationY": 0,
+        "L": 136,
+        "W": 48,
+        "decision": "RETAIN_R6_VALID_UNTIL_OVERRIDDEN",
+        "category": "yuan_sport",
+        "solveId": "R7-SOLVE-05",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              318.0,
+              -644.0
+            ],
+            [
+              318.0,
+              -596.0
+            ],
+            [
+              182.0,
+              -596.0
+            ],
+            [
+              182.0,
+              -644.0
+            ],
+            [
+              318.0,
+              -644.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "LIFE-S-TT-01",
+        "name": "南苑乒乓球",
+        "yuan": "南苑",
+        "kind": "table_tennis",
+        "quantity": 20,
+        "x": 380,
+        "y": 100,
+        "z": -620,
+        "rotationY": 90,
+        "L": 60,
+        "W": 36,
+        "decision": "RETAIN_R6_VALID_UNTIL_OVERRIDDEN",
+        "category": "yuan_sport",
+        "solveId": "R7-SOLVE-05",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              398.0,
+              -590.0
+            ],
+            [
+              362.0,
+              -590.0
+            ],
+            [
+              362.0,
+              -650.0
+            ],
+            [
+              398.0,
+              -650.0
+            ],
+            [
+              398.0,
+              -590.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "LIFE-S-VB-01",
+        "name": "南苑排球",
+        "yuan": "南苑",
+        "kind": "volleyball",
+        "quantity": 2,
+        "x": 250,
+        "y": 100,
+        "z": -670,
+        "rotationY": 0,
+        "L": 52,
+        "W": 24,
+        "decision": "RETAIN_R6_VALID_UNTIL_OVERRIDDEN",
+        "category": "yuan_sport",
+        "solveId": "R7-SOLVE-05",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              276.0,
+              -682.0
+            ],
+            [
+              276.0,
+              -658.0
+            ],
+            [
+              224.0,
+              -658.0
+            ],
+            [
+              224.0,
+              -682.0
+            ],
+            [
+              276.0,
+              -682.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "LIFE-S-BD-01",
+        "name": "南苑羽毛球",
+        "yuan": "南苑",
+        "kind": "badminton",
+        "quantity": 2,
+        "x": 300,
+        "y": 100,
+        "z": -670,
+        "rotationY": 90,
+        "L": 40,
+        "W": 24,
+        "decision": "RETAIN_R6_VALID_UNTIL_OVERRIDDEN",
+        "category": "yuan_sport",
+        "solveId": "R7-SOLVE-05",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              312.0,
+              -650.0
+            ],
+            [
+              288.0,
+              -650.0
+            ],
+            [
+              288.0,
+              -690.0
+            ],
+            [
+              312.0,
+              -690.0
+            ],
+            [
+              312.0,
+              -650.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "LIFE-S-FB-01",
+        "name": "南苑五人制足球",
+        "yuan": "南苑",
+        "kind": "five_a_side",
+        "quantity": 1,
+        "x": 340,
+        "y": 102,
+        "z": -620,
+        "rotationY": 90,
+        "L": 52,
+        "W": 32,
+        "decision": "RETAIN_R6_VALID_UNTIL_OVERRIDDEN",
+        "category": "yuan_sport",
+        "solveId": "R7-SOLVE-05",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              356.0,
+              -594.0
+            ],
+            [
+              324.0,
+              -594.0
+            ],
+            [
+              324.0,
+              -646.0
+            ],
+            [
+              356.0,
+              -646.0
+            ],
+            [
+              356.0,
+              -594.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "GREEN-W-01",
+        "name": "西苑绿心",
+        "category": "green_heart",
+        "yuan": "西苑",
+        "areaM2": 20800.0,
+        "status": "R7_SOLVED_CANDIDATE_PENDING_LANDSCAPE_DETAIL",
+        "note": "含西苑景观池",
+        "solveId": "R7-SOLVE-05",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -1335.0,
+              405.0
+            ],
+            [
+              -1335.0,
+              535.0
+            ],
+            [
+              -1495.0,
+              535.0
+            ],
+            [
+              -1495.0,
+              405.0
+            ],
+            [
+              -1335.0,
+              405.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "GREEN-N-01",
+        "name": "北苑绿心",
+        "category": "green_heart",
+        "yuan": "北苑",
+        "areaM2": 22400.0,
+        "status": "R7_SOLVED_CANDIDATE_PENDING_LANDSCAPE_DETAIL",
+        "note": "双翼复合绿心；不新建北苑景观池永久水体ID",
+        "solveId": "R7-SOLVE-05",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                -760.0,
+                920.0
+              ],
+              [
+                -760.0,
+                1000.0
+              ],
+              [
+                -900.0,
+                1000.0
+              ],
+              [
+                -900.0,
+                920.0
+              ],
+              [
+                -760.0,
+                920.0
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                880.0,
+                920.0
+              ],
+              [
+                880.0,
+                1000.0
+              ],
+              [
+                740.0,
+                1000.0
+              ],
+              [
+                740.0,
+                920.0
+              ],
+              [
+                880.0,
+                920.0
+              ]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "GREEN-E-01",
+        "name": "东苑绿心",
+        "category": "green_heart",
+        "yuan": "东苑",
+        "areaM2": 22500.0,
+        "status": "R7_SOLVED_CANDIDATE_PENDING_LANDSCAPE_DETAIL",
+        "note": "含东苑景观池",
+        "solveId": "R7-SOLVE-05",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1380.0,
+              45.0
+            ],
+            [
+              1380.0,
+              195.0
+            ],
+            [
+              1230.0,
+              195.0
+            ],
+            [
+              1230.0,
+              45.0
+            ],
+            [
+              1380.0,
+              45.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "GREEN-S-01",
+        "name": "南苑绿心",
+        "category": "green_heart",
+        "yuan": "南苑",
+        "areaM2": 24000.0,
+        "status": "R7_SOLVED_CANDIDATE_PENDING_LANDSCAPE_DETAIL",
+        "note": "含南苑景观池",
+        "solveId": "R7-SOLVE-05",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              700.0,
+              -860.0
+            ],
+            [
+              700.0,
+              -740.0
+            ],
+            [
+              500.0,
+              -740.0
+            ],
+            [
+              500.0,
+              -860.0
+            ],
+            [
+              700.0,
+              -860.0
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}
