@@ -264,7 +264,363 @@
     "terminalLoops": "PENDING",
     "stationSides": "PENDING",
     "pedestrianAndFireGraph": "PENDING",
-    "full18GlobalChecks": "PENDING"
+    "full18GlobalChecks": "PENDING",
+    "stopCoverageIdsIn09": 22,
+    "allStopIDsCovered09": true,
+    "noChangeToSource08": "R7-SOLVE-08 archived unchanged",
+    "spatialAuditScope": "candidate 2D path and selected landmarks; no authoritative vehicle swept-path, terrain, platform capacity or full fire review"
   },
-  "next": "R7-SOLVE-10 terminal loop and vehicle swept-path + real station and fire audits"
+  "next": "R7-SOLVE-10 terminal loop and vehicle swept-path + real station and fire audits",
+  "stopCoverage09": [
+    {
+      "id": "BUSSTOP-SOUTH-GATE",
+      "name": "南门公交接驳站",
+      "roadProjectionXZ": [
+        0,
+        -1000
+      ],
+      "routeCoverage09": [
+        "A",
+        "B",
+        "C_N",
+        "C_S"
+      ],
+      "platformStatus": "CANDIDATE_NOT_FINAL",
+      "transferStatus": null
+    },
+    {
+      "id": "BUSSTOP-MED-SOUTH",
+      "name": "医学南接驳站",
+      "roadProjectionXZ": [
+        -600,
+        -850
+      ],
+      "routeCoverage09": [
+        "A",
+        "B"
+      ],
+      "platformStatus": "CANDIDATE_NOT_FINAL",
+      "transferStatus": null
+    },
+    {
+      "id": "BUSSTOP-MED-NORTH",
+      "name": "医学北接驳站",
+      "roadProjectionXZ": [
+        -900,
+        -400
+      ],
+      "routeCoverage09": [
+        "A",
+        "B"
+      ],
+      "platformStatus": "CANDIDATE_NOT_FINAL",
+      "transferStatus": null
+    },
+    {
+      "id": "BUSSTOP-INFO",
+      "name": "信息学部站",
+      "roadProjectionXZ": [
+        -900,
+        -100
+      ],
+      "routeCoverage09": [
+        "A",
+        "B"
+      ],
+      "platformStatus": "CANDIDATE_NOT_FINAL",
+      "transferStatus": null
+    },
+    {
+      "id": "BUSSTOP-ENG",
+      "name": "工程学部站",
+      "roadProjectionXZ": [
+        -900,
+        400
+      ],
+      "routeCoverage09": [
+        "A",
+        "B",
+        "D_E",
+        "D_W"
+      ],
+      "platformStatus": "CANDIDATE_NOT_FINAL",
+      "transferStatus": null
+    },
+    {
+      "id": "BUSSTOP-RDI-ENTRY",
+      "name": "科研园环路接驳站",
+      "roadProjectionXZ": [
+        -750,
+        690
+      ],
+      "routeCoverage09": [
+        "A",
+        "B",
+        "D_E",
+        "D_W"
+      ],
+      "platformStatus": "CANDIDATE_NOT_FINAL",
+      "transferStatus": null
+    },
+    {
+      "id": "BUSSTOP-SCIENCE",
+      "name": "理学生命区北缘站",
+      "roadProjectionXZ": [
+        -400,
+        690
+      ],
+      "routeCoverage09": [
+        "A",
+        "B",
+        "D_E",
+        "D_W"
+      ],
+      "platformStatus": "CANDIDATE_NOT_FINAL",
+      "transferStatus": null
+    },
+    {
+      "id": "BUSSTOP-NORTH-SPORT",
+      "name": "北体育南侧换乘站",
+      "roadProjectionXZ": [
+        0,
+        655
+      ],
+      "routeCoverage09": [
+        "A",
+        "B",
+        "C_N",
+        "C_S",
+        "D_E",
+        "D_W"
+      ],
+      "platformStatus": "CANDIDATE_NOT_FINAL",
+      "transferStatus": "C_D_NORTH_CANDIDATE"
+    },
+    {
+      "id": "BUSSTOP-NORTH-LIFE-E-ENTRY",
+      "name": "北苑东侧接驳站",
+      "roadProjectionXZ": [
+        450,
+        690
+      ],
+      "routeCoverage09": [
+        "A",
+        "B",
+        "D_E",
+        "D_W"
+      ],
+      "platformStatus": "CANDIDATE_NOT_FINAL",
+      "transferStatus": null
+    },
+    {
+      "id": "BUSSTOP-ART-TRANSFER",
+      "name": "艺术区环路接驳站",
+      "roadProjectionXZ": [
+        830,
+        620
+      ],
+      "routeCoverage09": [
+        "A",
+        "B",
+        "D_E",
+        "D_W"
+      ],
+      "platformStatus": "CANDIDATE_NOT_FINAL",
+      "transferStatus": null
+    },
+    {
+      "id": "BUSSTOP-HUM",
+      "name": "人文社科站",
+      "roadProjectionXZ": [
+        830,
+        250
+      ],
+      "routeCoverage09": [
+        "A",
+        "B"
+      ],
+      "platformStatus": "CANDIDATE_NOT_FINAL",
+      "transferStatus": null
+    },
+    {
+      "id": "BUSSTOP-HUM-BUS",
+      "name": "人文经管站",
+      "roadProjectionXZ": [
+        830,
+        -100
+      ],
+      "routeCoverage09": [
+        "A",
+        "B"
+      ],
+      "platformStatus": "CANDIDATE_NOT_FINAL",
+      "transferStatus": null
+    },
+    {
+      "id": "BUSSTOP-SE-SPORT",
+      "name": "第二体育中心站",
+      "roadProjectionXZ": [
+        830,
+        -530
+      ],
+      "routeCoverage09": [
+        "A",
+        "B"
+      ],
+      "platformStatus": "CANDIDATE_NOT_FINAL",
+      "transferStatus": null
+    },
+    {
+      "id": "BUSSTOP-SOUTH-E",
+      "name": "南苑东口站",
+      "roadProjectionXZ": [
+        760,
+        -1000
+      ],
+      "routeCoverage09": [
+        "A",
+        "B"
+      ],
+      "platformStatus": "CANDIDATE_NOT_FINAL",
+      "transferStatus": null
+    },
+    {
+      "id": "BUSSTOP-SOUTH-LIFE",
+      "name": "南苑站",
+      "roadProjectionXZ": [
+        500,
+        -1000
+      ],
+      "routeCoverage09": [
+        "A",
+        "B"
+      ],
+      "platformStatus": "CANDIDATE_NOT_FINAL",
+      "transferStatus": null
+    },
+    {
+      "id": "BUSSTOP-RDI",
+      "name": "科研科技园站",
+      "roadProjectionXZ": [
+        -1430,
+        700
+      ],
+      "routeCoverage09": [
+        "D_E",
+        "D_W"
+      ],
+      "platformStatus": "CANDIDATE_NOT_FINAL",
+      "transferStatus": null
+    },
+    {
+      "id": "BUSSTOP-WEST-LIFE",
+      "name": "西苑站",
+      "roadProjectionXZ": [
+        -1320,
+        500
+      ],
+      "routeCoverage09": [
+        "D_E",
+        "D_W"
+      ],
+      "platformStatus": "CANDIDATE_NOT_FINAL",
+      "transferStatus": null
+    },
+    {
+      "id": "BUSSTOP-WEST-GATE-TRANSFER",
+      "name": "西门西苑接驳站",
+      "roadProjectionXZ": [
+        -1320,
+        100
+      ],
+      "routeCoverage09": [
+        "D_E",
+        "D_W"
+      ],
+      "platformStatus": "CANDIDATE_NOT_FINAL",
+      "transferStatus": null
+    },
+    {
+      "id": "BUSSTOP-EAST-LIFE-N",
+      "name": "东苑北站",
+      "roadProjectionXZ": [
+        1400,
+        280
+      ],
+      "routeCoverage09": [
+        "D_E",
+        "D_W"
+      ],
+      "platformStatus": "CANDIDATE_NOT_FINAL",
+      "transferStatus": null
+    },
+    {
+      "id": "BUSSTOP-EAST-LIFE",
+      "name": "东苑站",
+      "roadProjectionXZ": [
+        1400,
+        100
+      ],
+      "routeCoverage09": [
+        "D_E",
+        "D_W"
+      ],
+      "platformStatus": "CANDIDATE_NOT_FINAL",
+      "transferStatus": null
+    },
+    {
+      "id": "BUSSTOP-CENTRAL-SOUTH",
+      "name": "中央南侧接驳站",
+      "roadProjectionXZ": [
+        -135,
+        -730
+      ],
+      "routeCoverage09": [
+        "C_N",
+        "C_S"
+      ],
+      "platformStatus": "CANDIDATE_NOT_FINAL",
+      "transferStatus": null
+    },
+    {
+      "id": "BUSSTOP-BOYA-TRANSFER",
+      "name": "博雅图书馆换乘站",
+      "roadProjectionXZ": [
+        -135,
+        -285
+      ],
+      "routeCoverage09": [
+        "C_N",
+        "C_S"
+      ],
+      "platformStatus": "CANDIDATE_NOT_FINAL",
+      "transferStatus": "C_ONLY_FOR_SOLVE09"
+    }
+  ],
+  "terminalControl": {
+    "northwest": "BUSSTOP-RDI (-1430,700) terminal turning geometry not provided",
+    "southeast": "BUSSTOP-EAST-LIFE (1400,100) terminal turning geometry not provided",
+    "operationalLoopRequirement": "BOTH_DIRECTIONS_PENDING"
+  },
+  "detailedCornerAudit": {
+    "assumedCenterlineRadiiM": [
+      9,
+      12,
+      15
+    ],
+    "nominalPlanarTangentFeasible": true,
+    "actualBusModelLengthWheelbaseOverhang": null,
+    "actualSweptPathClearanceApproval": false,
+    "solve08EastShortLink": {
+      "pointXZ": [
+        1400,
+        -290
+      ],
+      "lengthM": 10,
+      "assumedRadiiRejectedM": [
+        12,
+        15
+      ]
+    }
+  }
 }
