@@ -1,0 +1,310 @@
+{
+  "type": "FeatureCollection",
+  "name": "JiangchengUniversity_R7_SOLVE_09_TransportAuditCandidate",
+  "coordinateSystem": "LOCAL_XZ_METERS_NOT_WGS84",
+  "solveId": "R7-SOLVE-09",
+  "status": "AUDITED_ALTERNATIVE_CANDIDATE_PARTIAL_WITH_BLOCKERS",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BUS-LINE-D-E-ALT09",
+        "category": "route_centerline",
+        "status": "CANDIDATE_NOT_RUNTIME"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1430,
+            700
+          ],
+          [
+            -1430,
+            600
+          ],
+          [
+            -1320,
+            600
+          ],
+          [
+            -1320,
+            500
+          ],
+          [
+            -1320,
+            100
+          ],
+          [
+            -1040,
+            100
+          ],
+          [
+            -900,
+            100
+          ],
+          [
+            -900,
+            480
+          ],
+          [
+            -900,
+            600
+          ],
+          [
+            -750,
+            600
+          ],
+          [
+            -750,
+            690
+          ],
+          [
+            -520,
+            690
+          ],
+          [
+            -338,
+            690
+          ],
+          [
+            -210,
+            690
+          ],
+          [
+            -210,
+            655
+          ],
+          [
+            -160,
+            655
+          ],
+          [
+            160,
+            655
+          ],
+          [
+            210,
+            655
+          ],
+          [
+            210,
+            690
+          ],
+          [
+            520,
+            690
+          ],
+          [
+            830,
+            690
+          ],
+          [
+            830,
+            400
+          ],
+          [
+            1040,
+            400
+          ],
+          [
+            1040,
+            360
+          ],
+          [
+            1400,
+            360
+          ],
+          [
+            1400,
+            280
+          ],
+          [
+            1400,
+            100
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BUS-LINE-D-W-ALT09",
+        "category": "route_centerline",
+        "status": "CANDIDATE_NOT_RUNTIME"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            1400,
+            100
+          ],
+          [
+            1400,
+            280
+          ],
+          [
+            1400,
+            360
+          ],
+          [
+            1040,
+            360
+          ],
+          [
+            1040,
+            400
+          ],
+          [
+            830,
+            400
+          ],
+          [
+            830,
+            690
+          ],
+          [
+            520,
+            690
+          ],
+          [
+            210,
+            690
+          ],
+          [
+            210,
+            655
+          ],
+          [
+            160,
+            655
+          ],
+          [
+            -160,
+            655
+          ],
+          [
+            -210,
+            655
+          ],
+          [
+            -210,
+            690
+          ],
+          [
+            -338,
+            690
+          ],
+          [
+            -520,
+            690
+          ],
+          [
+            -750,
+            690
+          ],
+          [
+            -750,
+            600
+          ],
+          [
+            -900,
+            600
+          ],
+          [
+            -900,
+            480
+          ],
+          [
+            -900,
+            100
+          ],
+          [
+            -1040,
+            100
+          ],
+          [
+            -1320,
+            100
+          ],
+          [
+            -1320,
+            500
+          ],
+          [
+            -1320,
+            600
+          ],
+          [
+            -1430,
+            600
+          ],
+          [
+            -1430,
+            700
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BUSSTOP-NORTH-SPORT",
+        "category": "C_D_interchange_projection",
+        "status": "PLATFORM_PENDING"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          655
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "CTRL-TRANSIT-D-QIUZHEN-CROSS",
+        "category": "blocked_D_atgrade_crossing",
+        "status": "NOT_ENABLED"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          -255
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "WALK-BOYA-C-ENTRANCE-CONCEPT",
+        "category": "pedestrian_connection",
+        "status": "ACCESS_PENDING"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122,
+            -285
+          ],
+          [
+            -122,
+            -225
+          ],
+          [
+            -100,
+            -205
+          ],
+          [
+            0,
+            -205
+          ]
+        ]
+      }
+    }
+  ]
+}
