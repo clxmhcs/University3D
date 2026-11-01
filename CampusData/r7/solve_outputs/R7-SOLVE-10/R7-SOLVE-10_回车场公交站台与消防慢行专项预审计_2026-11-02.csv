@@ -1,0 +1,6 @@
+id,kind,x,z,radius_m,status
+TURN-D-W-RDI,pad,-1405,785,32,candidate
+TURN-D-E-EASTYUAN,pad,1425,65,32,candidate
+TURN-C-N-NORTHSPORT,pad,25,605,32,candidate
+PLAT-E,platform,-120,634,0,pending
+PLAT-W,platform,-120,676,0,pending
