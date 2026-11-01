@@ -1,0 +1,1310 @@
+{
+  "type": "FeatureCollection",
+  "name": "JiangchengUniversity_R7_SOLVE_06",
+  "coordinateSystem": "LOCAL_XZ_METERS",
+  "solveId": "R7-SOLVE-06",
+  "status": "SOLVED_CANDIDATE_CONDITIONAL_ROAD_REVISION_NOT_RUNTIME_FINAL",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ATH-01",
+        "name": "综合体育馆",
+        "x": 0,
+        "y": 113,
+        "z": 990,
+        "rotationY": 0,
+        "length": 160,
+        "width": 120,
+        "category": "FROZEN_ANCHOR",
+        "solveId": "R7-SOLVE-06",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -80,
+              930
+            ],
+            [
+              80,
+              930
+            ],
+            [
+              80,
+              1050
+            ],
+            [
+              -80,
+              1050
+            ],
+            [
+              -80,
+              930
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ATH-05",
+        "name": "第一400米田径场",
+        "x": 0,
+        "y": 116,
+        "z": 790,
+        "rotationY": 0,
+        "length": 220,
+        "width": 155,
+        "category": "FROZEN_ANCHOR",
+        "solveId": "R7-SOLVE-06",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -110,
+              712.5
+            ],
+            [
+              110,
+              712.5
+            ],
+            [
+              110,
+              867.5
+            ],
+            [
+              -110,
+              867.5
+            ],
+            [
+              -110,
+              712.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ATH-11",
+        "name": "第二400米田径场",
+        "x": 1050,
+        "y": 102,
+        "z": -520,
+        "rotationY": 0,
+        "length": 220,
+        "width": 155,
+        "category": "FROZEN_ANCHOR",
+        "solveId": "R7-SOLVE-06",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              940,
+              -597.5
+            ],
+            [
+              1160,
+              -597.5
+            ],
+            [
+              1160,
+              -442.5
+            ],
+            [
+              940,
+              -442.5
+            ],
+            [
+              940,
+              -597.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ATH-21",
+        "name": "北体育篮球场A组",
+        "count": 8,
+        "sportType": "basketball",
+        "x": -255,
+        "y": 115,
+        "z": 805,
+        "rotationY": 0,
+        "length": 136,
+        "width": 48,
+        "region": "NORTH",
+        "legacy": {
+          "x": -255,
+          "z": 805,
+          "rotationY": 0
+        },
+        "decision": "R6_VALID_UNTIL_OVERRIDDEN_RETAINED",
+        "status": "R7_SOLVED_CANDIDATE_PENDING_FULL_FREEZE",
+        "category": "OUTDOOR_SPORT",
+        "solveId": "R7-SOLVE-06",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -323,
+              781
+            ],
+            [
+              -187,
+              781
+            ],
+            [
+              -187,
+              829
+            ],
+            [
+              -323,
+              829
+            ],
+            [
+              -323,
+              781
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ATH-22",
+        "name": "北体育篮球场B组",
+        "count": 8,
+        "sportType": "basketball",
+        "x": 255,
+        "y": 115,
+        "z": 805,
+        "rotationY": 0,
+        "length": 136,
+        "width": 48,
+        "region": "NORTH",
+        "legacy": {
+          "x": 255,
+          "z": 805,
+          "rotationY": 0
+        },
+        "decision": "R6_VALID_UNTIL_OVERRIDDEN_RETAINED",
+        "status": "R7_SOLVED_CANDIDATE_PENDING_FULL_FREEZE",
+        "category": "OUTDOOR_SPORT",
+        "solveId": "R7-SOLVE-06",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              187,
+              781
+            ],
+            [
+              323,
+              781
+            ],
+            [
+              323,
+              829
+            ],
+            [
+              187,
+              829
+            ],
+            [
+              187,
+              781
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ATH-23",
+        "name": "北体育乒乓球区",
+        "count": 36,
+        "sportType": "table_tennis",
+        "x": -250,
+        "y": 116,
+        "z": 1045,
+        "rotationY": 0,
+        "length": 86,
+        "width": 42,
+        "region": "NORTH",
+        "legacy": {
+          "x": -250,
+          "z": 1045,
+          "rotationY": 0
+        },
+        "decision": "R6_VALID_UNTIL_OVERRIDDEN_RETAINED",
+        "status": "R7_SOLVED_CANDIDATE_PENDING_FULL_FREEZE",
+        "category": "OUTDOOR_SPORT",
+        "solveId": "R7-SOLVE-06",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -293,
+              1024
+            ],
+            [
+              -207,
+              1024
+            ],
+            [
+              -207,
+              1066
+            ],
+            [
+              -293,
+              1066
+            ],
+            [
+              -293,
+              1024
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ATH-24",
+        "name": "北体育网球场组",
+        "count": 8,
+        "sportType": "tennis",
+        "x": 620,
+        "y": 114,
+        "z": 754,
+        "rotationY": 0,
+        "length": 156,
+        "width": 84,
+        "region": "NORTH",
+        "legacy": {
+          "x": 540,
+          "z": 760,
+          "rotationY": 0
+        },
+        "decision": "RELOCATED_BY_R7_SOLVE_06",
+        "status": "R7_SOLVED_CANDIDATE_PENDING_FULL_FREEZE",
+        "category": "OUTDOOR_SPORT",
+        "solveId": "R7-SOLVE-06",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              542,
+              712
+            ],
+            [
+              698,
+              712
+            ],
+            [
+              698,
+              796
+            ],
+            [
+              542,
+              796
+            ],
+            [
+              542,
+              712
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ATH-25",
+        "name": "北体育排球场组",
+        "count": 6,
+        "sportType": "volleyball",
+        "x": 800,
+        "y": 114,
+        "z": 750,
+        "rotationY": 0,
+        "length": 90,
+        "width": 48,
+        "region": "NORTH",
+        "legacy": {
+          "x": 700,
+          "z": 760,
+          "rotationY": 0
+        },
+        "decision": "RELOCATED_BY_R7_SOLVE_06",
+        "status": "R7_SOLVED_CANDIDATE_PENDING_FULL_FREEZE",
+        "category": "OUTDOOR_SPORT",
+        "solveId": "R7-SOLVE-06",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              755,
+              726
+            ],
+            [
+              845,
+              726
+            ],
+            [
+              845,
+              774
+            ],
+            [
+              755,
+              774
+            ],
+            [
+              755,
+              726
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ATH-26",
+        "name": "北体育羽毛球硬地区",
+        "count": 4,
+        "sportType": "badminton",
+        "x": -430,
+        "y": 114,
+        "z": 770,
+        "rotationY": 0,
+        "length": 72,
+        "width": 36,
+        "region": "NORTH",
+        "legacy": {
+          "x": -430,
+          "z": 770,
+          "rotationY": 0
+        },
+        "decision": "R6_VALID_UNTIL_OVERRIDDEN_RETAINED",
+        "status": "R7_SOLVED_CANDIDATE_PENDING_FULL_FREEZE",
+        "category": "OUTDOOR_SPORT",
+        "solveId": "R7-SOLVE-06",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -466,
+              752
+            ],
+            [
+              -394,
+              752
+            ],
+            [
+              -394,
+              788
+            ],
+            [
+              -466,
+              788
+            ],
+            [
+              -466,
+              752
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ATH-27",
+        "name": "北体育五人制足球区",
+        "count": 2,
+        "sportType": "five_a_side",
+        "x": 580,
+        "y": 112,
+        "z": 615,
+        "rotationY": 0,
+        "length": 100,
+        "width": 56,
+        "region": "NORTH",
+        "legacy": {
+          "x": 520,
+          "z": 650,
+          "rotationY": 0
+        },
+        "decision": "RELOCATED_BY_R7_SOLVE_06",
+        "status": "R7_SOLVED_CANDIDATE_PENDING_FULL_FREEZE",
+        "category": "OUTDOOR_SPORT",
+        "solveId": "R7-SOLVE-06",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              530,
+              587
+            ],
+            [
+              630,
+              587
+            ],
+            [
+              630,
+              643
+            ],
+            [
+              530,
+              643
+            ],
+            [
+              530,
+              587
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ATH-14",
+        "name": "第二体育篮球场群",
+        "count": 12,
+        "sportType": "basketball",
+        "x": 900,
+        "y": 102,
+        "z": -520,
+        "rotationY": 90,
+        "length": 204,
+        "width": 48,
+        "region": "SOUTHEAST",
+        "legacy": {
+          "x": 860,
+          "z": -520,
+          "rotationY": 90
+        },
+        "decision": "RELOCATED_BY_R7_SOLVE_06",
+        "status": "R7_SOLVED_CANDIDATE_PENDING_FULL_FREEZE",
+        "category": "OUTDOOR_SPORT",
+        "solveId": "R7-SOLVE-06",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              924,
+              -622
+            ],
+            [
+              924,
+              -418
+            ],
+            [
+              876,
+              -418
+            ],
+            [
+              876,
+              -622
+            ],
+            [
+              924,
+              -622
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ATH-15",
+        "name": "第二体育网球场群",
+        "count": 8,
+        "sportType": "tennis",
+        "x": 1100,
+        "y": 102,
+        "z": -660,
+        "rotationY": 0,
+        "length": 156,
+        "width": 84,
+        "region": "SOUTHEAST",
+        "legacy": {
+          "x": 1170,
+          "z": -660,
+          "rotationY": 0
+        },
+        "decision": "RELOCATED_BY_R7_SOLVE_06",
+        "status": "R7_SOLVED_CANDIDATE_PENDING_FULL_FREEZE",
+        "category": "OUTDOOR_SPORT",
+        "solveId": "R7-SOLVE-06",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1022,
+              -702
+            ],
+            [
+              1178,
+              -702
+            ],
+            [
+              1178,
+              -618
+            ],
+            [
+              1022,
+              -618
+            ],
+            [
+              1022,
+              -702
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ATH-16",
+        "name": "第二体育排球场群",
+        "count": 8,
+        "sportType": "volleyball",
+        "x": 1390,
+        "y": 102,
+        "z": -660,
+        "rotationY": 0,
+        "length": 116,
+        "width": 48,
+        "region": "SOUTHEAST",
+        "legacy": {
+          "x": 1340,
+          "z": -690,
+          "rotationY": 0
+        },
+        "decision": "RELOCATED_BY_R7_SOLVE_06",
+        "status": "R7_SOLVED_CANDIDATE_PENDING_FULL_FREEZE",
+        "category": "OUTDOOR_SPORT",
+        "solveId": "R7-SOLVE-06",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1332,
+              -684
+            ],
+            [
+              1448,
+              -684
+            ],
+            [
+              1448,
+              -636
+            ],
+            [
+              1332,
+              -636
+            ],
+            [
+              1332,
+              -684
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ATH-17",
+        "name": "第二体育乒乓球区",
+        "count": 28,
+        "sportType": "table_tennis",
+        "x": 1360,
+        "y": 102,
+        "z": -580,
+        "rotationY": 0,
+        "length": 72,
+        "width": 40,
+        "region": "SOUTHEAST",
+        "legacy": {
+          "x": 1310,
+          "z": -610,
+          "rotationY": 0
+        },
+        "decision": "RELOCATED_BY_R7_SOLVE_06",
+        "status": "R7_SOLVED_CANDIDATE_PENDING_FULL_FREEZE",
+        "category": "OUTDOOR_SPORT",
+        "solveId": "R7-SOLVE-06",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1324,
+              -600
+            ],
+            [
+              1396,
+              -600
+            ],
+            [
+              1396,
+              -560
+            ],
+            [
+              1324,
+              -560
+            ],
+            [
+              1324,
+              -600
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ATH-18",
+        "name": "第二体育羽毛球区",
+        "count": 4,
+        "sportType": "badminton",
+        "x": 900,
+        "y": 102,
+        "z": -365,
+        "rotationY": 90,
+        "length": 72,
+        "width": 36,
+        "region": "SOUTHEAST",
+        "legacy": {
+          "x": 910,
+          "z": -450,
+          "rotationY": 90
+        },
+        "decision": "RELOCATED_BY_R7_SOLVE_06",
+        "status": "R7_SOLVED_CANDIDATE_PENDING_FULL_FREEZE",
+        "category": "OUTDOOR_SPORT",
+        "solveId": "R7-SOLVE-06",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              918,
+              -401
+            ],
+            [
+              918,
+              -329
+            ],
+            [
+              882,
+              -329
+            ],
+            [
+              882,
+              -401
+            ],
+            [
+              918,
+              -401
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ATH-19",
+        "name": "第二体育五人制足球区",
+        "count": 2,
+        "sportType": "five_a_side",
+        "x": 1310,
+        "y": 103,
+        "z": -430,
+        "rotationY": 0,
+        "length": 100,
+        "width": 56,
+        "region": "SOUTHEAST",
+        "legacy": {
+          "x": 1310,
+          "z": -430,
+          "rotationY": 0
+        },
+        "decision": "R6_VALID_UNTIL_OVERRIDDEN_RETAINED",
+        "status": "R7_SOLVED_CANDIDATE_PENDING_FULL_FREEZE",
+        "category": "OUTDOOR_SPORT",
+        "solveId": "R7-SOLVE-06",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1260,
+              -458
+            ],
+            [
+              1360,
+              -458
+            ],
+            [
+              1360,
+              -402
+            ],
+            [
+              1260,
+              -402
+            ],
+            [
+              1260,
+              -458
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ATH-02",
+        "name": "综合体育馆前广场",
+        "x": 0,
+        "y": 112,
+        "z": 1095,
+        "rotationY": 0,
+        "length": 320,
+        "width": 80,
+        "category": "open_plaza",
+        "decision": "RELOCATED_PLAZA",
+        "solveId": "R7-SOLVE-06",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -160,
+              1055
+            ],
+            [
+              160,
+              1055
+            ],
+            [
+              160,
+              1135
+            ],
+            [
+              -160,
+              1135
+            ],
+            [
+              -160,
+              1055
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ATH-03",
+        "name": "游泳馆",
+        "x": -250,
+        "y": 114,
+        "z": 900,
+        "rotationY": 0,
+        "length": 122,
+        "width": 82,
+        "category": "building",
+        "decision": "R6_RETAINED",
+        "solveId": "R7-SOLVE-06",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -311,
+              859
+            ],
+            [
+              -189,
+              859
+            ],
+            [
+              -189,
+              941
+            ],
+            [
+              -311,
+              941
+            ],
+            [
+              -311,
+              859
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ATH-04",
+        "name": "体育训练馆",
+        "x": 250,
+        "y": 114,
+        "z": 900,
+        "rotationY": 0,
+        "length": 112,
+        "width": 76,
+        "category": "building",
+        "decision": "R6_RETAINED",
+        "solveId": "R7-SOLVE-06",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              194,
+              862
+            ],
+            [
+              306,
+              862
+            ],
+            [
+              306,
+              938
+            ],
+            [
+              194,
+              938
+            ],
+            [
+              194,
+              862
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ATH-06-N",
+        "name": "第一田径场北看台",
+        "x": 0,
+        "y": 116,
+        "z": 885,
+        "rotationY": 0,
+        "length": 150,
+        "width": 24,
+        "category": "stand",
+        "decision": "R6_RETAINED",
+        "solveId": "R7-SOLVE-06",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -75,
+              873
+            ],
+            [
+              75,
+              873
+            ],
+            [
+              75,
+              897
+            ],
+            [
+              -75,
+              897
+            ],
+            [
+              -75,
+              873
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ATH-06-S",
+        "name": "第一田径场南看台",
+        "x": 0,
+        "y": 116,
+        "z": 695,
+        "rotationY": 0,
+        "length": 150,
+        "width": 24,
+        "category": "stand",
+        "decision": "R6_RETAINED_WITH_CONDITIONAL_ROAD_DETOUR",
+        "solveId": "R7-SOLVE-06",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -75,
+              683
+            ],
+            [
+              75,
+              683
+            ],
+            [
+              75,
+              707
+            ],
+            [
+              -75,
+              707
+            ],
+            [
+              -75,
+              683
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "PE-01",
+        "name": "体育学院楼",
+        "x": -330,
+        "y": 115,
+        "z": 740,
+        "rotationY": 0,
+        "length": 92,
+        "width": 36,
+        "category": "building",
+        "decision": "RELOCATED",
+        "solveId": "R7-SOLVE-06",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -376,
+              722
+            ],
+            [
+              -284,
+              722
+            ],
+            [
+              -284,
+              758
+            ],
+            [
+              -376,
+              758
+            ],
+            [
+              -376,
+              722
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "PE-02",
+        "name": "体育训练教学楼",
+        "x": 445,
+        "y": 115,
+        "z": 740,
+        "rotationY": 0,
+        "length": 86,
+        "width": 46,
+        "category": "building",
+        "decision": "RELOCATED",
+        "solveId": "R7-SOLVE-06",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              402,
+              717
+            ],
+            [
+              488,
+              717
+            ],
+            [
+              488,
+              763
+            ],
+            [
+              402,
+              763
+            ],
+            [
+              402,
+              717
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ATH-12",
+        "name": "第二体育中心看台",
+        "x": 1050,
+        "y": 102,
+        "z": -410,
+        "rotationY": 0,
+        "length": 130,
+        "width": 20,
+        "category": "stand",
+        "decision": "R6_RETAINED",
+        "solveId": "R7-SOLVE-06",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              985,
+              -420
+            ],
+            [
+              1115,
+              -420
+            ],
+            [
+              1115,
+              -400
+            ],
+            [
+              985,
+              -400
+            ],
+            [
+              985,
+              -420
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ATH-13",
+        "name": "第二体育体育服务楼",
+        "x": 1270,
+        "y": 103,
+        "z": -520,
+        "rotationY": 270,
+        "length": 72,
+        "width": 30,
+        "category": "building",
+        "decision": "R6_RETAINED",
+        "solveId": "R7-SOLVE-06",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1255,
+              -484
+            ],
+            [
+              1255,
+              -556
+            ],
+            [
+              1285,
+              -556
+            ],
+            [
+              1285,
+              -484
+            ],
+            [
+              1255,
+              -484
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-BOYA-RING-N-SOLVE06-PROPOSAL",
+        "category": "CONDITIONAL_ROAD_CENTERLINE",
+        "status": "PROPOSAL_PENDING_R7_SOLVE_02_MERGE",
+        "widthM": 26,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -750,
+            690
+          ],
+          [
+            -210,
+            690
+          ],
+          [
+            -210,
+            655
+          ],
+          [
+            210,
+            655
+          ],
+          [
+            210,
+            690
+          ],
+          [
+            830,
+            690
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "EXAMPLE-SOLVE06-EVENT-CONNECTOR-1",
+        "category": "DERIVED_ROAD_CONNECTION",
+        "roadSegmentID": "ROAD-JIANXING-W",
+        "widthM": 22,
+        "status": "DERIVED_AFTER_ROAD_REVISION",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -160,
+            655
+          ],
+          [
+            -160,
+            690
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "EXAMPLE-SOLVE06-EVENT-CONNECTOR-2",
+        "category": "DERIVED_ROAD_CONNECTION",
+        "roadSegmentID": "ROAD-JIANXING-E",
+        "widthM": 22,
+        "status": "DERIVED_AFTER_ROAD_REVISION",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            160,
+            655
+          ],
+          [
+            160,
+            690
+          ]
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+江城大学——R7-SOLVE-06 北体育中心与东南第二体育中心附属体育场地精确重排候选解
+
+版本：R7-NORTH-SOUTHEAST-SPORTS-MICROLAYOUT-CANDIDATE-2026-11-01
+最高优先级：PATCH-2026-09-14-R7
+状态：SOLVED_CANDIDATE_CONDITIONAL_ROAD_REVISION_NOT_RUNTIME_FINAL
+Runtime Final：NO
+坐标：X东/Z北/Y高，单位1m；局部条件性重排数据不可在未完成全局审计前替换正式CampusData。
+
+==================================================
+一、输入依据与本阶段边界
+==================================================
+R7最高优先级补丁、R7户外体育场地补充、R7建筑参数/布局/地形与水系，以及R7-SOLVE-02道路骨架、03西部学院、04东部学院、05四苑住宿与体育的最新候选。
+继续冻结两座400m田径场、北体育馆和全校六项体育总数量。R7-SOLVE-06只重排其附属设施、看台/广场及两大体育中心球场；不擅自移动三处强锚点。
+
+二、强锚点
+ATH-01 综合体育馆 (0,113,990) rot0 160×120m
+ATH-05 第一400米田径场 (0,116,790) rot0 220×155m
+ATH-11 第二400米田径场 (1050,102,-520) rot0 220×155m
+
+三、北体育 ATH-21～27
+ATH-21｜北体育篮球场A组｜8 basketball｜(-255,115,805) rot0｜136×48m｜R6_VALID_UNTIL_OVERRIDDEN_RETAINED
+ATH-22｜北体育篮球场B组｜8 basketball｜(255,115,805) rot0｜136×48m｜R6_VALID_UNTIL_OVERRIDDEN_RETAINED
+ATH-23｜北体育乒乓球区｜36 table_tennis｜(-250,116,1045) rot0｜86×42m｜R6_VALID_UNTIL_OVERRIDDEN_RETAINED
+ATH-24｜北体育网球场组｜8 tennis｜(620,114,754) rot0｜156×84m｜RELOCATED_BY_R7_SOLVE_06
+ATH-25｜北体育排球场组｜6 volleyball｜(800,114,750) rot0｜90×48m｜RELOCATED_BY_R7_SOLVE_06
+ATH-26｜北体育羽毛球硬地区｜4 badminton｜(-430,114,770) rot0｜72×36m｜R6_VALID_UNTIL_OVERRIDDEN_RETAINED
+ATH-27｜北体育五人制足球区｜2 five_a_side｜(580,112,615) rot0｜100×56m｜RELOCATED_BY_R7_SOLVE_06
+
+四、第二体育中心 ATH-14～19
+ATH-14｜第二体育篮球场群｜12 basketball｜(900,102,-520) rot90｜204×48m｜RELOCATED_BY_R7_SOLVE_06
+ATH-15｜第二体育网球场群｜8 tennis｜(1100,102,-660) rot0｜156×84m｜RELOCATED_BY_R7_SOLVE_06
+ATH-16｜第二体育排球场群｜8 volleyball｜(1390,102,-660) rot0｜116×48m｜RELOCATED_BY_R7_SOLVE_06
+ATH-17｜第二体育乒乓球区｜28 table_tennis｜(1360,102,-580) rot0｜72×40m｜RELOCATED_BY_R7_SOLVE_06
+ATH-18｜第二体育羽毛球区｜4 badminton｜(900,102,-365) rot90｜72×36m｜RELOCATED_BY_R7_SOLVE_06
+ATH-19｜第二体育五人制足球区｜2 five_a_side｜(1310,103,-430) rot0｜100×56m｜R6_VALID_UNTIL_OVERRIDDEN_RETAINED
+
+五、附属体育建筑、看台及广场
+ATH-02 综合体育馆前广场 (0,112,1095) rot0 320×80m｜RELOCATED_PLAZA
+ATH-03 游泳馆 (-250,114,900) rot0 122×82m｜R6_RETAINED
+ATH-04 体育训练馆 (250,114,900) rot0 112×76m｜R6_RETAINED
+ATH-06-N 第一田径场北看台 (0,116,885) rot0 150×24m｜R6_RETAINED
+ATH-06-S 第一田径场南看台 (0,116,695) rot0 150×24m｜R6_RETAINED_WITH_CONDITIONAL_ROAD_DETOUR
+PE-01 体育学院楼 (-330,115,740) rot0 92×36m｜RELOCATED
+PE-02 体育训练教学楼 (445,115,740) rot0 86×46m｜RELOCATED
+ATH-12 第二体育中心看台 (1050,102,-410) rot0 130×20m｜R6_RETAINED
+ATH-13 第二体育体育服务楼 (1270,103,-520) rot270 72×30m｜R6_RETAINED
+
+六、北环路南看台冲突与道路条件性修正
+原ROAD-BOYA-RING-N Z=690、宽26m。ATH-06-S的旧占地（中心0,695）确与其道路空间发生实体占用冲突；R6时PE-01与PE-02旧位置亦冲突。
+本阶段保留ATH-06-S的南侧看台功能及中心位置；体育学院楼PE-01改到(-330,115,740)，体育训练教学楼PE-02改到(445,115,740)。
+北环路候选中心线：(-750,690)→(-210,690)→(-210,655)→(210,655)→(210,690)→(830,690)。
+此局部横向绕行比SOLVE-02直线多70m，SOLVE-02道路骨架博雅环路候选总长6.84km，在该条件修订后成为约6.91km；并不代表校车运营里程。
+健行赛事西/东支路需在X=-160与X=160增加Z655～690受控短连接。受控车道交角、缓和曲线、会车、消防、应急及人群冲突还需要工程阶段审查。
+注意：此变更是SOLVE-06的条件提案，并未擅自覆盖SOLVE-02；因此不能称为‘道路已最终冻结’。
+
+七、体育馆前广场ATH-02校界及建筑重叠修正
+原候选ATH-02：中心(0,112,1100)，200×140m，与体育馆占地约重叠3200㎡，校界以外约5159.4㎡。
+新候选ATH-02：中心(0,112,1095)，320×80m，25600㎡，体育馆重叠0、校界外0。
+该范围作为开放式广场的候选空间，不作为独立实体房屋。北门→广场→综合体育馆主关系保持。赛事期间通车控制和人流疏散仍为待审。
+
+八、体育数量总守恒
+北体育：16篮球全场、36乒乓台、8网球、6排球、4羽毛球、2五人制足球。
+第二体育：12篮球全场、28乒乓台、8网球、8排球、4羽毛球、2五人制足球。
+加SOLVE-05四苑体育与学院级TT-ENG/HUM/MED共18台乒乓球，全校冻结值保持：
+篮球44、户外乒乓158、网球16、排球22、户外羽毛球16、五人制足球6。
+13组户外体育中重新落位8组：ATH-24、ATH-25、ATH-27、ATH-14、ATH-15、ATH-16、ATH-17、ATH-18；其余5组暂保留R6有效位置。
+
+九、条件几何审计
+将R7-SOLVE-02北环路本轮局部候选绕行作为前提，二维占地硬碰撞数量：0。
+已检查本轮所涉体育与看台矩形、校园边界、SOLVE-03/04/05已求解建筑和四苑体育、R7道路走廊、命名水体中心+面积代理及主溪流12m代理缓冲。
+离道路走廊最小净距9m；与SOLVE-03/04/05相邻对象最小净距10m；到溪流12m代理缓冲最小净距15m。
+其中田径场看台到场地包络约5.5m，并不代表消防疏散或结构连接已验收。地形Y尚沿用R6候选，水面代理非正式岸线。
+
+十、仍需审计、不能误称已完成
+1、R7-SOLVE-02 road revision merge
+2、north gate event vehicle/pedestrian control
+3、bus A/B/C/D and 22-stop graph
+4、traffic/fire turning/egress
+5、formal water shorelines and terrain elevations
+6、all 18 global audits
+7、CampusData/SVG/Unity runtime integration
+
+十一、后续
+建议R7-SOLVE-07先处理局部路网条件修订的合并和几何工程复核，再衍生20个主要交叉节点、22处校车站、A/B/C/D线运营里程及消防/赛事人车分离；最终全校18项审计合格后才允许Runtime Final。
+——R7-SOLVE-06结束——

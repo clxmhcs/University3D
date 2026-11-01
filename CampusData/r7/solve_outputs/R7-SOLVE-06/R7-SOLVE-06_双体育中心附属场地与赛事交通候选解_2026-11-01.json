@@ -1,0 +1,556 @@
+{
+  "schemaVersion": 1,
+  "solveId": "R7-SOLVE-06",
+  "version": "R7-NORTH-SOUTHEAST-SPORTS-MICROLAYOUT-CANDIDATE-2026-11-01",
+  "baseSourcePatch": "PATCH-2026-09-14-R7",
+  "status": "SOLVED_CANDIDATE_CONDITIONAL_ROAD_REVISION_NOT_RUNTIME_FINAL",
+  "runtimeFinal": false,
+  "spatialAxes": "X east/Z north/Y up; 1 unit = 1m",
+  "sourcePriority": [
+    "PATCH-2026-09-14-R7",
+    "R7 Outdoor Sports",
+    "R7-SOLVE-02 roads",
+    "R7-SOLVE-03 west academic",
+    "R7-SOLVE-04 east academic",
+    "R7-SOLVE-05 four Yuan residential and sports"
+  ],
+  "frozenAnchors": [
+    {
+      "id": "ATH-01",
+      "name": "综合体育馆",
+      "x": 0,
+      "y": 113,
+      "z": 990,
+      "rotationY": 0,
+      "length": 160,
+      "width": 120
+    },
+    {
+      "id": "ATH-05",
+      "name": "第一400米田径场",
+      "x": 0,
+      "y": 116,
+      "z": 790,
+      "rotationY": 0,
+      "length": 220,
+      "width": 155
+    },
+    {
+      "id": "ATH-11",
+      "name": "第二400米田径场",
+      "x": 1050,
+      "y": 102,
+      "z": -520,
+      "rotationY": 0,
+      "length": 220,
+      "width": 155
+    }
+  ],
+  "sportFields": [
+    {
+      "id": "ATH-21",
+      "name": "北体育篮球场A组",
+      "count": 8,
+      "sportType": "basketball",
+      "x": -255,
+      "y": 115,
+      "z": 805,
+      "rotationY": 0,
+      "length": 136,
+      "width": 48,
+      "region": "NORTH",
+      "legacy": {
+        "x": -255,
+        "z": 805,
+        "rotationY": 0
+      },
+      "decision": "R6_VALID_UNTIL_OVERRIDDEN_RETAINED",
+      "status": "R7_SOLVED_CANDIDATE_PENDING_FULL_FREEZE"
+    },
+    {
+      "id": "ATH-22",
+      "name": "北体育篮球场B组",
+      "count": 8,
+      "sportType": "basketball",
+      "x": 255,
+      "y": 115,
+      "z": 805,
+      "rotationY": 0,
+      "length": 136,
+      "width": 48,
+      "region": "NORTH",
+      "legacy": {
+        "x": 255,
+        "z": 805,
+        "rotationY": 0
+      },
+      "decision": "R6_VALID_UNTIL_OVERRIDDEN_RETAINED",
+      "status": "R7_SOLVED_CANDIDATE_PENDING_FULL_FREEZE"
+    },
+    {
+      "id": "ATH-23",
+      "name": "北体育乒乓球区",
+      "count": 36,
+      "sportType": "table_tennis",
+      "x": -250,
+      "y": 116,
+      "z": 1045,
+      "rotationY": 0,
+      "length": 86,
+      "width": 42,
+      "region": "NORTH",
+      "legacy": {
+        "x": -250,
+        "z": 1045,
+        "rotationY": 0
+      },
+      "decision": "R6_VALID_UNTIL_OVERRIDDEN_RETAINED",
+      "status": "R7_SOLVED_CANDIDATE_PENDING_FULL_FREEZE"
+    },
+    {
+      "id": "ATH-24",
+      "name": "北体育网球场组",
+      "count": 8,
+      "sportType": "tennis",
+      "x": 620,
+      "y": 114,
+      "z": 754,
+      "rotationY": 0,
+      "length": 156,
+      "width": 84,
+      "region": "NORTH",
+      "legacy": {
+        "x": 540,
+        "z": 760,
+        "rotationY": 0
+      },
+      "decision": "RELOCATED_BY_R7_SOLVE_06",
+      "status": "R7_SOLVED_CANDIDATE_PENDING_FULL_FREEZE"
+    },
+    {
+      "id": "ATH-25",
+      "name": "北体育排球场组",
+      "count": 6,
+      "sportType": "volleyball",
+      "x": 800,
+      "y": 114,
+      "z": 750,
+      "rotationY": 0,
+      "length": 90,
+      "width": 48,
+      "region": "NORTH",
+      "legacy": {
+        "x": 700,
+        "z": 760,
+        "rotationY": 0
+      },
+      "decision": "RELOCATED_BY_R7_SOLVE_06",
+      "status": "R7_SOLVED_CANDIDATE_PENDING_FULL_FREEZE"
+    },
+    {
+      "id": "ATH-26",
+      "name": "北体育羽毛球硬地区",
+      "count": 4,
+      "sportType": "badminton",
+      "x": -430,
+      "y": 114,
+      "z": 770,
+      "rotationY": 0,
+      "length": 72,
+      "width": 36,
+      "region": "NORTH",
+      "legacy": {
+        "x": -430,
+        "z": 770,
+        "rotationY": 0
+      },
+      "decision": "R6_VALID_UNTIL_OVERRIDDEN_RETAINED",
+      "status": "R7_SOLVED_CANDIDATE_PENDING_FULL_FREEZE"
+    },
+    {
+      "id": "ATH-27",
+      "name": "北体育五人制足球区",
+      "count": 2,
+      "sportType": "five_a_side",
+      "x": 580,
+      "y": 112,
+      "z": 615,
+      "rotationY": 0,
+      "length": 100,
+      "width": 56,
+      "region": "NORTH",
+      "legacy": {
+        "x": 520,
+        "z": 650,
+        "rotationY": 0
+      },
+      "decision": "RELOCATED_BY_R7_SOLVE_06",
+      "status": "R7_SOLVED_CANDIDATE_PENDING_FULL_FREEZE"
+    },
+    {
+      "id": "ATH-14",
+      "name": "第二体育篮球场群",
+      "count": 12,
+      "sportType": "basketball",
+      "x": 900,
+      "y": 102,
+      "z": -520,
+      "rotationY": 90,
+      "length": 204,
+      "width": 48,
+      "region": "SOUTHEAST",
+      "legacy": {
+        "x": 860,
+        "z": -520,
+        "rotationY": 90
+      },
+      "decision": "RELOCATED_BY_R7_SOLVE_06",
+      "status": "R7_SOLVED_CANDIDATE_PENDING_FULL_FREEZE"
+    },
+    {
+      "id": "ATH-15",
+      "name": "第二体育网球场群",
+      "count": 8,
+      "sportType": "tennis",
+      "x": 1100,
+      "y": 102,
+      "z": -660,
+      "rotationY": 0,
+      "length": 156,
+      "width": 84,
+      "region": "SOUTHEAST",
+      "legacy": {
+        "x": 1170,
+        "z": -660,
+        "rotationY": 0
+      },
+      "decision": "RELOCATED_BY_R7_SOLVE_06",
+      "status": "R7_SOLVED_CANDIDATE_PENDING_FULL_FREEZE"
+    },
+    {
+      "id": "ATH-16",
+      "name": "第二体育排球场群",
+      "count": 8,
+      "sportType": "volleyball",
+      "x": 1390,
+      "y": 102,
+      "z": -660,
+      "rotationY": 0,
+      "length": 116,
+      "width": 48,
+      "region": "SOUTHEAST",
+      "legacy": {
+        "x": 1340,
+        "z": -690,
+        "rotationY": 0
+      },
+      "decision": "RELOCATED_BY_R7_SOLVE_06",
+      "status": "R7_SOLVED_CANDIDATE_PENDING_FULL_FREEZE"
+    },
+    {
+      "id": "ATH-17",
+      "name": "第二体育乒乓球区",
+      "count": 28,
+      "sportType": "table_tennis",
+      "x": 1360,
+      "y": 102,
+      "z": -580,
+      "rotationY": 0,
+      "length": 72,
+      "width": 40,
+      "region": "SOUTHEAST",
+      "legacy": {
+        "x": 1310,
+        "z": -610,
+        "rotationY": 0
+      },
+      "decision": "RELOCATED_BY_R7_SOLVE_06",
+      "status": "R7_SOLVED_CANDIDATE_PENDING_FULL_FREEZE"
+    },
+    {
+      "id": "ATH-18",
+      "name": "第二体育羽毛球区",
+      "count": 4,
+      "sportType": "badminton",
+      "x": 900,
+      "y": 102,
+      "z": -365,
+      "rotationY": 90,
+      "length": 72,
+      "width": 36,
+      "region": "SOUTHEAST",
+      "legacy": {
+        "x": 910,
+        "z": -450,
+        "rotationY": 90
+      },
+      "decision": "RELOCATED_BY_R7_SOLVE_06",
+      "status": "R7_SOLVED_CANDIDATE_PENDING_FULL_FREEZE"
+    },
+    {
+      "id": "ATH-19",
+      "name": "第二体育五人制足球区",
+      "count": 2,
+      "sportType": "five_a_side",
+      "x": 1310,
+      "y": 103,
+      "z": -430,
+      "rotationY": 0,
+      "length": 100,
+      "width": 56,
+      "region": "SOUTHEAST",
+      "legacy": {
+        "x": 1310,
+        "z": -430,
+        "rotationY": 0
+      },
+      "decision": "R6_VALID_UNTIL_OVERRIDDEN_RETAINED",
+      "status": "R7_SOLVED_CANDIDATE_PENDING_FULL_FREEZE"
+    }
+  ],
+  "ancillaryFacilities": [
+    {
+      "id": "ATH-02",
+      "name": "综合体育馆前广场",
+      "x": 0,
+      "y": 112,
+      "z": 1095,
+      "rotationY": 0,
+      "length": 320,
+      "width": 80,
+      "category": "open_plaza",
+      "decision": "RELOCATED_PLAZA"
+    },
+    {
+      "id": "ATH-03",
+      "name": "游泳馆",
+      "x": -250,
+      "y": 114,
+      "z": 900,
+      "rotationY": 0,
+      "length": 122,
+      "width": 82,
+      "category": "building",
+      "decision": "R6_RETAINED"
+    },
+    {
+      "id": "ATH-04",
+      "name": "体育训练馆",
+      "x": 250,
+      "y": 114,
+      "z": 900,
+      "rotationY": 0,
+      "length": 112,
+      "width": 76,
+      "category": "building",
+      "decision": "R6_RETAINED"
+    },
+    {
+      "id": "ATH-06-N",
+      "name": "第一田径场北看台",
+      "x": 0,
+      "y": 116,
+      "z": 885,
+      "rotationY": 0,
+      "length": 150,
+      "width": 24,
+      "category": "stand",
+      "decision": "R6_RETAINED"
+    },
+    {
+      "id": "ATH-06-S",
+      "name": "第一田径场南看台",
+      "x": 0,
+      "y": 116,
+      "z": 695,
+      "rotationY": 0,
+      "length": 150,
+      "width": 24,
+      "category": "stand",
+      "decision": "R6_RETAINED_WITH_CONDITIONAL_ROAD_DETOUR"
+    },
+    {
+      "id": "PE-01",
+      "name": "体育学院楼",
+      "x": -330,
+      "y": 115,
+      "z": 740,
+      "rotationY": 0,
+      "length": 92,
+      "width": 36,
+      "category": "building",
+      "decision": "RELOCATED"
+    },
+    {
+      "id": "PE-02",
+      "name": "体育训练教学楼",
+      "x": 445,
+      "y": 115,
+      "z": 740,
+      "rotationY": 0,
+      "length": 86,
+      "width": 46,
+      "category": "building",
+      "decision": "RELOCATED"
+    },
+    {
+      "id": "ATH-12",
+      "name": "第二体育中心看台",
+      "x": 1050,
+      "y": 102,
+      "z": -410,
+      "rotationY": 0,
+      "length": 130,
+      "width": 20,
+      "category": "stand",
+      "decision": "R6_RETAINED"
+    },
+    {
+      "id": "ATH-13",
+      "name": "第二体育体育服务楼",
+      "x": 1270,
+      "y": 103,
+      "z": -520,
+      "rotationY": 270,
+      "length": 72,
+      "width": 30,
+      "category": "building",
+      "decision": "R6_RETAINED"
+    }
+  ],
+  "plazaCandidate": {
+    "id": "ATH-02",
+    "center": [
+      0,
+      112,
+      1095
+    ],
+    "sizeM": [
+      320,
+      80
+    ],
+    "areaM2": 25600,
+    "oldCenter": [
+      0,
+      112,
+      1100
+    ],
+    "oldSizeM": [
+      200,
+      140
+    ],
+    "oldGymOverlapM2": 3200,
+    "oldOutsideCampusM2": 5159.4,
+    "newGymOverlapM2": 0,
+    "newOutsideCampusM2": 0,
+    "status": "R7_SOLVED_CANDIDATE_PENDING_CROWD_AUDIT"
+  },
+  "conditionalRoadRevision": {
+    "affectedId": "ROAD-BOYA-RING-N",
+    "widthM": 26,
+    "originalCenterline": [
+      [
+        -750,
+        690
+      ],
+      [
+        830,
+        690
+      ]
+    ],
+    "proposedCenterline": [
+      [
+        -750,
+        690
+      ],
+      [
+        -210,
+        690
+      ],
+      [
+        -210,
+        655
+      ],
+      [
+        210,
+        655
+      ],
+      [
+        210,
+        690
+      ],
+      [
+        830,
+        690
+      ]
+    ],
+    "additionalLengthM": 70,
+    "baselineRingLengthM": 6840,
+    "conditionalRingLengthM": 6910,
+    "eventConnectorExtensions": [
+      {
+        "roadId": "ROAD-JIANXING-W",
+        "points": [
+          [
+            -160,
+            655
+          ],
+          [
+            -160,
+            690
+          ]
+        ],
+        "widthM": 22
+      },
+      {
+        "roadId": "ROAD-JIANXING-E",
+        "points": [
+          [
+            160,
+            655
+          ],
+          [
+            160,
+            690
+          ]
+        ],
+        "widthM": 22
+      }
+    ],
+    "status": "PROPOSAL_PENDING_R7_SOLVE_02_MERGE",
+    "runtimeFinal": false
+  },
+  "audits": {
+    "conditionalHardCollisionCount": 0,
+    "previousNorthRoadCollisions": [
+      "ATH-06-S",
+      "PE-01",
+      "PE-02"
+    ],
+    "minRoadRightOfWayClearanceM": 9,
+    "minAdjacentStage03to05M": 10,
+    "minStreamProxy12mClearanceM": 15,
+    "minWaterProxyClearanceM": 74.043,
+    "globalSportTotals": {
+      "basketball": 44,
+      "table_tennis": 158,
+      "tennis": 16,
+      "volleyball": 22,
+      "badminton": 16,
+      "five_a_side": 6
+    },
+    "movedSportGroups": 8,
+    "retainedSportGroups": 5,
+    "stagesNotCompleted": [
+      "R7-SOLVE-02 road revision merge",
+      "north gate event vehicle/pedestrian control",
+      "bus A/B/C/D and 22-stop graph",
+      "traffic/fire turning/egress",
+      "formal water shorelines and terrain elevations",
+      "all 18 global audits",
+      "CampusData/SVG/Unity runtime integration"
+    ],
+    "note": "Zero collision only holds against tested geometry under conditional road bypass. Not a global or engineering freeze."
+  },
+  "nextStage": "R7-SOLVE-07 roads/junctions/bus and emergency consistency"
+}
