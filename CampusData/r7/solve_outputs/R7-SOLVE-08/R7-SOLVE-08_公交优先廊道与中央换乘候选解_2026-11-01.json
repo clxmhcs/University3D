@@ -1,0 +1,1731 @@
+{
+  "schemaVersion": 1,
+  "solveId": "R7-SOLVE-08",
+  "version": "R7-C-D-PRIORITY-TRANSIT-CORRIDORS-CANDIDATE-2026-11-01",
+  "baseSourcePatch": "PATCH-2026-09-14-R7",
+  "sourceSolves": [
+    "R7-SOLVE-01",
+    "R7-SOLVE-02",
+    "R7-SOLVE-03",
+    "R7-SOLVE-04",
+    "R7-SOLVE-05",
+    "R7-SOLVE-06",
+    "R7-SOLVE-07"
+  ],
+  "status": "R7_SOLVED_CANDIDATE_CONDITIONAL_CEREMONIAL_CROSSING_NOT_RUNTIME_FINAL",
+  "runtimeFinal": false,
+  "coordinateSystem": "LOCAL_XZ_METERS_NOT_LAT_LONG",
+  "network": {
+    "baseRoadRecords": 32,
+    "newRoadRecords": 5,
+    "combinedRoadRecords": 37,
+    "busGraphComponents": 1,
+    "existingRingLengthM": 6910,
+    "method": "planar-intersection noding + permissions-filtered bus graph audited independently; see local audit script"
+  },
+  "newBusPriorityRoads": [
+    {
+      "id": "ROAD-TRANSIT-C-S",
+      "name": "C线南段公交优先廊道",
+      "width": 14,
+      "centerline": [
+        [
+          -135,
+          -1000
+        ],
+        [
+          -135,
+          -255
+        ]
+      ],
+      "roadClass": "bus_priority_pedestrian_edge",
+      "generalMotor": false,
+      "transit": true,
+      "emergency": true,
+      "freezeRole": "R7_SOLVED_CANDIDATE"
+    },
+    {
+      "id": "ROAD-TRANSIT-C-N",
+      "name": "C线澄湖西侧公交优先廊道",
+      "width": 14,
+      "centerline": [
+        [
+          -338,
+          -255
+        ],
+        [
+          -338,
+          690
+        ]
+      ],
+      "roadClass": "bus_priority_lake_edge",
+      "generalMotor": false,
+      "transit": true,
+      "emergency": true,
+      "freezeRole": "R7_SOLVED_CANDIDATE"
+    },
+    {
+      "id": "ROAD-TRANSIT-D-W-SPINE",
+      "name": "D线西苑南向公交优先接入",
+      "width": 14,
+      "centerline": [
+        [
+          -1320,
+          100
+        ],
+        [
+          -1320,
+          -355
+        ]
+      ],
+      "roadClass": "bus_priority_west_spine",
+      "generalMotor": false,
+      "transit": true,
+      "emergency": true,
+      "freezeRole": "R7_SOLVED_CANDIDATE"
+    },
+    {
+      "id": "ROAD-TRANSIT-D-CROSS-W",
+      "name": "D线中央南侧公交优先廊道",
+      "width": 14,
+      "centerline": [
+        [
+          -1320,
+          -355
+        ],
+        [
+          -365,
+          -355
+        ],
+        [
+          -365,
+          -255
+        ],
+        [
+          365,
+          -255
+        ],
+        [
+          365,
+          -355
+        ],
+        [
+          540,
+          -355
+        ],
+        [
+          540,
+          -430
+        ],
+        [
+          830,
+          -430
+        ]
+      ],
+      "roadClass": "bus_priority_controlled_ceremonial_crossing",
+      "generalMotor": false,
+      "transit": true,
+      "emergency": true,
+      "freezeRole": "R7_SOLVED_CANDIDATE"
+    },
+    {
+      "id": "ROAD-TRANSIT-D-CROSS-E",
+      "name": "D线东苑南接入公交优先廊道",
+      "width": 14,
+      "centerline": [
+        [
+          830,
+          -290
+        ],
+        [
+          1400,
+          -290
+        ],
+        [
+          1400,
+          -280
+        ]
+      ],
+      "roadClass": "bus_priority_east_link",
+      "generalMotor": false,
+      "transit": true,
+      "emergency": true,
+      "freezeRole": "R7_SOLVED_CANDIDATE"
+    }
+  ],
+  "centralTransfer": {
+    "id": "BUSSTOP-BOYA-TRANSFER",
+    "status": "CANDIDATE_TWO_BOARDING_POSITIONS_ONE_STATION_ID",
+    "boardingProjectionsXZ": {
+      "C": [
+        -135,
+        -285
+      ],
+      "D": [
+        -150,
+        -255
+      ]
+    },
+    "walkConceptWaypointsXZ": [
+      [
+        -122,
+        -285
+      ],
+      [
+        -122,
+        -255
+      ],
+      [
+        -150,
+        -242
+      ]
+    ],
+    "toLibraryEntranceConceptXZ": [
+      [
+        -150,
+        -242
+      ],
+      [
+        -100,
+        -220
+      ],
+      [
+        -75,
+        -205
+      ],
+      [
+        0,
+        -205
+      ]
+    ],
+    "libraryActualEntranceID": "DERIVED_AFTER_LAYOUT_NOT_SPECIFIED",
+    "platforms": [
+      {
+        "platformID": "PLAT-CENTRAL-SOUTH-C",
+        "busStopID": "BUSSTOP-CENTRAL-SOUTH",
+        "line": "C",
+        "boardingRoadXZ": [
+          -135,
+          -730
+        ],
+        "platformCenterXZ": [
+          -122,
+          -730
+        ],
+        "sizeM": [
+          20,
+          3.5
+        ],
+        "rotationY": 90,
+        "side": "east",
+        "stage": "CURB_CANDIDATE_PENDING_PEDESTRIAN_ACCESS_AND_LANE_SWEEP"
+      },
+      {
+        "platformID": "PLAT-BOYA-C",
+        "busStopID": "BUSSTOP-BOYA-TRANSFER",
+        "line": "C",
+        "boardingRoadXZ": [
+          -135,
+          -285
+        ],
+        "platformCenterXZ": [
+          -122,
+          -285
+        ],
+        "sizeM": [
+          20,
+          3.5
+        ],
+        "rotationY": 90,
+        "side": "east",
+        "stage": "CURB_CANDIDATE_PENDING_PEDESTRIAN_ACCESS_AND_LANE_SWEEP"
+      },
+      {
+        "platformID": "PLAT-BOYA-D",
+        "busStopID": "BUSSTOP-BOYA-TRANSFER",
+        "line": "D",
+        "boardingRoadXZ": [
+          -150,
+          -255
+        ],
+        "platformCenterXZ": [
+          -150,
+          -242
+        ],
+        "sizeM": [
+          20,
+          3.5
+        ],
+        "rotationY": 0,
+        "side": "north",
+        "stage": "CURB_CANDIDATE_PENDING_PEDESTRIAN_ACCESS_AND_LANE_SWEEP"
+      }
+    ]
+  },
+  "centralCeremonialCrossing": {
+    "id": "CTRL-TRANSIT-D-QIUZHEN-CROSS",
+    "crossingCenterXZ": [
+      0,
+      -255
+    ],
+    "rightOfWayWidthM": 14,
+    "generalMotorAllowed": false,
+    "busOnlyAndEmergency": true,
+    "pedestrianPriority": true,
+    "crossesProtectedCeremonialAxis": true,
+    "protectedRectangleIntersectionAreaM2": 2800,
+    "status": "BLOCKER_PENDING_PEDESTRIAN_CEREMONY_SIGNOFF_AND_SWEPT_PATH",
+    "signalDesign": "DERIVED_AFTER_LAYOUT",
+    "alternative": "If pedestrian ceremonial axis must remain fully uncut by all motor vehicles, this corridor cannot be frozen; use edge-routing D or grade-separated redesign after explicit source change."
+  },
+  "coreStops": [
+    {
+      "id": "BUSSTOP-SOUTH-GATE",
+      "name": "南门公交接驳站",
+      "roadProjectionXZ": [
+        0,
+        -1000
+      ],
+      "serviceClass": "RING",
+      "serviceIntent": "南门/中央礼仪轴步行接驳",
+      "candidateRoutes": [
+        "A",
+        "B",
+        "C_N",
+        "C_S"
+      ],
+      "platformPositionXZ": null,
+      "platformStatus": "CANDIDATE_SIDEWALK_NOT_CONSTRUCTION_APPROVED",
+      "status": "R7_SOLVED_CANDIDATE_NOT_RUNTIME_FINAL",
+      "multiBoardingProjectionsXZ": {
+        "ALL": [
+          0,
+          -1000
+        ]
+      },
+      "routeCoverage": [
+        "A",
+        "B",
+        "C_N",
+        "C_S"
+      ]
+    },
+    {
+      "id": "BUSSTOP-MED-SOUTH",
+      "name": "医学南接驳站",
+      "roadProjectionXZ": [
+        -600,
+        -850
+      ],
+      "serviceClass": "RING",
+      "serviceIntent": "医学区东侧公交",
+      "candidateRoutes": [
+        "A",
+        "B",
+        "C_S"
+      ],
+      "platformPositionXZ": null,
+      "platformStatus": "CANDIDATE_SIDEWALK_NOT_CONSTRUCTION_APPROVED",
+      "status": "R7_SOLVED_CANDIDATE_NOT_RUNTIME_FINAL",
+      "multiBoardingProjectionsXZ": {
+        "ALL": [
+          -600,
+          -850
+        ]
+      },
+      "routeCoverage": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "id": "BUSSTOP-MED-NORTH",
+      "name": "医学北接驳站",
+      "roadProjectionXZ": [
+        -900,
+        -400
+      ],
+      "serviceClass": "RING",
+      "serviceIntent": "医学区北缘",
+      "candidateRoutes": [
+        "A",
+        "B",
+        "C_S"
+      ],
+      "platformPositionXZ": null,
+      "platformStatus": "CANDIDATE_SIDEWALK_NOT_CONSTRUCTION_APPROVED",
+      "status": "R7_SOLVED_CANDIDATE_NOT_RUNTIME_FINAL",
+      "multiBoardingProjectionsXZ": {
+        "ALL": [
+          -900,
+          -400
+        ]
+      },
+      "routeCoverage": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "id": "BUSSTOP-INFO",
+      "name": "信息学部站",
+      "roadProjectionXZ": [
+        -900,
+        -100
+      ],
+      "serviceClass": "RING",
+      "serviceIntent": "信息学院组团",
+      "candidateRoutes": [
+        "A",
+        "B",
+        "C_S",
+        "D_E",
+        "D_W"
+      ],
+      "platformPositionXZ": null,
+      "platformStatus": "CANDIDATE_SIDEWALK_NOT_CONSTRUCTION_APPROVED",
+      "status": "R7_SOLVED_CANDIDATE_NOT_RUNTIME_FINAL",
+      "multiBoardingProjectionsXZ": {
+        "ALL": [
+          -900,
+          -100
+        ]
+      },
+      "routeCoverage": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "id": "BUSSTOP-ENG",
+      "name": "工程学部站",
+      "roadProjectionXZ": [
+        -900,
+        400
+      ],
+      "serviceClass": "RING",
+      "serviceIntent": "工程学院组团",
+      "candidateRoutes": [
+        "A",
+        "B",
+        "C_S",
+        "D_E",
+        "D_W"
+      ],
+      "platformPositionXZ": null,
+      "platformStatus": "CANDIDATE_SIDEWALK_NOT_CONSTRUCTION_APPROVED",
+      "status": "R7_SOLVED_CANDIDATE_NOT_RUNTIME_FINAL",
+      "multiBoardingProjectionsXZ": {
+        "ALL": [
+          -900,
+          400
+        ]
+      },
+      "routeCoverage": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "id": "BUSSTOP-RDI-ENTRY",
+      "name": "科研园环路接驳站",
+      "roadProjectionXZ": [
+        -750,
+        690
+      ],
+      "serviceClass": "RING",
+      "serviceIntent": "科研科技园东接驳",
+      "candidateRoutes": [
+        "A",
+        "B",
+        "C_S",
+        "D_E",
+        "D_W"
+      ],
+      "platformPositionXZ": null,
+      "platformStatus": "CANDIDATE_SIDEWALK_NOT_CONSTRUCTION_APPROVED",
+      "status": "R7_SOLVED_CANDIDATE_NOT_RUNTIME_FINAL",
+      "multiBoardingProjectionsXZ": {
+        "ALL": [
+          -750,
+          690
+        ]
+      },
+      "routeCoverage": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "id": "BUSSTOP-SCIENCE",
+      "name": "理学生命区北缘站",
+      "roadProjectionXZ": [
+        -400,
+        690
+      ],
+      "serviceClass": "RING",
+      "serviceIntent": "理学生命区",
+      "candidateRoutes": [
+        "A",
+        "B",
+        "C_S",
+        "D_E",
+        "D_W"
+      ],
+      "platformPositionXZ": null,
+      "platformStatus": "CANDIDATE_SIDEWALK_NOT_CONSTRUCTION_APPROVED",
+      "status": "R7_SOLVED_CANDIDATE_NOT_RUNTIME_FINAL",
+      "multiBoardingProjectionsXZ": {
+        "ALL": [
+          -400,
+          690
+        ]
+      },
+      "routeCoverage": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "id": "BUSSTOP-NORTH-SPORT",
+      "name": "北体育南侧换乘站",
+      "roadProjectionXZ": [
+        0,
+        655
+      ],
+      "serviceClass": "RING",
+      "serviceIntent": "看台外缘受控路段",
+      "candidateRoutes": [
+        "A",
+        "B",
+        "C_N",
+        "C_S",
+        "D_E",
+        "D_W"
+      ],
+      "platformPositionXZ": null,
+      "platformStatus": "CANDIDATE_SIDEWALK_NOT_CONSTRUCTION_APPROVED",
+      "status": "R7_SOLVED_CANDIDATE_NOT_RUNTIME_FINAL",
+      "multiBoardingProjectionsXZ": {
+        "ALL": [
+          0,
+          655
+        ]
+      },
+      "routeCoverage": [
+        "A",
+        "B",
+        "C_N",
+        "C_S"
+      ]
+    },
+    {
+      "id": "BUSSTOP-NORTH-LIFE-E-ENTRY",
+      "name": "北苑东侧接驳站",
+      "roadProjectionXZ": [
+        450,
+        690
+      ],
+      "serviceClass": "RING",
+      "serviceIntent": "北苑东翼/赛事",
+      "candidateRoutes": [
+        "A",
+        "B",
+        "C_N",
+        "D_E",
+        "D_W"
+      ],
+      "platformPositionXZ": null,
+      "platformStatus": "CANDIDATE_SIDEWALK_NOT_CONSTRUCTION_APPROVED",
+      "status": "R7_SOLVED_CANDIDATE_NOT_RUNTIME_FINAL",
+      "multiBoardingProjectionsXZ": {
+        "ALL": [
+          450,
+          690
+        ]
+      },
+      "routeCoverage": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "id": "BUSSTOP-ART-TRANSFER",
+      "name": "艺术区环路接驳站",
+      "roadProjectionXZ": [
+        830,
+        620
+      ],
+      "serviceClass": "RING",
+      "serviceIntent": "艺术剧院西侧接驳；需步行核验",
+      "candidateRoutes": [
+        "A",
+        "B",
+        "C_N",
+        "D_E",
+        "D_W"
+      ],
+      "platformPositionXZ": null,
+      "platformStatus": "CANDIDATE_SIDEWALK_NOT_CONSTRUCTION_APPROVED",
+      "status": "R7_SOLVED_CANDIDATE_NOT_RUNTIME_FINAL",
+      "multiBoardingProjectionsXZ": {
+        "ALL": [
+          830,
+          620
+        ]
+      },
+      "routeCoverage": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "id": "BUSSTOP-HUM",
+      "name": "人文社科站",
+      "roadProjectionXZ": [
+        830,
+        250
+      ],
+      "serviceClass": "RING",
+      "serviceIntent": "人文社科学院",
+      "candidateRoutes": [
+        "A",
+        "B",
+        "C_N",
+        "D_E",
+        "D_W"
+      ],
+      "platformPositionXZ": null,
+      "platformStatus": "CANDIDATE_SIDEWALK_NOT_CONSTRUCTION_APPROVED",
+      "status": "R7_SOLVED_CANDIDATE_NOT_RUNTIME_FINAL",
+      "multiBoardingProjectionsXZ": {
+        "ALL": [
+          830,
+          250
+        ]
+      },
+      "routeCoverage": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "id": "BUSSTOP-HUM-BUS",
+      "name": "人文经管站",
+      "roadProjectionXZ": [
+        830,
+        -100
+      ],
+      "serviceClass": "RING",
+      "serviceIntent": "经管组团",
+      "candidateRoutes": [
+        "A",
+        "B",
+        "C_N"
+      ],
+      "platformPositionXZ": null,
+      "platformStatus": "CANDIDATE_SIDEWALK_NOT_CONSTRUCTION_APPROVED",
+      "status": "R7_SOLVED_CANDIDATE_NOT_RUNTIME_FINAL",
+      "multiBoardingProjectionsXZ": {
+        "ALL": [
+          830,
+          -100
+        ]
+      },
+      "routeCoverage": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "id": "BUSSTOP-SE-SPORT",
+      "name": "第二体育中心站",
+      "roadProjectionXZ": [
+        830,
+        -530
+      ],
+      "serviceClass": "RING",
+      "serviceIntent": "第二400米田径场西侧",
+      "candidateRoutes": [
+        "A",
+        "B",
+        "C_N"
+      ],
+      "platformPositionXZ": null,
+      "platformStatus": "CANDIDATE_SIDEWALK_NOT_CONSTRUCTION_APPROVED",
+      "status": "R7_SOLVED_CANDIDATE_NOT_RUNTIME_FINAL",
+      "multiBoardingProjectionsXZ": {
+        "ALL": [
+          830,
+          -530
+        ]
+      },
+      "routeCoverage": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "id": "BUSSTOP-SOUTH-E",
+      "name": "南苑东口站",
+      "roadProjectionXZ": [
+        760,
+        -1000
+      ],
+      "serviceClass": "RING",
+      "serviceIntent": "南苑东入口",
+      "candidateRoutes": [
+        "A",
+        "B",
+        "C_N"
+      ],
+      "platformPositionXZ": null,
+      "platformStatus": "CANDIDATE_SIDEWALK_NOT_CONSTRUCTION_APPROVED",
+      "status": "R7_SOLVED_CANDIDATE_NOT_RUNTIME_FINAL",
+      "multiBoardingProjectionsXZ": {
+        "ALL": [
+          760,
+          -1000
+        ]
+      },
+      "routeCoverage": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "id": "BUSSTOP-SOUTH-LIFE",
+      "name": "南苑站",
+      "roadProjectionXZ": [
+        500,
+        -1000
+      ],
+      "serviceClass": "C",
+      "serviceIntent": "南苑青年路",
+      "candidateRoutes": [
+        "C_N"
+      ],
+      "platformPositionXZ": null,
+      "platformStatus": "CANDIDATE_SIDEWALK_NOT_CONSTRUCTION_APPROVED",
+      "status": "R7_SOLVED_CANDIDATE_NOT_RUNTIME_FINAL",
+      "service": "南苑环路接驳；原(500,-900)青年路站点投影不再使用，步行路径待验证",
+      "multiBoardingProjectionsXZ": {
+        "ALL": [
+          500,
+          -1000
+        ]
+      },
+      "routeCoverage": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "id": "BUSSTOP-RDI",
+      "name": "科研科技园站",
+      "roadProjectionXZ": [
+        -1430,
+        700
+      ],
+      "serviceClass": "D",
+      "serviceIntent": "创新大道西脊",
+      "candidateRoutes": [
+        "D_E",
+        "D_W"
+      ],
+      "platformPositionXZ": null,
+      "platformStatus": "CANDIDATE_SIDEWALK_NOT_CONSTRUCTION_APPROVED",
+      "status": "R7_SOLVED_CANDIDATE_NOT_RUNTIME_FINAL",
+      "multiBoardingProjectionsXZ": {
+        "ALL": [
+          -1430,
+          700
+        ]
+      },
+      "routeCoverage": [
+        "D_E",
+        "D_W"
+      ]
+    },
+    {
+      "id": "BUSSTOP-WEST-LIFE",
+      "name": "西苑站",
+      "roadProjectionXZ": [
+        -1320,
+        500
+      ],
+      "serviceClass": "D",
+      "serviceIntent": "西苑青年路",
+      "candidateRoutes": [
+        "D_E",
+        "D_W"
+      ],
+      "platformPositionXZ": null,
+      "platformStatus": "CANDIDATE_SIDEWALK_NOT_CONSTRUCTION_APPROVED",
+      "status": "R7_SOLVED_CANDIDATE_NOT_RUNTIME_FINAL",
+      "multiBoardingProjectionsXZ": {
+        "ALL": [
+          -1320,
+          500
+        ]
+      },
+      "routeCoverage": [
+        "D_E",
+        "D_W"
+      ]
+    },
+    {
+      "id": "BUSSTOP-WEST-GATE-TRANSFER",
+      "name": "西门西苑接驳站",
+      "roadProjectionXZ": [
+        -1320,
+        100
+      ],
+      "serviceClass": "D",
+      "serviceIntent": "西门步行接驳",
+      "candidateRoutes": [
+        "D_E",
+        "D_W"
+      ],
+      "platformPositionXZ": null,
+      "platformStatus": "CANDIDATE_SIDEWALK_NOT_CONSTRUCTION_APPROVED",
+      "status": "R7_SOLVED_CANDIDATE_NOT_RUNTIME_FINAL",
+      "multiBoardingProjectionsXZ": {
+        "ALL": [
+          -1320,
+          100
+        ]
+      },
+      "routeCoverage": [
+        "D_E",
+        "D_W"
+      ]
+    },
+    {
+      "id": "BUSSTOP-EAST-LIFE-N",
+      "name": "东苑北站",
+      "roadProjectionXZ": [
+        1400,
+        280
+      ],
+      "serviceClass": "D",
+      "serviceIntent": "东苑青年路北段",
+      "candidateRoutes": [
+        "D_E",
+        "D_W"
+      ],
+      "platformPositionXZ": null,
+      "platformStatus": "CANDIDATE_SIDEWALK_NOT_CONSTRUCTION_APPROVED",
+      "status": "R7_SOLVED_CANDIDATE_NOT_RUNTIME_FINAL",
+      "multiBoardingProjectionsXZ": {
+        "ALL": [
+          1400,
+          280
+        ]
+      },
+      "routeCoverage": [
+        "D_E",
+        "D_W"
+      ]
+    },
+    {
+      "id": "BUSSTOP-EAST-LIFE",
+      "name": "东苑站",
+      "roadProjectionXZ": [
+        1400,
+        100
+      ],
+      "serviceClass": "D",
+      "serviceIntent": "东苑青年路南段",
+      "candidateRoutes": [
+        "D_E",
+        "D_W"
+      ],
+      "platformPositionXZ": null,
+      "platformStatus": "CANDIDATE_SIDEWALK_NOT_CONSTRUCTION_APPROVED",
+      "status": "R7_SOLVED_CANDIDATE_NOT_RUNTIME_FINAL",
+      "multiBoardingProjectionsXZ": {
+        "ALL": [
+          1400,
+          100
+        ]
+      },
+      "routeCoverage": [
+        "D_E",
+        "D_W"
+      ]
+    },
+    {
+      "id": "BUSSTOP-CENTRAL-SOUTH",
+      "name": "中央南侧接驳站",
+      "roadProjectionXZ": [
+        -135,
+        -730
+      ],
+      "candidateLineClass": "C",
+      "service": "明德会堂及中央南区慢行接驳",
+      "multiBoardingProjectionsXZ": {
+        "ALL": [
+          -135,
+          -730
+        ]
+      },
+      "routeCoverage": [
+        "C_N",
+        "C_S"
+      ],
+      "platformStatus": "CANDIDATE_SIDEWALK_NOT_CONSTRUCTION_APPROVED",
+      "status": "R7_SOLVED_CANDIDATE_NOT_RUNTIME_FINAL"
+    },
+    {
+      "id": "BUSSTOP-BOYA-TRANSFER",
+      "name": "博雅图书馆换乘站",
+      "roadProjectionXZ": [
+        -135,
+        -285
+      ],
+      "candidateLineClass": "C_D",
+      "service": "C/D两组分离停靠点，共用一个站点ID；步行通达尚待审计",
+      "multiBoardingProjectionsXZ": {
+        "C": [
+          -135,
+          -285
+        ],
+        "D": [
+          -150,
+          -255
+        ]
+      },
+      "routeCoverage": [
+        "C_N",
+        "C_S",
+        "D_E",
+        "D_W"
+      ],
+      "platformStatus": "CANDIDATE_SIDEWALK_NOT_CONSTRUCTION_APPROVED",
+      "status": "R7_SOLVED_CANDIDATE_NOT_RUNTIME_FINAL"
+    }
+  ],
+  "stopChanges": [
+    {
+      "retiredId": "BUSSTOP-NORTH-SPORT-E",
+      "replacementId": "BUSSTOP-CENTRAL-SOUTH",
+      "reason": "northern event spur no longer used by regular C"
+    },
+    {
+      "retiredId": "BUSSTOP-NORTH-SPORT-W",
+      "replacementId": "BUSSTOP-BOYA-TRANSFER",
+      "reason": "northern event spur no longer used by regular C"
+    },
+    {
+      "changedId": "BUSSTOP-SOUTH-LIFE",
+      "oldRoadProjectionXZ": [
+        500,
+        -900
+      ],
+      "newRoadProjectionXZ": [
+        500,
+        -1000
+      ],
+      "reason": "serve from A/B on south ring; footpath unverified"
+    }
+  ],
+  "busRoutes": {
+    "A": {
+      "routeNodeXZ": [
+        [
+          0,
+          -1000
+        ],
+        [
+          -60,
+          -1000
+        ],
+        [
+          -135,
+          -1000
+        ],
+        [
+          -600,
+          -1000
+        ],
+        [
+          -600,
+          -850
+        ],
+        [
+          -600,
+          -770
+        ],
+        [
+          -600,
+          -430
+        ],
+        [
+          -900,
+          -430
+        ],
+        [
+          -900,
+          -400
+        ],
+        [
+          -900,
+          -355
+        ],
+        [
+          -900,
+          -300
+        ],
+        [
+          -900,
+          -100
+        ],
+        [
+          -900,
+          100
+        ],
+        [
+          -900,
+          400
+        ],
+        [
+          -900,
+          480
+        ],
+        [
+          -900,
+          500
+        ],
+        [
+          -900,
+          600
+        ],
+        [
+          -750,
+          600
+        ],
+        [
+          -750,
+          690
+        ],
+        [
+          -520,
+          690
+        ],
+        [
+          -400,
+          690
+        ],
+        [
+          -338,
+          690
+        ],
+        [
+          -210,
+          690
+        ],
+        [
+          -210,
+          655
+        ],
+        [
+          -160,
+          655
+        ],
+        [
+          0,
+          655
+        ],
+        [
+          160,
+          655
+        ],
+        [
+          210,
+          655
+        ],
+        [
+          210,
+          690
+        ],
+        [
+          450,
+          690
+        ],
+        [
+          520,
+          690
+        ],
+        [
+          830,
+          690
+        ],
+        [
+          830,
+          620
+        ],
+        [
+          830,
+          440
+        ],
+        [
+          830,
+          400
+        ],
+        [
+          830,
+          360
+        ],
+        [
+          830,
+          250
+        ],
+        [
+          830,
+          -100
+        ],
+        [
+          830,
+          -290
+        ],
+        [
+          830,
+          -430
+        ],
+        [
+          830,
+          -530
+        ],
+        [
+          830,
+          -1000
+        ],
+        [
+          760,
+          -1000
+        ],
+        [
+          500,
+          -1000
+        ],
+        [
+          300,
+          -1000
+        ],
+        [
+          60,
+          -1000
+        ],
+        [
+          0,
+          -1000
+        ]
+      ],
+      "geometryLengthM": 6910,
+      "previousSolve07LengthM": 6910,
+      "geometryLengthReductionM": 0,
+      "terminalTurnaround": "RING_CIRCULAR",
+      "serviceStatus": "CARRIED_FORWARD_FROM_SOLVE07"
+    },
+    "B": {
+      "routeNodeXZ": [
+        [
+          0,
+          -1000
+        ],
+        [
+          60,
+          -1000
+        ],
+        [
+          300,
+          -1000
+        ],
+        [
+          500,
+          -1000
+        ],
+        [
+          760,
+          -1000
+        ],
+        [
+          830,
+          -1000
+        ],
+        [
+          830,
+          -530
+        ],
+        [
+          830,
+          -430
+        ],
+        [
+          830,
+          -290
+        ],
+        [
+          830,
+          -100
+        ],
+        [
+          830,
+          250
+        ],
+        [
+          830,
+          360
+        ],
+        [
+          830,
+          400
+        ],
+        [
+          830,
+          440
+        ],
+        [
+          830,
+          620
+        ],
+        [
+          830,
+          690
+        ],
+        [
+          520,
+          690
+        ],
+        [
+          450,
+          690
+        ],
+        [
+          210,
+          690
+        ],
+        [
+          210,
+          655
+        ],
+        [
+          160,
+          655
+        ],
+        [
+          0,
+          655
+        ],
+        [
+          -160,
+          655
+        ],
+        [
+          -210,
+          655
+        ],
+        [
+          -210,
+          690
+        ],
+        [
+          -338,
+          690
+        ],
+        [
+          -400,
+          690
+        ],
+        [
+          -520,
+          690
+        ],
+        [
+          -750,
+          690
+        ],
+        [
+          -750,
+          600
+        ],
+        [
+          -900,
+          600
+        ],
+        [
+          -900,
+          500
+        ],
+        [
+          -900,
+          480
+        ],
+        [
+          -900,
+          400
+        ],
+        [
+          -900,
+          100
+        ],
+        [
+          -900,
+          -100
+        ],
+        [
+          -900,
+          -300
+        ],
+        [
+          -900,
+          -355
+        ],
+        [
+          -900,
+          -400
+        ],
+        [
+          -900,
+          -430
+        ],
+        [
+          -600,
+          -430
+        ],
+        [
+          -600,
+          -770
+        ],
+        [
+          -600,
+          -850
+        ],
+        [
+          -600,
+          -1000
+        ],
+        [
+          -135,
+          -1000
+        ],
+        [
+          -60,
+          -1000
+        ],
+        [
+          0,
+          -1000
+        ]
+      ],
+      "geometryLengthM": 6910,
+      "previousSolve07LengthM": 6910,
+      "geometryLengthReductionM": 0,
+      "terminalTurnaround": "RING_CIRCULAR",
+      "serviceStatus": "CARRIED_FORWARD_FROM_SOLVE07"
+    },
+    "C_N": {
+      "routeNodeXZ": [
+        [
+          0,
+          -1000
+        ],
+        [
+          -60,
+          -1000
+        ],
+        [
+          -135,
+          -1000
+        ],
+        [
+          -135,
+          -730
+        ],
+        [
+          -135,
+          -285
+        ],
+        [
+          -135,
+          -255
+        ],
+        [
+          -150,
+          -255
+        ],
+        [
+          -338,
+          -255
+        ],
+        [
+          -338,
+          690
+        ],
+        [
+          -210,
+          690
+        ],
+        [
+          -210,
+          655
+        ],
+        [
+          -160,
+          655
+        ],
+        [
+          0,
+          655
+        ]
+      ],
+      "geometryLengthM": 2401,
+      "previousSolve07LengthM": 4030,
+      "geometryLengthReductionM": 1629,
+      "terminalTurnaround": "PENDING_TURN_SWEEP",
+      "serviceStatus": "GEOMETRY_CONNECTED_CONDITIONAL_CEREMONIAL_CROSSING_NOT_RUNTIME_FINAL"
+    },
+    "C_S": {
+      "routeNodeXZ": [
+        [
+          0,
+          655
+        ],
+        [
+          -160,
+          655
+        ],
+        [
+          -210,
+          655
+        ],
+        [
+          -210,
+          690
+        ],
+        [
+          -338,
+          690
+        ],
+        [
+          -338,
+          -255
+        ],
+        [
+          -150,
+          -255
+        ],
+        [
+          -135,
+          -255
+        ],
+        [
+          -135,
+          -285
+        ],
+        [
+          -135,
+          -730
+        ],
+        [
+          -135,
+          -1000
+        ],
+        [
+          -60,
+          -1000
+        ],
+        [
+          0,
+          -1000
+        ]
+      ],
+      "geometryLengthM": 2401,
+      "previousSolve07LengthM": 3970,
+      "geometryLengthReductionM": 1569,
+      "terminalTurnaround": "PENDING_TURN_SWEEP",
+      "serviceStatus": "GEOMETRY_CONNECTED_CONDITIONAL_CEREMONIAL_CROSSING_NOT_RUNTIME_FINAL"
+    },
+    "D_E": {
+      "routeNodeXZ": [
+        [
+          -1430,
+          700
+        ],
+        [
+          -1430,
+          600
+        ],
+        [
+          -1320,
+          600
+        ],
+        [
+          -1320,
+          500
+        ],
+        [
+          -1320,
+          100
+        ],
+        [
+          -1320,
+          40
+        ],
+        [
+          -1320,
+          -300
+        ],
+        [
+          -1320,
+          -355
+        ],
+        [
+          -900,
+          -355
+        ],
+        [
+          -365,
+          -355
+        ],
+        [
+          -365,
+          -255
+        ],
+        [
+          -338,
+          -255
+        ],
+        [
+          -150,
+          -255
+        ],
+        [
+          -135,
+          -255
+        ],
+        [
+          365,
+          -255
+        ],
+        [
+          365,
+          -355
+        ],
+        [
+          540,
+          -355
+        ],
+        [
+          540,
+          -430
+        ],
+        [
+          830,
+          -430
+        ],
+        [
+          830,
+          -290
+        ],
+        [
+          1400,
+          -290
+        ],
+        [
+          1400,
+          -280
+        ],
+        [
+          1400,
+          100
+        ],
+        [
+          1400,
+          120
+        ],
+        [
+          1400,
+          280
+        ]
+      ],
+      "geometryLengthM": 4870,
+      "previousSolve07LengthM": 5300,
+      "geometryLengthReductionM": 430,
+      "terminalTurnaround": "PENDING_TURN_SWEEP",
+      "serviceStatus": "GEOMETRY_CONNECTED_CONDITIONAL_CEREMONIAL_CROSSING_NOT_RUNTIME_FINAL"
+    },
+    "D_W": {
+      "routeNodeXZ": [
+        [
+          1400,
+          280
+        ],
+        [
+          1400,
+          120
+        ],
+        [
+          1400,
+          100
+        ],
+        [
+          1400,
+          -280
+        ],
+        [
+          1400,
+          -290
+        ],
+        [
+          830,
+          -290
+        ],
+        [
+          830,
+          -430
+        ],
+        [
+          540,
+          -430
+        ],
+        [
+          540,
+          -355
+        ],
+        [
+          365,
+          -355
+        ],
+        [
+          365,
+          -255
+        ],
+        [
+          -135,
+          -255
+        ],
+        [
+          -150,
+          -255
+        ],
+        [
+          -338,
+          -255
+        ],
+        [
+          -365,
+          -255
+        ],
+        [
+          -365,
+          -355
+        ],
+        [
+          -900,
+          -355
+        ],
+        [
+          -1320,
+          -355
+        ],
+        [
+          -1320,
+          -300
+        ],
+        [
+          -1320,
+          40
+        ],
+        [
+          -1320,
+          100
+        ],
+        [
+          -1320,
+          500
+        ],
+        [
+          -1320,
+          600
+        ],
+        [
+          -1430,
+          600
+        ],
+        [
+          -1430,
+          700
+        ]
+      ],
+      "geometryLengthM": 4870,
+      "previousSolve07LengthM": 5300,
+      "geometryLengthReductionM": 430,
+      "terminalTurnaround": "PENDING_TURN_SWEEP",
+      "serviceStatus": "GEOMETRY_CONNECTED_CONDITIONAL_CEREMONIAL_CROSSING_NOT_RUNTIME_FINAL"
+    }
+  },
+  "audit": {
+    "newCorridorHardCollisionCount": 0,
+    "newCorridorBoundary": true,
+    "newCorridorLakeShorelineM": 16,
+    "newCorridorPerRoad": [
+      {
+        "id": "ROAD-TRANSIT-C-S",
+        "lengthM": 745,
+        "insideBoundary": true,
+        "buildingSportCollisions": [],
+        "minStructureClearanceM": 67,
+        "nearestStructure": "CEN-02",
+        "lakeShorelineClearanceM": 365.444
+      },
+      {
+        "id": "ROAD-TRANSIT-C-N",
+        "lengthM": 945,
+        "insideBoundary": true,
+        "buildingSportCollisions": [],
+        "minStructureClearanceM": 15,
+        "nearestStructure": "NEE-02",
+        "lakeShorelineClearanceM": 16
+      },
+      {
+        "id": "ROAD-TRANSIT-D-W-SPINE",
+        "lengthM": 455,
+        "insideBoundary": true,
+        "buildingSportCollisions": [],
+        "minStructureClearanceM": 28,
+        "nearestStructure": "LIFE-W-BD-01",
+        "lakeShorelineClearanceM": 1023.998
+      },
+      {
+        "id": "ROAD-TRANSIT-D-CROSS-W",
+        "lengthM": 2425,
+        "insideBoundary": true,
+        "buildingSportCollisions": [],
+        "minStructureClearanceM": 12,
+        "nearestStructure": "CEN-09",
+        "lakeShorelineClearanceM": 353
+      },
+      {
+        "id": "ROAD-TRANSIT-D-CROSS-E",
+        "lengthM": 580,
+        "insideBoundary": true,
+        "buildingSportCollisions": [],
+        "minStructureClearanceM": 32,
+        "nearestStructure": "ATH-18",
+        "lakeShorelineClearanceM": 707.053
+      }
+    ],
+    "busGraphConnected": true,
+    "twentyTwoCoreStops": true,
+    "allCoreStopsOnTransitGraph": true,
+    "allCoreStopsHaveRouteCoverage": true,
+    "centralCeremonialCrossingIsUnresolvedHardConstraint": true,
+    "formalRemainingWaterShorelinesUnverified": true,
+    "turnSweepsAndFire": "PENDING",
+    "realBusStopsAndPedestrianWalkingGraph": "PENDING",
+    "all18GlobalAudits": "PENDING"
+  },
+  "nextStage": "R7-SOLVE-09: ceremonial axis crossing approval, bus turn sweeps, walking access, station geometry, junction re-solve, fire/egress."
+}

@@ -1,0 +1,1469 @@
+{
+  "type": "FeatureCollection",
+  "name": "JiangchengUniversity_R7_SOLVE_08_CD_TransitCandidates",
+  "coordinateSystem": "LOCAL_XZ_METERS_NOT_WGS84",
+  "solveId": "R7-SOLVE-08",
+  "status": "R7_SOLVED_CANDIDATE_CONDITIONAL_CEREMONIAL_CROSSING_NOT_RUNTIME_FINAL",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-TRANSIT-C-S",
+        "category": "bus_priority_road_centerline",
+        "widthM": 14,
+        "generalMotor": false,
+        "status": "SOLVED_CANDIDATE"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -135,
+            -1000
+          ],
+          [
+            -135,
+            -255
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-TRANSIT-C-N",
+        "category": "bus_priority_road_centerline",
+        "widthM": 14,
+        "generalMotor": false,
+        "status": "SOLVED_CANDIDATE"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -338,
+            -255
+          ],
+          [
+            -338,
+            690
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-TRANSIT-D-W-SPINE",
+        "category": "bus_priority_road_centerline",
+        "widthM": 14,
+        "generalMotor": false,
+        "status": "SOLVED_CANDIDATE"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1320,
+            100
+          ],
+          [
+            -1320,
+            -355
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-TRANSIT-D-CROSS-W",
+        "category": "bus_priority_road_centerline",
+        "widthM": 14,
+        "generalMotor": false,
+        "status": "SOLVED_CANDIDATE"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1320,
+            -355
+          ],
+          [
+            -365,
+            -355
+          ],
+          [
+            -365,
+            -255
+          ],
+          [
+            365,
+            -255
+          ],
+          [
+            365,
+            -355
+          ],
+          [
+            540,
+            -355
+          ],
+          [
+            540,
+            -430
+          ],
+          [
+            830,
+            -430
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-TRANSIT-D-CROSS-E",
+        "category": "bus_priority_road_centerline",
+        "widthM": 14,
+        "generalMotor": false,
+        "status": "SOLVED_CANDIDATE"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            830,
+            -290
+          ],
+          [
+            1400,
+            -290
+          ],
+          [
+            1400,
+            -280
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BUSSTOP-SOUTH-GATE",
+        "mode": "ALL",
+        "category": "road_projection_NOT_PLATFORM",
+        "routeCoverage": [
+          "A",
+          "B",
+          "C_N",
+          "C_S"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          -1000
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BUSSTOP-MED-SOUTH",
+        "mode": "ALL",
+        "category": "road_projection_NOT_PLATFORM",
+        "routeCoverage": [
+          "A",
+          "B"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -600,
+          -850
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BUSSTOP-MED-NORTH",
+        "mode": "ALL",
+        "category": "road_projection_NOT_PLATFORM",
+        "routeCoverage": [
+          "A",
+          "B"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -900,
+          -400
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BUSSTOP-INFO",
+        "mode": "ALL",
+        "category": "road_projection_NOT_PLATFORM",
+        "routeCoverage": [
+          "A",
+          "B"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -900,
+          -100
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BUSSTOP-ENG",
+        "mode": "ALL",
+        "category": "road_projection_NOT_PLATFORM",
+        "routeCoverage": [
+          "A",
+          "B"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -900,
+          400
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BUSSTOP-RDI-ENTRY",
+        "mode": "ALL",
+        "category": "road_projection_NOT_PLATFORM",
+        "routeCoverage": [
+          "A",
+          "B"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -750,
+          690
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BUSSTOP-SCIENCE",
+        "mode": "ALL",
+        "category": "road_projection_NOT_PLATFORM",
+        "routeCoverage": [
+          "A",
+          "B"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -400,
+          690
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BUSSTOP-NORTH-SPORT",
+        "mode": "ALL",
+        "category": "road_projection_NOT_PLATFORM",
+        "routeCoverage": [
+          "A",
+          "B",
+          "C_N",
+          "C_S"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          655
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BUSSTOP-NORTH-LIFE-E-ENTRY",
+        "mode": "ALL",
+        "category": "road_projection_NOT_PLATFORM",
+        "routeCoverage": [
+          "A",
+          "B"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          450,
+          690
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BUSSTOP-ART-TRANSFER",
+        "mode": "ALL",
+        "category": "road_projection_NOT_PLATFORM",
+        "routeCoverage": [
+          "A",
+          "B"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          830,
+          620
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BUSSTOP-HUM",
+        "mode": "ALL",
+        "category": "road_projection_NOT_PLATFORM",
+        "routeCoverage": [
+          "A",
+          "B"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          830,
+          250
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BUSSTOP-HUM-BUS",
+        "mode": "ALL",
+        "category": "road_projection_NOT_PLATFORM",
+        "routeCoverage": [
+          "A",
+          "B"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          830,
+          -100
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BUSSTOP-SE-SPORT",
+        "mode": "ALL",
+        "category": "road_projection_NOT_PLATFORM",
+        "routeCoverage": [
+          "A",
+          "B"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          830,
+          -530
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BUSSTOP-SOUTH-E",
+        "mode": "ALL",
+        "category": "road_projection_NOT_PLATFORM",
+        "routeCoverage": [
+          "A",
+          "B"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          760,
+          -1000
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BUSSTOP-SOUTH-LIFE",
+        "mode": "ALL",
+        "category": "road_projection_NOT_PLATFORM",
+        "routeCoverage": [
+          "A",
+          "B"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          500,
+          -1000
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BUSSTOP-RDI",
+        "mode": "ALL",
+        "category": "road_projection_NOT_PLATFORM",
+        "routeCoverage": [
+          "D_E",
+          "D_W"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1430,
+          700
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BUSSTOP-WEST-LIFE",
+        "mode": "ALL",
+        "category": "road_projection_NOT_PLATFORM",
+        "routeCoverage": [
+          "D_E",
+          "D_W"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1320,
+          500
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BUSSTOP-WEST-GATE-TRANSFER",
+        "mode": "ALL",
+        "category": "road_projection_NOT_PLATFORM",
+        "routeCoverage": [
+          "D_E",
+          "D_W"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1320,
+          100
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BUSSTOP-EAST-LIFE-N",
+        "mode": "ALL",
+        "category": "road_projection_NOT_PLATFORM",
+        "routeCoverage": [
+          "D_E",
+          "D_W"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1400,
+          280
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BUSSTOP-EAST-LIFE",
+        "mode": "ALL",
+        "category": "road_projection_NOT_PLATFORM",
+        "routeCoverage": [
+          "D_E",
+          "D_W"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1400,
+          100
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BUSSTOP-CENTRAL-SOUTH",
+        "mode": "ALL",
+        "category": "road_projection_NOT_PLATFORM",
+        "routeCoverage": [
+          "C_N",
+          "C_S"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -135,
+          -730
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BUSSTOP-BOYA-TRANSFER",
+        "mode": "C",
+        "category": "road_projection_NOT_PLATFORM",
+        "routeCoverage": [
+          "C_N",
+          "C_S",
+          "D_E",
+          "D_W"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -135,
+          -285
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BUSSTOP-BOYA-TRANSFER",
+        "mode": "D",
+        "category": "road_projection_NOT_PLATFORM",
+        "routeCoverage": [
+          "C_N",
+          "C_S",
+          "D_E",
+          "D_W"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -150,
+          -255
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "PLAT-CENTRAL-SOUTH-C",
+        "category": "bus_platform_candidate",
+        "line": "C",
+        "status": "CURB_CANDIDATE_PENDING_PEDESTRIAN_ACCESS_AND_LANE_SWEEP"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -120.25,
+              -740
+            ],
+            [
+              -120.25,
+              -720
+            ],
+            [
+              -123.75,
+              -720
+            ],
+            [
+              -123.75,
+              -740
+            ],
+            [
+              -120.25,
+              -740
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "PLAT-BOYA-C",
+        "category": "bus_platform_candidate",
+        "line": "C",
+        "status": "CURB_CANDIDATE_PENDING_PEDESTRIAN_ACCESS_AND_LANE_SWEEP"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -120.25,
+              -295
+            ],
+            [
+              -120.25,
+              -275
+            ],
+            [
+              -123.75,
+              -275
+            ],
+            [
+              -123.75,
+              -295
+            ],
+            [
+              -120.25,
+              -295
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "PLAT-BOYA-D",
+        "category": "bus_platform_candidate",
+        "line": "D",
+        "status": "CURB_CANDIDATE_PENDING_PEDESTRIAN_ACCESS_AND_LANE_SWEEP"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -160,
+              -243.75
+            ],
+            [
+              -140,
+              -243.75
+            ],
+            [
+              -140,
+              -240.25
+            ],
+            [
+              -160,
+              -240.25
+            ],
+            [
+              -160,
+              -243.75
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BUS-LINE-A",
+        "category": "route_centerline_candidate",
+        "geometryLengthM": 6910,
+        "status": "CARRIED_FORWARD_FROM_SOLVE07"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            0,
+            -1000
+          ],
+          [
+            -60,
+            -1000
+          ],
+          [
+            -135,
+            -1000
+          ],
+          [
+            -600,
+            -1000
+          ],
+          [
+            -600,
+            -850
+          ],
+          [
+            -600,
+            -770
+          ],
+          [
+            -600,
+            -430
+          ],
+          [
+            -900,
+            -430
+          ],
+          [
+            -900,
+            -400
+          ],
+          [
+            -900,
+            -355
+          ],
+          [
+            -900,
+            -300
+          ],
+          [
+            -900,
+            -100
+          ],
+          [
+            -900,
+            100
+          ],
+          [
+            -900,
+            400
+          ],
+          [
+            -900,
+            480
+          ],
+          [
+            -900,
+            500
+          ],
+          [
+            -900,
+            600
+          ],
+          [
+            -750,
+            600
+          ],
+          [
+            -750,
+            690
+          ],
+          [
+            -520,
+            690
+          ],
+          [
+            -400,
+            690
+          ],
+          [
+            -338,
+            690
+          ],
+          [
+            -210,
+            690
+          ],
+          [
+            -210,
+            655
+          ],
+          [
+            -160,
+            655
+          ],
+          [
+            0,
+            655
+          ],
+          [
+            160,
+            655
+          ],
+          [
+            210,
+            655
+          ],
+          [
+            210,
+            690
+          ],
+          [
+            450,
+            690
+          ],
+          [
+            520,
+            690
+          ],
+          [
+            830,
+            690
+          ],
+          [
+            830,
+            620
+          ],
+          [
+            830,
+            440
+          ],
+          [
+            830,
+            400
+          ],
+          [
+            830,
+            360
+          ],
+          [
+            830,
+            250
+          ],
+          [
+            830,
+            -100
+          ],
+          [
+            830,
+            -290
+          ],
+          [
+            830,
+            -430
+          ],
+          [
+            830,
+            -530
+          ],
+          [
+            830,
+            -1000
+          ],
+          [
+            760,
+            -1000
+          ],
+          [
+            500,
+            -1000
+          ],
+          [
+            300,
+            -1000
+          ],
+          [
+            60,
+            -1000
+          ],
+          [
+            0,
+            -1000
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BUS-LINE-B",
+        "category": "route_centerline_candidate",
+        "geometryLengthM": 6910,
+        "status": "CARRIED_FORWARD_FROM_SOLVE07"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            0,
+            -1000
+          ],
+          [
+            60,
+            -1000
+          ],
+          [
+            300,
+            -1000
+          ],
+          [
+            500,
+            -1000
+          ],
+          [
+            760,
+            -1000
+          ],
+          [
+            830,
+            -1000
+          ],
+          [
+            830,
+            -530
+          ],
+          [
+            830,
+            -430
+          ],
+          [
+            830,
+            -290
+          ],
+          [
+            830,
+            -100
+          ],
+          [
+            830,
+            250
+          ],
+          [
+            830,
+            360
+          ],
+          [
+            830,
+            400
+          ],
+          [
+            830,
+            440
+          ],
+          [
+            830,
+            620
+          ],
+          [
+            830,
+            690
+          ],
+          [
+            520,
+            690
+          ],
+          [
+            450,
+            690
+          ],
+          [
+            210,
+            690
+          ],
+          [
+            210,
+            655
+          ],
+          [
+            160,
+            655
+          ],
+          [
+            0,
+            655
+          ],
+          [
+            -160,
+            655
+          ],
+          [
+            -210,
+            655
+          ],
+          [
+            -210,
+            690
+          ],
+          [
+            -338,
+            690
+          ],
+          [
+            -400,
+            690
+          ],
+          [
+            -520,
+            690
+          ],
+          [
+            -750,
+            690
+          ],
+          [
+            -750,
+            600
+          ],
+          [
+            -900,
+            600
+          ],
+          [
+            -900,
+            500
+          ],
+          [
+            -900,
+            480
+          ],
+          [
+            -900,
+            400
+          ],
+          [
+            -900,
+            100
+          ],
+          [
+            -900,
+            -100
+          ],
+          [
+            -900,
+            -300
+          ],
+          [
+            -900,
+            -355
+          ],
+          [
+            -900,
+            -400
+          ],
+          [
+            -900,
+            -430
+          ],
+          [
+            -600,
+            -430
+          ],
+          [
+            -600,
+            -770
+          ],
+          [
+            -600,
+            -850
+          ],
+          [
+            -600,
+            -1000
+          ],
+          [
+            -135,
+            -1000
+          ],
+          [
+            -60,
+            -1000
+          ],
+          [
+            0,
+            -1000
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BUS-LINE-C_N",
+        "category": "route_centerline_candidate",
+        "geometryLengthM": 2401,
+        "status": "GEOMETRY_CONNECTED_CONDITIONAL_CEREMONIAL_CROSSING_NOT_RUNTIME_FINAL"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            0,
+            -1000
+          ],
+          [
+            -60,
+            -1000
+          ],
+          [
+            -135,
+            -1000
+          ],
+          [
+            -135,
+            -730
+          ],
+          [
+            -135,
+            -285
+          ],
+          [
+            -135,
+            -255
+          ],
+          [
+            -150,
+            -255
+          ],
+          [
+            -338,
+            -255
+          ],
+          [
+            -338,
+            690
+          ],
+          [
+            -210,
+            690
+          ],
+          [
+            -210,
+            655
+          ],
+          [
+            -160,
+            655
+          ],
+          [
+            0,
+            655
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BUS-LINE-C_S",
+        "category": "route_centerline_candidate",
+        "geometryLengthM": 2401,
+        "status": "GEOMETRY_CONNECTED_CONDITIONAL_CEREMONIAL_CROSSING_NOT_RUNTIME_FINAL"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            0,
+            655
+          ],
+          [
+            -160,
+            655
+          ],
+          [
+            -210,
+            655
+          ],
+          [
+            -210,
+            690
+          ],
+          [
+            -338,
+            690
+          ],
+          [
+            -338,
+            -255
+          ],
+          [
+            -150,
+            -255
+          ],
+          [
+            -135,
+            -255
+          ],
+          [
+            -135,
+            -285
+          ],
+          [
+            -135,
+            -730
+          ],
+          [
+            -135,
+            -1000
+          ],
+          [
+            -60,
+            -1000
+          ],
+          [
+            0,
+            -1000
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BUS-LINE-D_E",
+        "category": "route_centerline_candidate",
+        "geometryLengthM": 4870,
+        "status": "GEOMETRY_CONNECTED_CONDITIONAL_CEREMONIAL_CROSSING_NOT_RUNTIME_FINAL"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1430,
+            700
+          ],
+          [
+            -1430,
+            600
+          ],
+          [
+            -1320,
+            600
+          ],
+          [
+            -1320,
+            500
+          ],
+          [
+            -1320,
+            100
+          ],
+          [
+            -1320,
+            40
+          ],
+          [
+            -1320,
+            -300
+          ],
+          [
+            -1320,
+            -355
+          ],
+          [
+            -900,
+            -355
+          ],
+          [
+            -365,
+            -355
+          ],
+          [
+            -365,
+            -255
+          ],
+          [
+            -338,
+            -255
+          ],
+          [
+            -150,
+            -255
+          ],
+          [
+            -135,
+            -255
+          ],
+          [
+            365,
+            -255
+          ],
+          [
+            365,
+            -355
+          ],
+          [
+            540,
+            -355
+          ],
+          [
+            540,
+            -430
+          ],
+          [
+            830,
+            -430
+          ],
+          [
+            830,
+            -290
+          ],
+          [
+            1400,
+            -290
+          ],
+          [
+            1400,
+            -280
+          ],
+          [
+            1400,
+            100
+          ],
+          [
+            1400,
+            120
+          ],
+          [
+            1400,
+            280
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BUS-LINE-D_W",
+        "category": "route_centerline_candidate",
+        "geometryLengthM": 4870,
+        "status": "GEOMETRY_CONNECTED_CONDITIONAL_CEREMONIAL_CROSSING_NOT_RUNTIME_FINAL"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            1400,
+            280
+          ],
+          [
+            1400,
+            120
+          ],
+          [
+            1400,
+            100
+          ],
+          [
+            1400,
+            -280
+          ],
+          [
+            1400,
+            -290
+          ],
+          [
+            830,
+            -290
+          ],
+          [
+            830,
+            -430
+          ],
+          [
+            540,
+            -430
+          ],
+          [
+            540,
+            -355
+          ],
+          [
+            365,
+            -355
+          ],
+          [
+            365,
+            -255
+          ],
+          [
+            -135,
+            -255
+          ],
+          [
+            -150,
+            -255
+          ],
+          [
+            -338,
+            -255
+          ],
+          [
+            -365,
+            -255
+          ],
+          [
+            -365,
+            -355
+          ],
+          [
+            -900,
+            -355
+          ],
+          [
+            -1320,
+            -355
+          ],
+          [
+            -1320,
+            -300
+          ],
+          [
+            -1320,
+            40
+          ],
+          [
+            -1320,
+            100
+          ],
+          [
+            -1320,
+            500
+          ],
+          [
+            -1320,
+            600
+          ],
+          [
+            -1430,
+            600
+          ],
+          [
+            -1430,
+            700
+          ]
+        ]
+      }
+    }
+  ]
+}
