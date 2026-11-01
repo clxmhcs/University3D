@@ -1,0 +1,270 @@
+{
+  "solveId": "R7-SOLVE-09",
+  "sourcePriority": "PATCH-2026-09-14-R7",
+  "status": "AUDITED_ALTERNATIVE_CANDIDATE_PARTIAL_WITH_BLOCKERS",
+  "runtimeFinal": false,
+  "coordinateSystem": "LOCAL_XZ_METERS",
+  "policy": {
+    "activeDCrossAt0Minus255": false,
+    "protectedAxisMotorNewCrossingAreaM2": 0,
+    "oldCrossingAreaM2": 2800
+  },
+  "D_E": {
+    "roadNodesXZ": [
+      [
+        -1430,
+        700
+      ],
+      [
+        -1430,
+        600
+      ],
+      [
+        -1320,
+        600
+      ],
+      [
+        -1320,
+        500
+      ],
+      [
+        -1320,
+        100
+      ],
+      [
+        -1040,
+        100
+      ],
+      [
+        -900,
+        100
+      ],
+      [
+        -900,
+        480
+      ],
+      [
+        -900,
+        600
+      ],
+      [
+        -750,
+        600
+      ],
+      [
+        -750,
+        690
+      ],
+      [
+        -520,
+        690
+      ],
+      [
+        -338,
+        690
+      ],
+      [
+        -210,
+        690
+      ],
+      [
+        -210,
+        655
+      ],
+      [
+        -160,
+        655
+      ],
+      [
+        160,
+        655
+      ],
+      [
+        210,
+        655
+      ],
+      [
+        210,
+        690
+      ],
+      [
+        520,
+        690
+      ],
+      [
+        830,
+        690
+      ],
+      [
+        830,
+        400
+      ],
+      [
+        1040,
+        400
+      ],
+      [
+        1040,
+        360
+      ],
+      [
+        1400,
+        360
+      ],
+      [
+        1400,
+        280
+      ],
+      [
+        1400,
+        100
+      ]
+    ],
+    "centerlineLengthM": 4680,
+    "compared08M": 4870,
+    "stopSequence": [
+      "BUSSTOP-RDI",
+      "BUSSTOP-WEST-LIFE",
+      "BUSSTOP-WEST-GATE-TRANSFER",
+      "BUSSTOP-EAST-LIFE-N",
+      "BUSSTOP-EAST-LIFE"
+    ],
+    "turnaround": "PENDING"
+  },
+  "D_W": {
+    "roadNodesXZ": [
+      [
+        1400,
+        100
+      ],
+      [
+        1400,
+        280
+      ],
+      [
+        1400,
+        360
+      ],
+      [
+        1040,
+        360
+      ],
+      [
+        1040,
+        400
+      ],
+      [
+        830,
+        400
+      ],
+      [
+        830,
+        690
+      ],
+      [
+        520,
+        690
+      ],
+      [
+        210,
+        690
+      ],
+      [
+        210,
+        655
+      ],
+      [
+        160,
+        655
+      ],
+      [
+        -160,
+        655
+      ],
+      [
+        -210,
+        655
+      ],
+      [
+        -210,
+        690
+      ],
+      [
+        -338,
+        690
+      ],
+      [
+        -520,
+        690
+      ],
+      [
+        -750,
+        690
+      ],
+      [
+        -750,
+        600
+      ],
+      [
+        -900,
+        600
+      ],
+      [
+        -900,
+        480
+      ],
+      [
+        -900,
+        100
+      ],
+      [
+        -1040,
+        100
+      ],
+      [
+        -1320,
+        100
+      ],
+      [
+        -1320,
+        500
+      ],
+      [
+        -1320,
+        600
+      ],
+      [
+        -1430,
+        600
+      ],
+      [
+        -1430,
+        700
+      ]
+    ],
+    "centerlineLengthM": 4680,
+    "turnaround": "PENDING"
+  },
+  "transfer": {
+    "library": "C_ONLY_CANDIDATE",
+    "northSport": "C_D_SHARED_PROJECTION_ONLY",
+    "northSportXZ": [
+      0,
+      655
+    ],
+    "libraryWalkConceptM": 189.7,
+    "actualEntranceID": "PENDING"
+  },
+  "audits": {
+    "coreStopsCount": 22,
+    "allStopsHaveAtLeastOneRoute": true,
+    "noNewDProtectedCoreCrossing": true,
+    "turnRadii9_12_15PlanarTangents": "PASS_ASSUMPTIONS_ONLY",
+    "busSweptEnvelope": "PENDING",
+    "terminalLoops": "PENDING",
+    "stationSides": "PENDING",
+    "pedestrianAndFireGraph": "PENDING",
+    "full18GlobalChecks": "PENDING"
+  },
+  "next": "R7-SOLVE-10 terminal loop and vehicle swept-path + real station and fire audits"
+}
