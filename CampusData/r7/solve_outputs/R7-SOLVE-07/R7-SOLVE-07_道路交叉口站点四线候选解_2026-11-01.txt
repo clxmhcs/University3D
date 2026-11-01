@@ -1,0 +1,123 @@
+江城大学 R7-SOLVE-07 道路骨架合并、20主要交叉节点、22校车站及A/B/C/D线路候选解
+
+版本：R7-TRANSPORT-NETWORK-CANDIDATE-2026-11-01
+最高优先级：PATCH-2026-09-14-R7
+状态：SOLVED_CANDIDATE_WITH_UNRESOLVED_EXPRESS_AND_PLATFORM_AUDITS
+Runtime Final：NO
+输入：R7最高优先级补丁；R7道路、动态交通、CampusData；GitHub已归档R7-SOLVE-02/03/04/05/06。R3旧道路/站点精确坐标一律HISTORICAL_ONLY。
+
+一、修订道路
+
+博雅环路北段（ROAD-BOYA-RING-N）：
+[[-750,690],[-210,690],[-210,655],[210,655],[210,690],[830,690]]
+旧北段为Z=690直线，SOLVE-06建议中部向南避让南看台。该条件候选纳入本轮，不覆盖R7-SOLVE-02的原始归档。
+主环完整候选长度6910m，A顺时针/B逆时针；南门Z=-1000、X=-60至60使用8m公交/应急受控段，不开放普通机动车穿行。
+
+北门赛事车道进一步修改：
+原SOLVE-06两侧健行路向北汇合到(0,1115)的机动车斜接入会穿过ATH-02体育馆前广场。
+本轮改为ROAD-JIANXING-W/E分别沿X=-160/+160由Z=655延伸至Z=1040并停止，广场从Z=1055开始。
+北门正中的ROAD-JIANXING-GATE改为宽6m步行礼仪通道，不作为校车/机动车/急救常规车道。
+ATH-02仍采用SOLVE-06候选(0,112,1095)，320×80m。本次是新条件候选，不代表已经解决北门应急车道、车辆掉头、活动集散或公交北端调度。
+
+四条外围城市道路（大学路/学府路/致远路/长虹路）仍采用R7冻结的直线控制，不进行弯曲或重排。
+
+二、拓扑重算与主要节点
+
+32条道路候选记录。公交子图连通分量：1。
+实际三岔及以上物理节点：21。
+按R7“20主要交叉节点规模参考”选取：20个。
+另外1个青年路局部交叉口保留为实体节点，不从图中删掉。
+步行北门通道与车行子图分离，因此“全部模式统一图”不应被误写为机动车单一连通图。
+
+CROSS-R7C-01  (300,-1000)  degree=3  roads=ROAD-BOYA-RING-SE|ROAD-QINGNIAN-S-W
+CROSS-R7C-02  (760,-1000)  degree=3  roads=ROAD-BOYA-RING-SE|ROAD-QINGNIAN-S-E
+CROSS-R7C-03  (760,-900)  degree=3  roads=ROAD-QINGNIAN-S|ROAD-QINGNIAN-S-E
+CROSS-R7C-04  (-600,-770)  degree=3  roads=ROAD-BOYA-RING-SW-V|ROAD-JISHI
+CROSS-R7C-05  (-1040,-300)  degree=3  roads=ROAD-JIANGXIN|ROAD-ZHICHUANG
+CROSS-R7C-06  (-900,-300)  degree=3  roads=ROAD-BOYA-RING-W|ROAD-ZHICHUANG
+CROSS-R7C-07  (-1320,100)  degree=3  roads=ROAD-QINGNIAN-W|ROAD-QINGNIAN-W-FEED|ROAD-WEST-GATE
+CROSS-R7C-08  (-1040,100)  degree=4  roads=ROAD-JIANGXIN|ROAD-QINGNIAN-W-FEED
+CROSS-R7C-09  (-900,100)  degree=3  roads=ROAD-BOYA-RING-W|ROAD-QINGNIAN-W-FEED
+CROSS-R7C-10  (1400,120)  degree=3  roads=ROAD-EAST-GATE|ROAD-QINGNIAN-E
+CROSS-R7C-11  (830,360)  degree=3  roads=ROAD-BOYA-RING-E|ROAD-QINGNIAN-E-FEED
+CROSS-R7C-12  (1040,360)  degree=4  roads=ROAD-QINGNIAN-E-FEED|ROAD-WENHUA
+CROSS-R7C-13  (830,400)  degree=3  roads=ROAD-BOYA-RING-E|ROAD-WENHUA
+CROSS-R7C-14  (830,440)  degree=3  roads=ROAD-BOYA-RING-E|ROAD-GEZHI-E
+CROSS-R7C-15  (-900,480)  degree=3  roads=ROAD-BOYA-RING-W|ROAD-JIANGXIN
+CROSS-R7C-16  (-900,500)  degree=3  roads=ROAD-BOYA-RING-W|ROAD-GEZHI-W
+CROSS-R7C-17  (-160,655)  degree=3  roads=ROAD-BOYA-RING-N|ROAD-JIANXING-W
+CROSS-R7C-18  (160,655)  degree=3  roads=ROAD-BOYA-RING-N|ROAD-JIANXING-E
+CROSS-R7C-19  (-520,690)  degree=3  roads=ROAD-BOYA-RING-N|ROAD-QINGNIAN-NW
+CROSS-R7C-20  (520,690)  degree=3  roads=ROAD-BOYA-RING-N|ROAD-QINGNIAN-NE
+
+三、22校车站候选
+
+所有下列坐标均是道路中心线投影点，不是人行站台、候车亭、无障碍出入口或车道侧停车泊位的最终坐标。
+全部22个投影点均落在现有R7候选道路上，且至少有一个候选A/B/C/D线路变体通过。
+旧R3坐标不复用；站名仅候选，需要POI/命名系统和服务半径确认。
+
+BUSSTOP-SOUTH-GATE  南门公交接驳站  (0,-1000)  variants=A/B/C_N/C_S
+BUSSTOP-MED-SOUTH  医学南接驳站  (-600,-850)  variants=A/B/C_S
+BUSSTOP-MED-NORTH  医学北接驳站  (-900,-400)  variants=A/B/C_S
+BUSSTOP-INFO  信息学部站  (-900,-100)  variants=A/B/C_S/D_E/D_W
+BUSSTOP-ENG  工程学部站  (-900,400)  variants=A/B/C_S/D_E/D_W
+BUSSTOP-RDI-ENTRY  科研园环路接驳站  (-750,690)  variants=A/B/C_S/D_E/D_W
+BUSSTOP-SCIENCE  理学生命区北缘站  (-400,690)  variants=A/B/C_S/D_E/D_W
+BUSSTOP-NORTH-SPORT  北体育南侧换乘站  (0,655)  variants=A/B/C_N/C_S/D_E/D_W
+BUSSTOP-NORTH-LIFE-E-ENTRY  北苑东侧接驳站  (450,690)  variants=A/B/C_N/D_E/D_W
+BUSSTOP-ART-TRANSFER  艺术区环路接驳站  (830,620)  variants=A/B/C_N/D_E/D_W
+BUSSTOP-HUM  人文社科站  (830,250)  variants=A/B/C_N/D_E/D_W
+BUSSTOP-HUM-BUS  人文经管站  (830,-100)  variants=A/B/C_N
+BUSSTOP-SE-SPORT  第二体育中心站  (830,-530)  variants=A/B/C_N
+BUSSTOP-SOUTH-E  南苑东口站  (760,-1000)  variants=A/B/C_N
+BUSSTOP-SOUTH-LIFE  南苑站  (500,-900)  variants=C_N
+BUSSTOP-NORTH-SPORT-E  北体育东侧赛事站  (160,940)  variants=C_N
+BUSSTOP-NORTH-SPORT-W  北体育西侧赛事站  (-160,940)  variants=C_S
+BUSSTOP-RDI  科研科技园站  (-1430,700)  variants=D_E/D_W
+BUSSTOP-WEST-LIFE  西苑站  (-1320,500)  variants=D_E/D_W
+BUSSTOP-WEST-GATE-TRANSFER  西门西苑接驳站  (-1320,100)  variants=D_E/D_W
+BUSSTOP-EAST-LIFE-N  东苑北站  (1400,280)  variants=D_E/D_W
+BUSSTOP-EAST-LIFE  东苑站  (1400,100)  variants=D_E/D_W
+
+四、线路候选几何长度
+
+A: 6910.0 m; RING_GEOMETRY_CONNECTED_PLATFORM_AUDIT_PENDING
+B: 6910.0 m; RING_GEOMETRY_CONNECTED_PLATFORM_AUDIT_PENDING
+C_N: 4030.0 m; GEOMETRY_CONNECTED_ONLY_NOT_EXPRESS_APPROVED
+C_S: 3970.0 m; GEOMETRY_CONNECTED_ONLY_NOT_EXPRESS_APPROVED
+D_E: 5300.0 m; GEOMETRY_CONNECTED_ONLY_NOT_EXPRESS_APPROVED
+D_W: 5300.0 m; GEOMETRY_CONNECTED_ONLY_NOT_EXPRESS_APPROVED
+
+A/B完整环线：6.91km，各方向中心线几何一致。
+C北行：4.03km；C南行：3.97km，仅为两条分别经过东/西体育赛事路的候选绕行几何，北端两个方向终点不一致，缺乏回转设施及正式车辆调度验证。
+D东西方向：5.30km，使用北环远端绕行而非直达公交优先廊道，不能称为已达标的东西快线。
+A/B/C/D仍维持正式线路功能架构，行车时间、到站时间和实际站台位置不得根据这组候选长度硬编码。
+
+五、未闭环的中央换乘服务
+
+博雅图书馆固定位置(0,100,-160)。
+目前距离最近候选道路投影校车站约815米（仅直线投影距离，实际步行更长）。
+中央礼仪轴、澄湖不允许普通机动车穿行。本阶段不虚构“中央图书馆有直达公交站”。
+需另行设计不破坏礼仪轴/湖区的C/D公交优先廊道或外围步行换乘方案，再核验无障碍与服务半径。
+
+六、审计与冻结边界
+
+PASS（本轮有限测试）：
+- 主要交叉节点数量20、站点候选数量22、公交图连通1分量；
+- 22站全部落在公交道路中心线，且所有站都有至少一个线路变体经过；
+- A/B主环几何6.91km且顺/逆双向；
+- 北环与赛事支路改动对已纳入的SOLVE-01/03/04/05和SOLVE-06建筑/体育矩形Footprint无硬交叠。
+
+PENDING/FAIL（不能作为Runtime Final）：
+- C/D快线直接性及中央图书馆近距离换乘：未满足；
+- 北体育东西两侧赛事路的掉头、停车、上下客与北门消防替代：未完成；
+- 所有站台实际偏置坐标、车道侧别、无障碍、车长停靠及人行净宽：未完成；
+- 交叉口车道拓扑、转向半径、信号方案、应急线路与医院急救连续性：未完成；
+- 地形纵断面、正式水岸Polygon、桥梁转角、外部城市道路接口、全校18项审计与CampusData/SVG/Unity合并：未完成。
+
+因此状态严格保持：
+R7_SOLVED_CANDIDATE_NOT_RUNTIME_FINAL
+
+七、下一步
+
+R7-SOLVE-08：补完C/D真实优先廊道/中央换乘服务半径，北体育赛事车辆掉头与消防接口；派生真实22站站台及20主要路口车道信号控制，并开展全局一致性复核。

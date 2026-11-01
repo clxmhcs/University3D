@@ -1,0 +1,2350 @@
+{
+  "schemaVersion": 1,
+  "solveId": "R7-SOLVE-07",
+  "version": "R7-TRANSPORT-NETWORK-CANDIDATE-2026-11-01",
+  "baseSourcePatch": "PATCH-2026-09-14-R7",
+  "runtimeFinal": false,
+  "status": "SOLVED_CANDIDATE_WITH_UNRESOLVED_EXPRESS_AND_PLATFORM_AUDITS",
+  "sourceSolves": [
+    "R7-SOLVE-02",
+    "R7-SOLVE-03",
+    "R7-SOLVE-04",
+    "R7-SOLVE-05",
+    "R7-SOLVE-06"
+  ],
+  "sourceFileSha": {
+    "solve02": "38747b0027ebb11e0dddba344de7e8f66c593163",
+    "solve06": "adca89629774becfa89041c1c413aa8aa6af26b8"
+  },
+  "revision": {
+    "northRing": {
+      "id": "ROAD-BOYA-RING-N",
+      "original": [
+        [
+          -750,
+          690
+        ],
+        [
+          830,
+          690
+        ]
+      ],
+      "proposed": [
+        [
+          -750,
+          690
+        ],
+        [
+          -210,
+          690
+        ],
+        [
+          -210,
+          655
+        ],
+        [
+          210,
+          655
+        ],
+        [
+          210,
+          690
+        ],
+        [
+          830,
+          690
+        ]
+      ],
+      "additionalLengthM": 70,
+      "status": "CONDITIONAL_MERGE"
+    },
+    "northEventRoads": "W/E end at X=±160 Z=1040, before ATH-02 open plaza, pending bus/emergency turnarounds",
+    "northGate": "ROAD-JIANXING-GATE converted to 6m pedestrian ceremonial passage; not a bus/emergency road",
+    "noChangeToExternal4StraightCityRoads": true
+  },
+  "roads": [
+    {
+      "id": "ROAD-BOYA-RING-SW",
+      "parentRoadID": "ROAD-BOYA-RING",
+      "name": "博雅环路·南西段",
+      "width": 26,
+      "roadClass": "primary",
+      "centerline": [
+        [
+          -600,
+          -1000
+        ],
+        [
+          -60,
+          -1000
+        ]
+      ],
+      "generalMotor": true,
+      "transit": true,
+      "emergency": true,
+      "freezeRole": "SKELETON_LOCK"
+    },
+    {
+      "id": "ROAD-BOYA-RING-S-CROSS",
+      "parentRoadID": "ROAD-BOYA-RING",
+      "name": "博雅环路·南门礼仪受控穿越段",
+      "width": 8,
+      "roadClass": "transit_emergency_restricted",
+      "centerline": [
+        [
+          -60,
+          -1000
+        ],
+        [
+          60,
+          -1000
+        ]
+      ],
+      "generalMotor": false,
+      "transit": true,
+      "emergency": true,
+      "pedestrianPriority": true,
+      "freezeRole": "SKELETON_LOCK"
+    },
+    {
+      "id": "ROAD-BOYA-RING-SE",
+      "parentRoadID": "ROAD-BOYA-RING",
+      "name": "博雅环路·南东段",
+      "width": 26,
+      "roadClass": "primary",
+      "centerline": [
+        [
+          60,
+          -1000
+        ],
+        [
+          830,
+          -1000
+        ]
+      ],
+      "generalMotor": true,
+      "transit": true,
+      "emergency": true,
+      "freezeRole": "SKELETON_LOCK"
+    },
+    {
+      "id": "ROAD-BOYA-RING-E",
+      "parentRoadID": "ROAD-BOYA-RING",
+      "name": "博雅环路·东段",
+      "width": 26,
+      "roadClass": "primary",
+      "centerline": [
+        [
+          830,
+          -1000
+        ],
+        [
+          830,
+          690
+        ]
+      ],
+      "generalMotor": true,
+      "transit": true,
+      "emergency": true,
+      "freezeRole": "SKELETON_LOCK"
+    },
+    {
+      "id": "ROAD-BOYA-RING-N",
+      "parentRoadID": "ROAD-BOYA-RING",
+      "name": "博雅环路·北段",
+      "width": 26,
+      "roadClass": "primary",
+      "centerline": [
+        [
+          -750,
+          690
+        ],
+        [
+          -210,
+          690
+        ],
+        [
+          -210,
+          655
+        ],
+        [
+          210,
+          655
+        ],
+        [
+          210,
+          690
+        ],
+        [
+          830,
+          690
+        ]
+      ],
+      "generalMotor": true,
+      "transit": true,
+      "emergency": true,
+      "freezeRole": "SKELETON_LOCK",
+      "solve07Status": "SOLVED_CANDIDATE_NORTH_BYPASS"
+    },
+    {
+      "id": "ROAD-BOYA-RING-NW-V",
+      "parentRoadID": "ROAD-BOYA-RING",
+      "name": "博雅环路·西北竖向过渡段",
+      "width": 26,
+      "roadClass": "primary",
+      "centerline": [
+        [
+          -750,
+          690
+        ],
+        [
+          -750,
+          600
+        ]
+      ],
+      "generalMotor": true,
+      "transit": true,
+      "emergency": true,
+      "freezeRole": "SKELETON_LOCK"
+    },
+    {
+      "id": "ROAD-BOYA-RING-NW-H",
+      "parentRoadID": "ROAD-BOYA-RING",
+      "name": "博雅环路·西北横向过渡段",
+      "width": 26,
+      "roadClass": "primary",
+      "centerline": [
+        [
+          -750,
+          600
+        ],
+        [
+          -900,
+          600
+        ]
+      ],
+      "generalMotor": true,
+      "transit": true,
+      "emergency": true,
+      "freezeRole": "SKELETON_LOCK"
+    },
+    {
+      "id": "ROAD-BOYA-RING-W",
+      "parentRoadID": "ROAD-BOYA-RING",
+      "name": "博雅环路·西段",
+      "width": 26,
+      "roadClass": "primary",
+      "centerline": [
+        [
+          -900,
+          600
+        ],
+        [
+          -900,
+          -430
+        ]
+      ],
+      "generalMotor": true,
+      "transit": true,
+      "emergency": true,
+      "freezeRole": "SKELETON_LOCK"
+    },
+    {
+      "id": "ROAD-BOYA-RING-SW-H",
+      "parentRoadID": "ROAD-BOYA-RING",
+      "name": "博雅环路·西南横向过渡段",
+      "width": 26,
+      "roadClass": "primary",
+      "centerline": [
+        [
+          -900,
+          -430
+        ],
+        [
+          -600,
+          -430
+        ]
+      ],
+      "generalMotor": true,
+      "transit": true,
+      "emergency": true,
+      "freezeRole": "SKELETON_LOCK"
+    },
+    {
+      "id": "ROAD-BOYA-RING-SW-V",
+      "parentRoadID": "ROAD-BOYA-RING",
+      "name": "博雅环路·西南竖向过渡段",
+      "width": 26,
+      "roadClass": "primary",
+      "centerline": [
+        [
+          -600,
+          -430
+        ],
+        [
+          -600,
+          -1000
+        ]
+      ],
+      "generalMotor": true,
+      "transit": true,
+      "emergency": true,
+      "freezeRole": "SKELETON_LOCK"
+    },
+    {
+      "id": "ROAD-JISHI",
+      "name": "济世路",
+      "width": 20,
+      "roadClass": "secondary_medical",
+      "centerline": [
+        [
+          -1350,
+          -770
+        ],
+        [
+          -600,
+          -770
+        ]
+      ],
+      "generalMotor": true,
+      "transit": true,
+      "emergency": true,
+      "freezeRole": "SKELETON_LOCK"
+    },
+    {
+      "id": "ROAD-ZHICHUANG",
+      "name": "智创路",
+      "width": 18,
+      "roadClass": "secondary_academic",
+      "centerline": [
+        [
+          -1380,
+          -300
+        ],
+        [
+          -900,
+          -300
+        ]
+      ],
+      "generalMotor": true,
+      "transit": true,
+      "emergency": true,
+      "freezeRole": "SKELETON_LOCK"
+    },
+    {
+      "id": "ROAD-JIANGXIN",
+      "name": "匠心路",
+      "width": 18,
+      "roadClass": "secondary_academic",
+      "centerline": [
+        [
+          -1040,
+          -300
+        ],
+        [
+          -1040,
+          480
+        ],
+        [
+          -900,
+          480
+        ]
+      ],
+      "generalMotor": true,
+      "transit": true,
+      "emergency": true,
+      "freezeRole": "SKELETON_LOCK"
+    },
+    {
+      "id": "ROAD-GEZHI-W",
+      "name": "格致路·西段",
+      "width": 18,
+      "roadClass": "secondary_academic",
+      "centerline": [
+        [
+          -900,
+          500
+        ],
+        [
+          -360,
+          500
+        ]
+      ],
+      "generalMotor": true,
+      "transit": false,
+      "emergency": true,
+      "freezeRole": "SKELETON_LOCK"
+    },
+    {
+      "id": "ROAD-GEZHI-E",
+      "name": "格致路·东段",
+      "width": 18,
+      "roadClass": "secondary_academic",
+      "centerline": [
+        [
+          360,
+          440
+        ],
+        [
+          830,
+          440
+        ]
+      ],
+      "generalMotor": true,
+      "transit": false,
+      "emergency": true,
+      "freezeRole": "SKELETON_LOCK"
+    },
+    {
+      "id": "ROAD-WENHUA",
+      "name": "文华路",
+      "width": 18,
+      "roadClass": "secondary_academic",
+      "centerline": [
+        [
+          830,
+          400
+        ],
+        [
+          1040,
+          400
+        ],
+        [
+          1040,
+          -250
+        ]
+      ],
+      "generalMotor": true,
+      "transit": true,
+      "emergency": true,
+      "freezeRole": "SKELETON_LOCK"
+    },
+    {
+      "id": "ROAD-WEST-GATE",
+      "name": "西门校园接入路",
+      "width": 18,
+      "roadClass": "gate_access",
+      "centerline": [
+        [
+          -1548,
+          -80
+        ],
+        [
+          -1500,
+          -80
+        ],
+        [
+          -1500,
+          40
+        ],
+        [
+          -1320,
+          40
+        ],
+        [
+          -1320,
+          100
+        ]
+      ],
+      "generalMotor": true,
+      "transit": false,
+      "emergency": true,
+      "freezeRole": "SKELETON_LOCK"
+    },
+    {
+      "id": "ROAD-QINGNIAN-W",
+      "name": "青年路·西苑段",
+      "width": 16,
+      "roadClass": "residential",
+      "centerline": [
+        [
+          -1320,
+          100
+        ],
+        [
+          -1320,
+          600
+        ]
+      ],
+      "generalMotor": true,
+      "transit": true,
+      "emergency": true,
+      "freezeRole": "CORRIDOR_RESERVATION"
+    },
+    {
+      "id": "ROAD-QINGNIAN-W-FEED",
+      "name": "青年路·西苑东接入",
+      "width": 16,
+      "roadClass": "residential",
+      "centerline": [
+        [
+          -1320,
+          100
+        ],
+        [
+          -900,
+          100
+        ]
+      ],
+      "generalMotor": true,
+      "transit": true,
+      "emergency": true,
+      "freezeRole": "CORRIDOR_RESERVATION"
+    },
+    {
+      "id": "ROAD-CHUANGXIN",
+      "name": "创新大道·科研园西侧主脊",
+      "width": 18,
+      "roadClass": "research_access",
+      "centerline": [
+        [
+          -1430,
+          600
+        ],
+        [
+          -1430,
+          820
+        ]
+      ],
+      "generalMotor": true,
+      "transit": true,
+      "emergency": true,
+      "freezeRole": "CORRIDOR_RESERVATION"
+    },
+    {
+      "id": "ROAD-CHUANGXIN-CONN",
+      "name": "创新大道·西苑连接段",
+      "width": 18,
+      "roadClass": "research_access",
+      "centerline": [
+        [
+          -1430,
+          600
+        ],
+        [
+          -1320,
+          600
+        ]
+      ],
+      "generalMotor": true,
+      "transit": true,
+      "emergency": true,
+      "freezeRole": "CORRIDOR_RESERVATION"
+    },
+    {
+      "id": "ROAD-QINGNIAN-E",
+      "name": "青年路·东苑段",
+      "width": 18,
+      "roadClass": "residential",
+      "centerline": [
+        [
+          1400,
+          -280
+        ],
+        [
+          1400,
+          360
+        ]
+      ],
+      "generalMotor": true,
+      "transit": true,
+      "emergency": true,
+      "freezeRole": "CORRIDOR_RESERVATION"
+    },
+    {
+      "id": "ROAD-QINGNIAN-E-FEED",
+      "name": "青年路·东苑西接入",
+      "width": 18,
+      "roadClass": "residential",
+      "centerline": [
+        [
+          830,
+          360
+        ],
+        [
+          1400,
+          360
+        ]
+      ],
+      "generalMotor": true,
+      "transit": true,
+      "emergency": true,
+      "freezeRole": "CORRIDOR_RESERVATION"
+    },
+    {
+      "id": "ROAD-EAST-GATE",
+      "name": "东门连接路",
+      "width": 14,
+      "roadClass": "gate_access",
+      "centerline": [
+        [
+          1400,
+          120
+        ],
+        [
+          1555,
+          120
+        ]
+      ],
+      "generalMotor": true,
+      "transit": false,
+      "emergency": true,
+      "freezeRole": "SKELETON_LOCK"
+    },
+    {
+      "id": "ROAD-QINGNIAN-S",
+      "name": "青年路·南苑段",
+      "width": 18,
+      "roadClass": "residential",
+      "centerline": [
+        [
+          260,
+          -900
+        ],
+        [
+          800,
+          -900
+        ]
+      ],
+      "generalMotor": true,
+      "transit": true,
+      "emergency": true,
+      "freezeRole": "CORRIDOR_RESERVATION"
+    },
+    {
+      "id": "ROAD-QINGNIAN-S-W",
+      "name": "青年路·南苑西接入",
+      "width": 18,
+      "roadClass": "residential",
+      "centerline": [
+        [
+          300,
+          -1000
+        ],
+        [
+          300,
+          -900
+        ]
+      ],
+      "generalMotor": true,
+      "transit": true,
+      "emergency": true,
+      "freezeRole": "CORRIDOR_RESERVATION"
+    },
+    {
+      "id": "ROAD-QINGNIAN-S-E",
+      "name": "青年路·南苑东接入",
+      "width": 18,
+      "roadClass": "residential",
+      "centerline": [
+        [
+          760,
+          -1000
+        ],
+        [
+          760,
+          -900
+        ]
+      ],
+      "generalMotor": true,
+      "transit": true,
+      "emergency": true,
+      "freezeRole": "CORRIDOR_RESERVATION"
+    },
+    {
+      "id": "ROAD-QINGNIAN-NW",
+      "name": "青年路·北苑西支",
+      "width": 14,
+      "roadClass": "residential",
+      "centerline": [
+        [
+          -520,
+          690
+        ],
+        [
+          -520,
+          1040
+        ]
+      ],
+      "generalMotor": true,
+      "transit": true,
+      "emergency": true,
+      "freezeRole": "CORRIDOR_RESERVATION"
+    },
+    {
+      "id": "ROAD-QINGNIAN-NE",
+      "name": "青年路·北苑东支",
+      "width": 14,
+      "roadClass": "residential",
+      "centerline": [
+        [
+          520,
+          690
+        ],
+        [
+          520,
+          1040
+        ]
+      ],
+      "generalMotor": true,
+      "transit": true,
+      "emergency": true,
+      "freezeRole": "CORRIDOR_RESERVATION"
+    },
+    {
+      "id": "ROAD-JIANXING-W",
+      "name": "健行路·赛事西支",
+      "width": 22,
+      "roadClass": "event_access",
+      "centerline": [
+        [
+          -160,
+          655
+        ],
+        [
+          -160,
+          1040
+        ]
+      ],
+      "generalMotor": false,
+      "eventMotor": true,
+      "transit": true,
+      "emergency": true,
+      "freezeRole": "SKELETON_LOCK",
+      "solve07Status": "CANDIDATE_TERMINATE_SOUTH_OF_ATH02_PLAZA",
+      "turnaroundStatus": "PENDING_ENG_DESIGN"
+    },
+    {
+      "id": "ROAD-JIANXING-E",
+      "name": "健行路·赛事东支",
+      "width": 22,
+      "roadClass": "event_access",
+      "centerline": [
+        [
+          160,
+          655
+        ],
+        [
+          160,
+          1040
+        ]
+      ],
+      "generalMotor": false,
+      "eventMotor": true,
+      "transit": true,
+      "emergency": true,
+      "freezeRole": "SKELETON_LOCK",
+      "solve07Status": "CANDIDATE_TERMINATE_SOUTH_OF_ATH02_PLAZA",
+      "turnaroundStatus": "PENDING_ENG_DESIGN"
+    },
+    {
+      "id": "ROAD-JIANXING-GATE",
+      "name": "健行路·北门受控接口",
+      "width": 6,
+      "roadClass": "pedestrian_gate_ceremonial",
+      "centerline": [
+        [
+          0,
+          1115
+        ],
+        [
+          0,
+          1142
+        ]
+      ],
+      "generalMotor": false,
+      "eventMotor": false,
+      "transit": false,
+      "emergency": false,
+      "freezeRole": "SKELETON_LOCK",
+      "solve07Status": "PEDESTRIAN_ONLY_NOT_BUS_EMERGENCY_ROUTE"
+    }
+  ],
+  "ring": {
+    "segmentIDs": [
+      "ROAD-BOYA-RING-SW",
+      "ROAD-BOYA-RING-S-CROSS",
+      "ROAD-BOYA-RING-SE",
+      "ROAD-BOYA-RING-E",
+      "ROAD-BOYA-RING-N",
+      "ROAD-BOYA-RING-NW-V",
+      "ROAD-BOYA-RING-NW-H",
+      "ROAD-BOYA-RING-W",
+      "ROAD-BOYA-RING-SW-H",
+      "ROAD-BOYA-RING-SW-V"
+    ],
+    "geometryLengthM": 6910,
+    "ABClockwisePolicy": "A clockwise / B counterclockwise, 8m gated south crossing for buses/emergency only"
+  },
+  "topology": {
+    "roads": 32,
+    "physicalDegree3PlusJunctions": 21,
+    "majorIntersections": [
+      {
+        "id": "CROSS-R7C-01",
+        "positionXZ": [
+          300,
+          -1000
+        ],
+        "degree": 3,
+        "roadIDs": [
+          "ROAD-BOYA-RING-SE",
+          "ROAD-QINGNIAN-S-W"
+        ],
+        "status": "R7_SOLVED_CANDIDATE_PENDING_LANE_SIGNAL_AUDIT"
+      },
+      {
+        "id": "CROSS-R7C-02",
+        "positionXZ": [
+          760,
+          -1000
+        ],
+        "degree": 3,
+        "roadIDs": [
+          "ROAD-BOYA-RING-SE",
+          "ROAD-QINGNIAN-S-E"
+        ],
+        "status": "R7_SOLVED_CANDIDATE_PENDING_LANE_SIGNAL_AUDIT"
+      },
+      {
+        "id": "CROSS-R7C-03",
+        "positionXZ": [
+          760,
+          -900
+        ],
+        "degree": 3,
+        "roadIDs": [
+          "ROAD-QINGNIAN-S",
+          "ROAD-QINGNIAN-S-E"
+        ],
+        "status": "R7_SOLVED_CANDIDATE_PENDING_LANE_SIGNAL_AUDIT"
+      },
+      {
+        "id": "CROSS-R7C-04",
+        "positionXZ": [
+          -600,
+          -770
+        ],
+        "degree": 3,
+        "roadIDs": [
+          "ROAD-BOYA-RING-SW-V",
+          "ROAD-JISHI"
+        ],
+        "status": "R7_SOLVED_CANDIDATE_PENDING_LANE_SIGNAL_AUDIT"
+      },
+      {
+        "id": "CROSS-R7C-05",
+        "positionXZ": [
+          -1040,
+          -300
+        ],
+        "degree": 3,
+        "roadIDs": [
+          "ROAD-JIANGXIN",
+          "ROAD-ZHICHUANG"
+        ],
+        "status": "R7_SOLVED_CANDIDATE_PENDING_LANE_SIGNAL_AUDIT"
+      },
+      {
+        "id": "CROSS-R7C-06",
+        "positionXZ": [
+          -900,
+          -300
+        ],
+        "degree": 3,
+        "roadIDs": [
+          "ROAD-BOYA-RING-W",
+          "ROAD-ZHICHUANG"
+        ],
+        "status": "R7_SOLVED_CANDIDATE_PENDING_LANE_SIGNAL_AUDIT"
+      },
+      {
+        "id": "CROSS-R7C-07",
+        "positionXZ": [
+          -1320,
+          100
+        ],
+        "degree": 3,
+        "roadIDs": [
+          "ROAD-QINGNIAN-W",
+          "ROAD-QINGNIAN-W-FEED",
+          "ROAD-WEST-GATE"
+        ],
+        "status": "R7_SOLVED_CANDIDATE_PENDING_LANE_SIGNAL_AUDIT"
+      },
+      {
+        "id": "CROSS-R7C-08",
+        "positionXZ": [
+          -1040,
+          100
+        ],
+        "degree": 4,
+        "roadIDs": [
+          "ROAD-JIANGXIN",
+          "ROAD-QINGNIAN-W-FEED"
+        ],
+        "status": "R7_SOLVED_CANDIDATE_PENDING_LANE_SIGNAL_AUDIT"
+      },
+      {
+        "id": "CROSS-R7C-09",
+        "positionXZ": [
+          -900,
+          100
+        ],
+        "degree": 3,
+        "roadIDs": [
+          "ROAD-BOYA-RING-W",
+          "ROAD-QINGNIAN-W-FEED"
+        ],
+        "status": "R7_SOLVED_CANDIDATE_PENDING_LANE_SIGNAL_AUDIT"
+      },
+      {
+        "id": "CROSS-R7C-10",
+        "positionXZ": [
+          1400,
+          120
+        ],
+        "degree": 3,
+        "roadIDs": [
+          "ROAD-EAST-GATE",
+          "ROAD-QINGNIAN-E"
+        ],
+        "status": "R7_SOLVED_CANDIDATE_PENDING_LANE_SIGNAL_AUDIT"
+      },
+      {
+        "id": "CROSS-R7C-11",
+        "positionXZ": [
+          830,
+          360
+        ],
+        "degree": 3,
+        "roadIDs": [
+          "ROAD-BOYA-RING-E",
+          "ROAD-QINGNIAN-E-FEED"
+        ],
+        "status": "R7_SOLVED_CANDIDATE_PENDING_LANE_SIGNAL_AUDIT"
+      },
+      {
+        "id": "CROSS-R7C-12",
+        "positionXZ": [
+          1040,
+          360
+        ],
+        "degree": 4,
+        "roadIDs": [
+          "ROAD-QINGNIAN-E-FEED",
+          "ROAD-WENHUA"
+        ],
+        "status": "R7_SOLVED_CANDIDATE_PENDING_LANE_SIGNAL_AUDIT"
+      },
+      {
+        "id": "CROSS-R7C-13",
+        "positionXZ": [
+          830,
+          400
+        ],
+        "degree": 3,
+        "roadIDs": [
+          "ROAD-BOYA-RING-E",
+          "ROAD-WENHUA"
+        ],
+        "status": "R7_SOLVED_CANDIDATE_PENDING_LANE_SIGNAL_AUDIT"
+      },
+      {
+        "id": "CROSS-R7C-14",
+        "positionXZ": [
+          830,
+          440
+        ],
+        "degree": 3,
+        "roadIDs": [
+          "ROAD-BOYA-RING-E",
+          "ROAD-GEZHI-E"
+        ],
+        "status": "R7_SOLVED_CANDIDATE_PENDING_LANE_SIGNAL_AUDIT"
+      },
+      {
+        "id": "CROSS-R7C-15",
+        "positionXZ": [
+          -900,
+          480
+        ],
+        "degree": 3,
+        "roadIDs": [
+          "ROAD-BOYA-RING-W",
+          "ROAD-JIANGXIN"
+        ],
+        "status": "R7_SOLVED_CANDIDATE_PENDING_LANE_SIGNAL_AUDIT"
+      },
+      {
+        "id": "CROSS-R7C-16",
+        "positionXZ": [
+          -900,
+          500
+        ],
+        "degree": 3,
+        "roadIDs": [
+          "ROAD-BOYA-RING-W",
+          "ROAD-GEZHI-W"
+        ],
+        "status": "R7_SOLVED_CANDIDATE_PENDING_LANE_SIGNAL_AUDIT"
+      },
+      {
+        "id": "CROSS-R7C-17",
+        "positionXZ": [
+          -160,
+          655
+        ],
+        "degree": 3,
+        "roadIDs": [
+          "ROAD-BOYA-RING-N",
+          "ROAD-JIANXING-W"
+        ],
+        "status": "R7_SOLVED_CANDIDATE_PENDING_LANE_SIGNAL_AUDIT"
+      },
+      {
+        "id": "CROSS-R7C-18",
+        "positionXZ": [
+          160,
+          655
+        ],
+        "degree": 3,
+        "roadIDs": [
+          "ROAD-BOYA-RING-N",
+          "ROAD-JIANXING-E"
+        ],
+        "status": "R7_SOLVED_CANDIDATE_PENDING_LANE_SIGNAL_AUDIT"
+      },
+      {
+        "id": "CROSS-R7C-19",
+        "positionXZ": [
+          -520,
+          690
+        ],
+        "degree": 3,
+        "roadIDs": [
+          "ROAD-BOYA-RING-N",
+          "ROAD-QINGNIAN-NW"
+        ],
+        "status": "R7_SOLVED_CANDIDATE_PENDING_LANE_SIGNAL_AUDIT"
+      },
+      {
+        "id": "CROSS-R7C-20",
+        "positionXZ": [
+          520,
+          690
+        ],
+        "degree": 3,
+        "roadIDs": [
+          "ROAD-BOYA-RING-N",
+          "ROAD-QINGNIAN-NE"
+        ],
+        "status": "R7_SOLVED_CANDIDATE_PENDING_LANE_SIGNAL_AUDIT"
+      }
+    ],
+    "localIntersections": [
+      {
+        "positionXZ": [
+          300,
+          -900
+        ],
+        "degree": 3,
+        "status": "LOCAL_NOT_ONE_OF_MAIN_20"
+      }
+    ],
+    "busConnectedComponents": 1,
+    "allModesConnectedComponents": 2,
+    "busGraphNodes": 70,
+    "graphEdges": 82
+  },
+  "busStops": [
+    {
+      "id": "BUSSTOP-SOUTH-GATE",
+      "name": "南门公交接驳站",
+      "roadProjectionXZ": [
+        0,
+        -1000
+      ],
+      "serviceClass": "RING",
+      "serviceIntent": "南门/中央礼仪轴步行接驳",
+      "candidateRoutes": [
+        "A",
+        "B",
+        "C_N",
+        "C_S"
+      ],
+      "platformPositionXZ": null,
+      "platformStatus": "DERIVED_AFTER_LAYOUT",
+      "status": "R7_SOLVED_CANDIDATE_NOT_RUNTIME_FINAL"
+    },
+    {
+      "id": "BUSSTOP-MED-SOUTH",
+      "name": "医学南接驳站",
+      "roadProjectionXZ": [
+        -600,
+        -850
+      ],
+      "serviceClass": "RING",
+      "serviceIntent": "医学区东侧公交",
+      "candidateRoutes": [
+        "A",
+        "B",
+        "C_S"
+      ],
+      "platformPositionXZ": null,
+      "platformStatus": "DERIVED_AFTER_LAYOUT",
+      "status": "R7_SOLVED_CANDIDATE_NOT_RUNTIME_FINAL"
+    },
+    {
+      "id": "BUSSTOP-MED-NORTH",
+      "name": "医学北接驳站",
+      "roadProjectionXZ": [
+        -900,
+        -400
+      ],
+      "serviceClass": "RING",
+      "serviceIntent": "医学区北缘",
+      "candidateRoutes": [
+        "A",
+        "B",
+        "C_S"
+      ],
+      "platformPositionXZ": null,
+      "platformStatus": "DERIVED_AFTER_LAYOUT",
+      "status": "R7_SOLVED_CANDIDATE_NOT_RUNTIME_FINAL"
+    },
+    {
+      "id": "BUSSTOP-INFO",
+      "name": "信息学部站",
+      "roadProjectionXZ": [
+        -900,
+        -100
+      ],
+      "serviceClass": "RING",
+      "serviceIntent": "信息学院组团",
+      "candidateRoutes": [
+        "A",
+        "B",
+        "C_S",
+        "D_E",
+        "D_W"
+      ],
+      "platformPositionXZ": null,
+      "platformStatus": "DERIVED_AFTER_LAYOUT",
+      "status": "R7_SOLVED_CANDIDATE_NOT_RUNTIME_FINAL"
+    },
+    {
+      "id": "BUSSTOP-ENG",
+      "name": "工程学部站",
+      "roadProjectionXZ": [
+        -900,
+        400
+      ],
+      "serviceClass": "RING",
+      "serviceIntent": "工程学院组团",
+      "candidateRoutes": [
+        "A",
+        "B",
+        "C_S",
+        "D_E",
+        "D_W"
+      ],
+      "platformPositionXZ": null,
+      "platformStatus": "DERIVED_AFTER_LAYOUT",
+      "status": "R7_SOLVED_CANDIDATE_NOT_RUNTIME_FINAL"
+    },
+    {
+      "id": "BUSSTOP-RDI-ENTRY",
+      "name": "科研园环路接驳站",
+      "roadProjectionXZ": [
+        -750,
+        690
+      ],
+      "serviceClass": "RING",
+      "serviceIntent": "科研科技园东接驳",
+      "candidateRoutes": [
+        "A",
+        "B",
+        "C_S",
+        "D_E",
+        "D_W"
+      ],
+      "platformPositionXZ": null,
+      "platformStatus": "DERIVED_AFTER_LAYOUT",
+      "status": "R7_SOLVED_CANDIDATE_NOT_RUNTIME_FINAL"
+    },
+    {
+      "id": "BUSSTOP-SCIENCE",
+      "name": "理学生命区北缘站",
+      "roadProjectionXZ": [
+        -400,
+        690
+      ],
+      "serviceClass": "RING",
+      "serviceIntent": "理学生命区",
+      "candidateRoutes": [
+        "A",
+        "B",
+        "C_S",
+        "D_E",
+        "D_W"
+      ],
+      "platformPositionXZ": null,
+      "platformStatus": "DERIVED_AFTER_LAYOUT",
+      "status": "R7_SOLVED_CANDIDATE_NOT_RUNTIME_FINAL"
+    },
+    {
+      "id": "BUSSTOP-NORTH-SPORT",
+      "name": "北体育南侧换乘站",
+      "roadProjectionXZ": [
+        0,
+        655
+      ],
+      "serviceClass": "RING",
+      "serviceIntent": "看台外缘受控路段",
+      "candidateRoutes": [
+        "A",
+        "B",
+        "C_N",
+        "C_S",
+        "D_E",
+        "D_W"
+      ],
+      "platformPositionXZ": null,
+      "platformStatus": "DERIVED_AFTER_LAYOUT",
+      "status": "R7_SOLVED_CANDIDATE_NOT_RUNTIME_FINAL"
+    },
+    {
+      "id": "BUSSTOP-NORTH-LIFE-E-ENTRY",
+      "name": "北苑东侧接驳站",
+      "roadProjectionXZ": [
+        450,
+        690
+      ],
+      "serviceClass": "RING",
+      "serviceIntent": "北苑东翼/赛事",
+      "candidateRoutes": [
+        "A",
+        "B",
+        "C_N",
+        "D_E",
+        "D_W"
+      ],
+      "platformPositionXZ": null,
+      "platformStatus": "DERIVED_AFTER_LAYOUT",
+      "status": "R7_SOLVED_CANDIDATE_NOT_RUNTIME_FINAL"
+    },
+    {
+      "id": "BUSSTOP-ART-TRANSFER",
+      "name": "艺术区环路接驳站",
+      "roadProjectionXZ": [
+        830,
+        620
+      ],
+      "serviceClass": "RING",
+      "serviceIntent": "艺术剧院西侧接驳；需步行核验",
+      "candidateRoutes": [
+        "A",
+        "B",
+        "C_N",
+        "D_E",
+        "D_W"
+      ],
+      "platformPositionXZ": null,
+      "platformStatus": "DERIVED_AFTER_LAYOUT",
+      "status": "R7_SOLVED_CANDIDATE_NOT_RUNTIME_FINAL"
+    },
+    {
+      "id": "BUSSTOP-HUM",
+      "name": "人文社科站",
+      "roadProjectionXZ": [
+        830,
+        250
+      ],
+      "serviceClass": "RING",
+      "serviceIntent": "人文社科学院",
+      "candidateRoutes": [
+        "A",
+        "B",
+        "C_N",
+        "D_E",
+        "D_W"
+      ],
+      "platformPositionXZ": null,
+      "platformStatus": "DERIVED_AFTER_LAYOUT",
+      "status": "R7_SOLVED_CANDIDATE_NOT_RUNTIME_FINAL"
+    },
+    {
+      "id": "BUSSTOP-HUM-BUS",
+      "name": "人文经管站",
+      "roadProjectionXZ": [
+        830,
+        -100
+      ],
+      "serviceClass": "RING",
+      "serviceIntent": "经管组团",
+      "candidateRoutes": [
+        "A",
+        "B",
+        "C_N"
+      ],
+      "platformPositionXZ": null,
+      "platformStatus": "DERIVED_AFTER_LAYOUT",
+      "status": "R7_SOLVED_CANDIDATE_NOT_RUNTIME_FINAL"
+    },
+    {
+      "id": "BUSSTOP-SE-SPORT",
+      "name": "第二体育中心站",
+      "roadProjectionXZ": [
+        830,
+        -530
+      ],
+      "serviceClass": "RING",
+      "serviceIntent": "第二400米田径场西侧",
+      "candidateRoutes": [
+        "A",
+        "B",
+        "C_N"
+      ],
+      "platformPositionXZ": null,
+      "platformStatus": "DERIVED_AFTER_LAYOUT",
+      "status": "R7_SOLVED_CANDIDATE_NOT_RUNTIME_FINAL"
+    },
+    {
+      "id": "BUSSTOP-SOUTH-E",
+      "name": "南苑东口站",
+      "roadProjectionXZ": [
+        760,
+        -1000
+      ],
+      "serviceClass": "RING",
+      "serviceIntent": "南苑东入口",
+      "candidateRoutes": [
+        "A",
+        "B",
+        "C_N"
+      ],
+      "platformPositionXZ": null,
+      "platformStatus": "DERIVED_AFTER_LAYOUT",
+      "status": "R7_SOLVED_CANDIDATE_NOT_RUNTIME_FINAL"
+    },
+    {
+      "id": "BUSSTOP-SOUTH-LIFE",
+      "name": "南苑站",
+      "roadProjectionXZ": [
+        500,
+        -900
+      ],
+      "serviceClass": "C",
+      "serviceIntent": "南苑青年路",
+      "candidateRoutes": [
+        "C_N"
+      ],
+      "platformPositionXZ": null,
+      "platformStatus": "DERIVED_AFTER_LAYOUT",
+      "status": "R7_SOLVED_CANDIDATE_NOT_RUNTIME_FINAL"
+    },
+    {
+      "id": "BUSSTOP-NORTH-SPORT-E",
+      "name": "北体育东侧赛事站",
+      "roadProjectionXZ": [
+        160,
+        940
+      ],
+      "serviceClass": "C",
+      "serviceIntent": "健行赛事东支",
+      "candidateRoutes": [
+        "C_N"
+      ],
+      "platformPositionXZ": null,
+      "platformStatus": "DERIVED_AFTER_LAYOUT",
+      "status": "R7_SOLVED_CANDIDATE_NOT_RUNTIME_FINAL"
+    },
+    {
+      "id": "BUSSTOP-NORTH-SPORT-W",
+      "name": "北体育西侧赛事站",
+      "roadProjectionXZ": [
+        -160,
+        940
+      ],
+      "serviceClass": "C",
+      "serviceIntent": "健行赛事西支",
+      "candidateRoutes": [
+        "C_S"
+      ],
+      "platformPositionXZ": null,
+      "platformStatus": "DERIVED_AFTER_LAYOUT",
+      "status": "R7_SOLVED_CANDIDATE_NOT_RUNTIME_FINAL"
+    },
+    {
+      "id": "BUSSTOP-RDI",
+      "name": "科研科技园站",
+      "roadProjectionXZ": [
+        -1430,
+        700
+      ],
+      "serviceClass": "D",
+      "serviceIntent": "创新大道西脊",
+      "candidateRoutes": [
+        "D_E",
+        "D_W"
+      ],
+      "platformPositionXZ": null,
+      "platformStatus": "DERIVED_AFTER_LAYOUT",
+      "status": "R7_SOLVED_CANDIDATE_NOT_RUNTIME_FINAL"
+    },
+    {
+      "id": "BUSSTOP-WEST-LIFE",
+      "name": "西苑站",
+      "roadProjectionXZ": [
+        -1320,
+        500
+      ],
+      "serviceClass": "D",
+      "serviceIntent": "西苑青年路",
+      "candidateRoutes": [
+        "D_E",
+        "D_W"
+      ],
+      "platformPositionXZ": null,
+      "platformStatus": "DERIVED_AFTER_LAYOUT",
+      "status": "R7_SOLVED_CANDIDATE_NOT_RUNTIME_FINAL"
+    },
+    {
+      "id": "BUSSTOP-WEST-GATE-TRANSFER",
+      "name": "西门西苑接驳站",
+      "roadProjectionXZ": [
+        -1320,
+        100
+      ],
+      "serviceClass": "D",
+      "serviceIntent": "西门步行接驳",
+      "candidateRoutes": [
+        "D_E",
+        "D_W"
+      ],
+      "platformPositionXZ": null,
+      "platformStatus": "DERIVED_AFTER_LAYOUT",
+      "status": "R7_SOLVED_CANDIDATE_NOT_RUNTIME_FINAL"
+    },
+    {
+      "id": "BUSSTOP-EAST-LIFE-N",
+      "name": "东苑北站",
+      "roadProjectionXZ": [
+        1400,
+        280
+      ],
+      "serviceClass": "D",
+      "serviceIntent": "东苑青年路北段",
+      "candidateRoutes": [
+        "D_E",
+        "D_W"
+      ],
+      "platformPositionXZ": null,
+      "platformStatus": "DERIVED_AFTER_LAYOUT",
+      "status": "R7_SOLVED_CANDIDATE_NOT_RUNTIME_FINAL"
+    },
+    {
+      "id": "BUSSTOP-EAST-LIFE",
+      "name": "东苑站",
+      "roadProjectionXZ": [
+        1400,
+        100
+      ],
+      "serviceClass": "D",
+      "serviceIntent": "东苑青年路南段",
+      "candidateRoutes": [
+        "D_E",
+        "D_W"
+      ],
+      "platformPositionXZ": null,
+      "platformStatus": "DERIVED_AFTER_LAYOUT",
+      "status": "R7_SOLVED_CANDIDATE_NOT_RUNTIME_FINAL"
+    }
+  ],
+  "busRoutes": {
+    "A": {
+      "geometryLengthM": 6910,
+      "routeNodeXZ": [
+        [
+          0,
+          -1000
+        ],
+        [
+          -60,
+          -1000
+        ],
+        [
+          -600,
+          -1000
+        ],
+        [
+          -600,
+          -850
+        ],
+        [
+          -600,
+          -770
+        ],
+        [
+          -600,
+          -430
+        ],
+        [
+          -900,
+          -430
+        ],
+        [
+          -900,
+          -400
+        ],
+        [
+          -900,
+          -300
+        ],
+        [
+          -900,
+          -100
+        ],
+        [
+          -900,
+          100
+        ],
+        [
+          -900,
+          400
+        ],
+        [
+          -900,
+          480
+        ],
+        [
+          -900,
+          500
+        ],
+        [
+          -900,
+          600
+        ],
+        [
+          -750,
+          600
+        ],
+        [
+          -750,
+          690
+        ],
+        [
+          -520,
+          690
+        ],
+        [
+          -400,
+          690
+        ],
+        [
+          -210,
+          690
+        ],
+        [
+          -210,
+          655
+        ],
+        [
+          -160,
+          655
+        ],
+        [
+          0,
+          655
+        ],
+        [
+          160,
+          655
+        ],
+        [
+          210,
+          655
+        ],
+        [
+          210,
+          690
+        ],
+        [
+          450,
+          690
+        ],
+        [
+          520,
+          690
+        ],
+        [
+          830,
+          690
+        ],
+        [
+          830,
+          620
+        ],
+        [
+          830,
+          440
+        ],
+        [
+          830,
+          400
+        ],
+        [
+          830,
+          360
+        ],
+        [
+          830,
+          250
+        ],
+        [
+          830,
+          -100
+        ],
+        [
+          830,
+          -530
+        ],
+        [
+          830,
+          -1000
+        ],
+        [
+          760,
+          -1000
+        ],
+        [
+          300,
+          -1000
+        ],
+        [
+          60,
+          -1000
+        ],
+        [
+          0,
+          -1000
+        ]
+      ],
+      "status": "RING_GEOMETRY_CONNECTED_PLATFORM_AUDIT_PENDING"
+    },
+    "B": {
+      "geometryLengthM": 6910,
+      "routeNodeXZ": [
+        [
+          0,
+          -1000
+        ],
+        [
+          60,
+          -1000
+        ],
+        [
+          300,
+          -1000
+        ],
+        [
+          760,
+          -1000
+        ],
+        [
+          830,
+          -1000
+        ],
+        [
+          830,
+          -530
+        ],
+        [
+          830,
+          -100
+        ],
+        [
+          830,
+          250
+        ],
+        [
+          830,
+          360
+        ],
+        [
+          830,
+          400
+        ],
+        [
+          830,
+          440
+        ],
+        [
+          830,
+          620
+        ],
+        [
+          830,
+          690
+        ],
+        [
+          520,
+          690
+        ],
+        [
+          450,
+          690
+        ],
+        [
+          210,
+          690
+        ],
+        [
+          210,
+          655
+        ],
+        [
+          160,
+          655
+        ],
+        [
+          0,
+          655
+        ],
+        [
+          -160,
+          655
+        ],
+        [
+          -210,
+          655
+        ],
+        [
+          -210,
+          690
+        ],
+        [
+          -400,
+          690
+        ],
+        [
+          -520,
+          690
+        ],
+        [
+          -750,
+          690
+        ],
+        [
+          -750,
+          600
+        ],
+        [
+          -900,
+          600
+        ],
+        [
+          -900,
+          500
+        ],
+        [
+          -900,
+          480
+        ],
+        [
+          -900,
+          400
+        ],
+        [
+          -900,
+          100
+        ],
+        [
+          -900,
+          -100
+        ],
+        [
+          -900,
+          -300
+        ],
+        [
+          -900,
+          -400
+        ],
+        [
+          -900,
+          -430
+        ],
+        [
+          -600,
+          -430
+        ],
+        [
+          -600,
+          -770
+        ],
+        [
+          -600,
+          -850
+        ],
+        [
+          -600,
+          -1000
+        ],
+        [
+          -60,
+          -1000
+        ],
+        [
+          0,
+          -1000
+        ]
+      ],
+      "status": "RING_GEOMETRY_CONNECTED_PLATFORM_AUDIT_PENDING"
+    },
+    "C_N": {
+      "geometryLengthM": 4030,
+      "routeNodeXZ": [
+        [
+          0,
+          -1000
+        ],
+        [
+          60,
+          -1000
+        ],
+        [
+          300,
+          -1000
+        ],
+        [
+          300,
+          -900
+        ],
+        [
+          500,
+          -900
+        ],
+        [
+          760,
+          -900
+        ],
+        [
+          760,
+          -1000
+        ],
+        [
+          830,
+          -1000
+        ],
+        [
+          830,
+          -530
+        ],
+        [
+          830,
+          -100
+        ],
+        [
+          830,
+          250
+        ],
+        [
+          830,
+          360
+        ],
+        [
+          830,
+          400
+        ],
+        [
+          830,
+          440
+        ],
+        [
+          830,
+          620
+        ],
+        [
+          830,
+          690
+        ],
+        [
+          520,
+          690
+        ],
+        [
+          450,
+          690
+        ],
+        [
+          210,
+          690
+        ],
+        [
+          210,
+          655
+        ],
+        [
+          160,
+          655
+        ],
+        [
+          0,
+          655
+        ],
+        [
+          160,
+          655
+        ],
+        [
+          160,
+          940
+        ]
+      ],
+      "status": "GEOMETRY_CONNECTED_ONLY_NOT_EXPRESS_APPROVED"
+    },
+    "C_S": {
+      "geometryLengthM": 3970,
+      "routeNodeXZ": [
+        [
+          -160,
+          940
+        ],
+        [
+          -160,
+          655
+        ],
+        [
+          0,
+          655
+        ],
+        [
+          -160,
+          655
+        ],
+        [
+          -210,
+          655
+        ],
+        [
+          -210,
+          690
+        ],
+        [
+          -400,
+          690
+        ],
+        [
+          -520,
+          690
+        ],
+        [
+          -750,
+          690
+        ],
+        [
+          -750,
+          600
+        ],
+        [
+          -900,
+          600
+        ],
+        [
+          -900,
+          500
+        ],
+        [
+          -900,
+          480
+        ],
+        [
+          -900,
+          400
+        ],
+        [
+          -900,
+          100
+        ],
+        [
+          -900,
+          -100
+        ],
+        [
+          -900,
+          -300
+        ],
+        [
+          -900,
+          -400
+        ],
+        [
+          -900,
+          -430
+        ],
+        [
+          -600,
+          -430
+        ],
+        [
+          -600,
+          -770
+        ],
+        [
+          -600,
+          -850
+        ],
+        [
+          -600,
+          -1000
+        ],
+        [
+          -60,
+          -1000
+        ],
+        [
+          0,
+          -1000
+        ]
+      ],
+      "status": "GEOMETRY_CONNECTED_ONLY_NOT_EXPRESS_APPROVED"
+    },
+    "D_E": {
+      "geometryLengthM": 5300,
+      "routeNodeXZ": [
+        [
+          -1430,
+          700
+        ],
+        [
+          -1430,
+          600
+        ],
+        [
+          -1320,
+          600
+        ],
+        [
+          -1320,
+          500
+        ],
+        [
+          -1320,
+          100
+        ],
+        [
+          -1040,
+          100
+        ],
+        [
+          -900,
+          100
+        ],
+        [
+          -900,
+          -100
+        ],
+        [
+          -900,
+          100
+        ],
+        [
+          -900,
+          400
+        ],
+        [
+          -900,
+          480
+        ],
+        [
+          -900,
+          500
+        ],
+        [
+          -900,
+          600
+        ],
+        [
+          -750,
+          600
+        ],
+        [
+          -750,
+          690
+        ],
+        [
+          -520,
+          690
+        ],
+        [
+          -400,
+          690
+        ],
+        [
+          -210,
+          690
+        ],
+        [
+          -210,
+          655
+        ],
+        [
+          -160,
+          655
+        ],
+        [
+          0,
+          655
+        ],
+        [
+          160,
+          655
+        ],
+        [
+          210,
+          655
+        ],
+        [
+          210,
+          690
+        ],
+        [
+          450,
+          690
+        ],
+        [
+          520,
+          690
+        ],
+        [
+          830,
+          690
+        ],
+        [
+          830,
+          620
+        ],
+        [
+          830,
+          440
+        ],
+        [
+          830,
+          400
+        ],
+        [
+          830,
+          360
+        ],
+        [
+          830,
+          250
+        ],
+        [
+          830,
+          360
+        ],
+        [
+          1040,
+          360
+        ],
+        [
+          1400,
+          360
+        ],
+        [
+          1400,
+          280
+        ],
+        [
+          1400,
+          120
+        ],
+        [
+          1400,
+          100
+        ]
+      ],
+      "status": "GEOMETRY_CONNECTED_ONLY_NOT_EXPRESS_APPROVED"
+    },
+    "D_W": {
+      "geometryLengthM": 5300,
+      "routeNodeXZ": [
+        [
+          1400,
+          100
+        ],
+        [
+          1400,
+          120
+        ],
+        [
+          1400,
+          280
+        ],
+        [
+          1400,
+          360
+        ],
+        [
+          1040,
+          360
+        ],
+        [
+          830,
+          360
+        ],
+        [
+          830,
+          250
+        ],
+        [
+          830,
+          360
+        ],
+        [
+          830,
+          400
+        ],
+        [
+          830,
+          440
+        ],
+        [
+          830,
+          620
+        ],
+        [
+          830,
+          690
+        ],
+        [
+          520,
+          690
+        ],
+        [
+          450,
+          690
+        ],
+        [
+          210,
+          690
+        ],
+        [
+          210,
+          655
+        ],
+        [
+          160,
+          655
+        ],
+        [
+          0,
+          655
+        ],
+        [
+          -160,
+          655
+        ],
+        [
+          -210,
+          655
+        ],
+        [
+          -210,
+          690
+        ],
+        [
+          -400,
+          690
+        ],
+        [
+          -520,
+          690
+        ],
+        [
+          -750,
+          690
+        ],
+        [
+          -750,
+          600
+        ],
+        [
+          -900,
+          600
+        ],
+        [
+          -900,
+          500
+        ],
+        [
+          -900,
+          480
+        ],
+        [
+          -900,
+          400
+        ],
+        [
+          -900,
+          100
+        ],
+        [
+          -900,
+          -100
+        ],
+        [
+          -900,
+          100
+        ],
+        [
+          -1040,
+          100
+        ],
+        [
+          -1320,
+          100
+        ],
+        [
+          -1320,
+          500
+        ],
+        [
+          -1320,
+          600
+        ],
+        [
+          -1430,
+          600
+        ],
+        [
+          -1430,
+          700
+        ]
+      ],
+      "status": "GEOMETRY_CONNECTED_ONLY_NOT_EXPRESS_APPROVED"
+    }
+  },
+  "audits": {
+    "mainJunctionCount": 20,
+    "candidateStopCount": 22,
+    "busGraphConnected": true,
+    "allStopsOnRoadCenterlines": true,
+    "allStopsTouchedByAtLeastOneCandidateVariant": true,
+    "conditionalRoadChangedAssetCollisionCount": 0,
+    "conditionalRoadCollisionScope": "Local rectangular footprints from SOLVE-01/03/04/05 plus available SOLVE-06 sports and ancillary CSV; not full model, terrain, or external roads",
+    "missingRequiredEngineering": [
+      "C/D express directness NOT validated",
+      "Central Boya library lacks near direct bus access (nearest candidate road-projection station >=815m Euclidean)",
+      "C northbound/southbound use different stadium-wing termini; turning and circulation pending",
+      "Actual sidewalk-side stop platform positions are not solved",
+      "North gate emergency vehicle alternative pending",
+      "Signal timing, bus berth clearance, Fire/EMS and turning sweep pending",
+      "18 global audits and CampusData/SVG/Unity merge pending"
+    ]
+  },
+  "nextStage": "R7-SOLVE-08 C/D direct corridors + formal stop platforms + sports/EMS access + integration audit"
+}

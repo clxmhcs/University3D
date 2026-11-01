@@ -1,0 +1,2547 @@
+{
+  "type": "FeatureCollection",
+  "name": "JiangchengUniversity_R7_SOLVE_07",
+  "coordinateSystem": "LOCAL_XZ_METERS_NOT_WGS84",
+  "baseSourcePatch": "PATCH-2026-09-14-R7",
+  "solveId": "R7-SOLVE-07",
+  "status": "SOLVED_CANDIDATE_WITH_UNRESOLVED_EXPRESS_AND_PLATFORM_AUDITS",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-BOYA-RING-SW",
+        "name": "博雅环路·南西段",
+        "category": "road_centerline_candidate",
+        "widthM": 26,
+        "status": "NOT_RUNTIME_FINAL",
+        "transit": true,
+        "roadClass": "primary"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -600,
+            -1000
+          ],
+          [
+            -60,
+            -1000
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-BOYA-RING-S-CROSS",
+        "name": "博雅环路·南门礼仪受控穿越段",
+        "category": "road_centerline_candidate",
+        "widthM": 8,
+        "status": "NOT_RUNTIME_FINAL",
+        "transit": true,
+        "roadClass": "transit_emergency_restricted"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -60,
+            -1000
+          ],
+          [
+            60,
+            -1000
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-BOYA-RING-SE",
+        "name": "博雅环路·南东段",
+        "category": "road_centerline_candidate",
+        "widthM": 26,
+        "status": "NOT_RUNTIME_FINAL",
+        "transit": true,
+        "roadClass": "primary"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            60,
+            -1000
+          ],
+          [
+            830,
+            -1000
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-BOYA-RING-E",
+        "name": "博雅环路·东段",
+        "category": "road_centerline_candidate",
+        "widthM": 26,
+        "status": "NOT_RUNTIME_FINAL",
+        "transit": true,
+        "roadClass": "primary"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            830,
+            -1000
+          ],
+          [
+            830,
+            690
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-BOYA-RING-N",
+        "name": "博雅环路·北段",
+        "category": "road_centerline_candidate",
+        "widthM": 26,
+        "status": "NOT_RUNTIME_FINAL",
+        "transit": true,
+        "roadClass": "primary"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -750,
+            690
+          ],
+          [
+            -210,
+            690
+          ],
+          [
+            -210,
+            655
+          ],
+          [
+            210,
+            655
+          ],
+          [
+            210,
+            690
+          ],
+          [
+            830,
+            690
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-BOYA-RING-NW-V",
+        "name": "博雅环路·西北竖向过渡段",
+        "category": "road_centerline_candidate",
+        "widthM": 26,
+        "status": "NOT_RUNTIME_FINAL",
+        "transit": true,
+        "roadClass": "primary"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -750,
+            690
+          ],
+          [
+            -750,
+            600
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-BOYA-RING-NW-H",
+        "name": "博雅环路·西北横向过渡段",
+        "category": "road_centerline_candidate",
+        "widthM": 26,
+        "status": "NOT_RUNTIME_FINAL",
+        "transit": true,
+        "roadClass": "primary"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -750,
+            600
+          ],
+          [
+            -900,
+            600
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-BOYA-RING-W",
+        "name": "博雅环路·西段",
+        "category": "road_centerline_candidate",
+        "widthM": 26,
+        "status": "NOT_RUNTIME_FINAL",
+        "transit": true,
+        "roadClass": "primary"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -900,
+            600
+          ],
+          [
+            -900,
+            -430
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-BOYA-RING-SW-H",
+        "name": "博雅环路·西南横向过渡段",
+        "category": "road_centerline_candidate",
+        "widthM": 26,
+        "status": "NOT_RUNTIME_FINAL",
+        "transit": true,
+        "roadClass": "primary"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -900,
+            -430
+          ],
+          [
+            -600,
+            -430
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-BOYA-RING-SW-V",
+        "name": "博雅环路·西南竖向过渡段",
+        "category": "road_centerline_candidate",
+        "widthM": 26,
+        "status": "NOT_RUNTIME_FINAL",
+        "transit": true,
+        "roadClass": "primary"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -600,
+            -430
+          ],
+          [
+            -600,
+            -1000
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-JISHI",
+        "name": "济世路",
+        "category": "road_centerline_candidate",
+        "widthM": 20,
+        "status": "NOT_RUNTIME_FINAL",
+        "transit": true,
+        "roadClass": "secondary_medical"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1350,
+            -770
+          ],
+          [
+            -600,
+            -770
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-ZHICHUANG",
+        "name": "智创路",
+        "category": "road_centerline_candidate",
+        "widthM": 18,
+        "status": "NOT_RUNTIME_FINAL",
+        "transit": true,
+        "roadClass": "secondary_academic"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1380,
+            -300
+          ],
+          [
+            -900,
+            -300
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-JIANGXIN",
+        "name": "匠心路",
+        "category": "road_centerline_candidate",
+        "widthM": 18,
+        "status": "NOT_RUNTIME_FINAL",
+        "transit": true,
+        "roadClass": "secondary_academic"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1040,
+            -300
+          ],
+          [
+            -1040,
+            480
+          ],
+          [
+            -900,
+            480
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-GEZHI-W",
+        "name": "格致路·西段",
+        "category": "road_centerline_candidate",
+        "widthM": 18,
+        "status": "NOT_RUNTIME_FINAL",
+        "transit": false,
+        "roadClass": "secondary_academic"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -900,
+            500
+          ],
+          [
+            -360,
+            500
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-GEZHI-E",
+        "name": "格致路·东段",
+        "category": "road_centerline_candidate",
+        "widthM": 18,
+        "status": "NOT_RUNTIME_FINAL",
+        "transit": false,
+        "roadClass": "secondary_academic"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            360,
+            440
+          ],
+          [
+            830,
+            440
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-WENHUA",
+        "name": "文华路",
+        "category": "road_centerline_candidate",
+        "widthM": 18,
+        "status": "NOT_RUNTIME_FINAL",
+        "transit": true,
+        "roadClass": "secondary_academic"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            830,
+            400
+          ],
+          [
+            1040,
+            400
+          ],
+          [
+            1040,
+            -250
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-WEST-GATE",
+        "name": "西门校园接入路",
+        "category": "road_centerline_candidate",
+        "widthM": 18,
+        "status": "NOT_RUNTIME_FINAL",
+        "transit": false,
+        "roadClass": "gate_access"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1548,
+            -80
+          ],
+          [
+            -1500,
+            -80
+          ],
+          [
+            -1500,
+            40
+          ],
+          [
+            -1320,
+            40
+          ],
+          [
+            -1320,
+            100
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-QINGNIAN-W",
+        "name": "青年路·西苑段",
+        "category": "road_centerline_candidate",
+        "widthM": 16,
+        "status": "NOT_RUNTIME_FINAL",
+        "transit": true,
+        "roadClass": "residential"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1320,
+            100
+          ],
+          [
+            -1320,
+            600
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-QINGNIAN-W-FEED",
+        "name": "青年路·西苑东接入",
+        "category": "road_centerline_candidate",
+        "widthM": 16,
+        "status": "NOT_RUNTIME_FINAL",
+        "transit": true,
+        "roadClass": "residential"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1320,
+            100
+          ],
+          [
+            -900,
+            100
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-CHUANGXIN",
+        "name": "创新大道·科研园西侧主脊",
+        "category": "road_centerline_candidate",
+        "widthM": 18,
+        "status": "NOT_RUNTIME_FINAL",
+        "transit": true,
+        "roadClass": "research_access"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1430,
+            600
+          ],
+          [
+            -1430,
+            820
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-CHUANGXIN-CONN",
+        "name": "创新大道·西苑连接段",
+        "category": "road_centerline_candidate",
+        "widthM": 18,
+        "status": "NOT_RUNTIME_FINAL",
+        "transit": true,
+        "roadClass": "research_access"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1430,
+            600
+          ],
+          [
+            -1320,
+            600
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-QINGNIAN-E",
+        "name": "青年路·东苑段",
+        "category": "road_centerline_candidate",
+        "widthM": 18,
+        "status": "NOT_RUNTIME_FINAL",
+        "transit": true,
+        "roadClass": "residential"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            1400,
+            -280
+          ],
+          [
+            1400,
+            360
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-QINGNIAN-E-FEED",
+        "name": "青年路·东苑西接入",
+        "category": "road_centerline_candidate",
+        "widthM": 18,
+        "status": "NOT_RUNTIME_FINAL",
+        "transit": true,
+        "roadClass": "residential"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            830,
+            360
+          ],
+          [
+            1400,
+            360
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-EAST-GATE",
+        "name": "东门连接路",
+        "category": "road_centerline_candidate",
+        "widthM": 14,
+        "status": "NOT_RUNTIME_FINAL",
+        "transit": false,
+        "roadClass": "gate_access"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            1400,
+            120
+          ],
+          [
+            1555,
+            120
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-QINGNIAN-S",
+        "name": "青年路·南苑段",
+        "category": "road_centerline_candidate",
+        "widthM": 18,
+        "status": "NOT_RUNTIME_FINAL",
+        "transit": true,
+        "roadClass": "residential"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            260,
+            -900
+          ],
+          [
+            800,
+            -900
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-QINGNIAN-S-W",
+        "name": "青年路·南苑西接入",
+        "category": "road_centerline_candidate",
+        "widthM": 18,
+        "status": "NOT_RUNTIME_FINAL",
+        "transit": true,
+        "roadClass": "residential"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            300,
+            -1000
+          ],
+          [
+            300,
+            -900
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-QINGNIAN-S-E",
+        "name": "青年路·南苑东接入",
+        "category": "road_centerline_candidate",
+        "widthM": 18,
+        "status": "NOT_RUNTIME_FINAL",
+        "transit": true,
+        "roadClass": "residential"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            760,
+            -1000
+          ],
+          [
+            760,
+            -900
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-QINGNIAN-NW",
+        "name": "青年路·北苑西支",
+        "category": "road_centerline_candidate",
+        "widthM": 14,
+        "status": "NOT_RUNTIME_FINAL",
+        "transit": true,
+        "roadClass": "residential"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -520,
+            690
+          ],
+          [
+            -520,
+            1040
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-QINGNIAN-NE",
+        "name": "青年路·北苑东支",
+        "category": "road_centerline_candidate",
+        "widthM": 14,
+        "status": "NOT_RUNTIME_FINAL",
+        "transit": true,
+        "roadClass": "residential"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            520,
+            690
+          ],
+          [
+            520,
+            1040
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-JIANXING-W",
+        "name": "健行路·赛事西支",
+        "category": "road_centerline_candidate",
+        "widthM": 22,
+        "status": "NOT_RUNTIME_FINAL",
+        "transit": true,
+        "roadClass": "event_access"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -160,
+            655
+          ],
+          [
+            -160,
+            1040
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-JIANXING-E",
+        "name": "健行路·赛事东支",
+        "category": "road_centerline_candidate",
+        "widthM": 22,
+        "status": "NOT_RUNTIME_FINAL",
+        "transit": true,
+        "roadClass": "event_access"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            160,
+            655
+          ],
+          [
+            160,
+            1040
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-JIANXING-GATE",
+        "name": "健行路·北门受控接口",
+        "category": "road_centerline_candidate",
+        "widthM": 6,
+        "status": "NOT_RUNTIME_FINAL",
+        "transit": false,
+        "roadClass": "pedestrian_gate_ceremonial"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            0,
+            1115
+          ],
+          [
+            0,
+            1142
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "CROSS-R7C-01",
+        "category": "main_intersection_candidate",
+        "degree": 3,
+        "status": "R7_SOLVED_CANDIDATE_PENDING_LANE_SIGNAL_AUDIT"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          300,
+          -1000
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "CROSS-R7C-02",
+        "category": "main_intersection_candidate",
+        "degree": 3,
+        "status": "R7_SOLVED_CANDIDATE_PENDING_LANE_SIGNAL_AUDIT"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          760,
+          -1000
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "CROSS-R7C-03",
+        "category": "main_intersection_candidate",
+        "degree": 3,
+        "status": "R7_SOLVED_CANDIDATE_PENDING_LANE_SIGNAL_AUDIT"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          760,
+          -900
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "CROSS-R7C-04",
+        "category": "main_intersection_candidate",
+        "degree": 3,
+        "status": "R7_SOLVED_CANDIDATE_PENDING_LANE_SIGNAL_AUDIT"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -600,
+          -770
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "CROSS-R7C-05",
+        "category": "main_intersection_candidate",
+        "degree": 3,
+        "status": "R7_SOLVED_CANDIDATE_PENDING_LANE_SIGNAL_AUDIT"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1040,
+          -300
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "CROSS-R7C-06",
+        "category": "main_intersection_candidate",
+        "degree": 3,
+        "status": "R7_SOLVED_CANDIDATE_PENDING_LANE_SIGNAL_AUDIT"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -900,
+          -300
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "CROSS-R7C-07",
+        "category": "main_intersection_candidate",
+        "degree": 3,
+        "status": "R7_SOLVED_CANDIDATE_PENDING_LANE_SIGNAL_AUDIT"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1320,
+          100
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "CROSS-R7C-08",
+        "category": "main_intersection_candidate",
+        "degree": 4,
+        "status": "R7_SOLVED_CANDIDATE_PENDING_LANE_SIGNAL_AUDIT"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1040,
+          100
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "CROSS-R7C-09",
+        "category": "main_intersection_candidate",
+        "degree": 3,
+        "status": "R7_SOLVED_CANDIDATE_PENDING_LANE_SIGNAL_AUDIT"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -900,
+          100
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "CROSS-R7C-10",
+        "category": "main_intersection_candidate",
+        "degree": 3,
+        "status": "R7_SOLVED_CANDIDATE_PENDING_LANE_SIGNAL_AUDIT"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1400,
+          120
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "CROSS-R7C-11",
+        "category": "main_intersection_candidate",
+        "degree": 3,
+        "status": "R7_SOLVED_CANDIDATE_PENDING_LANE_SIGNAL_AUDIT"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          830,
+          360
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "CROSS-R7C-12",
+        "category": "main_intersection_candidate",
+        "degree": 4,
+        "status": "R7_SOLVED_CANDIDATE_PENDING_LANE_SIGNAL_AUDIT"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1040,
+          360
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "CROSS-R7C-13",
+        "category": "main_intersection_candidate",
+        "degree": 3,
+        "status": "R7_SOLVED_CANDIDATE_PENDING_LANE_SIGNAL_AUDIT"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          830,
+          400
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "CROSS-R7C-14",
+        "category": "main_intersection_candidate",
+        "degree": 3,
+        "status": "R7_SOLVED_CANDIDATE_PENDING_LANE_SIGNAL_AUDIT"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          830,
+          440
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "CROSS-R7C-15",
+        "category": "main_intersection_candidate",
+        "degree": 3,
+        "status": "R7_SOLVED_CANDIDATE_PENDING_LANE_SIGNAL_AUDIT"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -900,
+          480
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "CROSS-R7C-16",
+        "category": "main_intersection_candidate",
+        "degree": 3,
+        "status": "R7_SOLVED_CANDIDATE_PENDING_LANE_SIGNAL_AUDIT"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -900,
+          500
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "CROSS-R7C-17",
+        "category": "main_intersection_candidate",
+        "degree": 3,
+        "status": "R7_SOLVED_CANDIDATE_PENDING_LANE_SIGNAL_AUDIT"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -160,
+          655
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "CROSS-R7C-18",
+        "category": "main_intersection_candidate",
+        "degree": 3,
+        "status": "R7_SOLVED_CANDIDATE_PENDING_LANE_SIGNAL_AUDIT"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          160,
+          655
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "CROSS-R7C-19",
+        "category": "main_intersection_candidate",
+        "degree": 3,
+        "status": "R7_SOLVED_CANDIDATE_PENDING_LANE_SIGNAL_AUDIT"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -520,
+          690
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "CROSS-R7C-20",
+        "category": "main_intersection_candidate",
+        "degree": 3,
+        "status": "R7_SOLVED_CANDIDATE_PENDING_LANE_SIGNAL_AUDIT"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          520,
+          690
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BUSSTOP-SOUTH-GATE",
+        "name": "南门公交接驳站",
+        "category": "bus_stop_centerline_projection_NOT_PLATFORM",
+        "routeVariants": [
+          "A",
+          "B",
+          "C_N",
+          "C_S"
+        ],
+        "status": "R7_SOLVED_CANDIDATE_NOT_RUNTIME_FINAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          -1000
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BUSSTOP-MED-SOUTH",
+        "name": "医学南接驳站",
+        "category": "bus_stop_centerline_projection_NOT_PLATFORM",
+        "routeVariants": [
+          "A",
+          "B",
+          "C_S"
+        ],
+        "status": "R7_SOLVED_CANDIDATE_NOT_RUNTIME_FINAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -600,
+          -850
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BUSSTOP-MED-NORTH",
+        "name": "医学北接驳站",
+        "category": "bus_stop_centerline_projection_NOT_PLATFORM",
+        "routeVariants": [
+          "A",
+          "B",
+          "C_S"
+        ],
+        "status": "R7_SOLVED_CANDIDATE_NOT_RUNTIME_FINAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -900,
+          -400
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BUSSTOP-INFO",
+        "name": "信息学部站",
+        "category": "bus_stop_centerline_projection_NOT_PLATFORM",
+        "routeVariants": [
+          "A",
+          "B",
+          "C_S",
+          "D_E",
+          "D_W"
+        ],
+        "status": "R7_SOLVED_CANDIDATE_NOT_RUNTIME_FINAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -900,
+          -100
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BUSSTOP-ENG",
+        "name": "工程学部站",
+        "category": "bus_stop_centerline_projection_NOT_PLATFORM",
+        "routeVariants": [
+          "A",
+          "B",
+          "C_S",
+          "D_E",
+          "D_W"
+        ],
+        "status": "R7_SOLVED_CANDIDATE_NOT_RUNTIME_FINAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -900,
+          400
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BUSSTOP-RDI-ENTRY",
+        "name": "科研园环路接驳站",
+        "category": "bus_stop_centerline_projection_NOT_PLATFORM",
+        "routeVariants": [
+          "A",
+          "B",
+          "C_S",
+          "D_E",
+          "D_W"
+        ],
+        "status": "R7_SOLVED_CANDIDATE_NOT_RUNTIME_FINAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -750,
+          690
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BUSSTOP-SCIENCE",
+        "name": "理学生命区北缘站",
+        "category": "bus_stop_centerline_projection_NOT_PLATFORM",
+        "routeVariants": [
+          "A",
+          "B",
+          "C_S",
+          "D_E",
+          "D_W"
+        ],
+        "status": "R7_SOLVED_CANDIDATE_NOT_RUNTIME_FINAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -400,
+          690
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BUSSTOP-NORTH-SPORT",
+        "name": "北体育南侧换乘站",
+        "category": "bus_stop_centerline_projection_NOT_PLATFORM",
+        "routeVariants": [
+          "A",
+          "B",
+          "C_N",
+          "C_S",
+          "D_E",
+          "D_W"
+        ],
+        "status": "R7_SOLVED_CANDIDATE_NOT_RUNTIME_FINAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          655
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BUSSTOP-NORTH-LIFE-E-ENTRY",
+        "name": "北苑东侧接驳站",
+        "category": "bus_stop_centerline_projection_NOT_PLATFORM",
+        "routeVariants": [
+          "A",
+          "B",
+          "C_N",
+          "D_E",
+          "D_W"
+        ],
+        "status": "R7_SOLVED_CANDIDATE_NOT_RUNTIME_FINAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          450,
+          690
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BUSSTOP-ART-TRANSFER",
+        "name": "艺术区环路接驳站",
+        "category": "bus_stop_centerline_projection_NOT_PLATFORM",
+        "routeVariants": [
+          "A",
+          "B",
+          "C_N",
+          "D_E",
+          "D_W"
+        ],
+        "status": "R7_SOLVED_CANDIDATE_NOT_RUNTIME_FINAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          830,
+          620
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BUSSTOP-HUM",
+        "name": "人文社科站",
+        "category": "bus_stop_centerline_projection_NOT_PLATFORM",
+        "routeVariants": [
+          "A",
+          "B",
+          "C_N",
+          "D_E",
+          "D_W"
+        ],
+        "status": "R7_SOLVED_CANDIDATE_NOT_RUNTIME_FINAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          830,
+          250
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BUSSTOP-HUM-BUS",
+        "name": "人文经管站",
+        "category": "bus_stop_centerline_projection_NOT_PLATFORM",
+        "routeVariants": [
+          "A",
+          "B",
+          "C_N"
+        ],
+        "status": "R7_SOLVED_CANDIDATE_NOT_RUNTIME_FINAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          830,
+          -100
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BUSSTOP-SE-SPORT",
+        "name": "第二体育中心站",
+        "category": "bus_stop_centerline_projection_NOT_PLATFORM",
+        "routeVariants": [
+          "A",
+          "B",
+          "C_N"
+        ],
+        "status": "R7_SOLVED_CANDIDATE_NOT_RUNTIME_FINAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          830,
+          -530
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BUSSTOP-SOUTH-E",
+        "name": "南苑东口站",
+        "category": "bus_stop_centerline_projection_NOT_PLATFORM",
+        "routeVariants": [
+          "A",
+          "B",
+          "C_N"
+        ],
+        "status": "R7_SOLVED_CANDIDATE_NOT_RUNTIME_FINAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          760,
+          -1000
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BUSSTOP-SOUTH-LIFE",
+        "name": "南苑站",
+        "category": "bus_stop_centerline_projection_NOT_PLATFORM",
+        "routeVariants": [
+          "C_N"
+        ],
+        "status": "R7_SOLVED_CANDIDATE_NOT_RUNTIME_FINAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          500,
+          -900
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BUSSTOP-NORTH-SPORT-E",
+        "name": "北体育东侧赛事站",
+        "category": "bus_stop_centerline_projection_NOT_PLATFORM",
+        "routeVariants": [
+          "C_N"
+        ],
+        "status": "R7_SOLVED_CANDIDATE_NOT_RUNTIME_FINAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          160,
+          940
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BUSSTOP-NORTH-SPORT-W",
+        "name": "北体育西侧赛事站",
+        "category": "bus_stop_centerline_projection_NOT_PLATFORM",
+        "routeVariants": [
+          "C_S"
+        ],
+        "status": "R7_SOLVED_CANDIDATE_NOT_RUNTIME_FINAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -160,
+          940
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BUSSTOP-RDI",
+        "name": "科研科技园站",
+        "category": "bus_stop_centerline_projection_NOT_PLATFORM",
+        "routeVariants": [
+          "D_E",
+          "D_W"
+        ],
+        "status": "R7_SOLVED_CANDIDATE_NOT_RUNTIME_FINAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1430,
+          700
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BUSSTOP-WEST-LIFE",
+        "name": "西苑站",
+        "category": "bus_stop_centerline_projection_NOT_PLATFORM",
+        "routeVariants": [
+          "D_E",
+          "D_W"
+        ],
+        "status": "R7_SOLVED_CANDIDATE_NOT_RUNTIME_FINAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1320,
+          500
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BUSSTOP-WEST-GATE-TRANSFER",
+        "name": "西门西苑接驳站",
+        "category": "bus_stop_centerline_projection_NOT_PLATFORM",
+        "routeVariants": [
+          "D_E",
+          "D_W"
+        ],
+        "status": "R7_SOLVED_CANDIDATE_NOT_RUNTIME_FINAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1320,
+          100
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BUSSTOP-EAST-LIFE-N",
+        "name": "东苑北站",
+        "category": "bus_stop_centerline_projection_NOT_PLATFORM",
+        "routeVariants": [
+          "D_E",
+          "D_W"
+        ],
+        "status": "R7_SOLVED_CANDIDATE_NOT_RUNTIME_FINAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1400,
+          280
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BUSSTOP-EAST-LIFE",
+        "name": "东苑站",
+        "category": "bus_stop_centerline_projection_NOT_PLATFORM",
+        "routeVariants": [
+          "D_E",
+          "D_W"
+        ],
+        "status": "R7_SOLVED_CANDIDATE_NOT_RUNTIME_FINAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1400,
+          100
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BUS-LINE-A",
+        "category": "route_geometry_candidate",
+        "distanceM": 6910,
+        "status": "RING_GEOMETRY_CONNECTED_PLATFORM_AUDIT_PENDING"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            0,
+            -1000
+          ],
+          [
+            -60,
+            -1000
+          ],
+          [
+            -600,
+            -1000
+          ],
+          [
+            -600,
+            -850
+          ],
+          [
+            -600,
+            -770
+          ],
+          [
+            -600,
+            -430
+          ],
+          [
+            -900,
+            -430
+          ],
+          [
+            -900,
+            -400
+          ],
+          [
+            -900,
+            -300
+          ],
+          [
+            -900,
+            -100
+          ],
+          [
+            -900,
+            100
+          ],
+          [
+            -900,
+            400
+          ],
+          [
+            -900,
+            480
+          ],
+          [
+            -900,
+            500
+          ],
+          [
+            -900,
+            600
+          ],
+          [
+            -750,
+            600
+          ],
+          [
+            -750,
+            690
+          ],
+          [
+            -520,
+            690
+          ],
+          [
+            -400,
+            690
+          ],
+          [
+            -210,
+            690
+          ],
+          [
+            -210,
+            655
+          ],
+          [
+            -160,
+            655
+          ],
+          [
+            0,
+            655
+          ],
+          [
+            160,
+            655
+          ],
+          [
+            210,
+            655
+          ],
+          [
+            210,
+            690
+          ],
+          [
+            450,
+            690
+          ],
+          [
+            520,
+            690
+          ],
+          [
+            830,
+            690
+          ],
+          [
+            830,
+            620
+          ],
+          [
+            830,
+            440
+          ],
+          [
+            830,
+            400
+          ],
+          [
+            830,
+            360
+          ],
+          [
+            830,
+            250
+          ],
+          [
+            830,
+            -100
+          ],
+          [
+            830,
+            -530
+          ],
+          [
+            830,
+            -1000
+          ],
+          [
+            760,
+            -1000
+          ],
+          [
+            300,
+            -1000
+          ],
+          [
+            60,
+            -1000
+          ],
+          [
+            0,
+            -1000
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BUS-LINE-B",
+        "category": "route_geometry_candidate",
+        "distanceM": 6910,
+        "status": "RING_GEOMETRY_CONNECTED_PLATFORM_AUDIT_PENDING"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            0,
+            -1000
+          ],
+          [
+            60,
+            -1000
+          ],
+          [
+            300,
+            -1000
+          ],
+          [
+            760,
+            -1000
+          ],
+          [
+            830,
+            -1000
+          ],
+          [
+            830,
+            -530
+          ],
+          [
+            830,
+            -100
+          ],
+          [
+            830,
+            250
+          ],
+          [
+            830,
+            360
+          ],
+          [
+            830,
+            400
+          ],
+          [
+            830,
+            440
+          ],
+          [
+            830,
+            620
+          ],
+          [
+            830,
+            690
+          ],
+          [
+            520,
+            690
+          ],
+          [
+            450,
+            690
+          ],
+          [
+            210,
+            690
+          ],
+          [
+            210,
+            655
+          ],
+          [
+            160,
+            655
+          ],
+          [
+            0,
+            655
+          ],
+          [
+            -160,
+            655
+          ],
+          [
+            -210,
+            655
+          ],
+          [
+            -210,
+            690
+          ],
+          [
+            -400,
+            690
+          ],
+          [
+            -520,
+            690
+          ],
+          [
+            -750,
+            690
+          ],
+          [
+            -750,
+            600
+          ],
+          [
+            -900,
+            600
+          ],
+          [
+            -900,
+            500
+          ],
+          [
+            -900,
+            480
+          ],
+          [
+            -900,
+            400
+          ],
+          [
+            -900,
+            100
+          ],
+          [
+            -900,
+            -100
+          ],
+          [
+            -900,
+            -300
+          ],
+          [
+            -900,
+            -400
+          ],
+          [
+            -900,
+            -430
+          ],
+          [
+            -600,
+            -430
+          ],
+          [
+            -600,
+            -770
+          ],
+          [
+            -600,
+            -850
+          ],
+          [
+            -600,
+            -1000
+          ],
+          [
+            -60,
+            -1000
+          ],
+          [
+            0,
+            -1000
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BUS-LINE-C_N",
+        "category": "route_geometry_candidate",
+        "distanceM": 4030,
+        "status": "GEOMETRY_CONNECTED_ONLY_NOT_EXPRESS_APPROVED"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            0,
+            -1000
+          ],
+          [
+            60,
+            -1000
+          ],
+          [
+            300,
+            -1000
+          ],
+          [
+            300,
+            -900
+          ],
+          [
+            500,
+            -900
+          ],
+          [
+            760,
+            -900
+          ],
+          [
+            760,
+            -1000
+          ],
+          [
+            830,
+            -1000
+          ],
+          [
+            830,
+            -530
+          ],
+          [
+            830,
+            -100
+          ],
+          [
+            830,
+            250
+          ],
+          [
+            830,
+            360
+          ],
+          [
+            830,
+            400
+          ],
+          [
+            830,
+            440
+          ],
+          [
+            830,
+            620
+          ],
+          [
+            830,
+            690
+          ],
+          [
+            520,
+            690
+          ],
+          [
+            450,
+            690
+          ],
+          [
+            210,
+            690
+          ],
+          [
+            210,
+            655
+          ],
+          [
+            160,
+            655
+          ],
+          [
+            0,
+            655
+          ],
+          [
+            160,
+            655
+          ],
+          [
+            160,
+            940
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BUS-LINE-C_S",
+        "category": "route_geometry_candidate",
+        "distanceM": 3970,
+        "status": "GEOMETRY_CONNECTED_ONLY_NOT_EXPRESS_APPROVED"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -160,
+            940
+          ],
+          [
+            -160,
+            655
+          ],
+          [
+            0,
+            655
+          ],
+          [
+            -160,
+            655
+          ],
+          [
+            -210,
+            655
+          ],
+          [
+            -210,
+            690
+          ],
+          [
+            -400,
+            690
+          ],
+          [
+            -520,
+            690
+          ],
+          [
+            -750,
+            690
+          ],
+          [
+            -750,
+            600
+          ],
+          [
+            -900,
+            600
+          ],
+          [
+            -900,
+            500
+          ],
+          [
+            -900,
+            480
+          ],
+          [
+            -900,
+            400
+          ],
+          [
+            -900,
+            100
+          ],
+          [
+            -900,
+            -100
+          ],
+          [
+            -900,
+            -300
+          ],
+          [
+            -900,
+            -400
+          ],
+          [
+            -900,
+            -430
+          ],
+          [
+            -600,
+            -430
+          ],
+          [
+            -600,
+            -770
+          ],
+          [
+            -600,
+            -850
+          ],
+          [
+            -600,
+            -1000
+          ],
+          [
+            -60,
+            -1000
+          ],
+          [
+            0,
+            -1000
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BUS-LINE-D_E",
+        "category": "route_geometry_candidate",
+        "distanceM": 5300,
+        "status": "GEOMETRY_CONNECTED_ONLY_NOT_EXPRESS_APPROVED"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1430,
+            700
+          ],
+          [
+            -1430,
+            600
+          ],
+          [
+            -1320,
+            600
+          ],
+          [
+            -1320,
+            500
+          ],
+          [
+            -1320,
+            100
+          ],
+          [
+            -1040,
+            100
+          ],
+          [
+            -900,
+            100
+          ],
+          [
+            -900,
+            -100
+          ],
+          [
+            -900,
+            100
+          ],
+          [
+            -900,
+            400
+          ],
+          [
+            -900,
+            480
+          ],
+          [
+            -900,
+            500
+          ],
+          [
+            -900,
+            600
+          ],
+          [
+            -750,
+            600
+          ],
+          [
+            -750,
+            690
+          ],
+          [
+            -520,
+            690
+          ],
+          [
+            -400,
+            690
+          ],
+          [
+            -210,
+            690
+          ],
+          [
+            -210,
+            655
+          ],
+          [
+            -160,
+            655
+          ],
+          [
+            0,
+            655
+          ],
+          [
+            160,
+            655
+          ],
+          [
+            210,
+            655
+          ],
+          [
+            210,
+            690
+          ],
+          [
+            450,
+            690
+          ],
+          [
+            520,
+            690
+          ],
+          [
+            830,
+            690
+          ],
+          [
+            830,
+            620
+          ],
+          [
+            830,
+            440
+          ],
+          [
+            830,
+            400
+          ],
+          [
+            830,
+            360
+          ],
+          [
+            830,
+            250
+          ],
+          [
+            830,
+            360
+          ],
+          [
+            1040,
+            360
+          ],
+          [
+            1400,
+            360
+          ],
+          [
+            1400,
+            280
+          ],
+          [
+            1400,
+            120
+          ],
+          [
+            1400,
+            100
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BUS-LINE-D_W",
+        "category": "route_geometry_candidate",
+        "distanceM": 5300,
+        "status": "GEOMETRY_CONNECTED_ONLY_NOT_EXPRESS_APPROVED"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            1400,
+            100
+          ],
+          [
+            1400,
+            120
+          ],
+          [
+            1400,
+            280
+          ],
+          [
+            1400,
+            360
+          ],
+          [
+            1040,
+            360
+          ],
+          [
+            830,
+            360
+          ],
+          [
+            830,
+            250
+          ],
+          [
+            830,
+            360
+          ],
+          [
+            830,
+            400
+          ],
+          [
+            830,
+            440
+          ],
+          [
+            830,
+            620
+          ],
+          [
+            830,
+            690
+          ],
+          [
+            520,
+            690
+          ],
+          [
+            450,
+            690
+          ],
+          [
+            210,
+            690
+          ],
+          [
+            210,
+            655
+          ],
+          [
+            160,
+            655
+          ],
+          [
+            0,
+            655
+          ],
+          [
+            -160,
+            655
+          ],
+          [
+            -210,
+            655
+          ],
+          [
+            -210,
+            690
+          ],
+          [
+            -400,
+            690
+          ],
+          [
+            -520,
+            690
+          ],
+          [
+            -750,
+            690
+          ],
+          [
+            -750,
+            600
+          ],
+          [
+            -900,
+            600
+          ],
+          [
+            -900,
+            500
+          ],
+          [
+            -900,
+            480
+          ],
+          [
+            -900,
+            400
+          ],
+          [
+            -900,
+            100
+          ],
+          [
+            -900,
+            -100
+          ],
+          [
+            -900,
+            100
+          ],
+          [
+            -1040,
+            100
+          ],
+          [
+            -1320,
+            100
+          ],
+          [
+            -1320,
+            500
+          ],
+          [
+            -1320,
+            600
+          ],
+          [
+            -1430,
+            600
+          ],
+          [
+            -1430,
+            700
+          ]
+        ]
+      }
+    }
+  ]
+}
