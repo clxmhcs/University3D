@@ -1,0 +1,871 @@
+{
+  "schemaVersion": 1,
+  "solveId": "R7-SOLVE-13",
+  "version": "R7-CENTRAL-FOUR-YUAN-FIRE-ACCESS-CANDIDATE-2026-11-02",
+  "baseSourcePatch": "PATCH-2026-09-14-R7",
+  "runtimeFinal": false,
+  "status": "PARTIAL_2D_CORRIDORS_WITH_UNRESOLVED_ENTRANCE_GRAPH",
+  "coordinateSystem": "LOCAL_XZ_METERS_NOT_GPS",
+  "sourceSolves": [
+    "R7-SOLVE-01",
+    "R7-SOLVE-03",
+    "R7-SOLVE-04",
+    "R7-SOLVE-05",
+    "R7-SOLVE-06",
+    "R7-SOLVE-07",
+    "R7-SOLVE-11",
+    "R7-SOLVE-12"
+  ],
+  "authority": "R7 supersedes R6 historical placements; SOLVE-12 remains overlay; do not mutate Runtime CampusData",
+  "frozenScope": {
+    "centralCENCount": 18,
+    "studentResidenceTotal": 56,
+    "undergraduate": 42,
+    "graduate": 10,
+    "international": 4,
+    "fourYuanServices": 8,
+    "centralCeremonialAxis": "SOUTH_GATE→CEN-03→CEN-01→LAWN→CHENGHU; no ordinary motor crossing",
+    "fourGreenHeartsPreserved": [
+      "GREEN-W-01",
+      "GREEN-N-01",
+      "GREEN-N-01-part1",
+      "GREEN-E-01",
+      "GREEN-S-01"
+    ],
+    "bikeAccessPriority": true,
+    "fireServiceEffectiveWidthMinM": 6
+  },
+  "auditMethod": {
+    "planarApproximation": true,
+    "roadCandidateWidthM": 8,
+    "footprintMarginFromCenterlineM": 7,
+    "protectedMarginFromCenterlineM": 6,
+    "knownRotatedFootprintCount": 235,
+    "waterPolygonTested": [
+      "WATER-LAKE-01"
+    ],
+    "notVerifiedWaters": [
+      "3 Yuan ponds",
+      "creek formal shorelines",
+      "other water polygons"
+    ],
+    "campusBoundarySampleStepM": 3,
+    "polygonMode": "rotated rectangular building/field envelope",
+    "centerlineStationIsNotFireRouteApproval": true,
+    "zeroClashScope": "only tested XZ envelopes/green polygons/ceremonial axis/lake"
+  },
+  "corridors": [
+    {
+      "id": "ROAD-R7-S13-CEN-W-EDGE",
+      "name": "中央西侧外围消防候选",
+      "yuan": "central",
+      "category": "FIRE_SERVICE_ONLY",
+      "widthM": 8,
+      "centerlineXZ": [
+        [
+          -600,
+          -430
+        ],
+        [
+          -621,
+          -430
+        ],
+        [
+          -621,
+          220
+        ]
+      ],
+      "lengthM": 671,
+      "status": "CANDIDATE_MARGINAL_BUILDING_CLEARANCE",
+      "obstacleCount": 235,
+      "closestKnownObstacle": "CSE-02",
+      "knownMinFootprintClearanceM": 8,
+      "collisionList": [],
+      "existingRoadAnchorIDs": [
+        "ROAD-BOYA-RING-SW-H",
+        "ROAD-BOYA-RING-SW-V"
+      ],
+      "connectedToExistingRoadCenterline": true,
+      "noGeneralVehicleThroughTraffic": true,
+      "accessPolicy": "fire/ems on response; low-peak permitted maintenance only after approval; no routine cars",
+      "operationalGraphApproved": false,
+      "buildingEntrancesApproved": false,
+      "roadGeometryFinal": false,
+      "runtimeFinal": false
+    },
+    {
+      "id": "ROAD-R7-S13-CEN-E-EDGE",
+      "name": "中央东侧外围消防候选",
+      "yuan": "central",
+      "category": "FIRE_SERVICE_ONLY",
+      "widthM": 8,
+      "centerlineXZ": [
+        [
+          830,
+          -430
+        ],
+        [
+          560,
+          -430
+        ],
+        [
+          560,
+          220
+        ]
+      ],
+      "lengthM": 920,
+      "status": "CANDIDATE_2D_CLEARANCE_ONLY",
+      "obstacleCount": 235,
+      "closestKnownObstacle": "BUS-01",
+      "knownMinFootprintClearanceM": 32,
+      "collisionList": [],
+      "existingRoadAnchorIDs": [
+        "ROAD-BOYA-RING-E"
+      ],
+      "connectedToExistingRoadCenterline": true,
+      "noGeneralVehicleThroughTraffic": true,
+      "accessPolicy": "fire/ems on response; low-peak permitted maintenance only after approval; no routine cars",
+      "operationalGraphApproved": false,
+      "buildingEntrancesApproved": false,
+      "roadGeometryFinal": false,
+      "runtimeFinal": false
+    },
+    {
+      "id": "ROAD-R7-S13-CEN-W-SOUTH",
+      "name": "中央西南直进线（应否决）",
+      "yuan": "central",
+      "category": "FIRE_SERVICE_ONLY",
+      "widthM": 8,
+      "centerlineXZ": [
+        [
+          -600,
+          -650
+        ],
+        [
+          -360,
+          -650
+        ]
+      ],
+      "lengthM": 240,
+      "status": "REJECTED_2D_COLLISION",
+      "obstacleCount": 235,
+      "closestKnownObstacle": "OPS-09",
+      "knownMinFootprintClearanceM": 0,
+      "collisionList": [
+        {
+          "id": "OPS-09",
+          "type": "building",
+          "clearanceM": 0
+        }
+      ],
+      "existingRoadAnchorIDs": [
+        "ROAD-BOYA-RING-SW-V"
+      ],
+      "connectedToExistingRoadCenterline": true,
+      "noGeneralVehicleThroughTraffic": true,
+      "accessPolicy": "fire/ems on response; low-peak permitted maintenance only after approval; no routine cars",
+      "operationalGraphApproved": false,
+      "buildingEntrancesApproved": false,
+      "roadGeometryFinal": false,
+      "runtimeFinal": false
+    },
+    {
+      "id": "ROAD-R7-S13-CEN-E-SOUTH",
+      "name": "中央东南直进线（应否决）",
+      "yuan": "central",
+      "category": "FIRE_SERVICE_ONLY",
+      "widthM": 8,
+      "centerlineXZ": [
+        [
+          830,
+          -650
+        ],
+        [
+          560,
+          -650
+        ]
+      ],
+      "lengthM": 270,
+      "status": "REJECTED_2D_COLLISION",
+      "obstacleCount": 235,
+      "closestKnownObstacle": "LIFE-C-04",
+      "knownMinFootprintClearanceM": 0,
+      "collisionList": [
+        {
+          "id": "LIFE-C-04",
+          "type": "building",
+          "clearanceM": 0
+        }
+      ],
+      "existingRoadAnchorIDs": [
+        "ROAD-BOYA-RING-E"
+      ],
+      "connectedToExistingRoadCenterline": true,
+      "noGeneralVehicleThroughTraffic": true,
+      "accessPolicy": "fire/ems on response; low-peak permitted maintenance only after approval; no routine cars",
+      "operationalGraphApproved": false,
+      "buildingEntrancesApproved": false,
+      "roadGeometryFinal": false,
+      "runtimeFinal": false
+    },
+    {
+      "id": "ROAD-R7-S13-W-SOUTHWEST",
+      "name": "西苑西南边缘",
+      "yuan": "west",
+      "category": "FIRE_SERVICE_ONLY",
+      "widthM": 8,
+      "centerlineXZ": [
+        [
+          -1320,
+          180
+        ],
+        [
+          -1515,
+          180
+        ],
+        [
+          -1515,
+          380
+        ]
+      ],
+      "lengthM": 395,
+      "status": "CANDIDATE_2D_CLEARANCE_ONLY",
+      "obstacleCount": 235,
+      "closestKnownObstacle": "LIFE-W-01",
+      "knownMinFootprintClearanceM": 12,
+      "collisionList": [],
+      "existingRoadAnchorIDs": [
+        "ROAD-QINGNIAN-W"
+      ],
+      "connectedToExistingRoadCenterline": true,
+      "noGeneralVehicleThroughTraffic": true,
+      "accessPolicy": "fire/ems on response; low-peak permitted maintenance only after approval; no routine cars",
+      "operationalGraphApproved": false,
+      "buildingEntrancesApproved": false,
+      "roadGeometryFinal": false,
+      "runtimeFinal": false
+    },
+    {
+      "id": "ROAD-R7-S13-W-EAST-INNER",
+      "name": "西苑青年路东侧服务支路",
+      "yuan": "west",
+      "category": "FIRE_SERVICE_ONLY",
+      "widthM": 8,
+      "centerlineXZ": [
+        [
+          -1320,
+          180
+        ],
+        [
+          -1230,
+          180
+        ],
+        [
+          -1230,
+          360
+        ]
+      ],
+      "lengthM": 270,
+      "status": "CANDIDATE_2D_CLEARANCE_ONLY",
+      "obstacleCount": 235,
+      "closestKnownObstacle": "RES-W-U03",
+      "knownMinFootprintClearanceM": 11,
+      "collisionList": [],
+      "existingRoadAnchorIDs": [
+        "ROAD-QINGNIAN-W"
+      ],
+      "connectedToExistingRoadCenterline": true,
+      "noGeneralVehicleThroughTraffic": true,
+      "accessPolicy": "fire/ems on response; low-peak permitted maintenance only after approval; no routine cars",
+      "operationalGraphApproved": false,
+      "buildingEntrancesApproved": false,
+      "roadGeometryFinal": false,
+      "runtimeFinal": false
+    },
+    {
+      "id": "ROAD-R7-S13-W-GREEN-SOUTH",
+      "name": "西苑绿心南缘（两端连通候选）",
+      "yuan": "west",
+      "category": "FIRE_SERVICE_ONLY",
+      "widthM": 8,
+      "centerlineXZ": [
+        [
+          -1515,
+          380
+        ],
+        [
+          -1515,
+          385
+        ],
+        [
+          -1320,
+          385
+        ]
+      ],
+      "lengthM": 200,
+      "status": "CANDIDATE_2D_CLEARANCE_ONLY",
+      "obstacleCount": 235,
+      "closestKnownObstacle": "RES-W-U04",
+      "knownMinFootprintClearanceM": 19,
+      "collisionList": [],
+      "existingRoadAnchorIDs": [
+        "ROAD-QINGNIAN-W"
+      ],
+      "connectedToExistingRoadCenterline": true,
+      "noGeneralVehicleThroughTraffic": true,
+      "accessPolicy": "fire/ems on response; low-peak permitted maintenance only after approval; no routine cars",
+      "operationalGraphApproved": false,
+      "buildingEntrancesApproved": false,
+      "roadGeometryFinal": false,
+      "runtimeFinal": false
+    },
+    {
+      "id": "ROAD-R7-S13-E-SOUTH",
+      "name": "东苑南缘应急服务通道",
+      "yuan": "east",
+      "category": "FIRE_SERVICE_ONLY",
+      "widthM": 8,
+      "centerlineXZ": [
+        [
+          830,
+          -175
+        ],
+        [
+          1400,
+          -175
+        ]
+      ],
+      "lengthM": 570,
+      "status": "CANDIDATE_2D_CLEARANCE_ONLY",
+      "obstacleCount": 235,
+      "closestKnownObstacle": "LIFE-E-01",
+      "knownMinFootprintClearanceM": 27,
+      "collisionList": [],
+      "existingRoadAnchorIDs": [
+        "ROAD-BOYA-RING-E",
+        "ROAD-QINGNIAN-E"
+      ],
+      "connectedToExistingRoadCenterline": true,
+      "noGeneralVehicleThroughTraffic": true,
+      "accessPolicy": "fire/ems on response; low-peak permitted maintenance only after approval; no routine cars",
+      "operationalGraphApproved": false,
+      "buildingEntrancesApproved": false,
+      "roadGeometryFinal": false,
+      "runtimeFinal": false
+    },
+    {
+      "id": "ROAD-R7-S13-N-EAST",
+      "name": "北苑东翼外围通道",
+      "yuan": "north",
+      "category": "FIRE_SERVICE_ONLY",
+      "widthM": 8,
+      "centerlineXZ": [
+        [
+          830,
+          690
+        ],
+        [
+          1000,
+          690
+        ],
+        [
+          1000,
+          1040
+        ]
+      ],
+      "lengthM": 520,
+      "status": "CANDIDATE_2D_CLEARANCE_ONLY",
+      "obstacleCount": 235,
+      "closestKnownObstacle": "RES-N-G02",
+      "knownMinFootprintClearanceM": 31,
+      "collisionList": [],
+      "existingRoadAnchorIDs": [
+        "ROAD-BOYA-RING-E",
+        "ROAD-BOYA-RING-N"
+      ],
+      "connectedToExistingRoadCenterline": true,
+      "noGeneralVehicleThroughTraffic": true,
+      "accessPolicy": "fire/ems on response; low-peak permitted maintenance only after approval; no routine cars",
+      "operationalGraphApproved": false,
+      "buildingEntrancesApproved": false,
+      "roadGeometryFinal": false,
+      "runtimeFinal": false
+    },
+    {
+      "id": "ROAD-R7-S13-N-WEST",
+      "name": "北苑西翼外围通道",
+      "yuan": "north",
+      "category": "FIRE_SERVICE_ONLY",
+      "widthM": 8,
+      "centerlineXZ": [
+        [
+          -900,
+          600
+        ],
+        [
+          -970,
+          600
+        ],
+        [
+          -970,
+          780
+        ]
+      ],
+      "lengthM": 250,
+      "status": "CANDIDATE_2D_CLEARANCE_ONLY",
+      "obstacleCount": 235,
+      "closestKnownObstacle": "RDI-04",
+      "knownMinFootprintClearanceM": 25,
+      "collisionList": [],
+      "existingRoadAnchorIDs": [
+        "ROAD-BOYA-RING-NW-H",
+        "ROAD-BOYA-RING-W"
+      ],
+      "connectedToExistingRoadCenterline": true,
+      "noGeneralVehicleThroughTraffic": true,
+      "accessPolicy": "fire/ems on response; low-peak permitted maintenance only after approval; no routine cars",
+      "operationalGraphApproved": false,
+      "buildingEntrancesApproved": false,
+      "roadGeometryFinal": false,
+      "runtimeFinal": false
+    },
+    {
+      "id": "ROAD-R7-S13-N-WEST-INNER",
+      "name": "北苑西翼内侧接入",
+      "yuan": "north",
+      "category": "FIRE_SERVICE_ONLY",
+      "widthM": 8,
+      "centerlineXZ": [
+        [
+          -520,
+          700
+        ],
+        [
+          -560,
+          700
+        ],
+        [
+          -560,
+          840
+        ]
+      ],
+      "lengthM": 180,
+      "status": "CANDIDATE_2D_CLEARANCE_ONLY",
+      "obstacleCount": 235,
+      "closestKnownObstacle": "ARC-02",
+      "knownMinFootprintClearanceM": 45,
+      "collisionList": [],
+      "existingRoadAnchorIDs": [
+        "ROAD-QINGNIAN-NW"
+      ],
+      "connectedToExistingRoadCenterline": true,
+      "noGeneralVehicleThroughTraffic": true,
+      "accessPolicy": "fire/ems on response; low-peak permitted maintenance only after approval; no routine cars",
+      "operationalGraphApproved": false,
+      "buildingEntrancesApproved": false,
+      "roadGeometryFinal": false,
+      "runtimeFinal": false
+    },
+    {
+      "id": "ROAD-R7-S13-S-WEST",
+      "name": "南苑西缘外围通道",
+      "yuan": "south",
+      "category": "FIRE_SERVICE_ONLY",
+      "widthM": 8,
+      "centerlineXZ": [
+        [
+          260,
+          -900
+        ],
+        [
+          255,
+          -900
+        ],
+        [
+          255,
+          -705
+        ]
+      ],
+      "lengthM": 200,
+      "status": "CANDIDATE_2D_CLEARANCE_ONLY",
+      "obstacleCount": 235,
+      "closestKnownObstacle": "CEN-16",
+      "knownMinFootprintClearanceM": 17,
+      "collisionList": [],
+      "existingRoadAnchorIDs": [
+        "ROAD-QINGNIAN-S"
+      ],
+      "connectedToExistingRoadCenterline": true,
+      "noGeneralVehicleThroughTraffic": true,
+      "accessPolicy": "fire/ems on response; low-peak permitted maintenance only after approval; no routine cars",
+      "operationalGraphApproved": false,
+      "buildingEntrancesApproved": false,
+      "roadGeometryFinal": false,
+      "runtimeFinal": false
+    },
+    {
+      "id": "ROAD-R7-S13-S-EAST",
+      "name": "南苑东缘外围通道",
+      "yuan": "south",
+      "category": "FIRE_SERVICE_ONLY",
+      "widthM": 8,
+      "centerlineXZ": [
+        [
+          800,
+          -900
+        ],
+        [
+          815,
+          -900
+        ],
+        [
+          815,
+          -740
+        ]
+      ],
+      "lengthM": 175,
+      "status": "CANDIDATE_2D_CLEARANCE_ONLY",
+      "obstacleCount": 235,
+      "closestKnownObstacle": "RES-S-U09",
+      "knownMinFootprintClearanceM": 16,
+      "collisionList": [],
+      "existingRoadAnchorIDs": [
+        "ROAD-QINGNIAN-S"
+      ],
+      "connectedToExistingRoadCenterline": true,
+      "noGeneralVehicleThroughTraffic": true,
+      "accessPolicy": "fire/ems on response; low-peak permitted maintenance only after approval; no routine cars",
+      "operationalGraphApproved": false,
+      "buildingEntrancesApproved": false,
+      "roadGeometryFinal": false,
+      "runtimeFinal": false
+    },
+    {
+      "id": "ROAD-R7-S13-W-OUTER-DUPLICATE",
+      "name": "西苑西缘重复方案（退役）",
+      "yuan": "west",
+      "category": "FIRE_SERVICE_ONLY",
+      "widthM": 8,
+      "centerlineXZ": [
+        [
+          -1510,
+          180
+        ],
+        [
+          -1510,
+          370
+        ]
+      ],
+      "lengthM": 190,
+      "status": "RETIRED_REDUNDANT_PARALLEL_ROUTE",
+      "obstacleCount": 235,
+      "closestKnownObstacle": "LIFE-W-01",
+      "knownMinFootprintClearanceM": 9,
+      "collisionList": [],
+      "existingRoadAnchorIDs": [],
+      "connectedToExistingRoadCenterline": false,
+      "noGeneralVehicleThroughTraffic": true,
+      "accessPolicy": "fire/ems on response; low-peak permitted maintenance only after approval; no routine cars",
+      "operationalGraphApproved": false,
+      "buildingEntrancesApproved": false,
+      "roadGeometryFinal": false,
+      "runtimeFinal": false
+    }
+  ],
+  "categoryCounts": {
+    "CANDIDATE_MARGINAL_BUILDING_CLEARANCE": 1,
+    "CANDIDATE_2D_CLEARANCE_ONLY": 10,
+    "REJECTED_2D_COLLISION": 2,
+    "RETIRED_REDUNDANT_PARALLEL_ROUTE": 1
+  },
+  "eligibleCount": 11,
+  "connectedInitialRoadCount": 11,
+  "eligibleButOnlyViaCandidate": [],
+  "inScopeOriginalRiskCount": 58,
+  "inScopeOriginalBuildingCount": 82,
+  "potentialShorterDirectSpurCount": 12,
+  "potentialShorterDirectSpurs": [
+    {
+      "buildingID": "CEN-11",
+      "sourcePreviousClass": "NETWORK_EXTENSION_REQUIRED",
+      "sourcePlacement": "R7-SOLVE-01",
+      "preferred": {
+        "roadID": "ROAD-R7-S13-CEN-E-EDGE",
+        "doorXZ": [
+          449,
+          -280
+        ],
+        "connectionPointXZ": [
+          560,
+          -280
+        ],
+        "conceptCenterlineLengthM": 111,
+        "oldCenterlineLengthM": 381,
+        "geometricDeltaM": 270,
+        "warning": "DOOR_AND_TERRAIN_NOT_FROZEN; NOT_FIRE_APPROVAL"
+      },
+      "otherCount": 0,
+      "status": "SHORTENING_PROBE_ONLY_NOT_CLOSED"
+    },
+    {
+      "buildingID": "CEN-12",
+      "sourcePreviousClass": "NETWORK_EXTENSION_REQUIRED",
+      "sourcePlacement": "R7-SOLVE-01",
+      "preferred": {
+        "roadID": "ROAD-R7-S13-CEN-E-EDGE",
+        "doorXZ": [
+          449,
+          -120
+        ],
+        "connectionPointXZ": [
+          560,
+          -120
+        ],
+        "conceptCenterlineLengthM": 111,
+        "oldCenterlineLengthM": 381,
+        "geometricDeltaM": 270,
+        "warning": "DOOR_AND_TERRAIN_NOT_FROZEN; NOT_FIRE_APPROVAL"
+      },
+      "otherCount": 0,
+      "status": "SHORTENING_PROBE_ONLY_NOT_CLOSED"
+    },
+    {
+      "buildingID": "CEN-14",
+      "sourcePreviousClass": "NETWORK_EXTENSION_REQUIRED",
+      "sourcePlacement": "R7-SOLVE-01",
+      "preferred": {
+        "roadID": "ROAD-R7-S13-CEN-E-EDGE",
+        "doorXZ": [
+          475,
+          40
+        ],
+        "connectionPointXZ": [
+          560,
+          40
+        ],
+        "conceptCenterlineLengthM": 85,
+        "oldCenterlineLengthM": 355,
+        "geometricDeltaM": 270,
+        "warning": "DOOR_AND_TERRAIN_NOT_FROZEN; NOT_FIRE_APPROVAL"
+      },
+      "otherCount": 0,
+      "status": "SHORTENING_PROBE_ONLY_NOT_CLOSED"
+    },
+    {
+      "buildingID": "LIFE-E-01",
+      "sourcePreviousClass": "NETWORK_EXTENSION_REQUIRED",
+      "sourcePlacement": "R7-SOLVE-05",
+      "preferred": {
+        "roadID": "ROAD-R7-S13-E-SOUTH",
+        "doorXZ": [
+          1240,
+          -80
+        ],
+        "connectionPointXZ": [
+          1240,
+          -175
+        ],
+        "conceptCenterlineLengthM": 95,
+        "oldCenterlineLengthM": 200,
+        "geometricDeltaM": 105,
+        "warning": "DOOR_AND_TERRAIN_NOT_FROZEN; NOT_FIRE_APPROVAL"
+      },
+      "otherCount": 0,
+      "status": "SHORTENING_PROBE_ONLY_NOT_CLOSED"
+    },
+    {
+      "buildingID": "LIFE-W-01",
+      "sourcePreviousClass": "NETWORK_EXTENSION_REQUIRED",
+      "sourcePlacement": "R7-SOLVE-05",
+      "preferred": {
+        "roadID": "ROAD-R7-S13-W-SOUTHWEST",
+        "doorXZ": [
+          -1445,
+          260
+        ],
+        "connectionPointXZ": [
+          -1515,
+          260
+        ],
+        "conceptCenterlineLengthM": 70,
+        "oldCenterlineLengthM": 203.04,
+        "geometricDeltaM": 133.04,
+        "warning": "DOOR_AND_TERRAIN_NOT_FROZEN; NOT_FIRE_APPROVAL"
+      },
+      "otherCount": 1,
+      "status": "SHORTENING_PROBE_ONLY_NOT_CLOSED"
+    },
+    {
+      "buildingID": "RES-N-G02",
+      "sourcePreviousClass": "NETWORK_EXTENSION_REQUIRED",
+      "sourcePlacement": "R7-SOLVE-05",
+      "preferred": {
+        "roadID": "ROAD-R7-S13-N-EAST",
+        "doorXZ": [
+          949,
+          960
+        ],
+        "connectionPointXZ": [
+          1000,
+          960
+        ],
+        "conceptCenterlineLengthM": 51,
+        "oldCenterlineLengthM": 560,
+        "geometricDeltaM": 509,
+        "warning": "DOOR_AND_TERRAIN_NOT_FROZEN; NOT_FIRE_APPROVAL"
+      },
+      "otherCount": 0,
+      "status": "SHORTENING_PROBE_ONLY_NOT_CLOSED"
+    },
+    {
+      "buildingID": "RES-N-U08",
+      "sourcePreviousClass": "NETWORK_EXTENSION_REQUIRED",
+      "sourcePlacement": "R7-SOLVE-05",
+      "preferred": {
+        "roadID": "ROAD-R7-S13-N-EAST",
+        "doorXZ": [
+          900,
+          911
+        ],
+        "connectionPointXZ": [
+          1000,
+          911
+        ],
+        "conceptCenterlineLengthM": 100,
+        "oldCenterlineLengthM": 231.82,
+        "geometricDeltaM": 131.82,
+        "warning": "DOOR_AND_TERRAIN_NOT_FROZEN; NOT_FIRE_APPROVAL"
+      },
+      "otherCount": 0,
+      "status": "SHORTENING_PROBE_ONLY_NOT_CLOSED"
+    },
+    {
+      "buildingID": "RES-N-U09",
+      "sourcePreviousClass": "CORRIDOR_CONFLICT",
+      "sourcePlacement": "R7-SOLVE-05",
+      "preferred": {
+        "roadID": "ROAD-R7-S13-N-EAST",
+        "doorXZ": [
+          919,
+          1010
+        ],
+        "connectionPointXZ": [
+          1000,
+          1010
+        ],
+        "conceptCenterlineLengthM": 81,
+        "oldCenterlineLengthM": 332.15,
+        "geometricDeltaM": 251.15,
+        "warning": "DOOR_AND_TERRAIN_NOT_FROZEN; NOT_FIRE_APPROVAL"
+      },
+      "otherCount": 0,
+      "status": "SHORTENING_PROBE_ONLY_NOT_CLOSED"
+    },
+    {
+      "buildingID": "RES-S-I03",
+      "sourcePreviousClass": "LONG_ACCESS_SPUR_REVIEW",
+      "sourcePlacement": "R7-SOLVE-05",
+      "preferred": {
+        "roadID": "ROAD-R7-S13-S-EAST",
+        "doorXZ": [
+          750,
+          -732
+        ],
+        "connectionPointXZ": [
+          815,
+          -740
+        ],
+        "conceptCenterlineLengthM": 65.49,
+        "oldCenterlineLengthM": 80,
+        "geometricDeltaM": 14.51,
+        "warning": "DOOR_AND_TERRAIN_NOT_FROZEN; NOT_FIRE_APPROVAL"
+      },
+      "otherCount": 0,
+      "status": "SHORTENING_PROBE_ONLY_NOT_CLOSED"
+    },
+    {
+      "buildingID": "RES-S-U10",
+      "sourcePreviousClass": "NETWORK_EXTENSION_REQUIRED",
+      "sourcePlacement": "R7-SOLVE-05",
+      "preferred": {
+        "roadID": "ROAD-R7-S13-S-WEST",
+        "doorXZ": [
+          321,
+          -780
+        ],
+        "connectionPointXZ": [
+          255,
+          -780
+        ],
+        "conceptCenterlineLengthM": 66,
+        "oldCenterlineLengthM": 341.35,
+        "geometricDeltaM": 275.35,
+        "warning": "DOOR_AND_TERRAIN_NOT_FROZEN; NOT_FIRE_APPROVAL"
+      },
+      "otherCount": 0,
+      "status": "SHORTENING_PROBE_ONLY_NOT_CLOSED"
+    },
+    {
+      "buildingID": "RES-W-U03",
+      "sourcePreviousClass": "NETWORK_EXTENSION_REQUIRED",
+      "sourcePlacement": "R7-SOLVE-05",
+      "preferred": {
+        "roadID": "ROAD-R7-S13-W-EAST-INNER",
+        "doorXZ": [
+          -1261,
+          300
+        ],
+        "connectionPointXZ": [
+          -1230,
+          300
+        ],
+        "conceptCenterlineLengthM": 31,
+        "oldCenterlineLengthM": 200,
+        "geometricDeltaM": 169,
+        "warning": "DOOR_AND_TERRAIN_NOT_FROZEN; NOT_FIRE_APPROVAL"
+      },
+      "otherCount": 1,
+      "status": "SHORTENING_PROBE_ONLY_NOT_CLOSED"
+    },
+    {
+      "buildingID": "RES-W-U04",
+      "sourcePreviousClass": "NETWORK_EXTENSION_REQUIRED",
+      "sourcePlacement": "R7-SOLVE-05",
+      "preferred": {
+        "roadID": "ROAD-R7-S13-W-SOUTHWEST",
+        "doorXZ": [
+          -1479,
+          325
+        ],
+        "connectionPointXZ": [
+          -1515,
+          325
+        ],
+        "conceptCenterlineLengthM": 36,
+        "oldCenterlineLengthM": 159,
+        "geometricDeltaM": 123,
+        "warning": "DOOR_AND_TERRAIN_NOT_FROZEN; NOT_FIRE_APPROVAL"
+      },
+      "otherCount": 2,
+      "status": "SHORTENING_PROBE_ONLY_NOT_CLOSED"
+    }
+  ],
+  "originalOpenFireRiskCount": 145,
+  "openRiskCountAfterThisStage": 145,
+  "testedWorkingGeometryOnly": true,
+  "allCentralBuildingsFireApproved": false,
+  "all56DormsFireApproved": false,
+  "noRuntimeWrite": true,
+  "blockers": [
+    "CEN-01 library and CEN-03 hall need protected independent fire/stand-off routes; no continuous legal path currently proven",
+    "West central lane at -621 passes close to CSE-02/CSE-03 and needs true wall and 8m ROW clearance validation",
+    "External road graph connection checked at centerlines only; no actual junction turn radius, lane crossing or fire truck access",
+    "Fire truck turnaround, 6m effective clear width, elevation, gradients, emergency doors and real building facade entrances unresolved",
+    "West/East/North/South Yuan pond shorelines used only as green polygons proxies; true waters not validated",
+    "All 145 fire-access blockers from SOLVE-11 stay open until field/engineering review; suggested shortening is NOT closing an item",
+    "SOLVE-12 hospital/research/art/logistics municipal interface remains conditional and not superseded",
+    "Four Yuan pedestrian/green centers protected; emergency gates, bollards, crowd management and bike traffic conflicts pending",
+    "Full 18 cross-system global audits pending"
+  ],
+  "nextStage": "R7-SOLVE-14 systematic connector priority and true entrance/turning/fire grade validations; integrate regional graph only after audits"
+}
