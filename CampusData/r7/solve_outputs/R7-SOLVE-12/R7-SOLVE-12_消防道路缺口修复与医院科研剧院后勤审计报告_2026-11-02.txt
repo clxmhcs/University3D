@@ -1,0 +1,86 @@
+江城大学｜R7-SOLVE-12 消防道路缺口与医院／科研／艺术／后勤专项交通网络候选审计
+版本：R7-REGIONAL-FIRE-LOGISTICS-ROADS-CANDIDATE-2026-11-02
+最高优先级：PATCH-2026-09-14-R7
+状态：CONDITIONAL_LOCAL_ROAD_GEOMETRY_PASS_GLOBAL_FIRE_BLOCKED
+Runtime Final：NO
+
+一、权威数据与本轮目标
+读取R7补丁、医院R7一体化城市接口说明、校园道路交通规则与R7-SOLVE-01～11相关候选数据。
+R7正式消防或后勤道路有效宽度下限6m，普通建筑支路约7–8m，医院独立急救车道约8m。
+R7交通原则保持：城市道路笔直；中央礼仪核心弱机动车化；四苑步行优先；社会车辆外围化；医院社会与救护车分离；剧院观众/后台分离；科研与后勤交通独立。
+严禁直接把R3旧点列或本轮候选线写入Runtime CampusData。
+
+二、SOLVE-11原始问题
+普通建筑入口候选195个；其中二维净距短支路预审50条，超70m长支路47条，需要片区道路补段70条，直接通行走廊存在冲突28条。原145项未关闭。
+另有26项独立后勤门需求尚未定位；附属医院6项权威入口ID均保留。
+本轮着重提出区域级公共消防或物流走廊，不能用一条直接撞过宿舍或礼仪轴的短线假装消防通行PASS。
+
+三、14条候选线的审计结果
+片区内部二维预审通过（不等于正式可通车）：7条；
+医院及艺术区城市接口需额外路权审查：4条；
+与建筑占地实际碰撞而否决：3条。
+基础检查范围：已纳入的235个建筑／体育控制足迹；候选道路宽度的半幅+3m额外净距；澄湖正式示意Polygon；校园边界每5m采样；礼仪轴受保护矩形。
+这不覆盖所有水池岸线、主溪桥位、地形坡度、建筑真实立面/出入口或车辆轮迹。
+
+• ROAD-R7-S12-HSP-CITY-SOCIAL｜hospital｜宽7.5m，中心线长42m｜城市接口待核对校界与路权｜最近已审地物净距110m（HSP-03）
+• ROAD-R7-S12-HSP-CITY-AMBULANCE｜hospital｜宽8m，中心线长37m｜城市接口待核对校界与路权｜最近已审地物净距49.24m（HSP-01）
+• ROAD-R7-S12-HSP-ONSITE-SOCIAL｜hospital｜宽7m，中心线长34m｜城市接口待核对校界与路权｜最近已审地物净距76m（HSP-03）
+• ROAD-R7-S12-HSP-ONSITE-AMBULANCE｜hospital｜宽8m，中心线长94m｜二维走廊预审无硬冲突，工程待审｜最近已审地物净距46.1m（HSP-03）
+• ROAD-R7-S12-MED-NORTH-SOUTH-SERVICE｜medical｜宽8m，中心线长470m｜二维走廊预审无硬冲突，工程待审｜最近已审地物净距46.26m（MED-01）
+• ROAD-R7-S12-RDI-ACCESS-LINK｜research｜宽8m，中心线长280m｜二维走廊预审无硬冲突，工程待审｜最近已审地物净距9m（RDI-02）
+• ROAD-R7-S12-RDI-NORTH-SERVICE｜research｜宽8m，中心线长520m｜二维走廊预审无硬冲突，工程待审｜最近已审地物净距12m（RDI-10）
+• ROAD-R7-S12-ART-BOYA-BACKSTAGE｜arts｜宽8m，中心线长545m｜二维走廊预审无硬冲突，工程待审｜最近已审地物净距19m（ART-03）
+• ROAD-R7-S12-ART-EAST-CITY-EDGE｜arts｜宽7.5m，中心线长24m｜城市接口待核对校界与路权｜最近已审地物净距197m（ART-04）
+• ROAD-R7-S12-OPS-SOUTH-SERVICE｜ops｜宽8m，中心线长545m｜二维走廊预审无硬冲突，工程待审｜最近已审地物净距21m（OPS-02）
+• ROAD-R7-S12-OPS-NORTH-SERVICE｜ops｜宽8m，中心线长310m｜二维走廊预审无硬冲突，工程待审｜最近已审地物净距28m（ATH-15）
+• ROAD-R7-S12-OPS-EAST-DIRECT-REJECTED｜ops｜宽8m，中心线长160m｜否决，不进入后续道路候选｜最近已审地物净距0m（OPS-06）｜碰撞：OPS-06
+• ROAD-R7-S12-W-YUAN-DIRECT-REJECTED｜west_yuan｜宽8m，中心线长360m｜否决，不进入后续道路候选｜最近已审地物净距0m（RES-W-U02）｜碰撞：RES-W-U02、RES-W-U03、RES-W-U06、RES-W-U10
+• ROAD-R7-S12-E-YUAN-DIRECT-REJECTED｜east_yuan｜宽8m，中心线长250m｜否决，不进入后续道路候选｜最近已审地物净距0m（RES-E-U06）｜碰撞：RES-E-U06、RES-E-U07
+
+四、医院：严格区分城市与校园内部
+权威大学路中心Z=-1145，36m宽，北缘Z=-1127。
+社会接口ENT-HSP-SOCIAL (-1040,98,-1085)；救护车专用城市接口ENT-HSP-EMERGENCY-CITY (-950,98,-1090)。
+城市侧独立候选：社会口→大学路北缘，中心线42m；救护车口→大学路北缘37m。两条城市接口必须单独审核边界、地块和城市道路交叉，不能因为与建筑无碰撞就视为可通行。
+院内救护车转接候选：(-950,-1090)→(-950,-1010)→(-964,-1010)，约94m，宽8m。仍未验证院内落客／急诊门路口、真实建筑外墙与车辆转向。
+HSP-02是HSP-01上部住院塔楼，不新设独立住院楼；HSP-03是连续医技翼，不拆成独立医院交通系统。
+
+五、科研：北部科技园与教学道路形成候选服务骨架
+RDI-ACCESS-LINK：(-1430,795)→(-1280,795)→(-1280,925)，约280m，宽8m。
+RDI-NORTH-SERVICE：(-1280,925)→(-760,925)，约520m，宽8m。
+两段以既定ROAD-CHUANGXIN为候选连接起点，围绕RDI建筑占地组织通行，未侵入本轮已审建筑。实际路口、地形、校界及消防车掉头仍需校核。
+本轮发现的13条更短接入线中，有11条对应这两条科研走廊，不能提前删除SOLVE-11风险。
+
+六、医学、剧院、东南后勤
+MED-NORTH-SOUTH-SERVICE：(-1330,-770)→(-1330,-300)，470m，宽8m，用作济世路与智创路之间的医学片区消防服务骨架。
+ART-BOYA-BACKSTAGE：博雅环路东部北段(830,690)→(1325,690)→(1325,740)，545m，宽8m，位于主要艺术建筑南侧，待明确剧院后台门和大型舞台设备车辆的真实通行需求。
+ART-EAST-CITY-EDGE：ART-03东向城市接口预留(1436,760)→(1460,760)，24m；不声称已接入长虹路机动车车道。观众流线/后台物流分别设计。
+OPS-SOUTH-SERVICE：(830,-960)→(1140,-960)→(1140,-725)，545m，宽8m。
+OPS-NORTH-SERVICE：(830,-730)→(1140,-730)，310m，宽8m；两条后勤候选可在西侧与博雅环路接驳，并在(1140,-730)附近形成连接，但最终路口及转弯几何未验收。
+
+七、明确否决的3条直穿方案
+OPS-EAST-DIRECT-REJECTED：因跨越OPS-06占地否决。
+W-YUAN-DIRECT-REJECTED：因跨越RES-W-U02/U03/U06/U10四栋住宿足迹否决。
+E-YUAN-DIRECT-REJECTED：因跨越RES-E-U06/U07两栋住宿足迹否决。
+禁止通过把宿舍、绿心或功能房直接挪走的方式消除冲突；后续应另求外围消防服务路与步行优先消防通行管理。
+
+八、13项潜在改进（不代表消防通过）
+将SOLVE-11的195处入口投影到本轮二维通过的片区走廊，执行候选直连小于等于75m且较旧方案短、建筑障碍和澄湖保护预审无冲突的条件，发现13处潜在改进：
+ART-04｜NETWORK_EXTENSION_REQUIRED｜旧直连候选400m → 新走廊概念接入70m｜ROAD-R7-S12-ART-BOYA-BACKSTAGE
+OPS-02｜NETWORK_EXTENSION_REQUIRED｜旧直连候选371m → 新走廊概念接入61m｜ROAD-R7-S12-OPS-SOUTH-SERVICE
+RDI-02｜LONG_ACCESS_SPUR_REVIEW｜旧直连候选138.29m → 新走廊概念接入15m｜ROAD-R7-S12-RDI-ACCESS-LINK
+RDI-03｜CORRIDOR_CONFLICT｜旧直连候选296.52m → 新走廊概念接入75m｜ROAD-R7-S12-RDI-NORTH-SERVICE
+RDI-10｜CORRIDOR_CONFLICT｜旧直连候选275.18m → 新走廊概念接入10m｜ROAD-R7-S12-RDI-NORTH-SERVICE
+RDI-11｜NETWORK_EXTENSION_REQUIRED｜旧直连候选475m → 新走廊概念接入30m｜ROAD-R7-S12-RDI-NORTH-SERVICE
+RDI-12｜CORRIDOR_CONFLICT｜旧直连候选299.67m → 新走廊概念接入35m｜ROAD-R7-S12-RDI-NORTH-SERVICE
+RDI-13｜NETWORK_EXTENSION_REQUIRED｜旧直连候选311.75m → 新走廊概念接入75m｜ROAD-R7-S12-RDI-NORTH-SERVICE
+RES-N-U01｜NETWORK_EXTENSION_REQUIRED｜旧直连候选431m → 新走廊概念接入14m｜ROAD-R7-S12-RDI-NORTH-SERVICE
+RES-N-U02｜CORRIDOR_CONFLICT｜旧直连候选235.03m → 新走廊概念接入14m｜ROAD-R7-S12-RDI-NORTH-SERVICE
+RES-N-U03｜CORRIDOR_CONFLICT｜旧直连候选341.66m → 新走廊概念接入42m｜ROAD-R7-S12-RDI-NORTH-SERVICE
+RES-N-U04｜CORRIDOR_CONFLICT｜旧直连候选169m → 新走廊概念接入71.18m｜ROAD-R7-S12-RDI-NORTH-SERVICE
+RES-W-G03｜LONG_ACCESS_SPUR_REVIEW｜旧直连候选100m → 新走廊概念接入56m｜ROAD-R7-S12-RDI-ACCESS-LINK。
+这些点仍需道路连续拓扑、地形、消防登高面、真实建筑EntranceID、消防车轮迹与净空；工程未验收前145个原问题维持OPEN，不能从风险清单自动扣除13项。
+
+九、边界与正式状态
+本轮不是全校消防PASS。尤其中央18个CEN建筑依然缺足够接入；四苑需要单独围合消防/服务网络；医院与艺术社会城市接口没有最终城市侧土地和路权审计；26项后勤门未形成精确坐标。
+新增的线路仅在R7-SOLVE-12作为候选层存储，不直接覆盖SOLVE-02、09的道路，也不生成Runtime公交或消防Graph。
+下一阶段：R7-SOLVE-13中央礼仪核心及四苑消防与服务短路专项；再进行城市接口、消防车转弯/登高、桥梁地形和最终18项全局审计。
