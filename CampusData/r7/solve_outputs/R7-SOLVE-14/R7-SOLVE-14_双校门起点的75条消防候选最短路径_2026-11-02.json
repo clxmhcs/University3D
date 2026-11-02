@@ -1,0 +1,2711 @@
+{
+  "schemaVersion": 1,
+  "solveId": "R7-SOLVE-14",
+  "dataKind": "GATEWAY_SHORTEST_ROUTE_ON_CONDITIONAL_CENTERLINE_GRAPH",
+  "version": "2026-11-02",
+  "sourceGraphFile": "R7-SOLVE-14_消防路网连通与195栋入口覆盖审计_2026-11-02.json",
+  "physicalDriveabilityApproved": false,
+  "coordinateSystem": "LOCAL_XZ_METERS",
+  "gateSeedPoints": [
+    {
+      "gateID": "WEST_GATE_GEOMETRY_ROOT",
+      "roadID": "ROAD-WEST-GATE",
+      "atXZ": [
+        -1548,
+        -80
+      ],
+      "nodeKey": "-1548,-80",
+      "exists": true
+    },
+    {
+      "gateID": "EAST_GATE_GEOMETRY_ROOT",
+      "roadID": "ROAD-EAST-GATE",
+      "atXZ": [
+        1555,
+        120
+      ],
+      "nodeKey": "1555,120",
+      "exists": true
+    }
+  ],
+  "shortestRouteMethod": "Dijkstra from West Gate road start and East Gate road end; candidate spur projected onto split graph edge; minimal centerline path + spur, no bends/slope/access-permission costs.",
+  "gateRule": "Gate seeds only conceptual; neither gate physically verified open to fire engine, no all-campus emergency response guarantee.",
+  "totals": {
+    "source195": 195,
+    "source2DRouteCandidates": 75,
+    "computedRoutes": 75,
+    "unvalidatedOrAbsent": 120,
+    "gateAssignment": {
+      "WEST_GATE_GEOMETRY_ROOT": 45,
+      "EAST_GATE_GEOMETRY_ROOT": 30
+    },
+    "totalFireRiskOpen": 145,
+    "centralAmongRoutes": 3,
+    "dormAmongRoutes": 34,
+    "approximatePathDistancesOnly": true,
+    "turnRadiusOrBridgeChecksCompleted": false
+  },
+  "routes": [
+    {
+      "buildingID": "ARC-01",
+      "entranceCandidateID": "ENT-ARC-01-MAIN-CANDIDATE",
+      "originalClass": "CLEARANCE_PRECHECK_ONLY",
+      "chosenSourceStage": "R7-SOLVE-11",
+      "precheckedSpurQuality": "ORIGINAL_SHORT_SPUR_2D_PRESCREEN",
+      "rootGate": "WEST_GATE_GEOMETRY_ROOT",
+      "fromXZ": [
+        -1548,
+        -80
+      ],
+      "roadDistanceM": 1578,
+      "approachSpurLengthM": 64,
+      "totalM": 1642,
+      "accessRoad": "ROAD-GEZHI-W",
+      "routeRoadIDs": [
+        "ROAD-WEST-GATE",
+        "ROAD-QINGNIAN-W-FEED",
+        "ROAD-BOYA-RING-W",
+        "ROAD-GEZHI-W"
+      ],
+      "routeRoadCount": 4,
+      "physicalDriveabilityApproved": false,
+      "legalGateOpeningVerified": false,
+      "fireEmergencyClearanceApproved": false
+    },
+    {
+      "buildingID": "ARC-02",
+      "entranceCandidateID": "ENT-ARC-02-MAIN-CANDIDATE",
+      "originalClass": "CLEARANCE_PRECHECK_ONLY",
+      "chosenSourceStage": "R7-SOLVE-11",
+      "precheckedSpurQuality": "ORIGINAL_SHORT_SPUR_2D_PRESCREEN",
+      "rootGate": "WEST_GATE_GEOMETRY_ROOT",
+      "fromXZ": [
+        -1548,
+        -80
+      ],
+      "roadDistanceM": 1768,
+      "approachSpurLengthM": 67,
+      "totalM": 1835,
+      "accessRoad": "ROAD-BOYA-RING-N",
+      "routeRoadIDs": [
+        "ROAD-WEST-GATE",
+        "ROAD-QINGNIAN-W-FEED",
+        "ROAD-BOYA-RING-W",
+        "ROAD-BOYA-RING-NW-H",
+        "ROAD-BOYA-RING-NW-V",
+        "ROAD-BOYA-RING-N"
+      ],
+      "routeRoadCount": 6,
+      "physicalDriveabilityApproved": false,
+      "legalGateOpeningVerified": false,
+      "fireEmergencyClearanceApproved": false
+    },
+    {
+      "buildingID": "ART-04",
+      "entranceCandidateID": "ENT-ART-04-MAIN-CANDIDATE",
+      "originalClass": "NETWORK_EXTENSION_REQUIRED",
+      "chosenSourceStage": "R7-SOLVE-12",
+      "precheckedSpurQuality": "UPSTREAM_2D_SHORTENING_PROBE",
+      "rootGate": "EAST_GATE_GEOMETRY_ROOT",
+      "fromXZ": [
+        1555,
+        120
+      ],
+      "roadDistanceM": 1706,
+      "approachSpurLengthM": 70,
+      "totalM": 1776,
+      "accessRoad": "ROAD-R7-S12-ART-BOYA-BACKSTAGE",
+      "routeRoadIDs": [
+        "ROAD-EAST-GATE",
+        "ROAD-QINGNIAN-E",
+        "ROAD-QINGNIAN-E-FEED",
+        "ROAD-BOYA-RING-E",
+        "ROAD-R7-S12-ART-BOYA-BACKSTAGE"
+      ],
+      "routeRoadCount": 5,
+      "physicalDriveabilityApproved": false,
+      "legalGateOpeningVerified": false,
+      "fireEmergencyClearanceApproved": false
+    },
+    {
+      "buildingID": "CE-01",
+      "entranceCandidateID": "ENT-CE-01-MAIN-CANDIDATE",
+      "originalClass": "CLEARANCE_PRECHECK_ONLY",
+      "chosenSourceStage": "R7-SOLVE-11",
+      "precheckedSpurQuality": "ORIGINAL_SHORT_SPUR_2D_PRESCREEN",
+      "rootGate": "WEST_GATE_GEOMETRY_ROOT",
+      "fromXZ": [
+        -1548,
+        -80
+      ],
+      "roadDistanceM": 1463,
+      "approachSpurLengthM": 65,
+      "totalM": 1528,
+      "accessRoad": "ROAD-GEZHI-W",
+      "routeRoadIDs": [
+        "ROAD-WEST-GATE",
+        "ROAD-QINGNIAN-W-FEED",
+        "ROAD-BOYA-RING-W",
+        "ROAD-GEZHI-W"
+      ],
+      "routeRoadCount": 4,
+      "physicalDriveabilityApproved": false,
+      "legalGateOpeningVerified": false,
+      "fireEmergencyClearanceApproved": false
+    },
+    {
+      "buildingID": "CE-02",
+      "entranceCandidateID": "ENT-CE-02-MAIN-CANDIDATE",
+      "originalClass": "CLEARANCE_PRECHECK_ONLY",
+      "chosenSourceStage": "R7-SOLVE-11",
+      "precheckedSpurQuality": "ORIGINAL_SHORT_SPUR_2D_PRESCREEN",
+      "rootGate": "WEST_GATE_GEOMETRY_ROOT",
+      "fromXZ": [
+        -1548,
+        -80
+      ],
+      "roadDistanceM": 1653,
+      "approachSpurLengthM": 69,
+      "totalM": 1722,
+      "accessRoad": "ROAD-BOYA-RING-N",
+      "routeRoadIDs": [
+        "ROAD-WEST-GATE",
+        "ROAD-QINGNIAN-W-FEED",
+        "ROAD-BOYA-RING-W",
+        "ROAD-BOYA-RING-NW-H",
+        "ROAD-BOYA-RING-NW-V",
+        "ROAD-BOYA-RING-N"
+      ],
+      "routeRoadCount": 6,
+      "physicalDriveabilityApproved": false,
+      "legalGateOpeningVerified": false,
+      "fireEmergencyClearanceApproved": false
+    },
+    {
+      "buildingID": "CE-03",
+      "entranceCandidateID": "ENT-CE-03-MAIN-CANDIDATE",
+      "originalClass": "CLEARANCE_PRECHECK_ONLY",
+      "chosenSourceStage": "R7-SOLVE-11",
+      "precheckedSpurQuality": "ORIGINAL_SHORT_SPUR_2D_PRESCREEN",
+      "rootGate": "WEST_GATE_GEOMETRY_ROOT",
+      "fromXZ": [
+        -1548,
+        -80
+      ],
+      "roadDistanceM": 1693,
+      "approachSpurLengthM": 70,
+      "totalM": 1763,
+      "accessRoad": "ROAD-GEZHI-W",
+      "routeRoadIDs": [
+        "ROAD-WEST-GATE",
+        "ROAD-QINGNIAN-W-FEED",
+        "ROAD-BOYA-RING-W",
+        "ROAD-GEZHI-W"
+      ],
+      "routeRoadCount": 4,
+      "physicalDriveabilityApproved": false,
+      "legalGateOpeningVerified": false,
+      "fireEmergencyClearanceApproved": false
+    },
+    {
+      "buildingID": "CEN-11",
+      "entranceCandidateID": "ENT-CEN-11-MAIN-CANDIDATE",
+      "originalClass": "NETWORK_EXTENSION_REQUIRED",
+      "chosenSourceStage": "R7-SOLVE-13",
+      "precheckedSpurQuality": "UPSTREAM_2D_SHORTENING_PROBE",
+      "rootGate": "EAST_GATE_GEOMETRY_ROOT",
+      "fromXZ": [
+        1555,
+        120
+      ],
+      "roadDistanceM": 1695,
+      "approachSpurLengthM": 111,
+      "totalM": 1806,
+      "accessRoad": "ROAD-R7-S13-CEN-E-EDGE",
+      "routeRoadIDs": [
+        "ROAD-EAST-GATE",
+        "ROAD-QINGNIAN-E",
+        "ROAD-R7-S13-E-SOUTH",
+        "ROAD-BOYA-RING-E",
+        "ROAD-R7-S13-CEN-E-EDGE"
+      ],
+      "routeRoadCount": 5,
+      "physicalDriveabilityApproved": false,
+      "legalGateOpeningVerified": false,
+      "fireEmergencyClearanceApproved": false
+    },
+    {
+      "buildingID": "CEN-12",
+      "entranceCandidateID": "ENT-CEN-12-MAIN-CANDIDATE",
+      "originalClass": "NETWORK_EXTENSION_REQUIRED",
+      "chosenSourceStage": "R7-SOLVE-13",
+      "precheckedSpurQuality": "UPSTREAM_2D_SHORTENING_PROBE",
+      "rootGate": "EAST_GATE_GEOMETRY_ROOT",
+      "fromXZ": [
+        1555,
+        120
+      ],
+      "roadDistanceM": 1855,
+      "approachSpurLengthM": 111,
+      "totalM": 1966,
+      "accessRoad": "ROAD-R7-S13-CEN-E-EDGE",
+      "routeRoadIDs": [
+        "ROAD-EAST-GATE",
+        "ROAD-QINGNIAN-E",
+        "ROAD-R7-S13-E-SOUTH",
+        "ROAD-BOYA-RING-E",
+        "ROAD-R7-S13-CEN-E-EDGE"
+      ],
+      "routeRoadCount": 5,
+      "physicalDriveabilityApproved": false,
+      "legalGateOpeningVerified": false,
+      "fireEmergencyClearanceApproved": false
+    },
+    {
+      "buildingID": "CEN-14",
+      "entranceCandidateID": "ENT-CEN-14-MAIN-CANDIDATE",
+      "originalClass": "NETWORK_EXTENSION_REQUIRED",
+      "chosenSourceStage": "R7-SOLVE-13",
+      "precheckedSpurQuality": "UPSTREAM_2D_SHORTENING_PROBE",
+      "rootGate": "EAST_GATE_GEOMETRY_ROOT",
+      "fromXZ": [
+        1555,
+        120
+      ],
+      "roadDistanceM": 2015,
+      "approachSpurLengthM": 85,
+      "totalM": 2100,
+      "accessRoad": "ROAD-R7-S13-CEN-E-EDGE",
+      "routeRoadIDs": [
+        "ROAD-EAST-GATE",
+        "ROAD-QINGNIAN-E",
+        "ROAD-R7-S13-E-SOUTH",
+        "ROAD-BOYA-RING-E",
+        "ROAD-R7-S13-CEN-E-EDGE"
+      ],
+      "routeRoadCount": 5,
+      "physicalDriveabilityApproved": false,
+      "legalGateOpeningVerified": false,
+      "fireEmergencyClearanceApproved": false
+    },
+    {
+      "buildingID": "CHM-01",
+      "entranceCandidateID": "ENT-CHM-01-MAIN-CANDIDATE",
+      "originalClass": "CLEARANCE_PRECHECK_ONLY",
+      "chosenSourceStage": "R7-SOLVE-11",
+      "precheckedSpurQuality": "ORIGINAL_SHORT_SPUR_2D_PRESCREEN",
+      "rootGate": "EAST_GATE_GEOMETRY_ROOT",
+      "fromXZ": [
+        1555,
+        120
+      ],
+      "roadDistanceM": 2210,
+      "approachSpurLengthM": 24,
+      "totalM": 2234,
+      "accessRoad": "ROAD-BOYA-RING-N",
+      "routeRoadIDs": [
+        "ROAD-EAST-GATE",
+        "ROAD-QINGNIAN-E",
+        "ROAD-QINGNIAN-E-FEED",
+        "ROAD-BOYA-RING-E",
+        "ROAD-BOYA-RING-N"
+      ],
+      "routeRoadCount": 5,
+      "physicalDriveabilityApproved": false,
+      "legalGateOpeningVerified": false,
+      "fireEmergencyClearanceApproved": false
+    },
+    {
+      "buildingID": "EDU-01",
+      "entranceCandidateID": "ENT-EDU-01-MAIN-CANDIDATE",
+      "originalClass": "CLEARANCE_PRECHECK_ONLY",
+      "chosenSourceStage": "R7-SOLVE-11",
+      "precheckedSpurQuality": "ORIGINAL_SHORT_SPUR_2D_PRESCREEN",
+      "rootGate": "EAST_GATE_GEOMETRY_ROOT",
+      "fromXZ": [
+        1555,
+        120
+      ],
+      "roadDistanceM": 1185,
+      "approachSpurLengthM": 58,
+      "totalM": 1243,
+      "accessRoad": "ROAD-GEZHI-E",
+      "routeRoadIDs": [
+        "ROAD-EAST-GATE",
+        "ROAD-QINGNIAN-E",
+        "ROAD-QINGNIAN-E-FEED",
+        "ROAD-BOYA-RING-E",
+        "ROAD-GEZHI-E"
+      ],
+      "routeRoadCount": 5,
+      "physicalDriveabilityApproved": false,
+      "legalGateOpeningVerified": false,
+      "fireEmergencyClearanceApproved": false
+    },
+    {
+      "buildingID": "ENV-02",
+      "entranceCandidateID": "ENT-ENV-02-MAIN-CANDIDATE",
+      "originalClass": "CLEARANCE_PRECHECK_ONLY",
+      "chosenSourceStage": "R7-SOLVE-11",
+      "precheckedSpurQuality": "ORIGINAL_SHORT_SPUR_2D_PRESCREEN",
+      "rootGate": "WEST_GATE_GEOMETRY_ROOT",
+      "fromXZ": [
+        -1548,
+        -80
+      ],
+      "roadDistanceM": 1613,
+      "approachSpurLengthM": 68,
+      "totalM": 1681,
+      "accessRoad": "ROAD-GEZHI-W",
+      "routeRoadIDs": [
+        "ROAD-WEST-GATE",
+        "ROAD-QINGNIAN-W-FEED",
+        "ROAD-BOYA-RING-W",
+        "ROAD-GEZHI-W"
+      ],
+      "routeRoadCount": 4,
+      "physicalDriveabilityApproved": false,
+      "legalGateOpeningVerified": false,
+      "fireEmergencyClearanceApproved": false
+    },
+    {
+      "buildingID": "EPE-02",
+      "entranceCandidateID": "ENT-EPE-02-MAIN-CANDIDATE",
+      "originalClass": "CLEARANCE_PRECHECK_ONLY",
+      "chosenSourceStage": "R7-SOLVE-11",
+      "precheckedSpurQuality": "ORIGINAL_SHORT_SPUR_2D_PRESCREEN",
+      "rootGate": "WEST_GATE_GEOMETRY_ROOT",
+      "fromXZ": [
+        -1548,
+        -80
+      ],
+      "roadDistanceM": 908,
+      "approachSpurLengthM": 70,
+      "totalM": 978,
+      "accessRoad": "ROAD-JIANGXIN",
+      "routeRoadIDs": [
+        "ROAD-WEST-GATE",
+        "ROAD-QINGNIAN-W-FEED",
+        "ROAD-JIANGXIN"
+      ],
+      "routeRoadCount": 3,
+      "physicalDriveabilityApproved": false,
+      "legalGateOpeningVerified": false,
+      "fireEmergencyClearanceApproved": false
+    },
+    {
+      "buildingID": "GEO-01",
+      "entranceCandidateID": "ENT-GEO-01-MAIN-CANDIDATE",
+      "originalClass": "CLEARANCE_PRECHECK_ONLY",
+      "chosenSourceStage": "R7-SOLVE-11",
+      "precheckedSpurQuality": "ORIGINAL_SHORT_SPUR_2D_PRESCREEN",
+      "rootGate": "EAST_GATE_GEOMETRY_ROOT",
+      "fromXZ": [
+        1555,
+        120
+      ],
+      "roadDistanceM": 1950,
+      "approachSpurLengthM": 55.9,
+      "totalM": 2005.9,
+      "accessRoad": "ROAD-BOYA-RING-N",
+      "routeRoadIDs": [
+        "ROAD-EAST-GATE",
+        "ROAD-QINGNIAN-E",
+        "ROAD-QINGNIAN-E-FEED",
+        "ROAD-BOYA-RING-E",
+        "ROAD-BOYA-RING-N"
+      ],
+      "routeRoadCount": 5,
+      "physicalDriveabilityApproved": false,
+      "legalGateOpeningVerified": false,
+      "fireEmergencyClearanceApproved": false
+    },
+    {
+      "buildingID": "HSP-05",
+      "entranceCandidateID": "ENT-HSP-05-MAIN-CANDIDATE",
+      "originalClass": "CLEARANCE_PRECHECK_ONLY",
+      "chosenSourceStage": "R7-SOLVE-11",
+      "precheckedSpurQuality": "ORIGINAL_SHORT_SPUR_2D_PRESCREEN",
+      "rootGate": "WEST_GATE_GEOMETRY_ROOT",
+      "fromXZ": [
+        -1548,
+        -80
+      ],
+      "roadDistanceM": 1893.86,
+      "approachSpurLengthM": 65.86,
+      "totalM": 1959.72,
+      "accessRoad": "ROAD-BOYA-RING-SW-V",
+      "routeRoadIDs": [
+        "ROAD-WEST-GATE",
+        "ROAD-QINGNIAN-W-FEED",
+        "ROAD-BOYA-RING-W",
+        "ROAD-BOYA-RING-SW-H",
+        "ROAD-BOYA-RING-SW-V"
+      ],
+      "routeRoadCount": 5,
+      "physicalDriveabilityApproved": false,
+      "legalGateOpeningVerified": false,
+      "fireEmergencyClearanceApproved": false
+    },
+    {
+      "buildingID": "LAW-01",
+      "entranceCandidateID": "ENT-LAW-01-MAIN-CANDIDATE",
+      "originalClass": "CLEARANCE_PRECHECK_ONLY",
+      "chosenSourceStage": "R7-SOLVE-11",
+      "precheckedSpurQuality": "ORIGINAL_SHORT_SPUR_2D_PRESCREEN",
+      "rootGate": "WEST_GATE_GEOMETRY_ROOT",
+      "fromXZ": [
+        -1548,
+        -80
+      ],
+      "roadDistanceM": 48,
+      "approachSpurLengthM": 48,
+      "totalM": 96,
+      "accessRoad": "ROAD-WEST-GATE",
+      "routeRoadIDs": [
+        "ROAD-WEST-GATE"
+      ],
+      "routeRoadCount": 1,
+      "physicalDriveabilityApproved": false,
+      "legalGateOpeningVerified": false,
+      "fireEmergencyClearanceApproved": false
+    },
+    {
+      "buildingID": "LIFE-01",
+      "entranceCandidateID": "ENT-LIFE-01-MAIN-CANDIDATE",
+      "originalClass": "CLEARANCE_PRECHECK_ONLY",
+      "chosenSourceStage": "R7-SOLVE-11",
+      "precheckedSpurQuality": "ORIGINAL_SHORT_SPUR_2D_PRESCREEN",
+      "rootGate": "EAST_GATE_GEOMETRY_ROOT",
+      "fromXZ": [
+        1555,
+        120
+      ],
+      "roadDistanceM": 2060,
+      "approachSpurLengthM": 25,
+      "totalM": 2085,
+      "accessRoad": "ROAD-BOYA-RING-N",
+      "routeRoadIDs": [
+        "ROAD-EAST-GATE",
+        "ROAD-QINGNIAN-E",
+        "ROAD-QINGNIAN-E-FEED",
+        "ROAD-BOYA-RING-E",
+        "ROAD-BOYA-RING-N"
+      ],
+      "routeRoadCount": 5,
+      "physicalDriveabilityApproved": false,
+      "legalGateOpeningVerified": false,
+      "fireEmergencyClearanceApproved": false
+    },
+    {
+      "buildingID": "LIFE-E-01",
+      "entranceCandidateID": "ENT-LIFE-E-01-MAIN-CANDIDATE",
+      "originalClass": "NETWORK_EXTENSION_REQUIRED",
+      "chosenSourceStage": "R7-SOLVE-13",
+      "precheckedSpurQuality": "UPSTREAM_2D_SHORTENING_PROBE",
+      "rootGate": "EAST_GATE_GEOMETRY_ROOT",
+      "fromXZ": [
+        1555,
+        120
+      ],
+      "roadDistanceM": 610,
+      "approachSpurLengthM": 95,
+      "totalM": 705,
+      "accessRoad": "ROAD-R7-S13-E-SOUTH",
+      "routeRoadIDs": [
+        "ROAD-EAST-GATE",
+        "ROAD-QINGNIAN-E",
+        "ROAD-R7-S13-E-SOUTH"
+      ],
+      "routeRoadCount": 3,
+      "physicalDriveabilityApproved": false,
+      "legalGateOpeningVerified": false,
+      "fireEmergencyClearanceApproved": false
+    },
+    {
+      "buildingID": "LIFE-E-02",
+      "entranceCandidateID": "ENT-LIFE-E-02-MAIN-CANDIDATE",
+      "originalClass": "CLEARANCE_PRECHECK_ONLY",
+      "chosenSourceStage": "R7-SOLVE-11",
+      "precheckedSpurQuality": "ORIGINAL_SHORT_SPUR_2D_PRESCREEN",
+      "rootGate": "EAST_GATE_GEOMETRY_ROOT",
+      "fromXZ": [
+        1555,
+        120
+      ],
+      "roadDistanceM": 375,
+      "approachSpurLengthM": 55,
+      "totalM": 430,
+      "accessRoad": "ROAD-QINGNIAN-E",
+      "routeRoadIDs": [
+        "ROAD-EAST-GATE",
+        "ROAD-QINGNIAN-E"
+      ],
+      "routeRoadCount": 2,
+      "physicalDriveabilityApproved": false,
+      "legalGateOpeningVerified": false,
+      "fireEmergencyClearanceApproved": false
+    },
+    {
+      "buildingID": "LIFE-W-01",
+      "entranceCandidateID": "ENT-LIFE-W-01-MAIN-CANDIDATE",
+      "originalClass": "NETWORK_EXTENSION_REQUIRED",
+      "chosenSourceStage": "R7-SOLVE-13",
+      "precheckedSpurQuality": "UPSTREAM_2D_SHORTENING_PROBE",
+      "rootGate": "WEST_GATE_GEOMETRY_ROOT",
+      "fromXZ": [
+        -1548,
+        -80
+      ],
+      "roadDistanceM": 763,
+      "approachSpurLengthM": 70,
+      "totalM": 833,
+      "accessRoad": "ROAD-R7-S13-W-SOUTHWEST",
+      "routeRoadIDs": [
+        "ROAD-WEST-GATE",
+        "ROAD-QINGNIAN-W",
+        "ROAD-R7-S13-W-SOUTHWEST"
+      ],
+      "routeRoadCount": 3,
+      "physicalDriveabilityApproved": false,
+      "legalGateOpeningVerified": false,
+      "fireEmergencyClearanceApproved": false
+    },
+    {
+      "buildingID": "LIFE-W-02",
+      "entranceCandidateID": "ENT-LIFE-W-02-MAIN-CANDIDATE",
+      "originalClass": "CLEARANCE_PRECHECK_ONLY",
+      "chosenSourceStage": "R7-SOLVE-11",
+      "precheckedSpurQuality": "ORIGINAL_SHORT_SPUR_2D_PRESCREEN",
+      "rootGate": "WEST_GATE_GEOMETRY_ROOT",
+      "fromXZ": [
+        -1548,
+        -80
+      ],
+      "roadDistanceM": 543,
+      "approachSpurLengthM": 18,
+      "totalM": 561,
+      "accessRoad": "ROAD-QINGNIAN-W",
+      "routeRoadIDs": [
+        "ROAD-WEST-GATE",
+        "ROAD-QINGNIAN-W"
+      ],
+      "routeRoadCount": 2,
+      "physicalDriveabilityApproved": false,
+      "legalGateOpeningVerified": false,
+      "fireEmergencyClearanceApproved": false
+    },
+    {
+      "buildingID": "MAT-01",
+      "entranceCandidateID": "ENT-MAT-01-MAIN-CANDIDATE",
+      "originalClass": "CLEARANCE_PRECHECK_ONLY",
+      "chosenSourceStage": "R7-SOLVE-11",
+      "precheckedSpurQuality": "ORIGINAL_SHORT_SPUR_2D_PRESCREEN",
+      "rootGate": "WEST_GATE_GEOMETRY_ROOT",
+      "fromXZ": [
+        -1548,
+        -80
+      ],
+      "roadDistanceM": 1313,
+      "approachSpurLengthM": 64,
+      "totalM": 1377,
+      "accessRoad": "ROAD-GEZHI-W",
+      "routeRoadIDs": [
+        "ROAD-WEST-GATE",
+        "ROAD-QINGNIAN-W-FEED",
+        "ROAD-BOYA-RING-W",
+        "ROAD-GEZHI-W"
+      ],
+      "routeRoadCount": 4,
+      "physicalDriveabilityApproved": false,
+      "legalGateOpeningVerified": false,
+      "fireEmergencyClearanceApproved": false
+    },
+    {
+      "buildingID": "MAT-02",
+      "entranceCandidateID": "ENT-MAT-02-MAIN-CANDIDATE",
+      "originalClass": "CLEARANCE_PRECHECK_ONLY",
+      "chosenSourceStage": "R7-SOLVE-11",
+      "precheckedSpurQuality": "ORIGINAL_SHORT_SPUR_2D_PRESCREEN",
+      "rootGate": "WEST_GATE_GEOMETRY_ROOT",
+      "fromXZ": [
+        -1548,
+        -80
+      ],
+      "roadDistanceM": 1438,
+      "approachSpurLengthM": 70,
+      "totalM": 1508,
+      "accessRoad": "ROAD-GEZHI-W",
+      "routeRoadIDs": [
+        "ROAD-WEST-GATE",
+        "ROAD-QINGNIAN-W-FEED",
+        "ROAD-BOYA-RING-W",
+        "ROAD-GEZHI-W"
+      ],
+      "routeRoadCount": 4,
+      "physicalDriveabilityApproved": false,
+      "legalGateOpeningVerified": false,
+      "fireEmergencyClearanceApproved": false
+    },
+    {
+      "buildingID": "NUC-01",
+      "entranceCandidateID": "ENT-NUC-01-MAIN-CANDIDATE",
+      "originalClass": "CLEARANCE_PRECHECK_ONLY",
+      "chosenSourceStage": "R7-SOLVE-11",
+      "precheckedSpurQuality": "ORIGINAL_SHORT_SPUR_2D_PRESCREEN",
+      "rootGate": "WEST_GATE_GEOMETRY_ROOT",
+      "fromXZ": [
+        -1548,
+        -80
+      ],
+      "roadDistanceM": 903,
+      "approachSpurLengthM": 65,
+      "totalM": 968,
+      "accessRoad": "ROAD-BOYA-RING-W",
+      "routeRoadIDs": [
+        "ROAD-WEST-GATE",
+        "ROAD-QINGNIAN-W-FEED",
+        "ROAD-BOYA-RING-W"
+      ],
+      "routeRoadCount": 3,
+      "physicalDriveabilityApproved": false,
+      "legalGateOpeningVerified": false,
+      "fireEmergencyClearanceApproved": false
+    },
+    {
+      "buildingID": "NUC-02",
+      "entranceCandidateID": "ENT-NUC-02-MAIN-CANDIDATE",
+      "originalClass": "CLEARANCE_PRECHECK_ONLY",
+      "chosenSourceStage": "R7-SOLVE-11",
+      "precheckedSpurQuality": "ORIGINAL_SHORT_SPUR_2D_PRESCREEN",
+      "rootGate": "WEST_GATE_GEOMETRY_ROOT",
+      "fromXZ": [
+        -1548,
+        -80
+      ],
+      "roadDistanceM": 1018,
+      "approachSpurLengthM": 65,
+      "totalM": 1083,
+      "accessRoad": "ROAD-BOYA-RING-W",
+      "routeRoadIDs": [
+        "ROAD-WEST-GATE",
+        "ROAD-QINGNIAN-W-FEED",
+        "ROAD-BOYA-RING-W"
+      ],
+      "routeRoadCount": 3,
+      "physicalDriveabilityApproved": false,
+      "legalGateOpeningVerified": false,
+      "fireEmergencyClearanceApproved": false
+    },
+    {
+      "buildingID": "NUC-03",
+      "entranceCandidateID": "ENT-NUC-03-MAIN-CANDIDATE",
+      "originalClass": "CLEARANCE_PRECHECK_ONLY",
+      "chosenSourceStage": "R7-SOLVE-11",
+      "precheckedSpurQuality": "ORIGINAL_SHORT_SPUR_2D_PRESCREEN",
+      "rootGate": "WEST_GATE_GEOMETRY_ROOT",
+      "fromXZ": [
+        -1548,
+        -80
+      ],
+      "roadDistanceM": 1133,
+      "approachSpurLengthM": 67,
+      "totalM": 1200,
+      "accessRoad": "ROAD-BOYA-RING-W",
+      "routeRoadIDs": [
+        "ROAD-WEST-GATE",
+        "ROAD-QINGNIAN-W-FEED",
+        "ROAD-BOYA-RING-W"
+      ],
+      "routeRoadCount": 3,
+      "physicalDriveabilityApproved": false,
+      "legalGateOpeningVerified": false,
+      "fireEmergencyClearanceApproved": false
+    },
+    {
+      "buildingID": "OPS-02",
+      "entranceCandidateID": "ENT-OPS-02-MAIN-CANDIDATE",
+      "originalClass": "NETWORK_EXTENSION_REQUIRED",
+      "chosenSourceStage": "R7-SOLVE-12",
+      "precheckedSpurQuality": "UPSTREAM_2D_SHORTENING_PROBE",
+      "rootGate": "EAST_GATE_GEOMETRY_ROOT",
+      "fromXZ": [
+        1555,
+        120
+      ],
+      "roadDistanceM": 2005,
+      "approachSpurLengthM": 61,
+      "totalM": 2066,
+      "accessRoad": "ROAD-R7-S12-OPS-SOUTH-SERVICE",
+      "routeRoadIDs": [
+        "ROAD-EAST-GATE",
+        "ROAD-QINGNIAN-E",
+        "ROAD-R7-S13-E-SOUTH",
+        "ROAD-BOYA-RING-E",
+        "ROAD-R7-S12-OPS-NORTH-SERVICE",
+        "ROAD-R7-S12-OPS-SOUTH-SERVICE"
+      ],
+      "routeRoadCount": 6,
+      "physicalDriveabilityApproved": false,
+      "legalGateOpeningVerified": false,
+      "fireEmergencyClearanceApproved": false
+    },
+    {
+      "buildingID": "PE-01",
+      "entranceCandidateID": "ENT-PE-01-MAIN-CANDIDATE",
+      "originalClass": "CLEARANCE_PRECHECK_ONLY",
+      "chosenSourceStage": "R7-SOLVE-11",
+      "precheckedSpurQuality": "ORIGINAL_SHORT_SPUR_2D_PRESCREEN",
+      "rootGate": "WEST_GATE_GEOMETRY_ROOT",
+      "fromXZ": [
+        -1548,
+        -80
+      ],
+      "roadDistanceM": 1988,
+      "approachSpurLengthM": 70,
+      "totalM": 2058,
+      "accessRoad": "ROAD-BOYA-RING-N",
+      "routeRoadIDs": [
+        "ROAD-WEST-GATE",
+        "ROAD-QINGNIAN-W-FEED",
+        "ROAD-BOYA-RING-W",
+        "ROAD-BOYA-RING-NW-H",
+        "ROAD-BOYA-RING-NW-V",
+        "ROAD-BOYA-RING-N"
+      ],
+      "routeRoadCount": 6,
+      "physicalDriveabilityApproved": false,
+      "legalGateOpeningVerified": false,
+      "fireEmergencyClearanceApproved": false
+    },
+    {
+      "buildingID": "PH-02",
+      "entranceCandidateID": "ENT-PH-02-MAIN-CANDIDATE",
+      "originalClass": "CLEARANCE_PRECHECK_ONLY",
+      "chosenSourceStage": "R7-SOLVE-11",
+      "precheckedSpurQuality": "ORIGINAL_SHORT_SPUR_2D_PRESCREEN",
+      "rootGate": "WEST_GATE_GEOMETRY_ROOT",
+      "fromXZ": [
+        -1548,
+        -80
+      ],
+      "roadDistanceM": 1515.68,
+      "approachSpurLengthM": 52.32,
+      "totalM": 1568,
+      "accessRoad": "ROAD-BOYA-RING-SW-H",
+      "routeRoadIDs": [
+        "ROAD-WEST-GATE",
+        "ROAD-QINGNIAN-W-FEED",
+        "ROAD-BOYA-RING-W",
+        "ROAD-BOYA-RING-SW-H"
+      ],
+      "routeRoadCount": 4,
+      "physicalDriveabilityApproved": false,
+      "legalGateOpeningVerified": false,
+      "fireEmergencyClearanceApproved": false
+    },
+    {
+      "buildingID": "PHA-02",
+      "entranceCandidateID": "ENT-PHA-02-MAIN-CANDIDATE",
+      "originalClass": "CLEARANCE_PRECHECK_ONLY",
+      "chosenSourceStage": "R7-SOLVE-11",
+      "precheckedSpurQuality": "ORIGINAL_SHORT_SPUR_2D_PRESCREEN",
+      "rootGate": "WEST_GATE_GEOMETRY_ROOT",
+      "fromXZ": [
+        -1548,
+        -80
+      ],
+      "roadDistanceM": 1358,
+      "approachSpurLengthM": 52.37,
+      "totalM": 1410.37,
+      "accessRoad": "ROAD-BOYA-RING-W",
+      "routeRoadIDs": [
+        "ROAD-WEST-GATE",
+        "ROAD-QINGNIAN-W-FEED",
+        "ROAD-BOYA-RING-W"
+      ],
+      "routeRoadCount": 3,
+      "physicalDriveabilityApproved": false,
+      "legalGateOpeningVerified": false,
+      "fireEmergencyClearanceApproved": false
+    },
+    {
+      "buildingID": "PHY-01",
+      "entranceCandidateID": "ENT-PHY-01-MAIN-CANDIDATE",
+      "originalClass": "CLEARANCE_PRECHECK_ONLY",
+      "chosenSourceStage": "R7-SOLVE-11",
+      "precheckedSpurQuality": "ORIGINAL_SHORT_SPUR_2D_PRESCREEN",
+      "rootGate": "WEST_GATE_GEOMETRY_ROOT",
+      "fromXZ": [
+        -1548,
+        -80
+      ],
+      "roadDistanceM": 2163,
+      "approachSpurLengthM": 24,
+      "totalM": 2187,
+      "accessRoad": "ROAD-BOYA-RING-N",
+      "routeRoadIDs": [
+        "ROAD-WEST-GATE",
+        "ROAD-QINGNIAN-W-FEED",
+        "ROAD-BOYA-RING-W",
+        "ROAD-BOYA-RING-NW-H",
+        "ROAD-BOYA-RING-NW-V",
+        "ROAD-BOYA-RING-N"
+      ],
+      "routeRoadCount": 6,
+      "physicalDriveabilityApproved": false,
+      "legalGateOpeningVerified": false,
+      "fireEmergencyClearanceApproved": false
+    },
+    {
+      "buildingID": "RDI-01",
+      "entranceCandidateID": "ENT-RDI-01-MAIN-CANDIDATE",
+      "originalClass": "CLEARANCE_PRECHECK_ONLY",
+      "chosenSourceStage": "R7-SOLVE-11",
+      "precheckedSpurQuality": "ORIGINAL_SHORT_SPUR_2D_PRESCREEN",
+      "rootGate": "WEST_GATE_GEOMETRY_ROOT",
+      "fromXZ": [
+        -1548,
+        -80
+      ],
+      "roadDistanceM": 1643,
+      "approachSpurLengthM": 70,
+      "totalM": 1713,
+      "accessRoad": "ROAD-BOYA-RING-N",
+      "routeRoadIDs": [
+        "ROAD-WEST-GATE",
+        "ROAD-QINGNIAN-W-FEED",
+        "ROAD-BOYA-RING-W",
+        "ROAD-BOYA-RING-NW-H",
+        "ROAD-BOYA-RING-NW-V",
+        "ROAD-BOYA-RING-N"
+      ],
+      "routeRoadCount": 6,
+      "physicalDriveabilityApproved": false,
+      "legalGateOpeningVerified": false,
+      "fireEmergencyClearanceApproved": false
+    },
+    {
+      "buildingID": "RDI-02",
+      "entranceCandidateID": "ENT-RDI-02-MAIN-CANDIDATE",
+      "originalClass": "LONG_ACCESS_SPUR_REVIEW",
+      "chosenSourceStage": "R7-SOLVE-12",
+      "precheckedSpurQuality": "UPSTREAM_2D_SHORTENING_PROBE",
+      "rootGate": "WEST_GATE_GEOMETRY_ROOT",
+      "fromXZ": [
+        -1548,
+        -80
+      ],
+      "roadDistanceM": 1418,
+      "approachSpurLengthM": 15,
+      "totalM": 1433,
+      "accessRoad": "ROAD-R7-S12-RDI-ACCESS-LINK",
+      "routeRoadIDs": [
+        "ROAD-WEST-GATE",
+        "ROAD-QINGNIAN-W",
+        "ROAD-CHUANGXIN-CONN",
+        "ROAD-CHUANGXIN",
+        "ROAD-R7-S12-RDI-ACCESS-LINK"
+      ],
+      "routeRoadCount": 5,
+      "physicalDriveabilityApproved": false,
+      "legalGateOpeningVerified": false,
+      "fireEmergencyClearanceApproved": false
+    },
+    {
+      "buildingID": "RDI-03",
+      "entranceCandidateID": "ENT-RDI-03-MAIN-CANDIDATE",
+      "originalClass": "CORRIDOR_CONFLICT",
+      "chosenSourceStage": "R7-SOLVE-12",
+      "precheckedSpurQuality": "UPSTREAM_2D_SHORTENING_PROBE",
+      "rootGate": "WEST_GATE_GEOMETRY_ROOT",
+      "fromXZ": [
+        -1548,
+        -80
+      ],
+      "roadDistanceM": 1638,
+      "approachSpurLengthM": 75,
+      "totalM": 1713,
+      "accessRoad": "ROAD-R7-S12-RDI-NORTH-SERVICE",
+      "routeRoadIDs": [
+        "ROAD-WEST-GATE",
+        "ROAD-QINGNIAN-W",
+        "ROAD-CHUANGXIN-CONN",
+        "ROAD-CHUANGXIN",
+        "ROAD-R7-S12-RDI-ACCESS-LINK",
+        "ROAD-R7-S12-RDI-NORTH-SERVICE"
+      ],
+      "routeRoadCount": 6,
+      "physicalDriveabilityApproved": false,
+      "legalGateOpeningVerified": false,
+      "fireEmergencyClearanceApproved": false
+    },
+    {
+      "buildingID": "RDI-10",
+      "entranceCandidateID": "ENT-RDI-10-MAIN-CANDIDATE",
+      "originalClass": "CORRIDOR_CONFLICT",
+      "chosenSourceStage": "R7-SOLVE-12",
+      "precheckedSpurQuality": "UPSTREAM_2D_SHORTENING_PROBE",
+      "rootGate": "WEST_GATE_GEOMETRY_ROOT",
+      "fromXZ": [
+        -1548,
+        -80
+      ],
+      "roadDistanceM": 1593,
+      "approachSpurLengthM": 10,
+      "totalM": 1603,
+      "accessRoad": "ROAD-R7-S12-RDI-NORTH-SERVICE",
+      "routeRoadIDs": [
+        "ROAD-WEST-GATE",
+        "ROAD-QINGNIAN-W",
+        "ROAD-CHUANGXIN-CONN",
+        "ROAD-CHUANGXIN",
+        "ROAD-R7-S12-RDI-ACCESS-LINK",
+        "ROAD-R7-S12-RDI-NORTH-SERVICE"
+      ],
+      "routeRoadCount": 6,
+      "physicalDriveabilityApproved": false,
+      "legalGateOpeningVerified": false,
+      "fireEmergencyClearanceApproved": false
+    },
+    {
+      "buildingID": "RDI-11",
+      "entranceCandidateID": "ENT-RDI-11-MAIN-CANDIDATE",
+      "originalClass": "NETWORK_EXTENSION_REQUIRED",
+      "chosenSourceStage": "R7-SOLVE-12",
+      "precheckedSpurQuality": "UPSTREAM_2D_SHORTENING_PROBE",
+      "rootGate": "WEST_GATE_GEOMETRY_ROOT",
+      "fromXZ": [
+        -1548,
+        -80
+      ],
+      "roadDistanceM": 1743,
+      "approachSpurLengthM": 30,
+      "totalM": 1773,
+      "accessRoad": "ROAD-R7-S12-RDI-NORTH-SERVICE",
+      "routeRoadIDs": [
+        "ROAD-WEST-GATE",
+        "ROAD-QINGNIAN-W",
+        "ROAD-CHUANGXIN-CONN",
+        "ROAD-CHUANGXIN",
+        "ROAD-R7-S12-RDI-ACCESS-LINK",
+        "ROAD-R7-S12-RDI-NORTH-SERVICE"
+      ],
+      "routeRoadCount": 6,
+      "physicalDriveabilityApproved": false,
+      "legalGateOpeningVerified": false,
+      "fireEmergencyClearanceApproved": false
+    },
+    {
+      "buildingID": "RDI-12",
+      "entranceCandidateID": "ENT-RDI-12-MAIN-CANDIDATE",
+      "originalClass": "CORRIDOR_CONFLICT",
+      "chosenSourceStage": "R7-SOLVE-12",
+      "precheckedSpurQuality": "UPSTREAM_2D_SHORTENING_PROBE",
+      "rootGate": "WEST_GATE_GEOMETRY_ROOT",
+      "fromXZ": [
+        -1548,
+        -80
+      ],
+      "roadDistanceM": 1893,
+      "approachSpurLengthM": 35,
+      "totalM": 1928,
+      "accessRoad": "ROAD-R7-S12-RDI-NORTH-SERVICE",
+      "routeRoadIDs": [
+        "ROAD-WEST-GATE",
+        "ROAD-QINGNIAN-W",
+        "ROAD-CHUANGXIN-CONN",
+        "ROAD-CHUANGXIN",
+        "ROAD-R7-S12-RDI-ACCESS-LINK",
+        "ROAD-R7-S12-RDI-NORTH-SERVICE"
+      ],
+      "routeRoadCount": 6,
+      "physicalDriveabilityApproved": false,
+      "legalGateOpeningVerified": false,
+      "fireEmergencyClearanceApproved": false
+    },
+    {
+      "buildingID": "RDI-13",
+      "entranceCandidateID": "ENT-RDI-13-MAIN-CANDIDATE",
+      "originalClass": "NETWORK_EXTENSION_REQUIRED",
+      "chosenSourceStage": "R7-SOLVE-12",
+      "precheckedSpurQuality": "UPSTREAM_2D_SHORTENING_PROBE",
+      "rootGate": "WEST_GATE_GEOMETRY_ROOT",
+      "fromXZ": [
+        -1548,
+        -80
+      ],
+      "roadDistanceM": 1990,
+      "approachSpurLengthM": 75,
+      "totalM": 2065,
+      "accessRoad": "ROAD-R7-S12-RDI-NORTH-SERVICE",
+      "routeRoadIDs": [
+        "ROAD-WEST-GATE",
+        "ROAD-QINGNIAN-W",
+        "ROAD-CHUANGXIN-CONN",
+        "ROAD-CHUANGXIN",
+        "ROAD-R7-S12-RDI-ACCESS-LINK",
+        "ROAD-R7-S12-RDI-NORTH-SERVICE"
+      ],
+      "routeRoadCount": 6,
+      "physicalDriveabilityApproved": false,
+      "legalGateOpeningVerified": false,
+      "fireEmergencyClearanceApproved": false
+    },
+    {
+      "buildingID": "RDI-14",
+      "entranceCandidateID": "ENT-RDI-14-MAIN-CANDIDATE",
+      "originalClass": "CLEARANCE_PRECHECK_ONLY",
+      "chosenSourceStage": "R7-SOLVE-11",
+      "precheckedSpurQuality": "ORIGINAL_SHORT_SPUR_2D_PRESCREEN",
+      "rootGate": "WEST_GATE_GEOMETRY_ROOT",
+      "fromXZ": [
+        -1548,
+        -80
+      ],
+      "roadDistanceM": 2083,
+      "approachSpurLengthM": 60,
+      "totalM": 2143,
+      "accessRoad": "ROAD-QINGNIAN-NW",
+      "routeRoadIDs": [
+        "ROAD-WEST-GATE",
+        "ROAD-QINGNIAN-W-FEED",
+        "ROAD-BOYA-RING-W",
+        "ROAD-BOYA-RING-NW-H",
+        "ROAD-BOYA-RING-NW-V",
+        "ROAD-BOYA-RING-N",
+        "ROAD-QINGNIAN-NW"
+      ],
+      "routeRoadCount": 7,
+      "physicalDriveabilityApproved": false,
+      "legalGateOpeningVerified": false,
+      "fireEmergencyClearanceApproved": false
+    },
+    {
+      "buildingID": "RES-E-G02",
+      "entranceCandidateID": "ENT-RES-E-G02-MAIN-CANDIDATE",
+      "originalClass": "CLEARANCE_PRECHECK_ONLY",
+      "chosenSourceStage": "R7-SOLVE-11",
+      "precheckedSpurQuality": "ORIGINAL_SHORT_SPUR_2D_PRESCREEN",
+      "rootGate": "EAST_GATE_GEOMETRY_ROOT",
+      "fromXZ": [
+        1555,
+        120
+      ],
+      "roadDistanceM": 294,
+      "approachSpurLengthM": 60,
+      "totalM": 354,
+      "accessRoad": "ROAD-QINGNIAN-E",
+      "routeRoadIDs": [
+        "ROAD-EAST-GATE",
+        "ROAD-QINGNIAN-E"
+      ],
+      "routeRoadCount": 2,
+      "physicalDriveabilityApproved": false,
+      "legalGateOpeningVerified": false,
+      "fireEmergencyClearanceApproved": false
+    },
+    {
+      "buildingID": "RES-E-G03",
+      "entranceCandidateID": "ENT-RES-E-G03-MAIN-CANDIDATE",
+      "originalClass": "CLEARANCE_PRECHECK_ONLY",
+      "chosenSourceStage": "R7-SOLVE-11",
+      "precheckedSpurQuality": "ORIGINAL_SHORT_SPUR_2D_PRESCREEN",
+      "rootGate": "EAST_GATE_GEOMETRY_ROOT",
+      "fromXZ": [
+        1555,
+        120
+      ],
+      "roadDistanceM": 475,
+      "approachSpurLengthM": 61,
+      "totalM": 536,
+      "accessRoad": "ROAD-QINGNIAN-E-FEED",
+      "routeRoadIDs": [
+        "ROAD-EAST-GATE",
+        "ROAD-QINGNIAN-E",
+        "ROAD-QINGNIAN-E-FEED"
+      ],
+      "routeRoadCount": 3,
+      "physicalDriveabilityApproved": false,
+      "legalGateOpeningVerified": false,
+      "fireEmergencyClearanceApproved": false
+    },
+    {
+      "buildingID": "RES-E-I01",
+      "entranceCandidateID": "ENT-RES-E-I01-MAIN-CANDIDATE",
+      "originalClass": "CLEARANCE_PRECHECK_ONLY",
+      "chosenSourceStage": "R7-SOLVE-11",
+      "precheckedSpurQuality": "ORIGINAL_SHORT_SPUR_2D_PRESCREEN",
+      "rootGate": "EAST_GATE_GEOMETRY_ROOT",
+      "fromXZ": [
+        1555,
+        120
+      ],
+      "roadDistanceM": 575,
+      "approachSpurLengthM": 42,
+      "totalM": 617,
+      "accessRoad": "ROAD-QINGNIAN-E-FEED",
+      "routeRoadIDs": [
+        "ROAD-EAST-GATE",
+        "ROAD-QINGNIAN-E",
+        "ROAD-QINGNIAN-E-FEED"
+      ],
+      "routeRoadCount": 3,
+      "physicalDriveabilityApproved": false,
+      "legalGateOpeningVerified": false,
+      "fireEmergencyClearanceApproved": false
+    },
+    {
+      "buildingID": "RES-E-U01",
+      "entranceCandidateID": "ENT-RES-E-U01-MAIN-CANDIDATE",
+      "originalClass": "CLEARANCE_PRECHECK_ONLY",
+      "chosenSourceStage": "R7-SOLVE-11",
+      "precheckedSpurQuality": "ORIGINAL_SHORT_SPUR_2D_PRESCREEN",
+      "rootGate": "EAST_GATE_GEOMETRY_ROOT",
+      "fromXZ": [
+        1555,
+        120
+      ],
+      "roadDistanceM": 325,
+      "approachSpurLengthM": 51,
+      "totalM": 376,
+      "accessRoad": "ROAD-QINGNIAN-E",
+      "routeRoadIDs": [
+        "ROAD-EAST-GATE",
+        "ROAD-QINGNIAN-E"
+      ],
+      "routeRoadCount": 2,
+      "physicalDriveabilityApproved": false,
+      "legalGateOpeningVerified": false,
+      "fireEmergencyClearanceApproved": false
+    },
+    {
+      "buildingID": "RES-E-U09",
+      "entranceCandidateID": "ENT-RES-E-U09-MAIN-CANDIDATE",
+      "originalClass": "CLEARANCE_PRECHECK_ONLY",
+      "chosenSourceStage": "R7-SOLVE-11",
+      "precheckedSpurQuality": "ORIGINAL_SHORT_SPUR_2D_PRESCREEN",
+      "rootGate": "EAST_GATE_GEOMETRY_ROOT",
+      "fromXZ": [
+        1555,
+        120
+      ],
+      "roadDistanceM": 276,
+      "approachSpurLengthM": 60,
+      "totalM": 336,
+      "accessRoad": "ROAD-QINGNIAN-E",
+      "routeRoadIDs": [
+        "ROAD-EAST-GATE",
+        "ROAD-QINGNIAN-E"
+      ],
+      "routeRoadCount": 2,
+      "physicalDriveabilityApproved": false,
+      "legalGateOpeningVerified": false,
+      "fireEmergencyClearanceApproved": false
+    },
+    {
+      "buildingID": "RES-N-G02",
+      "entranceCandidateID": "ENT-RES-N-G02-MAIN-CANDIDATE",
+      "originalClass": "NETWORK_EXTENSION_REQUIRED",
+      "chosenSourceStage": "R7-SOLVE-13",
+      "precheckedSpurQuality": "UPSTREAM_2D_SHORTENING_PROBE",
+      "rootGate": "EAST_GATE_GEOMETRY_ROOT",
+      "fromXZ": [
+        1555,
+        120
+      ],
+      "roadDistanceM": 1735,
+      "approachSpurLengthM": 51,
+      "totalM": 1786,
+      "accessRoad": "ROAD-R7-S13-N-EAST",
+      "routeRoadIDs": [
+        "ROAD-EAST-GATE",
+        "ROAD-QINGNIAN-E",
+        "ROAD-QINGNIAN-E-FEED",
+        "ROAD-BOYA-RING-E",
+        "ROAD-R7-S12-ART-BOYA-BACKSTAGE",
+        "ROAD-R7-S13-N-EAST"
+      ],
+      "routeRoadCount": 6,
+      "physicalDriveabilityApproved": false,
+      "legalGateOpeningVerified": false,
+      "fireEmergencyClearanceApproved": false
+    },
+    {
+      "buildingID": "RES-N-U01",
+      "entranceCandidateID": "ENT-RES-N-U01-MAIN-CANDIDATE",
+      "originalClass": "NETWORK_EXTENSION_REQUIRED",
+      "chosenSourceStage": "R7-SOLVE-12",
+      "precheckedSpurQuality": "UPSTREAM_2D_SHORTENING_PROBE",
+      "rootGate": "WEST_GATE_GEOMETRY_ROOT",
+      "fromXZ": [
+        -1548,
+        -80
+      ],
+      "roadDistanceM": 1843,
+      "approachSpurLengthM": 14,
+      "totalM": 1857,
+      "accessRoad": "ROAD-R7-S12-RDI-NORTH-SERVICE",
+      "routeRoadIDs": [
+        "ROAD-WEST-GATE",
+        "ROAD-QINGNIAN-W",
+        "ROAD-CHUANGXIN-CONN",
+        "ROAD-CHUANGXIN",
+        "ROAD-R7-S12-RDI-ACCESS-LINK",
+        "ROAD-R7-S12-RDI-NORTH-SERVICE"
+      ],
+      "routeRoadCount": 6,
+      "physicalDriveabilityApproved": false,
+      "legalGateOpeningVerified": false,
+      "fireEmergencyClearanceApproved": false
+    },
+    {
+      "buildingID": "RES-N-U02",
+      "entranceCandidateID": "ENT-RES-N-U02-MAIN-CANDIDATE",
+      "originalClass": "CORRIDOR_CONFLICT",
+      "chosenSourceStage": "R7-SOLVE-12",
+      "precheckedSpurQuality": "UPSTREAM_2D_SHORTENING_PROBE",
+      "rootGate": "WEST_GATE_GEOMETRY_ROOT",
+      "fromXZ": [
+        -1548,
+        -80
+      ],
+      "roadDistanceM": 1943,
+      "approachSpurLengthM": 14,
+      "totalM": 1957,
+      "accessRoad": "ROAD-R7-S12-RDI-NORTH-SERVICE",
+      "routeRoadIDs": [
+        "ROAD-WEST-GATE",
+        "ROAD-QINGNIAN-W",
+        "ROAD-CHUANGXIN-CONN",
+        "ROAD-CHUANGXIN",
+        "ROAD-R7-S12-RDI-ACCESS-LINK",
+        "ROAD-R7-S12-RDI-NORTH-SERVICE"
+      ],
+      "routeRoadCount": 6,
+      "physicalDriveabilityApproved": false,
+      "legalGateOpeningVerified": false,
+      "fireEmergencyClearanceApproved": false
+    },
+    {
+      "buildingID": "RES-N-U03",
+      "entranceCandidateID": "ENT-RES-N-U03-MAIN-CANDIDATE",
+      "originalClass": "CORRIDOR_CONFLICT",
+      "chosenSourceStage": "R7-SOLVE-12",
+      "precheckedSpurQuality": "UPSTREAM_2D_SHORTENING_PROBE",
+      "rootGate": "WEST_GATE_GEOMETRY_ROOT",
+      "fromXZ": [
+        -1548,
+        -80
+      ],
+      "roadDistanceM": 1823,
+      "approachSpurLengthM": 42,
+      "totalM": 1865,
+      "accessRoad": "ROAD-R7-S12-RDI-NORTH-SERVICE",
+      "routeRoadIDs": [
+        "ROAD-WEST-GATE",
+        "ROAD-QINGNIAN-W",
+        "ROAD-CHUANGXIN-CONN",
+        "ROAD-CHUANGXIN",
+        "ROAD-R7-S12-RDI-ACCESS-LINK",
+        "ROAD-R7-S12-RDI-NORTH-SERVICE"
+      ],
+      "routeRoadCount": 6,
+      "physicalDriveabilityApproved": false,
+      "legalGateOpeningVerified": false,
+      "fireEmergencyClearanceApproved": false
+    },
+    {
+      "buildingID": "RES-N-U04",
+      "entranceCandidateID": "ENT-RES-N-U04-MAIN-CANDIDATE",
+      "originalClass": "CORRIDOR_CONFLICT",
+      "chosenSourceStage": "R7-SOLVE-12",
+      "precheckedSpurQuality": "UPSTREAM_2D_SHORTENING_PROBE",
+      "rootGate": "WEST_GATE_GEOMETRY_ROOT",
+      "fromXZ": [
+        -1548,
+        -80
+      ],
+      "roadDistanceM": 2013,
+      "approachSpurLengthM": 71.18,
+      "totalM": 2084.18,
+      "accessRoad": "ROAD-R7-S12-RDI-NORTH-SERVICE",
+      "routeRoadIDs": [
+        "ROAD-WEST-GATE",
+        "ROAD-QINGNIAN-W",
+        "ROAD-CHUANGXIN-CONN",
+        "ROAD-CHUANGXIN",
+        "ROAD-R7-S12-RDI-ACCESS-LINK",
+        "ROAD-R7-S12-RDI-NORTH-SERVICE"
+      ],
+      "routeRoadCount": 6,
+      "physicalDriveabilityApproved": false,
+      "legalGateOpeningVerified": false,
+      "fireEmergencyClearanceApproved": false
+    },
+    {
+      "buildingID": "RES-N-U08",
+      "entranceCandidateID": "ENT-RES-N-U08-MAIN-CANDIDATE",
+      "originalClass": "NETWORK_EXTENSION_REQUIRED",
+      "chosenSourceStage": "R7-SOLVE-13",
+      "precheckedSpurQuality": "UPSTREAM_2D_SHORTENING_PROBE",
+      "rootGate": "EAST_GATE_GEOMETRY_ROOT",
+      "fromXZ": [
+        1555,
+        120
+      ],
+      "roadDistanceM": 1686,
+      "approachSpurLengthM": 100,
+      "totalM": 1786,
+      "accessRoad": "ROAD-R7-S13-N-EAST",
+      "routeRoadIDs": [
+        "ROAD-EAST-GATE",
+        "ROAD-QINGNIAN-E",
+        "ROAD-QINGNIAN-E-FEED",
+        "ROAD-BOYA-RING-E",
+        "ROAD-R7-S12-ART-BOYA-BACKSTAGE",
+        "ROAD-R7-S13-N-EAST"
+      ],
+      "routeRoadCount": 6,
+      "physicalDriveabilityApproved": false,
+      "legalGateOpeningVerified": false,
+      "fireEmergencyClearanceApproved": false
+    },
+    {
+      "buildingID": "RES-N-U09",
+      "entranceCandidateID": "ENT-RES-N-U09-MAIN-CANDIDATE",
+      "originalClass": "CORRIDOR_CONFLICT",
+      "chosenSourceStage": "R7-SOLVE-13",
+      "precheckedSpurQuality": "UPSTREAM_2D_SHORTENING_PROBE",
+      "rootGate": "EAST_GATE_GEOMETRY_ROOT",
+      "fromXZ": [
+        1555,
+        120
+      ],
+      "roadDistanceM": 1785,
+      "approachSpurLengthM": 81,
+      "totalM": 1866,
+      "accessRoad": "ROAD-R7-S13-N-EAST",
+      "routeRoadIDs": [
+        "ROAD-EAST-GATE",
+        "ROAD-QINGNIAN-E",
+        "ROAD-QINGNIAN-E-FEED",
+        "ROAD-BOYA-RING-E",
+        "ROAD-R7-S12-ART-BOYA-BACKSTAGE",
+        "ROAD-R7-S13-N-EAST"
+      ],
+      "routeRoadCount": 6,
+      "physicalDriveabilityApproved": false,
+      "legalGateOpeningVerified": false,
+      "fireEmergencyClearanceApproved": false
+    },
+    {
+      "buildingID": "RES-S-I03",
+      "entranceCandidateID": "ENT-RES-S-I03-MAIN-CANDIDATE",
+      "originalClass": "LONG_ACCESS_SPUR_REVIEW",
+      "chosenSourceStage": "R7-SOLVE-13",
+      "precheckedSpurQuality": "UPSTREAM_2D_SHORTENING_PROBE",
+      "rootGate": "EAST_GATE_GEOMETRY_ROOT",
+      "fromXZ": [
+        1555,
+        120
+      ],
+      "roadDistanceM": 2230,
+      "approachSpurLengthM": 65.49,
+      "totalM": 2295.49,
+      "accessRoad": "ROAD-R7-S13-S-EAST",
+      "routeRoadIDs": [
+        "ROAD-EAST-GATE",
+        "ROAD-QINGNIAN-E",
+        "ROAD-R7-S13-E-SOUTH",
+        "ROAD-BOYA-RING-E",
+        "ROAD-BOYA-RING-SE",
+        "ROAD-QINGNIAN-S-E",
+        "ROAD-QINGNIAN-S",
+        "ROAD-R7-S13-S-EAST"
+      ],
+      "routeRoadCount": 8,
+      "physicalDriveabilityApproved": false,
+      "legalGateOpeningVerified": false,
+      "fireEmergencyClearanceApproved": false
+    },
+    {
+      "buildingID": "RES-S-U01",
+      "entranceCandidateID": "ENT-RES-S-U01-MAIN-CANDIDATE",
+      "originalClass": "CLEARANCE_PRECHECK_ONLY",
+      "chosenSourceStage": "R7-SOLVE-11",
+      "precheckedSpurQuality": "ORIGINAL_SHORT_SPUR_2D_PRESCREEN",
+      "rootGate": "EAST_GATE_GEOMETRY_ROOT",
+      "fromXZ": [
+        1555,
+        120
+      ],
+      "roadDistanceM": 2405,
+      "approachSpurLengthM": 49,
+      "totalM": 2454,
+      "accessRoad": "ROAD-QINGNIAN-S",
+      "routeRoadIDs": [
+        "ROAD-EAST-GATE",
+        "ROAD-QINGNIAN-E",
+        "ROAD-R7-S13-E-SOUTH",
+        "ROAD-BOYA-RING-E",
+        "ROAD-BOYA-RING-SE",
+        "ROAD-QINGNIAN-S-E",
+        "ROAD-QINGNIAN-S"
+      ],
+      "routeRoadCount": 7,
+      "physicalDriveabilityApproved": false,
+      "legalGateOpeningVerified": false,
+      "fireEmergencyClearanceApproved": false
+    },
+    {
+      "buildingID": "RES-S-U02",
+      "entranceCandidateID": "ENT-RES-S-U02-MAIN-CANDIDATE",
+      "originalClass": "CLEARANCE_PRECHECK_ONLY",
+      "chosenSourceStage": "R7-SOLVE-11",
+      "precheckedSpurQuality": "ORIGINAL_SHORT_SPUR_2D_PRESCREEN",
+      "rootGate": "EAST_GATE_GEOMETRY_ROOT",
+      "fromXZ": [
+        1555,
+        120
+      ],
+      "roadDistanceM": 2185,
+      "approachSpurLengthM": 49,
+      "totalM": 2234,
+      "accessRoad": "ROAD-QINGNIAN-S",
+      "routeRoadIDs": [
+        "ROAD-EAST-GATE",
+        "ROAD-QINGNIAN-E",
+        "ROAD-R7-S13-E-SOUTH",
+        "ROAD-BOYA-RING-E",
+        "ROAD-BOYA-RING-SE",
+        "ROAD-QINGNIAN-S-E",
+        "ROAD-QINGNIAN-S"
+      ],
+      "routeRoadCount": 7,
+      "physicalDriveabilityApproved": false,
+      "legalGateOpeningVerified": false,
+      "fireEmergencyClearanceApproved": false
+    },
+    {
+      "buildingID": "RES-S-U03",
+      "entranceCandidateID": "ENT-RES-S-U03-MAIN-CANDIDATE",
+      "originalClass": "CLEARANCE_PRECHECK_ONLY",
+      "chosenSourceStage": "R7-SOLVE-11",
+      "precheckedSpurQuality": "ORIGINAL_SHORT_SPUR_2D_PRESCREEN",
+      "rootGate": "EAST_GATE_GEOMETRY_ROOT",
+      "fromXZ": [
+        1555,
+        120
+      ],
+      "roadDistanceM": 2305,
+      "approachSpurLengthM": 29,
+      "totalM": 2334,
+      "accessRoad": "ROAD-QINGNIAN-S",
+      "routeRoadIDs": [
+        "ROAD-EAST-GATE",
+        "ROAD-QINGNIAN-E",
+        "ROAD-R7-S13-E-SOUTH",
+        "ROAD-BOYA-RING-E",
+        "ROAD-BOYA-RING-SE",
+        "ROAD-QINGNIAN-S-E",
+        "ROAD-QINGNIAN-S"
+      ],
+      "routeRoadCount": 7,
+      "physicalDriveabilityApproved": false,
+      "legalGateOpeningVerified": false,
+      "fireEmergencyClearanceApproved": false
+    },
+    {
+      "buildingID": "RES-S-U04",
+      "entranceCandidateID": "ENT-RES-S-U04-MAIN-CANDIDATE",
+      "originalClass": "CLEARANCE_PRECHECK_ONLY",
+      "chosenSourceStage": "R7-SOLVE-11",
+      "precheckedSpurQuality": "ORIGINAL_SHORT_SPUR_2D_PRESCREEN",
+      "rootGate": "EAST_GATE_GEOMETRY_ROOT",
+      "fromXZ": [
+        1555,
+        120
+      ],
+      "roadDistanceM": 2085,
+      "approachSpurLengthM": 29,
+      "totalM": 2114,
+      "accessRoad": "ROAD-QINGNIAN-S",
+      "routeRoadIDs": [
+        "ROAD-EAST-GATE",
+        "ROAD-QINGNIAN-E",
+        "ROAD-R7-S13-E-SOUTH",
+        "ROAD-BOYA-RING-E",
+        "ROAD-BOYA-RING-SE",
+        "ROAD-QINGNIAN-S-E",
+        "ROAD-QINGNIAN-S"
+      ],
+      "routeRoadCount": 7,
+      "physicalDriveabilityApproved": false,
+      "legalGateOpeningVerified": false,
+      "fireEmergencyClearanceApproved": false
+    },
+    {
+      "buildingID": "RES-S-U05",
+      "entranceCandidateID": "ENT-RES-S-U05-MAIN-CANDIDATE",
+      "originalClass": "CLEARANCE_PRECHECK_ONLY",
+      "chosenSourceStage": "R7-SOLVE-11",
+      "precheckedSpurQuality": "ORIGINAL_SHORT_SPUR_2D_PRESCREEN",
+      "rootGate": "EAST_GATE_GEOMETRY_ROOT",
+      "fromXZ": [
+        1555,
+        120
+      ],
+      "roadDistanceM": 2025,
+      "approachSpurLengthM": 29,
+      "totalM": 2054,
+      "accessRoad": "ROAD-QINGNIAN-S",
+      "routeRoadIDs": [
+        "ROAD-EAST-GATE",
+        "ROAD-QINGNIAN-E",
+        "ROAD-R7-S13-E-SOUTH",
+        "ROAD-BOYA-RING-E",
+        "ROAD-BOYA-RING-SE",
+        "ROAD-QINGNIAN-S-E",
+        "ROAD-QINGNIAN-S"
+      ],
+      "routeRoadCount": 7,
+      "physicalDriveabilityApproved": false,
+      "legalGateOpeningVerified": false,
+      "fireEmergencyClearanceApproved": false
+    },
+    {
+      "buildingID": "RES-S-U06",
+      "entranceCandidateID": "ENT-RES-S-U06-MAIN-CANDIDATE",
+      "originalClass": "CLEARANCE_PRECHECK_ONLY",
+      "chosenSourceStage": "R7-SOLVE-11",
+      "precheckedSpurQuality": "ORIGINAL_SHORT_SPUR_2D_PRESCREEN",
+      "rootGate": "EAST_GATE_GEOMETRY_ROOT",
+      "fromXZ": [
+        1555,
+        120
+      ],
+      "roadDistanceM": 2425,
+      "approachSpurLengthM": 49,
+      "totalM": 2474,
+      "accessRoad": "ROAD-QINGNIAN-S",
+      "routeRoadIDs": [
+        "ROAD-EAST-GATE",
+        "ROAD-QINGNIAN-E",
+        "ROAD-R7-S13-E-SOUTH",
+        "ROAD-BOYA-RING-E",
+        "ROAD-BOYA-RING-SE",
+        "ROAD-QINGNIAN-S-E",
+        "ROAD-QINGNIAN-S"
+      ],
+      "routeRoadCount": 7,
+      "physicalDriveabilityApproved": false,
+      "legalGateOpeningVerified": false,
+      "fireEmergencyClearanceApproved": false
+    },
+    {
+      "buildingID": "RES-S-U07",
+      "entranceCandidateID": "ENT-RES-S-U07-MAIN-CANDIDATE",
+      "originalClass": "CLEARANCE_PRECHECK_ONLY",
+      "chosenSourceStage": "R7-SOLVE-11",
+      "precheckedSpurQuality": "ORIGINAL_SHORT_SPUR_2D_PRESCREEN",
+      "rootGate": "EAST_GATE_GEOMETRY_ROOT",
+      "fromXZ": [
+        1555,
+        120
+      ],
+      "roadDistanceM": 2356,
+      "approachSpurLengthM": 60,
+      "totalM": 2416,
+      "accessRoad": "ROAD-QINGNIAN-S",
+      "routeRoadIDs": [
+        "ROAD-EAST-GATE",
+        "ROAD-QINGNIAN-E",
+        "ROAD-R7-S13-E-SOUTH",
+        "ROAD-BOYA-RING-E",
+        "ROAD-BOYA-RING-SE",
+        "ROAD-QINGNIAN-S-E",
+        "ROAD-QINGNIAN-S"
+      ],
+      "routeRoadCount": 7,
+      "physicalDriveabilityApproved": false,
+      "legalGateOpeningVerified": false,
+      "fireEmergencyClearanceApproved": false
+    },
+    {
+      "buildingID": "RES-S-U08",
+      "entranceCandidateID": "ENT-RES-S-U08-MAIN-CANDIDATE",
+      "originalClass": "CLEARANCE_PRECHECK_ONLY",
+      "chosenSourceStage": "R7-SOLVE-11",
+      "precheckedSpurQuality": "ORIGINAL_SHORT_SPUR_2D_PRESCREEN",
+      "rootGate": "EAST_GATE_GEOMETRY_ROOT",
+      "fromXZ": [
+        1555,
+        120
+      ],
+      "roadDistanceM": 2294,
+      "approachSpurLengthM": 60,
+      "totalM": 2354,
+      "accessRoad": "ROAD-QINGNIAN-S",
+      "routeRoadIDs": [
+        "ROAD-EAST-GATE",
+        "ROAD-QINGNIAN-E",
+        "ROAD-R7-S13-E-SOUTH",
+        "ROAD-BOYA-RING-E",
+        "ROAD-BOYA-RING-SE",
+        "ROAD-QINGNIAN-S-E",
+        "ROAD-QINGNIAN-S"
+      ],
+      "routeRoadCount": 7,
+      "physicalDriveabilityApproved": false,
+      "legalGateOpeningVerified": false,
+      "fireEmergencyClearanceApproved": false
+    },
+    {
+      "buildingID": "RES-S-U09",
+      "entranceCandidateID": "ENT-RES-S-U09-MAIN-CANDIDATE",
+      "originalClass": "CLEARANCE_PRECHECK_ONLY",
+      "chosenSourceStage": "R7-SOLVE-11",
+      "precheckedSpurQuality": "ORIGINAL_SHORT_SPUR_2D_PRESCREEN",
+      "rootGate": "EAST_GATE_GEOMETRY_ROOT",
+      "fromXZ": [
+        1555,
+        120
+      ],
+      "roadDistanceM": 1645,
+      "approachSpurLengthM": 51,
+      "totalM": 1696,
+      "accessRoad": "ROAD-BOYA-RING-E",
+      "routeRoadIDs": [
+        "ROAD-EAST-GATE",
+        "ROAD-QINGNIAN-E",
+        "ROAD-R7-S13-E-SOUTH",
+        "ROAD-BOYA-RING-E"
+      ],
+      "routeRoadCount": 4,
+      "physicalDriveabilityApproved": false,
+      "legalGateOpeningVerified": false,
+      "fireEmergencyClearanceApproved": false
+    },
+    {
+      "buildingID": "RES-S-U10",
+      "entranceCandidateID": "ENT-RES-S-U10-MAIN-CANDIDATE",
+      "originalClass": "NETWORK_EXTENSION_REQUIRED",
+      "chosenSourceStage": "R7-SOLVE-13",
+      "precheckedSpurQuality": "UPSTREAM_2D_SHORTENING_PROBE",
+      "rootGate": "EAST_GATE_GEOMETRY_ROOT",
+      "fromXZ": [
+        1555,
+        120
+      ],
+      "roadDistanceM": 2640,
+      "approachSpurLengthM": 66,
+      "totalM": 2706,
+      "accessRoad": "ROAD-R7-S13-S-WEST",
+      "routeRoadIDs": [
+        "ROAD-EAST-GATE",
+        "ROAD-QINGNIAN-E",
+        "ROAD-R7-S13-E-SOUTH",
+        "ROAD-BOYA-RING-E",
+        "ROAD-BOYA-RING-SE",
+        "ROAD-QINGNIAN-S-E",
+        "ROAD-QINGNIAN-S",
+        "ROAD-R7-S13-S-WEST"
+      ],
+      "routeRoadCount": 8,
+      "physicalDriveabilityApproved": false,
+      "legalGateOpeningVerified": false,
+      "fireEmergencyClearanceApproved": false
+    },
+    {
+      "buildingID": "RES-W-G01",
+      "entranceCandidateID": "ENT-RES-W-G01-MAIN-CANDIDATE",
+      "originalClass": "CLEARANCE_PRECHECK_ONLY",
+      "chosenSourceStage": "R7-SOLVE-11",
+      "precheckedSpurQuality": "ORIGINAL_SHORT_SPUR_2D_PRESCREEN",
+      "rootGate": "WEST_GATE_GEOMETRY_ROOT",
+      "fromXZ": [
+        -1548,
+        -80
+      ],
+      "roadDistanceM": 1107,
+      "approachSpurLengthM": 60,
+      "totalM": 1167,
+      "accessRoad": "ROAD-CHUANGXIN",
+      "routeRoadIDs": [
+        "ROAD-WEST-GATE",
+        "ROAD-QINGNIAN-W",
+        "ROAD-CHUANGXIN-CONN",
+        "ROAD-CHUANGXIN"
+      ],
+      "routeRoadCount": 4,
+      "physicalDriveabilityApproved": false,
+      "legalGateOpeningVerified": false,
+      "fireEmergencyClearanceApproved": false
+    },
+    {
+      "buildingID": "RES-W-G03",
+      "entranceCandidateID": "ENT-RES-W-G03-MAIN-CANDIDATE",
+      "originalClass": "LONG_ACCESS_SPUR_REVIEW",
+      "chosenSourceStage": "R7-SOLVE-12",
+      "precheckedSpurQuality": "UPSTREAM_2D_SHORTENING_PROBE",
+      "rootGate": "WEST_GATE_GEOMETRY_ROOT",
+      "fromXZ": [
+        -1548,
+        -80
+      ],
+      "roadDistanceM": 1313,
+      "approachSpurLengthM": 56,
+      "totalM": 1369,
+      "accessRoad": "ROAD-R7-S12-RDI-ACCESS-LINK",
+      "routeRoadIDs": [
+        "ROAD-WEST-GATE",
+        "ROAD-QINGNIAN-W",
+        "ROAD-CHUANGXIN-CONN",
+        "ROAD-CHUANGXIN",
+        "ROAD-R7-S12-RDI-ACCESS-LINK"
+      ],
+      "routeRoadCount": 5,
+      "physicalDriveabilityApproved": false,
+      "legalGateOpeningVerified": false,
+      "fireEmergencyClearanceApproved": false
+    },
+    {
+      "buildingID": "RES-W-U02",
+      "entranceCandidateID": "ENT-RES-W-U02-MAIN-CANDIDATE",
+      "originalClass": "CLEARANCE_PRECHECK_ONLY",
+      "chosenSourceStage": "R7-SOLVE-11",
+      "precheckedSpurQuality": "ORIGINAL_SHORT_SPUR_2D_PRESCREEN",
+      "rootGate": "WEST_GATE_GEOMETRY_ROOT",
+      "fromXZ": [
+        -1548,
+        -80
+      ],
+      "roadDistanceM": 608,
+      "approachSpurLengthM": 41,
+      "totalM": 649,
+      "accessRoad": "ROAD-QINGNIAN-W",
+      "routeRoadIDs": [
+        "ROAD-WEST-GATE",
+        "ROAD-QINGNIAN-W"
+      ],
+      "routeRoadCount": 2,
+      "physicalDriveabilityApproved": false,
+      "legalGateOpeningVerified": false,
+      "fireEmergencyClearanceApproved": false
+    },
+    {
+      "buildingID": "RES-W-U03",
+      "entranceCandidateID": "ENT-RES-W-U03-MAIN-CANDIDATE",
+      "originalClass": "NETWORK_EXTENSION_REQUIRED",
+      "chosenSourceStage": "R7-SOLVE-13",
+      "precheckedSpurQuality": "UPSTREAM_2D_SHORTENING_PROBE",
+      "rootGate": "WEST_GATE_GEOMETRY_ROOT",
+      "fromXZ": [
+        -1548,
+        -80
+      ],
+      "roadDistanceM": 698,
+      "approachSpurLengthM": 31,
+      "totalM": 729,
+      "accessRoad": "ROAD-R7-S13-W-EAST-INNER",
+      "routeRoadIDs": [
+        "ROAD-WEST-GATE",
+        "ROAD-QINGNIAN-W",
+        "ROAD-R7-S13-W-EAST-INNER"
+      ],
+      "routeRoadCount": 3,
+      "physicalDriveabilityApproved": false,
+      "legalGateOpeningVerified": false,
+      "fireEmergencyClearanceApproved": false
+    },
+    {
+      "buildingID": "RES-W-U04",
+      "entranceCandidateID": "ENT-RES-W-U04-MAIN-CANDIDATE",
+      "originalClass": "NETWORK_EXTENSION_REQUIRED",
+      "chosenSourceStage": "R7-SOLVE-13",
+      "precheckedSpurQuality": "UPSTREAM_2D_SHORTENING_PROBE",
+      "rootGate": "WEST_GATE_GEOMETRY_ROOT",
+      "fromXZ": [
+        -1548,
+        -80
+      ],
+      "roadDistanceM": 828,
+      "approachSpurLengthM": 36,
+      "totalM": 864,
+      "accessRoad": "ROAD-R7-S13-W-SOUTHWEST",
+      "routeRoadIDs": [
+        "ROAD-WEST-GATE",
+        "ROAD-QINGNIAN-W",
+        "ROAD-R7-S13-W-SOUTHWEST"
+      ],
+      "routeRoadCount": 3,
+      "physicalDriveabilityApproved": false,
+      "legalGateOpeningVerified": false,
+      "fireEmergencyClearanceApproved": false
+    },
+    {
+      "buildingID": "RES-W-U05",
+      "entranceCandidateID": "ENT-RES-W-U05-MAIN-CANDIDATE",
+      "originalClass": "CLEARANCE_PRECHECK_ONLY",
+      "chosenSourceStage": "R7-SOLVE-11",
+      "precheckedSpurQuality": "ORIGINAL_SHORT_SPUR_2D_PRESCREEN",
+      "rootGate": "WEST_GATE_GEOMETRY_ROOT",
+      "fromXZ": [
+        -1548,
+        -80
+      ],
+      "roadDistanceM": 647,
+      "approachSpurLengthM": 70,
+      "totalM": 717,
+      "accessRoad": "ROAD-QINGNIAN-W",
+      "routeRoadIDs": [
+        "ROAD-WEST-GATE",
+        "ROAD-QINGNIAN-W"
+      ],
+      "routeRoadCount": 2,
+      "physicalDriveabilityApproved": false,
+      "legalGateOpeningVerified": false,
+      "fireEmergencyClearanceApproved": false
+    },
+    {
+      "buildingID": "RES-W-U06",
+      "entranceCandidateID": "ENT-RES-W-U06-MAIN-CANDIDATE",
+      "originalClass": "CLEARANCE_PRECHECK_ONLY",
+      "chosenSourceStage": "R7-SOLVE-11",
+      "precheckedSpurQuality": "ORIGINAL_SHORT_SPUR_2D_PRESCREEN",
+      "rootGate": "WEST_GATE_GEOMETRY_ROOT",
+      "fromXZ": [
+        -1548,
+        -80
+      ],
+      "roadDistanceM": 708,
+      "approachSpurLengthM": 61,
+      "totalM": 769,
+      "accessRoad": "ROAD-QINGNIAN-W",
+      "routeRoadIDs": [
+        "ROAD-WEST-GATE",
+        "ROAD-QINGNIAN-W"
+      ],
+      "routeRoadCount": 2,
+      "physicalDriveabilityApproved": false,
+      "legalGateOpeningVerified": false,
+      "fireEmergencyClearanceApproved": false
+    },
+    {
+      "buildingID": "RES-W-U08",
+      "entranceCandidateID": "ENT-RES-W-U08-MAIN-CANDIDATE",
+      "originalClass": "CLEARANCE_PRECHECK_ONLY",
+      "chosenSourceStage": "R7-SOLVE-11",
+      "precheckedSpurQuality": "ORIGINAL_SHORT_SPUR_2D_PRESCREEN",
+      "rootGate": "WEST_GATE_GEOMETRY_ROOT",
+      "fromXZ": [
+        -1548,
+        -80
+      ],
+      "roadDistanceM": 883,
+      "approachSpurLengthM": 41,
+      "totalM": 924,
+      "accessRoad": "ROAD-QINGNIAN-W",
+      "routeRoadIDs": [
+        "ROAD-WEST-GATE",
+        "ROAD-QINGNIAN-W"
+      ],
+      "routeRoadCount": 2,
+      "physicalDriveabilityApproved": false,
+      "legalGateOpeningVerified": false,
+      "fireEmergencyClearanceApproved": false
+    },
+    {
+      "buildingID": "RES-W-U09",
+      "entranceCandidateID": "ENT-RES-W-U09-MAIN-CANDIDATE",
+      "originalClass": "CLEARANCE_PRECHECK_ONLY",
+      "chosenSourceStage": "R7-SOLVE-11",
+      "precheckedSpurQuality": "ORIGINAL_SHORT_SPUR_2D_PRESCREEN",
+      "rootGate": "WEST_GATE_GEOMETRY_ROOT",
+      "fromXZ": [
+        -1548,
+        -80
+      ],
+      "roadDistanceM": 1018,
+      "approachSpurLengthM": 29,
+      "totalM": 1047,
+      "accessRoad": "ROAD-CHUANGXIN",
+      "routeRoadIDs": [
+        "ROAD-WEST-GATE",
+        "ROAD-QINGNIAN-W",
+        "ROAD-CHUANGXIN-CONN",
+        "ROAD-CHUANGXIN"
+      ],
+      "routeRoadCount": 4,
+      "physicalDriveabilityApproved": false,
+      "legalGateOpeningVerified": false,
+      "fireEmergencyClearanceApproved": false
+    },
+    {
+      "buildingID": "RES-W-U11",
+      "entranceCandidateID": "ENT-RES-W-U11-MAIN-CANDIDATE",
+      "originalClass": "CLEARANCE_PRECHECK_ONLY",
+      "chosenSourceStage": "R7-SOLVE-11",
+      "precheckedSpurQuality": "ORIGINAL_SHORT_SPUR_2D_PRESCREEN",
+      "rootGate": "WEST_GATE_GEOMETRY_ROOT",
+      "fromXZ": [
+        -1548,
+        -80
+      ],
+      "roadDistanceM": 908,
+      "approachSpurLengthM": 40.26,
+      "totalM": 948.26,
+      "accessRoad": "ROAD-QINGNIAN-W",
+      "routeRoadIDs": [
+        "ROAD-WEST-GATE",
+        "ROAD-QINGNIAN-W"
+      ],
+      "routeRoadCount": 2,
+      "physicalDriveabilityApproved": false,
+      "legalGateOpeningVerified": false,
+      "fireEmergencyClearanceApproved": false
+    },
+    {
+      "buildingID": "RES-W-U12",
+      "entranceCandidateID": "ENT-RES-W-U12-MAIN-CANDIDATE",
+      "originalClass": "CLEARANCE_PRECHECK_ONLY",
+      "chosenSourceStage": "R7-SOLVE-11",
+      "precheckedSpurQuality": "ORIGINAL_SHORT_SPUR_2D_PRESCREEN",
+      "rootGate": "WEST_GATE_GEOMETRY_ROOT",
+      "fromXZ": [
+        -1548,
+        -80
+      ],
+      "roadDistanceM": 1118,
+      "approachSpurLengthM": 29,
+      "totalM": 1147,
+      "accessRoad": "ROAD-CHUANGXIN",
+      "routeRoadIDs": [
+        "ROAD-WEST-GATE",
+        "ROAD-QINGNIAN-W",
+        "ROAD-CHUANGXIN-CONN",
+        "ROAD-CHUANGXIN"
+      ],
+      "routeRoadCount": 4,
+      "physicalDriveabilityApproved": false,
+      "legalGateOpeningVerified": false,
+      "fireEmergencyClearanceApproved": false
+    },
+    {
+      "buildingID": "SAF-01",
+      "entranceCandidateID": "ENT-SAF-01-MAIN-CANDIDATE",
+      "originalClass": "CLEARANCE_PRECHECK_ONLY",
+      "chosenSourceStage": "R7-SOLVE-11",
+      "precheckedSpurQuality": "ORIGINAL_SHORT_SPUR_2D_PRESCREEN",
+      "rootGate": "WEST_GATE_GEOMETRY_ROOT",
+      "fromXZ": [
+        -1548,
+        -80
+      ],
+      "roadDistanceM": 853,
+      "approachSpurLengthM": 68,
+      "totalM": 921,
+      "accessRoad": "ROAD-JIANGXIN",
+      "routeRoadIDs": [
+        "ROAD-WEST-GATE",
+        "ROAD-QINGNIAN-W-FEED",
+        "ROAD-JIANGXIN"
+      ],
+      "routeRoadCount": 3,
+      "physicalDriveabilityApproved": false,
+      "legalGateOpeningVerified": false,
+      "fireEmergencyClearanceApproved": false
+    },
+    {
+      "buildingID": "TRA-02",
+      "entranceCandidateID": "ENT-TRA-02-MAIN-CANDIDATE",
+      "originalClass": "CLEARANCE_PRECHECK_ONLY",
+      "chosenSourceStage": "R7-SOLVE-11",
+      "precheckedSpurQuality": "ORIGINAL_SHORT_SPUR_2D_PRESCREEN",
+      "rootGate": "WEST_GATE_GEOMETRY_ROOT",
+      "fromXZ": [
+        -1548,
+        -80
+      ],
+      "roadDistanceM": 1718,
+      "approachSpurLengthM": 70,
+      "totalM": 1788,
+      "accessRoad": "ROAD-GEZHI-W",
+      "routeRoadIDs": [
+        "ROAD-WEST-GATE",
+        "ROAD-QINGNIAN-W-FEED",
+        "ROAD-BOYA-RING-W",
+        "ROAD-GEZHI-W"
+      ],
+      "routeRoadCount": 4,
+      "physicalDriveabilityApproved": false,
+      "legalGateOpeningVerified": false,
+      "fireEmergencyClearanceApproved": false
+    }
+  ],
+  "unrouted": [
+    {
+      "id": "AERO-01",
+      "why": "NO_GEOMETRIC_SOURCE_TIE"
+    },
+    {
+      "id": "AERO-02",
+      "why": "NO_GEOMETRIC_SOURCE_TIE"
+    },
+    {
+      "id": "AERO-03",
+      "why": "NO_GEOMETRIC_SOURCE_TIE"
+    },
+    {
+      "id": "AI-01",
+      "why": "NO_GEOMETRIC_SOURCE_TIE"
+    },
+    {
+      "id": "AI-02",
+      "why": "NO_GEOMETRIC_SOURCE_TIE"
+    },
+    {
+      "id": "ARC-03",
+      "why": "NO_GEOMETRIC_SOURCE_TIE"
+    },
+    {
+      "id": "ART-01",
+      "why": "NO_GEOMETRIC_SOURCE_TIE"
+    },
+    {
+      "id": "ART-02",
+      "why": "NO_GEOMETRIC_SOURCE_TIE"
+    },
+    {
+      "id": "ART-03",
+      "why": "NO_GEOMETRIC_SOURCE_TIE"
+    },
+    {
+      "id": "ATH-01",
+      "why": "NO_GEOMETRIC_SOURCE_TIE"
+    },
+    {
+      "id": "ATH-03",
+      "why": "NO_GEOMETRIC_SOURCE_TIE"
+    },
+    {
+      "id": "ATH-04",
+      "why": "NO_GEOMETRIC_SOURCE_TIE"
+    },
+    {
+      "id": "ATH-13",
+      "why": "NO_GEOMETRIC_SOURCE_TIE"
+    },
+    {
+      "id": "BUS-01",
+      "why": "NO_GEOMETRIC_SOURCE_TIE"
+    },
+    {
+      "id": "BUS-02",
+      "why": "NO_GEOMETRIC_SOURCE_TIE"
+    },
+    {
+      "id": "CEN-01",
+      "why": "NO_GEOMETRIC_SOURCE_TIE"
+    },
+    {
+      "id": "CEN-02",
+      "why": "NO_GEOMETRIC_SOURCE_TIE"
+    },
+    {
+      "id": "CEN-03",
+      "why": "NO_GEOMETRIC_SOURCE_TIE"
+    },
+    {
+      "id": "CEN-04",
+      "why": "NO_GEOMETRIC_SOURCE_TIE"
+    },
+    {
+      "id": "CEN-05",
+      "why": "NO_GEOMETRIC_SOURCE_TIE"
+    },
+    {
+      "id": "CEN-06",
+      "why": "NO_GEOMETRIC_SOURCE_TIE"
+    },
+    {
+      "id": "CEN-07",
+      "why": "NO_GEOMETRIC_SOURCE_TIE"
+    },
+    {
+      "id": "CEN-08",
+      "why": "NO_GEOMETRIC_SOURCE_TIE"
+    },
+    {
+      "id": "CEN-09",
+      "why": "NO_GEOMETRIC_SOURCE_TIE"
+    },
+    {
+      "id": "CEN-10",
+      "why": "NO_GEOMETRIC_SOURCE_TIE"
+    },
+    {
+      "id": "CEN-13",
+      "why": "NO_GEOMETRIC_SOURCE_TIE"
+    },
+    {
+      "id": "CEN-15",
+      "why": "NO_GEOMETRIC_SOURCE_TIE"
+    },
+    {
+      "id": "CEN-16",
+      "why": "NO_GEOMETRIC_SOURCE_TIE"
+    },
+    {
+      "id": "CEN-17",
+      "why": "NO_GEOMETRIC_SOURCE_TIE"
+    },
+    {
+      "id": "CEN-18",
+      "why": "NO_GEOMETRIC_SOURCE_TIE"
+    },
+    {
+      "id": "CHE-01",
+      "why": "NO_GEOMETRIC_SOURCE_TIE"
+    },
+    {
+      "id": "CHE-02",
+      "why": "NO_GEOMETRIC_SOURCE_TIE"
+    },
+    {
+      "id": "CHE-03",
+      "why": "NO_GEOMETRIC_SOURCE_TIE"
+    },
+    {
+      "id": "CHM-02",
+      "why": "NO_GEOMETRIC_SOURCE_TIE"
+    },
+    {
+      "id": "CSE-01",
+      "why": "NO_GEOMETRIC_SOURCE_TIE"
+    },
+    {
+      "id": "CSE-02",
+      "why": "NO_GEOMETRIC_SOURCE_TIE"
+    },
+    {
+      "id": "CSE-03",
+      "why": "NO_GEOMETRIC_SOURCE_TIE"
+    },
+    {
+      "id": "ECE-01",
+      "why": "NO_GEOMETRIC_SOURCE_TIE"
+    },
+    {
+      "id": "ECE-02",
+      "why": "NO_GEOMETRIC_SOURCE_TIE"
+    },
+    {
+      "id": "ECO-01",
+      "why": "NO_GEOMETRIC_SOURCE_TIE"
+    },
+    {
+      "id": "EE-01",
+      "why": "NO_GEOMETRIC_SOURCE_TIE"
+    },
+    {
+      "id": "EE-02",
+      "why": "NO_GEOMETRIC_SOURCE_TIE"
+    },
+    {
+      "id": "ENV-01",
+      "why": "NO_GEOMETRIC_SOURCE_TIE"
+    },
+    {
+      "id": "EPE-01",
+      "why": "NO_GEOMETRIC_SOURCE_TIE"
+    },
+    {
+      "id": "EPE-03",
+      "why": "NO_GEOMETRIC_SOURCE_TIE"
+    },
+    {
+      "id": "FIN-01",
+      "why": "NO_GEOMETRIC_SOURCE_TIE"
+    },
+    {
+      "id": "FLA-01",
+      "why": "NO_GEOMETRIC_SOURCE_TIE"
+    },
+    {
+      "id": "GEO-02",
+      "why": "NO_GEOMETRIC_SOURCE_TIE"
+    },
+    {
+      "id": "GPA-01",
+      "why": "NO_GEOMETRIC_SOURCE_TIE"
+    },
+    {
+      "id": "HSP-04",
+      "why": "NO_GEOMETRIC_SOURCE_TIE"
+    },
+    {
+      "id": "HUM-01",
+      "why": "NO_GEOMETRIC_SOURCE_TIE"
+    },
+    {
+      "id": "ICT-01",
+      "why": "NO_GEOMETRIC_SOURCE_TIE"
+    },
+    {
+      "id": "ICT-02",
+      "why": "NO_GEOMETRIC_SOURCE_TIE"
+    },
+    {
+      "id": "IGS-01",
+      "why": "NO_GEOMETRIC_SOURCE_TIE"
+    },
+    {
+      "id": "JRN-01",
+      "why": "NO_GEOMETRIC_SOURCE_TIE"
+    },
+    {
+      "id": "LIFE-02",
+      "why": "NO_GEOMETRIC_SOURCE_TIE"
+    },
+    {
+      "id": "LIFE-C-01",
+      "why": "NO_GEOMETRIC_SOURCE_TIE"
+    },
+    {
+      "id": "LIFE-C-02",
+      "why": "NO_GEOMETRIC_SOURCE_TIE"
+    },
+    {
+      "id": "LIFE-C-03",
+      "why": "NO_GEOMETRIC_SOURCE_TIE"
+    },
+    {
+      "id": "LIFE-C-04",
+      "why": "NO_GEOMETRIC_SOURCE_TIE"
+    },
+    {
+      "id": "LIFE-N-01",
+      "why": "NO_GEOMETRIC_SOURCE_TIE"
+    },
+    {
+      "id": "LIFE-N-02",
+      "why": "NO_GEOMETRIC_SOURCE_TIE"
+    },
+    {
+      "id": "LIFE-S-01",
+      "why": "NO_GEOMETRIC_SOURCE_TIE"
+    },
+    {
+      "id": "LIFE-S-02",
+      "why": "NO_GEOMETRIC_SOURCE_TIE"
+    },
+    {
+      "id": "MARX-01",
+      "why": "NO_GEOMETRIC_SOURCE_TIE"
+    },
+    {
+      "id": "MATH-01",
+      "why": "NO_GEOMETRIC_SOURCE_TIE"
+    },
+    {
+      "id": "ME-01",
+      "why": "NO_GEOMETRIC_SOURCE_TIE"
+    },
+    {
+      "id": "ME-02",
+      "why": "NO_GEOMETRIC_SOURCE_TIE"
+    },
+    {
+      "id": "ME-03",
+      "why": "NO_GEOMETRIC_SOURCE_TIE"
+    },
+    {
+      "id": "MED-01",
+      "why": "NO_GEOMETRIC_SOURCE_TIE"
+    },
+    {
+      "id": "MED-02",
+      "why": "NO_GEOMETRIC_SOURCE_TIE"
+    },
+    {
+      "id": "MED-03",
+      "why": "NO_GEOMETRIC_SOURCE_TIE"
+    },
+    {
+      "id": "MED-04",
+      "why": "NO_GEOMETRIC_SOURCE_TIE"
+    },
+    {
+      "id": "NEE-01",
+      "why": "NO_GEOMETRIC_SOURCE_TIE"
+    },
+    {
+      "id": "NEE-02",
+      "why": "NO_GEOMETRIC_SOURCE_TIE"
+    },
+    {
+      "id": "OPS-01",
+      "why": "NO_GEOMETRIC_SOURCE_TIE"
+    },
+    {
+      "id": "OPS-03",
+      "why": "NO_GEOMETRIC_SOURCE_TIE"
+    },
+    {
+      "id": "OPS-04",
+      "why": "NO_GEOMETRIC_SOURCE_TIE"
+    },
+    {
+      "id": "OPS-05",
+      "why": "NO_GEOMETRIC_SOURCE_TIE"
+    },
+    {
+      "id": "OPS-06",
+      "why": "NO_GEOMETRIC_SOURCE_TIE"
+    },
+    {
+      "id": "OPS-07",
+      "why": "NO_GEOMETRIC_SOURCE_TIE"
+    },
+    {
+      "id": "OPS-08",
+      "why": "NO_GEOMETRIC_SOURCE_TIE"
+    },
+    {
+      "id": "OPS-09",
+      "why": "NO_GEOMETRIC_SOURCE_TIE"
+    },
+    {
+      "id": "OPS-10",
+      "why": "NO_GEOMETRIC_SOURCE_TIE"
+    },
+    {
+      "id": "PE-02",
+      "why": "NO_GEOMETRIC_SOURCE_TIE"
+    },
+    {
+      "id": "PH-01",
+      "why": "NO_GEOMETRIC_SOURCE_TIE"
+    },
+    {
+      "id": "PHA-01",
+      "why": "NO_GEOMETRIC_SOURCE_TIE"
+    },
+    {
+      "id": "PHY-02",
+      "why": "NO_GEOMETRIC_SOURCE_TIE"
+    },
+    {
+      "id": "PSY-01",
+      "why": "NO_GEOMETRIC_SOURCE_TIE"
+    },
+    {
+      "id": "RDI-04",
+      "why": "NO_GEOMETRIC_SOURCE_TIE"
+    },
+    {
+      "id": "RDI-05",
+      "why": "NO_GEOMETRIC_SOURCE_TIE"
+    },
+    {
+      "id": "RDI-06",
+      "why": "NO_GEOMETRIC_SOURCE_TIE"
+    },
+    {
+      "id": "RDI-07",
+      "why": "NO_GEOMETRIC_SOURCE_TIE"
+    },
+    {
+      "id": "RDI-08",
+      "why": "NO_GEOMETRIC_SOURCE_TIE"
+    },
+    {
+      "id": "RDI-09",
+      "why": "NO_GEOMETRIC_SOURCE_TIE"
+    },
+    {
+      "id": "RES-E-G01",
+      "why": "NO_GEOMETRIC_SOURCE_TIE"
+    },
+    {
+      "id": "RES-E-U02",
+      "why": "NO_GEOMETRIC_SOURCE_TIE"
+    },
+    {
+      "id": "RES-E-U03",
+      "why": "NO_GEOMETRIC_SOURCE_TIE"
+    },
+    {
+      "id": "RES-E-U04",
+      "why": "NO_GEOMETRIC_SOURCE_TIE"
+    },
+    {
+      "id": "RES-E-U05",
+      "why": "NO_GEOMETRIC_SOURCE_TIE"
+    },
+    {
+      "id": "RES-E-U06",
+      "why": "NO_GEOMETRIC_SOURCE_TIE"
+    },
+    {
+      "id": "RES-E-U07",
+      "why": "NO_GEOMETRIC_SOURCE_TIE"
+    },
+    {
+      "id": "RES-E-U08",
+      "why": "NO_GEOMETRIC_SOURCE_TIE"
+    },
+    {
+      "id": "RES-E-U10",
+      "why": "NO_GEOMETRIC_SOURCE_TIE"
+    },
+    {
+      "id": "RES-N-G01",
+      "why": "NO_GEOMETRIC_SOURCE_TIE"
+    },
+    {
+      "id": "RES-N-G03",
+      "why": "NO_GEOMETRIC_SOURCE_TIE"
+    },
+    {
+      "id": "RES-N-U05",
+      "why": "NO_GEOMETRIC_SOURCE_TIE"
+    },
+    {
+      "id": "RES-N-U06",
+      "why": "NO_GEOMETRIC_SOURCE_TIE"
+    },
+    {
+      "id": "RES-N-U07",
+      "why": "NO_GEOMETRIC_SOURCE_TIE"
+    },
+    {
+      "id": "RES-N-U10",
+      "why": "NO_GEOMETRIC_SOURCE_TIE"
+    },
+    {
+      "id": "RES-S-G01",
+      "why": "NO_GEOMETRIC_SOURCE_TIE"
+    },
+    {
+      "id": "RES-S-I01",
+      "why": "NO_GEOMETRIC_SOURCE_TIE"
+    },
+    {
+      "id": "RES-S-I02",
+      "why": "NO_GEOMETRIC_SOURCE_TIE"
+    },
+    {
+      "id": "RES-W-G02",
+      "why": "NO_GEOMETRIC_SOURCE_TIE"
+    },
+    {
+      "id": "RES-W-U01",
+      "why": "NO_GEOMETRIC_SOURCE_TIE"
+    },
+    {
+      "id": "RES-W-U07",
+      "why": "NO_GEOMETRIC_SOURCE_TIE"
+    },
+    {
+      "id": "RES-W-U10",
+      "why": "NO_GEOMETRIC_SOURCE_TIE"
+    },
+    {
+      "id": "SAF-02",
+      "why": "NO_GEOMETRIC_SOURCE_TIE"
+    },
+    {
+      "id": "SOC-01",
+      "why": "NO_GEOMETRIC_SOURCE_TIE"
+    },
+    {
+      "id": "TRA-01",
+      "why": "NO_GEOMETRIC_SOURCE_TIE"
+    }
+  ],
+  "sampleLongest": [
+    {
+      "id": "RES-S-U10",
+      "totalM": 2706,
+      "roadLength": 2640,
+      "gateway": "EAST_GATE_GEOMETRY_ROOT",
+      "route": [
+        "ROAD-EAST-GATE",
+        "ROAD-QINGNIAN-E",
+        "ROAD-R7-S13-E-SOUTH",
+        "ROAD-BOYA-RING-E",
+        "ROAD-BOYA-RING-SE",
+        "ROAD-QINGNIAN-S-E",
+        "ROAD-QINGNIAN-S",
+        "ROAD-R7-S13-S-WEST"
+      ]
+    },
+    {
+      "id": "RES-S-U06",
+      "totalM": 2474,
+      "roadLength": 2425,
+      "gateway": "EAST_GATE_GEOMETRY_ROOT",
+      "route": [
+        "ROAD-EAST-GATE",
+        "ROAD-QINGNIAN-E",
+        "ROAD-R7-S13-E-SOUTH",
+        "ROAD-BOYA-RING-E",
+        "ROAD-BOYA-RING-SE",
+        "ROAD-QINGNIAN-S-E",
+        "ROAD-QINGNIAN-S"
+      ]
+    },
+    {
+      "id": "RES-S-U01",
+      "totalM": 2454,
+      "roadLength": 2405,
+      "gateway": "EAST_GATE_GEOMETRY_ROOT",
+      "route": [
+        "ROAD-EAST-GATE",
+        "ROAD-QINGNIAN-E",
+        "ROAD-R7-S13-E-SOUTH",
+        "ROAD-BOYA-RING-E",
+        "ROAD-BOYA-RING-SE",
+        "ROAD-QINGNIAN-S-E",
+        "ROAD-QINGNIAN-S"
+      ]
+    },
+    {
+      "id": "RES-S-U07",
+      "totalM": 2416,
+      "roadLength": 2356,
+      "gateway": "EAST_GATE_GEOMETRY_ROOT",
+      "route": [
+        "ROAD-EAST-GATE",
+        "ROAD-QINGNIAN-E",
+        "ROAD-R7-S13-E-SOUTH",
+        "ROAD-BOYA-RING-E",
+        "ROAD-BOYA-RING-SE",
+        "ROAD-QINGNIAN-S-E",
+        "ROAD-QINGNIAN-S"
+      ]
+    },
+    {
+      "id": "RES-S-U08",
+      "totalM": 2354,
+      "roadLength": 2294,
+      "gateway": "EAST_GATE_GEOMETRY_ROOT",
+      "route": [
+        "ROAD-EAST-GATE",
+        "ROAD-QINGNIAN-E",
+        "ROAD-R7-S13-E-SOUTH",
+        "ROAD-BOYA-RING-E",
+        "ROAD-BOYA-RING-SE",
+        "ROAD-QINGNIAN-S-E",
+        "ROAD-QINGNIAN-S"
+      ]
+    },
+    {
+      "id": "RES-S-U03",
+      "totalM": 2334,
+      "roadLength": 2305,
+      "gateway": "EAST_GATE_GEOMETRY_ROOT",
+      "route": [
+        "ROAD-EAST-GATE",
+        "ROAD-QINGNIAN-E",
+        "ROAD-R7-S13-E-SOUTH",
+        "ROAD-BOYA-RING-E",
+        "ROAD-BOYA-RING-SE",
+        "ROAD-QINGNIAN-S-E",
+        "ROAD-QINGNIAN-S"
+      ]
+    },
+    {
+      "id": "RES-S-I03",
+      "totalM": 2295.49,
+      "roadLength": 2230,
+      "gateway": "EAST_GATE_GEOMETRY_ROOT",
+      "route": [
+        "ROAD-EAST-GATE",
+        "ROAD-QINGNIAN-E",
+        "ROAD-R7-S13-E-SOUTH",
+        "ROAD-BOYA-RING-E",
+        "ROAD-BOYA-RING-SE",
+        "ROAD-QINGNIAN-S-E",
+        "ROAD-QINGNIAN-S",
+        "ROAD-R7-S13-S-EAST"
+      ]
+    },
+    {
+      "id": "CHM-01",
+      "totalM": 2234,
+      "roadLength": 2210,
+      "gateway": "EAST_GATE_GEOMETRY_ROOT",
+      "route": [
+        "ROAD-EAST-GATE",
+        "ROAD-QINGNIAN-E",
+        "ROAD-QINGNIAN-E-FEED",
+        "ROAD-BOYA-RING-E",
+        "ROAD-BOYA-RING-N"
+      ]
+    },
+    {
+      "id": "RES-S-U02",
+      "totalM": 2234,
+      "roadLength": 2185,
+      "gateway": "EAST_GATE_GEOMETRY_ROOT",
+      "route": [
+        "ROAD-EAST-GATE",
+        "ROAD-QINGNIAN-E",
+        "ROAD-R7-S13-E-SOUTH",
+        "ROAD-BOYA-RING-E",
+        "ROAD-BOYA-RING-SE",
+        "ROAD-QINGNIAN-S-E",
+        "ROAD-QINGNIAN-S"
+      ]
+    },
+    {
+      "id": "PHY-01",
+      "totalM": 2187,
+      "roadLength": 2163,
+      "gateway": "WEST_GATE_GEOMETRY_ROOT",
+      "route": [
+        "ROAD-WEST-GATE",
+        "ROAD-QINGNIAN-W-FEED",
+        "ROAD-BOYA-RING-W",
+        "ROAD-BOYA-RING-NW-H",
+        "ROAD-BOYA-RING-NW-V",
+        "ROAD-BOYA-RING-N"
+      ]
+    },
+    {
+      "id": "RDI-14",
+      "totalM": 2143,
+      "roadLength": 2083,
+      "gateway": "WEST_GATE_GEOMETRY_ROOT",
+      "route": [
+        "ROAD-WEST-GATE",
+        "ROAD-QINGNIAN-W-FEED",
+        "ROAD-BOYA-RING-W",
+        "ROAD-BOYA-RING-NW-H",
+        "ROAD-BOYA-RING-NW-V",
+        "ROAD-BOYA-RING-N",
+        "ROAD-QINGNIAN-NW"
+      ]
+    },
+    {
+      "id": "RES-S-U04",
+      "totalM": 2114,
+      "roadLength": 2085,
+      "gateway": "EAST_GATE_GEOMETRY_ROOT",
+      "route": [
+        "ROAD-EAST-GATE",
+        "ROAD-QINGNIAN-E",
+        "ROAD-R7-S13-E-SOUTH",
+        "ROAD-BOYA-RING-E",
+        "ROAD-BOYA-RING-SE",
+        "ROAD-QINGNIAN-S-E",
+        "ROAD-QINGNIAN-S"
+      ]
+    }
+  ],
+  "nextStage": "R7-SOLVE-15 real permitted gate points, geometry/facade/pond and emergency vehicle traversability; central CEN library/hall."
+}
