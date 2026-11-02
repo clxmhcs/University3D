@@ -1,0 +1,894 @@
+{
+  "type": "FeatureCollection",
+  "name": "JiangchengUniversity_R7_SOLVE_12_RegionalFireLogisticsCandidates",
+  "coordinateSystem": "LOCAL_XZ_METERS_NOT_GEOGRAPHIC_LATLONG",
+  "solveId": "R7-SOLVE-12",
+  "runtimeFinal": false,
+  "status": "CONDITIONAL_LOCAL_ROAD_GEOMETRY_PASS_GLOBAL_FIRE_BLOCKED",
+  "note": "Rejected centerlines are kept for audit traceability and must not be used by runtime or road builder. Entry-to-corridor ties are not operational fire-approved.",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-R7-S12-HSP-CITY-SOCIAL",
+        "category": "conditional_regional_fire_service_corridor",
+        "zone": "hospital",
+        "mode": "hospital_city_social",
+        "status": "CONDITIONAL_CITY_INTERFACE",
+        "widthM": 7.5,
+        "centerlineLengthM": 42,
+        "minKnownOtherFootprintClearanceM": 110,
+        "campusBoundaryContainsCenterline": false,
+        "knownConflicts": [],
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1040,
+            -1085
+          ],
+          [
+            -1040,
+            -1127
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-R7-S12-HSP-CITY-AMBULANCE",
+        "category": "conditional_regional_fire_service_corridor",
+        "zone": "hospital",
+        "mode": "hospital_city_ambulance",
+        "status": "CONDITIONAL_CITY_INTERFACE",
+        "widthM": 8,
+        "centerlineLengthM": 37,
+        "minKnownOtherFootprintClearanceM": 49.24,
+        "campusBoundaryContainsCenterline": false,
+        "knownConflicts": [],
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -950,
+            -1090
+          ],
+          [
+            -950,
+            -1127
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-R7-S12-HSP-ONSITE-SOCIAL",
+        "category": "conditional_regional_fire_service_corridor",
+        "zone": "hospital",
+        "mode": "hospital_social_site",
+        "status": "CONDITIONAL_CITY_INTERFACE",
+        "widthM": 7,
+        "centerlineLengthM": 34,
+        "minKnownOtherFootprintClearanceM": 76,
+        "campusBoundaryContainsCenterline": false,
+        "knownConflicts": [],
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1040,
+            -1085
+          ],
+          [
+            -1040,
+            -1051
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-R7-S12-HSP-ONSITE-AMBULANCE",
+        "category": "conditional_regional_fire_service_corridor",
+        "zone": "hospital",
+        "mode": "hospital_ambulance_site",
+        "status": "CONDITIONAL_CORRIDOR_GEOMETRY_PASS",
+        "widthM": 8,
+        "centerlineLengthM": 94,
+        "minKnownOtherFootprintClearanceM": 46.1,
+        "campusBoundaryContainsCenterline": true,
+        "knownConflicts": [],
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -950,
+            -1090
+          ],
+          [
+            -950,
+            -1010
+          ],
+          [
+            -964,
+            -1010
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-R7-S12-MED-NORTH-SOUTH-SERVICE",
+        "category": "conditional_regional_fire_service_corridor",
+        "zone": "medical",
+        "mode": "fire_service",
+        "status": "CONDITIONAL_CORRIDOR_GEOMETRY_PASS",
+        "widthM": 8,
+        "centerlineLengthM": 470,
+        "minKnownOtherFootprintClearanceM": 46.26,
+        "campusBoundaryContainsCenterline": true,
+        "knownConflicts": [],
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1330,
+            -770
+          ],
+          [
+            -1330,
+            -300
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-R7-S12-RDI-ACCESS-LINK",
+        "category": "conditional_regional_fire_service_corridor",
+        "zone": "research",
+        "mode": "fire_service",
+        "status": "CONDITIONAL_CORRIDOR_GEOMETRY_PASS",
+        "widthM": 8,
+        "centerlineLengthM": 280,
+        "minKnownOtherFootprintClearanceM": 9,
+        "campusBoundaryContainsCenterline": true,
+        "knownConflicts": [],
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1430,
+            795
+          ],
+          [
+            -1280,
+            795
+          ],
+          [
+            -1280,
+            925
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-R7-S12-RDI-NORTH-SERVICE",
+        "category": "conditional_regional_fire_service_corridor",
+        "zone": "research",
+        "mode": "fire_service",
+        "status": "CONDITIONAL_CORRIDOR_GEOMETRY_PASS",
+        "widthM": 8,
+        "centerlineLengthM": 520,
+        "minKnownOtherFootprintClearanceM": 12,
+        "campusBoundaryContainsCenterline": true,
+        "knownConflicts": [],
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1280,
+            925
+          ],
+          [
+            -760,
+            925
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-R7-S12-ART-BOYA-BACKSTAGE",
+        "category": "conditional_regional_fire_service_corridor",
+        "zone": "arts",
+        "mode": "backstage_service",
+        "status": "CONDITIONAL_CORRIDOR_GEOMETRY_PASS",
+        "widthM": 8,
+        "centerlineLengthM": 545,
+        "minKnownOtherFootprintClearanceM": 19,
+        "campusBoundaryContainsCenterline": true,
+        "knownConflicts": [],
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            830,
+            690
+          ],
+          [
+            1325,
+            690
+          ],
+          [
+            1325,
+            740
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-R7-S12-ART-EAST-CITY-EDGE",
+        "category": "conditional_regional_fire_service_corridor",
+        "zone": "arts",
+        "mode": "theatre_public_city",
+        "status": "CONDITIONAL_CITY_INTERFACE",
+        "widthM": 7.5,
+        "centerlineLengthM": 24,
+        "minKnownOtherFootprintClearanceM": 197,
+        "campusBoundaryContainsCenterline": true,
+        "knownConflicts": [],
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            1436,
+            760
+          ],
+          [
+            1460,
+            760
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-R7-S12-OPS-SOUTH-SERVICE",
+        "category": "conditional_regional_fire_service_corridor",
+        "zone": "ops",
+        "mode": "logistics_fire",
+        "status": "CONDITIONAL_CORRIDOR_GEOMETRY_PASS",
+        "widthM": 8,
+        "centerlineLengthM": 545,
+        "minKnownOtherFootprintClearanceM": 21,
+        "campusBoundaryContainsCenterline": true,
+        "knownConflicts": [],
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            830,
+            -960
+          ],
+          [
+            1140,
+            -960
+          ],
+          [
+            1140,
+            -725
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-R7-S12-OPS-NORTH-SERVICE",
+        "category": "conditional_regional_fire_service_corridor",
+        "zone": "ops",
+        "mode": "logistics_fire",
+        "status": "CONDITIONAL_CORRIDOR_GEOMETRY_PASS",
+        "widthM": 8,
+        "centerlineLengthM": 310,
+        "minKnownOtherFootprintClearanceM": 28,
+        "campusBoundaryContainsCenterline": true,
+        "knownConflicts": [],
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            830,
+            -730
+          ],
+          [
+            1140,
+            -730
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-R7-S12-OPS-EAST-DIRECT-REJECTED",
+        "category": "conditional_regional_fire_service_corridor",
+        "zone": "ops",
+        "mode": "logistics_fire",
+        "status": "REJECTED_GEOMETRY",
+        "widthM": 8,
+        "centerlineLengthM": 160,
+        "minKnownOtherFootprintClearanceM": 0,
+        "campusBoundaryContainsCenterline": true,
+        "knownConflicts": [
+          "OPS-06"
+        ],
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            1140,
+            -725
+          ],
+          [
+            1300,
+            -725
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-R7-S12-W-YUAN-DIRECT-REJECTED",
+        "category": "conditional_regional_fire_service_corridor",
+        "zone": "west_yuan",
+        "mode": "dorm_service",
+        "status": "REJECTED_GEOMETRY",
+        "widthM": 8,
+        "centerlineLengthM": 360,
+        "minKnownOtherFootprintClearanceM": 0,
+        "campusBoundaryContainsCenterline": true,
+        "knownConflicts": [
+          "RES-W-U02",
+          "RES-W-U03",
+          "RES-W-U06",
+          "RES-W-U10"
+        ],
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1320,
+            300
+          ],
+          [
+            -1260,
+            300
+          ],
+          [
+            -1260,
+            600
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-R7-S12-E-YUAN-DIRECT-REJECTED",
+        "category": "conditional_regional_fire_service_corridor",
+        "zone": "east_yuan",
+        "mode": "dorm_service",
+        "status": "REJECTED_GEOMETRY",
+        "widthM": 8,
+        "centerlineLengthM": 250,
+        "minKnownOtherFootprintClearanceM": 0,
+        "campusBoundaryContainsCenterline": true,
+        "knownConflicts": [
+          "RES-E-U06",
+          "RES-E-U07"
+        ],
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            1400,
+            100
+          ],
+          [
+            1150,
+            100
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "TIE-S12-ART-04",
+        "category": "possible_shorter_fire_access_only",
+        "parentBuildingID": "ART-04",
+        "previousStatus": "NETWORK_EXTENSION_REQUIRED",
+        "oldLengthM": 400,
+        "newPlanarLengthM": 70,
+        "targetCorridor": "ROAD-R7-S12-ART-BOYA-BACKSTAGE",
+        "engineeringValidated": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            1241,
+            760
+          ],
+          [
+            1241,
+            690
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "TIE-S12-OPS-02",
+        "category": "possible_shorter_fire_access_only",
+        "parentBuildingID": "OPS-02",
+        "previousStatus": "NETWORK_EXTENSION_REQUIRED",
+        "oldLengthM": 371,
+        "newPlanarLengthM": 61,
+        "targetCorridor": "ROAD-R7-S12-OPS-SOUTH-SERVICE",
+        "engineeringValidated": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            1201,
+            -850
+          ],
+          [
+            1140,
+            -850
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "TIE-S12-RDI-02",
+        "category": "possible_shorter_fire_access_only",
+        "parentBuildingID": "RDI-02",
+        "previousStatus": "LONG_ACCESS_SPUR_REVIEW",
+        "oldLengthM": 138.29,
+        "newPlanarLengthM": 15,
+        "targetCorridor": "ROAD-R7-S12-RDI-ACCESS-LINK",
+        "engineeringValidated": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1295,
+            850
+          ],
+          [
+            -1280,
+            850
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "TIE-S12-RDI-03",
+        "category": "possible_shorter_fire_access_only",
+        "parentBuildingID": "RDI-03",
+        "previousStatus": "CORRIDOR_CONFLICT",
+        "oldLengthM": 296.52,
+        "newPlanarLengthM": 75,
+        "targetCorridor": "ROAD-R7-S12-RDI-NORTH-SERVICE",
+        "engineeringValidated": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1135,
+            850
+          ],
+          [
+            -1135,
+            925
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "TIE-S12-RDI-10",
+        "category": "possible_shorter_fire_access_only",
+        "parentBuildingID": "RDI-10",
+        "previousStatus": "CORRIDOR_CONFLICT",
+        "oldLengthM": 275.18,
+        "newPlanarLengthM": 10,
+        "targetCorridor": "ROAD-R7-S12-RDI-NORTH-SERVICE",
+        "engineeringValidated": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1180,
+            935
+          ],
+          [
+            -1180,
+            925
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "TIE-S12-RDI-11",
+        "category": "possible_shorter_fire_access_only",
+        "parentBuildingID": "RDI-11",
+        "previousStatus": "NETWORK_EXTENSION_REQUIRED",
+        "oldLengthM": 475,
+        "newPlanarLengthM": 30,
+        "targetCorridor": "ROAD-R7-S12-RDI-NORTH-SERVICE",
+        "engineeringValidated": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1030,
+            955
+          ],
+          [
+            -1030,
+            925
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "TIE-S12-RDI-12",
+        "category": "possible_shorter_fire_access_only",
+        "parentBuildingID": "RDI-12",
+        "previousStatus": "CORRIDOR_CONFLICT",
+        "oldLengthM": 299.67,
+        "newPlanarLengthM": 35,
+        "targetCorridor": "ROAD-R7-S12-RDI-NORTH-SERVICE",
+        "engineeringValidated": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -880,
+            960
+          ],
+          [
+            -880,
+            925
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "TIE-S12-RDI-13",
+        "category": "possible_shorter_fire_access_only",
+        "parentBuildingID": "RDI-13",
+        "previousStatus": "NETWORK_EXTENSION_REQUIRED",
+        "oldLengthM": 311.75,
+        "newPlanarLengthM": 75,
+        "targetCorridor": "ROAD-R7-S12-RDI-NORTH-SERVICE",
+        "engineeringValidated": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -783,
+            1000
+          ],
+          [
+            -783,
+            925
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "TIE-S12-RES-N-U01",
+        "category": "possible_shorter_fire_access_only",
+        "parentBuildingID": "RES-N-U01",
+        "previousStatus": "NETWORK_EXTENSION_REQUIRED",
+        "oldLengthM": 431,
+        "newPlanarLengthM": 14,
+        "targetCorridor": "ROAD-R7-S12-RDI-NORTH-SERVICE",
+        "engineeringValidated": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -930,
+            911
+          ],
+          [
+            -930,
+            925
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "TIE-S12-RES-N-U02",
+        "category": "possible_shorter_fire_access_only",
+        "parentBuildingID": "RES-N-U02",
+        "previousStatus": "CORRIDOR_CONFLICT",
+        "oldLengthM": 235.03,
+        "newPlanarLengthM": 14,
+        "targetCorridor": "ROAD-R7-S12-RDI-NORTH-SERVICE",
+        "engineeringValidated": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -830,
+            911
+          ],
+          [
+            -830,
+            925
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "TIE-S12-RES-N-U03",
+        "category": "possible_shorter_fire_access_only",
+        "parentBuildingID": "RES-N-U03",
+        "previousStatus": "CORRIDOR_CONFLICT",
+        "oldLengthM": 341.66,
+        "newPlanarLengthM": 42,
+        "targetCorridor": "ROAD-R7-S12-RDI-NORTH-SERVICE",
+        "engineeringValidated": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -950,
+            967
+          ],
+          [
+            -950,
+            925
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "TIE-S12-RES-N-U04",
+        "category": "possible_shorter_fire_access_only",
+        "parentBuildingID": "RES-N-U04",
+        "previousStatus": "CORRIDOR_CONFLICT",
+        "oldLengthM": 169,
+        "newPlanarLengthM": 71.18,
+        "targetCorridor": "ROAD-R7-S12-RDI-NORTH-SERVICE",
+        "engineeringValidated": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -689,
+            920
+          ],
+          [
+            -760,
+            925
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "TIE-S12-RES-W-G03",
+        "category": "possible_shorter_fire_access_only",
+        "parentBuildingID": "RES-W-G03",
+        "previousStatus": "LONG_ACCESS_SPUR_REVIEW",
+        "oldLengthM": 100,
+        "newPlanarLengthM": 56,
+        "targetCorridor": "ROAD-R7-S12-RDI-ACCESS-LINK",
+        "engineeringValidated": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1330,
+            739
+          ],
+          [
+            -1330,
+            795
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-HSP-OUTPATIENT",
+        "category": "existing_authoritative_hospital_entrance",
+        "status": "SOURCE_AUTHORITY_KEEP",
+        "origin": "PATCH-2026-09-14-R7"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1040,
+          -1051
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-HSP-EMERGENCY",
+        "category": "existing_authoritative_hospital_entrance",
+        "status": "SOURCE_AUTHORITY_KEEP",
+        "origin": "PATCH-2026-09-14-R7"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -964,
+          -1010
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-HSP-INPATIENT",
+        "category": "existing_authoritative_hospital_entrance",
+        "status": "SOURCE_AUTHORITY_KEEP",
+        "origin": "PATCH-2026-09-14-R7"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1116,
+          -1000
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-HSP-PARKING",
+        "category": "existing_authoritative_hospital_entrance",
+        "status": "SOURCE_AUTHORITY_KEEP",
+        "origin": "PATCH-2026-09-14-R7"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1180,
+          -1060
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-HSP-SOCIAL",
+        "category": "existing_authoritative_hospital_entrance",
+        "status": "SOURCE_AUTHORITY_KEEP",
+        "origin": "PATCH-2026-09-14-R7"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1040,
+          -1085
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-HSP-EMERGENCY-CITY",
+        "category": "existing_authoritative_hospital_entrance",
+        "status": "SOURCE_AUTHORITY_KEEP",
+        "origin": "PATCH-2026-09-14-R7"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -950,
+          -1090
+        ]
+      }
+    }
+  ]
+}
