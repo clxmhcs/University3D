@@ -1,0 +1,98 @@
+江城大学 R7-SOLVE-11｜全校建筑入口与6m消防/后勤短支路候选预审计
+版本：2026-11-02
+最高优先级：PATCH-2026-09-14-R7
+状态：CANDIDATE_ONLY_GLOBAL_FIRE_ACCESS_NOT_VERIFIED
+Runtime Final：NO（禁止写入正式CampusData/Unity/SVG）
+
+一、读取基线与覆盖顺序
+已读取GitHub历史building_placement_r6.csv，以及R7-SOLVE-01、03、04、05、06建筑候选；R7-SOLVE-07道路、R7-SOLVE-08未失效的C线优先廊道；R7-SOLVE-09取消D线礼仪轴机动车穿越；R7-SOLVE-10回车场与站台预审计。
+R7补丁为最高覆盖依据，R6坐标只允许标注R6_VALID_UNTIL_OVERRIDDEN，绝不直接冻结为R7最终值。
+
+二、清单合并
+R6基线204条唯一记录，R7阶段候选按唯一ID覆盖后仍为204条。
+其中R7-SOLVE-01来源18、03来源42、04来源13、05来源64、06来源6，剩余R6旧来源55（含本轮排除的非独立对象）。
+不自动把8个非独立入口对象纳入普通建筑：
+HSP-02（HSP-01基座上部住院塔楼）、HSP-03（直接连接医技翼）、ATH-02（广场）、ATH-05/11（田径场）、ATH-06-N/S和ATH-12（看台）。
+HSP-01采用医院已有权威多入口，不新造普通入口ID。
+普通建筑入口候选：195条；附属医院权威入口：6条。医院HSP-03的内部连通与医技/急诊专用流线仍应专项审核，不等于不需要消防接入。
+
+三、入口派生规则
+依建筑基底中心、长×宽控制包络和rotationY计算主门候选。
+local +Z为默认正门；向外2m选候选门点，若已审边界或其他已审包络侵入则按侧立面尝试，但必须在正式建筑外墙、实际门洞/台阶/地面高程确认后才能获得EntranceID有效值。
+本轮所有ENT-*-MAIN-CANDIDATE、FIRE-SPUR-*-01均有noRuntimeExport=true。不能把算法产生的点直接当成真实建筑入口。
+其中西南医院已有权威ID保持：
+ENT-HSP-OUTPATIENT (-1040,99,-1051)
+ENT-HSP-EMERGENCY (-964,99,-1010)
+ENT-HSP-INPATIENT (-1116,99,-1000)
+ENT-HSP-PARKING (-1180,99,-1060)
+ENT-HSP-SOCIAL (-1040,98,-1085)
+ENT-HSP-EMERGENCY-CITY (-950,98,-1090)。
+城市接口来自大学路，医院必须保持普通社会车与急救车辆的独立路径。
+
+四、6m消防候选短支路几何
+选择最近已审可应急通行道路，使用建筑门点至道路中心线最近点的直线连接。检测6m宽的候选净空近似条件；计算建筑包络与澄湖多边形冲突，并限制中央礼仪轴。
+这只是一轮二维粗筛，不含机动车道路路口的实际转角、车道转弯半径、地形、完整水系、停车占位、围墙门洞、桥梁和消防车登高面。
+不得把“二维净距”解释为消防许可验收。
+
+类别与数量：
+CLEARANCE_PRECHECK_ONLY（≤70m且本轮障碍预审无冲突）：50
+LONG_ACCESS_SPUR_REVIEW（70～150m，需重判实际短支路）：47
+NETWORK_EXTENSION_REQUIRED（超过150m，必须补区级消防路网）：70
+CORRIDOR_CONFLICT（与已审包络/水体/保护轴冲突）：28
+其他入口失败：0
+合计普通入口候选 195，其中145条尚未满足本轮短支路预筛。
+
+五、重点风险样例：长距离道路缺口
+AERO-01 / ROAD-BOYA-RING-NW-H / 280.4m
+AERO-02 / ROAD-JIANGXIN / 155.08m
+ART-01 / ROAD-BOYA-RING-E / 308.97m
+ART-02 / ROAD-WENHUA / 565.43m
+ART-03 / ROAD-QINGNIAN-E / 401.8m
+ART-04 / ROAD-QINGNIAN-E-FEED / 400m
+ATH-01 / ROAD-JIANXING-W / 160.45m
+ATH-13 / ROAD-QINGNIAN-E / 281.44m
+CEN-02 / ROAD-BOYA-RING-SW-V / 393m
+CEN-03 / ROAD-QINGNIAN-S / 372.68m
+CEN-04 / ROAD-JISHI / 559.02m
+CEN-05 / ROAD-GEZHI-W / 688.06m
+CEN-06 / ROAD-BOYA-RING-E / 580m
+CEN-07 / ROAD-BOYA-RING-SW-H / 203m
+CEN-08 / ROAD-BOYA-RING-E / 435m
+CEN-09 / ROAD-BOYA-RING-W / 451m
+
+六、重点风险样例：走廊冲突
+AI-01 / ROAD-BOYA-RING-W / 220m
+CEN-01 / ROAD-BOYA-RING-SW-H / 643.65m
+CEN-17 / ROAD-GEZHI-W / 320m
+ECO-01 / ROAD-BOYA-RING-E / 192m
+ENV-01 / ROAD-GEZHI-W / 117m
+FIN-01 / ROAD-BOYA-RING-E / 192m
+ICT-01 / ROAD-BOYA-RING-W / 210m
+ICT-02 / ROAD-BOYA-RING-W / 210m
+JRN-01 / ROAD-GEZHI-E / 132m
+LIFE-C-01 / ROAD-BOYA-RING-E / 348m
+LIFE-C-03 / ROAD-QINGNIAN-S / 250m
+LIFE-N-01 / ROAD-QINGNIAN-NW / 145m
+MARX-01 / ROAD-BOYA-RING-E / 193m
+
+七、分区优先级
+优先完善中央公共建筑（CEN-01及18个CEN对象全部暂未达到短支路预筛）、东北艺术/剧院的独立长虹路社会/后勤出口、西北RDI科技园科研设备道路、南部OPS后勤、四苑宿舍外围服务环，以及医学/医院城市急救独立体系。
+现有SOLVE-02～10主要是公共道路骨架，不应为了让算法出一个PASS，把某一条消防支路拖穿中央礼仪轴、澄湖或宿舍绿心。
+
+八、最终冻结阻断项
+1. 195个候选门点还没有真实建筑门洞/外墙详图和EntranceID正式审核。
+2. 70个对象需区级消防路网补段，28个对象存在硬冲突候选，47个对象短支路过长。
+3. 6m净宽只是候选目标，尚无消防回转、登高面、救援口、水源、路缘、净高和坡度审计。
+4. 城市接口→校园机动车路→消防路→可进入的Building Entrance全路径尚未形成连续验收图。
+5. 医院急救及科研/剧院社会接口须单独形成不混行交通组织。
+6. 四苑消防短支路必须与北门赛事交通、校车线路及人行绿心保持冲突最小。
+7. R7-SOLVE-09/10中的站台信号、转向扫掠和消防优先权仍待处理。
+8. R7最终18项跨系统审计未完成，不能变更Runtime Final状态。
+
+九、数据格式
+JSON：完整195条普通入口与候选6m接入路、6条医院权威入口、风险注册表。
+CSV：普通入口/医院入口坐标与各自状态。
+GeoJSON：本地XZ米制入口和消防候选连接线，仅表示规划候选，不是GPS。
+此档案只放入CampusData/r7/solve_outputs/R7-SOLVE-11/，不覆盖历史阶段和正式运行源。
+
+下一步：R7-SOLVE-12。先集中优化145条存在风险的连接及医院、科研、剧院、南部后勤接入，并在道路和建筑界面封板后开展实际消防车轮迹/消防等级验收。
