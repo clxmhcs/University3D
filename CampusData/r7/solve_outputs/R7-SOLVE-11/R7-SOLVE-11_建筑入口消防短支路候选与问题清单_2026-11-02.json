@@ -10766,5 +10766,286 @@
       "distanceM": 115
     }
   ],
-  "nextStage": "R7-SOLVE-12 resolve long/non-clear spurs by region; hospital emergency and research/art/social entry graph; entrance/facade field validation"
+  "nextStage": "R7-SOLVE-12 resolve long/non-clear spurs by region; hospital emergency and research/art/social entry graph; entrance/facade field validation",
+  "serviceEntranceRequirements": [
+    {
+      "id": "ENT-ART-03-SERVICE-PENDING",
+      "parentBuildingID": "ART-03",
+      "reason": "ARTS_BACKSTAGE_DELIVERY",
+      "position": null,
+      "status": "SERVICE_ENTRANCE_REQUIRED_UNLOCATED",
+      "existingCandidateMainEntranceId": "ENT-ART-03-MAIN-CANDIDATE",
+      "conflictPolicy": "must segregate service and pedestrian access; source building and road freeze required",
+      "noRuntimeExport": true
+    },
+    {
+      "id": "ENT-ART-04-SERVICE-PENDING",
+      "parentBuildingID": "ART-04",
+      "reason": "ARTS_BACKSTAGE_DELIVERY",
+      "position": null,
+      "status": "SERVICE_ENTRANCE_REQUIRED_UNLOCATED",
+      "existingCandidateMainEntranceId": "ENT-ART-04-MAIN-CANDIDATE",
+      "conflictPolicy": "must segregate service and pedestrian access; source building and road freeze required",
+      "noRuntimeExport": true
+    },
+    {
+      "id": "ENT-LIFE-01-SERVICE-PENDING",
+      "parentBuildingID": "LIFE-01",
+      "reason": "DINING_RETAIL_DELIVERY_AND_REFUSE",
+      "position": null,
+      "status": "SERVICE_ENTRANCE_REQUIRED_UNLOCATED",
+      "existingCandidateMainEntranceId": "ENT-LIFE-01-MAIN-CANDIDATE",
+      "conflictPolicy": "must segregate service and pedestrian access; source building and road freeze required",
+      "noRuntimeExport": true
+    },
+    {
+      "id": "ENT-LIFE-02-SERVICE-PENDING",
+      "parentBuildingID": "LIFE-02",
+      "reason": "DINING_RETAIL_DELIVERY_AND_REFUSE",
+      "position": null,
+      "status": "SERVICE_ENTRANCE_REQUIRED_UNLOCATED",
+      "existingCandidateMainEntranceId": "ENT-LIFE-02-MAIN-CANDIDATE",
+      "conflictPolicy": "must segregate service and pedestrian access; source building and road freeze required",
+      "noRuntimeExport": true
+    },
+    {
+      "id": "ENT-LIFE-C-01-SERVICE-PENDING",
+      "parentBuildingID": "LIFE-C-01",
+      "reason": "DINING_RETAIL_DELIVERY_AND_REFUSE",
+      "position": null,
+      "status": "SERVICE_ENTRANCE_REQUIRED_UNLOCATED",
+      "existingCandidateMainEntranceId": "ENT-LIFE-C-01-MAIN-CANDIDATE",
+      "conflictPolicy": "must segregate service and pedestrian access; source building and road freeze required",
+      "noRuntimeExport": true
+    },
+    {
+      "id": "ENT-LIFE-C-02-SERVICE-PENDING",
+      "parentBuildingID": "LIFE-C-02",
+      "reason": "DINING_RETAIL_DELIVERY_AND_REFUSE",
+      "position": null,
+      "status": "SERVICE_ENTRANCE_REQUIRED_UNLOCATED",
+      "existingCandidateMainEntranceId": "ENT-LIFE-C-02-MAIN-CANDIDATE",
+      "conflictPolicy": "must segregate service and pedestrian access; source building and road freeze required",
+      "noRuntimeExport": true
+    },
+    {
+      "id": "ENT-LIFE-C-03-SERVICE-PENDING",
+      "parentBuildingID": "LIFE-C-03",
+      "reason": "DINING_RETAIL_DELIVERY_AND_REFUSE",
+      "position": null,
+      "status": "SERVICE_ENTRANCE_REQUIRED_UNLOCATED",
+      "existingCandidateMainEntranceId": "ENT-LIFE-C-03-MAIN-CANDIDATE",
+      "conflictPolicy": "must segregate service and pedestrian access; source building and road freeze required",
+      "noRuntimeExport": true
+    },
+    {
+      "id": "ENT-LIFE-C-04-SERVICE-PENDING",
+      "parentBuildingID": "LIFE-C-04",
+      "reason": "DINING_RETAIL_DELIVERY_AND_REFUSE",
+      "position": null,
+      "status": "SERVICE_ENTRANCE_REQUIRED_UNLOCATED",
+      "existingCandidateMainEntranceId": "ENT-LIFE-C-04-MAIN-CANDIDATE",
+      "conflictPolicy": "must segregate service and pedestrian access; source building and road freeze required",
+      "noRuntimeExport": true
+    },
+    {
+      "id": "ENT-LIFE-E-01-SERVICE-PENDING",
+      "parentBuildingID": "LIFE-E-01",
+      "reason": "DINING_RETAIL_DELIVERY_AND_REFUSE",
+      "position": null,
+      "status": "SERVICE_ENTRANCE_REQUIRED_UNLOCATED",
+      "existingCandidateMainEntranceId": "ENT-LIFE-E-01-MAIN-CANDIDATE",
+      "conflictPolicy": "must segregate service and pedestrian access; source building and road freeze required",
+      "noRuntimeExport": true
+    },
+    {
+      "id": "ENT-LIFE-E-02-SERVICE-PENDING",
+      "parentBuildingID": "LIFE-E-02",
+      "reason": "DINING_RETAIL_DELIVERY_AND_REFUSE",
+      "position": null,
+      "status": "SERVICE_ENTRANCE_REQUIRED_UNLOCATED",
+      "existingCandidateMainEntranceId": "ENT-LIFE-E-02-MAIN-CANDIDATE",
+      "conflictPolicy": "must segregate service and pedestrian access; source building and road freeze required",
+      "noRuntimeExport": true
+    },
+    {
+      "id": "ENT-LIFE-N-01-SERVICE-PENDING",
+      "parentBuildingID": "LIFE-N-01",
+      "reason": "DINING_RETAIL_DELIVERY_AND_REFUSE",
+      "position": null,
+      "status": "SERVICE_ENTRANCE_REQUIRED_UNLOCATED",
+      "existingCandidateMainEntranceId": "ENT-LIFE-N-01-MAIN-CANDIDATE",
+      "conflictPolicy": "must segregate service and pedestrian access; source building and road freeze required",
+      "noRuntimeExport": true
+    },
+    {
+      "id": "ENT-LIFE-N-02-SERVICE-PENDING",
+      "parentBuildingID": "LIFE-N-02",
+      "reason": "DINING_RETAIL_DELIVERY_AND_REFUSE",
+      "position": null,
+      "status": "SERVICE_ENTRANCE_REQUIRED_UNLOCATED",
+      "existingCandidateMainEntranceId": "ENT-LIFE-N-02-MAIN-CANDIDATE",
+      "conflictPolicy": "must segregate service and pedestrian access; source building and road freeze required",
+      "noRuntimeExport": true
+    },
+    {
+      "id": "ENT-LIFE-S-01-SERVICE-PENDING",
+      "parentBuildingID": "LIFE-S-01",
+      "reason": "DINING_RETAIL_DELIVERY_AND_REFUSE",
+      "position": null,
+      "status": "SERVICE_ENTRANCE_REQUIRED_UNLOCATED",
+      "existingCandidateMainEntranceId": "ENT-LIFE-S-01-MAIN-CANDIDATE",
+      "conflictPolicy": "must segregate service and pedestrian access; source building and road freeze required",
+      "noRuntimeExport": true
+    },
+    {
+      "id": "ENT-LIFE-S-02-SERVICE-PENDING",
+      "parentBuildingID": "LIFE-S-02",
+      "reason": "DINING_RETAIL_DELIVERY_AND_REFUSE",
+      "position": null,
+      "status": "SERVICE_ENTRANCE_REQUIRED_UNLOCATED",
+      "existingCandidateMainEntranceId": "ENT-LIFE-S-02-MAIN-CANDIDATE",
+      "conflictPolicy": "must segregate service and pedestrian access; source building and road freeze required",
+      "noRuntimeExport": true
+    },
+    {
+      "id": "ENT-LIFE-W-01-SERVICE-PENDING",
+      "parentBuildingID": "LIFE-W-01",
+      "reason": "DINING_RETAIL_DELIVERY_AND_REFUSE",
+      "position": null,
+      "status": "SERVICE_ENTRANCE_REQUIRED_UNLOCATED",
+      "existingCandidateMainEntranceId": "ENT-LIFE-W-01-MAIN-CANDIDATE",
+      "conflictPolicy": "must segregate service and pedestrian access; source building and road freeze required",
+      "noRuntimeExport": true
+    },
+    {
+      "id": "ENT-LIFE-W-02-SERVICE-PENDING",
+      "parentBuildingID": "LIFE-W-02",
+      "reason": "DINING_RETAIL_DELIVERY_AND_REFUSE",
+      "position": null,
+      "status": "SERVICE_ENTRANCE_REQUIRED_UNLOCATED",
+      "existingCandidateMainEntranceId": "ENT-LIFE-W-02-MAIN-CANDIDATE",
+      "conflictPolicy": "must segregate service and pedestrian access; source building and road freeze required",
+      "noRuntimeExport": true
+    },
+    {
+      "id": "ENT-OPS-01-SERVICE-PENDING",
+      "parentBuildingID": "OPS-01",
+      "reason": "LOGISTICS_OPERATIONS_SERVICE_VEHICLE",
+      "position": null,
+      "status": "SERVICE_ENTRANCE_REQUIRED_UNLOCATED",
+      "existingCandidateMainEntranceId": "ENT-OPS-01-MAIN-CANDIDATE",
+      "conflictPolicy": "must segregate service and pedestrian access; source building and road freeze required",
+      "noRuntimeExport": true
+    },
+    {
+      "id": "ENT-OPS-02-SERVICE-PENDING",
+      "parentBuildingID": "OPS-02",
+      "reason": "LOGISTICS_OPERATIONS_SERVICE_VEHICLE",
+      "position": null,
+      "status": "SERVICE_ENTRANCE_REQUIRED_UNLOCATED",
+      "existingCandidateMainEntranceId": "ENT-OPS-02-MAIN-CANDIDATE",
+      "conflictPolicy": "must segregate service and pedestrian access; source building and road freeze required",
+      "noRuntimeExport": true
+    },
+    {
+      "id": "ENT-OPS-03-SERVICE-PENDING",
+      "parentBuildingID": "OPS-03",
+      "reason": "LOGISTICS_OPERATIONS_SERVICE_VEHICLE",
+      "position": null,
+      "status": "SERVICE_ENTRANCE_REQUIRED_UNLOCATED",
+      "existingCandidateMainEntranceId": "ENT-OPS-03-MAIN-CANDIDATE",
+      "conflictPolicy": "must segregate service and pedestrian access; source building and road freeze required",
+      "noRuntimeExport": true
+    },
+    {
+      "id": "ENT-OPS-04-SERVICE-PENDING",
+      "parentBuildingID": "OPS-04",
+      "reason": "LOGISTICS_OPERATIONS_SERVICE_VEHICLE",
+      "position": null,
+      "status": "SERVICE_ENTRANCE_REQUIRED_UNLOCATED",
+      "existingCandidateMainEntranceId": "ENT-OPS-04-MAIN-CANDIDATE",
+      "conflictPolicy": "must segregate service and pedestrian access; source building and road freeze required",
+      "noRuntimeExport": true
+    },
+    {
+      "id": "ENT-OPS-05-SERVICE-PENDING",
+      "parentBuildingID": "OPS-05",
+      "reason": "LOGISTICS_OPERATIONS_SERVICE_VEHICLE",
+      "position": null,
+      "status": "SERVICE_ENTRANCE_REQUIRED_UNLOCATED",
+      "existingCandidateMainEntranceId": "ENT-OPS-05-MAIN-CANDIDATE",
+      "conflictPolicy": "must segregate service and pedestrian access; source building and road freeze required",
+      "noRuntimeExport": true
+    },
+    {
+      "id": "ENT-OPS-06-SERVICE-PENDING",
+      "parentBuildingID": "OPS-06",
+      "reason": "LOGISTICS_OPERATIONS_SERVICE_VEHICLE",
+      "position": null,
+      "status": "SERVICE_ENTRANCE_REQUIRED_UNLOCATED",
+      "existingCandidateMainEntranceId": "ENT-OPS-06-MAIN-CANDIDATE",
+      "conflictPolicy": "must segregate service and pedestrian access; source building and road freeze required",
+      "noRuntimeExport": true
+    },
+    {
+      "id": "ENT-OPS-07-SERVICE-PENDING",
+      "parentBuildingID": "OPS-07",
+      "reason": "LOGISTICS_OPERATIONS_SERVICE_VEHICLE",
+      "position": null,
+      "status": "SERVICE_ENTRANCE_REQUIRED_UNLOCATED",
+      "existingCandidateMainEntranceId": "ENT-OPS-07-MAIN-CANDIDATE",
+      "conflictPolicy": "must segregate service and pedestrian access; source building and road freeze required",
+      "noRuntimeExport": true
+    },
+    {
+      "id": "ENT-OPS-08-SERVICE-PENDING",
+      "parentBuildingID": "OPS-08",
+      "reason": "LOGISTICS_OPERATIONS_SERVICE_VEHICLE",
+      "position": null,
+      "status": "SERVICE_ENTRANCE_REQUIRED_UNLOCATED",
+      "existingCandidateMainEntranceId": "ENT-OPS-08-MAIN-CANDIDATE",
+      "conflictPolicy": "must segregate service and pedestrian access; source building and road freeze required",
+      "noRuntimeExport": true
+    },
+    {
+      "id": "ENT-OPS-09-SERVICE-PENDING",
+      "parentBuildingID": "OPS-09",
+      "reason": "LOGISTICS_OPERATIONS_SERVICE_VEHICLE",
+      "position": null,
+      "status": "SERVICE_ENTRANCE_REQUIRED_UNLOCATED",
+      "existingCandidateMainEntranceId": "ENT-OPS-09-MAIN-CANDIDATE",
+      "conflictPolicy": "must segregate service and pedestrian access; source building and road freeze required",
+      "noRuntimeExport": true
+    },
+    {
+      "id": "ENT-OPS-10-SERVICE-PENDING",
+      "parentBuildingID": "OPS-10",
+      "reason": "LOGISTICS_OPERATIONS_SERVICE_VEHICLE",
+      "position": null,
+      "status": "SERVICE_ENTRANCE_REQUIRED_UNLOCATED",
+      "existingCandidateMainEntranceId": "ENT-OPS-10-MAIN-CANDIDATE",
+      "conflictPolicy": "must segregate service and pedestrian access; source building and road freeze required",
+      "noRuntimeExport": true
+    }
+  ],
+  "auditCompleteness": {
+    "shapeOnlyPrescreen": "195 door point proposals and 195 6m direct service/fire spur probes",
+    "checkedNamedWaterPolygons": [
+      "WATER-CHENGHU"
+    ],
+    "notCheckedWaterShorelines": [
+      "WATER-WEST-YUAN-POND",
+      "WATER-EAST-YUAN-POND",
+      "WATER-SOUTH-YUAN-POND",
+      "WATER-HEFENG-POND",
+      "WATER-YILAN-POND",
+      "OTHER_R7_WATERS"
+    ],
+    "buildingFootprints": "control bounding rectangles; do not imply final architectural wall polygon",
+    "emergencyGraphEndToEndApproved": false,
+    "candidateCenterlineLengthIsNotOperationalAccess": true,
+    "positionOfServiceDoorsFrozen": false,
+    "serviceDoorRequirements": 26
+  }
 }
