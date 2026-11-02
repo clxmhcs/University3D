@@ -1,0 +1,1198 @@
+{
+  "type": "FeatureCollection",
+  "name": "JiangchengUniversity_R7_SOLVE_13_Central_FourYuan_Fire_And_Protected_Areas",
+  "coordinateSystem": "LOCAL_XZ_METERS_NOT_WGS84",
+  "runtimeFinal": false,
+  "solveId": "R7-SOLVE-13",
+  "status": "PARTIAL_2D_CORRIDORS_WITH_UNRESOLVED_ENTRANCE_GRAPH",
+  "warning": "Rejected centerlines and retired duplicate are for audit traceability only, not to be imported into any roadway runtime. All entrance ties and surviving centerlines are conditional.",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-R7-S13-CEN-W-EDGE",
+        "name": "中央西侧外围消防候选",
+        "category": "candidate_emergency_only_road",
+        "zone": "central",
+        "status": "CANDIDATE_MARGINAL_BUILDING_CLEARANCE",
+        "widthM": 8,
+        "lengthM": 671,
+        "minKnownBuildingClearanceM": 8,
+        "existingRoadAnchors": [
+          "ROAD-BOYA-RING-SW-H",
+          "ROAD-BOYA-RING-SW-V"
+        ],
+        "runtimeFinal": false,
+        "fireVehicleGraphApproved": false,
+        "ordinaryMotorTrafficAllowed": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -600,
+            -430
+          ],
+          [
+            -621,
+            -430
+          ],
+          [
+            -621,
+            220
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-R7-S13-CEN-E-EDGE",
+        "name": "中央东侧外围消防候选",
+        "category": "candidate_emergency_only_road",
+        "zone": "central",
+        "status": "CANDIDATE_2D_CLEARANCE_ONLY",
+        "widthM": 8,
+        "lengthM": 920,
+        "minKnownBuildingClearanceM": 32,
+        "existingRoadAnchors": [
+          "ROAD-BOYA-RING-E"
+        ],
+        "runtimeFinal": false,
+        "fireVehicleGraphApproved": false,
+        "ordinaryMotorTrafficAllowed": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            830,
+            -430
+          ],
+          [
+            560,
+            -430
+          ],
+          [
+            560,
+            220
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-R7-S13-CEN-W-SOUTH",
+        "name": "中央西南直进线（应否决）",
+        "category": "candidate_emergency_only_road",
+        "zone": "central",
+        "status": "REJECTED_2D_COLLISION",
+        "widthM": 8,
+        "lengthM": 240,
+        "minKnownBuildingClearanceM": 0,
+        "existingRoadAnchors": [
+          "ROAD-BOYA-RING-SW-V"
+        ],
+        "runtimeFinal": false,
+        "fireVehicleGraphApproved": false,
+        "ordinaryMotorTrafficAllowed": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -600,
+            -650
+          ],
+          [
+            -360,
+            -650
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-R7-S13-CEN-E-SOUTH",
+        "name": "中央东南直进线（应否决）",
+        "category": "candidate_emergency_only_road",
+        "zone": "central",
+        "status": "REJECTED_2D_COLLISION",
+        "widthM": 8,
+        "lengthM": 270,
+        "minKnownBuildingClearanceM": 0,
+        "existingRoadAnchors": [
+          "ROAD-BOYA-RING-E"
+        ],
+        "runtimeFinal": false,
+        "fireVehicleGraphApproved": false,
+        "ordinaryMotorTrafficAllowed": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            830,
+            -650
+          ],
+          [
+            560,
+            -650
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-R7-S13-W-SOUTHWEST",
+        "name": "西苑西南边缘",
+        "category": "candidate_emergency_only_road",
+        "zone": "west",
+        "status": "CANDIDATE_2D_CLEARANCE_ONLY",
+        "widthM": 8,
+        "lengthM": 395,
+        "minKnownBuildingClearanceM": 12,
+        "existingRoadAnchors": [
+          "ROAD-QINGNIAN-W"
+        ],
+        "runtimeFinal": false,
+        "fireVehicleGraphApproved": false,
+        "ordinaryMotorTrafficAllowed": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1320,
+            180
+          ],
+          [
+            -1515,
+            180
+          ],
+          [
+            -1515,
+            380
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-R7-S13-W-EAST-INNER",
+        "name": "西苑青年路东侧服务支路",
+        "category": "candidate_emergency_only_road",
+        "zone": "west",
+        "status": "CANDIDATE_2D_CLEARANCE_ONLY",
+        "widthM": 8,
+        "lengthM": 270,
+        "minKnownBuildingClearanceM": 11,
+        "existingRoadAnchors": [
+          "ROAD-QINGNIAN-W"
+        ],
+        "runtimeFinal": false,
+        "fireVehicleGraphApproved": false,
+        "ordinaryMotorTrafficAllowed": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1320,
+            180
+          ],
+          [
+            -1230,
+            180
+          ],
+          [
+            -1230,
+            360
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-R7-S13-W-GREEN-SOUTH",
+        "name": "西苑绿心南缘（两端连通候选）",
+        "category": "candidate_emergency_only_road",
+        "zone": "west",
+        "status": "CANDIDATE_2D_CLEARANCE_ONLY",
+        "widthM": 8,
+        "lengthM": 200,
+        "minKnownBuildingClearanceM": 19,
+        "existingRoadAnchors": [
+          "ROAD-QINGNIAN-W"
+        ],
+        "runtimeFinal": false,
+        "fireVehicleGraphApproved": false,
+        "ordinaryMotorTrafficAllowed": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1515,
+            380
+          ],
+          [
+            -1515,
+            385
+          ],
+          [
+            -1320,
+            385
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-R7-S13-E-SOUTH",
+        "name": "东苑南缘应急服务通道",
+        "category": "candidate_emergency_only_road",
+        "zone": "east",
+        "status": "CANDIDATE_2D_CLEARANCE_ONLY",
+        "widthM": 8,
+        "lengthM": 570,
+        "minKnownBuildingClearanceM": 27,
+        "existingRoadAnchors": [
+          "ROAD-BOYA-RING-E",
+          "ROAD-QINGNIAN-E"
+        ],
+        "runtimeFinal": false,
+        "fireVehicleGraphApproved": false,
+        "ordinaryMotorTrafficAllowed": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            830,
+            -175
+          ],
+          [
+            1400,
+            -175
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-R7-S13-N-EAST",
+        "name": "北苑东翼外围通道",
+        "category": "candidate_emergency_only_road",
+        "zone": "north",
+        "status": "CANDIDATE_2D_CLEARANCE_ONLY",
+        "widthM": 8,
+        "lengthM": 520,
+        "minKnownBuildingClearanceM": 31,
+        "existingRoadAnchors": [
+          "ROAD-BOYA-RING-E",
+          "ROAD-BOYA-RING-N"
+        ],
+        "runtimeFinal": false,
+        "fireVehicleGraphApproved": false,
+        "ordinaryMotorTrafficAllowed": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            830,
+            690
+          ],
+          [
+            1000,
+            690
+          ],
+          [
+            1000,
+            1040
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-R7-S13-N-WEST",
+        "name": "北苑西翼外围通道",
+        "category": "candidate_emergency_only_road",
+        "zone": "north",
+        "status": "CANDIDATE_2D_CLEARANCE_ONLY",
+        "widthM": 8,
+        "lengthM": 250,
+        "minKnownBuildingClearanceM": 25,
+        "existingRoadAnchors": [
+          "ROAD-BOYA-RING-NW-H",
+          "ROAD-BOYA-RING-W"
+        ],
+        "runtimeFinal": false,
+        "fireVehicleGraphApproved": false,
+        "ordinaryMotorTrafficAllowed": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -900,
+            600
+          ],
+          [
+            -970,
+            600
+          ],
+          [
+            -970,
+            780
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-R7-S13-N-WEST-INNER",
+        "name": "北苑西翼内侧接入",
+        "category": "candidate_emergency_only_road",
+        "zone": "north",
+        "status": "CANDIDATE_2D_CLEARANCE_ONLY",
+        "widthM": 8,
+        "lengthM": 180,
+        "minKnownBuildingClearanceM": 45,
+        "existingRoadAnchors": [
+          "ROAD-QINGNIAN-NW"
+        ],
+        "runtimeFinal": false,
+        "fireVehicleGraphApproved": false,
+        "ordinaryMotorTrafficAllowed": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -520,
+            700
+          ],
+          [
+            -560,
+            700
+          ],
+          [
+            -560,
+            840
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-R7-S13-S-WEST",
+        "name": "南苑西缘外围通道",
+        "category": "candidate_emergency_only_road",
+        "zone": "south",
+        "status": "CANDIDATE_2D_CLEARANCE_ONLY",
+        "widthM": 8,
+        "lengthM": 200,
+        "minKnownBuildingClearanceM": 17,
+        "existingRoadAnchors": [
+          "ROAD-QINGNIAN-S"
+        ],
+        "runtimeFinal": false,
+        "fireVehicleGraphApproved": false,
+        "ordinaryMotorTrafficAllowed": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            260,
+            -900
+          ],
+          [
+            255,
+            -900
+          ],
+          [
+            255,
+            -705
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-R7-S13-S-EAST",
+        "name": "南苑东缘外围通道",
+        "category": "candidate_emergency_only_road",
+        "zone": "south",
+        "status": "CANDIDATE_2D_CLEARANCE_ONLY",
+        "widthM": 8,
+        "lengthM": 175,
+        "minKnownBuildingClearanceM": 16,
+        "existingRoadAnchors": [
+          "ROAD-QINGNIAN-S"
+        ],
+        "runtimeFinal": false,
+        "fireVehicleGraphApproved": false,
+        "ordinaryMotorTrafficAllowed": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            800,
+            -900
+          ],
+          [
+            815,
+            -900
+          ],
+          [
+            815,
+            -740
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-R7-S13-W-OUTER-DUPLICATE",
+        "name": "西苑西缘重复方案（退役）",
+        "category": "candidate_emergency_only_road",
+        "zone": "west",
+        "status": "RETIRED_REDUNDANT_PARALLEL_ROUTE",
+        "widthM": 8,
+        "lengthM": 190,
+        "minKnownBuildingClearanceM": 9,
+        "existingRoadAnchors": [],
+        "runtimeFinal": false,
+        "fireVehicleGraphApproved": false,
+        "ordinaryMotorTrafficAllowed": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1510,
+            180
+          ],
+          [
+            -1510,
+            370
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "TIE-S13-CEN-11",
+        "parentBuildingID": "CEN-11",
+        "category": "potential_access_shortening_only",
+        "status": "NOT_FIRE_APPROVED",
+        "newConceptLengthM": 111,
+        "oldConceptLengthM": 381,
+        "originStage": "R7-SOLVE-11",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            449,
+            -280
+          ],
+          [
+            560,
+            -280
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "TIE-S13-CEN-12",
+        "parentBuildingID": "CEN-12",
+        "category": "potential_access_shortening_only",
+        "status": "NOT_FIRE_APPROVED",
+        "newConceptLengthM": 111,
+        "oldConceptLengthM": 381,
+        "originStage": "R7-SOLVE-11",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            449,
+            -120
+          ],
+          [
+            560,
+            -120
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "TIE-S13-CEN-14",
+        "parentBuildingID": "CEN-14",
+        "category": "potential_access_shortening_only",
+        "status": "NOT_FIRE_APPROVED",
+        "newConceptLengthM": 85,
+        "oldConceptLengthM": 355,
+        "originStage": "R7-SOLVE-11",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            475,
+            40
+          ],
+          [
+            560,
+            40
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "TIE-S13-LIFE-E-01",
+        "parentBuildingID": "LIFE-E-01",
+        "category": "potential_access_shortening_only",
+        "status": "NOT_FIRE_APPROVED",
+        "newConceptLengthM": 95,
+        "oldConceptLengthM": 200,
+        "originStage": "R7-SOLVE-11",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            1240,
+            -80
+          ],
+          [
+            1240,
+            -175
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "TIE-S13-LIFE-W-01",
+        "parentBuildingID": "LIFE-W-01",
+        "category": "potential_access_shortening_only",
+        "status": "NOT_FIRE_APPROVED",
+        "newConceptLengthM": 70,
+        "oldConceptLengthM": 203.04,
+        "originStage": "R7-SOLVE-11",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1445,
+            260
+          ],
+          [
+            -1515,
+            260
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "TIE-S13-RES-N-G02",
+        "parentBuildingID": "RES-N-G02",
+        "category": "potential_access_shortening_only",
+        "status": "NOT_FIRE_APPROVED",
+        "newConceptLengthM": 51,
+        "oldConceptLengthM": 560,
+        "originStage": "R7-SOLVE-11",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            949,
+            960
+          ],
+          [
+            1000,
+            960
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "TIE-S13-RES-N-U08",
+        "parentBuildingID": "RES-N-U08",
+        "category": "potential_access_shortening_only",
+        "status": "NOT_FIRE_APPROVED",
+        "newConceptLengthM": 100,
+        "oldConceptLengthM": 231.82,
+        "originStage": "R7-SOLVE-11",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            900,
+            911
+          ],
+          [
+            1000,
+            911
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "TIE-S13-RES-N-U09",
+        "parentBuildingID": "RES-N-U09",
+        "category": "potential_access_shortening_only",
+        "status": "NOT_FIRE_APPROVED",
+        "newConceptLengthM": 81,
+        "oldConceptLengthM": 332.15,
+        "originStage": "R7-SOLVE-11",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            919,
+            1010
+          ],
+          [
+            1000,
+            1010
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "TIE-S13-RES-S-I03",
+        "parentBuildingID": "RES-S-I03",
+        "category": "potential_access_shortening_only",
+        "status": "NOT_FIRE_APPROVED",
+        "newConceptLengthM": 65.49,
+        "oldConceptLengthM": 80,
+        "originStage": "R7-SOLVE-11",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            750,
+            -732
+          ],
+          [
+            815,
+            -740
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "TIE-S13-RES-S-U10",
+        "parentBuildingID": "RES-S-U10",
+        "category": "potential_access_shortening_only",
+        "status": "NOT_FIRE_APPROVED",
+        "newConceptLengthM": 66,
+        "oldConceptLengthM": 341.35,
+        "originStage": "R7-SOLVE-11",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            321,
+            -780
+          ],
+          [
+            255,
+            -780
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "TIE-S13-RES-W-U03",
+        "parentBuildingID": "RES-W-U03",
+        "category": "potential_access_shortening_only",
+        "status": "NOT_FIRE_APPROVED",
+        "newConceptLengthM": 31,
+        "oldConceptLengthM": 200,
+        "originStage": "R7-SOLVE-11",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1261,
+            300
+          ],
+          [
+            -1230,
+            300
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "TIE-S13-RES-W-U04",
+        "parentBuildingID": "RES-W-U04",
+        "category": "potential_access_shortening_only",
+        "status": "NOT_FIRE_APPROVED",
+        "newConceptLengthM": 36,
+        "oldConceptLengthM": 159,
+        "originStage": "R7-SOLVE-11",
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1479,
+            325
+          ],
+          [
+            -1515,
+            325
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "GREEN-W-01",
+        "category": "protected_four_yuan_green",
+        "areaM2": 20800,
+        "notTrafficRoad": true,
+        "sourceStage": "R7-SOLVE-05"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -1335,
+              405
+            ],
+            [
+              -1335,
+              535
+            ],
+            [
+              -1495,
+              535
+            ],
+            [
+              -1495,
+              405
+            ],
+            [
+              -1335,
+              405
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "GREEN-N-01",
+        "category": "protected_four_yuan_green",
+        "areaM2": 22400,
+        "notTrafficRoad": true,
+        "sourceStage": "R7-SOLVE-05"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                -760,
+                920
+              ],
+              [
+                -760,
+                1000
+              ],
+              [
+                -900,
+                1000
+              ],
+              [
+                -900,
+                920
+              ],
+              [
+                -760,
+                920
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                880,
+                920
+              ],
+              [
+                880,
+                1000
+              ],
+              [
+                740,
+                1000
+              ],
+              [
+                740,
+                920
+              ],
+              [
+                880,
+                920
+              ]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "GREEN-E-01",
+        "category": "protected_four_yuan_green",
+        "areaM2": 22500,
+        "notTrafficRoad": true,
+        "sourceStage": "R7-SOLVE-05"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1380,
+              45
+            ],
+            [
+              1380,
+              195
+            ],
+            [
+              1230,
+              195
+            ],
+            [
+              1230,
+              45
+            ],
+            [
+              1380,
+              45
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "GREEN-S-01",
+        "category": "protected_four_yuan_green",
+        "areaM2": 24000,
+        "notTrafficRoad": true,
+        "sourceStage": "R7-SOLVE-05"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              700,
+              -860
+            ],
+            [
+              700,
+              -740
+            ],
+            [
+              500,
+              -740
+            ],
+            [
+              500,
+              -860
+            ],
+            [
+              700,
+              -860
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "WATER-LAKE-01",
+        "category": "source_lake_polygon_protected",
+        "status": "R7_WATER_SHORELINE_PENDING"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -300,
+              250
+            ],
+            [
+              -240,
+              155
+            ],
+            [
+              -110,
+              110
+            ],
+            [
+              30,
+              105
+            ],
+            [
+              170,
+              125
+            ],
+            [
+              300,
+              185
+            ],
+            [
+              365,
+              280
+            ],
+            [
+              345,
+              380
+            ],
+            [
+              240,
+              455
+            ],
+            [
+              95,
+              495
+            ],
+            [
+              -55,
+              485
+            ],
+            [
+              -210,
+              430
+            ],
+            [
+              -315,
+              345
+            ],
+            [
+              -300,
+              250
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "CEREMONIAL-SOUTH",
+        "category": "protected_pedestrian_ceremonial_area",
+        "noNormalMotor": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -90,
+              -1030
+            ],
+            [
+              90,
+              -1030
+            ],
+            [
+              90,
+              -650
+            ],
+            [
+              -90,
+              -650
+            ],
+            [
+              -90,
+              -1030
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "CEREMONIAL-CENTRAL",
+        "category": "protected_pedestrian_ceremonial_area",
+        "noNormalMotor": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -100,
+              -530
+            ],
+            [
+              100,
+              -530
+            ],
+            [
+              100,
+              -210
+            ],
+            [
+              -100,
+              -210
+            ],
+            [
+              -100,
+              -530
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "CEREMONIAL-NORTH",
+        "category": "protected_pedestrian_ceremonial_area",
+        "noNormalMotor": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -120,
+              -125
+            ],
+            [
+              120,
+              -125
+            ],
+            [
+              120,
+              105
+            ],
+            [
+              -120,
+              105
+            ],
+            [
+              -120,
+              -125
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "CEN-CEREMONIAL-LAWN",
+        "category": "protected_pedestrian_ceremonial_area",
+        "noNormalMotor": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -220,
+              -80
+            ],
+            [
+              220,
+              -80
+            ],
+            [
+              220,
+              90
+            ],
+            [
+              -220,
+              90
+            ],
+            [
+              -220,
+              -80
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}
