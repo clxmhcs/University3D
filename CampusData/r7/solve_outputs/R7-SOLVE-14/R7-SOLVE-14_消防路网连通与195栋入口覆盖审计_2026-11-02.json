@@ -1,0 +1,5238 @@
+{
+  "schemaVersion": 1,
+  "solveId": "R7-SOLVE-14",
+  "version": "R7-FIRE-GRAPH-ENTRANCE-TOPOLOGY-AUDIT-2026-11-02",
+  "sourcePriority": "PATCH-2026-09-14-R7",
+  "status": "PLANAR_GRAPH_WITH_GATEWAY_UNAPPROVED",
+  "runtimeFinal": false,
+  "graphConstruction": {
+    "sourceRoads": {
+      "solve07": 32,
+      "solve07EmergencyEnabled": 31,
+      "solve12ConditionalInternal": 7,
+      "solve13ConditionalNonRejected": 11,
+      "total": 49
+    },
+    "originalLineSegments": 72,
+    "planarIntersectionsDetected": 77,
+    "collinearLinks": 12,
+    "splitGraphNodes": 102,
+    "splitGraphEdges": 110,
+    "connectedComponents": 2,
+    "rootGateSeeds": [
+      {
+        "gateRoadId": "ROAD-WEST-GATE",
+        "componentRawIndices": [
+          0
+        ],
+        "cityEntryPhysicalAccessApproved": false
+      },
+      {
+        "gateRoadId": "ROAD-EAST-GATE",
+        "componentRawIndices": [
+          0
+        ],
+        "cityEntryPhysicalAccessApproved": false
+      }
+    ],
+    "permissionNote": "Gateway seed roads used only as conceptual R7 topology roots. Gate actuators, city/campus geometry, emergency rights-of-way, road crossings and turn radii are not approved.",
+    "restrictedBridgeNote": "At-grade geometric crossings assumed; grade separation, terrain, physical intersection and emergency gate controls NOT certified."
+  },
+  "components": [
+    {
+      "componentId": "FIRE-COMP-01",
+      "rawIndex": 0,
+      "nodeCount": 99,
+      "edgeCount": 108,
+      "geometricCenterlineLengthM": 23184,
+      "roadIds": [
+        "ROAD-BOYA-RING-SW",
+        "ROAD-BOYA-RING-SW-V",
+        "ROAD-JISHI",
+        "ROAD-R7-S12-MED-NORTH-SOUTH-SERVICE",
+        "ROAD-ZHICHUANG",
+        "ROAD-JIANGXIN",
+        "ROAD-QINGNIAN-W-FEED",
+        "ROAD-BOYA-RING-W",
+        "ROAD-GEZHI-W",
+        "ROAD-BOYA-RING-NW-H",
+        "ROAD-R7-S13-N-WEST",
+        "ROAD-BOYA-RING-NW-V",
+        "ROAD-BOYA-RING-N",
+        "ROAD-QINGNIAN-NW",
+        "ROAD-R7-S13-N-WEST-INNER",
+        "ROAD-JIANXING-W",
+        "ROAD-JIANXING-E",
+        "ROAD-QINGNIAN-NE",
+        "ROAD-BOYA-RING-E",
+        "ROAD-R7-S12-ART-BOYA-BACKSTAGE",
+        "ROAD-R7-S13-N-EAST",
+        "ROAD-GEZHI-E",
+        "ROAD-QINGNIAN-E-FEED",
+        "ROAD-WENHUA",
+        "ROAD-QINGNIAN-E",
+        "ROAD-EAST-GATE",
+        "ROAD-R7-S13-E-SOUTH",
+        "ROAD-R7-S13-CEN-E-EDGE",
+        "ROAD-R7-S12-OPS-NORTH-SERVICE",
+        "ROAD-R7-S12-OPS-SOUTH-SERVICE",
+        "ROAD-BOYA-RING-SE",
+        "ROAD-QINGNIAN-S-E",
+        "ROAD-QINGNIAN-S",
+        "ROAD-R7-S13-S-EAST",
+        "ROAD-QINGNIAN-S-W",
+        "ROAD-R7-S13-S-WEST",
+        "ROAD-BOYA-RING-S-CROSS",
+        "ROAD-WEST-GATE",
+        "ROAD-QINGNIAN-W",
+        "ROAD-R7-S13-W-SOUTHWEST",
+        "ROAD-R7-S13-W-EAST-INNER",
+        "ROAD-R7-S13-W-GREEN-SOUTH",
+        "ROAD-CHUANGXIN-CONN",
+        "ROAD-CHUANGXIN",
+        "ROAD-R7-S12-RDI-ACCESS-LINK",
+        "ROAD-R7-S12-RDI-NORTH-SERVICE",
+        "ROAD-BOYA-RING-SW-H",
+        "ROAD-R7-S13-CEN-W-EDGE"
+      ],
+      "origins": [
+        "R7-SOLVE-07",
+        "R7-SOLVE-12",
+        "R7-SOLVE-13"
+      ],
+      "hasGatewayCandidate": true
+    },
+    {
+      "componentId": "FIRE-COMP-02",
+      "rawIndex": 1,
+      "nodeCount": 3,
+      "edgeCount": 2,
+      "geometricCenterlineLengthM": 94,
+      "roadIds": [
+        "ROAD-R7-S12-HSP-ONSITE-AMBULANCE"
+      ],
+      "origins": [
+        "R7-SOLVE-12"
+      ],
+      "hasGatewayCandidate": false
+    }
+  ],
+  "baseline": {
+    "ordinaryMainEntranceCandidates": 195,
+    "source11OriginalRiskCount": 145,
+    "originalRiskClassTotals": {
+      "NETWORK_EXTENSION_REQUIRED": 70,
+      "LONG_ACCESS_SPUR_REVIEW": 47,
+      "CORRIDOR_CONFLICT": 28,
+      "CLEARANCE_PRECHECK_ONLY": 50
+    },
+    "hospitalAuthoritativeEntrances": 6,
+    "unlocatedServiceEntrances": 26
+  },
+  "coverage": {
+    "total195": 195,
+    "withSomeValid2DSourceTie": 75,
+    "with2DTieToGatewaySeedComponent": 75,
+    "isolatedRoadComponent": 0,
+    "withoutSource2DTie": 120,
+    "current18CEN": {
+      "total": 18,
+      "gateSeedCandidate": 3
+    },
+    "dorm56": {
+      "total": 56,
+      "gateSeedCandidate": 34
+    },
+    "yuanLifeService8": {
+      "total": 8,
+      "gateSeedCandidate": 4
+    },
+    "byOriginalClass": {
+      "NETWORK_EXTENSION_REQUIRED": {
+        "total": 70,
+        "rootCandidate": 15,
+        "unlinked": 55
+      },
+      "LONG_ACCESS_SPUR_REVIEW": {
+        "total": 47,
+        "rootCandidate": 3,
+        "unlinked": 44
+      },
+      "CORRIDOR_CONFLICT": {
+        "total": 28,
+        "rootCandidate": 7,
+        "unlinked": 21
+      },
+      "CLEARANCE_PRECHECK_ONLY": {
+        "total": 50,
+        "rootCandidate": 50,
+        "unlinked": 0
+      }
+    },
+    "all145OriginalRiskCasesStillOpen": true,
+    "fullCampusEmergencyGraphApproved": false
+  },
+  "selectedRoads": [
+    {
+      "id": "ROAD-BOYA-RING-SW",
+      "sourceStage": "R7-SOLVE-07",
+      "widthM": 26,
+      "centerlineXZ": [
+        [
+          -600,
+          -1000
+        ],
+        [
+          -60,
+          -1000
+        ]
+      ],
+      "graphComponentIds": [
+        "FIRE-COMP-01"
+      ],
+      "roadStatus": "R7_CANDIDATE"
+    },
+    {
+      "id": "ROAD-BOYA-RING-S-CROSS",
+      "sourceStage": "R7-SOLVE-07",
+      "widthM": 8,
+      "centerlineXZ": [
+        [
+          -60,
+          -1000
+        ],
+        [
+          60,
+          -1000
+        ]
+      ],
+      "graphComponentIds": [
+        "FIRE-COMP-01"
+      ],
+      "roadStatus": "R7_CANDIDATE"
+    },
+    {
+      "id": "ROAD-BOYA-RING-SE",
+      "sourceStage": "R7-SOLVE-07",
+      "widthM": 26,
+      "centerlineXZ": [
+        [
+          60,
+          -1000
+        ],
+        [
+          830,
+          -1000
+        ]
+      ],
+      "graphComponentIds": [
+        "FIRE-COMP-01"
+      ],
+      "roadStatus": "R7_CANDIDATE"
+    },
+    {
+      "id": "ROAD-BOYA-RING-E",
+      "sourceStage": "R7-SOLVE-07",
+      "widthM": 26,
+      "centerlineXZ": [
+        [
+          830,
+          -1000
+        ],
+        [
+          830,
+          690
+        ]
+      ],
+      "graphComponentIds": [
+        "FIRE-COMP-01"
+      ],
+      "roadStatus": "R7_CANDIDATE"
+    },
+    {
+      "id": "ROAD-BOYA-RING-N",
+      "sourceStage": "R7-SOLVE-07",
+      "widthM": 26,
+      "centerlineXZ": [
+        [
+          -750,
+          690
+        ],
+        [
+          -210,
+          690
+        ],
+        [
+          -210,
+          655
+        ],
+        [
+          210,
+          655
+        ],
+        [
+          210,
+          690
+        ],
+        [
+          830,
+          690
+        ]
+      ],
+      "graphComponentIds": [
+        "FIRE-COMP-01"
+      ],
+      "roadStatus": "R7_CANDIDATE"
+    },
+    {
+      "id": "ROAD-BOYA-RING-NW-V",
+      "sourceStage": "R7-SOLVE-07",
+      "widthM": 26,
+      "centerlineXZ": [
+        [
+          -750,
+          690
+        ],
+        [
+          -750,
+          600
+        ]
+      ],
+      "graphComponentIds": [
+        "FIRE-COMP-01"
+      ],
+      "roadStatus": "R7_CANDIDATE"
+    },
+    {
+      "id": "ROAD-BOYA-RING-NW-H",
+      "sourceStage": "R7-SOLVE-07",
+      "widthM": 26,
+      "centerlineXZ": [
+        [
+          -750,
+          600
+        ],
+        [
+          -900,
+          600
+        ]
+      ],
+      "graphComponentIds": [
+        "FIRE-COMP-01"
+      ],
+      "roadStatus": "R7_CANDIDATE"
+    },
+    {
+      "id": "ROAD-BOYA-RING-W",
+      "sourceStage": "R7-SOLVE-07",
+      "widthM": 26,
+      "centerlineXZ": [
+        [
+          -900,
+          600
+        ],
+        [
+          -900,
+          -430
+        ]
+      ],
+      "graphComponentIds": [
+        "FIRE-COMP-01"
+      ],
+      "roadStatus": "R7_CANDIDATE"
+    },
+    {
+      "id": "ROAD-BOYA-RING-SW-H",
+      "sourceStage": "R7-SOLVE-07",
+      "widthM": 26,
+      "centerlineXZ": [
+        [
+          -900,
+          -430
+        ],
+        [
+          -600,
+          -430
+        ]
+      ],
+      "graphComponentIds": [
+        "FIRE-COMP-01"
+      ],
+      "roadStatus": "R7_CANDIDATE"
+    },
+    {
+      "id": "ROAD-BOYA-RING-SW-V",
+      "sourceStage": "R7-SOLVE-07",
+      "widthM": 26,
+      "centerlineXZ": [
+        [
+          -600,
+          -430
+        ],
+        [
+          -600,
+          -1000
+        ]
+      ],
+      "graphComponentIds": [
+        "FIRE-COMP-01"
+      ],
+      "roadStatus": "R7_CANDIDATE"
+    },
+    {
+      "id": "ROAD-JISHI",
+      "sourceStage": "R7-SOLVE-07",
+      "widthM": 20,
+      "centerlineXZ": [
+        [
+          -1350,
+          -770
+        ],
+        [
+          -600,
+          -770
+        ]
+      ],
+      "graphComponentIds": [
+        "FIRE-COMP-01"
+      ],
+      "roadStatus": "R7_CANDIDATE"
+    },
+    {
+      "id": "ROAD-ZHICHUANG",
+      "sourceStage": "R7-SOLVE-07",
+      "widthM": 18,
+      "centerlineXZ": [
+        [
+          -1380,
+          -300
+        ],
+        [
+          -900,
+          -300
+        ]
+      ],
+      "graphComponentIds": [
+        "FIRE-COMP-01"
+      ],
+      "roadStatus": "R7_CANDIDATE"
+    },
+    {
+      "id": "ROAD-JIANGXIN",
+      "sourceStage": "R7-SOLVE-07",
+      "widthM": 18,
+      "centerlineXZ": [
+        [
+          -1040,
+          -300
+        ],
+        [
+          -1040,
+          480
+        ],
+        [
+          -900,
+          480
+        ]
+      ],
+      "graphComponentIds": [
+        "FIRE-COMP-01"
+      ],
+      "roadStatus": "R7_CANDIDATE"
+    },
+    {
+      "id": "ROAD-GEZHI-W",
+      "sourceStage": "R7-SOLVE-07",
+      "widthM": 18,
+      "centerlineXZ": [
+        [
+          -900,
+          500
+        ],
+        [
+          -360,
+          500
+        ]
+      ],
+      "graphComponentIds": [
+        "FIRE-COMP-01"
+      ],
+      "roadStatus": "R7_CANDIDATE"
+    },
+    {
+      "id": "ROAD-GEZHI-E",
+      "sourceStage": "R7-SOLVE-07",
+      "widthM": 18,
+      "centerlineXZ": [
+        [
+          360,
+          440
+        ],
+        [
+          830,
+          440
+        ]
+      ],
+      "graphComponentIds": [
+        "FIRE-COMP-01"
+      ],
+      "roadStatus": "R7_CANDIDATE"
+    },
+    {
+      "id": "ROAD-WENHUA",
+      "sourceStage": "R7-SOLVE-07",
+      "widthM": 18,
+      "centerlineXZ": [
+        [
+          830,
+          400
+        ],
+        [
+          1040,
+          400
+        ],
+        [
+          1040,
+          -250
+        ]
+      ],
+      "graphComponentIds": [
+        "FIRE-COMP-01"
+      ],
+      "roadStatus": "R7_CANDIDATE"
+    },
+    {
+      "id": "ROAD-WEST-GATE",
+      "sourceStage": "R7-SOLVE-07",
+      "widthM": 18,
+      "centerlineXZ": [
+        [
+          -1548,
+          -80
+        ],
+        [
+          -1500,
+          -80
+        ],
+        [
+          -1500,
+          40
+        ],
+        [
+          -1320,
+          40
+        ],
+        [
+          -1320,
+          100
+        ]
+      ],
+      "graphComponentIds": [
+        "FIRE-COMP-01"
+      ],
+      "roadStatus": "R7_CANDIDATE"
+    },
+    {
+      "id": "ROAD-QINGNIAN-W",
+      "sourceStage": "R7-SOLVE-07",
+      "widthM": 16,
+      "centerlineXZ": [
+        [
+          -1320,
+          100
+        ],
+        [
+          -1320,
+          600
+        ]
+      ],
+      "graphComponentIds": [
+        "FIRE-COMP-01"
+      ],
+      "roadStatus": "R7_CANDIDATE"
+    },
+    {
+      "id": "ROAD-QINGNIAN-W-FEED",
+      "sourceStage": "R7-SOLVE-07",
+      "widthM": 16,
+      "centerlineXZ": [
+        [
+          -1320,
+          100
+        ],
+        [
+          -900,
+          100
+        ]
+      ],
+      "graphComponentIds": [
+        "FIRE-COMP-01"
+      ],
+      "roadStatus": "R7_CANDIDATE"
+    },
+    {
+      "id": "ROAD-CHUANGXIN",
+      "sourceStage": "R7-SOLVE-07",
+      "widthM": 18,
+      "centerlineXZ": [
+        [
+          -1430,
+          600
+        ],
+        [
+          -1430,
+          820
+        ]
+      ],
+      "graphComponentIds": [
+        "FIRE-COMP-01"
+      ],
+      "roadStatus": "R7_CANDIDATE"
+    },
+    {
+      "id": "ROAD-CHUANGXIN-CONN",
+      "sourceStage": "R7-SOLVE-07",
+      "widthM": 18,
+      "centerlineXZ": [
+        [
+          -1430,
+          600
+        ],
+        [
+          -1320,
+          600
+        ]
+      ],
+      "graphComponentIds": [
+        "FIRE-COMP-01"
+      ],
+      "roadStatus": "R7_CANDIDATE"
+    },
+    {
+      "id": "ROAD-QINGNIAN-E",
+      "sourceStage": "R7-SOLVE-07",
+      "widthM": 18,
+      "centerlineXZ": [
+        [
+          1400,
+          -280
+        ],
+        [
+          1400,
+          360
+        ]
+      ],
+      "graphComponentIds": [
+        "FIRE-COMP-01"
+      ],
+      "roadStatus": "R7_CANDIDATE"
+    },
+    {
+      "id": "ROAD-QINGNIAN-E-FEED",
+      "sourceStage": "R7-SOLVE-07",
+      "widthM": 18,
+      "centerlineXZ": [
+        [
+          830,
+          360
+        ],
+        [
+          1400,
+          360
+        ]
+      ],
+      "graphComponentIds": [
+        "FIRE-COMP-01"
+      ],
+      "roadStatus": "R7_CANDIDATE"
+    },
+    {
+      "id": "ROAD-EAST-GATE",
+      "sourceStage": "R7-SOLVE-07",
+      "widthM": 14,
+      "centerlineXZ": [
+        [
+          1400,
+          120
+        ],
+        [
+          1555,
+          120
+        ]
+      ],
+      "graphComponentIds": [
+        "FIRE-COMP-01"
+      ],
+      "roadStatus": "R7_CANDIDATE"
+    },
+    {
+      "id": "ROAD-QINGNIAN-S",
+      "sourceStage": "R7-SOLVE-07",
+      "widthM": 18,
+      "centerlineXZ": [
+        [
+          260,
+          -900
+        ],
+        [
+          800,
+          -900
+        ]
+      ],
+      "graphComponentIds": [
+        "FIRE-COMP-01"
+      ],
+      "roadStatus": "R7_CANDIDATE"
+    },
+    {
+      "id": "ROAD-QINGNIAN-S-W",
+      "sourceStage": "R7-SOLVE-07",
+      "widthM": 18,
+      "centerlineXZ": [
+        [
+          300,
+          -1000
+        ],
+        [
+          300,
+          -900
+        ]
+      ],
+      "graphComponentIds": [
+        "FIRE-COMP-01"
+      ],
+      "roadStatus": "R7_CANDIDATE"
+    },
+    {
+      "id": "ROAD-QINGNIAN-S-E",
+      "sourceStage": "R7-SOLVE-07",
+      "widthM": 18,
+      "centerlineXZ": [
+        [
+          760,
+          -1000
+        ],
+        [
+          760,
+          -900
+        ]
+      ],
+      "graphComponentIds": [
+        "FIRE-COMP-01"
+      ],
+      "roadStatus": "R7_CANDIDATE"
+    },
+    {
+      "id": "ROAD-QINGNIAN-NW",
+      "sourceStage": "R7-SOLVE-07",
+      "widthM": 14,
+      "centerlineXZ": [
+        [
+          -520,
+          690
+        ],
+        [
+          -520,
+          1040
+        ]
+      ],
+      "graphComponentIds": [
+        "FIRE-COMP-01"
+      ],
+      "roadStatus": "R7_CANDIDATE"
+    },
+    {
+      "id": "ROAD-QINGNIAN-NE",
+      "sourceStage": "R7-SOLVE-07",
+      "widthM": 14,
+      "centerlineXZ": [
+        [
+          520,
+          690
+        ],
+        [
+          520,
+          1040
+        ]
+      ],
+      "graphComponentIds": [
+        "FIRE-COMP-01"
+      ],
+      "roadStatus": "R7_CANDIDATE"
+    },
+    {
+      "id": "ROAD-JIANXING-W",
+      "sourceStage": "R7-SOLVE-07",
+      "widthM": 22,
+      "centerlineXZ": [
+        [
+          -160,
+          655
+        ],
+        [
+          -160,
+          1040
+        ]
+      ],
+      "graphComponentIds": [
+        "FIRE-COMP-01"
+      ],
+      "roadStatus": "R7_CANDIDATE"
+    },
+    {
+      "id": "ROAD-JIANXING-E",
+      "sourceStage": "R7-SOLVE-07",
+      "widthM": 22,
+      "centerlineXZ": [
+        [
+          160,
+          655
+        ],
+        [
+          160,
+          1040
+        ]
+      ],
+      "graphComponentIds": [
+        "FIRE-COMP-01"
+      ],
+      "roadStatus": "R7_CANDIDATE"
+    },
+    {
+      "id": "ROAD-R7-S12-HSP-ONSITE-AMBULANCE",
+      "sourceStage": "R7-SOLVE-12",
+      "widthM": 8,
+      "centerlineXZ": [
+        [
+          -950,
+          -1090
+        ],
+        [
+          -950,
+          -1010
+        ],
+        [
+          -964,
+          -1010
+        ]
+      ],
+      "graphComponentIds": [
+        "FIRE-COMP-02"
+      ],
+      "roadStatus": "CANDIDATE_NO_ENGINEERING_APPROVAL"
+    },
+    {
+      "id": "ROAD-R7-S12-MED-NORTH-SOUTH-SERVICE",
+      "sourceStage": "R7-SOLVE-12",
+      "widthM": 8,
+      "centerlineXZ": [
+        [
+          -1330,
+          -770
+        ],
+        [
+          -1330,
+          -300
+        ]
+      ],
+      "graphComponentIds": [
+        "FIRE-COMP-01"
+      ],
+      "roadStatus": "CANDIDATE_NO_ENGINEERING_APPROVAL"
+    },
+    {
+      "id": "ROAD-R7-S12-RDI-ACCESS-LINK",
+      "sourceStage": "R7-SOLVE-12",
+      "widthM": 8,
+      "centerlineXZ": [
+        [
+          -1430,
+          795
+        ],
+        [
+          -1280,
+          795
+        ],
+        [
+          -1280,
+          925
+        ]
+      ],
+      "graphComponentIds": [
+        "FIRE-COMP-01"
+      ],
+      "roadStatus": "CANDIDATE_NO_ENGINEERING_APPROVAL"
+    },
+    {
+      "id": "ROAD-R7-S12-RDI-NORTH-SERVICE",
+      "sourceStage": "R7-SOLVE-12",
+      "widthM": 8,
+      "centerlineXZ": [
+        [
+          -1280,
+          925
+        ],
+        [
+          -760,
+          925
+        ]
+      ],
+      "graphComponentIds": [
+        "FIRE-COMP-01"
+      ],
+      "roadStatus": "CANDIDATE_NO_ENGINEERING_APPROVAL"
+    },
+    {
+      "id": "ROAD-R7-S12-ART-BOYA-BACKSTAGE",
+      "sourceStage": "R7-SOLVE-12",
+      "widthM": 8,
+      "centerlineXZ": [
+        [
+          830,
+          690
+        ],
+        [
+          1325,
+          690
+        ],
+        [
+          1325,
+          740
+        ]
+      ],
+      "graphComponentIds": [
+        "FIRE-COMP-01"
+      ],
+      "roadStatus": "CANDIDATE_NO_ENGINEERING_APPROVAL"
+    },
+    {
+      "id": "ROAD-R7-S12-OPS-SOUTH-SERVICE",
+      "sourceStage": "R7-SOLVE-12",
+      "widthM": 8,
+      "centerlineXZ": [
+        [
+          830,
+          -960
+        ],
+        [
+          1140,
+          -960
+        ],
+        [
+          1140,
+          -725
+        ]
+      ],
+      "graphComponentIds": [
+        "FIRE-COMP-01"
+      ],
+      "roadStatus": "CANDIDATE_NO_ENGINEERING_APPROVAL"
+    },
+    {
+      "id": "ROAD-R7-S12-OPS-NORTH-SERVICE",
+      "sourceStage": "R7-SOLVE-12",
+      "widthM": 8,
+      "centerlineXZ": [
+        [
+          830,
+          -730
+        ],
+        [
+          1140,
+          -730
+        ]
+      ],
+      "graphComponentIds": [
+        "FIRE-COMP-01"
+      ],
+      "roadStatus": "CANDIDATE_NO_ENGINEERING_APPROVAL"
+    },
+    {
+      "id": "ROAD-R7-S13-CEN-W-EDGE",
+      "sourceStage": "R7-SOLVE-13",
+      "widthM": 8,
+      "centerlineXZ": [
+        [
+          -600,
+          -430
+        ],
+        [
+          -621,
+          -430
+        ],
+        [
+          -621,
+          220
+        ]
+      ],
+      "graphComponentIds": [
+        "FIRE-COMP-01"
+      ],
+      "roadStatus": "CANDIDATE_NO_ENGINEERING_APPROVAL"
+    },
+    {
+      "id": "ROAD-R7-S13-CEN-E-EDGE",
+      "sourceStage": "R7-SOLVE-13",
+      "widthM": 8,
+      "centerlineXZ": [
+        [
+          830,
+          -430
+        ],
+        [
+          560,
+          -430
+        ],
+        [
+          560,
+          220
+        ]
+      ],
+      "graphComponentIds": [
+        "FIRE-COMP-01"
+      ],
+      "roadStatus": "CANDIDATE_NO_ENGINEERING_APPROVAL"
+    },
+    {
+      "id": "ROAD-R7-S13-W-SOUTHWEST",
+      "sourceStage": "R7-SOLVE-13",
+      "widthM": 8,
+      "centerlineXZ": [
+        [
+          -1320,
+          180
+        ],
+        [
+          -1515,
+          180
+        ],
+        [
+          -1515,
+          380
+        ]
+      ],
+      "graphComponentIds": [
+        "FIRE-COMP-01"
+      ],
+      "roadStatus": "CANDIDATE_NO_ENGINEERING_APPROVAL"
+    },
+    {
+      "id": "ROAD-R7-S13-W-EAST-INNER",
+      "sourceStage": "R7-SOLVE-13",
+      "widthM": 8,
+      "centerlineXZ": [
+        [
+          -1320,
+          180
+        ],
+        [
+          -1230,
+          180
+        ],
+        [
+          -1230,
+          360
+        ]
+      ],
+      "graphComponentIds": [
+        "FIRE-COMP-01"
+      ],
+      "roadStatus": "CANDIDATE_NO_ENGINEERING_APPROVAL"
+    },
+    {
+      "id": "ROAD-R7-S13-W-GREEN-SOUTH",
+      "sourceStage": "R7-SOLVE-13",
+      "widthM": 8,
+      "centerlineXZ": [
+        [
+          -1515,
+          380
+        ],
+        [
+          -1515,
+          385
+        ],
+        [
+          -1320,
+          385
+        ]
+      ],
+      "graphComponentIds": [
+        "FIRE-COMP-01"
+      ],
+      "roadStatus": "CANDIDATE_NO_ENGINEERING_APPROVAL"
+    },
+    {
+      "id": "ROAD-R7-S13-E-SOUTH",
+      "sourceStage": "R7-SOLVE-13",
+      "widthM": 8,
+      "centerlineXZ": [
+        [
+          830,
+          -175
+        ],
+        [
+          1400,
+          -175
+        ]
+      ],
+      "graphComponentIds": [
+        "FIRE-COMP-01"
+      ],
+      "roadStatus": "CANDIDATE_NO_ENGINEERING_APPROVAL"
+    },
+    {
+      "id": "ROAD-R7-S13-N-EAST",
+      "sourceStage": "R7-SOLVE-13",
+      "widthM": 8,
+      "centerlineXZ": [
+        [
+          830,
+          690
+        ],
+        [
+          1000,
+          690
+        ],
+        [
+          1000,
+          1040
+        ]
+      ],
+      "graphComponentIds": [
+        "FIRE-COMP-01"
+      ],
+      "roadStatus": "CANDIDATE_NO_ENGINEERING_APPROVAL"
+    },
+    {
+      "id": "ROAD-R7-S13-N-WEST",
+      "sourceStage": "R7-SOLVE-13",
+      "widthM": 8,
+      "centerlineXZ": [
+        [
+          -900,
+          600
+        ],
+        [
+          -970,
+          600
+        ],
+        [
+          -970,
+          780
+        ]
+      ],
+      "graphComponentIds": [
+        "FIRE-COMP-01"
+      ],
+      "roadStatus": "CANDIDATE_NO_ENGINEERING_APPROVAL"
+    },
+    {
+      "id": "ROAD-R7-S13-N-WEST-INNER",
+      "sourceStage": "R7-SOLVE-13",
+      "widthM": 8,
+      "centerlineXZ": [
+        [
+          -520,
+          700
+        ],
+        [
+          -560,
+          700
+        ],
+        [
+          -560,
+          840
+        ]
+      ],
+      "graphComponentIds": [
+        "FIRE-COMP-01"
+      ],
+      "roadStatus": "CANDIDATE_NO_ENGINEERING_APPROVAL"
+    },
+    {
+      "id": "ROAD-R7-S13-S-WEST",
+      "sourceStage": "R7-SOLVE-13",
+      "widthM": 8,
+      "centerlineXZ": [
+        [
+          260,
+          -900
+        ],
+        [
+          255,
+          -900
+        ],
+        [
+          255,
+          -705
+        ]
+      ],
+      "graphComponentIds": [
+        "FIRE-COMP-01"
+      ],
+      "roadStatus": "CANDIDATE_NO_ENGINEERING_APPROVAL"
+    },
+    {
+      "id": "ROAD-R7-S13-S-EAST",
+      "sourceStage": "R7-SOLVE-13",
+      "widthM": 8,
+      "centerlineXZ": [
+        [
+          800,
+          -900
+        ],
+        [
+          815,
+          -900
+        ],
+        [
+          815,
+          -740
+        ]
+      ],
+      "graphComponentIds": [
+        "FIRE-COMP-01"
+      ],
+      "roadStatus": "CANDIDATE_NO_ENGINEERING_APPROVAL"
+    }
+  ],
+  "buildingChecks": [
+    {
+      "buildingID": "AERO-01",
+      "buildingName": "航空楼",
+      "sourcePlacement": "R7-SOLVE-03",
+      "originalClass": "NETWORK_EXTENSION_REQUIRED",
+      "originalLengthM": 280.4,
+      "candidateEntranceId": "ENT-AERO-01-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 0,
+      "rootConnectedCandidateCount": 0,
+      "topologicallyRootConnected": false,
+      "connectionCandidate": null,
+      "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "AERO-02",
+      "buildingName": "航天楼",
+      "sourcePlacement": "R7-SOLVE-03",
+      "originalClass": "NETWORK_EXTENSION_REQUIRED",
+      "originalLengthM": 155.08,
+      "candidateEntranceId": "ENT-AERO-02-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 0,
+      "rootConnectedCandidateCount": 0,
+      "topologicallyRootConnected": false,
+      "connectionCandidate": null,
+      "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "AERO-03",
+      "buildingName": "航空航天实验中心",
+      "sourcePlacement": "R7-SOLVE-03",
+      "originalClass": "LONG_ACCESS_SPUR_REVIEW",
+      "originalLengthM": 130.38,
+      "candidateEntranceId": "ENT-AERO-03-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 0,
+      "rootConnectedCandidateCount": 0,
+      "topologicallyRootConnected": false,
+      "connectionCandidate": null,
+      "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "AI-01",
+      "buildingName": "人工智能学院楼",
+      "sourcePlacement": "R7-SOLVE-03",
+      "originalClass": "CORRIDOR_CONFLICT",
+      "originalLengthM": 220,
+      "candidateEntranceId": "ENT-AI-01-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 0,
+      "rootConnectedCandidateCount": 0,
+      "topologicallyRootConnected": false,
+      "connectionCandidate": null,
+      "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "AI-02",
+      "buildingName": "AI实验中心",
+      "sourcePlacement": "R7-SOLVE-03",
+      "originalClass": "LONG_ACCESS_SPUR_REVIEW",
+      "originalLengthM": 85,
+      "candidateEntranceId": "ENT-AI-02-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 0,
+      "rootConnectedCandidateCount": 0,
+      "topologicallyRootConnected": false,
+      "connectionCandidate": null,
+      "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "ARC-01",
+      "buildingName": "建筑学院A馆",
+      "sourcePlacement": "R7-SOLVE-03",
+      "originalClass": "CLEARANCE_PRECHECK_ONLY",
+      "originalLengthM": 64,
+      "candidateEntranceId": "ENT-ARC-01-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 1,
+      "rootConnectedCandidateCount": 1,
+      "topologicallyRootConnected": true,
+      "connectionCandidate": {
+        "viaRoadID": "ROAD-GEZHI-W",
+        "sourceStage": "R7-SOLVE-11",
+        "lengthM": 64,
+        "projectionXZ": [
+          -550,
+          500
+        ],
+        "componentId": "FIRE-COMP-01",
+        "gatewayCandidateConnected": true,
+        "quality": "ORIGINAL_SHORT_SPUR_2D_PRESCREEN"
+      },
+      "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "ARC-02",
+      "buildingName": "建筑学院B馆",
+      "sourcePlacement": "R7-SOLVE-03",
+      "originalClass": "CLEARANCE_PRECHECK_ONLY",
+      "originalLengthM": 67,
+      "candidateEntranceId": "ENT-ARC-02-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 1,
+      "rootConnectedCandidateCount": 1,
+      "topologicallyRootConnected": true,
+      "connectionCandidate": {
+        "viaRoadID": "ROAD-BOYA-RING-N",
+        "sourceStage": "R7-SOLVE-11",
+        "lengthM": 67,
+        "projectionXZ": [
+          -550,
+          690
+        ],
+        "componentId": "FIRE-COMP-01",
+        "gatewayCandidateConnected": true,
+        "quality": "ORIGINAL_SHORT_SPUR_2D_PRESCREEN"
+      },
+      "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "ARC-03",
+      "buildingName": "设计与模型实验中心",
+      "sourcePlacement": "R7-SOLVE-03",
+      "originalClass": "LONG_ACCESS_SPUR_REVIEW",
+      "originalLengthM": 73,
+      "candidateEntranceId": "ENT-ARC-03-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 0,
+      "rootConnectedCandidateCount": 0,
+      "topologicallyRootConnected": false,
+      "connectionCandidate": null,
+      "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "ART-01",
+      "buildingName": "艺术学院主楼",
+      "sourcePlacement": "R6_VALID_UNTIL_OVERRIDDEN",
+      "originalClass": "NETWORK_EXTENSION_REQUIRED",
+      "originalLengthM": 308.97,
+      "candidateEntranceId": "ENT-ART-01-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 0,
+      "rootConnectedCandidateCount": 0,
+      "topologicallyRootConnected": false,
+      "connectionCandidate": null,
+      "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "ART-02",
+      "buildingName": "美术馆",
+      "sourcePlacement": "R6_VALID_UNTIL_OVERRIDDEN",
+      "originalClass": "NETWORK_EXTENSION_REQUIRED",
+      "originalLengthM": 565.43,
+      "candidateEntranceId": "ENT-ART-02-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 0,
+      "rootConnectedCandidateCount": 0,
+      "topologicallyRootConnected": false,
+      "connectionCandidate": null,
+      "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "ART-03",
+      "buildingName": "戏剧表演中心",
+      "sourcePlacement": "R6_VALID_UNTIL_OVERRIDDEN",
+      "originalClass": "NETWORK_EXTENSION_REQUIRED",
+      "originalLengthM": 401.8,
+      "candidateEntranceId": "ENT-ART-03-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 0,
+      "rootConnectedCandidateCount": 0,
+      "topologicallyRootConnected": false,
+      "connectionCandidate": null,
+      "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "ART-04",
+      "buildingName": "表演中心附属排练楼",
+      "sourcePlacement": "R6_VALID_UNTIL_OVERRIDDEN",
+      "originalClass": "NETWORK_EXTENSION_REQUIRED",
+      "originalLengthM": 400,
+      "candidateEntranceId": "ENT-ART-04-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 1,
+      "rootConnectedCandidateCount": 1,
+      "topologicallyRootConnected": true,
+      "connectionCandidate": {
+        "viaRoadID": "ROAD-R7-S12-ART-BOYA-BACKSTAGE",
+        "sourceStage": "R7-SOLVE-12",
+        "lengthM": 70,
+        "projectionXZ": [
+          1241,
+          690
+        ],
+        "componentId": "FIRE-COMP-01",
+        "gatewayCandidateConnected": true,
+        "quality": "UPSTREAM_2D_SHORTENING_PROBE"
+      },
+      "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "ATH-01",
+      "buildingName": "综合体育馆",
+      "sourcePlacement": "R7-SOLVE-06",
+      "originalClass": "NETWORK_EXTENSION_REQUIRED",
+      "originalLengthM": 160.45,
+      "candidateEntranceId": "ENT-ATH-01-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 0,
+      "rootConnectedCandidateCount": 0,
+      "topologicallyRootConnected": false,
+      "connectionCandidate": null,
+      "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "ATH-03",
+      "buildingName": "游泳馆",
+      "sourcePlacement": "R7-SOLVE-06",
+      "originalClass": "LONG_ACCESS_SPUR_REVIEW",
+      "originalLengthM": 90,
+      "candidateEntranceId": "ENT-ATH-03-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 0,
+      "rootConnectedCandidateCount": 0,
+      "topologicallyRootConnected": false,
+      "connectionCandidate": null,
+      "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "ATH-04",
+      "buildingName": "体育训练馆",
+      "sourcePlacement": "R7-SOLVE-06",
+      "originalClass": "LONG_ACCESS_SPUR_REVIEW",
+      "originalLengthM": 90,
+      "candidateEntranceId": "ENT-ATH-04-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 0,
+      "rootConnectedCandidateCount": 0,
+      "topologicallyRootConnected": false,
+      "connectionCandidate": null,
+      "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "ATH-13",
+      "buildingName": "第二体育体育服务楼",
+      "sourcePlacement": "R7-SOLVE-06",
+      "originalClass": "NETWORK_EXTENSION_REQUIRED",
+      "originalLengthM": 281.44,
+      "candidateEntranceId": "ENT-ATH-13-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 0,
+      "rootConnectedCandidateCount": 0,
+      "topologicallyRootConnected": false,
+      "connectionCandidate": null,
+      "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "BUS-01",
+      "buildingName": "管理学院A楼",
+      "sourcePlacement": "R7-SOLVE-04",
+      "originalClass": "LONG_ACCESS_SPUR_REVIEW",
+      "originalLengthM": 100,
+      "candidateEntranceId": "ENT-BUS-01-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 0,
+      "rootConnectedCandidateCount": 0,
+      "topologicallyRootConnected": false,
+      "connectionCandidate": null,
+      "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "BUS-02",
+      "buildingName": "管理学院B楼",
+      "sourcePlacement": "R7-SOLVE-04",
+      "originalClass": "LONG_ACCESS_SPUR_REVIEW",
+      "originalLengthM": 98,
+      "candidateEntranceId": "ENT-BUS-02-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 0,
+      "rootConnectedCandidateCount": 0,
+      "topologicallyRootConnected": false,
+      "connectionCandidate": null,
+      "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "CE-01",
+      "buildingName": "土木A楼",
+      "sourcePlacement": "R7-SOLVE-03",
+      "originalClass": "CLEARANCE_PRECHECK_ONLY",
+      "originalLengthM": 65,
+      "candidateEntranceId": "ENT-CE-01-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 1,
+      "rootConnectedCandidateCount": 1,
+      "topologicallyRootConnected": true,
+      "connectionCandidate": {
+        "viaRoadID": "ROAD-GEZHI-W",
+        "sourceStage": "R7-SOLVE-11",
+        "lengthM": 65,
+        "projectionXZ": [
+          -665,
+          500
+        ],
+        "componentId": "FIRE-COMP-01",
+        "gatewayCandidateConnected": true,
+        "quality": "ORIGINAL_SHORT_SPUR_2D_PRESCREEN"
+      },
+      "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "CE-02",
+      "buildingName": "土木B楼",
+      "sourcePlacement": "R7-SOLVE-03",
+      "originalClass": "CLEARANCE_PRECHECK_ONLY",
+      "originalLengthM": 69,
+      "candidateEntranceId": "ENT-CE-02-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 1,
+      "rootConnectedCandidateCount": 1,
+      "topologicallyRootConnected": true,
+      "connectionCandidate": {
+        "viaRoadID": "ROAD-BOYA-RING-N",
+        "sourceStage": "R7-SOLVE-11",
+        "lengthM": 69,
+        "projectionXZ": [
+          -665,
+          690
+        ],
+        "componentId": "FIRE-COMP-01",
+        "gatewayCandidateConnected": true,
+        "quality": "ORIGINAL_SHORT_SPUR_2D_PRESCREEN"
+      },
+      "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "CE-03",
+      "buildingName": "水利工程实验中心",
+      "sourcePlacement": "R7-SOLVE-03",
+      "originalClass": "CLEARANCE_PRECHECK_ONLY",
+      "originalLengthM": 70,
+      "candidateEntranceId": "ENT-CE-03-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 1,
+      "rootConnectedCandidateCount": 1,
+      "topologicallyRootConnected": true,
+      "connectionCandidate": {
+        "viaRoadID": "ROAD-GEZHI-W",
+        "sourceStage": "R7-SOLVE-11",
+        "lengthM": 70,
+        "projectionXZ": [
+          -435,
+          500
+        ],
+        "componentId": "FIRE-COMP-01",
+        "gatewayCandidateConnected": true,
+        "quality": "ORIGINAL_SHORT_SPUR_2D_PRESCREEN"
+      },
+      "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "CEN-01",
+      "buildingName": "博雅图书馆",
+      "sourcePlacement": "R7-SOLVE-01",
+      "originalClass": "CORRIDOR_CONFLICT",
+      "originalLengthM": 643.65,
+      "candidateEntranceId": "ENT-CEN-01-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 0,
+      "rootConnectedCandidateCount": 0,
+      "topologicallyRootConnected": false,
+      "connectionCandidate": null,
+      "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "CEN-02",
+      "buildingName": "行政中心",
+      "sourcePlacement": "R7-SOLVE-01",
+      "originalClass": "NETWORK_EXTENSION_REQUIRED",
+      "originalLengthM": 393,
+      "candidateEntranceId": "ENT-CEN-02-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 0,
+      "rootConnectedCandidateCount": 0,
+      "topologicallyRootConnected": false,
+      "connectionCandidate": null,
+      "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "CEN-03",
+      "buildingName": "明德会堂",
+      "sourcePlacement": "R7-SOLVE-01",
+      "originalClass": "NETWORK_EXTENSION_REQUIRED",
+      "originalLengthM": 372.68,
+      "candidateEntranceId": "ENT-CEN-03-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 0,
+      "rootConnectedCandidateCount": 0,
+      "topologicallyRootConnected": false,
+      "connectionCandidate": null,
+      "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "CEN-04",
+      "buildingName": "学生活动中心",
+      "sourcePlacement": "R7-SOLVE-01",
+      "originalClass": "NETWORK_EXTENSION_REQUIRED",
+      "originalLengthM": 559.02,
+      "candidateEntranceId": "ENT-CEN-04-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 0,
+      "rootConnectedCandidateCount": 0,
+      "topologicallyRootConnected": false,
+      "connectionCandidate": null,
+      "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "CEN-05",
+      "buildingName": "校史馆",
+      "sourcePlacement": "R7-SOLVE-01",
+      "originalClass": "NETWORK_EXTENSION_REQUIRED",
+      "originalLengthM": 688.06,
+      "candidateEntranceId": "ENT-CEN-05-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 0,
+      "rootConnectedCandidateCount": 0,
+      "topologicallyRootConnected": false,
+      "connectionCandidate": null,
+      "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "CEN-06",
+      "buildingName": "格物馆/大学博物馆与科学馆",
+      "sourcePlacement": "R7-SOLVE-01",
+      "originalClass": "NETWORK_EXTENSION_REQUIRED",
+      "originalLengthM": 580,
+      "candidateEntranceId": "ENT-CEN-06-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 0,
+      "rootConnectedCandidateCount": 0,
+      "topologicallyRootConnected": false,
+      "connectionCandidate": null,
+      "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "CEN-07",
+      "buildingName": "国际交流中心",
+      "sourcePlacement": "R7-SOLVE-01",
+      "originalClass": "NETWORK_EXTENSION_REQUIRED",
+      "originalLengthM": 203,
+      "candidateEntranceId": "ENT-CEN-07-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 0,
+      "rootConnectedCandidateCount": 0,
+      "topologicallyRootConnected": false,
+      "connectionCandidate": null,
+      "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "CEN-08",
+      "buildingName": "创新创业中心",
+      "sourcePlacement": "R7-SOLVE-01",
+      "originalClass": "NETWORK_EXTENSION_REQUIRED",
+      "originalLengthM": 435,
+      "candidateEntranceId": "ENT-CEN-08-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 0,
+      "rootConnectedCandidateCount": 0,
+      "topologicallyRootConnected": false,
+      "connectionCandidate": null,
+      "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "CEN-09",
+      "buildingName": "公共教学A楼",
+      "sourcePlacement": "R7-SOLVE-01",
+      "originalClass": "NETWORK_EXTENSION_REQUIRED",
+      "originalLengthM": 451,
+      "candidateEntranceId": "ENT-CEN-09-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 0,
+      "rootConnectedCandidateCount": 0,
+      "topologicallyRootConnected": false,
+      "connectionCandidate": null,
+      "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "CEN-10",
+      "buildingName": "公共教学B楼",
+      "sourcePlacement": "R7-SOLVE-01",
+      "originalClass": "NETWORK_EXTENSION_REQUIRED",
+      "originalLengthM": 451,
+      "candidateEntranceId": "ENT-CEN-10-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 0,
+      "rootConnectedCandidateCount": 0,
+      "topologicallyRootConnected": false,
+      "connectionCandidate": null,
+      "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "CEN-11",
+      "buildingName": "公共教学C楼",
+      "sourcePlacement": "R7-SOLVE-01",
+      "originalClass": "NETWORK_EXTENSION_REQUIRED",
+      "originalLengthM": 381,
+      "candidateEntranceId": "ENT-CEN-11-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 1,
+      "rootConnectedCandidateCount": 1,
+      "topologicallyRootConnected": true,
+      "connectionCandidate": {
+        "viaRoadID": "ROAD-R7-S13-CEN-E-EDGE",
+        "sourceStage": "R7-SOLVE-13",
+        "lengthM": 111,
+        "projectionXZ": [
+          560,
+          -280
+        ],
+        "componentId": "FIRE-COMP-01",
+        "gatewayCandidateConnected": true,
+        "quality": "UPSTREAM_2D_SHORTENING_PROBE"
+      },
+      "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "CEN-12",
+      "buildingName": "公共教学D楼",
+      "sourcePlacement": "R7-SOLVE-01",
+      "originalClass": "NETWORK_EXTENSION_REQUIRED",
+      "originalLengthM": 381,
+      "candidateEntranceId": "ENT-CEN-12-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 1,
+      "rootConnectedCandidateCount": 1,
+      "topologicallyRootConnected": true,
+      "connectionCandidate": {
+        "viaRoadID": "ROAD-R7-S13-CEN-E-EDGE",
+        "sourceStage": "R7-SOLVE-13",
+        "lengthM": 111,
+        "projectionXZ": [
+          560,
+          -120
+        ],
+        "componentId": "FIRE-COMP-01",
+        "gatewayCandidateConnected": true,
+        "quality": "UPSTREAM_2D_SHORTENING_PROBE"
+      },
+      "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "CEN-13",
+      "buildingName": "公共实验A楼",
+      "sourcePlacement": "R7-SOLVE-01",
+      "originalClass": "NETWORK_EXTENSION_REQUIRED",
+      "originalLengthM": 415,
+      "candidateEntranceId": "ENT-CEN-13-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 0,
+      "rootConnectedCandidateCount": 0,
+      "topologicallyRootConnected": false,
+      "connectionCandidate": null,
+      "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "CEN-14",
+      "buildingName": "公共实验B楼",
+      "sourcePlacement": "R7-SOLVE-01",
+      "originalClass": "NETWORK_EXTENSION_REQUIRED",
+      "originalLengthM": 355,
+      "candidateEntranceId": "ENT-CEN-14-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 1,
+      "rootConnectedCandidateCount": 1,
+      "topologicallyRootConnected": true,
+      "connectionCandidate": {
+        "viaRoadID": "ROAD-R7-S13-CEN-E-EDGE",
+        "sourceStage": "R7-SOLVE-13",
+        "lengthM": 85,
+        "projectionXZ": [
+          560,
+          40
+        ],
+        "componentId": "FIRE-COMP-01",
+        "gatewayCandidateConnected": true,
+        "quality": "UPSTREAM_2D_SHORTENING_PROBE"
+      },
+      "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "CEN-15",
+      "buildingName": "大学会议中心",
+      "sourcePlacement": "R7-SOLVE-01",
+      "originalClass": "NETWORK_EXTENSION_REQUIRED",
+      "originalLengthM": 325.73,
+      "candidateEntranceId": "ENT-CEN-15-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 0,
+      "rootConnectedCandidateCount": 0,
+      "topologicallyRootConnected": false,
+      "connectionCandidate": null,
+      "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "CEN-16",
+      "buildingName": "招生与访客中心",
+      "sourcePlacement": "R7-SOLVE-01",
+      "originalClass": "LONG_ACCESS_SPUR_REVIEW",
+      "originalLengthM": 134.16,
+      "candidateEntranceId": "ENT-CEN-16-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 0,
+      "rootConnectedCandidateCount": 0,
+      "topologicallyRootConnected": false,
+      "connectionCandidate": null,
+      "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "CEN-17",
+      "buildingName": "理工科图书分馆",
+      "sourcePlacement": "R7-SOLVE-01",
+      "originalClass": "CORRIDOR_CONFLICT",
+      "originalLengthM": 320,
+      "candidateEntranceId": "ENT-CEN-17-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 0,
+      "rootConnectedCandidateCount": 0,
+      "topologicallyRootConnected": false,
+      "connectionCandidate": null,
+      "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "CEN-18",
+      "buildingName": "人文社科图书分馆",
+      "sourcePlacement": "R7-SOLVE-01",
+      "originalClass": "NETWORK_EXTENSION_REQUIRED",
+      "originalLengthM": 260,
+      "candidateEntranceId": "ENT-CEN-18-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 0,
+      "rootConnectedCandidateCount": 0,
+      "topologicallyRootConnected": false,
+      "connectionCandidate": null,
+      "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "CHE-01",
+      "buildingName": "化工A楼",
+      "sourcePlacement": "R7-SOLVE-03",
+      "originalClass": "LONG_ACCESS_SPUR_REVIEW",
+      "originalLengthM": 105,
+      "candidateEntranceId": "ENT-CHE-01-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 0,
+      "rootConnectedCandidateCount": 0,
+      "topologicallyRootConnected": false,
+      "connectionCandidate": null,
+      "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "CHE-02",
+      "buildingName": "化工B楼",
+      "sourcePlacement": "R7-SOLVE-03",
+      "originalClass": "NETWORK_EXTENSION_REQUIRED",
+      "originalLengthM": 178.04,
+      "candidateEntranceId": "ENT-CHE-02-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 0,
+      "rootConnectedCandidateCount": 0,
+      "topologicallyRootConnected": false,
+      "connectionCandidate": null,
+      "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "CHE-03",
+      "buildingName": "化工实验中心",
+      "sourcePlacement": "R7-SOLVE-03",
+      "originalClass": "LONG_ACCESS_SPUR_REVIEW",
+      "originalLengthM": 78,
+      "candidateEntranceId": "ENT-CHE-03-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 0,
+      "rootConnectedCandidateCount": 0,
+      "topologicallyRootConnected": false,
+      "connectionCandidate": null,
+      "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "CHM-01",
+      "buildingName": "化学学院楼",
+      "sourcePlacement": "R6_VALID_UNTIL_OVERRIDDEN",
+      "originalClass": "CLEARANCE_PRECHECK_ONLY",
+      "originalLengthM": 24,
+      "candidateEntranceId": "ENT-CHM-01-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 1,
+      "rootConnectedCandidateCount": 1,
+      "topologicallyRootConnected": true,
+      "connectionCandidate": {
+        "viaRoadID": "ROAD-BOYA-RING-N",
+        "sourceStage": "R7-SOLVE-11",
+        "lengthM": 24,
+        "projectionXZ": [
+          -50,
+          655
+        ],
+        "componentId": "FIRE-COMP-01",
+        "gatewayCandidateConnected": true,
+        "quality": "ORIGINAL_SHORT_SPUR_2D_PRESCREEN"
+      },
+      "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "CHM-02",
+      "buildingName": "基础化学实验中心",
+      "sourcePlacement": "R6_VALID_UNTIL_OVERRIDDEN",
+      "originalClass": "NETWORK_EXTENSION_REQUIRED",
+      "originalLengthM": 310.78,
+      "candidateEntranceId": "ENT-CHM-02-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 0,
+      "rootConnectedCandidateCount": 0,
+      "topologicallyRootConnected": false,
+      "connectionCandidate": null,
+      "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "CSE-01",
+      "buildingName": "计算机A楼",
+      "sourcePlacement": "R7-SOLVE-03",
+      "originalClass": "LONG_ACCESS_SPUR_REVIEW",
+      "originalLengthM": 85,
+      "candidateEntranceId": "ENT-CSE-01-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 0,
+      "rootConnectedCandidateCount": 0,
+      "topologicallyRootConnected": false,
+      "connectionCandidate": null,
+      "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "CSE-02",
+      "buildingName": "计算机B楼",
+      "sourcePlacement": "R7-SOLVE-03",
+      "originalClass": "NETWORK_EXTENSION_REQUIRED",
+      "originalLengthM": 255.54,
+      "candidateEntranceId": "ENT-CSE-02-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 0,
+      "rootConnectedCandidateCount": 0,
+      "topologicallyRootConnected": false,
+      "connectionCandidate": null,
+      "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "CSE-03",
+      "buildingName": "计算中心",
+      "sourcePlacement": "R7-SOLVE-03",
+      "originalClass": "NETWORK_EXTENSION_REQUIRED",
+      "originalLengthM": 285,
+      "candidateEntranceId": "ENT-CSE-03-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 0,
+      "rootConnectedCandidateCount": 0,
+      "topologicallyRootConnected": false,
+      "connectionCandidate": null,
+      "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "ECE-01",
+      "buildingName": "电子学院楼",
+      "sourcePlacement": "R7-SOLVE-03",
+      "originalClass": "LONG_ACCESS_SPUR_REVIEW",
+      "originalLengthM": 85,
+      "candidateEntranceId": "ENT-ECE-01-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 0,
+      "rootConnectedCandidateCount": 0,
+      "topologicallyRootConnected": false,
+      "connectionCandidate": null,
+      "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "ECE-02",
+      "buildingName": "微电子实验中心",
+      "sourcePlacement": "R7-SOLVE-03",
+      "originalClass": "LONG_ACCESS_SPUR_REVIEW",
+      "originalLengthM": 85,
+      "candidateEntranceId": "ENT-ECE-02-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 0,
+      "rootConnectedCandidateCount": 0,
+      "topologicallyRootConnected": false,
+      "connectionCandidate": null,
+      "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "ECO-01",
+      "buildingName": "经济学院楼",
+      "sourcePlacement": "R7-SOLVE-04",
+      "originalClass": "CORRIDOR_CONFLICT",
+      "originalLengthM": 192,
+      "candidateEntranceId": "ENT-ECO-01-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 0,
+      "rootConnectedCandidateCount": 0,
+      "topologicallyRootConnected": false,
+      "connectionCandidate": null,
+      "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "EDU-01",
+      "buildingName": "教育学院楼",
+      "sourcePlacement": "R7-SOLVE-04",
+      "originalClass": "CLEARANCE_PRECHECK_ONLY",
+      "originalLengthM": 58,
+      "candidateEntranceId": "ENT-EDU-01-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 1,
+      "rootConnectedCandidateCount": 1,
+      "topologicallyRootConnected": true,
+      "connectionCandidate": {
+        "viaRoadID": "ROAD-GEZHI-E",
+        "sourceStage": "R7-SOLVE-11",
+        "lengthM": 58,
+        "projectionXZ": [
+          690,
+          440
+        ],
+        "componentId": "FIRE-COMP-01",
+        "gatewayCandidateConnected": true,
+        "quality": "ORIGINAL_SHORT_SPUR_2D_PRESCREEN"
+      },
+      "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "EE-01",
+      "buildingName": "电气学院楼",
+      "sourcePlacement": "R7-SOLVE-03",
+      "originalClass": "LONG_ACCESS_SPUR_REVIEW",
+      "originalLengthM": 80,
+      "candidateEntranceId": "ENT-EE-01-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 0,
+      "rootConnectedCandidateCount": 0,
+      "topologicallyRootConnected": false,
+      "connectionCandidate": null,
+      "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "EE-02",
+      "buildingName": "电力系统实验中心",
+      "sourcePlacement": "R7-SOLVE-03",
+      "originalClass": "LONG_ACCESS_SPUR_REVIEW",
+      "originalLengthM": 75,
+      "candidateEntranceId": "ENT-EE-02-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 0,
+      "rootConnectedCandidateCount": 0,
+      "topologicallyRootConnected": false,
+      "connectionCandidate": null,
+      "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "ENV-01",
+      "buildingName": "环境学院楼",
+      "sourcePlacement": "R7-SOLVE-03",
+      "originalClass": "CORRIDOR_CONFLICT",
+      "originalLengthM": 117,
+      "candidateEntranceId": "ENT-ENV-01-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 0,
+      "rootConnectedCandidateCount": 0,
+      "topologicallyRootConnected": false,
+      "connectionCandidate": null,
+      "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "ENV-02",
+      "buildingName": "环境实验中心",
+      "sourcePlacement": "R7-SOLVE-03",
+      "originalClass": "CLEARANCE_PRECHECK_ONLY",
+      "originalLengthM": 68,
+      "candidateEntranceId": "ENT-ENV-02-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 1,
+      "rootConnectedCandidateCount": 1,
+      "topologicallyRootConnected": true,
+      "connectionCandidate": {
+        "viaRoadID": "ROAD-GEZHI-W",
+        "sourceStage": "R7-SOLVE-11",
+        "lengthM": 68,
+        "projectionXZ": [
+          -515,
+          500
+        ],
+        "componentId": "FIRE-COMP-01",
+        "gatewayCandidateConnected": true,
+        "quality": "ORIGINAL_SHORT_SPUR_2D_PRESCREEN"
+      },
+      "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "EPE-01",
+      "buildingName": "能源动力A楼",
+      "sourcePlacement": "R7-SOLVE-03",
+      "originalClass": "NETWORK_EXTENSION_REQUIRED",
+      "originalLengthM": 260.77,
+      "candidateEntranceId": "ENT-EPE-01-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 0,
+      "rootConnectedCandidateCount": 0,
+      "topologicallyRootConnected": false,
+      "connectionCandidate": null,
+      "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "EPE-02",
+      "buildingName": "能源动力B楼",
+      "sourcePlacement": "R7-SOLVE-03",
+      "originalClass": "CLEARANCE_PRECHECK_ONLY",
+      "originalLengthM": 70,
+      "candidateEntranceId": "ENT-EPE-02-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 1,
+      "rootConnectedCandidateCount": 1,
+      "topologicallyRootConnected": true,
+      "connectionCandidate": {
+        "viaRoadID": "ROAD-JIANGXIN",
+        "sourceStage": "R7-SOLVE-11",
+        "lengthM": 70,
+        "projectionXZ": [
+          -1040,
+          320
+        ],
+        "componentId": "FIRE-COMP-01",
+        "gatewayCandidateConnected": true,
+        "quality": "ORIGINAL_SHORT_SPUR_2D_PRESCREEN"
+      },
+      "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "EPE-03",
+      "buildingName": "动力实验中心",
+      "sourcePlacement": "R7-SOLVE-03",
+      "originalClass": "LONG_ACCESS_SPUR_REVIEW",
+      "originalLengthM": 105,
+      "candidateEntranceId": "ENT-EPE-03-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 0,
+      "rootConnectedCandidateCount": 0,
+      "topologicallyRootConnected": false,
+      "connectionCandidate": null,
+      "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "FIN-01",
+      "buildingName": "金融学院楼",
+      "sourcePlacement": "R7-SOLVE-04",
+      "originalClass": "CORRIDOR_CONFLICT",
+      "originalLengthM": 192,
+      "candidateEntranceId": "ENT-FIN-01-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 0,
+      "rootConnectedCandidateCount": 0,
+      "topologicallyRootConnected": false,
+      "connectionCandidate": null,
+      "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "FLA-01",
+      "buildingName": "外国语学院楼",
+      "sourcePlacement": "R7-SOLVE-04",
+      "originalClass": "LONG_ACCESS_SPUR_REVIEW",
+      "originalLengthM": 140,
+      "candidateEntranceId": "ENT-FLA-01-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 0,
+      "rootConnectedCandidateCount": 0,
+      "topologicallyRootConnected": false,
+      "connectionCandidate": null,
+      "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "GEO-01",
+      "buildingName": "地球科学楼",
+      "sourcePlacement": "R6_VALID_UNTIL_OVERRIDDEN",
+      "originalClass": "CLEARANCE_PRECHECK_ONLY",
+      "originalLengthM": 55.9,
+      "candidateEntranceId": "ENT-GEO-01-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 1,
+      "rootConnectedCandidateCount": 1,
+      "topologicallyRootConnected": true,
+      "connectionCandidate": {
+        "viaRoadID": "ROAD-BOYA-RING-N",
+        "sourceStage": "R7-SOLVE-11",
+        "lengthM": 55.9,
+        "projectionXZ": [
+          210,
+          655
+        ],
+        "componentId": "FIRE-COMP-01",
+        "gatewayCandidateConnected": true,
+        "quality": "ORIGINAL_SHORT_SPUR_2D_PRESCREEN"
+      },
+      "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "GEO-02",
+      "buildingName": "资源实验中心",
+      "sourcePlacement": "R6_VALID_UNTIL_OVERRIDDEN",
+      "originalClass": "LONG_ACCESS_SPUR_REVIEW",
+      "originalLengthM": 131.24,
+      "candidateEntranceId": "ENT-GEO-02-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 0,
+      "rootConnectedCandidateCount": 0,
+      "topologicallyRootConnected": false,
+      "connectionCandidate": null,
+      "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "GPA-01",
+      "buildingName": "公共管理楼",
+      "sourcePlacement": "R7-SOLVE-04",
+      "originalClass": "LONG_ACCESS_SPUR_REVIEW",
+      "originalLengthM": 88,
+      "candidateEntranceId": "ENT-GPA-01-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 0,
+      "rootConnectedCandidateCount": 0,
+      "topologicallyRootConnected": false,
+      "connectionCandidate": null,
+      "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "HSP-04",
+      "buildingName": "江城大学附属医院科研中心",
+      "sourcePlacement": "R6_VALID_UNTIL_OVERRIDDEN",
+      "originalClass": "LONG_ACCESS_SPUR_REVIEW",
+      "originalLengthM": 85,
+      "candidateEntranceId": "ENT-HSP-04-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 0,
+      "rootConnectedCandidateCount": 0,
+      "topologicallyRootConnected": false,
+      "connectionCandidate": null,
+      "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "HSP-05",
+      "buildingName": "校医院/卫生中心",
+      "sourcePlacement": "R6_VALID_UNTIL_OVERRIDDEN",
+      "originalClass": "CLEARANCE_PRECHECK_ONLY",
+      "originalLengthM": 65.86,
+      "candidateEntranceId": "ENT-HSP-05-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 1,
+      "rootConnectedCandidateCount": 1,
+      "topologicallyRootConnected": true,
+      "connectionCandidate": {
+        "viaRoadID": "ROAD-BOYA-RING-SW-V",
+        "sourceStage": "R7-SOLVE-11",
+        "lengthM": 65.86,
+        "projectionXZ": [
+          -600,
+          -665.86
+        ],
+        "componentId": "FIRE-COMP-01",
+        "gatewayCandidateConnected": true,
+        "quality": "ORIGINAL_SHORT_SPUR_2D_PRESCREEN"
+      },
+      "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "HUM-01",
+      "buildingName": "人文学院楼",
+      "sourcePlacement": "R7-SOLVE-04",
+      "originalClass": "LONG_ACCESS_SPUR_REVIEW",
+      "originalLengthM": 140,
+      "candidateEntranceId": "ENT-HUM-01-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 0,
+      "rootConnectedCandidateCount": 0,
+      "topologicallyRootConnected": false,
+      "connectionCandidate": null,
+      "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "ICT-01",
+      "buildingName": "信息通信楼",
+      "sourcePlacement": "R7-SOLVE-03",
+      "originalClass": "CORRIDOR_CONFLICT",
+      "originalLengthM": 210,
+      "candidateEntranceId": "ENT-ICT-01-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 0,
+      "rootConnectedCandidateCount": 0,
+      "topologicallyRootConnected": false,
+      "connectionCandidate": null,
+      "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "ICT-02",
+      "buildingName": "通信实验中心",
+      "sourcePlacement": "R7-SOLVE-03",
+      "originalClass": "CORRIDOR_CONFLICT",
+      "originalLengthM": 210,
+      "candidateEntranceId": "ENT-ICT-02-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 0,
+      "rootConnectedCandidateCount": 0,
+      "topologicallyRootConnected": false,
+      "connectionCandidate": null,
+      "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "IGS-01",
+      "buildingName": "国际研究生院",
+      "sourcePlacement": "R7-SOLVE-04",
+      "originalClass": "LONG_ACCESS_SPUR_REVIEW",
+      "originalLengthM": 145,
+      "candidateEntranceId": "ENT-IGS-01-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 0,
+      "rootConnectedCandidateCount": 0,
+      "topologicallyRootConnected": false,
+      "connectionCandidate": null,
+      "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "JRN-01",
+      "buildingName": "新闻传播楼",
+      "sourcePlacement": "R7-SOLVE-04",
+      "originalClass": "CORRIDOR_CONFLICT",
+      "originalLengthM": 132,
+      "candidateEntranceId": "ENT-JRN-01-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 0,
+      "rootConnectedCandidateCount": 0,
+      "topologicallyRootConnected": false,
+      "connectionCandidate": null,
+      "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "LAW-01",
+      "buildingName": "法学院及法律援助中心",
+      "sourcePlacement": "R6_VALID_UNTIL_OVERRIDDEN",
+      "originalClass": "CLEARANCE_PRECHECK_ONLY",
+      "originalLengthM": 48,
+      "candidateEntranceId": "ENT-LAW-01-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 1,
+      "rootConnectedCandidateCount": 1,
+      "topologicallyRootConnected": true,
+      "connectionCandidate": {
+        "viaRoadID": "ROAD-WEST-GATE",
+        "sourceStage": "R7-SOLVE-11",
+        "lengthM": 48,
+        "projectionXZ": [
+          -1500,
+          -80
+        ],
+        "componentId": "FIRE-COMP-01",
+        "gatewayCandidateConnected": true,
+        "quality": "ORIGINAL_SHORT_SPUR_2D_PRESCREEN"
+      },
+      "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "LIFE-01",
+      "buildingName": "生命科学楼",
+      "sourcePlacement": "R6_VALID_UNTIL_OVERRIDDEN",
+      "originalClass": "CLEARANCE_PRECHECK_ONLY",
+      "originalLengthM": 25,
+      "candidateEntranceId": "ENT-LIFE-01-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 1,
+      "rootConnectedCandidateCount": 1,
+      "topologicallyRootConnected": true,
+      "connectionCandidate": {
+        "viaRoadID": "ROAD-BOYA-RING-N",
+        "sourceStage": "R7-SOLVE-11",
+        "lengthM": 25,
+        "projectionXZ": [
+          100,
+          655
+        ],
+        "componentId": "FIRE-COMP-01",
+        "gatewayCandidateConnected": true,
+        "quality": "ORIGINAL_SHORT_SPUR_2D_PRESCREEN"
+      },
+      "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "LIFE-02",
+      "buildingName": "生物实验中心",
+      "sourcePlacement": "R6_VALID_UNTIL_OVERRIDDEN",
+      "originalClass": "NETWORK_EXTENSION_REQUIRED",
+      "originalLengthM": 172.59,
+      "candidateEntranceId": "ENT-LIFE-02-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 0,
+      "rootConnectedCandidateCount": 0,
+      "topologicallyRootConnected": false,
+      "connectionCandidate": null,
+      "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "LIFE-C-01",
+      "buildingName": "江城大学校园商业中心",
+      "sourcePlacement": "R6_VALID_UNTIL_OVERRIDDEN",
+      "originalClass": "CORRIDOR_CONFLICT",
+      "originalLengthM": 348,
+      "candidateEntranceId": "ENT-LIFE-C-01-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 0,
+      "rootConnectedCandidateCount": 0,
+      "topologicallyRootConnected": false,
+      "connectionCandidate": null,
+      "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "LIFE-C-02",
+      "buildingName": "博雅餐厅",
+      "sourcePlacement": "R6_VALID_UNTIL_OVERRIDDEN",
+      "originalClass": "NETWORK_EXTENSION_REQUIRED",
+      "originalLengthM": 170,
+      "candidateEntranceId": "ENT-LIFE-C-02-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 0,
+      "rootConnectedCandidateCount": 0,
+      "topologicallyRootConnected": false,
+      "connectionCandidate": null,
+      "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "LIFE-C-03",
+      "buildingName": "校园书店",
+      "sourcePlacement": "R6_VALID_UNTIL_OVERRIDDEN",
+      "originalClass": "CORRIDOR_CONFLICT",
+      "originalLengthM": 250,
+      "candidateEntranceId": "ENT-LIFE-C-03-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 0,
+      "rootConnectedCandidateCount": 0,
+      "topologicallyRootConnected": false,
+      "connectionCandidate": null,
+      "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "LIFE-C-04",
+      "buildingName": "快递邮政中心",
+      "sourcePlacement": "R6_VALID_UNTIL_OVERRIDDEN",
+      "originalClass": "NETWORK_EXTENSION_REQUIRED",
+      "originalLengthM": 164,
+      "candidateEntranceId": "ENT-LIFE-C-04-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 0,
+      "rootConnectedCandidateCount": 0,
+      "topologicallyRootConnected": false,
+      "connectionCandidate": null,
+      "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "LIFE-E-01",
+      "buildingName": "东苑食堂",
+      "sourcePlacement": "R7-SOLVE-05",
+      "originalClass": "NETWORK_EXTENSION_REQUIRED",
+      "originalLengthM": 200,
+      "candidateEntranceId": "ENT-LIFE-E-01-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 1,
+      "rootConnectedCandidateCount": 1,
+      "topologicallyRootConnected": true,
+      "connectionCandidate": {
+        "viaRoadID": "ROAD-R7-S13-E-SOUTH",
+        "sourceStage": "R7-SOLVE-13",
+        "lengthM": 95,
+        "projectionXZ": [
+          1240,
+          -175
+        ],
+        "componentId": "FIRE-COMP-01",
+        "gatewayCandidateConnected": true,
+        "quality": "UPSTREAM_2D_SHORTENING_PROBE"
+      },
+      "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "LIFE-E-02",
+      "buildingName": "江大校园超市·东苑店",
+      "sourcePlacement": "R7-SOLVE-05",
+      "originalClass": "CLEARANCE_PRECHECK_ONLY",
+      "originalLengthM": 55,
+      "candidateEntranceId": "ENT-LIFE-E-02-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 1,
+      "rootConnectedCandidateCount": 1,
+      "topologicallyRootConnected": true,
+      "connectionCandidate": {
+        "viaRoadID": "ROAD-QINGNIAN-E",
+        "sourceStage": "R7-SOLVE-11",
+        "lengthM": 55,
+        "projectionXZ": [
+          1400,
+          -100
+        ],
+        "componentId": "FIRE-COMP-01",
+        "gatewayCandidateConnected": true,
+        "quality": "ORIGINAL_SHORT_SPUR_2D_PRESCREEN"
+      },
+      "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "LIFE-N-01",
+      "buildingName": "北苑食堂",
+      "sourcePlacement": "R7-SOLVE-05",
+      "originalClass": "CORRIDOR_CONFLICT",
+      "originalLengthM": 145,
+      "candidateEntranceId": "ENT-LIFE-N-01-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 0,
+      "rootConnectedCandidateCount": 0,
+      "topologicallyRootConnected": false,
+      "connectionCandidate": null,
+      "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "LIFE-N-02",
+      "buildingName": "江大校园超市·北苑店",
+      "sourcePlacement": "R7-SOLVE-05",
+      "originalClass": "LONG_ACCESS_SPUR_REVIEW",
+      "originalLengthM": 130,
+      "candidateEntranceId": "ENT-LIFE-N-02-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 0,
+      "rootConnectedCandidateCount": 0,
+      "topologicallyRootConnected": false,
+      "connectionCandidate": null,
+      "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "LIFE-S-01",
+      "buildingName": "南苑食堂",
+      "sourcePlacement": "R7-SOLVE-05",
+      "originalClass": "LONG_ACCESS_SPUR_REVIEW",
+      "originalLengthM": 140,
+      "candidateEntranceId": "ENT-LIFE-S-01-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 0,
+      "rootConnectedCandidateCount": 0,
+      "topologicallyRootConnected": false,
+      "connectionCandidate": null,
+      "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "LIFE-S-02",
+      "buildingName": "江大校园超市·南苑店",
+      "sourcePlacement": "R7-SOLVE-05",
+      "originalClass": "NETWORK_EXTENSION_REQUIRED",
+      "originalLengthM": 185,
+      "candidateEntranceId": "ENT-LIFE-S-02-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 0,
+      "rootConnectedCandidateCount": 0,
+      "topologicallyRootConnected": false,
+      "connectionCandidate": null,
+      "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "LIFE-W-01",
+      "buildingName": "西苑食堂",
+      "sourcePlacement": "R7-SOLVE-05",
+      "originalClass": "NETWORK_EXTENSION_REQUIRED",
+      "originalLengthM": 203.04,
+      "candidateEntranceId": "ENT-LIFE-W-01-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 1,
+      "rootConnectedCandidateCount": 1,
+      "topologicallyRootConnected": true,
+      "connectionCandidate": {
+        "viaRoadID": "ROAD-R7-S13-W-SOUTHWEST",
+        "sourceStage": "R7-SOLVE-13",
+        "lengthM": 70,
+        "projectionXZ": [
+          -1515,
+          260
+        ],
+        "componentId": "FIRE-COMP-01",
+        "gatewayCandidateConnected": true,
+        "quality": "UPSTREAM_2D_SHORTENING_PROBE"
+      },
+      "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "LIFE-W-02",
+      "buildingName": "江大校园超市·西苑店",
+      "sourcePlacement": "R7-SOLVE-05",
+      "originalClass": "CLEARANCE_PRECHECK_ONLY",
+      "originalLengthM": 18,
+      "candidateEntranceId": "ENT-LIFE-W-02-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 1,
+      "rootConnectedCandidateCount": 1,
+      "topologicallyRootConnected": true,
+      "connectionCandidate": {
+        "viaRoadID": "ROAD-QINGNIAN-W",
+        "sourceStage": "R7-SOLVE-11",
+        "lengthM": 18,
+        "projectionXZ": [
+          -1320,
+          235
+        ],
+        "componentId": "FIRE-COMP-01",
+        "gatewayCandidateConnected": true,
+        "quality": "ORIGINAL_SHORT_SPUR_2D_PRESCREEN"
+      },
+      "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "MARX-01",
+      "buildingName": "马克思主义学院楼",
+      "sourcePlacement": "R7-SOLVE-04",
+      "originalClass": "CORRIDOR_CONFLICT",
+      "originalLengthM": 193,
+      "candidateEntranceId": "ENT-MARX-01-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 0,
+      "rootConnectedCandidateCount": 0,
+      "topologicallyRootConnected": false,
+      "connectionCandidate": null,
+      "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "MAT-01",
+      "buildingName": "材料学院楼",
+      "sourcePlacement": "R7-SOLVE-03",
+      "originalClass": "CLEARANCE_PRECHECK_ONLY",
+      "originalLengthM": 64,
+      "candidateEntranceId": "ENT-MAT-01-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 1,
+      "rootConnectedCandidateCount": 1,
+      "topologicallyRootConnected": true,
+      "connectionCandidate": {
+        "viaRoadID": "ROAD-GEZHI-W",
+        "sourceStage": "R7-SOLVE-11",
+        "lengthM": 64,
+        "projectionXZ": [
+          -815,
+          500
+        ],
+        "componentId": "FIRE-COMP-01",
+        "gatewayCandidateConnected": true,
+        "quality": "ORIGINAL_SHORT_SPUR_2D_PRESCREEN"
+      },
+      "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "MAT-02",
+      "buildingName": "材料实验中心",
+      "sourcePlacement": "R7-SOLVE-03",
+      "originalClass": "CLEARANCE_PRECHECK_ONLY",
+      "originalLengthM": 70,
+      "candidateEntranceId": "ENT-MAT-02-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 1,
+      "rootConnectedCandidateCount": 1,
+      "topologicallyRootConnected": true,
+      "connectionCandidate": {
+        "viaRoadID": "ROAD-GEZHI-W",
+        "sourceStage": "R7-SOLVE-11",
+        "lengthM": 70,
+        "projectionXZ": [
+          -690,
+          500
+        ],
+        "componentId": "FIRE-COMP-01",
+        "gatewayCandidateConnected": true,
+        "quality": "ORIGINAL_SHORT_SPUR_2D_PRESCREEN"
+      },
+      "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "MATH-01",
+      "buildingName": "数学科学楼",
+      "sourcePlacement": "R6_VALID_UNTIL_OVERRIDDEN",
+      "originalClass": "LONG_ACCESS_SPUR_REVIEW",
+      "originalLengthM": 91.24,
+      "candidateEntranceId": "ENT-MATH-01-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 0,
+      "rootConnectedCandidateCount": 0,
+      "topologicallyRootConnected": false,
+      "connectionCandidate": null,
+      "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "ME-01",
+      "buildingName": "机械A楼",
+      "sourcePlacement": "R7-SOLVE-03",
+      "originalClass": "LONG_ACCESS_SPUR_REVIEW",
+      "originalLengthM": 85,
+      "candidateEntranceId": "ENT-ME-01-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 0,
+      "rootConnectedCandidateCount": 0,
+      "topologicallyRootConnected": false,
+      "connectionCandidate": null,
+      "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "ME-02",
+      "buildingName": "机械B楼",
+      "sourcePlacement": "R7-SOLVE-03",
+      "originalClass": "CORRIDOR_CONFLICT",
+      "originalLengthM": 120,
+      "candidateEntranceId": "ENT-ME-02-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 0,
+      "rootConnectedCandidateCount": 0,
+      "topologicallyRootConnected": false,
+      "connectionCandidate": null,
+      "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "ME-03",
+      "buildingName": "先进制造实验楼",
+      "sourcePlacement": "R7-SOLVE-03",
+      "originalClass": "LONG_ACCESS_SPUR_REVIEW",
+      "originalLengthM": 90,
+      "candidateEntranceId": "ENT-ME-03-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 0,
+      "rootConnectedCandidateCount": 0,
+      "topologicallyRootConnected": false,
+      "connectionCandidate": null,
+      "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "MED-01",
+      "buildingName": "医学院教学楼",
+      "sourcePlacement": "R6_VALID_UNTIL_OVERRIDDEN",
+      "originalClass": "NETWORK_EXTENSION_REQUIRED",
+      "originalLengthM": 165.56,
+      "candidateEntranceId": "ENT-MED-01-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 0,
+      "rootConnectedCandidateCount": 0,
+      "topologicallyRootConnected": false,
+      "connectionCandidate": null,
+      "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "MED-02",
+      "buildingName": "基础医学楼",
+      "sourcePlacement": "R6_VALID_UNTIL_OVERRIDDEN",
+      "originalClass": "NETWORK_EXTENSION_REQUIRED",
+      "originalLengthM": 165.56,
+      "candidateEntranceId": "ENT-MED-02-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 0,
+      "rootConnectedCandidateCount": 0,
+      "topologicallyRootConnected": false,
+      "connectionCandidate": null,
+      "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "MED-03",
+      "buildingName": "医学实验楼",
+      "sourcePlacement": "R6_VALID_UNTIL_OVERRIDDEN",
+      "originalClass": "NETWORK_EXTENSION_REQUIRED",
+      "originalLengthM": 180.2,
+      "candidateEntranceId": "ENT-MED-03-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 0,
+      "rootConnectedCandidateCount": 0,
+      "topologicallyRootConnected": false,
+      "connectionCandidate": null,
+      "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "MED-04",
+      "buildingName": "医学研究中心",
+      "sourcePlacement": "R6_VALID_UNTIL_OVERRIDDEN",
+      "originalClass": "NETWORK_EXTENSION_REQUIRED",
+      "originalLengthM": 170.55,
+      "candidateEntranceId": "ENT-MED-04-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 0,
+      "rootConnectedCandidateCount": 0,
+      "topologicallyRootConnected": false,
+      "connectionCandidate": null,
+      "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "NEE-01",
+      "buildingName": "国家卓越工程师学院",
+      "sourcePlacement": "R7-SOLVE-03",
+      "originalClass": "CORRIDOR_CONFLICT",
+      "originalLengthM": 220,
+      "candidateEntranceId": "ENT-NEE-01-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 0,
+      "rootConnectedCandidateCount": 0,
+      "topologicallyRootConnected": false,
+      "connectionCandidate": null,
+      "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "NEE-02",
+      "buildingName": "工程实践中心",
+      "sourcePlacement": "R7-SOLVE-03",
+      "originalClass": "CORRIDOR_CONFLICT",
+      "originalLengthM": 220,
+      "candidateEntranceId": "ENT-NEE-02-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 0,
+      "rootConnectedCandidateCount": 0,
+      "topologicallyRootConnected": false,
+      "connectionCandidate": null,
+      "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "NUC-01",
+      "buildingName": "核科学楼",
+      "sourcePlacement": "R7-SOLVE-03",
+      "originalClass": "CLEARANCE_PRECHECK_ONLY",
+      "originalLengthM": 65,
+      "candidateEntranceId": "ENT-NUC-01-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 1,
+      "rootConnectedCandidateCount": 1,
+      "topologicallyRootConnected": true,
+      "connectionCandidate": {
+        "viaRoadID": "ROAD-BOYA-RING-W",
+        "sourceStage": "R7-SOLVE-11",
+        "lengthM": 65,
+        "projectionXZ": [
+          -900,
+          175
+        ],
+        "componentId": "FIRE-COMP-01",
+        "gatewayCandidateConnected": true,
+        "quality": "ORIGINAL_SHORT_SPUR_2D_PRESCREEN"
+      },
+      "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "NUC-02",
+      "buildingName": "新能源楼",
+      "sourcePlacement": "R7-SOLVE-03",
+      "originalClass": "CLEARANCE_PRECHECK_ONLY",
+      "originalLengthM": 65,
+      "candidateEntranceId": "ENT-NUC-02-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 1,
+      "rootConnectedCandidateCount": 1,
+      "topologicallyRootConnected": true,
+      "connectionCandidate": {
+        "viaRoadID": "ROAD-BOYA-RING-W",
+        "sourceStage": "R7-SOLVE-11",
+        "lengthM": 65,
+        "projectionXZ": [
+          -900,
+          290
+        ],
+        "componentId": "FIRE-COMP-01",
+        "gatewayCandidateConnected": true,
+        "quality": "ORIGINAL_SHORT_SPUR_2D_PRESCREEN"
+      },
+      "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "NUC-03",
+      "buildingName": "能源实验中心",
+      "sourcePlacement": "R7-SOLVE-03",
+      "originalClass": "CLEARANCE_PRECHECK_ONLY",
+      "originalLengthM": 67,
+      "candidateEntranceId": "ENT-NUC-03-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 1,
+      "rootConnectedCandidateCount": 1,
+      "topologicallyRootConnected": true,
+      "connectionCandidate": {
+        "viaRoadID": "ROAD-BOYA-RING-W",
+        "sourceStage": "R7-SOLVE-11",
+        "lengthM": 67,
+        "projectionXZ": [
+          -900,
+          405
+        ],
+        "componentId": "FIRE-COMP-01",
+        "gatewayCandidateConnected": true,
+        "quality": "ORIGINAL_SHORT_SPUR_2D_PRESCREEN"
+      },
+      "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "OPS-01",
+      "buildingName": "保卫/校园警务中心",
+      "sourcePlacement": "R6_VALID_UNTIL_OVERRIDDEN",
+      "originalClass": "LONG_ACCESS_SPUR_REVIEW",
+      "originalLengthM": 82,
+      "candidateEntranceId": "ENT-OPS-01-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 0,
+      "rootConnectedCandidateCount": 0,
+      "topologicallyRootConnected": false,
+      "connectionCandidate": null,
+      "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "OPS-02",
+      "buildingName": "后勤服务中心",
+      "sourcePlacement": "R6_VALID_UNTIL_OVERRIDDEN",
+      "originalClass": "NETWORK_EXTENSION_REQUIRED",
+      "originalLengthM": 371,
+      "candidateEntranceId": "ENT-OPS-02-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 1,
+      "rootConnectedCandidateCount": 1,
+      "topologicallyRootConnected": true,
+      "connectionCandidate": {
+        "viaRoadID": "ROAD-R7-S12-OPS-SOUTH-SERVICE",
+        "sourceStage": "R7-SOLVE-12",
+        "lengthM": 61,
+        "projectionXZ": [
+          1140,
+          -850
+        ],
+        "componentId": "FIRE-COMP-01",
+        "gatewayCandidateConnected": true,
+        "quality": "UPSTREAM_2D_SHORTENING_PROBE"
+      },
+      "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "OPS-03",
+      "buildingName": "维修中心",
+      "sourcePlacement": "R6_VALID_UNTIL_OVERRIDDEN",
+      "originalClass": "NETWORK_EXTENSION_REQUIRED",
+      "originalLengthM": 482.1,
+      "candidateEntranceId": "ENT-OPS-03-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 0,
+      "rootConnectedCandidateCount": 0,
+      "topologicallyRootConnected": false,
+      "connectionCandidate": null,
+      "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "OPS-04",
+      "buildingName": "能源中心",
+      "sourcePlacement": "R6_VALID_UNTIL_OVERRIDDEN",
+      "originalClass": "NETWORK_EXTENSION_REQUIRED",
+      "originalLengthM": 396,
+      "candidateEntranceId": "ENT-OPS-04-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 0,
+      "rootConnectedCandidateCount": 0,
+      "topologicallyRootConnected": false,
+      "connectionCandidate": null,
+      "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "OPS-05",
+      "buildingName": "水电运行中心",
+      "sourcePlacement": "R6_VALID_UNTIL_OVERRIDDEN",
+      "originalClass": "NETWORK_EXTENSION_REQUIRED",
+      "originalLengthM": 561.22,
+      "candidateEntranceId": "ENT-OPS-05-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 0,
+      "rootConnectedCandidateCount": 0,
+      "topologicallyRootConnected": false,
+      "connectionCandidate": null,
+      "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "OPS-06",
+      "buildingName": "校车运营中心",
+      "sourcePlacement": "R6_VALID_UNTIL_OVERRIDDEN",
+      "originalClass": "NETWORK_EXTENSION_REQUIRED",
+      "originalLengthM": 392,
+      "candidateEntranceId": "ENT-OPS-06-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 0,
+      "rootConnectedCandidateCount": 0,
+      "topologicallyRootConnected": false,
+      "connectionCandidate": null,
+      "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "OPS-07",
+      "buildingName": "网络信息中心",
+      "sourcePlacement": "R6_VALID_UNTIL_OVERRIDDEN",
+      "originalClass": "LONG_ACCESS_SPUR_REVIEW",
+      "originalLengthM": 87.66,
+      "candidateEntranceId": "ENT-OPS-07-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 0,
+      "rootConnectedCandidateCount": 0,
+      "topologicallyRootConnected": false,
+      "connectionCandidate": null,
+      "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "OPS-08",
+      "buildingName": "档案馆",
+      "sourcePlacement": "R6_VALID_UNTIL_OVERRIDDEN",
+      "originalClass": "LONG_ACCESS_SPUR_REVIEW",
+      "originalLengthM": 71,
+      "candidateEntranceId": "ENT-OPS-08-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 0,
+      "rootConnectedCandidateCount": 0,
+      "topologicallyRootConnected": false,
+      "connectionCandidate": null,
+      "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "OPS-09",
+      "buildingName": "教职工服务中心",
+      "sourcePlacement": "R6_VALID_UNTIL_OVERRIDDEN",
+      "originalClass": "NETWORK_EXTENSION_REQUIRED",
+      "originalLengthM": 222,
+      "candidateEntranceId": "ENT-OPS-09-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 0,
+      "rootConnectedCandidateCount": 0,
+      "topologicallyRootConnected": false,
+      "connectionCandidate": null,
+      "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "OPS-10",
+      "buildingName": "校友中心",
+      "sourcePlacement": "R6_VALID_UNTIL_OVERRIDDEN",
+      "originalClass": "NETWORK_EXTENSION_REQUIRED",
+      "originalLengthM": 350,
+      "candidateEntranceId": "ENT-OPS-10-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 0,
+      "rootConnectedCandidateCount": 0,
+      "topologicallyRootConnected": false,
+      "connectionCandidate": null,
+      "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "PE-01",
+      "buildingName": "体育学院楼",
+      "sourcePlacement": "R7-SOLVE-06",
+      "originalClass": "CLEARANCE_PRECHECK_ONLY",
+      "originalLengthM": 70,
+      "candidateEntranceId": "ENT-PE-01-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 1,
+      "rootConnectedCandidateCount": 1,
+      "topologicallyRootConnected": true,
+      "connectionCandidate": {
+        "viaRoadID": "ROAD-BOYA-RING-N",
+        "sourceStage": "R7-SOLVE-11",
+        "lengthM": 70,
+        "projectionXZ": [
+          -330,
+          690
+        ],
+        "componentId": "FIRE-COMP-01",
+        "gatewayCandidateConnected": true,
+        "quality": "ORIGINAL_SHORT_SPUR_2D_PRESCREEN"
+      },
+      "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "PE-02",
+      "buildingName": "体育训练教学楼",
+      "sourcePlacement": "R7-SOLVE-06",
+      "originalClass": "LONG_ACCESS_SPUR_REVIEW",
+      "originalLengthM": 75,
+      "candidateEntranceId": "ENT-PE-02-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 0,
+      "rootConnectedCandidateCount": 0,
+      "topologicallyRootConnected": false,
+      "connectionCandidate": null,
+      "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "PH-01",
+      "buildingName": "公共卫生学院楼",
+      "sourcePlacement": "R6_VALID_UNTIL_OVERRIDDEN",
+      "originalClass": "LONG_ACCESS_SPUR_REVIEW",
+      "originalLengthM": 145.86,
+      "candidateEntranceId": "ENT-PH-01-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 0,
+      "rootConnectedCandidateCount": 0,
+      "topologicallyRootConnected": false,
+      "connectionCandidate": null,
+      "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "PH-02",
+      "buildingName": "公共卫生实验中心",
+      "sourcePlacement": "R6_VALID_UNTIL_OVERRIDDEN",
+      "originalClass": "CLEARANCE_PRECHECK_ONLY",
+      "originalLengthM": 52.32,
+      "candidateEntranceId": "ENT-PH-02-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 1,
+      "rootConnectedCandidateCount": 1,
+      "topologicallyRootConnected": true,
+      "connectionCandidate": {
+        "viaRoadID": "ROAD-BOYA-RING-SW-H",
+        "sourceStage": "R7-SOLVE-11",
+        "lengthM": 52.32,
+        "projectionXZ": [
+          -742.32,
+          -430
+        ],
+        "componentId": "FIRE-COMP-01",
+        "gatewayCandidateConnected": true,
+        "quality": "ORIGINAL_SHORT_SPUR_2D_PRESCREEN"
+      },
+      "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "PHA-01",
+      "buildingName": "药学院楼",
+      "sourcePlacement": "R6_VALID_UNTIL_OVERRIDDEN",
+      "originalClass": "NETWORK_EXTENSION_REQUIRED",
+      "originalLengthM": 164.14,
+      "candidateEntranceId": "ENT-PHA-01-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 0,
+      "rootConnectedCandidateCount": 0,
+      "topologicallyRootConnected": false,
+      "connectionCandidate": null,
+      "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "PHA-02",
+      "buildingName": "药学实验中心",
+      "sourcePlacement": "R6_VALID_UNTIL_OVERRIDDEN",
+      "originalClass": "CLEARANCE_PRECHECK_ONLY",
+      "originalLengthM": 52.37,
+      "candidateEntranceId": "ENT-PHA-02-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 1,
+      "rootConnectedCandidateCount": 1,
+      "topologicallyRootConnected": true,
+      "connectionCandidate": {
+        "viaRoadID": "ROAD-BOYA-RING-W",
+        "sourceStage": "R7-SOLVE-11",
+        "lengthM": 52.37,
+        "projectionXZ": [
+          -900,
+          -430
+        ],
+        "componentId": "FIRE-COMP-01",
+        "gatewayCandidateConnected": true,
+        "quality": "ORIGINAL_SHORT_SPUR_2D_PRESCREEN"
+      },
+      "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "PHY-01",
+      "buildingName": "物理科学楼",
+      "sourcePlacement": "R6_VALID_UNTIL_OVERRIDDEN",
+      "originalClass": "CLEARANCE_PRECHECK_ONLY",
+      "originalLengthM": 24,
+      "candidateEntranceId": "ENT-PHY-01-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 1,
+      "rootConnectedCandidateCount": 1,
+      "topologicallyRootConnected": true,
+      "connectionCandidate": {
+        "viaRoadID": "ROAD-BOYA-RING-N",
+        "sourceStage": "R7-SOLVE-11",
+        "lengthM": 24,
+        "projectionXZ": [
+          -190,
+          655
+        ],
+        "componentId": "FIRE-COMP-01",
+        "gatewayCandidateConnected": true,
+        "quality": "ORIGINAL_SHORT_SPUR_2D_PRESCREEN"
+      },
+      "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "PHY-02",
+      "buildingName": "物理实验中心",
+      "sourcePlacement": "R6_VALID_UNTIL_OVERRIDDEN",
+      "originalClass": "NETWORK_EXTENSION_REQUIRED",
+      "originalLengthM": 171.83,
+      "candidateEntranceId": "ENT-PHY-02-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 0,
+      "rootConnectedCandidateCount": 0,
+      "topologicallyRootConnected": false,
+      "connectionCandidate": null,
+      "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "PSY-01",
+      "buildingName": "心理认知科学楼",
+      "sourcePlacement": "R7-SOLVE-04",
+      "originalClass": "LONG_ACCESS_SPUR_REVIEW",
+      "originalLengthM": 88,
+      "candidateEntranceId": "ENT-PSY-01-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 0,
+      "rootConnectedCandidateCount": 0,
+      "topologicallyRootConnected": false,
+      "connectionCandidate": null,
+      "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "RDI-01",
+      "buildingName": "智能工程实验中心",
+      "sourcePlacement": "R6_VALID_UNTIL_OVERRIDDEN",
+      "originalClass": "CLEARANCE_PRECHECK_ONLY",
+      "originalLengthM": 70,
+      "candidateEntranceId": "ENT-RDI-01-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 1,
+      "rootConnectedCandidateCount": 1,
+      "topologicallyRootConnected": true,
+      "connectionCandidate": {
+        "viaRoadID": "ROAD-BOYA-RING-N",
+        "sourceStage": "R7-SOLVE-11",
+        "lengthM": 70,
+        "projectionXZ": [
+          -675,
+          690
+        ],
+        "componentId": "FIRE-COMP-01",
+        "gatewayCandidateConnected": true,
+        "quality": "ORIGINAL_SHORT_SPUR_2D_PRESCREEN"
+      },
+      "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "RDI-02",
+      "buildingName": "国家重点实验室A",
+      "sourcePlacement": "R6_VALID_UNTIL_OVERRIDDEN",
+      "originalClass": "LONG_ACCESS_SPUR_REVIEW",
+      "originalLengthM": 138.29,
+      "candidateEntranceId": "ENT-RDI-02-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 1,
+      "rootConnectedCandidateCount": 1,
+      "topologicallyRootConnected": true,
+      "connectionCandidate": {
+        "viaRoadID": "ROAD-R7-S12-RDI-ACCESS-LINK",
+        "sourceStage": "R7-SOLVE-12",
+        "lengthM": 15,
+        "projectionXZ": [
+          -1280,
+          850
+        ],
+        "componentId": "FIRE-COMP-01",
+        "gatewayCandidateConnected": true,
+        "quality": "UPSTREAM_2D_SHORTENING_PROBE"
+      },
+      "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "RDI-03",
+      "buildingName": "国家重点实验室B",
+      "sourcePlacement": "R6_VALID_UNTIL_OVERRIDDEN",
+      "originalClass": "CORRIDOR_CONFLICT",
+      "originalLengthM": 296.52,
+      "candidateEntranceId": "ENT-RDI-03-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 1,
+      "rootConnectedCandidateCount": 1,
+      "topologicallyRootConnected": true,
+      "connectionCandidate": {
+        "viaRoadID": "ROAD-R7-S12-RDI-NORTH-SERVICE",
+        "sourceStage": "R7-SOLVE-12",
+        "lengthM": 75,
+        "projectionXZ": [
+          -1135,
+          925
+        ],
+        "componentId": "FIRE-COMP-01",
+        "gatewayCandidateConnected": true,
+        "quality": "UPSTREAM_2D_SHORTENING_PROBE"
+      },
+      "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "RDI-04",
+      "buildingName": "国家重点实验室C",
+      "sourcePlacement": "R6_VALID_UNTIL_OVERRIDDEN",
+      "originalClass": "NETWORK_EXTENSION_REQUIRED",
+      "originalLengthM": 276.09,
+      "candidateEntranceId": "ENT-RDI-04-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 0,
+      "rootConnectedCandidateCount": 0,
+      "topologicallyRootConnected": false,
+      "connectionCandidate": null,
+      "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "RDI-05",
+      "buildingName": "超级计算中心",
+      "sourcePlacement": "R6_VALID_UNTIL_OVERRIDDEN",
+      "originalClass": "NETWORK_EXTENSION_REQUIRED",
+      "originalLengthM": 172.7,
+      "candidateEntranceId": "ENT-RDI-05-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 0,
+      "rootConnectedCandidateCount": 0,
+      "topologicallyRootConnected": false,
+      "connectionCandidate": null,
+      "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "RDI-06",
+      "buildingName": "大型仪器共享中心",
+      "sourcePlacement": "R6_VALID_UNTIL_OVERRIDDEN",
+      "originalClass": "LONG_ACCESS_SPUR_REVIEW",
+      "originalLengthM": 132,
+      "candidateEntranceId": "ENT-RDI-06-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 0,
+      "rootConnectedCandidateCount": 0,
+      "topologicallyRootConnected": false,
+      "connectionCandidate": null,
+      "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "RDI-07",
+      "buildingName": "先进制造研究中心",
+      "sourcePlacement": "R6_VALID_UNTIL_OVERRIDDEN",
+      "originalClass": "NETWORK_EXTENSION_REQUIRED",
+      "originalLengthM": 200,
+      "candidateEntranceId": "ENT-RDI-07-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 0,
+      "rootConnectedCandidateCount": 0,
+      "topologicallyRootConnected": false,
+      "connectionCandidate": null,
+      "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "RDI-08",
+      "buildingName": "新能源研究中心",
+      "sourcePlacement": "R6_VALID_UNTIL_OVERRIDDEN",
+      "originalClass": "NETWORK_EXTENSION_REQUIRED",
+      "originalLengthM": 206.65,
+      "candidateEntranceId": "ENT-RDI-08-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 0,
+      "rootConnectedCandidateCount": 0,
+      "topologicallyRootConnected": false,
+      "connectionCandidate": null,
+      "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "RDI-09",
+      "buildingName": "智能系统研究中心",
+      "sourcePlacement": "R6_VALID_UNTIL_OVERRIDDEN",
+      "originalClass": "LONG_ACCESS_SPUR_REVIEW",
+      "originalLengthM": 130,
+      "candidateEntranceId": "ENT-RDI-09-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 0,
+      "rootConnectedCandidateCount": 0,
+      "topologicallyRootConnected": false,
+      "connectionCandidate": null,
+      "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "RDI-10",
+      "buildingName": "产学研中心A",
+      "sourcePlacement": "R6_VALID_UNTIL_OVERRIDDEN",
+      "originalClass": "CORRIDOR_CONFLICT",
+      "originalLengthM": 275.18,
+      "candidateEntranceId": "ENT-RDI-10-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 1,
+      "rootConnectedCandidateCount": 1,
+      "topologicallyRootConnected": true,
+      "connectionCandidate": {
+        "viaRoadID": "ROAD-R7-S12-RDI-NORTH-SERVICE",
+        "sourceStage": "R7-SOLVE-12",
+        "lengthM": 10,
+        "projectionXZ": [
+          -1180,
+          925
+        ],
+        "componentId": "FIRE-COMP-01",
+        "gatewayCandidateConnected": true,
+        "quality": "UPSTREAM_2D_SHORTENING_PROBE"
+      },
+      "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "RDI-11",
+      "buildingName": "产学研中心B",
+      "sourcePlacement": "R6_VALID_UNTIL_OVERRIDDEN",
+      "originalClass": "NETWORK_EXTENSION_REQUIRED",
+      "originalLengthM": 475,
+      "candidateEntranceId": "ENT-RDI-11-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 1,
+      "rootConnectedCandidateCount": 1,
+      "topologicallyRootConnected": true,
+      "connectionCandidate": {
+        "viaRoadID": "ROAD-R7-S12-RDI-NORTH-SERVICE",
+        "sourceStage": "R7-SOLVE-12",
+        "lengthM": 30,
+        "projectionXZ": [
+          -1030,
+          925
+        ],
+        "componentId": "FIRE-COMP-01",
+        "gatewayCandidateConnected": true,
+        "quality": "UPSTREAM_2D_SHORTENING_PROBE"
+      },
+      "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "RDI-12",
+      "buildingName": "科技园综合楼",
+      "sourcePlacement": "R6_VALID_UNTIL_OVERRIDDEN",
+      "originalClass": "CORRIDOR_CONFLICT",
+      "originalLengthM": 299.67,
+      "candidateEntranceId": "ENT-RDI-12-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 1,
+      "rootConnectedCandidateCount": 1,
+      "topologicallyRootConnected": true,
+      "connectionCandidate": {
+        "viaRoadID": "ROAD-R7-S12-RDI-NORTH-SERVICE",
+        "sourceStage": "R7-SOLVE-12",
+        "lengthM": 35,
+        "projectionXZ": [
+          -880,
+          925
+        ],
+        "componentId": "FIRE-COMP-01",
+        "gatewayCandidateConnected": true,
+        "quality": "UPSTREAM_2D_SHORTENING_PROBE"
+      },
+      "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "RDI-13",
+      "buildingName": "科技园研发楼A",
+      "sourcePlacement": "R6_VALID_UNTIL_OVERRIDDEN",
+      "originalClass": "NETWORK_EXTENSION_REQUIRED",
+      "originalLengthM": 311.75,
+      "candidateEntranceId": "ENT-RDI-13-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 1,
+      "rootConnectedCandidateCount": 1,
+      "topologicallyRootConnected": true,
+      "connectionCandidate": {
+        "viaRoadID": "ROAD-R7-S12-RDI-NORTH-SERVICE",
+        "sourceStage": "R7-SOLVE-12",
+        "lengthM": 75,
+        "projectionXZ": [
+          -783,
+          925
+        ],
+        "componentId": "FIRE-COMP-01",
+        "gatewayCandidateConnected": true,
+        "quality": "UPSTREAM_2D_SHORTENING_PROBE"
+      },
+      "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "RDI-14",
+      "buildingName": "科技园研发楼B",
+      "sourcePlacement": "R6_VALID_UNTIL_OVERRIDDEN",
+      "originalClass": "CLEARANCE_PRECHECK_ONLY",
+      "originalLengthM": 60,
+      "candidateEntranceId": "ENT-RDI-14-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 1,
+      "rootConnectedCandidateCount": 1,
+      "topologicallyRootConnected": true,
+      "connectionCandidate": {
+        "viaRoadID": "ROAD-QINGNIAN-NW",
+        "sourceStage": "R7-SOLVE-11",
+        "lengthM": 60,
+        "projectionXZ": [
+          -520,
+          975
+        ],
+        "componentId": "FIRE-COMP-01",
+        "gatewayCandidateConnected": true,
+        "quality": "ORIGINAL_SHORT_SPUR_2D_PRESCREEN"
+      },
+      "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "RES-E-G01",
+      "buildingName": "RES-E-G01",
+      "sourcePlacement": "R7-SOLVE-05",
+      "originalClass": "LONG_ACCESS_SPUR_REVIEW",
+      "originalLengthM": 109,
+      "candidateEntranceId": "ENT-RES-E-G01-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 0,
+      "rootConnectedCandidateCount": 0,
+      "topologicallyRootConnected": false,
+      "connectionCandidate": null,
+      "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "RES-E-G02",
+      "buildingName": "RES-E-G02",
+      "sourcePlacement": "R7-SOLVE-05",
+      "originalClass": "CLEARANCE_PRECHECK_ONLY",
+      "originalLengthM": 60,
+      "candidateEntranceId": "ENT-RES-E-G02-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 1,
+      "rootConnectedCandidateCount": 1,
+      "topologicallyRootConnected": true,
+      "connectionCandidate": {
+        "viaRoadID": "ROAD-QINGNIAN-E",
+        "sourceStage": "R7-SOLVE-11",
+        "lengthM": 60,
+        "projectionXZ": [
+          1400,
+          259
+        ],
+        "componentId": "FIRE-COMP-01",
+        "gatewayCandidateConnected": true,
+        "quality": "ORIGINAL_SHORT_SPUR_2D_PRESCREEN"
+      },
+      "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "RES-E-G03",
+      "buildingName": "RES-E-G03",
+      "sourcePlacement": "R7-SOLVE-05",
+      "originalClass": "CLEARANCE_PRECHECK_ONLY",
+      "originalLengthM": 61,
+      "candidateEntranceId": "ENT-RES-E-G03-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 1,
+      "rootConnectedCandidateCount": 1,
+      "topologicallyRootConnected": true,
+      "connectionCandidate": {
+        "viaRoadID": "ROAD-QINGNIAN-E-FEED",
+        "sourceStage": "R7-SOLVE-11",
+        "lengthM": 61,
+        "projectionXZ": [
+          1320,
+          360
+        ],
+        "componentId": "FIRE-COMP-01",
+        "gatewayCandidateConnected": true,
+        "quality": "ORIGINAL_SHORT_SPUR_2D_PRESCREEN"
+      },
+      "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "RES-E-I01",
+      "buildingName": "RES-E-I01",
+      "sourcePlacement": "R7-SOLVE-05",
+      "originalClass": "CLEARANCE_PRECHECK_ONLY",
+      "originalLengthM": 42,
+      "candidateEntranceId": "ENT-RES-E-I01-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 1,
+      "rootConnectedCandidateCount": 1,
+      "topologicallyRootConnected": true,
+      "connectionCandidate": {
+        "viaRoadID": "ROAD-QINGNIAN-E-FEED",
+        "sourceStage": "R7-SOLVE-11",
+        "lengthM": 42,
+        "projectionXZ": [
+          1220,
+          360
+        ],
+        "componentId": "FIRE-COMP-01",
+        "gatewayCandidateConnected": true,
+        "quality": "ORIGINAL_SHORT_SPUR_2D_PRESCREEN"
+      },
+      "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "RES-E-U01",
+      "buildingName": "RES-E-U01",
+      "sourcePlacement": "R7-SOLVE-05",
+      "originalClass": "CLEARANCE_PRECHECK_ONLY",
+      "originalLengthM": 51,
+      "candidateEntranceId": "ENT-RES-E-U01-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 1,
+      "rootConnectedCandidateCount": 1,
+      "topologicallyRootConnected": true,
+      "connectionCandidate": {
+        "viaRoadID": "ROAD-QINGNIAN-E",
+        "sourceStage": "R7-SOLVE-11",
+        "lengthM": 51,
+        "projectionXZ": [
+          1400,
+          -50
+        ],
+        "componentId": "FIRE-COMP-01",
+        "gatewayCandidateConnected": true,
+        "quality": "ORIGINAL_SHORT_SPUR_2D_PRESCREEN"
+      },
+      "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "RES-E-U02",
+      "buildingName": "RES-E-U02",
+      "sourcePlacement": "R7-SOLVE-05",
+      "originalClass": "NETWORK_EXTENSION_REQUIRED",
+      "originalLengthM": 151,
+      "candidateEntranceId": "ENT-RES-E-U02-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 0,
+      "rootConnectedCandidateCount": 0,
+      "topologicallyRootConnected": false,
+      "connectionCandidate": null,
+      "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "RES-E-U03",
+      "buildingName": "RES-E-U03",
+      "sourcePlacement": "R7-SOLVE-05",
+      "originalClass": "CORRIDOR_CONFLICT",
+      "originalLengthM": 100,
+      "candidateEntranceId": "ENT-RES-E-U03-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 0,
+      "rootConnectedCandidateCount": 0,
+      "topologicallyRootConnected": false,
+      "connectionCandidate": null,
+      "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "RES-E-U04",
+      "buildingName": "RES-E-U04",
+      "sourcePlacement": "R7-SOLVE-05",
+      "originalClass": "NETWORK_EXTENSION_REQUIRED",
+      "originalLengthM": 231.04,
+      "candidateEntranceId": "ENT-RES-E-U04-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 0,
+      "rootConnectedCandidateCount": 0,
+      "topologicallyRootConnected": false,
+      "connectionCandidate": null,
+      "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "RES-E-U05",
+      "buildingName": "RES-E-U05",
+      "sourcePlacement": "R7-SOLVE-05",
+      "originalClass": "LONG_ACCESS_SPUR_REVIEW",
+      "originalLengthM": 80,
+      "candidateEntranceId": "ENT-RES-E-U05-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 0,
+      "rootConnectedCandidateCount": 0,
+      "topologicallyRootConnected": false,
+      "connectionCandidate": null,
+      "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "RES-E-U06",
+      "buildingName": "RES-E-U06",
+      "sourcePlacement": "R7-SOLVE-05",
+      "originalClass": "NETWORK_EXTENSION_REQUIRED",
+      "originalLengthM": 209,
+      "candidateEntranceId": "ENT-RES-E-U06-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 0,
+      "rootConnectedCandidateCount": 0,
+      "topologicallyRootConnected": false,
+      "connectionCandidate": null,
+      "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "RES-E-U07",
+      "buildingName": "RES-E-U07",
+      "sourcePlacement": "R7-SOLVE-05",
+      "originalClass": "LONG_ACCESS_SPUR_REVIEW",
+      "originalLengthM": 111,
+      "candidateEntranceId": "ENT-RES-E-U07-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 0,
+      "rootConnectedCandidateCount": 0,
+      "topologicallyRootConnected": false,
+      "connectionCandidate": null,
+      "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "RES-E-U08",
+      "buildingName": "RES-E-U08",
+      "sourcePlacement": "R7-SOLVE-05",
+      "originalClass": "NETWORK_EXTENSION_REQUIRED",
+      "originalLengthM": 171,
+      "candidateEntranceId": "ENT-RES-E-U08-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 0,
+      "rootConnectedCandidateCount": 0,
+      "topologicallyRootConnected": false,
+      "connectionCandidate": null,
+      "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "RES-E-U09",
+      "buildingName": "RES-E-U09",
+      "sourcePlacement": "R7-SOLVE-05",
+      "originalClass": "CLEARANCE_PRECHECK_ONLY",
+      "originalLengthM": 60,
+      "candidateEntranceId": "ENT-RES-E-U09-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 1,
+      "rootConnectedCandidateCount": 1,
+      "topologicallyRootConnected": true,
+      "connectionCandidate": {
+        "viaRoadID": "ROAD-QINGNIAN-E",
+        "sourceStage": "R7-SOLVE-11",
+        "lengthM": 60,
+        "projectionXZ": [
+          1400,
+          241
+        ],
+        "componentId": "FIRE-COMP-01",
+        "gatewayCandidateConnected": true,
+        "quality": "ORIGINAL_SHORT_SPUR_2D_PRESCREEN"
+      },
+      "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "RES-E-U10",
+      "buildingName": "RES-E-U10",
+      "sourcePlacement": "R7-SOLVE-05",
+      "originalClass": "NETWORK_EXTENSION_REQUIRED",
+      "originalLengthM": 189,
+      "candidateEntranceId": "ENT-RES-E-U10-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 0,
+      "rootConnectedCandidateCount": 0,
+      "topologicallyRootConnected": false,
+      "connectionCandidate": null,
+      "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "RES-N-G01",
+      "buildingName": "RES-N-G01",
+      "sourcePlacement": "R7-SOLVE-05",
+      "originalClass": "NETWORK_EXTENSION_REQUIRED",
+      "originalLengthM": 250,
+      "candidateEntranceId": "ENT-RES-N-G01-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 0,
+      "rootConnectedCandidateCount": 0,
+      "topologicallyRootConnected": false,
+      "connectionCandidate": null,
+      "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "RES-N-G02",
+      "buildingName": "RES-N-G02",
+      "sourcePlacement": "R7-SOLVE-05",
+      "originalClass": "NETWORK_EXTENSION_REQUIRED",
+      "originalLengthM": 560,
+      "candidateEntranceId": "ENT-RES-N-G02-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 1,
+      "rootConnectedCandidateCount": 1,
+      "topologicallyRootConnected": true,
+      "connectionCandidate": {
+        "viaRoadID": "ROAD-R7-S13-N-EAST",
+        "sourceStage": "R7-SOLVE-13",
+        "lengthM": 51,
+        "projectionXZ": [
+          1000,
+          960
+        ],
+        "componentId": "FIRE-COMP-01",
+        "gatewayCandidateConnected": true,
+        "quality": "UPSTREAM_2D_SHORTENING_PROBE"
+      },
+      "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "RES-N-G03",
+      "buildingName": "RES-N-G03",
+      "sourcePlacement": "R7-SOLVE-05",
+      "originalClass": "NETWORK_EXTENSION_REQUIRED",
+      "originalLengthM": 360.25,
+      "candidateEntranceId": "ENT-RES-N-G03-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 0,
+      "rootConnectedCandidateCount": 0,
+      "topologicallyRootConnected": false,
+      "connectionCandidate": null,
+      "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "RES-N-U01",
+      "buildingName": "RES-N-U01",
+      "sourcePlacement": "R7-SOLVE-05",
+      "originalClass": "NETWORK_EXTENSION_REQUIRED",
+      "originalLengthM": 431,
+      "candidateEntranceId": "ENT-RES-N-U01-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 1,
+      "rootConnectedCandidateCount": 1,
+      "topologicallyRootConnected": true,
+      "connectionCandidate": {
+        "viaRoadID": "ROAD-R7-S12-RDI-NORTH-SERVICE",
+        "sourceStage": "R7-SOLVE-12",
+        "lengthM": 14,
+        "projectionXZ": [
+          -930,
+          925
+        ],
+        "componentId": "FIRE-COMP-01",
+        "gatewayCandidateConnected": true,
+        "quality": "UPSTREAM_2D_SHORTENING_PROBE"
+      },
+      "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "RES-N-U02",
+      "buildingName": "RES-N-U02",
+      "sourcePlacement": "R7-SOLVE-05",
+      "originalClass": "CORRIDOR_CONFLICT",
+      "originalLengthM": 235.03,
+      "candidateEntranceId": "ENT-RES-N-U02-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 1,
+      "rootConnectedCandidateCount": 1,
+      "topologicallyRootConnected": true,
+      "connectionCandidate": {
+        "viaRoadID": "ROAD-R7-S12-RDI-NORTH-SERVICE",
+        "sourceStage": "R7-SOLVE-12",
+        "lengthM": 14,
+        "projectionXZ": [
+          -830,
+          925
+        ],
+        "componentId": "FIRE-COMP-01",
+        "gatewayCandidateConnected": true,
+        "quality": "UPSTREAM_2D_SHORTENING_PROBE"
+      },
+      "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "RES-N-U03",
+      "buildingName": "RES-N-U03",
+      "sourcePlacement": "R7-SOLVE-05",
+      "originalClass": "CORRIDOR_CONFLICT",
+      "originalLengthM": 341.66,
+      "candidateEntranceId": "ENT-RES-N-U03-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 1,
+      "rootConnectedCandidateCount": 1,
+      "topologicallyRootConnected": true,
+      "connectionCandidate": {
+        "viaRoadID": "ROAD-R7-S12-RDI-NORTH-SERVICE",
+        "sourceStage": "R7-SOLVE-12",
+        "lengthM": 42,
+        "projectionXZ": [
+          -950,
+          925
+        ],
+        "componentId": "FIRE-COMP-01",
+        "gatewayCandidateConnected": true,
+        "quality": "UPSTREAM_2D_SHORTENING_PROBE"
+      },
+      "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "RES-N-U04",
+      "buildingName": "RES-N-U04",
+      "sourcePlacement": "R7-SOLVE-05",
+      "originalClass": "CORRIDOR_CONFLICT",
+      "originalLengthM": 169,
+      "candidateEntranceId": "ENT-RES-N-U04-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 1,
+      "rootConnectedCandidateCount": 1,
+      "topologicallyRootConnected": true,
+      "connectionCandidate": {
+        "viaRoadID": "ROAD-R7-S12-RDI-NORTH-SERVICE",
+        "sourceStage": "R7-SOLVE-12",
+        "lengthM": 71.18,
+        "projectionXZ": [
+          -760,
+          925
+        ],
+        "componentId": "FIRE-COMP-01",
+        "gatewayCandidateConnected": true,
+        "quality": "UPSTREAM_2D_SHORTENING_PROBE"
+      },
+      "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "RES-N-U05",
+      "buildingName": "RES-N-U05",
+      "sourcePlacement": "R7-SOLVE-05",
+      "originalClass": "LONG_ACCESS_SPUR_REVIEW",
+      "originalLengthM": 111,
+      "candidateEntranceId": "ENT-RES-N-U05-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 0,
+      "rootConnectedCandidateCount": 0,
+      "topologicallyRootConnected": false,
+      "connectionCandidate": null,
+      "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "RES-N-U06",
+      "buildingName": "RES-N-U06",
+      "sourcePlacement": "R7-SOLVE-05",
+      "originalClass": "CORRIDOR_CONFLICT",
+      "originalLengthM": 180,
+      "candidateEntranceId": "ENT-RES-N-U06-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 0,
+      "rootConnectedCandidateCount": 0,
+      "topologicallyRootConnected": false,
+      "connectionCandidate": null,
+      "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "RES-N-U07",
+      "buildingName": "RES-N-U07",
+      "sourcePlacement": "R7-SOLVE-05",
+      "originalClass": "NETWORK_EXTENSION_REQUIRED",
+      "originalLengthM": 221,
+      "candidateEntranceId": "ENT-RES-N-U07-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 0,
+      "rootConnectedCandidateCount": 0,
+      "topologicallyRootConnected": false,
+      "connectionCandidate": null,
+      "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "RES-N-U08",
+      "buildingName": "RES-N-U08",
+      "sourcePlacement": "R7-SOLVE-05",
+      "originalClass": "NETWORK_EXTENSION_REQUIRED",
+      "originalLengthM": 231.82,
+      "candidateEntranceId": "ENT-RES-N-U08-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 1,
+      "rootConnectedCandidateCount": 1,
+      "topologicallyRootConnected": true,
+      "connectionCandidate": {
+        "viaRoadID": "ROAD-R7-S13-N-EAST",
+        "sourceStage": "R7-SOLVE-13",
+        "lengthM": 100,
+        "projectionXZ": [
+          1000,
+          911
+        ],
+        "componentId": "FIRE-COMP-01",
+        "gatewayCandidateConnected": true,
+        "quality": "UPSTREAM_2D_SHORTENING_PROBE"
+      },
+      "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "RES-N-U09",
+      "buildingName": "RES-N-U09",
+      "sourcePlacement": "R7-SOLVE-05",
+      "originalClass": "CORRIDOR_CONFLICT",
+      "originalLengthM": 332.15,
+      "candidateEntranceId": "ENT-RES-N-U09-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 1,
+      "rootConnectedCandidateCount": 1,
+      "topologicallyRootConnected": true,
+      "connectionCandidate": {
+        "viaRoadID": "ROAD-R7-S13-N-EAST",
+        "sourceStage": "R7-SOLVE-13",
+        "lengthM": 81,
+        "projectionXZ": [
+          1000,
+          1010
+        ],
+        "componentId": "FIRE-COMP-01",
+        "gatewayCandidateConnected": true,
+        "quality": "UPSTREAM_2D_SHORTENING_PROBE"
+      },
+      "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "RES-N-U10",
+      "buildingName": "RES-N-U10",
+      "sourcePlacement": "R7-SOLVE-05",
+      "originalClass": "LONG_ACCESS_SPUR_REVIEW",
+      "originalLengthM": 111,
+      "candidateEntranceId": "ENT-RES-N-U10-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 0,
+      "rootConnectedCandidateCount": 0,
+      "topologicallyRootConnected": false,
+      "connectionCandidate": null,
+      "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "RES-S-G01",
+      "buildingName": "RES-S-G01",
+      "sourcePlacement": "R7-SOLVE-05",
+      "originalClass": "CORRIDOR_CONFLICT",
+      "originalLengthM": 111,
+      "candidateEntranceId": "ENT-RES-S-G01-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 0,
+      "rootConnectedCandidateCount": 0,
+      "topologicallyRootConnected": false,
+      "connectionCandidate": null,
+      "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "RES-S-I01",
+      "buildingName": "RES-S-I01",
+      "sourcePlacement": "R7-SOLVE-05",
+      "originalClass": "NETWORK_EXTENSION_REQUIRED",
+      "originalLengthM": 168,
+      "candidateEntranceId": "ENT-RES-S-I01-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 0,
+      "rootConnectedCandidateCount": 0,
+      "topologicallyRootConnected": false,
+      "connectionCandidate": null,
+      "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "RES-S-I02",
+      "buildingName": "RES-S-I02",
+      "sourcePlacement": "R7-SOLVE-05",
+      "originalClass": "NETWORK_EXTENSION_REQUIRED",
+      "originalLengthM": 168,
+      "candidateEntranceId": "ENT-RES-S-I02-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 0,
+      "rootConnectedCandidateCount": 0,
+      "topologicallyRootConnected": false,
+      "connectionCandidate": null,
+      "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "RES-S-I03",
+      "buildingName": "RES-S-I03",
+      "sourcePlacement": "R7-SOLVE-05",
+      "originalClass": "LONG_ACCESS_SPUR_REVIEW",
+      "originalLengthM": 80,
+      "candidateEntranceId": "ENT-RES-S-I03-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 1,
+      "rootConnectedCandidateCount": 1,
+      "topologicallyRootConnected": true,
+      "connectionCandidate": {
+        "viaRoadID": "ROAD-R7-S13-S-EAST",
+        "sourceStage": "R7-SOLVE-13",
+        "lengthM": 65.49,
+        "projectionXZ": [
+          815,
+          -740
+        ],
+        "componentId": "FIRE-COMP-01",
+        "gatewayCandidateConnected": true,
+        "quality": "UPSTREAM_2D_SHORTENING_PROBE"
+      },
+      "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "RES-S-U01",
+      "buildingName": "RES-S-U01",
+      "sourcePlacement": "R7-SOLVE-05",
+      "originalClass": "CLEARANCE_PRECHECK_ONLY",
+      "originalLengthM": 49,
+      "candidateEntranceId": "ENT-RES-S-U01-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 1,
+      "rootConnectedCandidateCount": 1,
+      "topologicallyRootConnected": true,
+      "connectionCandidate": {
+        "viaRoadID": "ROAD-QINGNIAN-S",
+        "sourceStage": "R7-SOLVE-11",
+        "lengthM": 49,
+        "projectionXZ": [
+          370,
+          -900
+        ],
+        "componentId": "FIRE-COMP-01",
+        "gatewayCandidateConnected": true,
+        "quality": "ORIGINAL_SHORT_SPUR_2D_PRESCREEN"
+      },
+      "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "RES-S-U02",
+      "buildingName": "RES-S-U02",
+      "sourcePlacement": "R7-SOLVE-05",
+      "originalClass": "CLEARANCE_PRECHECK_ONLY",
+      "originalLengthM": 49,
+      "candidateEntranceId": "ENT-RES-S-U02-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 1,
+      "rootConnectedCandidateCount": 1,
+      "topologicallyRootConnected": true,
+      "connectionCandidate": {
+        "viaRoadID": "ROAD-QINGNIAN-S",
+        "sourceStage": "R7-SOLVE-11",
+        "lengthM": 49,
+        "projectionXZ": [
+          590,
+          -900
+        ],
+        "componentId": "FIRE-COMP-01",
+        "gatewayCandidateConnected": true,
+        "quality": "ORIGINAL_SHORT_SPUR_2D_PRESCREEN"
+      },
+      "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "RES-S-U03",
+      "buildingName": "RES-S-U03",
+      "sourcePlacement": "R7-SOLVE-05",
+      "originalClass": "CLEARANCE_PRECHECK_ONLY",
+      "originalLengthM": 29,
+      "candidateEntranceId": "ENT-RES-S-U03-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 1,
+      "rootConnectedCandidateCount": 1,
+      "topologicallyRootConnected": true,
+      "connectionCandidate": {
+        "viaRoadID": "ROAD-QINGNIAN-S",
+        "sourceStage": "R7-SOLVE-11",
+        "lengthM": 29,
+        "projectionXZ": [
+          470,
+          -900
+        ],
+        "componentId": "FIRE-COMP-01",
+        "gatewayCandidateConnected": true,
+        "quality": "ORIGINAL_SHORT_SPUR_2D_PRESCREEN"
+      },
+      "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "RES-S-U04",
+      "buildingName": "RES-S-U04",
+      "sourcePlacement": "R7-SOLVE-05",
+      "originalClass": "CLEARANCE_PRECHECK_ONLY",
+      "originalLengthM": 29,
+      "candidateEntranceId": "ENT-RES-S-U04-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 1,
+      "rootConnectedCandidateCount": 1,
+      "topologicallyRootConnected": true,
+      "connectionCandidate": {
+        "viaRoadID": "ROAD-QINGNIAN-S",
+        "sourceStage": "R7-SOLVE-11",
+        "lengthM": 29,
+        "projectionXZ": [
+          690,
+          -900
+        ],
+        "componentId": "FIRE-COMP-01",
+        "gatewayCandidateConnected": true,
+        "quality": "ORIGINAL_SHORT_SPUR_2D_PRESCREEN"
+      },
+      "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "RES-S-U05",
+      "buildingName": "RES-S-U05",
+      "sourcePlacement": "R7-SOLVE-05",
+      "originalClass": "CLEARANCE_PRECHECK_ONLY",
+      "originalLengthM": 29,
+      "candidateEntranceId": "ENT-RES-S-U05-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 1,
+      "rootConnectedCandidateCount": 1,
+      "topologicallyRootConnected": true,
+      "connectionCandidate": {
+        "viaRoadID": "ROAD-QINGNIAN-S",
+        "sourceStage": "R7-SOLVE-11",
+        "lengthM": 29,
+        "projectionXZ": [
+          750,
+          -900
+        ],
+        "componentId": "FIRE-COMP-01",
+        "gatewayCandidateConnected": true,
+        "quality": "ORIGINAL_SHORT_SPUR_2D_PRESCREEN"
+      },
+      "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "RES-S-U06",
+      "buildingName": "RES-S-U06",
+      "sourcePlacement": "R7-SOLVE-05",
+      "originalClass": "CLEARANCE_PRECHECK_ONLY",
+      "originalLengthM": 49,
+      "candidateEntranceId": "ENT-RES-S-U06-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 1,
+      "rootConnectedCandidateCount": 1,
+      "topologicallyRootConnected": true,
+      "connectionCandidate": {
+        "viaRoadID": "ROAD-QINGNIAN-S",
+        "sourceStage": "R7-SOLVE-11",
+        "lengthM": 49,
+        "projectionXZ": [
+          350,
+          -900
+        ],
+        "componentId": "FIRE-COMP-01",
+        "gatewayCandidateConnected": true,
+        "quality": "ORIGINAL_SHORT_SPUR_2D_PRESCREEN"
+      },
+      "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "RES-S-U07",
+      "buildingName": "RES-S-U07",
+      "sourcePlacement": "R7-SOLVE-05",
+      "originalClass": "CLEARANCE_PRECHECK_ONLY",
+      "originalLengthM": 60,
+      "candidateEntranceId": "ENT-RES-S-U07-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 1,
+      "rootConnectedCandidateCount": 1,
+      "topologicallyRootConnected": true,
+      "connectionCandidate": {
+        "viaRoadID": "ROAD-QINGNIAN-S",
+        "sourceStage": "R7-SOLVE-11",
+        "lengthM": 60,
+        "projectionXZ": [
+          419,
+          -900
+        ],
+        "componentId": "FIRE-COMP-01",
+        "gatewayCandidateConnected": true,
+        "quality": "ORIGINAL_SHORT_SPUR_2D_PRESCREEN"
+      },
+      "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "RES-S-U08",
+      "buildingName": "RES-S-U08",
+      "sourcePlacement": "R7-SOLVE-05",
+      "originalClass": "CLEARANCE_PRECHECK_ONLY",
+      "originalLengthM": 60,
+      "candidateEntranceId": "ENT-RES-S-U08-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 1,
+      "rootConnectedCandidateCount": 1,
+      "topologicallyRootConnected": true,
+      "connectionCandidate": {
+        "viaRoadID": "ROAD-QINGNIAN-S",
+        "sourceStage": "R7-SOLVE-11",
+        "lengthM": 60,
+        "projectionXZ": [
+          481,
+          -900
+        ],
+        "componentId": "FIRE-COMP-01",
+        "gatewayCandidateConnected": true,
+        "quality": "ORIGINAL_SHORT_SPUR_2D_PRESCREEN"
+      },
+      "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "RES-S-U09",
+      "buildingName": "RES-S-U09",
+      "sourcePlacement": "R7-SOLVE-05",
+      "originalClass": "CLEARANCE_PRECHECK_ONLY",
+      "originalLengthM": 51,
+      "candidateEntranceId": "ENT-RES-S-U09-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 1,
+      "rootConnectedCandidateCount": 1,
+      "topologicallyRootConnected": true,
+      "connectionCandidate": {
+        "viaRoadID": "ROAD-BOYA-RING-E",
+        "sourceStage": "R7-SOLVE-11",
+        "lengthM": 51,
+        "projectionXZ": [
+          830,
+          -800
+        ],
+        "componentId": "FIRE-COMP-01",
+        "gatewayCandidateConnected": true,
+        "quality": "ORIGINAL_SHORT_SPUR_2D_PRESCREEN"
+      },
+      "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "RES-S-U10",
+      "buildingName": "RES-S-U10",
+      "sourcePlacement": "R7-SOLVE-05",
+      "originalClass": "NETWORK_EXTENSION_REQUIRED",
+      "originalLengthM": 341.35,
+      "candidateEntranceId": "ENT-RES-S-U10-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 1,
+      "rootConnectedCandidateCount": 1,
+      "topologicallyRootConnected": true,
+      "connectionCandidate": {
+        "viaRoadID": "ROAD-R7-S13-S-WEST",
+        "sourceStage": "R7-SOLVE-13",
+        "lengthM": 66,
+        "projectionXZ": [
+          255,
+          -780
+        ],
+        "componentId": "FIRE-COMP-01",
+        "gatewayCandidateConnected": true,
+        "quality": "UPSTREAM_2D_SHORTENING_PROBE"
+      },
+      "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "RES-W-G01",
+      "buildingName": "RES-W-G01",
+      "sourcePlacement": "R7-SOLVE-05",
+      "originalClass": "CLEARANCE_PRECHECK_ONLY",
+      "originalLengthM": 60,
+      "candidateEntranceId": "ENT-RES-W-G01-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 1,
+      "rootConnectedCandidateCount": 1,
+      "topologicallyRootConnected": true,
+      "connectionCandidate": {
+        "viaRoadID": "ROAD-CHUANGXIN",
+        "sourceStage": "R7-SOLVE-11",
+        "lengthM": 60,
+        "projectionXZ": [
+          -1430,
+          689
+        ],
+        "componentId": "FIRE-COMP-01",
+        "gatewayCandidateConnected": true,
+        "quality": "ORIGINAL_SHORT_SPUR_2D_PRESCREEN"
+      },
+      "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "RES-W-G02",
+      "buildingName": "RES-W-G02",
+      "sourcePlacement": "R7-SOLVE-05",
+      "originalClass": "CORRIDOR_CONFLICT",
+      "originalLengthM": 100.72,
+      "candidateEntranceId": "ENT-RES-W-G02-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 0,
+      "rootConnectedCandidateCount": 0,
+      "topologicallyRootConnected": false,
+      "connectionCandidate": null,
+      "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "RES-W-G03",
+      "buildingName": "RES-W-G03",
+      "sourcePlacement": "R7-SOLVE-05",
+      "originalClass": "LONG_ACCESS_SPUR_REVIEW",
+      "originalLengthM": 100,
+      "candidateEntranceId": "ENT-RES-W-G03-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 1,
+      "rootConnectedCandidateCount": 1,
+      "topologicallyRootConnected": true,
+      "connectionCandidate": {
+        "viaRoadID": "ROAD-R7-S12-RDI-ACCESS-LINK",
+        "sourceStage": "R7-SOLVE-12",
+        "lengthM": 56,
+        "projectionXZ": [
+          -1330,
+          795
+        ],
+        "componentId": "FIRE-COMP-01",
+        "gatewayCandidateConnected": true,
+        "quality": "UPSTREAM_2D_SHORTENING_PROBE"
+      },
+      "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "RES-W-U01",
+      "buildingName": "RES-W-U01",
+      "sourcePlacement": "R7-SOLVE-05",
+      "originalClass": "LONG_ACCESS_SPUR_REVIEW",
+      "originalLengthM": 110,
+      "candidateEntranceId": "ENT-RES-W-U01-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 0,
+      "rootConnectedCandidateCount": 0,
+      "topologicallyRootConnected": false,
+      "connectionCandidate": null,
+      "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "RES-W-U02",
+      "buildingName": "RES-W-U02",
+      "sourcePlacement": "R7-SOLVE-05",
+      "originalClass": "CLEARANCE_PRECHECK_ONLY",
+      "originalLengthM": 41,
+      "candidateEntranceId": "ENT-RES-W-U02-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 1,
+      "rootConnectedCandidateCount": 1,
+      "topologicallyRootConnected": true,
+      "connectionCandidate": {
+        "viaRoadID": "ROAD-QINGNIAN-W",
+        "sourceStage": "R7-SOLVE-11",
+        "lengthM": 41,
+        "projectionXZ": [
+          -1320,
+          300
+        ],
+        "componentId": "FIRE-COMP-01",
+        "gatewayCandidateConnected": true,
+        "quality": "ORIGINAL_SHORT_SPUR_2D_PRESCREEN"
+      },
+      "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "RES-W-U03",
+      "buildingName": "RES-W-U03",
+      "sourcePlacement": "R7-SOLVE-05",
+      "originalClass": "NETWORK_EXTENSION_REQUIRED",
+      "originalLengthM": 200,
+      "candidateEntranceId": "ENT-RES-W-U03-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 1,
+      "rootConnectedCandidateCount": 1,
+      "topologicallyRootConnected": true,
+      "connectionCandidate": {
+        "viaRoadID": "ROAD-R7-S13-W-EAST-INNER",
+        "sourceStage": "R7-SOLVE-13",
+        "lengthM": 31,
+        "projectionXZ": [
+          -1230,
+          300
+        ],
+        "componentId": "FIRE-COMP-01",
+        "gatewayCandidateConnected": true,
+        "quality": "UPSTREAM_2D_SHORTENING_PROBE"
+      },
+      "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "RES-W-U04",
+      "buildingName": "RES-W-U04",
+      "sourcePlacement": "R7-SOLVE-05",
+      "originalClass": "NETWORK_EXTENSION_REQUIRED",
+      "originalLengthM": 159,
+      "candidateEntranceId": "ENT-RES-W-U04-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 1,
+      "rootConnectedCandidateCount": 1,
+      "topologicallyRootConnected": true,
+      "connectionCandidate": {
+        "viaRoadID": "ROAD-R7-S13-W-SOUTHWEST",
+        "sourceStage": "R7-SOLVE-13",
+        "lengthM": 36,
+        "projectionXZ": [
+          -1515,
+          325
+        ],
+        "componentId": "FIRE-COMP-01",
+        "gatewayCandidateConnected": true,
+        "quality": "UPSTREAM_2D_SHORTENING_PROBE"
+      },
+      "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "RES-W-U05",
+      "buildingName": "RES-W-U05",
+      "sourcePlacement": "R7-SOLVE-05",
+      "originalClass": "CLEARANCE_PRECHECK_ONLY",
+      "originalLengthM": 70,
+      "candidateEntranceId": "ENT-RES-W-U05-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 1,
+      "rootConnectedCandidateCount": 1,
+      "topologicallyRootConnected": true,
+      "connectionCandidate": {
+        "viaRoadID": "ROAD-QINGNIAN-W",
+        "sourceStage": "R7-SOLVE-11",
+        "lengthM": 70,
+        "projectionXZ": [
+          -1320,
+          339
+        ],
+        "componentId": "FIRE-COMP-01",
+        "gatewayCandidateConnected": true,
+        "quality": "ORIGINAL_SHORT_SPUR_2D_PRESCREEN"
+      },
+      "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "RES-W-U06",
+      "buildingName": "RES-W-U06",
+      "sourcePlacement": "R7-SOLVE-05",
+      "originalClass": "CLEARANCE_PRECHECK_ONLY",
+      "originalLengthM": 61,
+      "candidateEntranceId": "ENT-RES-W-U06-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 1,
+      "rootConnectedCandidateCount": 1,
+      "topologicallyRootConnected": true,
+      "connectionCandidate": {
+        "viaRoadID": "ROAD-QINGNIAN-W",
+        "sourceStage": "R7-SOLVE-11",
+        "lengthM": 61,
+        "projectionXZ": [
+          -1320,
+          400
+        ],
+        "componentId": "FIRE-COMP-01",
+        "gatewayCandidateConnected": true,
+        "quality": "ORIGINAL_SHORT_SPUR_2D_PRESCREEN"
+      },
+      "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "RES-W-U07",
+      "buildingName": "RES-W-U07",
+      "sourcePlacement": "R7-SOLVE-05",
+      "originalClass": "LONG_ACCESS_SPUR_REVIEW",
+      "originalLengthM": 79,
+      "candidateEntranceId": "ENT-RES-W-U07-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 0,
+      "rootConnectedCandidateCount": 0,
+      "topologicallyRootConnected": false,
+      "connectionCandidate": null,
+      "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "RES-W-U08",
+      "buildingName": "RES-W-U08",
+      "sourcePlacement": "R7-SOLVE-05",
+      "originalClass": "CLEARANCE_PRECHECK_ONLY",
+      "originalLengthM": 41,
+      "candidateEntranceId": "ENT-RES-W-U08-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 1,
+      "rootConnectedCandidateCount": 1,
+      "topologicallyRootConnected": true,
+      "connectionCandidate": {
+        "viaRoadID": "ROAD-QINGNIAN-W",
+        "sourceStage": "R7-SOLVE-11",
+        "lengthM": 41,
+        "projectionXZ": [
+          -1320,
+          575
+        ],
+        "componentId": "FIRE-COMP-01",
+        "gatewayCandidateConnected": true,
+        "quality": "ORIGINAL_SHORT_SPUR_2D_PRESCREEN"
+      },
+      "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "RES-W-U09",
+      "buildingName": "RES-W-U09",
+      "sourcePlacement": "R7-SOLVE-05",
+      "originalClass": "CLEARANCE_PRECHECK_ONLY",
+      "originalLengthM": 29,
+      "candidateEntranceId": "ENT-RES-W-U09-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 1,
+      "rootConnectedCandidateCount": 1,
+      "topologicallyRootConnected": true,
+      "connectionCandidate": {
+        "viaRoadID": "ROAD-CHUANGXIN",
+        "sourceStage": "R7-SOLVE-11",
+        "lengthM": 29,
+        "projectionXZ": [
+          -1430,
+          600
+        ],
+        "componentId": "FIRE-COMP-01",
+        "gatewayCandidateConnected": true,
+        "quality": "ORIGINAL_SHORT_SPUR_2D_PRESCREEN"
+      },
+      "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "RES-W-U10",
+      "buildingName": "RES-W-U10",
+      "sourcePlacement": "R7-SOLVE-05",
+      "originalClass": "NETWORK_EXTENSION_REQUIRED",
+      "originalLengthM": 174,
+      "candidateEntranceId": "ENT-RES-W-U10-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 0,
+      "rootConnectedCandidateCount": 0,
+      "topologicallyRootConnected": false,
+      "connectionCandidate": null,
+      "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "RES-W-U11",
+      "buildingName": "RES-W-U11",
+      "sourcePlacement": "R7-SOLVE-05",
+      "originalClass": "CLEARANCE_PRECHECK_ONLY",
+      "originalLengthM": 40.26,
+      "candidateEntranceId": "ENT-RES-W-U11-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 1,
+      "rootConnectedCandidateCount": 1,
+      "topologicallyRootConnected": true,
+      "connectionCandidate": {
+        "viaRoadID": "ROAD-QINGNIAN-W",
+        "sourceStage": "R7-SOLVE-11",
+        "lengthM": 40.26,
+        "projectionXZ": [
+          -1320,
+          600
+        ],
+        "componentId": "FIRE-COMP-01",
+        "gatewayCandidateConnected": true,
+        "quality": "ORIGINAL_SHORT_SPUR_2D_PRESCREEN"
+      },
+      "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "RES-W-U12",
+      "buildingName": "RES-W-U12",
+      "sourcePlacement": "R7-SOLVE-05",
+      "originalClass": "CLEARANCE_PRECHECK_ONLY",
+      "originalLengthM": 29,
+      "candidateEntranceId": "ENT-RES-W-U12-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 1,
+      "rootConnectedCandidateCount": 1,
+      "topologicallyRootConnected": true,
+      "connectionCandidate": {
+        "viaRoadID": "ROAD-CHUANGXIN",
+        "sourceStage": "R7-SOLVE-11",
+        "lengthM": 29,
+        "projectionXZ": [
+          -1430,
+          700
+        ],
+        "componentId": "FIRE-COMP-01",
+        "gatewayCandidateConnected": true,
+        "quality": "ORIGINAL_SHORT_SPUR_2D_PRESCREEN"
+      },
+      "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "SAF-01",
+      "buildingName": "安全学院楼",
+      "sourcePlacement": "R7-SOLVE-03",
+      "originalClass": "CLEARANCE_PRECHECK_ONLY",
+      "originalLengthM": 68,
+      "candidateEntranceId": "ENT-SAF-01-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 1,
+      "rootConnectedCandidateCount": 1,
+      "topologicallyRootConnected": true,
+      "connectionCandidate": {
+        "viaRoadID": "ROAD-JIANGXIN",
+        "sourceStage": "R7-SOLVE-11",
+        "lengthM": 68,
+        "projectionXZ": [
+          -1040,
+          -65
+        ],
+        "componentId": "FIRE-COMP-01",
+        "gatewayCandidateConnected": true,
+        "quality": "ORIGINAL_SHORT_SPUR_2D_PRESCREEN"
+      },
+      "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "SAF-02",
+      "buildingName": "安全实验中心",
+      "sourcePlacement": "R7-SOLVE-03",
+      "originalClass": "LONG_ACCESS_SPUR_REVIEW",
+      "originalLengthM": 79,
+      "candidateEntranceId": "ENT-SAF-02-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 0,
+      "rootConnectedCandidateCount": 0,
+      "topologicallyRootConnected": false,
+      "connectionCandidate": null,
+      "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "SOC-01",
+      "buildingName": "社会科学楼",
+      "sourcePlacement": "R7-SOLVE-04",
+      "originalClass": "LONG_ACCESS_SPUR_REVIEW",
+      "originalLengthM": 95,
+      "candidateEntranceId": "ENT-SOC-01-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 0,
+      "rootConnectedCandidateCount": 0,
+      "topologicallyRootConnected": false,
+      "connectionCandidate": null,
+      "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "TRA-01",
+      "buildingName": "交通学院楼",
+      "sourcePlacement": "R7-SOLVE-03",
+      "originalClass": "CORRIDOR_CONFLICT",
+      "originalLengthM": 115,
+      "candidateEntranceId": "ENT-TRA-01-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 0,
+      "rootConnectedCandidateCount": 0,
+      "topologicallyRootConnected": false,
+      "connectionCandidate": null,
+      "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    },
+    {
+      "buildingID": "TRA-02",
+      "buildingName": "交通实验中心",
+      "sourcePlacement": "R7-SOLVE-03",
+      "originalClass": "CLEARANCE_PRECHECK_ONLY",
+      "originalLengthM": 70,
+      "candidateEntranceId": "ENT-TRA-02-MAIN-CANDIDATE",
+      "entranceVerified": false,
+      "eligibleGeoTieCount": 1,
+      "rootConnectedCandidateCount": 1,
+      "topologicallyRootConnected": true,
+      "connectionCandidate": {
+        "viaRoadID": "ROAD-GEZHI-W",
+        "sourceStage": "R7-SOLVE-11",
+        "lengthM": 70,
+        "projectionXZ": [
+          -410,
+          500
+        ],
+        "componentId": "FIRE-COMP-01",
+        "gatewayCandidateConnected": true,
+        "quality": "ORIGINAL_SHORT_SPUR_2D_PRESCREEN"
+      },
+      "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+      "originalFireRiskClosed": false,
+      "noRuntimeExport": true
+    }
+  ],
+  "hospitalSeparateGraph": {
+    "authoritativeEntrances": [
+      {
+        "id": "ENT-HSP-OUTPATIENT",
+        "parentBuildingID": "HSP-01",
+        "position": [
+          -1040,
+          99,
+          -1051
+        ],
+        "facing": "SOUTH",
+        "source": "PATCH-2026-09-14-R7",
+        "freeze": "SOURCE_AUTHORITY_KEEP"
+      },
+      {
+        "id": "ENT-HSP-EMERGENCY",
+        "parentBuildingID": "HSP-01",
+        "position": [
+          -964,
+          99,
+          -1010
+        ],
+        "facing": "EAST",
+        "source": "PATCH-2026-09-14-R7",
+        "freeze": "SOURCE_AUTHORITY_KEEP"
+      },
+      {
+        "id": "ENT-HSP-INPATIENT",
+        "parentBuildingID": "HSP-01",
+        "position": [
+          -1116,
+          99,
+          -1000
+        ],
+        "facing": "WEST",
+        "source": "PATCH-2026-09-14-R7",
+        "freeze": "SOURCE_AUTHORITY_KEEP"
+      },
+      {
+        "id": "ENT-HSP-PARKING",
+        "parentBuildingID": "HSP-01",
+        "position": [
+          -1180,
+          99,
+          -1060
+        ],
+        "facing": "PARKING_INTERFACE",
+        "source": "PATCH-2026-09-14-R7",
+        "freeze": "SOURCE_AUTHORITY_KEEP"
+      },
+      {
+        "id": "ENT-HSP-SOCIAL",
+        "parentBuildingID": "HSP-01",
+        "position": [
+          -1040,
+          98,
+          -1085
+        ],
+        "facing": "SOUTH_CITY_INTERFACE",
+        "source": "R7_HOSPITAL_ADDENDUM",
+        "freeze": "SOURCE_AUTHORITY_KEEP"
+      },
+      {
+        "id": "ENT-HSP-EMERGENCY-CITY",
+        "parentBuildingID": "HSP-01",
+        "position": [
+          -950,
+          98,
+          -1090
+        ],
+        "facing": "SOUTH_CITY_INTERFACE",
+        "source": "R7_HOSPITAL_ADDENDUM",
+        "freeze": "SOURCE_AUTHORITY_KEEP"
+      }
+    ],
+    "cityGateAccessVerified": false,
+    "socialAndAmbulanceSeparationSourceRule": true,
+    "independentRouteGraphValidated": false
+  },
+  "knownBlockers": [
+    "R7 roads remain conditional pending road freeze, not a verified physical fire-vehicle network",
+    "No road-to-building complete driveable spur, door or terrain-grade approval",
+    "Gateway seeds are proposed entrance roads; roads can be graph connected even if City Gate entry, barrier or physical turning is missing",
+    "Geometric XZ line intersections could be grade-separated or may not satisfy fire-truck turning radii",
+    "Lake, additional water shorelines and all bridge location checks are not complete in this topology stage",
+    "195 candidate entrance facade points remain unapproved including 26 unlocated logistics entrances",
+    "Hospital ambulance/social road networks require separate end-to-end emergency audit",
+    "All 145 previous risk cases remain OPEN despite any theoretical connection",
+    "18 global cross-system audits remain pending"
+  ],
+  "nextStage": "R7-SOLVE-15 resolve disconnected graph components; check actual gateway interfaces and central CEN01/CEN03 compliant fire access; stage actual door and full 6m lane envelope, gradient, turning and hydrants"
+}
