@@ -1,0 +1,92 @@
+江城大学｜R7-SOLVE-14 消防网络连通性与建筑入口专项修正·完整审计报告
+版本：R7-FIRE-GRAPH-ENTRANCE-TOPOLOGY-AUDIT-2026-11-02
+最高优先级：PATCH-2026-09-14-R7
+状态：PLANAR_GRAPH_WITH_GATEWAY_UNAPPROVED
+Runtime Final：NO
+
+一、本阶段定位
+在R7-SOLVE-07公共道路骨架、SOLVE-12片区候选消防/服务路、SOLVE-13中央礼仪核心与四苑候选服务路基础上构造统一的、仍未正式批准的二维应急通行图。建筑入口来自SOLVE-11的195条候选主入口；医院6个源权威入口另行跟踪，不与普通建筑入口强行合并。
+中央礼仪轴不得被普通机动车穿越，四苑绿心不得成为常态穿行道路；医院必须保持社会车辆和救护车分离。
+注意：本文中的「有二维候选路径」严格不等于消防验收合格。
+
+二、数据源
+最高优先级：PATCH-2026-09-14-R7。
+GitHub中实际读取：
+R7-SOLVE-07道路候选JSON
+R7-SOLVE-11主入口/6m消防候选/风险注册表JSON
+R7-SOLVE-12片区消防后勤候选JSON
+R7-SOLVE-13中央与四苑消防服务候选JSON
+没有覆盖SOLVE-01～13文件；没有写入Runtime CampusData、SwiftUI、SVG或Unity正式交通配置。
+
+三、选入道路的筛选规则
+SOLVE-07：道路记录32条，仅选emergency=true且记录宽度≥6m的31条；北门仅供步行的ROAD-JIANXING-GATE不进入消防图。
+SOLVE-12：只选7条状态为CONDITIONAL_CORRIDOR_GEOMETRY_PASS的道路；城市接口待审与已否决的道路不选。
+SOLVE-13：只选10条CANDIDATE_2D_CLEARANCE_ONLY与1条CANDIDATE_MARGINAL_BUILDING_CLEARANCE；2条与建筑冲突的道路和1条重复废止路均不选。
+总计49条候选道路记录，原始中心线段72条。
+计算方法：针对直线相交、T形端点接入和共线重合进行平面分割；禁止靠视觉相近自动粘连几何上没有交点的线。
+二维切分结果：
+交点对77组（可能包含同一位置不同道路对的重复配对）
+共线相接对12组
+节点102个
+图边110条
+连通分量2个。
+
+四、消防路网连通分量
+FIRE-COMP-01：主校园二维分量，99个图节点/108条边/48个道路记录，包含两个候选道路入口：
+西门GRAPH SEED：(-1548,-80)，ROAD-WEST-GATE；
+东门GRAPH SEED：(1555,120)，ROAD-EAST-GATE。
+两者当前仅为道路图起点，不表示城市交管、校门栏杆、消防车实际开门和转弯已获批准。
+FIRE-COMP-02：医院院内救护车连接候选，3节点/2图边/1条道路记录，没有接入以上两个校门候选分量。这符合需要独立医院社会/救护车专项交通的规则，但不能据此认定医院独立救护车网络已经满足端到端可达性。
+
+五、195个建筑入口覆盖结果
+普通主入口候选总数195；
+有来自SOLVE-11/12/13的合格二维候选接驳、并能连接西门或东门道路分量：75；
+仍缺来源明确的无硬冲突二维接驳：120；
+医院源权威入口：6，独立核算；
+新增后勤单独入口需求：26，仍未定位，不生成虚假Entrance坐标。
+主校园75条路径已按两个候选校门起点分别运行Dijkstra，取更短的道路中心线距离，再加候选建筑短支路长度；结果西门道路起点45条、东门30条。
+这75条中：
+源SOLVE-11原有短支路二维预审候选50条；
+原SOLVE-11中标记为风险、SOLVE-12/13提出更短二维接驳且当前与校门分量相连25条；
+全部75条都不具备消防车辆合法可行驶路线认证。
+原SOLVE-11的145项风险，工程验收关闭数仍然为0，不能用25项二维改进冒充关闭25项。
+
+六、重点区域
+中央CEN永久建筑18个，只有3个在二维图和候选接驳意义上可达；其余15个继续保留无入口/道路证据缺口。
+四苑56个住宿楼，34个有二维可达候选，22个没有有效二维接驳。
+四苑食堂/超市8个，4个有二维可达候选，4个没有。
+CEN-01博雅图书馆、CEN-03明德会堂、ATH-01综合体育馆、ART-03戏剧表演中心与HSP-04附属医院科研楼未取得有效完整的候选消防接入；列入下阶段P0。
+南苑部分图上较长的路线仅以东西两门为起点计算。不能从二维最短距离直接推断消防车响应时间和是否应开辟其他应急校门。
+
+七、示例路线
+CEN-01｜原风险CORRIDOR_CONFLICT｜目前NO_VALIDATED_2D_TIE_IN_SOURCES｜起点无｜图上总距离无候选｜途经道路：未找到
+CEN-03｜原风险NETWORK_EXTENSION_REQUIRED｜目前NO_VALIDATED_2D_TIE_IN_SOURCES｜起点无｜图上总距离无候选｜途经道路：未找到
+ATH-01｜原风险NETWORK_EXTENSION_REQUIRED｜目前NO_VALIDATED_2D_TIE_IN_SOURCES｜起点无｜图上总距离无候选｜途经道路：未找到
+ART-03｜原风险NETWORK_EXTENSION_REQUIRED｜目前NO_VALIDATED_2D_TIE_IN_SOURCES｜起点无｜图上总距离无候选｜途经道路：未找到
+HSP-04｜原风险LONG_ACCESS_SPUR_REVIEW｜目前NO_VALIDATED_2D_TIE_IN_SOURCES｜起点无｜图上总距离无候选｜途经道路：未找到
+CEN-11｜原风险NETWORK_EXTENSION_REQUIRED｜目前GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED｜起点EAST_GATE_GEOMETRY_ROOT｜图上总距离1806m｜途经道路：ROAD-EAST-GATE→ROAD-QINGNIAN-E→ROAD-R7-S13-E-SOUTH→ROAD-BOYA-RING-E→ROAD-R7-S13-CEN-E-EDGE
+CEN-12｜原风险NETWORK_EXTENSION_REQUIRED｜目前GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED｜起点EAST_GATE_GEOMETRY_ROOT｜图上总距离1966m｜途经道路：ROAD-EAST-GATE→ROAD-QINGNIAN-E→ROAD-R7-S13-E-SOUTH→ROAD-BOYA-RING-E→ROAD-R7-S13-CEN-E-EDGE
+CEN-14｜原风险NETWORK_EXTENSION_REQUIRED｜目前GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED｜起点EAST_GATE_GEOMETRY_ROOT｜图上总距离2100m｜途经道路：ROAD-EAST-GATE→ROAD-QINGNIAN-E→ROAD-R7-S13-E-SOUTH→ROAD-BOYA-RING-E→ROAD-R7-S13-CEN-E-EDGE
+RES-E-U01｜原风险CLEARANCE_PRECHECK_ONLY｜目前GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED｜起点EAST_GATE_GEOMETRY_ROOT｜图上总距离376m｜途经道路：ROAD-EAST-GATE→ROAD-QINGNIAN-E
+RES-N-G02｜原风险NETWORK_EXTENSION_REQUIRED｜目前GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED｜起点EAST_GATE_GEOMETRY_ROOT｜图上总距离1786m｜途经道路：ROAD-EAST-GATE→ROAD-QINGNIAN-E→ROAD-QINGNIAN-E-FEED→ROAD-BOYA-RING-E→ROAD-R7-S12-ART-BOYA-BACKSTAGE→ROAD-R7-S13-N-EAST
+
+八、当前不得宣称完成的工程检查
+1. 校门：西门/东门只是Graph Seed，真实消防车出入口、城市道路接法及车行路权未验收。
+2. 消防道路：源路线宽度并不自动等于有效净通行宽度；建筑登高面、路缘、限高、转弯、停车遮挡、围挡与消防车回车尚缺完整验证。
+3. 入口：195条ENT-*-MAIN-CANDIDATE没有建筑真实门洞及墙面形状验收，26项后勤入口仍待定位。
+4. 地形水系：仅源阶段少量水体与四苑绿心做过二维预审，最终湖岸/溪流/桥位、台地高程/坡度和救援设施未审。
+5. 道路交点：二维相交不保证实际平交，部分可能因为高程、中央礼仪交通权限及不同车辆路权而无法通行。
+6. 医院：6个权威入口需要和城市路/院区内部救护车路线一体化审计；不应虚构第七个普通入口。
+7. 校车/赛事：R7-SOLVE-08～10的C/D、北体育站台和车辆扫掠尚未封板，本阶段只计算消防路线，不重定义校车路线。
+8. 全校18项跨系统最终审计仍未通过。
+本轮所有JSON/CSV/GeoJSON为审计中间数据，runtimeFinal=false。
+
+九、GitHub文件与后续
+R7-SOLVE-14独立归档：
+(1) 全路网连通与195入口覆盖JSON；
+(2) 双校门起点75条最短路径JSON；
+(3) 195入口覆盖/路线审计CSV；
+(4) 120未连接建筑风险优先级CSV；
+(5) 49条道路、195入口、75条接驳、6医院入口和2起点的GeoJSON；
+(6) 本报告TXT。
+下一步R7-SOLVE-15：优先解决CEN-01/03、ATH-01、ART-03/HSP-04等P0对象，验证校门真实消防接口与道路法定净空，派生缺失的区级接驳并进行新的建筑/体育/绿心/水岸/礼仪轴净距审计。
