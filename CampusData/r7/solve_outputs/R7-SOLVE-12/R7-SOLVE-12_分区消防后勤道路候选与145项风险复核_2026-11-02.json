@@ -113,15 +113,15 @@
         ]
       ],
       "zone": "hospital",
-      "designReason": "HOSPITAL_SITE_BOUNDARY_UNVERIFIED",
+      "designReason": "REQUIRES_CAMPUS_BOUNDARY_AND_HOSPITAL_OUTPATIENT_FORECOURT_AUDIT",
       "checkClearanceM": 6.5,
       "minKnownOtherFootprintClearanceM": 76,
       "closestKnownFootprint": "HSP-03",
       "existingFootprintConflicts": [],
       "centralProtectedAxisCrossing": false,
       "campusBoundaryContainsCenterline": false,
-      "crossesCityBoundaryAtHospitalInterface": false,
-      "status": "REJECTED_GEOMETRY",
+      "crossesCityBoundaryAtHospitalInterface": true,
+      "status": "CONDITIONAL_CITY_INTERFACE",
       "activeInOperationalNetwork": false,
       "fullFireVehicleSweptPathApproved": false,
       "sourceStatus": "R7_SOLVED_CANDIDATE_PENDING_ROAD_AND_TERRAIN_FREEZE",
@@ -311,7 +311,7 @@
         ]
       ],
       "zone": "arts",
-      "designReason": "EXTERNAL_CITY_CONNECTION_UNVERIFIED",
+      "designReason": "CITY_EDGE_OUTLET_NOT_CONNECTED_TO_CHANGHONG_ROAD",
       "checkClearanceM": 6.75,
       "minKnownOtherFootprintClearanceM": 197,
       "closestKnownFootprint": "ART-04",
@@ -319,12 +319,13 @@
       "centralProtectedAxisCrossing": false,
       "campusBoundaryContainsCenterline": true,
       "crossesCityBoundaryAtHospitalInterface": false,
-      "status": "CONDITIONAL_CORRIDOR_GEOMETRY_PASS",
+      "status": "CONDITIONAL_CITY_INTERFACE",
       "activeInOperationalNetwork": false,
       "fullFireVehicleSweptPathApproved": false,
       "sourceStatus": "R7_SOLVED_CANDIDATE_PENDING_ROAD_AND_TERRAIN_FREEZE",
       "lengthM": 24,
-      "assumed3mExtraWidthClearance": true
+      "assumed3mExtraWidthClearance": true,
+      "citySideConnectionApproval": false
     },
     {
       "id": "ROAD-R7-S12-OPS-SOUTH-SERVICE",
@@ -535,25 +536,11 @@
       "assumed3mExtraWidthClearance": true
     }
   ],
-  "provisionallyClearCount": 8,
-  "externallyConditionalCount": 2,
-  "rejectedCount": 4,
-  "possibleRiskShorteningCount": 14,
+  "provisionallyClearCount": 7,
+  "externallyConditionalCount": 4,
+  "rejectedCount": 3,
+  "possibleRiskShorteningCount": 13,
   "possibleRiskShortening": [
-    {
-      "buildingID": "ART-03",
-      "previousClass": "NETWORK_EXTENSION_REQUIRED",
-      "previousLengthM": 401.8,
-      "newCandidate": {
-        "corridorID": "ROAD-R7-S12-ART-EAST-CITY-EDGE",
-        "projectionXZ": [
-          1438,
-          760
-        ],
-        "lengthM": 0
-      },
-      "reason": "DIRECT_CONNECTOR_6M_PLANAR_CLEARANCE_PROBE_ONLY_NOT_ENGINEERING_PASS"
-    },
     {
       "buildingID": "ART-04",
       "previousClass": "NETWORK_EXTENSION_REQUIRED",
@@ -738,7 +725,6 @@
     }
   ],
   "possibleRiskShorteningByCorridor": {
-    "ROAD-R7-S12-ART-EAST-CITY-EDGE": 1,
     "ROAD-R7-S12-ART-BOYA-BACKSTAGE": 1,
     "ROAD-R7-S12-OPS-SOUTH-SERVICE": 1,
     "ROAD-R7-S12-RDI-ACCESS-LINK": 2,
@@ -794,5 +780,10 @@
     "Unlocated service doors for dining, logistics and theatre remain unlocated; do not invent service Entrance coordinates.",
     "Full Terrain/water/stream, traffic graph, emergency hierarchy, turnbacks, signal, hydrant and 18 global audits remain pending."
   ],
-  "nextStage": "R7-SOLVE-13 dedicated central ceremonial core / 4Yuan micro-fire access with actual protected turn-around and entrances"
+  "nextStage": "R7-SOLVE-13 dedicated central ceremonial core / 4Yuan micro-fire access with actual protected turn-around and entrances",
+  "auditScopeAndCautions": {
+    "cityRoadEdge": "Hospital/Art city-interface centerlines are not verified as legally accessible or connected to external vehicle network; campus polygon boundary may be crossed by source-defined hospital city gates.",
+    "all145StillOpen": true,
+    "geometricImprovementCountIsNotClosedRiskCount": true
+  }
 }
