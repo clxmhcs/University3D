@@ -1,0 +1,7693 @@
+{
+  "type": "FeatureCollection",
+  "name": "JiangchengUniversity_R7_SOLVE_14_FireGraphEntranceAudit",
+  "coordinateSystem": "LOCAL_XZ_METERS_NOT_GEO_WGS84",
+  "solveId": "R7-SOLVE-14",
+  "runtimeFinal": false,
+  "status": "PLANAR_GRAPH_WITH_GATEWAY_UNAPPROVED",
+  "metadata": {
+    "roads": 49,
+    "entryProposals": 195,
+    "ties": 75,
+    "authoritativeHospitalEntrances": 6,
+    "gateSeedPoints": 2,
+    "warning": "All roads and ties are conditional. Gate points are graph seeds, not verified emergency gates. No physical 6m clearance, facade or swept path approval."
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-BOYA-RING-SW",
+        "category": "CANDIDATE_FIREFIGHTING_ROAD_CENTERLINE",
+        "sourceStage": "R7-SOLVE-07",
+        "widthM": 26,
+        "graphComponentIDs": [
+          "FIRE-COMP-01"
+        ],
+        "status": "R7_CANDIDATE",
+        "operationalFireTruckApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -600,
+            -1000
+          ],
+          [
+            -60,
+            -1000
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-BOYA-RING-S-CROSS",
+        "category": "CANDIDATE_FIREFIGHTING_ROAD_CENTERLINE",
+        "sourceStage": "R7-SOLVE-07",
+        "widthM": 8,
+        "graphComponentIDs": [
+          "FIRE-COMP-01"
+        ],
+        "status": "R7_CANDIDATE",
+        "operationalFireTruckApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -60,
+            -1000
+          ],
+          [
+            60,
+            -1000
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-BOYA-RING-SE",
+        "category": "CANDIDATE_FIREFIGHTING_ROAD_CENTERLINE",
+        "sourceStage": "R7-SOLVE-07",
+        "widthM": 26,
+        "graphComponentIDs": [
+          "FIRE-COMP-01"
+        ],
+        "status": "R7_CANDIDATE",
+        "operationalFireTruckApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            60,
+            -1000
+          ],
+          [
+            830,
+            -1000
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-BOYA-RING-E",
+        "category": "CANDIDATE_FIREFIGHTING_ROAD_CENTERLINE",
+        "sourceStage": "R7-SOLVE-07",
+        "widthM": 26,
+        "graphComponentIDs": [
+          "FIRE-COMP-01"
+        ],
+        "status": "R7_CANDIDATE",
+        "operationalFireTruckApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            830,
+            -1000
+          ],
+          [
+            830,
+            690
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-BOYA-RING-N",
+        "category": "CANDIDATE_FIREFIGHTING_ROAD_CENTERLINE",
+        "sourceStage": "R7-SOLVE-07",
+        "widthM": 26,
+        "graphComponentIDs": [
+          "FIRE-COMP-01"
+        ],
+        "status": "R7_CANDIDATE",
+        "operationalFireTruckApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -750,
+            690
+          ],
+          [
+            -210,
+            690
+          ],
+          [
+            -210,
+            655
+          ],
+          [
+            210,
+            655
+          ],
+          [
+            210,
+            690
+          ],
+          [
+            830,
+            690
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-BOYA-RING-NW-V",
+        "category": "CANDIDATE_FIREFIGHTING_ROAD_CENTERLINE",
+        "sourceStage": "R7-SOLVE-07",
+        "widthM": 26,
+        "graphComponentIDs": [
+          "FIRE-COMP-01"
+        ],
+        "status": "R7_CANDIDATE",
+        "operationalFireTruckApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -750,
+            690
+          ],
+          [
+            -750,
+            600
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-BOYA-RING-NW-H",
+        "category": "CANDIDATE_FIREFIGHTING_ROAD_CENTERLINE",
+        "sourceStage": "R7-SOLVE-07",
+        "widthM": 26,
+        "graphComponentIDs": [
+          "FIRE-COMP-01"
+        ],
+        "status": "R7_CANDIDATE",
+        "operationalFireTruckApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -750,
+            600
+          ],
+          [
+            -900,
+            600
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-BOYA-RING-W",
+        "category": "CANDIDATE_FIREFIGHTING_ROAD_CENTERLINE",
+        "sourceStage": "R7-SOLVE-07",
+        "widthM": 26,
+        "graphComponentIDs": [
+          "FIRE-COMP-01"
+        ],
+        "status": "R7_CANDIDATE",
+        "operationalFireTruckApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -900,
+            600
+          ],
+          [
+            -900,
+            -430
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-BOYA-RING-SW-H",
+        "category": "CANDIDATE_FIREFIGHTING_ROAD_CENTERLINE",
+        "sourceStage": "R7-SOLVE-07",
+        "widthM": 26,
+        "graphComponentIDs": [
+          "FIRE-COMP-01"
+        ],
+        "status": "R7_CANDIDATE",
+        "operationalFireTruckApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -900,
+            -430
+          ],
+          [
+            -600,
+            -430
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-BOYA-RING-SW-V",
+        "category": "CANDIDATE_FIREFIGHTING_ROAD_CENTERLINE",
+        "sourceStage": "R7-SOLVE-07",
+        "widthM": 26,
+        "graphComponentIDs": [
+          "FIRE-COMP-01"
+        ],
+        "status": "R7_CANDIDATE",
+        "operationalFireTruckApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -600,
+            -430
+          ],
+          [
+            -600,
+            -1000
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-JISHI",
+        "category": "CANDIDATE_FIREFIGHTING_ROAD_CENTERLINE",
+        "sourceStage": "R7-SOLVE-07",
+        "widthM": 20,
+        "graphComponentIDs": [
+          "FIRE-COMP-01"
+        ],
+        "status": "R7_CANDIDATE",
+        "operationalFireTruckApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1350,
+            -770
+          ],
+          [
+            -600,
+            -770
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-ZHICHUANG",
+        "category": "CANDIDATE_FIREFIGHTING_ROAD_CENTERLINE",
+        "sourceStage": "R7-SOLVE-07",
+        "widthM": 18,
+        "graphComponentIDs": [
+          "FIRE-COMP-01"
+        ],
+        "status": "R7_CANDIDATE",
+        "operationalFireTruckApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1380,
+            -300
+          ],
+          [
+            -900,
+            -300
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-JIANGXIN",
+        "category": "CANDIDATE_FIREFIGHTING_ROAD_CENTERLINE",
+        "sourceStage": "R7-SOLVE-07",
+        "widthM": 18,
+        "graphComponentIDs": [
+          "FIRE-COMP-01"
+        ],
+        "status": "R7_CANDIDATE",
+        "operationalFireTruckApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1040,
+            -300
+          ],
+          [
+            -1040,
+            480
+          ],
+          [
+            -900,
+            480
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-GEZHI-W",
+        "category": "CANDIDATE_FIREFIGHTING_ROAD_CENTERLINE",
+        "sourceStage": "R7-SOLVE-07",
+        "widthM": 18,
+        "graphComponentIDs": [
+          "FIRE-COMP-01"
+        ],
+        "status": "R7_CANDIDATE",
+        "operationalFireTruckApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -900,
+            500
+          ],
+          [
+            -360,
+            500
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-GEZHI-E",
+        "category": "CANDIDATE_FIREFIGHTING_ROAD_CENTERLINE",
+        "sourceStage": "R7-SOLVE-07",
+        "widthM": 18,
+        "graphComponentIDs": [
+          "FIRE-COMP-01"
+        ],
+        "status": "R7_CANDIDATE",
+        "operationalFireTruckApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            360,
+            440
+          ],
+          [
+            830,
+            440
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-WENHUA",
+        "category": "CANDIDATE_FIREFIGHTING_ROAD_CENTERLINE",
+        "sourceStage": "R7-SOLVE-07",
+        "widthM": 18,
+        "graphComponentIDs": [
+          "FIRE-COMP-01"
+        ],
+        "status": "R7_CANDIDATE",
+        "operationalFireTruckApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            830,
+            400
+          ],
+          [
+            1040,
+            400
+          ],
+          [
+            1040,
+            -250
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-WEST-GATE",
+        "category": "CANDIDATE_FIREFIGHTING_ROAD_CENTERLINE",
+        "sourceStage": "R7-SOLVE-07",
+        "widthM": 18,
+        "graphComponentIDs": [
+          "FIRE-COMP-01"
+        ],
+        "status": "R7_CANDIDATE",
+        "operationalFireTruckApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1548,
+            -80
+          ],
+          [
+            -1500,
+            -80
+          ],
+          [
+            -1500,
+            40
+          ],
+          [
+            -1320,
+            40
+          ],
+          [
+            -1320,
+            100
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-QINGNIAN-W",
+        "category": "CANDIDATE_FIREFIGHTING_ROAD_CENTERLINE",
+        "sourceStage": "R7-SOLVE-07",
+        "widthM": 16,
+        "graphComponentIDs": [
+          "FIRE-COMP-01"
+        ],
+        "status": "R7_CANDIDATE",
+        "operationalFireTruckApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1320,
+            100
+          ],
+          [
+            -1320,
+            600
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-QINGNIAN-W-FEED",
+        "category": "CANDIDATE_FIREFIGHTING_ROAD_CENTERLINE",
+        "sourceStage": "R7-SOLVE-07",
+        "widthM": 16,
+        "graphComponentIDs": [
+          "FIRE-COMP-01"
+        ],
+        "status": "R7_CANDIDATE",
+        "operationalFireTruckApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1320,
+            100
+          ],
+          [
+            -900,
+            100
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-CHUANGXIN",
+        "category": "CANDIDATE_FIREFIGHTING_ROAD_CENTERLINE",
+        "sourceStage": "R7-SOLVE-07",
+        "widthM": 18,
+        "graphComponentIDs": [
+          "FIRE-COMP-01"
+        ],
+        "status": "R7_CANDIDATE",
+        "operationalFireTruckApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1430,
+            600
+          ],
+          [
+            -1430,
+            820
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-CHUANGXIN-CONN",
+        "category": "CANDIDATE_FIREFIGHTING_ROAD_CENTERLINE",
+        "sourceStage": "R7-SOLVE-07",
+        "widthM": 18,
+        "graphComponentIDs": [
+          "FIRE-COMP-01"
+        ],
+        "status": "R7_CANDIDATE",
+        "operationalFireTruckApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1430,
+            600
+          ],
+          [
+            -1320,
+            600
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-QINGNIAN-E",
+        "category": "CANDIDATE_FIREFIGHTING_ROAD_CENTERLINE",
+        "sourceStage": "R7-SOLVE-07",
+        "widthM": 18,
+        "graphComponentIDs": [
+          "FIRE-COMP-01"
+        ],
+        "status": "R7_CANDIDATE",
+        "operationalFireTruckApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            1400,
+            -280
+          ],
+          [
+            1400,
+            360
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-QINGNIAN-E-FEED",
+        "category": "CANDIDATE_FIREFIGHTING_ROAD_CENTERLINE",
+        "sourceStage": "R7-SOLVE-07",
+        "widthM": 18,
+        "graphComponentIDs": [
+          "FIRE-COMP-01"
+        ],
+        "status": "R7_CANDIDATE",
+        "operationalFireTruckApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            830,
+            360
+          ],
+          [
+            1400,
+            360
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-EAST-GATE",
+        "category": "CANDIDATE_FIREFIGHTING_ROAD_CENTERLINE",
+        "sourceStage": "R7-SOLVE-07",
+        "widthM": 14,
+        "graphComponentIDs": [
+          "FIRE-COMP-01"
+        ],
+        "status": "R7_CANDIDATE",
+        "operationalFireTruckApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            1400,
+            120
+          ],
+          [
+            1555,
+            120
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-QINGNIAN-S",
+        "category": "CANDIDATE_FIREFIGHTING_ROAD_CENTERLINE",
+        "sourceStage": "R7-SOLVE-07",
+        "widthM": 18,
+        "graphComponentIDs": [
+          "FIRE-COMP-01"
+        ],
+        "status": "R7_CANDIDATE",
+        "operationalFireTruckApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            260,
+            -900
+          ],
+          [
+            800,
+            -900
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-QINGNIAN-S-W",
+        "category": "CANDIDATE_FIREFIGHTING_ROAD_CENTERLINE",
+        "sourceStage": "R7-SOLVE-07",
+        "widthM": 18,
+        "graphComponentIDs": [
+          "FIRE-COMP-01"
+        ],
+        "status": "R7_CANDIDATE",
+        "operationalFireTruckApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            300,
+            -1000
+          ],
+          [
+            300,
+            -900
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-QINGNIAN-S-E",
+        "category": "CANDIDATE_FIREFIGHTING_ROAD_CENTERLINE",
+        "sourceStage": "R7-SOLVE-07",
+        "widthM": 18,
+        "graphComponentIDs": [
+          "FIRE-COMP-01"
+        ],
+        "status": "R7_CANDIDATE",
+        "operationalFireTruckApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            760,
+            -1000
+          ],
+          [
+            760,
+            -900
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-QINGNIAN-NW",
+        "category": "CANDIDATE_FIREFIGHTING_ROAD_CENTERLINE",
+        "sourceStage": "R7-SOLVE-07",
+        "widthM": 14,
+        "graphComponentIDs": [
+          "FIRE-COMP-01"
+        ],
+        "status": "R7_CANDIDATE",
+        "operationalFireTruckApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -520,
+            690
+          ],
+          [
+            -520,
+            1040
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-QINGNIAN-NE",
+        "category": "CANDIDATE_FIREFIGHTING_ROAD_CENTERLINE",
+        "sourceStage": "R7-SOLVE-07",
+        "widthM": 14,
+        "graphComponentIDs": [
+          "FIRE-COMP-01"
+        ],
+        "status": "R7_CANDIDATE",
+        "operationalFireTruckApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            520,
+            690
+          ],
+          [
+            520,
+            1040
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-JIANXING-W",
+        "category": "CANDIDATE_FIREFIGHTING_ROAD_CENTERLINE",
+        "sourceStage": "R7-SOLVE-07",
+        "widthM": 22,
+        "graphComponentIDs": [
+          "FIRE-COMP-01"
+        ],
+        "status": "R7_CANDIDATE",
+        "operationalFireTruckApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -160,
+            655
+          ],
+          [
+            -160,
+            1040
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-JIANXING-E",
+        "category": "CANDIDATE_FIREFIGHTING_ROAD_CENTERLINE",
+        "sourceStage": "R7-SOLVE-07",
+        "widthM": 22,
+        "graphComponentIDs": [
+          "FIRE-COMP-01"
+        ],
+        "status": "R7_CANDIDATE",
+        "operationalFireTruckApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            160,
+            655
+          ],
+          [
+            160,
+            1040
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-R7-S12-HSP-ONSITE-AMBULANCE",
+        "category": "CANDIDATE_FIREFIGHTING_ROAD_CENTERLINE",
+        "sourceStage": "R7-SOLVE-12",
+        "widthM": 8,
+        "graphComponentIDs": [
+          "FIRE-COMP-02"
+        ],
+        "status": "CANDIDATE_NO_ENGINEERING_APPROVAL",
+        "operationalFireTruckApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -950,
+            -1090
+          ],
+          [
+            -950,
+            -1010
+          ],
+          [
+            -964,
+            -1010
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-R7-S12-MED-NORTH-SOUTH-SERVICE",
+        "category": "CANDIDATE_FIREFIGHTING_ROAD_CENTERLINE",
+        "sourceStage": "R7-SOLVE-12",
+        "widthM": 8,
+        "graphComponentIDs": [
+          "FIRE-COMP-01"
+        ],
+        "status": "CANDIDATE_NO_ENGINEERING_APPROVAL",
+        "operationalFireTruckApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1330,
+            -770
+          ],
+          [
+            -1330,
+            -300
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-R7-S12-RDI-ACCESS-LINK",
+        "category": "CANDIDATE_FIREFIGHTING_ROAD_CENTERLINE",
+        "sourceStage": "R7-SOLVE-12",
+        "widthM": 8,
+        "graphComponentIDs": [
+          "FIRE-COMP-01"
+        ],
+        "status": "CANDIDATE_NO_ENGINEERING_APPROVAL",
+        "operationalFireTruckApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1430,
+            795
+          ],
+          [
+            -1280,
+            795
+          ],
+          [
+            -1280,
+            925
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-R7-S12-RDI-NORTH-SERVICE",
+        "category": "CANDIDATE_FIREFIGHTING_ROAD_CENTERLINE",
+        "sourceStage": "R7-SOLVE-12",
+        "widthM": 8,
+        "graphComponentIDs": [
+          "FIRE-COMP-01"
+        ],
+        "status": "CANDIDATE_NO_ENGINEERING_APPROVAL",
+        "operationalFireTruckApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1280,
+            925
+          ],
+          [
+            -760,
+            925
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-R7-S12-ART-BOYA-BACKSTAGE",
+        "category": "CANDIDATE_FIREFIGHTING_ROAD_CENTERLINE",
+        "sourceStage": "R7-SOLVE-12",
+        "widthM": 8,
+        "graphComponentIDs": [
+          "FIRE-COMP-01"
+        ],
+        "status": "CANDIDATE_NO_ENGINEERING_APPROVAL",
+        "operationalFireTruckApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            830,
+            690
+          ],
+          [
+            1325,
+            690
+          ],
+          [
+            1325,
+            740
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-R7-S12-OPS-SOUTH-SERVICE",
+        "category": "CANDIDATE_FIREFIGHTING_ROAD_CENTERLINE",
+        "sourceStage": "R7-SOLVE-12",
+        "widthM": 8,
+        "graphComponentIDs": [
+          "FIRE-COMP-01"
+        ],
+        "status": "CANDIDATE_NO_ENGINEERING_APPROVAL",
+        "operationalFireTruckApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            830,
+            -960
+          ],
+          [
+            1140,
+            -960
+          ],
+          [
+            1140,
+            -725
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-R7-S12-OPS-NORTH-SERVICE",
+        "category": "CANDIDATE_FIREFIGHTING_ROAD_CENTERLINE",
+        "sourceStage": "R7-SOLVE-12",
+        "widthM": 8,
+        "graphComponentIDs": [
+          "FIRE-COMP-01"
+        ],
+        "status": "CANDIDATE_NO_ENGINEERING_APPROVAL",
+        "operationalFireTruckApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            830,
+            -730
+          ],
+          [
+            1140,
+            -730
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-R7-S13-CEN-W-EDGE",
+        "category": "CANDIDATE_FIREFIGHTING_ROAD_CENTERLINE",
+        "sourceStage": "R7-SOLVE-13",
+        "widthM": 8,
+        "graphComponentIDs": [
+          "FIRE-COMP-01"
+        ],
+        "status": "CANDIDATE_NO_ENGINEERING_APPROVAL",
+        "operationalFireTruckApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -600,
+            -430
+          ],
+          [
+            -621,
+            -430
+          ],
+          [
+            -621,
+            220
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-R7-S13-CEN-E-EDGE",
+        "category": "CANDIDATE_FIREFIGHTING_ROAD_CENTERLINE",
+        "sourceStage": "R7-SOLVE-13",
+        "widthM": 8,
+        "graphComponentIDs": [
+          "FIRE-COMP-01"
+        ],
+        "status": "CANDIDATE_NO_ENGINEERING_APPROVAL",
+        "operationalFireTruckApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            830,
+            -430
+          ],
+          [
+            560,
+            -430
+          ],
+          [
+            560,
+            220
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-R7-S13-W-SOUTHWEST",
+        "category": "CANDIDATE_FIREFIGHTING_ROAD_CENTERLINE",
+        "sourceStage": "R7-SOLVE-13",
+        "widthM": 8,
+        "graphComponentIDs": [
+          "FIRE-COMP-01"
+        ],
+        "status": "CANDIDATE_NO_ENGINEERING_APPROVAL",
+        "operationalFireTruckApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1320,
+            180
+          ],
+          [
+            -1515,
+            180
+          ],
+          [
+            -1515,
+            380
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-R7-S13-W-EAST-INNER",
+        "category": "CANDIDATE_FIREFIGHTING_ROAD_CENTERLINE",
+        "sourceStage": "R7-SOLVE-13",
+        "widthM": 8,
+        "graphComponentIDs": [
+          "FIRE-COMP-01"
+        ],
+        "status": "CANDIDATE_NO_ENGINEERING_APPROVAL",
+        "operationalFireTruckApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1320,
+            180
+          ],
+          [
+            -1230,
+            180
+          ],
+          [
+            -1230,
+            360
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-R7-S13-W-GREEN-SOUTH",
+        "category": "CANDIDATE_FIREFIGHTING_ROAD_CENTERLINE",
+        "sourceStage": "R7-SOLVE-13",
+        "widthM": 8,
+        "graphComponentIDs": [
+          "FIRE-COMP-01"
+        ],
+        "status": "CANDIDATE_NO_ENGINEERING_APPROVAL",
+        "operationalFireTruckApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1515,
+            380
+          ],
+          [
+            -1515,
+            385
+          ],
+          [
+            -1320,
+            385
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-R7-S13-E-SOUTH",
+        "category": "CANDIDATE_FIREFIGHTING_ROAD_CENTERLINE",
+        "sourceStage": "R7-SOLVE-13",
+        "widthM": 8,
+        "graphComponentIDs": [
+          "FIRE-COMP-01"
+        ],
+        "status": "CANDIDATE_NO_ENGINEERING_APPROVAL",
+        "operationalFireTruckApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            830,
+            -175
+          ],
+          [
+            1400,
+            -175
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-R7-S13-N-EAST",
+        "category": "CANDIDATE_FIREFIGHTING_ROAD_CENTERLINE",
+        "sourceStage": "R7-SOLVE-13",
+        "widthM": 8,
+        "graphComponentIDs": [
+          "FIRE-COMP-01"
+        ],
+        "status": "CANDIDATE_NO_ENGINEERING_APPROVAL",
+        "operationalFireTruckApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            830,
+            690
+          ],
+          [
+            1000,
+            690
+          ],
+          [
+            1000,
+            1040
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-R7-S13-N-WEST",
+        "category": "CANDIDATE_FIREFIGHTING_ROAD_CENTERLINE",
+        "sourceStage": "R7-SOLVE-13",
+        "widthM": 8,
+        "graphComponentIDs": [
+          "FIRE-COMP-01"
+        ],
+        "status": "CANDIDATE_NO_ENGINEERING_APPROVAL",
+        "operationalFireTruckApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -900,
+            600
+          ],
+          [
+            -970,
+            600
+          ],
+          [
+            -970,
+            780
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-R7-S13-N-WEST-INNER",
+        "category": "CANDIDATE_FIREFIGHTING_ROAD_CENTERLINE",
+        "sourceStage": "R7-SOLVE-13",
+        "widthM": 8,
+        "graphComponentIDs": [
+          "FIRE-COMP-01"
+        ],
+        "status": "CANDIDATE_NO_ENGINEERING_APPROVAL",
+        "operationalFireTruckApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -520,
+            700
+          ],
+          [
+            -560,
+            700
+          ],
+          [
+            -560,
+            840
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-R7-S13-S-WEST",
+        "category": "CANDIDATE_FIREFIGHTING_ROAD_CENTERLINE",
+        "sourceStage": "R7-SOLVE-13",
+        "widthM": 8,
+        "graphComponentIDs": [
+          "FIRE-COMP-01"
+        ],
+        "status": "CANDIDATE_NO_ENGINEERING_APPROVAL",
+        "operationalFireTruckApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            260,
+            -900
+          ],
+          [
+            255,
+            -900
+          ],
+          [
+            255,
+            -705
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-R7-S13-S-EAST",
+        "category": "CANDIDATE_FIREFIGHTING_ROAD_CENTERLINE",
+        "sourceStage": "R7-SOLVE-13",
+        "widthM": 8,
+        "graphComponentIDs": [
+          "FIRE-COMP-01"
+        ],
+        "status": "CANDIDATE_NO_ENGINEERING_APPROVAL",
+        "operationalFireTruckApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            800,
+            -900
+          ],
+          [
+            815,
+            -900
+          ],
+          [
+            815,
+            -740
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-AERO-01-MAIN-CANDIDATE",
+        "buildingID": "AERO-01",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-03",
+        "preliminary2DConnectedToGate": false,
+        "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1180,
+          615
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-AERO-02-MAIN-CANDIDATE",
+        "buildingID": "AERO-02",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-03",
+        "preliminary2DConnectedToGate": false,
+        "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1095,
+          625
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-AERO-03-MAIN-CANDIDATE",
+        "buildingID": "AERO-03",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-03",
+        "preliminary2DConnectedToGate": false,
+        "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1150,
+          550
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-AI-01-MAIN-CANDIDATE",
+        "buildingID": "AI-01",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-03",
+        "preliminary2DConnectedToGate": false,
+        "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -680,
+          80
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-AI-02-MAIN-CANDIDATE",
+        "buildingID": "AI-02",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-03",
+        "preliminary2DConnectedToGate": false,
+        "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -815,
+          75
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-ARC-01-MAIN-CANDIDATE",
+        "buildingID": "ARC-01",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-03",
+        "preliminary2DConnectedToGate": true,
+        "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -550,
+          564
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SPUR-R7S14-ARC-01",
+        "buildingID": "ARC-01",
+        "category": "2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "sourceStage": "R7-SOLVE-11",
+        "targetRoad": "ROAD-GEZHI-W",
+        "planarLengthM": 64,
+        "roadProjectionXZ": [
+          -550,
+          500
+        ],
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -550,
+            564
+          ],
+          [
+            -550,
+            500
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-ARC-02-MAIN-CANDIDATE",
+        "buildingID": "ARC-02",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-03",
+        "preliminary2DConnectedToGate": true,
+        "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -550,
+          623
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SPUR-R7S14-ARC-02",
+        "buildingID": "ARC-02",
+        "category": "2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "sourceStage": "R7-SOLVE-11",
+        "targetRoad": "ROAD-BOYA-RING-N",
+        "planarLengthM": 67,
+        "roadProjectionXZ": [
+          -550,
+          690
+        ],
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -550,
+            623
+          ],
+          [
+            -550,
+            690
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-ARC-03-MAIN-CANDIDATE",
+        "buildingID": "ARC-03",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-03",
+        "preliminary2DConnectedToGate": false,
+        "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -435,
+          617
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-ART-01-MAIN-CANDIDATE",
+        "buildingID": "ART-01",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R6_VALID_UNTIL_OVERRIDDEN",
+        "preliminary2DConnectedToGate": false,
+        "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1088,
+          860
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-ART-02-MAIN-CANDIDATE",
+        "buildingID": "ART-02",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R6_VALID_UNTIL_OVERRIDDEN",
+        "preliminary2DConnectedToGate": false,
+        "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1237,
+          930
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-ART-03-MAIN-CANDIDATE",
+        "buildingID": "ART-03",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R6_VALID_UNTIL_OVERRIDDEN",
+        "preliminary2DConnectedToGate": false,
+        "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1438,
+          760
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-ART-04-MAIN-CANDIDATE",
+        "buildingID": "ART-04",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R6_VALID_UNTIL_OVERRIDDEN",
+        "preliminary2DConnectedToGate": true,
+        "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1241,
+          760
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SPUR-R7S14-ART-04",
+        "buildingID": "ART-04",
+        "category": "2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "sourceStage": "R7-SOLVE-12",
+        "targetRoad": "ROAD-R7-S12-ART-BOYA-BACKSTAGE",
+        "planarLengthM": 70,
+        "roadProjectionXZ": [
+          1241,
+          690
+        ],
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            1241,
+            760
+          ],
+          [
+            1241,
+            690
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-ATH-01-MAIN-CANDIDATE",
+        "buildingID": "ATH-01",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-06",
+        "preliminary2DConnectedToGate": false,
+        "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          1052
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-ATH-03-MAIN-CANDIDATE",
+        "buildingID": "ATH-03",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-06",
+        "preliminary2DConnectedToGate": false,
+        "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -250,
+          943
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-ATH-04-MAIN-CANDIDATE",
+        "buildingID": "ATH-04",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-06",
+        "preliminary2DConnectedToGate": false,
+        "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          250,
+          940
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-ATH-13-MAIN-CANDIDATE",
+        "buildingID": "ATH-13",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-06",
+        "preliminary2DConnectedToGate": false,
+        "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1253,
+          -520
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-BUS-01-MAIN-CANDIDATE",
+        "buildingID": "BUS-01",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-04",
+        "preliminary2DConnectedToGate": false,
+        "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          730,
+          -350
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-BUS-02-MAIN-CANDIDATE",
+        "buildingID": "BUS-02",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-04",
+        "preliminary2DConnectedToGate": false,
+        "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          732,
+          -230
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-CE-01-MAIN-CANDIDATE",
+        "buildingID": "CE-01",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-03",
+        "preliminary2DConnectedToGate": true,
+        "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -665,
+          565
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SPUR-R7S14-CE-01",
+        "buildingID": "CE-01",
+        "category": "2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "sourceStage": "R7-SOLVE-11",
+        "targetRoad": "ROAD-GEZHI-W",
+        "planarLengthM": 65,
+        "roadProjectionXZ": [
+          -665,
+          500
+        ],
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -665,
+            565
+          ],
+          [
+            -665,
+            500
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-CE-02-MAIN-CANDIDATE",
+        "buildingID": "CE-02",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-03",
+        "preliminary2DConnectedToGate": true,
+        "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -665,
+          621
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SPUR-R7S14-CE-02",
+        "buildingID": "CE-02",
+        "category": "2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "sourceStage": "R7-SOLVE-11",
+        "targetRoad": "ROAD-BOYA-RING-N",
+        "planarLengthM": 69,
+        "roadProjectionXZ": [
+          -665,
+          690
+        ],
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -665,
+            621
+          ],
+          [
+            -665,
+            690
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-CE-03-MAIN-CANDIDATE",
+        "buildingID": "CE-03",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-03",
+        "preliminary2DConnectedToGate": true,
+        "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -435,
+          570
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SPUR-R7S14-CE-03",
+        "buildingID": "CE-03",
+        "category": "2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "sourceStage": "R7-SOLVE-11",
+        "targetRoad": "ROAD-GEZHI-W",
+        "planarLengthM": 70,
+        "roadProjectionXZ": [
+          -435,
+          500
+        ],
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -435,
+            570
+          ],
+          [
+            -435,
+            500
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-CEN-01-MAIN-CANDIDATE",
+        "buildingID": "CEN-01",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-01",
+        "preliminary2DConnectedToGate": false,
+        "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          -197
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-CEN-02-MAIN-CANDIDATE",
+        "buildingID": "CEN-02",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-01",
+        "preliminary2DConnectedToGate": false,
+        "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -207,
+          -590
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-CEN-03-MAIN-CANDIDATE",
+        "buildingID": "CEN-03",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-01",
+        "preliminary2DConnectedToGate": false,
+        "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          -633
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-CEN-04-MAIN-CANDIDATE",
+        "buildingID": "CEN-04",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-01",
+        "preliminary2DConnectedToGate": false,
+        "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -220,
+          -360
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-CEN-05-MAIN-CANDIDATE",
+        "buildingID": "CEN-05",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-01",
+        "preliminary2DConnectedToGate": false,
+        "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -255,
+          -180
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-CEN-06-MAIN-CANDIDATE",
+        "buildingID": "CEN-06",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-01",
+        "preliminary2DConnectedToGate": false,
+        "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          250,
+          -180
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-CEN-07-MAIN-CANDIDATE",
+        "buildingID": "CEN-07",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-01",
+        "preliminary2DConnectedToGate": false,
+        "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -397,
+          -430
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-CEN-08-MAIN-CANDIDATE",
+        "buildingID": "CEN-08",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-01",
+        "preliminary2DConnectedToGate": false,
+        "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          395,
+          -430
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-CEN-09-MAIN-CANDIDATE",
+        "buildingID": "CEN-09",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-01",
+        "preliminary2DConnectedToGate": false,
+        "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -449,
+          -280
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-CEN-10-MAIN-CANDIDATE",
+        "buildingID": "CEN-10",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-01",
+        "preliminary2DConnectedToGate": false,
+        "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -449,
+          -120
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-CEN-11-MAIN-CANDIDATE",
+        "buildingID": "CEN-11",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-01",
+        "preliminary2DConnectedToGate": true,
+        "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          449,
+          -280
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SPUR-R7S14-CEN-11",
+        "buildingID": "CEN-11",
+        "category": "2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "sourceStage": "R7-SOLVE-13",
+        "targetRoad": "ROAD-R7-S13-CEN-E-EDGE",
+        "planarLengthM": 111,
+        "roadProjectionXZ": [
+          560,
+          -280
+        ],
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            449,
+            -280
+          ],
+          [
+            560,
+            -280
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-CEN-12-MAIN-CANDIDATE",
+        "buildingID": "CEN-12",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-01",
+        "preliminary2DConnectedToGate": true,
+        "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          449,
+          -120
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SPUR-R7S14-CEN-12",
+        "buildingID": "CEN-12",
+        "category": "2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "sourceStage": "R7-SOLVE-13",
+        "targetRoad": "ROAD-R7-S13-CEN-E-EDGE",
+        "planarLengthM": 111,
+        "roadProjectionXZ": [
+          560,
+          -120
+        ],
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            449,
+            -120
+          ],
+          [
+            560,
+            -120
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-CEN-13-MAIN-CANDIDATE",
+        "buildingID": "CEN-13",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-01",
+        "preliminary2DConnectedToGate": false,
+        "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -485,
+          40
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-CEN-14-MAIN-CANDIDATE",
+        "buildingID": "CEN-14",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-01",
+        "preliminary2DConnectedToGate": true,
+        "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          475,
+          40
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SPUR-R7S14-CEN-14",
+        "buildingID": "CEN-14",
+        "category": "2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "sourceStage": "R7-SOLVE-13",
+        "targetRoad": "ROAD-R7-S13-CEN-E-EDGE",
+        "planarLengthM": 85,
+        "roadProjectionXZ": [
+          560,
+          40
+        ],
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            475,
+            40
+          ],
+          [
+            560,
+            40
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-CEN-15-MAIN-CANDIDATE",
+        "buildingID": "CEN-15",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-01",
+        "preliminary2DConnectedToGate": false,
+        "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          200,
+          -590
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-CEN-16-MAIN-CANDIDATE",
+        "buildingID": "CEN-16",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-01",
+        "preliminary2DConnectedToGate": false,
+        "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          200,
+          -780
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-CEN-17-MAIN-CANDIDATE",
+        "buildingID": "CEN-17",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-01",
+        "preliminary2DConnectedToGate": false,
+        "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -434,
+          180
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-CEN-18-MAIN-CANDIDATE",
+        "buildingID": "CEN-18",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-01",
+        "preliminary2DConnectedToGate": false,
+        "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          435,
+          180
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-CHE-01-MAIN-CANDIDATE",
+        "buildingID": "CHE-01",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-03",
+        "preliminary2DConnectedToGate": false,
+        "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1180,
+          -195
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-CHE-02-MAIN-CANDIDATE",
+        "buildingID": "CHE-02",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-03",
+        "preliminary2DConnectedToGate": false,
+        "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1180,
+          -70
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-CHE-03-MAIN-CANDIDATE",
+        "buildingID": "CHE-03",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-03",
+        "preliminary2DConnectedToGate": false,
+        "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1118,
+          -190
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-CHM-01-MAIN-CANDIDATE",
+        "buildingID": "CHM-01",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R6_VALID_UNTIL_OVERRIDDEN",
+        "preliminary2DConnectedToGate": true,
+        "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -50,
+          631
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SPUR-R7S14-CHM-01",
+        "buildingID": "CHM-01",
+        "category": "2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "sourceStage": "R7-SOLVE-11",
+        "targetRoad": "ROAD-BOYA-RING-N",
+        "planarLengthM": 24,
+        "roadProjectionXZ": [
+          -50,
+          655
+        ],
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -50,
+            631
+          ],
+          [
+            -50,
+            655
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-CHM-02-MAIN-CANDIDATE",
+        "buildingID": "CHM-02",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R6_VALID_UNTIL_OVERRIDDEN",
+        "preliminary2DConnectedToGate": false,
+        "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -50,
+          522
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-CSE-01-MAIN-CANDIDATE",
+        "buildingID": "CSE-01",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-03",
+        "preliminary2DConnectedToGate": false,
+        "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -815,
+          -169
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-CSE-02-MAIN-CANDIDATE",
+        "buildingID": "CSE-02",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-03",
+        "preliminary2DConnectedToGate": false,
+        "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -680,
+          -170
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-CSE-03-MAIN-CANDIDATE",
+        "buildingID": "CSE-03",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-03",
+        "preliminary2DConnectedToGate": false,
+        "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -615,
+          -65
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-ECE-01-MAIN-CANDIDATE",
+        "buildingID": "ECE-01",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-03",
+        "preliminary2DConnectedToGate": false,
+        "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -815,
+          210
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-ECE-02-MAIN-CANDIDATE",
+        "buildingID": "ECE-02",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-03",
+        "preliminary2DConnectedToGate": false,
+        "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -815,
+          275
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-ECO-01-MAIN-CANDIDATE",
+        "buildingID": "ECO-01",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-04",
+        "preliminary2DConnectedToGate": false,
+        "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          638,
+          -230
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-EDU-01-MAIN-CANDIDATE",
+        "buildingID": "EDU-01",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-04",
+        "preliminary2DConnectedToGate": true,
+        "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          690,
+          382
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SPUR-R7S14-EDU-01",
+        "buildingID": "EDU-01",
+        "category": "2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "sourceStage": "R7-SOLVE-11",
+        "targetRoad": "ROAD-GEZHI-E",
+        "planarLengthM": 58,
+        "roadProjectionXZ": [
+          690,
+          440
+        ],
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            690,
+            382
+          ],
+          [
+            690,
+            440
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-EE-01-MAIN-CANDIDATE",
+        "buildingID": "EE-01",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-03",
+        "preliminary2DConnectedToGate": false,
+        "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1180,
+          180
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-EE-02-MAIN-CANDIDATE",
+        "buildingID": "EE-02",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-03",
+        "preliminary2DConnectedToGate": false,
+        "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1115,
+          180
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-ENV-01-MAIN-CANDIDATE",
+        "buildingID": "ENV-01",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-03",
+        "preliminary2DConnectedToGate": false,
+        "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -515,
+          383
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-ENV-02-MAIN-CANDIDATE",
+        "buildingID": "ENV-02",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-03",
+        "preliminary2DConnectedToGate": true,
+        "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -515,
+          432
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SPUR-R7S14-ENV-02",
+        "buildingID": "ENV-02",
+        "category": "2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "sourceStage": "R7-SOLVE-11",
+        "targetRoad": "ROAD-GEZHI-W",
+        "planarLengthM": 68,
+        "roadProjectionXZ": [
+          -515,
+          500
+        ],
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -515,
+            432
+          ],
+          [
+            -515,
+            500
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-EPE-01-MAIN-CANDIDATE",
+        "buildingID": "EPE-01",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-03",
+        "preliminary2DConnectedToGate": false,
+        "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1180,
+          320
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-EPE-02-MAIN-CANDIDATE",
+        "buildingID": "EPE-02",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-03",
+        "preliminary2DConnectedToGate": true,
+        "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1110,
+          320
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SPUR-R7S14-EPE-02",
+        "buildingID": "EPE-02",
+        "category": "2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "sourceStage": "R7-SOLVE-11",
+        "targetRoad": "ROAD-JIANGXIN",
+        "planarLengthM": 70,
+        "roadProjectionXZ": [
+          -1040,
+          320
+        ],
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1110,
+            320
+          ],
+          [
+            -1040,
+            320
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-EPE-03-MAIN-CANDIDATE",
+        "buildingID": "EPE-03",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-03",
+        "preliminary2DConnectedToGate": false,
+        "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1145,
+          392
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-FIN-01-MAIN-CANDIDATE",
+        "buildingID": "FIN-01",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-04",
+        "preliminary2DConnectedToGate": false,
+        "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          638,
+          -350
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-FLA-01-MAIN-CANDIDATE",
+        "buildingID": "FLA-01",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-04",
+        "preliminary2DConnectedToGate": false,
+        "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          690,
+          118
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-GEO-01-MAIN-CANDIDATE",
+        "buildingID": "GEO-01",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R6_VALID_UNTIL_OVERRIDDEN",
+        "preliminary2DConnectedToGate": true,
+        "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          260,
+          630
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SPUR-R7S14-GEO-01",
+        "buildingID": "GEO-01",
+        "category": "2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "sourceStage": "R7-SOLVE-11",
+        "targetRoad": "ROAD-BOYA-RING-N",
+        "planarLengthM": 55.9,
+        "roadProjectionXZ": [
+          210,
+          655
+        ],
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            260,
+            630
+          ],
+          [
+            210,
+            655
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-GEO-02-MAIN-CANDIDATE",
+        "buildingID": "GEO-02",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R6_VALID_UNTIL_OVERRIDDEN",
+        "preliminary2DConnectedToGate": false,
+        "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          260,
+          525
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-GPA-01-MAIN-CANDIDATE",
+        "buildingID": "GPA-01",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-04",
+        "preliminary2DConnectedToGate": false,
+        "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          742,
+          170
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-HSP-04-MAIN-CANDIDATE",
+        "buildingID": "HSP-04",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R6_VALID_UNTIL_OVERRIDDEN",
+        "preliminary2DConnectedToGate": false,
+        "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -860,
+          -855
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-HSP-05-MAIN-CANDIDATE",
+        "buildingID": "HSP-05",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R6_VALID_UNTIL_OVERRIDDEN",
+        "preliminary2DConnectedToGate": true,
+        "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -665.86,
+          -665.86
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SPUR-R7S14-HSP-05",
+        "buildingID": "HSP-05",
+        "category": "2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "sourceStage": "R7-SOLVE-11",
+        "targetRoad": "ROAD-BOYA-RING-SW-V",
+        "planarLengthM": 65.86,
+        "roadProjectionXZ": [
+          -600,
+          -665.86
+        ],
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -665.86,
+            -665.86
+          ],
+          [
+            -600,
+            -665.86
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-HUM-01-MAIN-CANDIDATE",
+        "buildingID": "HUM-01",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-04",
+        "preliminary2DConnectedToGate": false,
+        "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          690,
+          222
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-ICT-01-MAIN-CANDIDATE",
+        "buildingID": "ICT-01",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-03",
+        "preliminary2DConnectedToGate": false,
+        "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -690,
+          210
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-ICT-02-MAIN-CANDIDATE",
+        "buildingID": "ICT-02",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-03",
+        "preliminary2DConnectedToGate": false,
+        "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -690,
+          275
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-IGS-01-MAIN-CANDIDATE",
+        "buildingID": "IGS-01",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-04",
+        "preliminary2DConnectedToGate": false,
+        "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          685,
+          -165
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-JRN-01-MAIN-CANDIDATE",
+        "buildingID": "JRN-01",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-04",
+        "preliminary2DConnectedToGate": false,
+        "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          690,
+          308
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-LAW-01-MAIN-CANDIDATE",
+        "buildingID": "LAW-01",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R6_VALID_UNTIL_OVERRIDDEN",
+        "preliminary2DConnectedToGate": true,
+        "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1452,
+          -80
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SPUR-R7S14-LAW-01",
+        "buildingID": "LAW-01",
+        "category": "2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "sourceStage": "R7-SOLVE-11",
+        "targetRoad": "ROAD-WEST-GATE",
+        "planarLengthM": 48,
+        "roadProjectionXZ": [
+          -1500,
+          -80
+        ],
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1452,
+            -80
+          ],
+          [
+            -1500,
+            -80
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-LIFE-01-MAIN-CANDIDATE",
+        "buildingID": "LIFE-01",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R6_VALID_UNTIL_OVERRIDDEN",
+        "preliminary2DConnectedToGate": true,
+        "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100,
+          630
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SPUR-R7S14-LIFE-01",
+        "buildingID": "LIFE-01",
+        "category": "2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "sourceStage": "R7-SOLVE-11",
+        "targetRoad": "ROAD-BOYA-RING-N",
+        "planarLengthM": 25,
+        "roadProjectionXZ": [
+          100,
+          655
+        ],
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            100,
+            630
+          ],
+          [
+            100,
+            655
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-LIFE-02-MAIN-CANDIDATE",
+        "buildingID": "LIFE-02",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R6_VALID_UNTIL_OVERRIDDEN",
+        "preliminary2DConnectedToGate": false,
+        "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100,
+          522
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-LIFE-C-01-MAIN-CANDIDATE",
+        "buildingID": "LIFE-C-01",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R6_VALID_UNTIL_OVERRIDDEN",
+        "preliminary2DConnectedToGate": false,
+        "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          482,
+          -550
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-LIFE-C-02-MAIN-CANDIDATE",
+        "buildingID": "LIFE-C-02",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R6_VALID_UNTIL_OVERRIDDEN",
+        "preliminary2DConnectedToGate": false,
+        "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          660,
+          -550
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-LIFE-C-03-MAIN-CANDIDATE",
+        "buildingID": "LIFE-C-03",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R6_VALID_UNTIL_OVERRIDDEN",
+        "preliminary2DConnectedToGate": false,
+        "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          499,
+          -650
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-LIFE-C-04-MAIN-CANDIDATE",
+        "buildingID": "LIFE-C-04",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R6_VALID_UNTIL_OVERRIDDEN",
+        "preliminary2DConnectedToGate": false,
+        "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          666,
+          -650
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-LIFE-E-01-MAIN-CANDIDATE",
+        "buildingID": "LIFE-E-01",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-05",
+        "preliminary2DConnectedToGate": true,
+        "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1240,
+          -80
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SPUR-R7S14-LIFE-E-01",
+        "buildingID": "LIFE-E-01",
+        "category": "2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "sourceStage": "R7-SOLVE-13",
+        "targetRoad": "ROAD-R7-S13-E-SOUTH",
+        "planarLengthM": 95,
+        "roadProjectionXZ": [
+          1240,
+          -175
+        ],
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            1240,
+            -80
+          ],
+          [
+            1240,
+            -175
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-LIFE-E-02-MAIN-CANDIDATE",
+        "buildingID": "LIFE-E-02",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-05",
+        "preliminary2DConnectedToGate": true,
+        "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1345,
+          -100
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SPUR-R7S14-LIFE-E-02",
+        "buildingID": "LIFE-E-02",
+        "category": "2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "sourceStage": "R7-SOLVE-11",
+        "targetRoad": "ROAD-QINGNIAN-E",
+        "planarLengthM": 55,
+        "roadProjectionXZ": [
+          1400,
+          -100
+        ],
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            1345,
+            -100
+          ],
+          [
+            1400,
+            -100
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-LIFE-N-01-MAIN-CANDIDATE",
+        "buildingID": "LIFE-N-01",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-05",
+        "preliminary2DConnectedToGate": false,
+        "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -665,
+          996
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-LIFE-N-02-MAIN-CANDIDATE",
+        "buildingID": "LIFE-N-02",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-05",
+        "preliminary2DConnectedToGate": false,
+        "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          650,
+          1010
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-LIFE-S-01-MAIN-CANDIDATE",
+        "buildingID": "LIFE-S-01",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-05",
+        "preliminary2DConnectedToGate": false,
+        "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          405,
+          -760
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-LIFE-S-02-MAIN-CANDIDATE",
+        "buildingID": "LIFE-S-02",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-05",
+        "preliminary2DConnectedToGate": false,
+        "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          450,
+          -715
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-LIFE-W-01-MAIN-CANDIDATE",
+        "buildingID": "LIFE-W-01",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-05",
+        "preliminary2DConnectedToGate": true,
+        "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1445,
+          260
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SPUR-R7S14-LIFE-W-01",
+        "buildingID": "LIFE-W-01",
+        "category": "2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "sourceStage": "R7-SOLVE-13",
+        "targetRoad": "ROAD-R7-S13-W-SOUTHWEST",
+        "planarLengthM": 70,
+        "roadProjectionXZ": [
+          -1515,
+          260
+        ],
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1445,
+            260
+          ],
+          [
+            -1515,
+            260
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-LIFE-W-02-MAIN-CANDIDATE",
+        "buildingID": "LIFE-W-02",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-05",
+        "preliminary2DConnectedToGate": true,
+        "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1338,
+          235
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SPUR-R7S14-LIFE-W-02",
+        "buildingID": "LIFE-W-02",
+        "category": "2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "sourceStage": "R7-SOLVE-11",
+        "targetRoad": "ROAD-QINGNIAN-W",
+        "planarLengthM": 18,
+        "roadProjectionXZ": [
+          -1320,
+          235
+        ],
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1338,
+            235
+          ],
+          [
+            -1320,
+            235
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-MARX-01-MAIN-CANDIDATE",
+        "buildingID": "MARX-01",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-04",
+        "preliminary2DConnectedToGate": false,
+        "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          637,
+          170
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-MAT-01-MAIN-CANDIDATE",
+        "buildingID": "MAT-01",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-03",
+        "preliminary2DConnectedToGate": true,
+        "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -815,
+          436
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SPUR-R7S14-MAT-01",
+        "buildingID": "MAT-01",
+        "category": "2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "sourceStage": "R7-SOLVE-11",
+        "targetRoad": "ROAD-GEZHI-W",
+        "planarLengthM": 64,
+        "roadProjectionXZ": [
+          -815,
+          500
+        ],
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -815,
+            436
+          ],
+          [
+            -815,
+            500
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-MAT-02-MAIN-CANDIDATE",
+        "buildingID": "MAT-02",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-03",
+        "preliminary2DConnectedToGate": true,
+        "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -690,
+          430
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SPUR-R7S14-MAT-02",
+        "buildingID": "MAT-02",
+        "category": "2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "sourceStage": "R7-SOLVE-11",
+        "targetRoad": "ROAD-GEZHI-W",
+        "planarLengthM": 70,
+        "roadProjectionXZ": [
+          -690,
+          500
+        ],
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -690,
+            430
+          ],
+          [
+            -690,
+            500
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-MATH-01-MAIN-CANDIDATE",
+        "buildingID": "MATH-01",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R6_VALID_UNTIL_OVERRIDDEN",
+        "preliminary2DConnectedToGate": false,
+        "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -320,
+          582
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-ME-01-MAIN-CANDIDATE",
+        "buildingID": "ME-01",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-03",
+        "preliminary2DConnectedToGate": false,
+        "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -815,
+          380
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-ME-02-MAIN-CANDIDATE",
+        "buildingID": "ME-02",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-03",
+        "preliminary2DConnectedToGate": false,
+        "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -690,
+          380
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-ME-03-MAIN-CANDIDATE",
+        "buildingID": "ME-03",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-03",
+        "preliminary2DConnectedToGate": false,
+        "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -628,
+          410
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-MED-01-MAIN-CANDIDATE",
+        "buildingID": "MED-01",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R6_VALID_UNTIL_OVERRIDDEN",
+        "preliminary2DConnectedToGate": false,
+        "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1214.44,
+          -604.44
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-MED-02-MAIN-CANDIDATE",
+        "buildingID": "MED-02",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R6_VALID_UNTIL_OVERRIDDEN",
+        "preliminary2DConnectedToGate": false,
+        "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1064.44,
+          -604.44
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-MED-03-MAIN-CANDIDATE",
+        "buildingID": "MED-03",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R6_VALID_UNTIL_OVERRIDDEN",
+        "preliminary2DConnectedToGate": false,
+        "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1210.2,
+          -480.2
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-MED-04-MAIN-CANDIDATE",
+        "buildingID": "MED-04",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R6_VALID_UNTIL_OVERRIDDEN",
+        "preliminary2DConnectedToGate": false,
+        "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1062.32,
+          -482.32
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-NEE-01-MAIN-CANDIDATE",
+        "buildingID": "NEE-01",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-03",
+        "preliminary2DConnectedToGate": false,
+        "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -508,
+          280
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-NEE-02-MAIN-CANDIDATE",
+        "buildingID": "NEE-02",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-03",
+        "preliminary2DConnectedToGate": false,
+        "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -414,
+          280
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-NUC-01-MAIN-CANDIDATE",
+        "buildingID": "NUC-01",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-03",
+        "preliminary2DConnectedToGate": true,
+        "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -965,
+          175
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SPUR-R7S14-NUC-01",
+        "buildingID": "NUC-01",
+        "category": "2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "sourceStage": "R7-SOLVE-11",
+        "targetRoad": "ROAD-BOYA-RING-W",
+        "planarLengthM": 65,
+        "roadProjectionXZ": [
+          -900,
+          175
+        ],
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -965,
+            175
+          ],
+          [
+            -900,
+            175
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-NUC-02-MAIN-CANDIDATE",
+        "buildingID": "NUC-02",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-03",
+        "preliminary2DConnectedToGate": true,
+        "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -965,
+          290
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SPUR-R7S14-NUC-02",
+        "buildingID": "NUC-02",
+        "category": "2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "sourceStage": "R7-SOLVE-11",
+        "targetRoad": "ROAD-BOYA-RING-W",
+        "planarLengthM": 65,
+        "roadProjectionXZ": [
+          -900,
+          290
+        ],
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -965,
+            290
+          ],
+          [
+            -900,
+            290
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-NUC-03-MAIN-CANDIDATE",
+        "buildingID": "NUC-03",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-03",
+        "preliminary2DConnectedToGate": true,
+        "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -967,
+          405
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SPUR-R7S14-NUC-03",
+        "buildingID": "NUC-03",
+        "category": "2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "sourceStage": "R7-SOLVE-11",
+        "targetRoad": "ROAD-BOYA-RING-W",
+        "planarLengthM": 67,
+        "roadProjectionXZ": [
+          -900,
+          405
+        ],
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -967,
+            405
+          ],
+          [
+            -900,
+            405
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-OPS-01-MAIN-CANDIDATE",
+        "buildingID": "OPS-01",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R6_VALID_UNTIL_OVERRIDDEN",
+        "preliminary2DConnectedToGate": false,
+        "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120,
+          -918
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-OPS-02-MAIN-CANDIDATE",
+        "buildingID": "OPS-02",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R6_VALID_UNTIL_OVERRIDDEN",
+        "preliminary2DConnectedToGate": true,
+        "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1201,
+          -850
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SPUR-R7S14-OPS-02",
+        "buildingID": "OPS-02",
+        "category": "2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "sourceStage": "R7-SOLVE-12",
+        "targetRoad": "ROAD-R7-S12-OPS-SOUTH-SERVICE",
+        "planarLengthM": 61,
+        "roadProjectionXZ": [
+          1140,
+          -850
+        ],
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            1201,
+            -850
+          ],
+          [
+            1140,
+            -850
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-OPS-03-MAIN-CANDIDATE",
+        "buildingID": "OPS-03",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R6_VALID_UNTIL_OVERRIDDEN",
+        "preliminary2DConnectedToGate": false,
+        "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1355,
+          -760
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-OPS-04-MAIN-CANDIDATE",
+        "buildingID": "OPS-04",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R6_VALID_UNTIL_OVERRIDDEN",
+        "preliminary2DConnectedToGate": false,
+        "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1226,
+          -940
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-OPS-05-MAIN-CANDIDATE",
+        "buildingID": "OPS-05",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R6_VALID_UNTIL_OVERRIDDEN",
+        "preliminary2DConnectedToGate": false,
+        "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1363,
+          -840
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-OPS-06-MAIN-CANDIDATE",
+        "buildingID": "OPS-06",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R6_VALID_UNTIL_OVERRIDDEN",
+        "preliminary2DConnectedToGate": false,
+        "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1222,
+          -760
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-OPS-07-MAIN-CANDIDATE",
+        "buildingID": "OPS-07",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R6_VALID_UNTIL_OVERRIDDEN",
+        "preliminary2DConnectedToGate": false,
+        "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -528,
+          -380
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-OPS-08-MAIN-CANDIDATE",
+        "buildingID": "OPS-08",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R6_VALID_UNTIL_OVERRIDDEN",
+        "preliminary2DConnectedToGate": false,
+        "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -529,
+          -500
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-OPS-09-MAIN-CANDIDATE",
+        "buildingID": "OPS-09",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R6_VALID_UNTIL_OVERRIDDEN",
+        "preliminary2DConnectedToGate": false,
+        "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -378,
+          -650
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-OPS-10-MAIN-CANDIDATE",
+        "buildingID": "OPS-10",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R6_VALID_UNTIL_OVERRIDDEN",
+        "preliminary2DConnectedToGate": false,
+        "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -229,
+          -650
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-PE-01-MAIN-CANDIDATE",
+        "buildingID": "PE-01",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-06",
+        "preliminary2DConnectedToGate": true,
+        "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -330,
+          760
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SPUR-R7S14-PE-01",
+        "buildingID": "PE-01",
+        "category": "2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "sourceStage": "R7-SOLVE-11",
+        "targetRoad": "ROAD-BOYA-RING-N",
+        "planarLengthM": 70,
+        "roadProjectionXZ": [
+          -330,
+          690
+        ],
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -330,
+            760
+          ],
+          [
+            -330,
+            690
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-PE-02-MAIN-CANDIDATE",
+        "buildingID": "PE-02",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-06",
+        "preliminary2DConnectedToGate": false,
+        "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          445,
+          765
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-PH-01-MAIN-CANDIDATE",
+        "buildingID": "PH-01",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R6_VALID_UNTIL_OVERRIDDEN",
+        "preliminary2DConnectedToGate": false,
+        "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -745.86,
+          -605.86
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-PH-02-MAIN-CANDIDATE",
+        "buildingID": "PH-02",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R6_VALID_UNTIL_OVERRIDDEN",
+        "preliminary2DConnectedToGate": true,
+        "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -742.32,
+          -482.32
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SPUR-R7S14-PH-02",
+        "buildingID": "PH-02",
+        "category": "2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "sourceStage": "R7-SOLVE-11",
+        "targetRoad": "ROAD-BOYA-RING-SW-H",
+        "planarLengthM": 52.32,
+        "roadProjectionXZ": [
+          -742.32,
+          -430
+        ],
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -742.32,
+            -482.32
+          ],
+          [
+            -742.32,
+            -430
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-PHA-01-MAIN-CANDIDATE",
+        "buildingID": "PHA-01",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R6_VALID_UNTIL_OVERRIDDEN",
+        "preliminary2DConnectedToGate": false,
+        "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -905.86,
+          -605.86
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-PHA-02-MAIN-CANDIDATE",
+        "buildingID": "PHA-02",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R6_VALID_UNTIL_OVERRIDDEN",
+        "preliminary2DConnectedToGate": true,
+        "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -902.32,
+          -482.32
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SPUR-R7S14-PHA-02",
+        "buildingID": "PHA-02",
+        "category": "2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "sourceStage": "R7-SOLVE-11",
+        "targetRoad": "ROAD-BOYA-RING-W",
+        "planarLengthM": 52.37,
+        "roadProjectionXZ": [
+          -900,
+          -430
+        ],
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -902.32,
+            -482.32
+          ],
+          [
+            -900,
+            -430
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-PHY-01-MAIN-CANDIDATE",
+        "buildingID": "PHY-01",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R6_VALID_UNTIL_OVERRIDDEN",
+        "preliminary2DConnectedToGate": true,
+        "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -190,
+          631
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SPUR-R7S14-PHY-01",
+        "buildingID": "PHY-01",
+        "category": "2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "sourceStage": "R7-SOLVE-11",
+        "targetRoad": "ROAD-BOYA-RING-N",
+        "planarLengthM": 24,
+        "roadProjectionXZ": [
+          -190,
+          655
+        ],
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -190,
+            631
+          ],
+          [
+            -190,
+            655
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-PHY-02-MAIN-CANDIDATE",
+        "buildingID": "PHY-02",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R6_VALID_UNTIL_OVERRIDDEN",
+        "preliminary2DConnectedToGate": false,
+        "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -190,
+          525
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-PSY-01-MAIN-CANDIDATE",
+        "buildingID": "PSY-01",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-04",
+        "preliminary2DConnectedToGate": false,
+        "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          742,
+          345
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-RDI-01-MAIN-CANDIDATE",
+        "buildingID": "RDI-01",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R6_VALID_UNTIL_OVERRIDDEN",
+        "preliminary2DConnectedToGate": true,
+        "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -675,
+          760
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SPUR-R7S14-RDI-01",
+        "buildingID": "RDI-01",
+        "category": "2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "sourceStage": "R7-SOLVE-11",
+        "targetRoad": "ROAD-BOYA-RING-N",
+        "planarLengthM": 70,
+        "roadProjectionXZ": [
+          -675,
+          690
+        ],
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -675,
+            760
+          ],
+          [
+            -675,
+            690
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-RDI-02-MAIN-CANDIDATE",
+        "buildingID": "RDI-02",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R6_VALID_UNTIL_OVERRIDDEN",
+        "preliminary2DConnectedToGate": true,
+        "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1295,
+          850
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SPUR-R7S14-RDI-02",
+        "buildingID": "RDI-02",
+        "category": "2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "sourceStage": "R7-SOLVE-12",
+        "targetRoad": "ROAD-R7-S12-RDI-ACCESS-LINK",
+        "planarLengthM": 15,
+        "roadProjectionXZ": [
+          -1280,
+          850
+        ],
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1295,
+            850
+          ],
+          [
+            -1280,
+            850
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-RDI-03-MAIN-CANDIDATE",
+        "buildingID": "RDI-03",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R6_VALID_UNTIL_OVERRIDDEN",
+        "preliminary2DConnectedToGate": true,
+        "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1135,
+          850
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SPUR-R7S14-RDI-03",
+        "buildingID": "RDI-03",
+        "category": "2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "sourceStage": "R7-SOLVE-12",
+        "targetRoad": "ROAD-R7-S12-RDI-NORTH-SERVICE",
+        "planarLengthM": 75,
+        "roadProjectionXZ": [
+          -1135,
+          925
+        ],
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1135,
+            850
+          ],
+          [
+            -1135,
+            925
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-RDI-04-MAIN-CANDIDATE",
+        "buildingID": "RDI-04",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R6_VALID_UNTIL_OVERRIDDEN",
+        "preliminary2DConnectedToGate": false,
+        "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -975,
+          850
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-RDI-05-MAIN-CANDIDATE",
+        "buildingID": "RDI-05",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R6_VALID_UNTIL_OVERRIDDEN",
+        "preliminary2DConnectedToGate": false,
+        "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -815,
+          850
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-RDI-06-MAIN-CANDIDATE",
+        "buildingID": "RDI-06",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R6_VALID_UNTIL_OVERRIDDEN",
+        "preliminary2DConnectedToGate": false,
+        "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -652,
+          860
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-RDI-07-MAIN-CANDIDATE",
+        "buildingID": "RDI-07",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R6_VALID_UNTIL_OVERRIDDEN",
+        "preliminary2DConnectedToGate": false,
+        "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1230,
+          730
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-RDI-08-MAIN-CANDIDATE",
+        "buildingID": "RDI-08",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R6_VALID_UNTIL_OVERRIDDEN",
+        "preliminary2DConnectedToGate": false,
+        "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1052,
+          740
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-RDI-09-MAIN-CANDIDATE",
+        "buildingID": "RDI-09",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R6_VALID_UNTIL_OVERRIDDEN",
+        "preliminary2DConnectedToGate": false,
+        "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -875,
+          730
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-RDI-10-MAIN-CANDIDATE",
+        "buildingID": "RDI-10",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R6_VALID_UNTIL_OVERRIDDEN",
+        "preliminary2DConnectedToGate": true,
+        "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1180,
+          935
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SPUR-R7S14-RDI-10",
+        "buildingID": "RDI-10",
+        "category": "2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "sourceStage": "R7-SOLVE-12",
+        "targetRoad": "ROAD-R7-S12-RDI-NORTH-SERVICE",
+        "planarLengthM": 10,
+        "roadProjectionXZ": [
+          -1180,
+          925
+        ],
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1180,
+            935
+          ],
+          [
+            -1180,
+            925
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-RDI-11-MAIN-CANDIDATE",
+        "buildingID": "RDI-11",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R6_VALID_UNTIL_OVERRIDDEN",
+        "preliminary2DConnectedToGate": true,
+        "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1030,
+          955
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SPUR-R7S14-RDI-11",
+        "buildingID": "RDI-11",
+        "category": "2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "sourceStage": "R7-SOLVE-12",
+        "targetRoad": "ROAD-R7-S12-RDI-NORTH-SERVICE",
+        "planarLengthM": 30,
+        "roadProjectionXZ": [
+          -1030,
+          925
+        ],
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1030,
+            955
+          ],
+          [
+            -1030,
+            925
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-RDI-12-MAIN-CANDIDATE",
+        "buildingID": "RDI-12",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R6_VALID_UNTIL_OVERRIDDEN",
+        "preliminary2DConnectedToGate": true,
+        "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -880,
+          960
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SPUR-R7S14-RDI-12",
+        "buildingID": "RDI-12",
+        "category": "2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "sourceStage": "R7-SOLVE-12",
+        "targetRoad": "ROAD-R7-S12-RDI-NORTH-SERVICE",
+        "planarLengthM": 35,
+        "roadProjectionXZ": [
+          -880,
+          925
+        ],
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -880,
+            960
+          ],
+          [
+            -880,
+            925
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-RDI-13-MAIN-CANDIDATE",
+        "buildingID": "RDI-13",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R6_VALID_UNTIL_OVERRIDDEN",
+        "preliminary2DConnectedToGate": true,
+        "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -783,
+          1000
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SPUR-R7S14-RDI-13",
+        "buildingID": "RDI-13",
+        "category": "2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "sourceStage": "R7-SOLVE-12",
+        "targetRoad": "ROAD-R7-S12-RDI-NORTH-SERVICE",
+        "planarLengthM": 75,
+        "roadProjectionXZ": [
+          -783,
+          925
+        ],
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -783,
+            1000
+          ],
+          [
+            -783,
+            925
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-RDI-14-MAIN-CANDIDATE",
+        "buildingID": "RDI-14",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R6_VALID_UNTIL_OVERRIDDEN",
+        "preliminary2DConnectedToGate": true,
+        "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -580,
+          975
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SPUR-R7S14-RDI-14",
+        "buildingID": "RDI-14",
+        "category": "2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "sourceStage": "R7-SOLVE-11",
+        "targetRoad": "ROAD-QINGNIAN-NW",
+        "planarLengthM": 60,
+        "roadProjectionXZ": [
+          -520,
+          975
+        ],
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -580,
+            975
+          ],
+          [
+            -520,
+            975
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-RES-E-G01-MAIN-CANDIDATE",
+        "buildingID": "RES-E-G01",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-05",
+        "preliminary2DConnectedToGate": false,
+        "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1291,
+          250
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-RES-E-G02-MAIN-CANDIDATE",
+        "buildingID": "RES-E-G02",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-05",
+        "preliminary2DConnectedToGate": true,
+        "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1340,
+          259
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SPUR-R7S14-RES-E-G02",
+        "buildingID": "RES-E-G02",
+        "category": "2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "sourceStage": "R7-SOLVE-11",
+        "targetRoad": "ROAD-QINGNIAN-E",
+        "planarLengthM": 60,
+        "roadProjectionXZ": [
+          1400,
+          259
+        ],
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            1340,
+            259
+          ],
+          [
+            1400,
+            259
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-RES-E-G03-MAIN-CANDIDATE",
+        "buildingID": "RES-E-G03",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-05",
+        "preliminary2DConnectedToGate": true,
+        "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1320,
+          299
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SPUR-R7S14-RES-E-G03",
+        "buildingID": "RES-E-G03",
+        "category": "2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "sourceStage": "R7-SOLVE-11",
+        "targetRoad": "ROAD-QINGNIAN-E-FEED",
+        "planarLengthM": 61,
+        "roadProjectionXZ": [
+          1320,
+          360
+        ],
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            1320,
+            299
+          ],
+          [
+            1320,
+            360
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-RES-E-I01-MAIN-CANDIDATE",
+        "buildingID": "RES-E-I01",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-05",
+        "preliminary2DConnectedToGate": true,
+        "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1220,
+          318
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SPUR-R7S14-RES-E-I01",
+        "buildingID": "RES-E-I01",
+        "category": "2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "sourceStage": "R7-SOLVE-11",
+        "targetRoad": "ROAD-QINGNIAN-E-FEED",
+        "planarLengthM": 42,
+        "roadProjectionXZ": [
+          1220,
+          360
+        ],
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            1220,
+            318
+          ],
+          [
+            1220,
+            360
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-RES-E-U01-MAIN-CANDIDATE",
+        "buildingID": "RES-E-U01",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-05",
+        "preliminary2DConnectedToGate": true,
+        "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1349,
+          -50
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SPUR-R7S14-RES-E-U01",
+        "buildingID": "RES-E-U01",
+        "category": "2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "sourceStage": "R7-SOLVE-11",
+        "targetRoad": "ROAD-QINGNIAN-E",
+        "planarLengthM": 51,
+        "roadProjectionXZ": [
+          1400,
+          -50
+        ],
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            1349,
+            -50
+          ],
+          [
+            1400,
+            -50
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-RES-E-U02-MAIN-CANDIDATE",
+        "buildingID": "RES-E-U02",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-05",
+        "preliminary2DConnectedToGate": false,
+        "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1191,
+          -30
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-RES-E-U03-MAIN-CANDIDATE",
+        "buildingID": "RES-E-U03",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-05",
+        "preliminary2DConnectedToGate": false,
+        "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1300,
+          -19
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-RES-E-U04-MAIN-CANDIDATE",
+        "buildingID": "RES-E-U04",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-05",
+        "preliminary2DConnectedToGate": false,
+        "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1209,
+          -10
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-RES-E-U05-MAIN-CANDIDATE",
+        "buildingID": "RES-E-U05",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-05",
+        "preliminary2DConnectedToGate": false,
+        "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1320,
+          -1
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-RES-E-U06-MAIN-CANDIDATE",
+        "buildingID": "RES-E-U06",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-05",
+        "preliminary2DConnectedToGate": false,
+        "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1191,
+          70
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-RES-E-U07-MAIN-CANDIDATE",
+        "buildingID": "RES-E-U07",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-05",
+        "preliminary2DConnectedToGate": false,
+        "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1151,
+          110
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-RES-E-U08-MAIN-CANDIDATE",
+        "buildingID": "RES-E-U08",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-05",
+        "preliminary2DConnectedToGate": false,
+        "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1211,
+          170
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-RES-E-U09-MAIN-CANDIDATE",
+        "buildingID": "RES-E-U09",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-05",
+        "preliminary2DConnectedToGate": true,
+        "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1340,
+          241
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SPUR-R7S14-RES-E-U09",
+        "buildingID": "RES-E-U09",
+        "category": "2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "sourceStage": "R7-SOLVE-11",
+        "targetRoad": "ROAD-QINGNIAN-E",
+        "planarLengthM": 60,
+        "roadProjectionXZ": [
+          1400,
+          241
+        ],
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            1340,
+            241
+          ],
+          [
+            1400,
+            241
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-RES-E-U10-MAIN-CANDIDATE",
+        "buildingID": "RES-E-U10",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-05",
+        "preliminary2DConnectedToGate": false,
+        "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1229,
+          250
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-RES-N-G01-MAIN-CANDIDATE",
+        "buildingID": "RES-N-G01",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-05",
+        "preliminary2DConnectedToGate": false,
+        "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          691,
+          940
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-RES-N-G02-MAIN-CANDIDATE",
+        "buildingID": "RES-N-G02",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-05",
+        "preliminary2DConnectedToGate": true,
+        "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          949,
+          960
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SPUR-R7S14-RES-N-G02",
+        "buildingID": "RES-N-G02",
+        "category": "2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "sourceStage": "R7-SOLVE-13",
+        "targetRoad": "ROAD-R7-S13-N-EAST",
+        "planarLengthM": 51,
+        "roadProjectionXZ": [
+          1000,
+          960
+        ],
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            949,
+            960
+          ],
+          [
+            1000,
+            960
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-RES-N-G03-MAIN-CANDIDATE",
+        "buildingID": "RES-N-G03",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-05",
+        "preliminary2DConnectedToGate": false,
+        "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          860,
+          1049
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-RES-N-U01-MAIN-CANDIDATE",
+        "buildingID": "RES-N-U01",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-05",
+        "preliminary2DConnectedToGate": true,
+        "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -930,
+          911
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SPUR-R7S14-RES-N-U01",
+        "buildingID": "RES-N-U01",
+        "category": "2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "sourceStage": "R7-SOLVE-12",
+        "targetRoad": "ROAD-R7-S12-RDI-NORTH-SERVICE",
+        "planarLengthM": 14,
+        "roadProjectionXZ": [
+          -930,
+          925
+        ],
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -930,
+            911
+          ],
+          [
+            -930,
+            925
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-RES-N-U02-MAIN-CANDIDATE",
+        "buildingID": "RES-N-U02",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-05",
+        "preliminary2DConnectedToGate": true,
+        "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -830,
+          911
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SPUR-R7S14-RES-N-U02",
+        "buildingID": "RES-N-U02",
+        "category": "2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "sourceStage": "R7-SOLVE-12",
+        "targetRoad": "ROAD-R7-S12-RDI-NORTH-SERVICE",
+        "planarLengthM": 14,
+        "roadProjectionXZ": [
+          -830,
+          925
+        ],
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -830,
+            911
+          ],
+          [
+            -830,
+            925
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-RES-N-U03-MAIN-CANDIDATE",
+        "buildingID": "RES-N-U03",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-05",
+        "preliminary2DConnectedToGate": true,
+        "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -950,
+          967
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SPUR-R7S14-RES-N-U03",
+        "buildingID": "RES-N-U03",
+        "category": "2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "sourceStage": "R7-SOLVE-12",
+        "targetRoad": "ROAD-R7-S12-RDI-NORTH-SERVICE",
+        "planarLengthM": 42,
+        "roadProjectionXZ": [
+          -950,
+          925
+        ],
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -950,
+            967
+          ],
+          [
+            -950,
+            925
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-RES-N-U04-MAIN-CANDIDATE",
+        "buildingID": "RES-N-U04",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-05",
+        "preliminary2DConnectedToGate": true,
+        "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -689,
+          920
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SPUR-R7S14-RES-N-U04",
+        "buildingID": "RES-N-U04",
+        "category": "2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "sourceStage": "R7-SOLVE-12",
+        "targetRoad": "ROAD-R7-S12-RDI-NORTH-SERVICE",
+        "planarLengthM": 71.18,
+        "roadProjectionXZ": [
+          -760,
+          925
+        ],
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -689,
+            920
+          ],
+          [
+            -760,
+            925
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-RES-N-U05-MAIN-CANDIDATE",
+        "buildingID": "RES-N-U05",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-05",
+        "preliminary2DConnectedToGate": false,
+        "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -631,
+          940
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-RES-N-U06-MAIN-CANDIDATE",
+        "buildingID": "RES-N-U06",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-05",
+        "preliminary2DConnectedToGate": false,
+        "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -700,
+          969
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-RES-N-U07-MAIN-CANDIDATE",
+        "buildingID": "RES-N-U07",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-05",
+        "preliminary2DConnectedToGate": false,
+        "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          780,
+          911
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-RES-N-U08-MAIN-CANDIDATE",
+        "buildingID": "RES-N-U08",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-05",
+        "preliminary2DConnectedToGate": true,
+        "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          900,
+          911
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SPUR-R7S14-RES-N-U08",
+        "buildingID": "RES-N-U08",
+        "category": "2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "sourceStage": "R7-SOLVE-13",
+        "targetRoad": "ROAD-R7-S13-N-EAST",
+        "planarLengthM": 100,
+        "roadProjectionXZ": [
+          1000,
+          911
+        ],
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            900,
+            911
+          ],
+          [
+            1000,
+            911
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-RES-N-U09-MAIN-CANDIDATE",
+        "buildingID": "RES-N-U09",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-05",
+        "preliminary2DConnectedToGate": true,
+        "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          919,
+          1010
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SPUR-R7S14-RES-N-U09",
+        "buildingID": "RES-N-U09",
+        "category": "2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "sourceStage": "R7-SOLVE-13",
+        "targetRoad": "ROAD-R7-S13-N-EAST",
+        "planarLengthM": 81,
+        "roadProjectionXZ": [
+          1000,
+          1010
+        ],
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            919,
+            1010
+          ],
+          [
+            1000,
+            1010
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-RES-N-U10-MAIN-CANDIDATE",
+        "buildingID": "RES-N-U10",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-05",
+        "preliminary2DConnectedToGate": false,
+        "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          631,
+          920
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-RES-S-G01-MAIN-CANDIDATE",
+        "buildingID": "RES-S-G01",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-05",
+        "preliminary2DConnectedToGate": false,
+        "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          719,
+          -780
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-RES-S-I01-MAIN-CANDIDATE",
+        "buildingID": "RES-S-I01",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-05",
+        "preliminary2DConnectedToGate": false,
+        "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          530,
+          -732
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-RES-S-I02-MAIN-CANDIDATE",
+        "buildingID": "RES-S-I02",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-05",
+        "preliminary2DConnectedToGate": false,
+        "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          630,
+          -732
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-RES-S-I03-MAIN-CANDIDATE",
+        "buildingID": "RES-S-I03",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-05",
+        "preliminary2DConnectedToGate": true,
+        "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          750,
+          -732
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SPUR-R7S14-RES-S-I03",
+        "buildingID": "RES-S-I03",
+        "category": "2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "sourceStage": "R7-SOLVE-13",
+        "targetRoad": "ROAD-R7-S13-S-EAST",
+        "planarLengthM": 65.49,
+        "roadProjectionXZ": [
+          815,
+          -740
+        ],
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            750,
+            -732
+          ],
+          [
+            815,
+            -740
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-RES-S-U01-MAIN-CANDIDATE",
+        "buildingID": "RES-S-U01",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-05",
+        "preliminary2DConnectedToGate": true,
+        "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          370,
+          -949
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SPUR-R7S14-RES-S-U01",
+        "buildingID": "RES-S-U01",
+        "category": "2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "sourceStage": "R7-SOLVE-11",
+        "targetRoad": "ROAD-QINGNIAN-S",
+        "planarLengthM": 49,
+        "roadProjectionXZ": [
+          370,
+          -900
+        ],
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            370,
+            -949
+          ],
+          [
+            370,
+            -900
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-RES-S-U02-MAIN-CANDIDATE",
+        "buildingID": "RES-S-U02",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-05",
+        "preliminary2DConnectedToGate": true,
+        "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          590,
+          -949
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SPUR-R7S14-RES-S-U02",
+        "buildingID": "RES-S-U02",
+        "category": "2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "sourceStage": "R7-SOLVE-11",
+        "targetRoad": "ROAD-QINGNIAN-S",
+        "planarLengthM": 49,
+        "roadProjectionXZ": [
+          590,
+          -900
+        ],
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            590,
+            -949
+          ],
+          [
+            590,
+            -900
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-RES-S-U03-MAIN-CANDIDATE",
+        "buildingID": "RES-S-U03",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-05",
+        "preliminary2DConnectedToGate": true,
+        "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          470,
+          -929
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SPUR-R7S14-RES-S-U03",
+        "buildingID": "RES-S-U03",
+        "category": "2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "sourceStage": "R7-SOLVE-11",
+        "targetRoad": "ROAD-QINGNIAN-S",
+        "planarLengthM": 29,
+        "roadProjectionXZ": [
+          470,
+          -900
+        ],
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            470,
+            -929
+          ],
+          [
+            470,
+            -900
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-RES-S-U04-MAIN-CANDIDATE",
+        "buildingID": "RES-S-U04",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-05",
+        "preliminary2DConnectedToGate": true,
+        "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          690,
+          -929
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SPUR-R7S14-RES-S-U04",
+        "buildingID": "RES-S-U04",
+        "category": "2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "sourceStage": "R7-SOLVE-11",
+        "targetRoad": "ROAD-QINGNIAN-S",
+        "planarLengthM": 29,
+        "roadProjectionXZ": [
+          690,
+          -900
+        ],
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            690,
+            -929
+          ],
+          [
+            690,
+            -900
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-RES-S-U05-MAIN-CANDIDATE",
+        "buildingID": "RES-S-U05",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-05",
+        "preliminary2DConnectedToGate": true,
+        "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          750,
+          -871
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SPUR-R7S14-RES-S-U05",
+        "buildingID": "RES-S-U05",
+        "category": "2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "sourceStage": "R7-SOLVE-11",
+        "targetRoad": "ROAD-QINGNIAN-S",
+        "planarLengthM": 29,
+        "roadProjectionXZ": [
+          750,
+          -900
+        ],
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            750,
+            -871
+          ],
+          [
+            750,
+            -900
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-RES-S-U06-MAIN-CANDIDATE",
+        "buildingID": "RES-S-U06",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-05",
+        "preliminary2DConnectedToGate": true,
+        "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          350,
+          -851
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SPUR-R7S14-RES-S-U06",
+        "buildingID": "RES-S-U06",
+        "category": "2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "sourceStage": "R7-SOLVE-11",
+        "targetRoad": "ROAD-QINGNIAN-S",
+        "planarLengthM": 49,
+        "roadProjectionXZ": [
+          350,
+          -900
+        ],
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            350,
+            -851
+          ],
+          [
+            350,
+            -900
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-RES-S-U07-MAIN-CANDIDATE",
+        "buildingID": "RES-S-U07",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-05",
+        "preliminary2DConnectedToGate": true,
+        "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          419,
+          -840
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SPUR-R7S14-RES-S-U07",
+        "buildingID": "RES-S-U07",
+        "category": "2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "sourceStage": "R7-SOLVE-11",
+        "targetRoad": "ROAD-QINGNIAN-S",
+        "planarLengthM": 60,
+        "roadProjectionXZ": [
+          419,
+          -900
+        ],
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            419,
+            -840
+          ],
+          [
+            419,
+            -900
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-RES-S-U08-MAIN-CANDIDATE",
+        "buildingID": "RES-S-U08",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-05",
+        "preliminary2DConnectedToGate": true,
+        "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          481,
+          -840
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SPUR-R7S14-RES-S-U08",
+        "buildingID": "RES-S-U08",
+        "category": "2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "sourceStage": "R7-SOLVE-11",
+        "targetRoad": "ROAD-QINGNIAN-S",
+        "planarLengthM": 60,
+        "roadProjectionXZ": [
+          481,
+          -900
+        ],
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            481,
+            -840
+          ],
+          [
+            481,
+            -900
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-RES-S-U09-MAIN-CANDIDATE",
+        "buildingID": "RES-S-U09",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-05",
+        "preliminary2DConnectedToGate": true,
+        "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          779,
+          -800
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SPUR-R7S14-RES-S-U09",
+        "buildingID": "RES-S-U09",
+        "category": "2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "sourceStage": "R7-SOLVE-11",
+        "targetRoad": "ROAD-BOYA-RING-E",
+        "planarLengthM": 51,
+        "roadProjectionXZ": [
+          830,
+          -800
+        ],
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            779,
+            -800
+          ],
+          [
+            830,
+            -800
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-RES-S-U10-MAIN-CANDIDATE",
+        "buildingID": "RES-S-U10",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-05",
+        "preliminary2DConnectedToGate": true,
+        "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          321,
+          -780
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SPUR-R7S14-RES-S-U10",
+        "buildingID": "RES-S-U10",
+        "category": "2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "sourceStage": "R7-SOLVE-13",
+        "targetRoad": "ROAD-R7-S13-S-WEST",
+        "planarLengthM": 66,
+        "roadProjectionXZ": [
+          255,
+          -780
+        ],
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            321,
+            -780
+          ],
+          [
+            255,
+            -780
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-RES-W-G01-MAIN-CANDIDATE",
+        "buildingID": "RES-W-G01",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-05",
+        "preliminary2DConnectedToGate": true,
+        "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1370,
+          689
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SPUR-R7S14-RES-W-G01",
+        "buildingID": "RES-W-G01",
+        "category": "2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "sourceStage": "R7-SOLVE-11",
+        "targetRoad": "ROAD-CHUANGXIN",
+        "planarLengthM": 60,
+        "roadProjectionXZ": [
+          -1430,
+          689
+        ],
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1370,
+            689
+          ],
+          [
+            -1430,
+            689
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-RES-W-G02-MAIN-CANDIDATE",
+        "buildingID": "RES-W-G02",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-05",
+        "preliminary2DConnectedToGate": false,
+        "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1308,
+          700
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-RES-W-G03-MAIN-CANDIDATE",
+        "buildingID": "RES-W-G03",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-05",
+        "preliminary2DConnectedToGate": true,
+        "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1330,
+          739
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SPUR-R7S14-RES-W-G03",
+        "buildingID": "RES-W-G03",
+        "category": "2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "sourceStage": "R7-SOLVE-12",
+        "targetRoad": "ROAD-R7-S12-RDI-ACCESS-LINK",
+        "planarLengthM": 56,
+        "roadProjectionXZ": [
+          -1330,
+          795
+        ],
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1330,
+            739
+          ],
+          [
+            -1330,
+            795
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-RES-W-U01-MAIN-CANDIDATE",
+        "buildingID": "RES-W-U01",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-05",
+        "preliminary2DConnectedToGate": false,
+        "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1430,
+          311
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-RES-W-U02-MAIN-CANDIDATE",
+        "buildingID": "RES-W-U02",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-05",
+        "preliminary2DConnectedToGate": true,
+        "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1279,
+          300
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SPUR-R7S14-RES-W-U02",
+        "buildingID": "RES-W-U02",
+        "category": "2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "sourceStage": "R7-SOLVE-11",
+        "targetRoad": "ROAD-QINGNIAN-W",
+        "planarLengthM": 41,
+        "roadProjectionXZ": [
+          -1320,
+          300
+        ],
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1279,
+            300
+          ],
+          [
+            -1320,
+            300
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-RES-W-U03-MAIN-CANDIDATE",
+        "buildingID": "RES-W-U03",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-05",
+        "preliminary2DConnectedToGate": true,
+        "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1261,
+          300
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SPUR-R7S14-RES-W-U03",
+        "buildingID": "RES-W-U03",
+        "category": "2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "sourceStage": "R7-SOLVE-13",
+        "targetRoad": "ROAD-R7-S13-W-EAST-INNER",
+        "planarLengthM": 31,
+        "roadProjectionXZ": [
+          -1230,
+          300
+        ],
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1261,
+            300
+          ],
+          [
+            -1230,
+            300
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-RES-W-U04-MAIN-CANDIDATE",
+        "buildingID": "RES-W-U04",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-05",
+        "preliminary2DConnectedToGate": true,
+        "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1479,
+          325
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SPUR-R7S14-RES-W-U04",
+        "buildingID": "RES-W-U04",
+        "category": "2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "sourceStage": "R7-SOLVE-13",
+        "targetRoad": "ROAD-R7-S13-W-SOUTHWEST",
+        "planarLengthM": 36,
+        "roadProjectionXZ": [
+          -1515,
+          325
+        ],
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1479,
+            325
+          ],
+          [
+            -1515,
+            325
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-RES-W-U05-MAIN-CANDIDATE",
+        "buildingID": "RES-W-U05",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-05",
+        "preliminary2DConnectedToGate": true,
+        "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1390,
+          339
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SPUR-R7S14-RES-W-U05",
+        "buildingID": "RES-W-U05",
+        "category": "2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "sourceStage": "R7-SOLVE-11",
+        "targetRoad": "ROAD-QINGNIAN-W",
+        "planarLengthM": 70,
+        "roadProjectionXZ": [
+          -1320,
+          339
+        ],
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1390,
+            339
+          ],
+          [
+            -1320,
+            339
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-RES-W-U06-MAIN-CANDIDATE",
+        "buildingID": "RES-W-U06",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-05",
+        "preliminary2DConnectedToGate": true,
+        "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1259,
+          400
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SPUR-R7S14-RES-W-U06",
+        "buildingID": "RES-W-U06",
+        "category": "2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "sourceStage": "R7-SOLVE-11",
+        "targetRoad": "ROAD-QINGNIAN-W",
+        "planarLengthM": 61,
+        "roadProjectionXZ": [
+          -1320,
+          400
+        ],
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1259,
+            400
+          ],
+          [
+            -1320,
+            400
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-RES-W-U07-MAIN-CANDIDATE",
+        "buildingID": "RES-W-U07",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-05",
+        "preliminary2DConnectedToGate": false,
+        "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1241,
+          500
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-RES-W-U08-MAIN-CANDIDATE",
+        "buildingID": "RES-W-U08",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-05",
+        "preliminary2DConnectedToGate": true,
+        "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1279,
+          575
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SPUR-R7S14-RES-W-U08",
+        "buildingID": "RES-W-U08",
+        "category": "2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "sourceStage": "R7-SOLVE-11",
+        "targetRoad": "ROAD-QINGNIAN-W",
+        "planarLengthM": 41,
+        "roadProjectionXZ": [
+          -1320,
+          575
+        ],
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1279,
+            575
+          ],
+          [
+            -1320,
+            575
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-RES-W-U09-MAIN-CANDIDATE",
+        "buildingID": "RES-W-U09",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-05",
+        "preliminary2DConnectedToGate": true,
+        "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1459,
+          600
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SPUR-R7S14-RES-W-U09",
+        "buildingID": "RES-W-U09",
+        "category": "2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "sourceStage": "R7-SOLVE-11",
+        "targetRoad": "ROAD-CHUANGXIN",
+        "planarLengthM": 29,
+        "roadProjectionXZ": [
+          -1430,
+          600
+        ],
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1459,
+            600
+          ],
+          [
+            -1430,
+            600
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-RES-W-U10-MAIN-CANDIDATE",
+        "buildingID": "RES-W-U10",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-05",
+        "preliminary2DConnectedToGate": false,
+        "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1256,
+          625
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-RES-W-U11-MAIN-CANDIDATE",
+        "buildingID": "RES-W-U11",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-05",
+        "preliminary2DConnectedToGate": true,
+        "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1310,
+          639
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SPUR-R7S14-RES-W-U11",
+        "buildingID": "RES-W-U11",
+        "category": "2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "sourceStage": "R7-SOLVE-11",
+        "targetRoad": "ROAD-QINGNIAN-W",
+        "planarLengthM": 40.26,
+        "roadProjectionXZ": [
+          -1320,
+          600
+        ],
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1310,
+            639
+          ],
+          [
+            -1320,
+            600
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-RES-W-U12-MAIN-CANDIDATE",
+        "buildingID": "RES-W-U12",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-05",
+        "preliminary2DConnectedToGate": true,
+        "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1459,
+          700
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SPUR-R7S14-RES-W-U12",
+        "buildingID": "RES-W-U12",
+        "category": "2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "sourceStage": "R7-SOLVE-11",
+        "targetRoad": "ROAD-CHUANGXIN",
+        "planarLengthM": 29,
+        "roadProjectionXZ": [
+          -1430,
+          700
+        ],
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1459,
+            700
+          ],
+          [
+            -1430,
+            700
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-SAF-01-MAIN-CANDIDATE",
+        "buildingID": "SAF-01",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-03",
+        "preliminary2DConnectedToGate": true,
+        "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1108,
+          -65
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SPUR-R7S14-SAF-01",
+        "buildingID": "SAF-01",
+        "category": "2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "sourceStage": "R7-SOLVE-11",
+        "targetRoad": "ROAD-JIANGXIN",
+        "planarLengthM": 68,
+        "roadProjectionXZ": [
+          -1040,
+          -65
+        ],
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1108,
+            -65
+          ],
+          [
+            -1040,
+            -65
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-SAF-02-MAIN-CANDIDATE",
+        "buildingID": "SAF-02",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-03",
+        "preliminary2DConnectedToGate": false,
+        "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1145,
+          21
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-SOC-01-MAIN-CANDIDATE",
+        "buildingID": "SOC-01",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-04",
+        "preliminary2DConnectedToGate": false,
+        "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          637,
+          345
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-TRA-01-MAIN-CANDIDATE",
+        "buildingID": "TRA-01",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-03",
+        "preliminary2DConnectedToGate": false,
+        "status": "NO_VALIDATED_2D_TIE_IN_SOURCES",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -410,
+          385
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-TRA-02-MAIN-CANDIDATE",
+        "buildingID": "TRA-02",
+        "category": "ENTRANCE_CANDIDATE_UNFROZEN",
+        "sourceStatus": "R7-SOLVE-03",
+        "preliminary2DConnectedToGate": true,
+        "status": "GATEWAY_COMPONENT_PLUS_2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "physicalFireAccessApproved": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -410,
+          430
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SPUR-R7S14-TRA-02",
+        "buildingID": "TRA-02",
+        "category": "2D_TIE_ONLY_NOT_FIRE_APPROVED",
+        "sourceStage": "R7-SOLVE-11",
+        "targetRoad": "ROAD-GEZHI-W",
+        "planarLengthM": 70,
+        "roadProjectionXZ": [
+          -410,
+          500
+        ],
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -410,
+            430
+          ],
+          [
+            -410,
+            500
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-HSP-OUTPATIENT",
+        "parentBuildingID": "HSP-01",
+        "category": "AUTHORITATIVE_HOSPITAL_ENTRY",
+        "status": "SOURCE_AUTHORITY_KEEP",
+        "completeEmergencyGraphApproved": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1040,
+          -1051
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-HSP-EMERGENCY",
+        "parentBuildingID": "HSP-01",
+        "category": "AUTHORITATIVE_HOSPITAL_ENTRY",
+        "status": "SOURCE_AUTHORITY_KEEP",
+        "completeEmergencyGraphApproved": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -964,
+          -1010
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-HSP-INPATIENT",
+        "parentBuildingID": "HSP-01",
+        "category": "AUTHORITATIVE_HOSPITAL_ENTRY",
+        "status": "SOURCE_AUTHORITY_KEEP",
+        "completeEmergencyGraphApproved": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1116,
+          -1000
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-HSP-PARKING",
+        "parentBuildingID": "HSP-01",
+        "category": "AUTHORITATIVE_HOSPITAL_ENTRY",
+        "status": "SOURCE_AUTHORITY_KEEP",
+        "completeEmergencyGraphApproved": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1180,
+          -1060
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-HSP-SOCIAL",
+        "parentBuildingID": "HSP-01",
+        "category": "AUTHORITATIVE_HOSPITAL_ENTRY",
+        "status": "SOURCE_AUTHORITY_KEEP",
+        "completeEmergencyGraphApproved": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1040,
+          -1085
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ENT-HSP-EMERGENCY-CITY",
+        "parentBuildingID": "HSP-01",
+        "category": "AUTHORITATIVE_HOSPITAL_ENTRY",
+        "status": "SOURCE_AUTHORITY_KEEP",
+        "completeEmergencyGraphApproved": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -950,
+          -1090
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "WEST_GATE_GEOMETRY_ROOT",
+        "roadID": "ROAD-WEST-GATE",
+        "category": "GATE_GRAPH_SEED_ONLY",
+        "physicalGateOperatingApproval": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1548,
+          -80
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "EAST_GATE_GEOMETRY_ROOT",
+        "roadID": "ROAD-EAST-GATE",
+        "category": "GATE_GRAPH_SEED_ONLY",
+        "physicalGateOperatingApproval": false,
+        "runtimeFinal": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1555,
+          120
+        ]
+      }
+    }
+  ]
+}
