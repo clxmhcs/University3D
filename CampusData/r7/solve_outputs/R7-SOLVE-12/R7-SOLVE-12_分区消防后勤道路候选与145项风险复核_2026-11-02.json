@@ -1,0 +1,798 @@
+{
+  "schemaVersion": 1,
+  "solveId": "R7-SOLVE-12",
+  "version": "R7-REGIONAL-FIRE-LOGISTICS-ROADS-CANDIDATE-2026-11-02",
+  "baseSourcePatch": "PATCH-2026-09-14-R7",
+  "runtimeFinal": false,
+  "status": "CONDITIONAL_LOCAL_ROAD_GEOMETRY_PASS_GLOBAL_FIRE_BLOCKED",
+  "coordinates": "LOCAL_XZ_METERS",
+  "sourceStages": [
+    "R7-SOLVE-01",
+    "R7-SOLVE-02",
+    "R7-SOLVE-03",
+    "R7-SOLVE-04",
+    "R7-SOLVE-05",
+    "R7-SOLVE-06",
+    "R7-SOLVE-07",
+    "R7-SOLVE-08",
+    "R7-SOLVE-09",
+    "R7-SOLVE-10",
+    "R7-SOLVE-11"
+  ],
+  "sourceDetails": {
+    "sourceRecords": 195,
+    "obstacleEnvelopeCount": 235,
+    "knownWaterPolygonCount": 1,
+    "r6Usage": "R6_VALID_UNTIL_OVERRIDDEN only if not covered by current R7 solve",
+    "footprints": "rotated rectangular envelopes; not final architectural polygon"
+  },
+  "auditMethod": "Segment versus rotated building and sports footprints; half-design-width + 3m clearance; 5m campus boundary sampling; known Chenghu polygon; central ceremonial protection. Does not include all water shoreline polygons, terrain grades, road ROW width at junctions, or true vehicle turning.",
+  "baselineRiskCount": 145,
+  "baselineClasses": {
+    "NETWORK_EXTENSION_REQUIRED": 70,
+    "LONG_ACCESS_SPUR_REVIEW": 47,
+    "CORRIDOR_CONFLICT": 28,
+    "CLEARANCE_PRECHECK_ONLY": 50
+  },
+  "candidateCorridors": [
+    {
+      "id": "ROAD-R7-S12-HSP-CITY-SOCIAL",
+      "name": "HSP-CITY-SOCIAL",
+      "mode": "hospital_city_social",
+      "widthM": 7.5,
+      "centerlineXZ": [
+        [
+          -1040,
+          -1085
+        ],
+        [
+          -1040,
+          -1127
+        ]
+      ],
+      "zone": "hospital",
+      "designReason": "EXTERNAL_CITY_BOUNDARY_UNVERIFIED",
+      "checkClearanceM": 6.75,
+      "minKnownOtherFootprintClearanceM": 110,
+      "closestKnownFootprint": "HSP-03",
+      "existingFootprintConflicts": [],
+      "centralProtectedAxisCrossing": false,
+      "campusBoundaryContainsCenterline": false,
+      "crossesCityBoundaryAtHospitalInterface": true,
+      "status": "CONDITIONAL_CITY_INTERFACE",
+      "activeInOperationalNetwork": false,
+      "fullFireVehicleSweptPathApproved": false,
+      "sourceStatus": "R7_SOLVED_CANDIDATE_PENDING_ROAD_AND_TERRAIN_FREEZE",
+      "lengthM": 42,
+      "assumed3mExtraWidthClearance": true
+    },
+    {
+      "id": "ROAD-R7-S12-HSP-CITY-AMBULANCE",
+      "name": "HSP-CITY-AMBULANCE",
+      "mode": "hospital_city_ambulance",
+      "widthM": 8,
+      "centerlineXZ": [
+        [
+          -950,
+          -1090
+        ],
+        [
+          -950,
+          -1127
+        ]
+      ],
+      "zone": "hospital",
+      "designReason": "EXTERNAL_CITY_BOUNDARY_UNVERIFIED",
+      "checkClearanceM": 7,
+      "minKnownOtherFootprintClearanceM": 49.24,
+      "closestKnownFootprint": "HSP-01",
+      "existingFootprintConflicts": [],
+      "centralProtectedAxisCrossing": false,
+      "campusBoundaryContainsCenterline": false,
+      "crossesCityBoundaryAtHospitalInterface": true,
+      "status": "CONDITIONAL_CITY_INTERFACE",
+      "activeInOperationalNetwork": false,
+      "fullFireVehicleSweptPathApproved": false,
+      "sourceStatus": "R7_SOLVED_CANDIDATE_PENDING_ROAD_AND_TERRAIN_FREEZE",
+      "lengthM": 37,
+      "assumed3mExtraWidthClearance": true
+    },
+    {
+      "id": "ROAD-R7-S12-HSP-ONSITE-SOCIAL",
+      "name": "HSP-ONSITE-SOCIAL",
+      "mode": "hospital_social_site",
+      "widthM": 7,
+      "centerlineXZ": [
+        [
+          -1040,
+          -1085
+        ],
+        [
+          -1040,
+          -1051
+        ]
+      ],
+      "zone": "hospital",
+      "designReason": "HOSPITAL_SITE_BOUNDARY_UNVERIFIED",
+      "checkClearanceM": 6.5,
+      "minKnownOtherFootprintClearanceM": 76,
+      "closestKnownFootprint": "HSP-03",
+      "existingFootprintConflicts": [],
+      "centralProtectedAxisCrossing": false,
+      "campusBoundaryContainsCenterline": false,
+      "crossesCityBoundaryAtHospitalInterface": false,
+      "status": "REJECTED_GEOMETRY",
+      "activeInOperationalNetwork": false,
+      "fullFireVehicleSweptPathApproved": false,
+      "sourceStatus": "R7_SOLVED_CANDIDATE_PENDING_ROAD_AND_TERRAIN_FREEZE",
+      "lengthM": 34,
+      "assumed3mExtraWidthClearance": true
+    },
+    {
+      "id": "ROAD-R7-S12-HSP-ONSITE-AMBULANCE",
+      "name": "HSP-ONSITE-AMBULANCE",
+      "mode": "hospital_ambulance_site",
+      "widthM": 8,
+      "centerlineXZ": [
+        [
+          -950,
+          -1090
+        ],
+        [
+          -950,
+          -1010
+        ],
+        [
+          -964,
+          -1010
+        ]
+      ],
+      "zone": "hospital",
+      "designReason": "HOSPITAL_ENTRANCE_INTERFACE_UNVERIFIED",
+      "checkClearanceM": 7,
+      "minKnownOtherFootprintClearanceM": 46.1,
+      "closestKnownFootprint": "HSP-03",
+      "existingFootprintConflicts": [],
+      "centralProtectedAxisCrossing": false,
+      "campusBoundaryContainsCenterline": true,
+      "crossesCityBoundaryAtHospitalInterface": false,
+      "status": "CONDITIONAL_CORRIDOR_GEOMETRY_PASS",
+      "activeInOperationalNetwork": false,
+      "fullFireVehicleSweptPathApproved": false,
+      "sourceStatus": "R7_SOLVED_CANDIDATE_PENDING_ROAD_AND_TERRAIN_FREEZE",
+      "lengthM": 94,
+      "assumed3mExtraWidthClearance": true
+    },
+    {
+      "id": "ROAD-R7-S12-MED-NORTH-SOUTH-SERVICE",
+      "name": "MED-NORTH-SOUTH-SERVICE",
+      "mode": "fire_service",
+      "widthM": 8,
+      "centerlineXZ": [
+        [
+          -1330,
+          -770
+        ],
+        [
+          -1330,
+          -300
+        ]
+      ],
+      "zone": "medical",
+      "designReason": "NEW_REGIONAL_SERVICE_SPINE",
+      "checkClearanceM": 7,
+      "minKnownOtherFootprintClearanceM": 46.26,
+      "closestKnownFootprint": "MED-01",
+      "existingFootprintConflicts": [],
+      "centralProtectedAxisCrossing": false,
+      "campusBoundaryContainsCenterline": true,
+      "crossesCityBoundaryAtHospitalInterface": false,
+      "status": "CONDITIONAL_CORRIDOR_GEOMETRY_PASS",
+      "activeInOperationalNetwork": false,
+      "fullFireVehicleSweptPathApproved": false,
+      "sourceStatus": "R7_SOLVED_CANDIDATE_PENDING_ROAD_AND_TERRAIN_FREEZE",
+      "lengthM": 470,
+      "assumed3mExtraWidthClearance": true
+    },
+    {
+      "id": "ROAD-R7-S12-RDI-ACCESS-LINK",
+      "name": "RDI-ACCESS-LINK",
+      "mode": "fire_service",
+      "widthM": 8,
+      "centerlineXZ": [
+        [
+          -1430,
+          795
+        ],
+        [
+          -1280,
+          795
+        ],
+        [
+          -1280,
+          925
+        ]
+      ],
+      "zone": "research",
+      "designReason": "NEW_RESEARCH_CONNECTOR",
+      "checkClearanceM": 7,
+      "minKnownOtherFootprintClearanceM": 9,
+      "closestKnownFootprint": "RDI-02",
+      "existingFootprintConflicts": [],
+      "centralProtectedAxisCrossing": false,
+      "campusBoundaryContainsCenterline": true,
+      "crossesCityBoundaryAtHospitalInterface": false,
+      "status": "CONDITIONAL_CORRIDOR_GEOMETRY_PASS",
+      "activeInOperationalNetwork": false,
+      "fullFireVehicleSweptPathApproved": false,
+      "sourceStatus": "R7_SOLVED_CANDIDATE_PENDING_ROAD_AND_TERRAIN_FREEZE",
+      "lengthM": 280,
+      "assumed3mExtraWidthClearance": true
+    },
+    {
+      "id": "ROAD-R7-S12-RDI-NORTH-SERVICE",
+      "name": "RDI-NORTH-SERVICE",
+      "mode": "fire_service",
+      "widthM": 8,
+      "centerlineXZ": [
+        [
+          -1280,
+          925
+        ],
+        [
+          -760,
+          925
+        ]
+      ],
+      "zone": "research",
+      "designReason": "NEW_RESEARCH_SPINE",
+      "checkClearanceM": 7,
+      "minKnownOtherFootprintClearanceM": 12,
+      "closestKnownFootprint": "RDI-10",
+      "existingFootprintConflicts": [],
+      "centralProtectedAxisCrossing": false,
+      "campusBoundaryContainsCenterline": true,
+      "crossesCityBoundaryAtHospitalInterface": false,
+      "status": "CONDITIONAL_CORRIDOR_GEOMETRY_PASS",
+      "activeInOperationalNetwork": false,
+      "fullFireVehicleSweptPathApproved": false,
+      "sourceStatus": "R7_SOLVED_CANDIDATE_PENDING_ROAD_AND_TERRAIN_FREEZE",
+      "lengthM": 520,
+      "assumed3mExtraWidthClearance": true
+    },
+    {
+      "id": "ROAD-R7-S12-ART-BOYA-BACKSTAGE",
+      "name": "ART-BOYA-BACKSTAGE",
+      "mode": "backstage_service",
+      "widthM": 8,
+      "centerlineXZ": [
+        [
+          830,
+          690
+        ],
+        [
+          1325,
+          690
+        ],
+        [
+          1325,
+          740
+        ]
+      ],
+      "zone": "arts",
+      "designReason": "NEW_THEATRE_SERVICE_SPINE",
+      "checkClearanceM": 7,
+      "minKnownOtherFootprintClearanceM": 19,
+      "closestKnownFootprint": "ART-03",
+      "existingFootprintConflicts": [],
+      "centralProtectedAxisCrossing": false,
+      "campusBoundaryContainsCenterline": true,
+      "crossesCityBoundaryAtHospitalInterface": false,
+      "status": "CONDITIONAL_CORRIDOR_GEOMETRY_PASS",
+      "activeInOperationalNetwork": false,
+      "fullFireVehicleSweptPathApproved": false,
+      "sourceStatus": "R7_SOLVED_CANDIDATE_PENDING_ROAD_AND_TERRAIN_FREEZE",
+      "lengthM": 545,
+      "assumed3mExtraWidthClearance": true
+    },
+    {
+      "id": "ROAD-R7-S12-ART-EAST-CITY-EDGE",
+      "name": "ART-EAST-CITY-EDGE",
+      "mode": "theatre_public_city",
+      "widthM": 7.5,
+      "centerlineXZ": [
+        [
+          1436,
+          760
+        ],
+        [
+          1460,
+          760
+        ]
+      ],
+      "zone": "arts",
+      "designReason": "EXTERNAL_CITY_CONNECTION_UNVERIFIED",
+      "checkClearanceM": 6.75,
+      "minKnownOtherFootprintClearanceM": 197,
+      "closestKnownFootprint": "ART-04",
+      "existingFootprintConflicts": [],
+      "centralProtectedAxisCrossing": false,
+      "campusBoundaryContainsCenterline": true,
+      "crossesCityBoundaryAtHospitalInterface": false,
+      "status": "CONDITIONAL_CORRIDOR_GEOMETRY_PASS",
+      "activeInOperationalNetwork": false,
+      "fullFireVehicleSweptPathApproved": false,
+      "sourceStatus": "R7_SOLVED_CANDIDATE_PENDING_ROAD_AND_TERRAIN_FREEZE",
+      "lengthM": 24,
+      "assumed3mExtraWidthClearance": true
+    },
+    {
+      "id": "ROAD-R7-S12-OPS-SOUTH-SERVICE",
+      "name": "OPS-SOUTH-SERVICE",
+      "mode": "logistics_fire",
+      "widthM": 8,
+      "centerlineXZ": [
+        [
+          830,
+          -960
+        ],
+        [
+          1140,
+          -960
+        ],
+        [
+          1140,
+          -725
+        ]
+      ],
+      "zone": "ops",
+      "designReason": "NEW_LOGISTICS_SPINE",
+      "checkClearanceM": 7,
+      "minKnownOtherFootprintClearanceM": 21,
+      "closestKnownFootprint": "OPS-02",
+      "existingFootprintConflicts": [],
+      "centralProtectedAxisCrossing": false,
+      "campusBoundaryContainsCenterline": true,
+      "crossesCityBoundaryAtHospitalInterface": false,
+      "status": "CONDITIONAL_CORRIDOR_GEOMETRY_PASS",
+      "activeInOperationalNetwork": false,
+      "fullFireVehicleSweptPathApproved": false,
+      "sourceStatus": "R7_SOLVED_CANDIDATE_PENDING_ROAD_AND_TERRAIN_FREEZE",
+      "lengthM": 545,
+      "assumed3mExtraWidthClearance": true
+    },
+    {
+      "id": "ROAD-R7-S12-OPS-NORTH-SERVICE",
+      "name": "OPS-NORTH-SERVICE",
+      "mode": "logistics_fire",
+      "widthM": 8,
+      "centerlineXZ": [
+        [
+          830,
+          -730
+        ],
+        [
+          1140,
+          -730
+        ]
+      ],
+      "zone": "ops",
+      "designReason": "NEW_LOGISTICS_FEEDER",
+      "checkClearanceM": 7,
+      "minKnownOtherFootprintClearanceM": 28,
+      "closestKnownFootprint": "ATH-15",
+      "existingFootprintConflicts": [],
+      "centralProtectedAxisCrossing": false,
+      "campusBoundaryContainsCenterline": true,
+      "crossesCityBoundaryAtHospitalInterface": false,
+      "status": "CONDITIONAL_CORRIDOR_GEOMETRY_PASS",
+      "activeInOperationalNetwork": false,
+      "fullFireVehicleSweptPathApproved": false,
+      "sourceStatus": "R7_SOLVED_CANDIDATE_PENDING_ROAD_AND_TERRAIN_FREEZE",
+      "lengthM": 310,
+      "assumed3mExtraWidthClearance": true
+    },
+    {
+      "id": "ROAD-R7-S12-OPS-EAST-DIRECT-REJECTED",
+      "name": "OPS-EAST-DIRECT-REJECTED",
+      "mode": "logistics_fire",
+      "widthM": 8,
+      "centerlineXZ": [
+        [
+          1140,
+          -725
+        ],
+        [
+          1300,
+          -725
+        ]
+      ],
+      "zone": "ops",
+      "designReason": "REJECT_DIRECT_INTERSECTS_BUILDING",
+      "checkClearanceM": 7,
+      "minKnownOtherFootprintClearanceM": 0,
+      "closestKnownFootprint": "OPS-06",
+      "existingFootprintConflicts": [
+        {
+          "id": "OPS-06",
+          "kind": "building",
+          "clearanceM": 0,
+          "segment": 1
+        }
+      ],
+      "centralProtectedAxisCrossing": false,
+      "campusBoundaryContainsCenterline": true,
+      "crossesCityBoundaryAtHospitalInterface": false,
+      "status": "REJECTED_GEOMETRY",
+      "activeInOperationalNetwork": false,
+      "fullFireVehicleSweptPathApproved": false,
+      "sourceStatus": "R7_SOLVED_CANDIDATE_PENDING_ROAD_AND_TERRAIN_FREEZE",
+      "lengthM": 160,
+      "assumed3mExtraWidthClearance": true
+    },
+    {
+      "id": "ROAD-R7-S12-W-YUAN-DIRECT-REJECTED",
+      "name": "W-YUAN-DIRECT-REJECTED",
+      "mode": "dorm_service",
+      "widthM": 8,
+      "centerlineXZ": [
+        [
+          -1320,
+          300
+        ],
+        [
+          -1260,
+          300
+        ],
+        [
+          -1260,
+          600
+        ]
+      ],
+      "zone": "west_yuan",
+      "designReason": "REJECT_DIRECT_INTERSECTS_DORMS",
+      "checkClearanceM": 7,
+      "minKnownOtherFootprintClearanceM": 0,
+      "closestKnownFootprint": "RES-W-U02",
+      "existingFootprintConflicts": [
+        {
+          "id": "RES-W-U02",
+          "kind": "building",
+          "clearanceM": 0,
+          "segment": 1
+        },
+        {
+          "id": "RES-W-U03",
+          "kind": "building",
+          "clearanceM": 1,
+          "segment": 2
+        },
+        {
+          "id": "RES-W-U06",
+          "kind": "building",
+          "clearanceM": 1,
+          "segment": 2
+        },
+        {
+          "id": "RES-W-U10",
+          "kind": "building",
+          "clearanceM": 6,
+          "segment": 2
+        }
+      ],
+      "centralProtectedAxisCrossing": false,
+      "campusBoundaryContainsCenterline": true,
+      "crossesCityBoundaryAtHospitalInterface": false,
+      "status": "REJECTED_GEOMETRY",
+      "activeInOperationalNetwork": false,
+      "fullFireVehicleSweptPathApproved": false,
+      "sourceStatus": "R7_SOLVED_CANDIDATE_PENDING_ROAD_AND_TERRAIN_FREEZE",
+      "lengthM": 360,
+      "assumed3mExtraWidthClearance": true
+    },
+    {
+      "id": "ROAD-R7-S12-E-YUAN-DIRECT-REJECTED",
+      "name": "E-YUAN-DIRECT-REJECTED",
+      "mode": "dorm_service",
+      "widthM": 8,
+      "centerlineXZ": [
+        [
+          1400,
+          100
+        ],
+        [
+          1150,
+          100
+        ]
+      ],
+      "zone": "east_yuan",
+      "designReason": "REJECT_DIRECT_INTERSECTS_DORMS",
+      "checkClearanceM": 7,
+      "minKnownOtherFootprintClearanceM": 0,
+      "closestKnownFootprint": "RES-E-U06",
+      "existingFootprintConflicts": [
+        {
+          "id": "RES-E-U06",
+          "kind": "building",
+          "clearanceM": 0,
+          "segment": 1
+        },
+        {
+          "id": "RES-E-U07",
+          "kind": "building",
+          "clearanceM": 1,
+          "segment": 1
+        }
+      ],
+      "centralProtectedAxisCrossing": false,
+      "campusBoundaryContainsCenterline": true,
+      "crossesCityBoundaryAtHospitalInterface": false,
+      "status": "REJECTED_GEOMETRY",
+      "activeInOperationalNetwork": false,
+      "fullFireVehicleSweptPathApproved": false,
+      "sourceStatus": "R7_SOLVED_CANDIDATE_PENDING_ROAD_AND_TERRAIN_FREEZE",
+      "lengthM": 250,
+      "assumed3mExtraWidthClearance": true
+    }
+  ],
+  "provisionallyClearCount": 8,
+  "externallyConditionalCount": 2,
+  "rejectedCount": 4,
+  "possibleRiskShorteningCount": 14,
+  "possibleRiskShortening": [
+    {
+      "buildingID": "ART-03",
+      "previousClass": "NETWORK_EXTENSION_REQUIRED",
+      "previousLengthM": 401.8,
+      "newCandidate": {
+        "corridorID": "ROAD-R7-S12-ART-EAST-CITY-EDGE",
+        "projectionXZ": [
+          1438,
+          760
+        ],
+        "lengthM": 0
+      },
+      "reason": "DIRECT_CONNECTOR_6M_PLANAR_CLEARANCE_PROBE_ONLY_NOT_ENGINEERING_PASS"
+    },
+    {
+      "buildingID": "ART-04",
+      "previousClass": "NETWORK_EXTENSION_REQUIRED",
+      "previousLengthM": 400,
+      "newCandidate": {
+        "corridorID": "ROAD-R7-S12-ART-BOYA-BACKSTAGE",
+        "projectionXZ": [
+          1241,
+          690
+        ],
+        "lengthM": 70
+      },
+      "reason": "DIRECT_CONNECTOR_6M_PLANAR_CLEARANCE_PROBE_ONLY_NOT_ENGINEERING_PASS"
+    },
+    {
+      "buildingID": "OPS-02",
+      "previousClass": "NETWORK_EXTENSION_REQUIRED",
+      "previousLengthM": 371,
+      "newCandidate": {
+        "corridorID": "ROAD-R7-S12-OPS-SOUTH-SERVICE",
+        "projectionXZ": [
+          1140,
+          -850
+        ],
+        "lengthM": 61
+      },
+      "reason": "DIRECT_CONNECTOR_6M_PLANAR_CLEARANCE_PROBE_ONLY_NOT_ENGINEERING_PASS"
+    },
+    {
+      "buildingID": "RDI-02",
+      "previousClass": "LONG_ACCESS_SPUR_REVIEW",
+      "previousLengthM": 138.29,
+      "newCandidate": {
+        "corridorID": "ROAD-R7-S12-RDI-ACCESS-LINK",
+        "projectionXZ": [
+          -1280,
+          850
+        ],
+        "lengthM": 15
+      },
+      "reason": "DIRECT_CONNECTOR_6M_PLANAR_CLEARANCE_PROBE_ONLY_NOT_ENGINEERING_PASS"
+    },
+    {
+      "buildingID": "RDI-03",
+      "previousClass": "CORRIDOR_CONFLICT",
+      "previousLengthM": 296.52,
+      "newCandidate": {
+        "corridorID": "ROAD-R7-S12-RDI-NORTH-SERVICE",
+        "projectionXZ": [
+          -1135,
+          925
+        ],
+        "lengthM": 75
+      },
+      "reason": "DIRECT_CONNECTOR_6M_PLANAR_CLEARANCE_PROBE_ONLY_NOT_ENGINEERING_PASS"
+    },
+    {
+      "buildingID": "RDI-10",
+      "previousClass": "CORRIDOR_CONFLICT",
+      "previousLengthM": 275.18,
+      "newCandidate": {
+        "corridorID": "ROAD-R7-S12-RDI-NORTH-SERVICE",
+        "projectionXZ": [
+          -1180,
+          925
+        ],
+        "lengthM": 10
+      },
+      "reason": "DIRECT_CONNECTOR_6M_PLANAR_CLEARANCE_PROBE_ONLY_NOT_ENGINEERING_PASS"
+    },
+    {
+      "buildingID": "RDI-11",
+      "previousClass": "NETWORK_EXTENSION_REQUIRED",
+      "previousLengthM": 475,
+      "newCandidate": {
+        "corridorID": "ROAD-R7-S12-RDI-NORTH-SERVICE",
+        "projectionXZ": [
+          -1030,
+          925
+        ],
+        "lengthM": 30
+      },
+      "reason": "DIRECT_CONNECTOR_6M_PLANAR_CLEARANCE_PROBE_ONLY_NOT_ENGINEERING_PASS"
+    },
+    {
+      "buildingID": "RDI-12",
+      "previousClass": "CORRIDOR_CONFLICT",
+      "previousLengthM": 299.67,
+      "newCandidate": {
+        "corridorID": "ROAD-R7-S12-RDI-NORTH-SERVICE",
+        "projectionXZ": [
+          -880,
+          925
+        ],
+        "lengthM": 35
+      },
+      "reason": "DIRECT_CONNECTOR_6M_PLANAR_CLEARANCE_PROBE_ONLY_NOT_ENGINEERING_PASS"
+    },
+    {
+      "buildingID": "RDI-13",
+      "previousClass": "NETWORK_EXTENSION_REQUIRED",
+      "previousLengthM": 311.75,
+      "newCandidate": {
+        "corridorID": "ROAD-R7-S12-RDI-NORTH-SERVICE",
+        "projectionXZ": [
+          -783,
+          925
+        ],
+        "lengthM": 75
+      },
+      "reason": "DIRECT_CONNECTOR_6M_PLANAR_CLEARANCE_PROBE_ONLY_NOT_ENGINEERING_PASS"
+    },
+    {
+      "buildingID": "RES-N-U01",
+      "previousClass": "NETWORK_EXTENSION_REQUIRED",
+      "previousLengthM": 431,
+      "newCandidate": {
+        "corridorID": "ROAD-R7-S12-RDI-NORTH-SERVICE",
+        "projectionXZ": [
+          -930,
+          925
+        ],
+        "lengthM": 14
+      },
+      "reason": "DIRECT_CONNECTOR_6M_PLANAR_CLEARANCE_PROBE_ONLY_NOT_ENGINEERING_PASS"
+    },
+    {
+      "buildingID": "RES-N-U02",
+      "previousClass": "CORRIDOR_CONFLICT",
+      "previousLengthM": 235.03,
+      "newCandidate": {
+        "corridorID": "ROAD-R7-S12-RDI-NORTH-SERVICE",
+        "projectionXZ": [
+          -830,
+          925
+        ],
+        "lengthM": 14
+      },
+      "reason": "DIRECT_CONNECTOR_6M_PLANAR_CLEARANCE_PROBE_ONLY_NOT_ENGINEERING_PASS"
+    },
+    {
+      "buildingID": "RES-N-U03",
+      "previousClass": "CORRIDOR_CONFLICT",
+      "previousLengthM": 341.66,
+      "newCandidate": {
+        "corridorID": "ROAD-R7-S12-RDI-NORTH-SERVICE",
+        "projectionXZ": [
+          -950,
+          925
+        ],
+        "lengthM": 42
+      },
+      "reason": "DIRECT_CONNECTOR_6M_PLANAR_CLEARANCE_PROBE_ONLY_NOT_ENGINEERING_PASS"
+    },
+    {
+      "buildingID": "RES-N-U04",
+      "previousClass": "CORRIDOR_CONFLICT",
+      "previousLengthM": 169,
+      "newCandidate": {
+        "corridorID": "ROAD-R7-S12-RDI-NORTH-SERVICE",
+        "projectionXZ": [
+          -760,
+          925
+        ],
+        "lengthM": 71.18
+      },
+      "reason": "DIRECT_CONNECTOR_6M_PLANAR_CLEARANCE_PROBE_ONLY_NOT_ENGINEERING_PASS"
+    },
+    {
+      "buildingID": "RES-W-G03",
+      "previousClass": "LONG_ACCESS_SPUR_REVIEW",
+      "previousLengthM": 100,
+      "newCandidate": {
+        "corridorID": "ROAD-R7-S12-RDI-ACCESS-LINK",
+        "projectionXZ": [
+          -1330,
+          795
+        ],
+        "lengthM": 56
+      },
+      "reason": "DIRECT_CONNECTOR_6M_PLANAR_CLEARANCE_PROBE_ONLY_NOT_ENGINEERING_PASS"
+    }
+  ],
+  "possibleRiskShorteningByCorridor": {
+    "ROAD-R7-S12-ART-EAST-CITY-EDGE": 1,
+    "ROAD-R7-S12-ART-BOYA-BACKSTAGE": 1,
+    "ROAD-R7-S12-OPS-SOUTH-SERVICE": 1,
+    "ROAD-R7-S12-RDI-ACCESS-LINK": 2,
+    "ROAD-R7-S12-RDI-NORTH-SERVICE": 9
+  },
+  "riskCountAfterEngineeringApproval": null,
+  "baseline145StillOpen": true,
+  "authoritativeHospitalCityInterfaces": [
+    {
+      "edgeId": "HSP-CITY-SOCIAL",
+      "authoritativeInterface": "ENT-HSP-SOCIAL",
+      "outerAtXZ": [
+        -1040,
+        -1127
+      ],
+      "innerAtXZ": [
+        -1040,
+        -1085
+      ],
+      "cityRoad": "大学路",
+      "source": "R7_HOSPITAL_ADDENDUM",
+      "cityZ": -1145,
+      "roadNorthEdgeZ": -1127,
+      "independentFromEmergency": true,
+      "municipalLandBoundaryPending": true
+    },
+    {
+      "edgeId": "HSP-CITY-AMBULANCE",
+      "authoritativeInterface": "ENT-HSP-EMERGENCY-CITY",
+      "outerAtXZ": [
+        -950,
+        -1127
+      ],
+      "innerAtXZ": [
+        -950,
+        -1090
+      ],
+      "cityRoad": "大学路",
+      "source": "R7_HOSPITAL_ADDENDUM",
+      "cityZ": -1145,
+      "roadNorthEdgeZ": -1127,
+      "independentFromSocial": true,
+      "municipalLandBoundaryPending": true
+    }
+  ],
+  "serviceEntranceUnlocated": 26,
+  "unresolved": [
+    "Hospital two city interfaces intersect boundary ownership and must be audited against municipal street access; hospital social and ambulance graphs remain independently controlled.",
+    "Every tentative regional corridor is a centerline reservation, not a frozen road; lane ROW and city/campus junction turns are not approved.",
+    "All 145 baseline flagged entrances remain formally open pending review even when this stage offers a shorter geometrically possible tie-in.",
+    "Central CEN-01..18 cannot be declared accessible solely from regional roads; central ceremonial core and Chenghu require dedicated approved emergency service access.",
+    "East/West Yuan direct grids rejected where crossing residences; redesign perimeter service with pedestrian-first fire overrides rather than entering green hearts.",
+    "Unlocated service doors for dining, logistics and theatre remain unlocated; do not invent service Entrance coordinates.",
+    "Full Terrain/water/stream, traffic graph, emergency hierarchy, turnbacks, signal, hydrant and 18 global audits remain pending."
+  ],
+  "nextStage": "R7-SOLVE-13 dedicated central ceremonial core / 4Yuan micro-fire access with actual protected turn-around and entrances"
+}
