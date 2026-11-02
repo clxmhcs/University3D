@@ -1,0 +1,75 @@
+江城大学｜R7-SOLVE-13 中央礼仪核心与四苑消防/后勤接入道路专项求解
+版本：R7-CENTRAL-FOUR-YUAN-FIRE-ACCESS-CANDIDATE-2026-11-02
+最高优先级：PATCH-2026-09-14-R7
+状态：PARTIAL_2D_CORRIDORS_WITH_UNRESOLVED_ENTRANCE_GRAPH
+Runtime Final：NO
+
+一、读取范围与硬规则
+已读取R7补丁、中央SOLVE-01、学院SOLVE-03/04、四苑SOLVE-05、体育SOLVE-06、道路SOLVE-07，以及SOLVE-11和SOLVE-12的实际GitHub归档。R7-SOLVE-02/08/09/10的约束经SOLVE-07和后续审核引用，尚未在此合并为最终Runtime道路。
+本轮保护：中央礼仪轴求真大道南门→明德会堂→博雅图书馆→博雅草坪→澄湖；四苑共4处绿心（北苑为双翼）；56栋住宿数量及类型不变；普通机动车不得把礼仪区/四苑当作穿行捷径。
+消防或服务道路有效净通行宽度不得小于6m；本轮拟增道路用8m二维候选控制宽度进行清障计算，但不能据此声称实际净宽已达到消防验收标准。
+
+二、候选总体结果
+14条方案：10条已审二维环境下暂无硬碰撞；1条通过最基本碰撞检查但建筑包络净距较小，需优先微调；2条明确建筑碰撞否决；1条与已选道路重复、废止。
+进入下一阶段候选共11条。11条都有至少一个现有R7-SOLVE-07道路中心线锚点；这仅表示平面中心线接触，不代表可行驶路口、消防车转弯、桥梁或网络通行已通过。
+已纳入审计的235个建筑/体育控制足迹，四苑绿心Polygon、澄湖控制Polygon、4个中央轴/草坪保护区；超出上述范围的真实岸线、溪流、台地高程、场地工程路权和墙体几何未验收。
+
+三、14条道路具体结果
+ROAD-R7-S13-CEN-W-EDGE｜central｜8m宽、671m中心线｜CANDIDATE_MARGINAL_BUILDING_CLEARANCE｜近邻CSE-02中心线→控制包络净距≈8m｜既有道路衔接：ROAD-BOYA-RING-SW-H、ROAD-BOYA-RING-SW-V｜[[-600,-430],[-621,-430],[-621,220]]
+ROAD-R7-S13-CEN-E-EDGE｜central｜8m宽、920m中心线｜CANDIDATE_2D_CLEARANCE_ONLY｜近邻BUS-01中心线→控制包络净距≈32m｜既有道路衔接：ROAD-BOYA-RING-E｜[[830,-430],[560,-430],[560,220]]
+ROAD-R7-S13-CEN-W-SOUTH｜central｜8m宽、240m中心线｜REJECTED_2D_COLLISION｜近邻OPS-09中心线→控制包络净距≈0m｜既有道路衔接：ROAD-BOYA-RING-SW-V｜[[-600,-650],[-360,-650]]｜排除依据：OPS-09
+ROAD-R7-S13-CEN-E-SOUTH｜central｜8m宽、270m中心线｜REJECTED_2D_COLLISION｜近邻LIFE-C-04中心线→控制包络净距≈0m｜既有道路衔接：ROAD-BOYA-RING-E｜[[830,-650],[560,-650]]｜排除依据：LIFE-C-04
+ROAD-R7-S13-W-SOUTHWEST｜west｜8m宽、395m中心线｜CANDIDATE_2D_CLEARANCE_ONLY｜近邻LIFE-W-01中心线→控制包络净距≈12m｜既有道路衔接：ROAD-QINGNIAN-W｜[[-1320,180],[-1515,180],[-1515,380]]
+ROAD-R7-S13-W-EAST-INNER｜west｜8m宽、270m中心线｜CANDIDATE_2D_CLEARANCE_ONLY｜近邻RES-W-U03中心线→控制包络净距≈11m｜既有道路衔接：ROAD-QINGNIAN-W｜[[-1320,180],[-1230,180],[-1230,360]]
+ROAD-R7-S13-W-GREEN-SOUTH｜west｜8m宽、200m中心线｜CANDIDATE_2D_CLEARANCE_ONLY｜近邻RES-W-U04中心线→控制包络净距≈19m｜既有道路衔接：ROAD-QINGNIAN-W｜[[-1515,380],[-1515,385],[-1320,385]]
+ROAD-R7-S13-E-SOUTH｜east｜8m宽、570m中心线｜CANDIDATE_2D_CLEARANCE_ONLY｜近邻LIFE-E-01中心线→控制包络净距≈27m｜既有道路衔接：ROAD-BOYA-RING-E、ROAD-QINGNIAN-E｜[[830,-175],[1400,-175]]
+ROAD-R7-S13-N-EAST｜north｜8m宽、520m中心线｜CANDIDATE_2D_CLEARANCE_ONLY｜近邻RES-N-G02中心线→控制包络净距≈31m｜既有道路衔接：ROAD-BOYA-RING-E、ROAD-BOYA-RING-N｜[[830,690],[1000,690],[1000,1040]]
+ROAD-R7-S13-N-WEST｜north｜8m宽、250m中心线｜CANDIDATE_2D_CLEARANCE_ONLY｜近邻RDI-04中心线→控制包络净距≈25m｜既有道路衔接：ROAD-BOYA-RING-NW-H、ROAD-BOYA-RING-W｜[[-900,600],[-970,600],[-970,780]]
+ROAD-R7-S13-N-WEST-INNER｜north｜8m宽、180m中心线｜CANDIDATE_2D_CLEARANCE_ONLY｜近邻ARC-02中心线→控制包络净距≈45m｜既有道路衔接：ROAD-QINGNIAN-NW｜[[-520,700],[-560,700],[-560,840]]
+ROAD-R7-S13-S-WEST｜south｜8m宽、200m中心线｜CANDIDATE_2D_CLEARANCE_ONLY｜近邻CEN-16中心线→控制包络净距≈17m｜既有道路衔接：ROAD-QINGNIAN-S｜[[260,-900],[255,-900],[255,-705]]
+ROAD-R7-S13-S-EAST｜south｜8m宽、175m中心线｜CANDIDATE_2D_CLEARANCE_ONLY｜近邻RES-S-U09中心线→控制包络净距≈16m｜既有道路衔接：ROAD-QINGNIAN-S｜[[800,-900],[815,-900],[815,-740]]
+ROAD-R7-S13-W-OUTER-DUPLICATE｜west｜8m宽、190m中心线｜RETIRED_REDUNDANT_PARALLEL_ROUTE｜近邻LIFE-W-01中心线→控制包络净距≈9m｜既有道路衔接：需另行派生｜[[-1510,180],[-1510,370]]
+
+四、中央核心专项
+中央西侧：ROAD-R7-S13-CEN-W-EDGE，控制点(-600,-430)→(-621,-430)→(-621,220)，道路候选8m，最小已审建筑控制包络净距8m（计算机/计算中心组团附近）。属于临界空间，不能在冻结前直接生成永久道路；必须单独核对CSE-02/CSE-03的真实墙体、路缘和消防登高面。
+中央东侧：ROAD-R7-S13-CEN-E-EDGE，控制点(830,-430)→(560,-430)→(560,220)，候选8m，在已审控制足迹下最小净距32m；进入后续路口及地形审计。
+直穿南西和南东两条候选被OPS-09、LIFE-C-04建筑占地否决。
+CEN-01图书馆与CEN-03明德会堂必须另有受控消防接入及登高面，本轮仍未形成验收过的末端到达，中央18栋不得标记为“已通过消防”。
+
+五、四苑专项
+西苑：西南外围及青年路东侧、绿心南缘三条候选，四苑绿心不允许普通机动车穿行；西苑重复平行路线退役。
+北苑：东翼、西翼外围及西翼内侧三条候选，保护北门体育和北苑双翼绿心，保持常态生活交通弱机动车化。
+东苑：南侧候选从博雅环路东段(830,-175)接青年路东段(1400,-175)，不穿越东苑景观池所在绿心；景观池正式岸线尚待GIS形状验收。
+南苑：东西外围两条候选分别接入青年路南段，绕开南苑生活绿心及宿舍组团；西缘路线临近CEN-16旧/候选建筑，虽未撞占地，仍需核对退距和道路法定用途。
+全部道路设置emergencyOnly=true / ordinaryMotorTraffic=false；维护车辆的低峰授权必须在后续交通规则单独实现。
+
+六、SOLVE-11原始消防风险追踪
+原195条普通入口与对应6m直线消防接入候选中，短支路二维预筛50条，待解决145条。
+本阶段所涉中央18栋、56栋住宿与四苑8个食堂/超市中，有58条在原SOLVE-11标记为风险。
+在8m片区路候选附近对这58条风险进行直线接近、路长改善、建筑/体育足迹、绿心、澄湖和礼仪轴二维预筛，发现12项短路有潜在距离缩短：
+CEN-11｜381m→111m｜候选ROAD-R7-S13-CEN-E-EDGE
+CEN-12｜381m→111m｜候选ROAD-R7-S13-CEN-E-EDGE
+CEN-14｜355m→85m｜候选ROAD-R7-S13-CEN-E-EDGE
+LIFE-E-01｜200m→95m｜候选ROAD-R7-S13-E-SOUTH
+LIFE-W-01｜203.04m→70m｜候选ROAD-R7-S13-W-SOUTHWEST
+RES-N-G02｜560m→51m｜候选ROAD-R7-S13-N-EAST
+RES-N-U08｜231.82m→100m｜候选ROAD-R7-S13-N-EAST
+RES-N-U09｜332.15m→81m｜候选ROAD-R7-S13-N-EAST
+RES-S-I03｜80m→65.49m｜候选ROAD-R7-S13-S-EAST
+RES-S-U10｜341.35m→66m｜候选ROAD-R7-S13-S-WEST
+RES-W-U03｜200m→31m｜候选ROAD-R7-S13-W-EAST-INNER
+RES-W-U04｜159m→36m｜候选ROAD-R7-S13-W-SOUTHWEST
+特别注意：这12处的入口点与消防短支路均仍是候选，真实建筑门点、高程、坡度、消防车转弯、道路桥位、6m净空尚未通过。它们不是12项已关闭风险；原145项保持全部OPEN，不能自动从审计问题数中扣除12。
+
+七、本轮正式限制
+- 所有候选仅在R7-SOLVE-13独立文件中保存，不覆盖SOLVE-02/05/07/11/12，也不写入Runtime CampusData或Unity场景永久坐标。
+- 排除/退役道路也保存，用于记录废止原因；导入器必须严格过滤status。
+- 既有道路几何仍是SOLVE-07条件性候选，中心线衔接不等于消防图拓扑和正式转弯半径可通。
+- 不允许将6m有效通行宽度理解为仅画6m线：仍需验收最小净空、消防登高面、消防车转弯半径、入口消防水源、紧急开门、标识、绿化间距、坡度和高程。
+- 四苑景观池和水系只有有限来源控制几何，本轮未替代正式岸线及道路跨溪桥梁审计。
+- 中央正式礼仪活动期间的消防车优先路权、人流疏散、C/D校车穿越、北门赛事交通均有未完成项。
+- 18项最终全校跨系统审计尚未通过。
+
+八、下一步
+R7-SOLVE-14：将中央与四苑候选道路、R7-SOLVE-12已审片区走廊与现有博雅环路/青年路组合成消防路网候选，核实12处可缩短接入与消防车通行缺口；优先验证中央CEN-01、CEN-03和四苑食堂/宿舍，再分批处理全部145项原始消防缺口。
+最终结果仍须经过建筑真实外轮廓、道路宽度、真实水岸/台地、消防回车、信号/路权和正式入口审计才能考虑Runtime Final。
