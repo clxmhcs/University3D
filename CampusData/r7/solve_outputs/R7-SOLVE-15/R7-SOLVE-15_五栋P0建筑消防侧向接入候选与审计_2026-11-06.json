@@ -1,0 +1,334 @@
+{
+  "solveId": "R7-SOLVE-15",
+  "version": "R7-FIRE-P0-GEOMETRY-PRECHECK-2026-11-06",
+  "authority": "PATCH-2026-09-14-R7",
+  "status": "2D_PROVISIONAL_FIRE_STAGING_NOT_CERTIFIED",
+  "runtimeFinal": false,
+  "sources": [
+    "R7-SOLVE-01",
+    "R7-SOLVE-03",
+    "R7-SOLVE-04",
+    "R7-SOLVE-05",
+    "R7-SOLVE-06",
+    "R7-SOLVE-07",
+    "R7-SOLVE-11",
+    "R7-SOLVE-12",
+    "R7-SOLVE-13",
+    "R7-SOLVE-14",
+    "R7校园用地16点边界",
+    "R7景观与主溪流水系"
+  ],
+  "method": "235 occupied footprint control envelopes (R6 with R7 overrides, excluding HSP-02 second-level tower and ATH-02 open plaza); original polyline against rotated rectangular controls and SOLVE-13 known protected polygons. Nominal 8m road width and 3m additional lateral planning setback. Not a rounded-corner or fire vehicle sweep audit.",
+  "originalBaseline": {
+    "roadRecords": 49,
+    "graphNodes": 102,
+    "graphEdges": 110,
+    "components": 2,
+    "ordinaryEntrances": 195,
+    "entrancesWithCandidateGateTopology": 75,
+    "entrancesWithoutValidated2DTie": 120,
+    "originalFireRisksStillOpen": 145,
+    "hospitalAuthoritativeEntrances": 6,
+    "unlocatedServiceEntrances": 26
+  },
+  "results": [
+    {
+      "id": "FIRE-R7S15-CEN01-W",
+      "buildingID": "CEN-01",
+      "anchorRoadID": "ROAD-R7-S13-CEN-W-EDGE",
+      "centerlineXZ": [
+        [
+          -621,
+          -200
+        ],
+        [
+          -420,
+          -200
+        ],
+        [
+          -420,
+          -245
+        ],
+        [
+          -110,
+          -245
+        ],
+        [
+          -110,
+          -200
+        ],
+        [
+          -85,
+          -200
+        ],
+        [
+          -85,
+          -160
+        ]
+      ],
+      "lengthM": 666,
+      "roadwayWidthM": 8,
+      "extraObstacleMarginM": 3,
+      "nominalCenterlineObstacleSetbackRequiredM": 7,
+      "sideStagingToTargetFootprintM": 10,
+      "nearestOtherObstacle": {
+        "id": "CSE-02",
+        "centerlineDistanceM": 8
+      },
+      "otherObstacleWithin20m": true,
+      "nearestProtectedArea": {
+        "id": "CEREMONIAL-CENTRAL",
+        "centerlineDistanceM": 10
+      },
+      "protectedAreaWithin30m": true,
+      "sourceGraphRoadConnection": "PLANAR_CANDIDATE_MAIN_COMPONENT",
+      "geometryStatus": "2D_CLEARANCE_PROBE_ONLY",
+      "isBuildingMainEntrance": false,
+      "entryDoorVerified": false,
+      "centerlineCornerRoundingVerified": false,
+      "vehicleSweptPathVerified": false,
+      "effectiveFireWidthVerified": false,
+      "turnaroundVerified": false,
+      "terrainGradeVerified": false,
+      "pondShorelineAndFullStreamVerified": false,
+      "cityGatewayApproved": false,
+      "physicalFireApproval": false,
+      "originalRiskClosed": false,
+      "runtimeFinal": false
+    },
+    {
+      "id": "FIRE-R7S15-CEN03-W",
+      "buildingID": "CEN-03",
+      "anchorRoadID": "ROAD-BOYA-RING-SW-V",
+      "centerlineXZ": [
+        [
+          -600,
+          -590
+        ],
+        [
+          -300,
+          -590
+        ],
+        [
+          -300,
+          -515
+        ],
+        [
+          -110,
+          -515
+        ],
+        [
+          -110,
+          -590
+        ],
+        [
+          -70,
+          -590
+        ]
+      ],
+      "lengthM": 680,
+      "roadwayWidthM": 8,
+      "extraObstacleMarginM": 3,
+      "nominalCenterlineObstacleSetbackRequiredM": 7,
+      "sideStagingToTargetFootprintM": 9,
+      "nearestOtherObstacle": {
+        "id": "CEN-02",
+        "centerlineDistanceM": 19
+      },
+      "otherObstacleWithin20m": true,
+      "nearestProtectedArea": {
+        "id": "CEREMONIAL-CENTRAL",
+        "centerlineDistanceM": 10
+      },
+      "protectedAreaWithin30m": true,
+      "sourceGraphRoadConnection": "PLANAR_CANDIDATE_MAIN_COMPONENT",
+      "geometryStatus": "2D_CLEARANCE_PROBE_ONLY",
+      "isBuildingMainEntrance": false,
+      "entryDoorVerified": false,
+      "centerlineCornerRoundingVerified": false,
+      "vehicleSweptPathVerified": false,
+      "effectiveFireWidthVerified": false,
+      "turnaroundVerified": false,
+      "terrainGradeVerified": false,
+      "pondShorelineAndFullStreamVerified": false,
+      "cityGatewayApproved": false,
+      "physicalFireApproval": false,
+      "originalRiskClosed": false,
+      "runtimeFinal": false
+    },
+    {
+      "id": "FIRE-R7S15-ATH01-W",
+      "buildingID": "ATH-01",
+      "anchorRoadID": "ROAD-JIANXING-W",
+      "centerlineXZ": [
+        [
+          -160,
+          990
+        ],
+        [
+          -90,
+          990
+        ]
+      ],
+      "lengthM": 70,
+      "roadwayWidthM": 8,
+      "extraObstacleMarginM": 3,
+      "nominalCenterlineObstacleSetbackRequiredM": 7,
+      "sideStagingToTargetFootprintM": 10,
+      "nearestOtherObstacle": null,
+      "otherObstacleWithin20m": false,
+      "nearestProtectedArea": null,
+      "protectedAreaWithin30m": false,
+      "sourceGraphRoadConnection": "PLANAR_CANDIDATE_MAIN_COMPONENT",
+      "geometryStatus": "2D_CLEARANCE_PROBE_ONLY",
+      "isBuildingMainEntrance": false,
+      "entryDoorVerified": false,
+      "centerlineCornerRoundingVerified": false,
+      "vehicleSweptPathVerified": false,
+      "effectiveFireWidthVerified": false,
+      "turnaroundVerified": false,
+      "terrainGradeVerified": false,
+      "pondShorelineAndFullStreamVerified": false,
+      "cityGatewayApproved": false,
+      "physicalFireApproval": false,
+      "originalRiskClosed": false,
+      "runtimeFinal": false
+    },
+    {
+      "id": "FIRE-R7S15-ATH01-E",
+      "buildingID": "ATH-01",
+      "anchorRoadID": "ROAD-JIANXING-E",
+      "centerlineXZ": [
+        [
+          160,
+          990
+        ],
+        [
+          90,
+          990
+        ]
+      ],
+      "lengthM": 70,
+      "roadwayWidthM": 8,
+      "extraObstacleMarginM": 3,
+      "nominalCenterlineObstacleSetbackRequiredM": 7,
+      "sideStagingToTargetFootprintM": 10,
+      "nearestOtherObstacle": null,
+      "otherObstacleWithin20m": false,
+      "nearestProtectedArea": null,
+      "protectedAreaWithin30m": false,
+      "sourceGraphRoadConnection": "PLANAR_CANDIDATE_MAIN_COMPONENT",
+      "geometryStatus": "2D_CLEARANCE_PROBE_ONLY",
+      "isBuildingMainEntrance": false,
+      "entryDoorVerified": false,
+      "centerlineCornerRoundingVerified": false,
+      "vehicleSweptPathVerified": false,
+      "effectiveFireWidthVerified": false,
+      "turnaroundVerified": false,
+      "terrainGradeVerified": false,
+      "pondShorelineAndFullStreamVerified": false,
+      "cityGatewayApproved": false,
+      "physicalFireApproval": false,
+      "originalRiskClosed": false,
+      "runtimeFinal": false
+    },
+    {
+      "id": "FIRE-R7S15-ART03-B",
+      "buildingID": "ART-03",
+      "anchorRoadID": "ROAD-R7-S12-ART-BOYA-BACKSTAGE",
+      "centerlineXZ": [
+        [
+          1325,
+          740
+        ],
+        [
+          1325,
+          760
+        ]
+      ],
+      "lengthM": 20,
+      "roadwayWidthM": 8,
+      "extraObstacleMarginM": 3,
+      "nominalCenterlineObstacleSetbackRequiredM": 7,
+      "sideStagingToTargetFootprintM": 19,
+      "nearestOtherObstacle": null,
+      "otherObstacleWithin20m": false,
+      "nearestProtectedArea": null,
+      "protectedAreaWithin30m": false,
+      "sourceGraphRoadConnection": "PLANAR_CANDIDATE_MAIN_COMPONENT",
+      "geometryStatus": "2D_CLEARANCE_PROBE_ONLY",
+      "isBuildingMainEntrance": false,
+      "entryDoorVerified": false,
+      "centerlineCornerRoundingVerified": false,
+      "vehicleSweptPathVerified": false,
+      "effectiveFireWidthVerified": false,
+      "turnaroundVerified": false,
+      "terrainGradeVerified": false,
+      "pondShorelineAndFullStreamVerified": false,
+      "cityGatewayApproved": false,
+      "physicalFireApproval": false,
+      "originalRiskClosed": false,
+      "runtimeFinal": false
+    },
+    {
+      "id": "FIRE-R7S15-HSP04-N",
+      "buildingID": "HSP-04",
+      "anchorRoadID": "ROAD-JISHI",
+      "centerlineXZ": [
+        [
+          -860,
+          -770
+        ],
+        [
+          -860,
+          -799
+        ]
+      ],
+      "lengthM": 29,
+      "roadwayWidthM": 8,
+      "extraObstacleMarginM": 3,
+      "nominalCenterlineObstacleSetbackRequiredM": 7,
+      "sideStagingToTargetFootprintM": 8,
+      "nearestOtherObstacle": null,
+      "otherObstacleWithin20m": false,
+      "nearestProtectedArea": null,
+      "protectedAreaWithin30m": false,
+      "sourceGraphRoadConnection": "PLANAR_CANDIDATE_MAIN_COMPONENT",
+      "geometryStatus": "2D_CLEARANCE_PROBE_ONLY",
+      "isBuildingMainEntrance": false,
+      "entryDoorVerified": false,
+      "centerlineCornerRoundingVerified": false,
+      "vehicleSweptPathVerified": false,
+      "effectiveFireWidthVerified": false,
+      "turnaroundVerified": false,
+      "terrainGradeVerified": false,
+      "pondShorelineAndFullStreamVerified": false,
+      "cityGatewayApproved": false,
+      "physicalFireApproval": false,
+      "originalRiskClosed": false,
+      "runtimeFinal": false
+    }
+  ],
+  "p0Buildings": [
+    "CEN-01",
+    "CEN-03",
+    "ATH-01",
+    "ART-03",
+    "HSP-04"
+  ],
+  "independentFireAccessApprovals": 0,
+  "newMainEntrancesCertified": 0,
+  "originalRisksClosed": 0,
+  "limitations": [
+    "CEN-01 corridor has only 1m planning margin beyond nominal 7m proximity buffer near CSE-02; requires redesign margin review",
+    "CEN-03 remains candidate placement",
+    "ART-03 theatre backstage dead-end turning/traffic segregation unresolved",
+    "ATH-01 north sports event and bus turn conflict not assessed",
+    "HSP-04 is campus-side research access only, hospital city ambulances remain independent",
+    "Actual 12m centerline rounding, road entry radii, swept paths, emergency vehicle turning and turnaround not computed",
+    "Known lake and SOLVE-13 protected polygons assessed, but not ten named pond actual bank geometry, final stream bank geometry or all bridges",
+    "Campus gate roots have no verified city-side legal right-of-way, fire access gate actuation or topographic continuity",
+    "All roads are candidates; no runtime data may be overwritten"
+  ],
+  "nextStage": "R7-SOLVE-16 detailed fire vehicle swept paths, 6m net clearance, entrance facade/turnaround, topography, actual water banks and gateway/ambulance rights of way"
+}
