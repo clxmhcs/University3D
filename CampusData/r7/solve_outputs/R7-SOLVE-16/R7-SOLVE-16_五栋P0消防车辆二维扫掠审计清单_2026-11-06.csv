@@ -1,0 +1,7 @@
+"路线ID","建筑ID","R12中心线可构造","入路方向数量","最近车身到源包络m","最近车身到保护区m","源10水体面积当量圆最近间距m","实际净宽已验收","道路纵坡已验收","实际消防验收","RuntimeFinal"
+"FIRE-R7S15-CEN01-W","CEN-01",true,2,6.56,6.4,206.79,false,false,false,false
+"FIRE-R7S15-CEN03-W","CEN-03",true,2,6.49,7.58,353.76,false,false,false,false
+"FIRE-R7S15-ATH01-W","ATH-01",true,2,7.5,481.8,571.3,false,false,false,false
+"FIRE-R7S15-ATH01-E","ATH-01",true,2,7.5,464.89,407.89,false,false,false,false
+"FIRE-R7S15-ART03-B","ART-03",true,1,17.72,510.5,210.4,false,false,false,false
+"FIRE-R7S15-HSP04-N","HSP-04",true,2,5.45,735.5,97.08,false,false,false,false
