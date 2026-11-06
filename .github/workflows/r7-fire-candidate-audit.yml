@@ -31,3 +31,5 @@ jobs:
         run: node Tests/r7_solve17_hydro_gate_and_road_grade.mjs
       - name: Stage 17 default measured profile audit must report evidence missing
         run: node Scripts/r7_solve17_elevation_clearance_gate.mjs
+      - name: Stage 17 hospital city approach and wall opening vehicle replay
+        run: node Tests/r7_solve17_hospital_city_turn_sweep_replay.mjs
