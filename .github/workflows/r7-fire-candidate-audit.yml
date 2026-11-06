@@ -1,0 +1,27 @@
+name: R7 fire candidate data audit
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "CampusData/r7/solve_outputs/R7-SOLVE-1*/**"
+      - "Tests/r7_solve1*_*.mjs"
+      - ".github/workflows/r7-fire-candidate-audit.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  candidate-source-invariants:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Stage 15 entrance and road candidate invariants
+        run: node Tests/r7_solve15_candidate_audit.mjs
+      - name: Stage 16 turning geometry and source invariants
+        run: node Tests/r7_solve16_vehicle_sweep_invariants.mjs
