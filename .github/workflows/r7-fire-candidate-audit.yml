@@ -25,3 +25,5 @@ jobs:
         run: node Tests/r7_solve15_candidate_audit.mjs
       - name: Stage 16 turning geometry and source invariants
         run: node Tests/r7_solve16_vehicle_sweep_invariants.mjs
+      - name: Stage 16 independent swept-body numerical replay
+        run: node Tests/r7_solve16_vehicle_sweep_numeric.mjs
