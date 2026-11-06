@@ -303,7 +303,13 @@
     "sourceBackstageCrowdSeparationNotCertified": true,
     "returnJunctionRoadRightsNotCertified": true,
     "real8mClearanceNotCertified": true,
-    "runtimeFinal": false
+    "runtimeFinal": false,
+    "independentSweptBodyNumericReplay": "GitHub Actions 42223683555 / Tests/r7_solve16_vehicle_sweep_numeric.mjs",
+    "sweptProxyMinBodyToKnownFootprintM": 16.57,
+    "sweptProxyMinBodyToKnownProtectedPolygonM": 492.57,
+    "overlaps235FootprintControlEnvelopesInProxy": false,
+    "overlaps8ProtectedPolygonsInProxy": false,
+    "actualFireAccessApproved": false
   },
   "waterAndTerrain": {
     "ordinaryVehicleRoadGradientTypical": "0.5%-4%",
