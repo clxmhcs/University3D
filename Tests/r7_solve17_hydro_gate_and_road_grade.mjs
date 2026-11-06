@@ -76,7 +76,9 @@ import {parseSourceCSV,auditRows} from '../Scripts/r7_solve17_elevation_clearanc
  assert.equal(rows.length,338);
  assert.equal(rows.length,a.roadProfileSpec.heightSamplesRequired);
  assert.equal(new Set(rows.map(r=>r.routeID)).size,11);
- assert.equal(geo.features.length,11);
+ assert.equal(geo.features.length,15);
+ assert.equal(a.hospitalCityVehicleSweepScenarios.scenarios.length,4);
+ assert.equal(a.hospitalCityVehicleSweepScenarios.scenariosCertifiedFireAccess,0);
  const actual=auditRows(rows);
  assert.equal(actual.status,'BLOCKED_MISSING_MEASUREMENTS');
  assert.equal(actual.gradeIntervalsChecked,0);
