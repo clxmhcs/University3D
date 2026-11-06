@@ -411,6 +411,162 @@
         "category": "AUDIT_DERIVED_NO_NEW_GATE_ID",
         "runtimeFinal": false
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1080,
+            -1145
+          ],
+          [
+            -1040,
+            -1145
+          ],
+          [
+            -1040,
+            -1127
+          ],
+          [
+            -1040,
+            -1085
+          ],
+          [
+            -1040,
+            -1051
+          ]
+        ]
+      },
+      "properties": {
+        "id": "AUDIT-S17-ENT-HSP-SOCIAL-WEST_TO_EAST",
+        "category": "MODEL_CITY_TURN_PROXY_NOT_OFFICIAL_ROAD",
+        "sourceGateID": "ENT-HSP-SOCIAL",
+        "sourceRoadCenterlineFixed": true,
+        "actualMunicipalRightOfWayApproved": false,
+        "actualVehicleCertified": false,
+        "runtimeFinal": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1000,
+            -1145
+          ],
+          [
+            -1040,
+            -1145
+          ],
+          [
+            -1040,
+            -1127
+          ],
+          [
+            -1040,
+            -1085
+          ],
+          [
+            -1040,
+            -1051
+          ]
+        ]
+      },
+      "properties": {
+        "id": "AUDIT-S17-ENT-HSP-SOCIAL-EAST_TO_WEST",
+        "category": "MODEL_CITY_TURN_PROXY_NOT_OFFICIAL_ROAD",
+        "sourceGateID": "ENT-HSP-SOCIAL",
+        "sourceRoadCenterlineFixed": true,
+        "actualMunicipalRightOfWayApproved": false,
+        "actualVehicleCertified": false,
+        "runtimeFinal": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -990,
+            -1145
+          ],
+          [
+            -950,
+            -1145
+          ],
+          [
+            -950,
+            -1127
+          ],
+          [
+            -950,
+            -1090
+          ],
+          [
+            -950,
+            -1010
+          ],
+          [
+            -964,
+            -1010
+          ]
+        ]
+      },
+      "properties": {
+        "id": "AUDIT-S17-ENT-HSP-EMERGENCY-CITY-WEST_TO_EAST",
+        "category": "MODEL_CITY_TURN_PROXY_NOT_OFFICIAL_ROAD",
+        "sourceGateID": "ENT-HSP-EMERGENCY-CITY",
+        "sourceRoadCenterlineFixed": true,
+        "actualMunicipalRightOfWayApproved": false,
+        "actualVehicleCertified": false,
+        "runtimeFinal": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -910,
+            -1145
+          ],
+          [
+            -950,
+            -1145
+          ],
+          [
+            -950,
+            -1127
+          ],
+          [
+            -950,
+            -1090
+          ],
+          [
+            -950,
+            -1010
+          ],
+          [
+            -964,
+            -1010
+          ]
+        ]
+      },
+      "properties": {
+        "id": "AUDIT-S17-ENT-HSP-EMERGENCY-CITY-EAST_TO_WEST",
+        "category": "MODEL_CITY_TURN_PROXY_NOT_OFFICIAL_ROAD",
+        "sourceGateID": "ENT-HSP-EMERGENCY-CITY",
+        "sourceRoadCenterlineFixed": true,
+        "actualMunicipalRightOfWayApproved": false,
+        "actualVehicleCertified": false,
+        "runtimeFinal": false
+      }
     }
   ]
 }

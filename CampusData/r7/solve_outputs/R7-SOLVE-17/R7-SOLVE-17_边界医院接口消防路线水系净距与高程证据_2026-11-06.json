@@ -565,5 +565,206 @@
     "backstageOneWayOperationalPermission": false,
     "actual14mHospitalEmergencyOpeningSweptValidated": false
   },
-  "nextStage": "R7-SOLVE-18 measurements/vehicle fixtures: real 3D grade profiles, complete 10 pond shorelines, legal boundary and wall openings, full fire-engine templates for prioritised hospital/theatre/sports/library"
+  "nextStage": "R7-SOLVE-18 measurements/vehicle fixtures: real 3D grade profiles, complete 10 pond shorelines, legal boundary and wall openings, full fire-engine templates for prioritised hospital/theatre/sports/library",
+  "hospitalCityVehicleSweepScenarios": {
+    "kind": "AUDIT_ONLY_HYPOTHETICAL_CITY_LANE_TURNS",
+    "nominalRoadCenterlineZ": -1145,
+    "cityRoadNominalWidthM": 36,
+    "straightMunicipalApproachLengthM": 40,
+    "hypotheticalCityTurnCenterlineRadiusM": 12,
+    "vehicleProxySource": "R7-SOLVE-16_12m vehicle front-axle / rear-axle approximation",
+    "sourceHospitalPodiumHSP01Footprint": {
+      "centerXZ": [
+        -1040,
+        -1010
+      ],
+      "lengthX": 140,
+      "depthZ": 70,
+      "frozen": true
+    },
+    "scenarios": [
+      {
+        "gateID": "ENT-HSP-SOCIAL",
+        "approach": "WEST_TO_EAST",
+        "controlCenterlineXZ": [
+          [
+            -1080,
+            -1145
+          ],
+          [
+            -1040,
+            -1145
+          ],
+          [
+            -1040,
+            -1127
+          ],
+          [
+            -1040,
+            -1085
+          ],
+          [
+            -1040,
+            -1051
+          ]
+        ],
+        "sampledBodyPoses": 187,
+        "minBodyToFrozenHSP01FootprintM": 3.5,
+        "sourceFrozenWallOpeningWidthM": 32,
+        "maxBodyLateralDeviationAtFrozenGateM": 1.278,
+        "maxBodyLateralDeviationAtWallProjectionM": 1.275,
+        "proxyGateOpeningDoesNotClipTruck": true,
+        "proxyProjectedWallOpeningDoesNotClipTruck": true,
+        "nominalR12ApproachFilletCanBeConstructed": true,
+        "sourceActualLaneDirectionNotConfirmed": true,
+        "sourceActualRoadCurbsNotMapped": true,
+        "municipalTurningRightOfWayApproved": false,
+        "actualTruckDynamicsCertified": false,
+        "fireAccessCertified": false,
+        "cityCurbAndSidewalkWidthUnverified": true,
+        "cityRoadVerticalProfileMissing": true,
+        "runtimeFinal": false
+      },
+      {
+        "gateID": "ENT-HSP-SOCIAL",
+        "approach": "EAST_TO_WEST",
+        "controlCenterlineXZ": [
+          [
+            -1000,
+            -1145
+          ],
+          [
+            -1040,
+            -1145
+          ],
+          [
+            -1040,
+            -1127
+          ],
+          [
+            -1040,
+            -1085
+          ],
+          [
+            -1040,
+            -1051
+          ]
+        ],
+        "sampledBodyPoses": 187,
+        "minBodyToFrozenHSP01FootprintM": 3.5,
+        "sourceFrozenWallOpeningWidthM": 32,
+        "maxBodyLateralDeviationAtFrozenGateM": 1.278,
+        "maxBodyLateralDeviationAtWallProjectionM": 1.275,
+        "proxyGateOpeningDoesNotClipTruck": true,
+        "proxyProjectedWallOpeningDoesNotClipTruck": true,
+        "nominalR12ApproachFilletCanBeConstructed": true,
+        "sourceActualLaneDirectionNotConfirmed": true,
+        "sourceActualRoadCurbsNotMapped": true,
+        "municipalTurningRightOfWayApproved": false,
+        "actualTruckDynamicsCertified": false,
+        "fireAccessCertified": false,
+        "cityCurbAndSidewalkWidthUnverified": true,
+        "cityRoadVerticalProfileMissing": true,
+        "runtimeFinal": false
+      },
+      {
+        "gateID": "ENT-HSP-EMERGENCY-CITY",
+        "approach": "WEST_TO_EAST",
+        "controlCenterlineXZ": [
+          [
+            -990,
+            -1145
+          ],
+          [
+            -950,
+            -1145
+          ],
+          [
+            -950,
+            -1127
+          ],
+          [
+            -950,
+            -1090
+          ],
+          [
+            -950,
+            -1010
+          ],
+          [
+            -964,
+            -1010
+          ]
+        ],
+        "sampledBodyPoses": 258,
+        "minBodyToFrozenHSP01FootprintM": 3.204,
+        "sourceFrozenWallOpeningWidthM": 14,
+        "maxBodyLateralDeviationAtFrozenGateM": 1.281,
+        "maxBodyLateralDeviationAtWallProjectionM": 1.276,
+        "proxyGateOpeningDoesNotClipTruck": true,
+        "proxyProjectedWallOpeningDoesNotClipTruck": true,
+        "nominalR12ApproachFilletCanBeConstructed": true,
+        "sourceActualLaneDirectionNotConfirmed": true,
+        "sourceActualRoadCurbsNotMapped": true,
+        "municipalTurningRightOfWayApproved": false,
+        "actualTruckDynamicsCertified": false,
+        "fireAccessCertified": false,
+        "cityCurbAndSidewalkWidthUnverified": true,
+        "cityRoadVerticalProfileMissing": true,
+        "runtimeFinal": false
+      },
+      {
+        "gateID": "ENT-HSP-EMERGENCY-CITY",
+        "approach": "EAST_TO_WEST",
+        "controlCenterlineXZ": [
+          [
+            -910,
+            -1145
+          ],
+          [
+            -950,
+            -1145
+          ],
+          [
+            -950,
+            -1127
+          ],
+          [
+            -950,
+            -1090
+          ],
+          [
+            -950,
+            -1010
+          ],
+          [
+            -964,
+            -1010
+          ]
+        ],
+        "sampledBodyPoses": 258,
+        "minBodyToFrozenHSP01FootprintM": 3.204,
+        "sourceFrozenWallOpeningWidthM": 14,
+        "maxBodyLateralDeviationAtFrozenGateM": 1.281,
+        "maxBodyLateralDeviationAtWallProjectionM": 1.276,
+        "proxyGateOpeningDoesNotClipTruck": true,
+        "proxyProjectedWallOpeningDoesNotClipTruck": true,
+        "nominalR12ApproachFilletCanBeConstructed": true,
+        "sourceActualLaneDirectionNotConfirmed": true,
+        "sourceActualRoadCurbsNotMapped": true,
+        "municipalTurningRightOfWayApproved": false,
+        "actualTruckDynamicsCertified": false,
+        "fireAccessCertified": false,
+        "cityCurbAndSidewalkWidthUnverified": true,
+        "cityRoadVerticalProfileMissing": true,
+        "runtimeFinal": false
+      }
+    ],
+    "scenariosPassedProxyOnly": 4,
+    "scenariosCertifiedFireAccess": 0,
+    "cityDirectionAndStreetDrivewaySetoutApproved": false,
+    "wallProjectionIsNotNewGateID": true,
+    "boundaryAndWallCrossingAuthorizationStillPending": true,
+    "sourceNoNewHospitalEntrance": true
+  }
 }
