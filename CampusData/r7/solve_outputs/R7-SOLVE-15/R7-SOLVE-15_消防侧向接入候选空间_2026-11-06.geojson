@@ -1,0 +1,288 @@
+{
+  "type": "FeatureCollection",
+  "name": "R7-SOLVE-15 FIRE P0 CANDIDATE ONLY",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -621,
+            -200
+          ],
+          [
+            -420,
+            -200
+          ],
+          [
+            -420,
+            -245
+          ],
+          [
+            -110,
+            -245
+          ],
+          [
+            -110,
+            -200
+          ],
+          [
+            -85,
+            -200
+          ],
+          [
+            -85,
+            -160
+          ]
+        ]
+      },
+      "properties": {
+        "id": "FIRE-R7S15-CEN01-W",
+        "buildingID": "CEN-01",
+        "anchorRoadID": "ROAD-R7-S13-CEN-W-EDGE",
+        "category": "FIRE_ONLY_SIDE_STAGING_2D_CANDIDATE",
+        "widthM": 8,
+        "turningCertified": false,
+        "runtimeFinal": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85,
+          -160
+        ]
+      },
+      "properties": {
+        "id": "FIRE-R7S15-CEN01-W-STAGING",
+        "buildingID": "CEN-01",
+        "category": "FIRE_STAGING_NOT_MAIN_ENTRANCE",
+        "runtimeFinal": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -600,
+            -590
+          ],
+          [
+            -300,
+            -590
+          ],
+          [
+            -300,
+            -515
+          ],
+          [
+            -110,
+            -515
+          ],
+          [
+            -110,
+            -590
+          ],
+          [
+            -70,
+            -590
+          ]
+        ]
+      },
+      "properties": {
+        "id": "FIRE-R7S15-CEN03-W",
+        "buildingID": "CEN-03",
+        "anchorRoadID": "ROAD-BOYA-RING-SW-V",
+        "category": "FIRE_ONLY_SIDE_STAGING_2D_CANDIDATE",
+        "widthM": 8,
+        "turningCertified": false,
+        "runtimeFinal": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70,
+          -590
+        ]
+      },
+      "properties": {
+        "id": "FIRE-R7S15-CEN03-W-STAGING",
+        "buildingID": "CEN-03",
+        "category": "FIRE_STAGING_NOT_MAIN_ENTRANCE",
+        "runtimeFinal": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -160,
+            990
+          ],
+          [
+            -90,
+            990
+          ]
+        ]
+      },
+      "properties": {
+        "id": "FIRE-R7S15-ATH01-W",
+        "buildingID": "ATH-01",
+        "anchorRoadID": "ROAD-JIANXING-W",
+        "category": "FIRE_ONLY_SIDE_STAGING_2D_CANDIDATE",
+        "widthM": 8,
+        "turningCertified": false,
+        "runtimeFinal": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90,
+          990
+        ]
+      },
+      "properties": {
+        "id": "FIRE-R7S15-ATH01-W-STAGING",
+        "buildingID": "ATH-01",
+        "category": "FIRE_STAGING_NOT_MAIN_ENTRANCE",
+        "runtimeFinal": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            160,
+            990
+          ],
+          [
+            90,
+            990
+          ]
+        ]
+      },
+      "properties": {
+        "id": "FIRE-R7S15-ATH01-E",
+        "buildingID": "ATH-01",
+        "anchorRoadID": "ROAD-JIANXING-E",
+        "category": "FIRE_ONLY_SIDE_STAGING_2D_CANDIDATE",
+        "widthM": 8,
+        "turningCertified": false,
+        "runtimeFinal": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90,
+          990
+        ]
+      },
+      "properties": {
+        "id": "FIRE-R7S15-ATH01-E-STAGING",
+        "buildingID": "ATH-01",
+        "category": "FIRE_STAGING_NOT_MAIN_ENTRANCE",
+        "runtimeFinal": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            1325,
+            740
+          ],
+          [
+            1325,
+            760
+          ]
+        ]
+      },
+      "properties": {
+        "id": "FIRE-R7S15-ART03-B",
+        "buildingID": "ART-03",
+        "anchorRoadID": "ROAD-R7-S12-ART-BOYA-BACKSTAGE",
+        "category": "FIRE_ONLY_SIDE_STAGING_2D_CANDIDATE",
+        "widthM": 8,
+        "turningCertified": false,
+        "runtimeFinal": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1325,
+          760
+        ]
+      },
+      "properties": {
+        "id": "FIRE-R7S15-ART03-B-STAGING",
+        "buildingID": "ART-03",
+        "category": "FIRE_STAGING_NOT_MAIN_ENTRANCE",
+        "runtimeFinal": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -860,
+            -770
+          ],
+          [
+            -860,
+            -799
+          ]
+        ]
+      },
+      "properties": {
+        "id": "FIRE-R7S15-HSP04-N",
+        "buildingID": "HSP-04",
+        "anchorRoadID": "ROAD-JISHI",
+        "category": "FIRE_ONLY_SIDE_STAGING_2D_CANDIDATE",
+        "widthM": 8,
+        "turningCertified": false,
+        "runtimeFinal": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -860,
+          -799
+        ]
+      },
+      "properties": {
+        "id": "FIRE-R7S15-HSP04-N-STAGING",
+        "buildingID": "HSP-04",
+        "category": "FIRE_STAGING_NOT_MAIN_ENTRANCE",
+        "runtimeFinal": false
+      }
+    }
+  ]
+}

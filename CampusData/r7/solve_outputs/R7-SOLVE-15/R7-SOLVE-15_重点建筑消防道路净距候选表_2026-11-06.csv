@@ -1,0 +1,7 @@
+"id","buildingID","roadID","lengthM","widthM","targetSetbackM","otherID","otherDistanceM","protectedID","protectedDistanceM","2dStatus","sweptPathVerified","fireApproved"
+"FIRE-R7S15-CEN01-W","CEN-01","ROAD-R7-S13-CEN-W-EDGE",666,8,10,"CSE-02",8,"CEREMONIAL-CENTRAL",10,"2D_CLEARANCE_PROBE_ONLY",false,false
+"FIRE-R7S15-CEN03-W","CEN-03","ROAD-BOYA-RING-SW-V",680,8,9,"CEN-02",19,"CEREMONIAL-CENTRAL",10,"2D_CLEARANCE_PROBE_ONLY",false,false
+"FIRE-R7S15-ATH01-W","ATH-01","ROAD-JIANXING-W",70,8,10,"","","","","2D_CLEARANCE_PROBE_ONLY",false,false
+"FIRE-R7S15-ATH01-E","ATH-01","ROAD-JIANXING-E",70,8,10,"","","","","2D_CLEARANCE_PROBE_ONLY",false,false
+"FIRE-R7S15-ART03-B","ART-03","ROAD-R7-S12-ART-BOYA-BACKSTAGE",20,8,19,"","","","","2D_CLEARANCE_PROBE_ONLY",false,false
+"FIRE-R7S15-HSP04-N","HSP-04","ROAD-JISHI",29,8,8,"","","","","2D_CLEARANCE_PROBE_ONLY",false,false
