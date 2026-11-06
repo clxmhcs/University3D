@@ -1,0 +1,416 @@
+{
+  "type": "FeatureCollection",
+  "name": "R7-SOLVE-17 audit-only boundary, water and hospital crossing witnesses",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1470,
+            -1030
+          ],
+          [
+            -880,
+            -1100
+          ],
+          [
+            -290,
+            -1110
+          ],
+          [
+            390,
+            -1090
+          ],
+          [
+            1080,
+            -1030
+          ],
+          [
+            1520,
+            -830
+          ],
+          [
+            1580,
+            -240
+          ],
+          [
+            1550,
+            440
+          ],
+          [
+            1420,
+            930
+          ],
+          [
+            880,
+            1100
+          ],
+          [
+            200,
+            1150
+          ],
+          [
+            -490,
+            1130
+          ],
+          [
+            -1080,
+            1060
+          ],
+          [
+            -1470,
+            830
+          ],
+          [
+            -1560,
+            290
+          ],
+          [
+            -1550,
+            -340
+          ],
+          [
+            -1470,
+            -1030
+          ]
+        ]
+      },
+      "properties": {
+        "id": "R7-CAMPUS-BOUNDARY-16",
+        "runtimeFinal": false,
+        "category": "FROZEN_SOURCE_BOUNDARY",
+        "signedAreaM2": 6512800
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1458,
+            -1015
+          ],
+          [
+            -880,
+            -1085
+          ],
+          [
+            390,
+            -1075
+          ],
+          [
+            1070,
+            -1015
+          ],
+          [
+            1505,
+            -815
+          ]
+        ]
+      },
+      "properties": {
+        "id": "R7-SOUTH-WALL",
+        "runtimeFinal": false,
+        "category": "FROZEN_SOURCE_WALL"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -300,
+              250
+            ],
+            [
+              -240,
+              155
+            ],
+            [
+              -110,
+              110
+            ],
+            [
+              30,
+              105
+            ],
+            [
+              170,
+              125
+            ],
+            [
+              300,
+              185
+            ],
+            [
+              365,
+              280
+            ],
+            [
+              345,
+              380
+            ],
+            [
+              240,
+              455
+            ],
+            [
+              95,
+              495
+            ],
+            [
+              -55,
+              485
+            ],
+            [
+              -210,
+              430
+            ],
+            [
+              -315,
+              345
+            ],
+            [
+              -300,
+              250
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "WATER-LAKE-01",
+        "category": "FROZEN_SOURCE_SHORELINE",
+        "runtimeFinal": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            320,
+            1020
+          ],
+          [
+            340,
+            960
+          ],
+          [
+            350,
+            900
+          ],
+          [
+            350,
+            820
+          ],
+          [
+            360,
+            740
+          ],
+          [
+            390,
+            650
+          ],
+          [
+            390,
+            590
+          ],
+          [
+            380,
+            530
+          ],
+          [
+            340,
+            470
+          ],
+          [
+            300,
+            420
+          ]
+        ]
+      },
+      "properties": {
+        "id": "MAIN-CREEK-NORTH-R7",
+        "runtimeFinal": false,
+        "category": "FROZEN_SOURCE_CREEK_CONTROL_NOT_BANK"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            380,
+            180
+          ],
+          [
+            395,
+            30
+          ],
+          [
+            580,
+            -110
+          ],
+          [
+            630,
+            -110
+          ],
+          [
+            760,
+            -285
+          ],
+          [
+            935,
+            -285
+          ],
+          [
+            1020,
+            -370
+          ],
+          [
+            1135,
+            -370
+          ],
+          [
+            1190,
+            -425
+          ],
+          [
+            1195,
+            -530
+          ],
+          [
+            1260,
+            -605
+          ],
+          [
+            1260,
+            -730
+          ],
+          [
+            1295,
+            -745
+          ]
+        ]
+      },
+      "properties": {
+        "id": "MAIN-CREEK-SOUTHEAST-R7",
+        "runtimeFinal": false,
+        "category": "FROZEN_SOURCE_CREEK_CONTROL_NOT_BANK"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1040,
+            -1085
+          ],
+          [
+            -1040,
+            -1051
+          ]
+        ]
+      },
+      "properties": {
+        "id": "ENT-HSP-SOCIAL-ON-SITE",
+        "runtimeFinal": false,
+        "category": "EXISTING_HOSPITAL_ONSITE_NOT_FINAL"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1040,
+          -1081.017
+        ]
+      },
+      "properties": {
+        "id": "ENT-HSP-SOCIAL-BOUNDARY-CROSSING",
+        "category": "AUDIT_DERIVED_NO_NEW_GATE_ID",
+        "runtimeFinal": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1040,
+          -1065.623
+        ]
+      },
+      "properties": {
+        "id": "ENT-HSP-SOCIAL-WALL-CROSSING",
+        "category": "AUDIT_DERIVED_NO_NEW_GATE_ID",
+        "runtimeFinal": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -950,
+            -1090
+          ],
+          [
+            -950,
+            -1010
+          ],
+          [
+            -964,
+            -1010
+          ]
+        ]
+      },
+      "properties": {
+        "id": "ENT-HSP-EMERGENCY-CITY-ON-SITE",
+        "runtimeFinal": false,
+        "category": "EXISTING_HOSPITAL_ONSITE_NOT_FINAL"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -950,
+          -1091.695
+        ]
+      },
+      "properties": {
+        "id": "ENT-HSP-EMERGENCY-CITY-BOUNDARY-CROSSING",
+        "category": "AUDIT_DERIVED_NO_NEW_GATE_ID",
+        "runtimeFinal": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -950,
+          -1076.522
+        ]
+      },
+      "properties": {
+        "id": "ENT-HSP-EMERGENCY-CITY-WALL-CROSSING",
+        "category": "AUDIT_DERIVED_NO_NEW_GATE_ID",
+        "runtimeFinal": false
+      }
+    }
+  ]
+}

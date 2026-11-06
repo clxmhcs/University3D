@@ -1,0 +1,569 @@
+{
+  "solveId": "R7-SOLVE-17",
+  "version": "R7-BOUNDARY-GATE-HYDRO-ROAD-GRADE-P0-AUDIT-2026-11-06",
+  "status": "SOURCE_GROUNDED_SPATIAL_SCREENING_ENGINEERING_APPROVAL_PENDING",
+  "authority": "PATCH-2026-09-14-R7",
+  "runtimeFinal": false,
+  "sourceDataRead": [
+    "江城大学_数据源统一更新废止与覆盖说明_PATCH-2026-09-14-R7_完整版：5.5围墙/5.6开口/17最高优先级与强制审计",
+    "校园面积_R7_完整版：16点边界/6,512,800㎡",
+    "地形、地势与水系高程_R7_完整版：澄湖13点/北部主溪流10点/东南主溪流13点/道路坡度/十个未冻结岸线水体",
+    "校园道路与交通系统——工程整合完整版_R7：消防有效净宽>=6m，医院8m基线",
+    "江城大学_17-R7附属医院一体化建筑组织与城市接口修正_完整版：六入口/城市道路北缘/医院侧入口高程",
+    "R7-SOLVE-12/14/15/16 already committed repository evidence"
+  ],
+  "campusBoundarySource": {
+    "status": "FROZEN_ANCHOR",
+    "verticesXZ": [
+      [
+        -1470,
+        -1030
+      ],
+      [
+        -880,
+        -1100
+      ],
+      [
+        -290,
+        -1110
+      ],
+      [
+        390,
+        -1090
+      ],
+      [
+        1080,
+        -1030
+      ],
+      [
+        1520,
+        -830
+      ],
+      [
+        1580,
+        -240
+      ],
+      [
+        1550,
+        440
+      ],
+      [
+        1420,
+        930
+      ],
+      [
+        880,
+        1100
+      ],
+      [
+        200,
+        1150
+      ],
+      [
+        -490,
+        1130
+      ],
+      [
+        -1080,
+        1060
+      ],
+      [
+        -1470,
+        830
+      ],
+      [
+        -1560,
+        290
+      ],
+      [
+        -1550,
+        -340
+      ]
+    ],
+    "areaM2": 6512800
+  },
+  "southWallSource": {
+    "status": "FROZEN_ANCHOR",
+    "verticesXZ": [
+      [
+        -1458,
+        -1015
+      ],
+      [
+        -880,
+        -1085
+      ],
+      [
+        390,
+        -1075
+      ],
+      [
+        1070,
+        -1015
+      ],
+      [
+        1505,
+        -815
+      ]
+    ],
+    "notParcelBoundary": true
+  },
+  "officialHydrology": {
+    "lakeID": "WATER-LAKE-01",
+    "lakeWaterY": 94,
+    "shoreline13PointsXZ": [
+      [
+        -300,
+        250
+      ],
+      [
+        -240,
+        155
+      ],
+      [
+        -110,
+        110
+      ],
+      [
+        30,
+        105
+      ],
+      [
+        170,
+        125
+      ],
+      [
+        300,
+        185
+      ],
+      [
+        365,
+        280
+      ],
+      [
+        345,
+        380
+      ],
+      [
+        240,
+        455
+      ],
+      [
+        95,
+        495
+      ],
+      [
+        -55,
+        485
+      ],
+      [
+        -210,
+        430
+      ],
+      [
+        -315,
+        345
+      ]
+    ],
+    "northCreekFrozenControlXZ": [
+      [
+        320,
+        1020
+      ],
+      [
+        340,
+        960
+      ],
+      [
+        350,
+        900
+      ],
+      [
+        350,
+        820
+      ],
+      [
+        360,
+        740
+      ],
+      [
+        390,
+        650
+      ],
+      [
+        390,
+        590
+      ],
+      [
+        380,
+        530
+      ],
+      [
+        340,
+        470
+      ],
+      [
+        300,
+        420
+      ]
+    ],
+    "southeastCreekFrozenControlXZ": [
+      [
+        380,
+        180
+      ],
+      [
+        395,
+        30
+      ],
+      [
+        580,
+        -110
+      ],
+      [
+        630,
+        -110
+      ],
+      [
+        760,
+        -285
+      ],
+      [
+        935,
+        -285
+      ],
+      [
+        1020,
+        -370
+      ],
+      [
+        1135,
+        -370
+      ],
+      [
+        1190,
+        -425
+      ],
+      [
+        1195,
+        -530
+      ],
+      [
+        1260,
+        -605
+      ],
+      [
+        1260,
+        -730
+      ],
+      [
+        1295,
+        -745
+      ]
+    ],
+    "sourceVisibleMainCreekLengthApproxM": 2180,
+    "actualSurveyedChannelLengthNotDerivableFromOnlyTheseChains": true,
+    "normalChannelWidthRangeM": [
+      8,
+      15
+    ],
+    "localNarrowWidthRangeM": [
+      4,
+      6
+    ],
+    "localExpandedWidthRangeM": [
+      20,
+      30
+    ],
+    "smallPondsCountWithoutActualPolygonBanks": 10,
+    "shapelyValidFinalLakeBanks": false
+  },
+  "officialRoadRules": {
+    "serviceFireNetWidthMinM": 6,
+    "hospitalEmergencyNominalWidthM": 8,
+    "typicalCarGradePctRange": [
+      0.5,
+      4
+    ],
+    "localGradeWarningAbovePct": 4,
+    "localGradeUsuallyErrorAbovePct": 6,
+    "sourceRuleStatus": "DESIGN_BASELINE_NOT_LOCAL_MUNICIPAL_APPROVAL"
+  },
+  "P0WaterSourceControlScreening": [
+    {
+      "routeID": "FIRE-R7S15-CEN01-W",
+      "buildingID": "CEN-01",
+      "sourceStage": "R7-SOLVE-15",
+      "sourcePolylineLengthM": 666,
+      "northCreekCenterlineGapM": 696.15,
+      "southeastCreekCenterlineGapM": 516.24,
+      "changhu13PointShorelineGapM": 268.94,
+      "creekControlBoundingHalfWidthMaxM": 15,
+      "roadHalfWidthM": 4,
+      "planningLateralExtraM": 3,
+      "auditOnlyMaximumChannelWidthScreeningRadiusM": 22,
+      "withinWaterControlScreeningRadius": false,
+      "actualRiverBankGeometryVerified": false,
+      "other10NamedPondShorelinesVerified": false,
+      "bridgeRealCapacityCertified": false,
+      "terrainGradeCertified": false,
+      "vehicleFireApproved": false,
+      "runtimeFinal": false
+    },
+    {
+      "routeID": "FIRE-R7S15-CEN03-W",
+      "buildingID": "CEN-03",
+      "sourceStage": "R7-SOLVE-15",
+      "sourcePolylineLengthM": 680,
+      "northCreekCenterlineGapM": 1020.94,
+      "southeastCreekCenterlineGapM": 743,
+      "changhu13PointShorelineGapM": 624.6,
+      "creekControlBoundingHalfWidthMaxM": 15,
+      "roadHalfWidthM": 4,
+      "planningLateralExtraM": 3,
+      "auditOnlyMaximumChannelWidthScreeningRadiusM": 22,
+      "withinWaterControlScreeningRadius": false,
+      "actualRiverBankGeometryVerified": false,
+      "other10NamedPondShorelinesVerified": false,
+      "bridgeRealCapacityCertified": false,
+      "terrainGradeCertified": false,
+      "vehicleFireApproved": false,
+      "runtimeFinal": false
+    },
+    {
+      "routeID": "FIRE-R7S15-ATH01-W",
+      "buildingID": "ATH-01",
+      "sourceStage": "R7-SOLVE-15",
+      "sourcePolylineLengthM": 70,
+      "northCreekCenterlineGapM": 411.1,
+      "southeastCreekCenterlineGapM": 936.48,
+      "changhu13PointShorelineGapM": 506.21,
+      "creekControlBoundingHalfWidthMaxM": 15,
+      "roadHalfWidthM": 4,
+      "planningLateralExtraM": 3,
+      "auditOnlyMaximumChannelWidthScreeningRadiusM": 22,
+      "withinWaterControlScreeningRadius": false,
+      "actualRiverBankGeometryVerified": false,
+      "other10NamedPondShorelinesVerified": false,
+      "bridgeRealCapacityCertified": false,
+      "terrainGradeCertified": false,
+      "vehicleFireApproved": false,
+      "runtimeFinal": false
+    },
+    {
+      "routeID": "FIRE-R7S15-ATH01-E",
+      "buildingID": "ATH-01",
+      "sourceStage": "R7-SOLVE-15",
+      "sourcePolylineLengthM": 70,
+      "northCreekCenterlineGapM": 162.79,
+      "southeastCreekCenterlineGapM": 839.34,
+      "changhu13PointShorelineGapM": 495,
+      "creekControlBoundingHalfWidthMaxM": 15,
+      "roadHalfWidthM": 4,
+      "planningLateralExtraM": 3,
+      "auditOnlyMaximumChannelWidthScreeningRadiusM": 22,
+      "withinWaterControlScreeningRadius": false,
+      "actualRiverBankGeometryVerified": false,
+      "other10NamedPondShorelinesVerified": false,
+      "bridgeRealCapacityCertified": false,
+      "terrainGradeCertified": false,
+      "vehicleFireApproved": false,
+      "runtimeFinal": false
+    },
+    {
+      "routeID": "FIRE-R7S15-ART03-B",
+      "buildingID": "ART-03",
+      "sourceStage": "R7-SOLVE-15",
+      "sourcePolylineLengthM": 20,
+      "northCreekCenterlineGapM": 939.32,
+      "southeastCreekCenterlineGapM": 1096.69,
+      "changhu13PointShorelineGapM": 1044.03,
+      "creekControlBoundingHalfWidthMaxM": 15,
+      "roadHalfWidthM": 4,
+      "planningLateralExtraM": 3,
+      "auditOnlyMaximumChannelWidthScreeningRadiusM": 22,
+      "withinWaterControlScreeningRadius": false,
+      "actualRiverBankGeometryVerified": false,
+      "other10NamedPondShorelinesVerified": false,
+      "bridgeRealCapacityCertified": false,
+      "terrainGradeCertified": false,
+      "vehicleFireApproved": false,
+      "runtimeFinal": false
+    },
+    {
+      "routeID": "FIRE-R7S15-HSP04-N",
+      "buildingID": "HSP-04",
+      "sourceStage": "R7-SOLVE-15",
+      "sourcePolylineLengthM": 29,
+      "northCreekCenterlineGapM": 1661.84,
+      "southeastCreekCenterlineGapM": 1488.3,
+      "changhu13PointShorelineGapM": 1113.56,
+      "creekControlBoundingHalfWidthMaxM": 15,
+      "roadHalfWidthM": 4,
+      "planningLateralExtraM": 3,
+      "auditOnlyMaximumChannelWidthScreeningRadiusM": 22,
+      "withinWaterControlScreeningRadius": false,
+      "actualRiverBankGeometryVerified": false,
+      "other10NamedPondShorelinesVerified": false,
+      "bridgeRealCapacityCertified": false,
+      "terrainGradeCertified": false,
+      "vehicleFireApproved": false,
+      "runtimeFinal": false
+    },
+    {
+      "routeID": "FIRE-R7S16-ART03-ONEWAY-RETURN-CANDIDATE",
+      "buildingID": "ART-03",
+      "sourceStage": "R7-SOLVE-16_UNAPPROVED_LOOP",
+      "sourcePolylineLengthM": 259.09,
+      "northCreekCenterlineGapM": 860.93,
+      "southeastCreekCenterlineGapM": 1008.46,
+      "changhu13PointShorelineGapM": 956.62,
+      "creekControlBoundingHalfWidthMaxM": 15,
+      "roadHalfWidthM": 4,
+      "planningLateralExtraM": 3,
+      "auditOnlyMaximumChannelWidthScreeningRadiusM": 22,
+      "withinWaterControlScreeningRadius": false,
+      "actualRiverBankGeometryVerified": false,
+      "other10NamedPondShorelinesVerified": false,
+      "bridgeRealCapacityCertified": false,
+      "terrainGradeCertified": false,
+      "vehicleFireApproved": false,
+      "runtimeFinal": false
+    }
+  ],
+  "hospitalGateWallBoundaryAudit": [
+    {
+      "entryID": "ENT-HSP-SOCIAL",
+      "kind": "SOCIAL",
+      "officialEntranceXYZ": [
+        -1040,
+        98,
+        -1085
+      ],
+      "openWidthM": 32,
+      "officialCampusBoundaryCrossingXZ": [
+        -1040,
+        -1081.017
+      ],
+      "officialSouthWallCrossingXZ": [
+        -1040,
+        -1065.623
+      ],
+      "gateRelativeToCampusBoundarySouthIsNegativeM": -3.983,
+      "gateRelativeToWallSouthIsNegativeM": -19.377,
+      "northCityRoadEdgeZ": -1127,
+      "roadEdgeToBoundaryDistanceM": 45.983,
+      "roadEdgeToWallDistanceM": 61.377,
+      "onsiteLinkSourceID": "ROAD-R7-S12-HSP-ONSITE-SOCIAL",
+      "onsiteLinkCenterlineXZ": [
+        [
+          -1040,
+          -1085
+        ],
+        [
+          -1040,
+          -1051
+        ]
+      ],
+      "onsiteNominalWidthM": 7,
+      "onsiteLinkLengthM": 34,
+      "arrivalEntranceID": "ENT-HSP-OUTPATIENT",
+      "arrivalEntranceSourceY": 99,
+      "twoFrozenEndpointNetGradePct": 2.941,
+      "twoPointGradeOnlyNotRoadSlopePass": true,
+      "officialCityRoadYMissing": true,
+      "wallCrossingApproval": false,
+      "gateIsNotOnWallControlLine": true,
+      "noChangeToFrozenEntrance": true
+    },
+    {
+      "entryID": "ENT-HSP-EMERGENCY-CITY",
+      "kind": "AMBULANCE",
+      "officialEntranceXYZ": [
+        -950,
+        98,
+        -1090
+      ],
+      "openWidthM": 14,
+      "officialCampusBoundaryCrossingXZ": [
+        -950,
+        -1091.695
+      ],
+      "officialSouthWallCrossingXZ": [
+        -950,
+        -1076.522
+      ],
+      "gateRelativeToCampusBoundarySouthIsNegativeM": 1.695,
+      "gateRelativeToWallSouthIsNegativeM": -13.478,
+      "northCityRoadEdgeZ": -1127,
+      "roadEdgeToBoundaryDistanceM": 35.305,
+      "roadEdgeToWallDistanceM": 50.478,
+      "onsiteLinkSourceID": "ROAD-R7-S12-HSP-ONSITE-AMBULANCE",
+      "onsiteLinkCenterlineXZ": [
+        [
+          -950,
+          -1090
+        ],
+        [
+          -950,
+          -1010
+        ],
+        [
+          -964,
+          -1010
+        ]
+      ],
+      "onsiteNominalWidthM": 8,
+      "onsiteLinkLengthM": 94,
+      "arrivalEntranceID": "ENT-HSP-EMERGENCY",
+      "arrivalEntranceSourceY": 99,
+      "twoFrozenEndpointNetGradePct": 1.064,
+      "twoPointGradeOnlyNotRoadSlopePass": true,
+      "officialCityRoadYMissing": true,
+      "wallCrossingApproval": false,
+      "gateIsNotOnWallControlLine": true,
+      "noChangeToFrozenEntrance": true
+    }
+  ],
+  "hospitalInterfaceStatus": {
+    "sourceWallOpeningWidthsM": [
+      32,
+      14
+    ],
+    "entranceIDs": [
+      "ENT-HSP-SOCIAL",
+      "ENT-HSP-EMERGENCY-CITY"
+    ],
+    "lateralEntrancesGapM": 90,
+    "nominalOpeningSideGapM": 67,
+    "actualOpeningSetoutAndPerpendicularClearanceApproved": false,
+    "boundaryCrossingAndWallOpeningsRequireExplicitConnectorDesign": true,
+    "doNotMoveFrozenGateCoordinates": true,
+    "hospitalPublicAndAmbulanceEntrySegregationRetained": true
+  },
+  "roadProfileSpec": {
+    "spacingM": 10,
+    "sourceVertexStationsIncluded": true,
+    "heightValuesAreAllNullPendingMeasuredTerrain": true,
+    "heightSamplesRequired": 338,
+    "sourceRoutesCount": 11,
+    "roadSlopeMeasurementCertifiedRouteCount": 0,
+    "roadNetWidthMeasuredRouteCount": 0,
+    "doNotInferFullRoadYFromBuildingXYZ": true,
+    "twoPointHospitalGradeDoesNotCertifySlope": true
+  },
+  "physicalSafety": {
+    "provisionalP0Routes": 6,
+    "unapprovedTheatreLoop": 1,
+    "successfulRuntimeFinalizations": 0,
+    "source145OriginalRisksClosed": 0,
+    "source14OrdinaryEntranceTotal": 195,
+    "source14Only2DCandidateGateTied": 75,
+    "source14Without2DTie": 120,
+    "realFullVehicleModelsSupplied": false,
+    "campusCityEmergencyGatewayCertified": false,
+    "backstageOneWayOperationalPermission": false,
+    "actual14mHospitalEmergencyOpeningSweptValidated": false
+  },
+  "nextStage": "R7-SOLVE-18 measurements/vehicle fixtures: real 3D grade profiles, complete 10 pond shorelines, legal boundary and wall openings, full fire-engine templates for prioritised hospital/theatre/sports/library"
+}
