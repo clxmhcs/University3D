@@ -1,0 +1,323 @@
+{
+  "schemaVersion": 1,
+  "solveId": "R7-SOLVE-16",
+  "version": "R7-FIRE-P0-SWEPT-PROXY-CITY-INTERFACE-2026-11-06",
+  "authority": "PATCH-2026-09-14-R7",
+  "status": "VEHICLE_2D_KINEMATIC_PRECHECK_UNAPPROVED",
+  "runtimeFinal": false,
+  "sourceStages": [
+    "R7-SOLVE-01",
+    "R7-SOLVE-03",
+    "R7-SOLVE-04",
+    "R7-SOLVE-05",
+    "R7-SOLVE-06",
+    "R7-SOLVE-07",
+    "R7-SOLVE-11",
+    "R7-SOLVE-12",
+    "R7-SOLVE-13",
+    "R7-SOLVE-14",
+    "R7-SOLVE-15",
+    "R7 R7 terrain hydrology and hospital source"
+  ],
+  "vehicleProxy": {
+    "lengthM": 12,
+    "widthM": 2.55,
+    "wheelbaseM": 6.7,
+    "frontOverhangM": 2.5,
+    "rearOverhangM": 2.8,
+    "centerlineFilletRadiusM": 12,
+    "samplingStepMaxM": 0.7,
+    "kinematics": "front axle follows rounded route; rear axle follows rigid-wheelbase planar approximation; body rectangle swept",
+    "legalVehicleSpecification": false
+  },
+  "auditScope": {
+    "sourceFootprintCount": 235,
+    "protectedPolygonCount": 8,
+    "sourceR7CampusBoundaryPointCount": 16,
+    "namedSmallWaters10WithoutFrozenShoreline": true,
+    "mainStreamCenterlineNotFullBankGeometry": true,
+    "groundHeightSamplesAvailableForSpurs": false,
+    "actualDoorGeometryAvailable": false
+  },
+  "source14Baseline": {
+    "candidateRoadRecords": 49,
+    "graphNodes": 102,
+    "graphEdges": 110,
+    "components": 2,
+    "mainEntranceCandidates": 195,
+    "candidate2DGateTied": 75,
+    "withoutValid2DTie": 120,
+    "original145FireRisksClosed": 0
+  },
+  "routeCases": [
+    {
+      "id": "FIRE-R7S15-CEN01-W",
+      "buildingID": "CEN-01",
+      "sourceStage": "R7-SOLVE-15",
+      "roundedRadiusFeasible": true,
+      "sampledApproachOptions": 2,
+      "closestBodyToKnownFootprintByApproachM": [
+        6.8,
+        6.56
+      ],
+      "closestBodyObstacleID": "CSE-02",
+      "closestBodyToProtectedByApproachM": [
+        6.4,
+        6.4
+      ],
+      "closestProtectedID": "CEREMONIAL-CENTRAL",
+      "foundBodyOverlapInTestedEnvelopes": false,
+      "closestNamedWaterEqualAreaCircleCenterlineGapM": 206.79,
+      "vehicleReturnOrTurnaroundCertified": false,
+      "net6mRoadwidthCertified": false,
+      "trueRoadGradeMeasured": false,
+      "emergencyGateToCityApproved": false,
+      "physicalFireVehicleApproved": false,
+      "currentBuildingMainEntranceCertified": false,
+      "originalFireRiskClosed": false,
+      "runtimeFinal": false
+    },
+    {
+      "id": "FIRE-R7S15-CEN03-W",
+      "buildingID": "CEN-03",
+      "sourceStage": "R7-SOLVE-15",
+      "roundedRadiusFeasible": true,
+      "sampledApproachOptions": 2,
+      "closestBodyToKnownFootprintByApproachM": [
+        6.49,
+        6.49
+      ],
+      "closestBodyObstacleID": "CEN-03",
+      "closestBodyToProtectedByApproachM": [
+        7.58,
+        7.58
+      ],
+      "closestProtectedID": "CEREMONIAL-CENTRAL",
+      "foundBodyOverlapInTestedEnvelopes": false,
+      "closestNamedWaterEqualAreaCircleCenterlineGapM": 353.76,
+      "vehicleReturnOrTurnaroundCertified": false,
+      "net6mRoadwidthCertified": false,
+      "trueRoadGradeMeasured": false,
+      "emergencyGateToCityApproved": false,
+      "physicalFireVehicleApproved": false,
+      "currentBuildingMainEntranceCertified": false,
+      "originalFireRiskClosed": false,
+      "runtimeFinal": false
+    },
+    {
+      "id": "FIRE-R7S15-ATH01-W",
+      "buildingID": "ATH-01",
+      "sourceStage": "R7-SOLVE-15",
+      "roundedRadiusFeasible": true,
+      "sampledApproachOptions": 2,
+      "closestBodyToKnownFootprintByApproachM": [
+        7.5,
+        7.5
+      ],
+      "closestBodyObstacleID": "ATH-01",
+      "closestBodyToProtectedByApproachM": [
+        481.8,
+        504.77
+      ],
+      "closestProtectedID": "WATER-LAKE-01",
+      "foundBodyOverlapInTestedEnvelopes": false,
+      "closestNamedWaterEqualAreaCircleCenterlineGapM": 571.3,
+      "vehicleReturnOrTurnaroundCertified": false,
+      "net6mRoadwidthCertified": false,
+      "trueRoadGradeMeasured": false,
+      "emergencyGateToCityApproved": false,
+      "physicalFireVehicleApproved": false,
+      "currentBuildingMainEntranceCertified": false,
+      "originalFireRiskClosed": false,
+      "runtimeFinal": false
+    },
+    {
+      "id": "FIRE-R7S15-ATH01-E",
+      "buildingID": "ATH-01",
+      "sourceStage": "R7-SOLVE-15",
+      "roundedRadiusFeasible": true,
+      "sampledApproachOptions": 2,
+      "closestBodyToKnownFootprintByApproachM": [
+        7.5,
+        7.5
+      ],
+      "closestBodyObstacleID": "ATH-01",
+      "closestBodyToProtectedByApproachM": [
+        464.89,
+        493.72
+      ],
+      "closestProtectedID": "WATER-LAKE-01",
+      "foundBodyOverlapInTestedEnvelopes": false,
+      "closestNamedWaterEqualAreaCircleCenterlineGapM": 407.89,
+      "vehicleReturnOrTurnaroundCertified": false,
+      "net6mRoadwidthCertified": false,
+      "trueRoadGradeMeasured": false,
+      "emergencyGateToCityApproved": false,
+      "physicalFireVehicleApproved": false,
+      "currentBuildingMainEntranceCertified": false,
+      "originalFireRiskClosed": false,
+      "runtimeFinal": false
+    },
+    {
+      "id": "FIRE-R7S15-ART03-B",
+      "buildingID": "ART-03",
+      "sourceStage": "R7-SOLVE-15",
+      "roundedRadiusFeasible": true,
+      "sampledApproachOptions": 1,
+      "closestBodyToKnownFootprintByApproachM": [
+        17.72
+      ],
+      "closestBodyObstacleID": "ART-03",
+      "closestBodyToProtectedByApproachM": [
+        510.5
+      ],
+      "closestProtectedID": "GREEN-E-01",
+      "foundBodyOverlapInTestedEnvelopes": false,
+      "closestNamedWaterEqualAreaCircleCenterlineGapM": 210.4,
+      "vehicleReturnOrTurnaroundCertified": false,
+      "net6mRoadwidthCertified": false,
+      "trueRoadGradeMeasured": false,
+      "emergencyGateToCityApproved": false,
+      "physicalFireVehicleApproved": false,
+      "currentBuildingMainEntranceCertified": false,
+      "originalFireRiskClosed": false,
+      "runtimeFinal": false
+    },
+    {
+      "id": "FIRE-R7S15-HSP04-N",
+      "buildingID": "HSP-04",
+      "sourceStage": "R7-SOLVE-15",
+      "roundedRadiusFeasible": true,
+      "sampledApproachOptions": 2,
+      "closestBodyToKnownFootprintByApproachM": [
+        5.45,
+        5.45
+      ],
+      "closestBodyObstacleID": "HSP-04",
+      "closestBodyToProtectedByApproachM": [
+        767.58,
+        735.5
+      ],
+      "closestProtectedID": "CEREMONIAL-SOUTH",
+      "foundBodyOverlapInTestedEnvelopes": false,
+      "closestNamedWaterEqualAreaCircleCenterlineGapM": 97.08,
+      "vehicleReturnOrTurnaroundCertified": false,
+      "net6mRoadwidthCertified": false,
+      "trueRoadGradeMeasured": false,
+      "emergencyGateToCityApproved": false,
+      "physicalFireVehicleApproved": false,
+      "currentBuildingMainEntranceCertified": false,
+      "originalFireRiskClosed": false,
+      "runtimeFinal": false
+    }
+  ],
+  "hospital": {
+    "cityRoadName": "大学路",
+    "cityRoadZ": -1145,
+    "cityRoadWidthM": 36,
+    "cityRoadNorthEdgeZ": -1127,
+    "hospitalSocialCityEntranceID": "ENT-HSP-SOCIAL",
+    "hospitalAmbulanceCityEntranceID": "ENT-HSP-EMERGENCY-CITY",
+    "socialCityLinkXZ": [
+      [
+        -1040,
+        -1085
+      ],
+      [
+        -1040,
+        -1127
+      ]
+    ],
+    "socialWidthM": 7.5,
+    "socialLengthM": 42,
+    "ambulanceCityLinkXZ": [
+      [
+        -950,
+        -1090
+      ],
+      [
+        -950,
+        -1127
+      ]
+    ],
+    "ambulanceWidthM": 8,
+    "ambulanceLengthM": 37,
+    "cityConnectorLateralSpacingM": 90,
+    "onsiteAmbulanceLineXZ": [
+      [
+        -950,
+        -1090
+      ],
+      [
+        -950,
+        -1010
+      ],
+      [
+        -964,
+        -1010
+      ]
+    ],
+    "onsiteAmbulanceWidthM": 8,
+    "onsiteAmbulanceLengthM": 94,
+    "terminalAfterR12FilletStraightM": 2,
+    "sourceSixHospitalEntranceIDsRetained": true,
+    "ambulanceAndSocialCenterlinesSeparate": true,
+    "municipalRightOfWayApproved": false,
+    "actualCityTurningSweepsApproved": false,
+    "actualEmergencyDoorStagingCertified": false,
+    "hsp04ResearchAccessIsNotAmbulanceRoute": true,
+    "runtimeFinal": false
+  },
+  "theatreTurnaround": {
+    "id": "FIRE-R7S16-ART03-ONEWAY-RETURN-CANDIDATE",
+    "sourceRouteID": "FIRE-R7S15-ART03-B",
+    "publicThroughTrafficForbidden": true,
+    "approachRoadID": "ROAD-R7-S12-ART-BOYA-BACKSTAGE",
+    "startXZ": [
+      1290,
+      690
+    ],
+    "endXZ": [
+      1250,
+      690
+    ],
+    "entryCornerCenterXZ": [
+      1313,
+      702
+    ],
+    "entryRadiusM": 12,
+    "halfTurnCenterXZ": [
+      1308,
+      760
+    ],
+    "halfTurnRadiusM": 17,
+    "exitCornerCenterXZ": [
+      1279,
+      702
+    ],
+    "exitRadiusM": 12,
+    "combinedConceptCenterlineLengthM": 259.09,
+    "includesExistingRoadLength": true,
+    "geometryCandidateOnly": true,
+    "fullSweptPathNotCertified": true,
+    "sourceBackstageCrowdSeparationNotCertified": true,
+    "returnJunctionRoadRightsNotCertified": true,
+    "real8mClearanceNotCertified": true,
+    "runtimeFinal": false
+  },
+  "waterAndTerrain": {
+    "ordinaryVehicleRoadGradientTypical": "0.5%-4%",
+    "localDesignMaximumApproximately": "6%",
+    "gradeComputableForP0Candidates": 0,
+    "pondCentersAreasAndWaterLevelsKnown": 10,
+    "officialShorelinePolygonsForNamedSmallWaterBodies": 0,
+    "waterProxyNotAnAcceptanceGeometry": true
+  },
+  "riskRegister": {
+    "stillUnlinkedMainEntrances": 120,
+    "originalSource11RiskCount": 145,
+    "originalRisksClosedAfterStage16": 0,
+    "newApprovedFireRoads": 0
+  },
+  "nextStage": "R7-SOLVE-17 verification of vehicle turning junctions, theatre full loop sweep, hospital city street connection, facade, detailed terrain heights and named water shorelines"
+}
