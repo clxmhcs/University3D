@@ -55,7 +55,7 @@ export function auditRows(rows) {
     if (part.every(p=>present(p.finishedRoadY_m)))profilesWithAllRoadY++;
     if (part.every(p=>present(p.effectiveNetWidth_m)))profilesWithMeasuredNetWidth++;
   }
-  const completeProfiles=profilesWithAllRoadY===map.size&&profilesWithMeasuredNetWidth===map.size;
+  const completeProfiles=profilesWithAllRoadY===map.size&&profilesWithMeasuredNetWidth===map.size&&missing.surveyedY===0&&missing.crossSlope===0;
   return {status:problems.length?'GEOMETRY_PROFILE_SCREEN_ERROR':warnings.length?'GRADE_SPECIAL_REVIEW_REQUIRED':!completeProfiles?'BLOCKED_MISSING_MEASUREMENTS':'PROFILE_NUMERIC_PRECHECK_ONLY_NOT_FIRE_APPROVAL',
     auditAuthority:'PATCH-2026-09-14-R7',physicalFireApproval:false,runtimeFinal:false,
     sourceProfileRoutes:map.size,sampleStations:rows.length,gradeIntervalsChecked,intervalsMissingY,
