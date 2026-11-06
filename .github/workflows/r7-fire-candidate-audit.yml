@@ -27,3 +27,7 @@ jobs:
         run: node Tests/r7_solve16_vehicle_sweep_invariants.mjs
       - name: Stage 16 independent swept-body numerical replay
         run: node Tests/r7_solve16_vehicle_sweep_numeric.mjs
+      - name: Stage 17 parcel wall water and negative grade-width fixtures
+        run: node Tests/r7_solve17_hydro_gate_and_road_grade.mjs
+      - name: Stage 17 default measured profile audit must report evidence missing
+        run: node Scripts/r7_solve17_elevation_clearance_gate.mjs
